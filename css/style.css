@@ -1,40 +1,38 @@
-* {
+*, *::before, *::after {
     box-sizing: border-box;
 }
 
 body {
     margin: 0 auto;
-    max-width: 1285px;
-    background-color: #fff;
-    font-family: "Segoe UI Light";
-
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Crimson Text', serif;
 }
 
 input, textarea, button {
-    font-family: "Segoe UI Light ";
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Crimson Text', serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
 
 ul {
     margin: 0;
     padding: 0;
-    list-style-image: none;
+    list-style-type: none;
 }
-button{
-    outline: none;
-}
+
 a{
     text-decoration: none;
 }
-
+button {
+    outline: none;
+}
 .container {
-    width: 1025px;
+    width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
-
 }
 
 .invisLink {
@@ -60,393 +58,167 @@ a{
     display: block;
     clear: both;
 }
-.back {
-    width: 1280px;
-    height: 2315px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.back2{
-    margin-top: -70px;
-    max-width: 1280px;
+header{
     background-color: #fff;
 }
-.Logo a {
-    font-family: "MrsEavesItalic";
-    font-size: 115px;
-    color: #ffffff;
+.topLine{
+    border-bottom: 1px solid #f0f2f7;
+}
+.logo img{
+    margin-right: 200px;
+}
+.topLine .menu .menu_li{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #343e5c;
+    padding-left: 20px;
+    text-align: left;
+}
+.topLine .menu a:hover{
+    color: #b9bed1;
+
+}
+.topLine .menu{
+    margin-right: 150px;
+}
+.topLine .account  .icon-cart{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #343e5c;
+    text-align: left;
+    padding-right: 10px;
+
+}
+
+.topLine .account  .cat_text{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    color: #343e5c;
+    text-align: left;
+    text-transform: uppercase;
+    padding-right: 10px;
+}
+.topLine .account .cat_num{
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    color: #343e5c;
+    position: absolute;
+    top: 17%;
+    left: 35%;
+    padding-right: 20px;
+}
+
+.topLine .account  .cat_bg {
+    background-color: #e3e8f0;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    position: relative;
+    padding-right: 25px;
+    margin-right: 20px;
+}
+.topLine .account  .cat_button{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
     text-align: center;
-
-}
-.TopMenu nav a{
-    font-size: 22px;
-    color: #ffffff;
-    text-align: center;
-    padding-left: 35px;
-}
-.TopMenu nav{
-    margin-top: 25px;
-    margin-left: 50px;
-
-}
-.TopMenu, .Logo{
-    display: inline-block;
-    vertical-align: top;
-    margin-left: 95px;
-    padding-top: 50px;
-}
-.Banner img{
-    padding-left: 120px;
-    padding-top: 70px;
-    margin-right: 70px;
+    color: #343e5c;
+    border: 1px solid #e3e8f0;
+    border-radius: 25px;
+    height: 30px;
+    width: 80px;
+    text-transform: uppercase;
+    background-color:rgba(255,255,255,1);
 }
 
-.bannersText .Big{
-     font-family: "Segoe UI Semibold";
-     font-size: 60px;
-     color: #ffffff;
- }
-.bannersText .Small{
-    font-family: "Segoe UI Light";
-    font-size: 40px;
-    color: #ffffff;
-}
-.bannersText span{
-    display: block;
-}
-.Banner .bannersText button{
-
-    font-family: "Segoe UI Light";
-    font-size:22px  ;
-    color: #ffffff;
-    background-color: #175c3b;
-    width: 140px;
-    height: 50px;
-    margin-top: 35px;
-    text-align: center;
-    border: 5px solid #323434;
-
-}
-.bannersText, .picture{
+.topLine .logo, .menu, .account{
     display: inline-block;
     vertical-align: middle;
-}
-.info .tabs    span{
-    padding-top: 25px;
-    font-family: "Segoe UI Light";
-    font-size: 26px;
-    color: #7b7a7a;
-
-
-
+    padding: 40px 0;
 }
 
-.info .tabs li {
+.links  .links_li{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    color: #b9bed1;
+    padding-right: 30px;
+    text-align: left;
+}
+.links  .links_li_last {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    color: #b9bed1;
+    padding-left: 360px;
+    padding-right: 30px;
+    text-align: left;
+}
+.links a:hover{
+    color: #343e5c;
+}
+.links, .search{
     display: inline-block;
-    padding: 0px 0px;
-
-    width: 24%;
-    margin-top: 30px;
-
+    vertical-align: middle;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-right: 1px solid #f0f2f7;
 }
-
-.info .tabs  li img{
-    padding-top: 15px;
-}
-
-.info .tabs  span, img{
-    display: block;
-    padding-left: 36px;
-    padding-right: 36px;
-
-}
-
-
-
-
-.tabs li a span {
-    font-size: 14px;
-    text-decoration: none;
-    line-height: 45px;
-    color: #5c5b5b;
-    text-align: center;
-}
-
-.info .content {
-    font-size: 12px;
-    line-height: 18px;
-    color: #333333;
-}
-
-.info.ui-tabs {
-    padding: 0;
-    padding-top: 40px;
-
-}
-
-.info.ui-tabs .ul-tabs-nav {
-    margin: 0;
-}
-
-.info.ui-tabs .ul-tabs-nav.ul-tabs-active {
-    margin: 0;
-    padding: 0;
-}
-
-.info.ui-tabs .ul-tabs-nav.ul-tabs-anchor {
-
-    padding: 0 0;
-}
-
-.info.ui-tabs .ul-tabs-panel {;
-    padding: 0;
-}
-
-
-
-
-
-.info .tabs li.ui-tabs-active a, .info .tabs li a:hover {
-    border: none;
-    color: #5f5f5f;
-    cursor: pointer;
-    outline: none;
-
-}
-
-
-.info .title {
-    text-transform: uppercase;
-    position: relative;
-    padding-left: 25px;
-    display: block;
-}
-.info .content h2{
-    font-family: "Segoe UI Light";
-    font-size: 40px;
-    color: #4f4f4f;
-    padding-bottom: 55px;
-}
-.info .content p{
-    font-family: "Univers CE 45";
+.search .icon-search{
+    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     line-height: 24px;
-    color: #818181;
+    color: #343e5c;
+    padding-left: 25px;
+    padding-right: 15px;
     text-align: left;
-}
-
-.info .content p:last-child{
-    margin-bottom: 70px;
-}
-
-.info .content img{
-    display: block;
-    margin:60px auto;
-
 
 }
-.choose{
-    margin-top: 30px;
+.search .search_text{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #a1a7bd;
+    text-align: left;
+    padding-right: 55px;
 }
-.choose .left,.right{
-    display: inline-block;
-    vertical-align: top;
-    width: 49%;
-}
-.choose .left{
-    background-repeat: no-repeat;
+.banner{
     background-position: center;
-    width: 450px;
-    height: 310px;
-}
-.choose .right{
-    margin-left: 50px;
-    margin-top: 20px;
-}
-.choose .right h3{
-    font-family: "Segoe UI Light";
-    font-size: 30px;
-    color: #4f4f4f;
-    text-align: left;
-    padding-bottom: 30px;
-}
-.choose .right li{
-    font-family: "Segoe UI Light";
-    font-size: 16px;
-    line-height: 35px;
-    color: #8a8888;
-    text-align: left;
-    position: relative;
-    list-style-type: none;
-}
-
-.elem{
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-position: center ;
     background-repeat: no-repeat;
-    position: absolute;
-    left: -25px;
-    top:10px
-}
-
-
-.form {
-    margin-top: 100px;
-}
-
-.form_1, .form_2{
-    display: inline-block;
-    vertical-align: top;
-    width: 470px;
-    height: 105px;
-    border-radius: 10px ;
 
 }
-.form h4{
-    font-family: "Segoe UI Light";
-    font-size: 28px ;
-    line-height: 20px;
-    padding-top: 15px;
-    padding-left: 30px;
-    text-align: left;
+.banner .info .title_text{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 42px;
     color: #ffffff;
+    text-align: left;
+    font-weight: 900;
+    padding-top: 105px;
+    padding-left: 100px;
 }
-.form_1{
-    float: left;
-    background-color: #e67624;
-}
-form input, .button{
-    display: inline-block;
-    margin-top: 25px;
-    margin-right: 10px;
-}
-form .title{
-    margin-left: 30px;
-}
-.form_1 input{
-    width: 150px;
-    height: 25px;
-    background-color: #e8e8e8;
-
-
-
-}
-form input{
-    font-family: "Segoe UI Light";
+.banner .info .text{
+    padding-top: 35px;
+    font-family: 'Crimson Text', serif;
+    font-weight: 400;
     font-size: 16px;
-    color: #4f4f4f;
+    line-height: 24px;
+    color: #ffffff;
     text-align: left;
-    border: none;
+    padding-left: 100px;
 }
-.form .button{
-    width: 90px;
-    padding: 5px 10px;
-    font-size: 16px;
-    border: none;
+.banner .info .button{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    color: #ffffff;
     text-align: center;
-    background-color: #444444;
-    color: #ffffff;
-}
-.form_2 .button{
-    background-color: #029bb1;
-    width: 110px;
-    padding: 5px 20px;
-}
-.form_2{
-    background-color: #01d4f3;
-    float: right;
-}
-footer{
-    background-color: #2e2b26;
-    margin-top: 35px;
+    background-color: #2754eb;
+    width: 165px;
+    height: 40px;
+    border: none;
+    border-radius: 25px;
+    margin-top: 65px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    text-transform: uppercase;
 
 }
-footer  h3{
-    font-family: "Segoe UI Light";
-    font-size:  22px;
-    line-height: 33px;
-    color: #ffffff;
-    text-align: left;
-
-}
-footer .about, .about, .testimoanials, .LogoFooter{
-    display: inline-block;
-    vertical-align: top;
-    margin-bottom: 50px;
-    margin-top: 35px;
-}
-footer .about:first-child{
-    margin-left: 45px;
-
-}
-footer .about{
-
-    margin-right: 80px;
-}
-footer .about li {
-    list-style-type: none;
-    font-family: "Arial";
-    font-size: 13px;
-    line-height: 22px;
-    text-align: left;
-}
-footer .about li a{
-    color: #abacaa;
-}
-footer .about li:first-child{
-    padding-top: 15px;
-}
-footer .testimoanials{
-    margin-right: 35px;
-}
-footer .testimoanials p{
-    font-family: "Arial";
-    line-height: 20px;
-    font-size: 13px;
-    color: #abacaa;
-    text-align: left;
-
-}
-footer .testimoanials span{
-    font-family: "Arial";
-    font-size: 13px;
-    line-height: 22px;
-    color: #ffffff;
-    font-weight: 700;
-    text-align: left;
-}
-footer .LogoFooter{
-    vertical-align: bottom;
-}
-footer .LogoFooter .logo {
-    font-family: "MrsEavesItalic";
-    font-size: 115px;
-    color: #6c6d6b;
-    text-align: center;
-
-}
-footer .copyright span{
-     font-family: "Arial";
-     font-size: 13px;
-     line-height: 22px;
-     text-align: left;
-     color: #ffffff;
-}
-footer .copyright a{
-    color: #ffffff;
-}
-.content_Tit .info .tabs span:hover{
-    color: #5f5f5f;
-
-}
-
-
-
-
-
-
-
 
 
