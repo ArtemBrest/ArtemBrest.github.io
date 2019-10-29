@@ -666,26 +666,64 @@ footer .copyright{
     padding-top: 30px;
     padding-bottom: 40px;
 }
+@media (max-width: 1199px) {
+    .container {
+        width: 980px;
+    }
+
+    .menu .menu_li {
+        padding-right: 20px;
+    }
+    .timer #number {
+        font-family: "Roboto Slab";
+        font-weight: 100;
+        font-size: 117px;
+        color: #ffffff;
+        text-align: center;
+        display: block;
+        margin: auto;
+
+    }
+
+    .timer .data {
+        padding-bottom: 25px;
+        display: inline-block;
+        margin-left: 50px;
+        padding-right: 70px;
+        font-family: "Roboto Slab";
+        text-align: left;
+        font-size: 25px;
+        color: #ffffff;
+    }
+
+    .timer .data:last-child {
+        margin-left: 45px;
+        padding-right: 0;
+    }
+    .about .register_form {
+        margin: 0;
+    }
+    .icon-behance, .icon-dribbble, .icon-facebook, .icon-twitter {
+        padding-top: 20px;
+    }
+
+    .rewards .rewards_button {
+    margin-left: -70px;
+    }
+    .offset-lg-1 {
+        margin-left: 5%;
+    }
+
+    footer .footer_icon{
+        padding-right: 5px;
+    }
+}
 @media (max-width: 991px) {
 
     .container {
         width: 780px;
     }
-    .about .register_form {
-        margin: 0;
-    }
-    .speakers .box {
-        margin-right: 25px;
-    }
-    .speakers .box_active{
-        margin-right: 25px;
-    }
-    .speakers .box_img{
-        margin-right: 25px;
-    }
-    .icon-behance, .icon-dribbble, .icon-facebook, .icon-twitter {
-        padding-top: 20px;
-    }
+
     .logo .logo_text {
         left: 85%;
     }
@@ -718,6 +756,24 @@ footer .copyright{
     .timer .data:last-child {
         margin-left: 25px;
         padding-right: 0;
+    }
+    .about .register_form {
+        margin: 0;
+    }
+    .speakers .box {
+        margin-right: 25px;
+    }
+    .speakers .box_active{
+        margin-right: 25px;
+    }
+    .speakers .box_img{
+        margin-right: 25px;
+    }
+    .icon-behance, .icon-dribbble, .icon-facebook, .icon-twitter {
+        padding-top: 20px;
+    }
+    .offset-lg-1 {
+        margin-left:2%;
     }
 }
 
