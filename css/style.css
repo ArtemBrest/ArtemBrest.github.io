@@ -666,6 +666,60 @@ footer .copyright{
     padding-top: 30px;
     padding-bottom: 40px;
 }
+@media (max-width: 991px) {
+
+    .container {
+        width: 780px;
+    }
+    .about .register_form {
+        margin: 0;
+    }
+    .speakers .box {
+        margin-right: 25px;
+    }
+    .speakers .box_active{
+        margin-right: 25px;
+    }
+    .speakers .box_img{
+        margin-right: 25px;
+    }
+    .icon-behance, .icon-dribbble, .icon-facebook, .icon-twitter {
+        padding-top: 20px;
+    }
+    .logo .logo_text {
+        left: 85%;
+    }
+    .menu .menu_li {
+        padding-right: 10px;
+    }
+
+    .timer #number {
+        font-family: "Roboto Slab";
+        font-weight: 100;
+        font-size: 80px;
+        color: #ffffff;
+        text-align: center;
+        display: block;
+        margin: auto;
+
+    }
+
+    .timer .data {
+        padding-bottom: 25px;
+        display: inline-block;
+        margin-left: 65px;
+        padding-right: 15px;
+        font-family: "Roboto Slab";
+        text-align: left;
+        font-size: 18px;
+        color: #ffffff;
+    }
+
+    .timer .data:last-child {
+        margin-left: 25px;
+        padding-right: 0;
+    }
+}
 
 
 

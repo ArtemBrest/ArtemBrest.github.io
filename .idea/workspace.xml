@@ -21,7 +21,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TestExesirceKurs/SETKA/css/style.css" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ZanDiplomaProJect_2/css/styles.css" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -67,6 +67,7 @@
       <workItem from="1572273406831" duration="4596000" />
       <workItem from="1572360436363" duration="3918000" />
       <workItem from="1572364570290" duration="228000" />
+      <workItem from="1572377033242" duration="4993000" />
     </task>
     <servers />
   </component>
