@@ -836,21 +836,11 @@ input:active{
         margin-top:30px;
     }
     .table_header {
-        padding: 15px 0;
-        background-color: #a3cc40;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        height: 75px;
-        margin-top: 100px;
+        padding: 25px 0;
     }
 
     .table_header .text_title, .table_header .time_title {
-        display: inline-block;
-        font-family: "Roboto";
-        font-weight: 900;
         font-size: 18px;
-        color: #ffffff;
-        text-align: center;
     }
 
     .table_header .text_title {
@@ -859,52 +849,98 @@ input:active{
 
 
     .table_details_lite, .table_details_dark {
-        background-color: #373737;
-        height: 75px;
         padding:15px 0;
     }
 
-    .table_details_lite {
-        background-color: #4b4d4f;
-    }
-
-    .table_bottom {
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-    }
-
-
     .table_details_lite .text_title, .table_details_lite .time_title {
-        font-family: "Roboto";
         font-size: 14px;
-        font-weight: normal;
-        color: #ffffff;
-        text-align: center;
-        display: inline-block;
-
     }
 
-    .table_details_lite .text_title {
-        text-align: left;
-    }
+
 
     .table_details_dark .text_title, .table_details_dark .time_title {
-        font-family: "Roboto";
         font-size: 14px;
-        font-weight: normal;
-        color: #ffffff;
-        text-align: center;
-        display: inline-block;
-
-    }
-
-    .table_details_dark .text_title {
-        text-align: left;
     }
 
     .table_details_dark img, .table_details_lite img {
-        width: 20px;
-        height: 20px;
+        display: none;
+    }
+    .rewards .rewards_button {
+        margin-left: 100px;
+    }
+    .speakers .box {
+        display: none;
+    }
+    .speakers .box_img {
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 232px;
+        width: 232px;
+        margin-top: 125px;
+        margin-left: 29%;
+        margin-right: 0;
+
+    }
+    .speakers .box_active{
+        display: none;
+    }
+    .back4 {
+        height: 769px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: 90px;
+    }
+    .sponsor .sponsor_logo1 {
+
+        background-size: 80%;
+
+    }
+
+    .sponsor .sponsor_logo2 {
+
+        background-size: 80%;
+
+    }
+
+    .sponsor .sponsor_log03 {
+        background-size: 80%;
+
+
+    }
+    .sponsor .sponsor_button {
+        display: block;
+        margin: 0 auto;
+        margin-top: 65px;
+    }
+    .past_events .photo_1 {
+        margin-top: 50px;
+        height: 215px;
+
+    }
+
+    .past_events .photo_2 {
+        margin-top: 50px;
+        height: 215px;
+
+    }
+
+    .past_events .photo_3 {
+        height: 176px;
+
+    }
+
+    .past_events .photo_4 {
+        height: 178px;
+
+    }
+    .contacts .fon {
+        background-color: #fff;
+        height: 480px;
+        margin-top: 90px;
+    }
+    .contacts_form{
+        display: none;
     }
 
 
