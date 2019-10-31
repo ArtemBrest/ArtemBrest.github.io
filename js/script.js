@@ -12,7 +12,7 @@ window.onload = function () {
         if (second < 10) min = '0' + second;
 
 
-        document.getElementById("number").innerHTML = day + "  :  " + hour + " : " + min +" : " + second;
+        document.getElementById("number").innerHTML = day + "  :  " + hour + " : " + min + " : " + second;
 
     }
 
