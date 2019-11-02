@@ -1042,31 +1042,4 @@ footer .copyright {
     .container {
         width: 780px;
     }
-
-    .logo .logo_text {
-        left: 30%;
-    }
-
-    .about .register_form {
-        height: 530px;
-        width: 390px;
-        background-color: #ffffff;
-        border-left: 1px solid #dbdada;
-        border-right: 1px solid #dbdada;
-        border-bottom: 2px solid #949293;
-    }
-
-    .register_form .register_form_h3 {
-        font-family: "Roboto";
-        font-size: 25px;
-    }
-
-    .register_form .register_form_input {
-        width: 330px;
-
-    }
-
-    .register_form .register_form_button {
-        width: 330px;
-    }
 }
