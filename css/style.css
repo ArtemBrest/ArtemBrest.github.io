@@ -203,7 +203,6 @@ button {
     border-left: 1px solid #dbdada;
     border-right: 1px solid #dbdada;
     border-bottom: 2px solid #949293;
-
     margin-top: -610px;
 }
 
@@ -1040,6 +1039,56 @@ footer .copyright {
 
 @media (max-width: 479px) {
     .container {
-        width: 780px;
+        width: 100%;
+    }
+    .about .register_form {
+
+        width: 380px;
+        margin-left: 0;
+    }
+
+    .register_form .register_form_h3 {
+
+        font-size: 25px;
+    }
+
+    .register_form .register_form_input {
+
+        width: 300px;
+
+        margin: 0 35px;
+
+
+    }
+
+    .register_form .register_form_button {
+        width: 300px;
+
+        margin: 0 35px;
+
+    }
+
+    .rewards .rewards_button {
+        margin-top: 20px;
+        margin-left:50%;
+    }
+    .sponsor .sponsor_logo1 {
+        display: none;
+
+    }
+
+    .sponsor .sponsor_logo2 {
+        display: none;
+
+    }
+
+    .sponsor .sponsor_log03 {
+        display: none;
+    }
+
+    .sponsor .sponsor_button {
+        display: block;
+        margin: 0 auto;
+        margin-top: 65px;
     }
 }
