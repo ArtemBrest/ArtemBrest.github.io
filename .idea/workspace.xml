@@ -21,7 +21,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ZanDiplomaProJect_2/css/styles.css" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TestExersice_4/css/style.css" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -73,6 +73,9 @@
       <workItem from="1572435424334" duration="330000" />
       <workItem from="1572451393930" duration="150000" />
       <workItem from="1572526953309" duration="3653000" />
+      <workItem from="1572531331679" duration="119000" />
+      <workItem from="1572609154750" duration="720000" />
+      <workItem from="1572704643207" duration="1436000" />
     </task>
     <servers />
   </component>

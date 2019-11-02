@@ -764,8 +764,82 @@ input:active{
         left: 85%;
     }
 
+    .menu .menuBtn {
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-color: rgba(0,0,0,0);
+        position: relative;
+    }
+
+    .menu .menuBtn span,
+    .menu .menuBtn span::before,
+    .menu .menuBtn span::after {
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        top: 50%;
+        left: 50%;
+        margin-left: -10px;
+        margin-top: -1px;
+        background-color: #ffffff;
+
+    }
+
+    .menu .menuBtn span::before,
+    .menu .menuBtn span::after {
+        content: "";
+        display: block;
+        transition: 0.2s;
+    }
+
+    .menu .menuBtn span::before {
+        transform: translateY(-5px);
+    }
+
+    .menu .menuBtn span::after {
+        transform: translateY(5px);
+    }
+
+    .menu .menuBtnActive span {
+        height: 0;
+    }
+
+    .menu .menuBtnActive span::before {
+        transform: rotate(45deg);
+    }
+
+    .menu .menuBtnActive span::after {
+        transform: rotate(-45deg);
+    }
+
+    .menu  {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
     .menu .menu_li {
-        padding-right: 10px;
+        text-decoration: none;
+        display: block;
+        color: #ffffff;
+        margin-left: 10px;
+        padding: 5px;
+    }
+
+    .menu .menuNav {
+        transition: 0.3s;
+        transform-origin: right center;
+        transform: scaleX(0) translateX(20%);
+        opacity: 0;
+
+
+    }
+
+    .menu .menuNavActive {
+        transform: scaleX(1) translateX(0%);
+        opacity: 1;
     }
 
     .timer #number {
@@ -827,7 +901,7 @@ input:active{
         width: 100%;
     }
     .logo .logo_text {
-        left: 20%;
+        left: 50%;
     }
     .timer{
         display: none;
@@ -943,7 +1017,33 @@ input:active{
         display: none;
     }
 
+}
+@media (max-width: 479px) {
+    .container {
+        width: 780px;
+    }
+    .logo .logo_text {
+        left: 30%;
+    }
+    .about .register_form {
+        height: 530px;
+        width: 390px;
+        background-color: #ffffff;
+        border-left: 1px solid #dbdada;
+        border-right: 1px solid #dbdada;
+        border-bottom: 2px solid #949293;
+    }
+    .register_form .register_form_h3 {
+        font-family: "Roboto";
+        font-size: 25px;
+    }
 
+    .register_form .register_form_input {
+        width: 330px;
 
+    }
 
+    .register_form .register_form_button {
+        width: 330px;
+    }
 }

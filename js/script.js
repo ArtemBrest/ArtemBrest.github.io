@@ -27,3 +27,8 @@ window.onload = function () {
 
     DataTimeStart();
 };
+$(".menuBtn").on("click",function (e) {
+    e.preventDefault();
+    $(this).toggleClass("menuBtnActive");
+    $(".menuNav").toggleClass("menuNavActive")
+});
