@@ -947,7 +947,7 @@ footer .copyright {
     }
 
     .rewards .rewards_button {
-        margin-left:60%;
+        margin-left: 60%;
     }
 
     .speakers .box {
@@ -1031,6 +1031,7 @@ footer .copyright {
     .contacts_form {
         display: none;
     }
+
     footer .footer_icon:first-child {
         padding-left: 40px;
     }
@@ -1041,45 +1042,39 @@ footer .copyright {
     .container {
         width: 100%;
     }
-    .about .register_form {
 
+    .about .register_form {
         width: 380px;
         margin-left: 0;
     }
 
     .register_form .register_form_h3 {
-
         font-size: 25px;
     }
 
     .register_form .register_form_input {
-
         width: 300px;
-
         margin: 0 35px;
-
-
+        margin-top: 20px;
     }
 
     .register_form .register_form_button {
         width: 300px;
-
         margin: 0 35px;
-
+        margin-top: 20px;
     }
 
     .rewards .rewards_button {
         margin-top: 20px;
-        margin-left:50%;
+        margin-left: 50%;
     }
+
     .sponsor .sponsor_logo1 {
         display: none;
-
     }
 
     .sponsor .sponsor_logo2 {
         display: none;
-
     }
 
     .sponsor .sponsor_log03 {
