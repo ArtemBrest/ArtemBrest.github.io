@@ -29,11 +29,13 @@ a {
 button {
     outline: none;
 }
+
 .content button:hover {
     background-color: #00b9e1 !important;
     color: #000000;
 }
-.content input:focus{
+
+.content input:focus {
     border: 1px solid #82b541;
 }
 
@@ -128,7 +130,8 @@ button {
     font-size: 15px;
     color: #ffffff;
 }
-.menu .menu_li:hover{
+
+.menu .menu_li:hover {
     color: #90d23d;
 }
 
@@ -265,13 +268,13 @@ button {
 }
 
 .events_details .box .title {
-        font-family: "Roboto";
-        font-weight: 900;
-        font-size: 35px;
-        color: #242424;
-        text-align: center;
-        padding-top: 40px;
-    }
+    font-family: "Roboto";
+    font-weight: 900;
+    font-size: 35px;
+    color: #242424;
+    text-align: center;
+    padding-top: 40px;
+}
 
 .events_details .box .text {
     font-family: "Roboto";
@@ -693,7 +696,8 @@ footer .copyright {
     padding-top: 30px;
     padding-bottom: 40px;
 }
-input:active{
+
+.content input:active {
     border: #90d23d;
 }
 
@@ -768,7 +772,7 @@ input:active{
         display: block;
         width: 40px;
         height: 40px;
-        background-color: rgba(0,0,0,0);
+        background-color: rgba(0, 0, 0, 0);
         position: relative;
     }
 
@@ -813,7 +817,7 @@ input:active{
         transform: rotate(-45deg);
     }
 
-    .menu  {
+    .menu {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -895,20 +899,24 @@ input:active{
 }
 
 
-
 @media (max-width: 767px) {
     .container {
         width: 100%;
     }
+
     .logo .logo_text {
         left: 50%;
     }
-    .timer{
+
+    .timer {
         display: none;
     }
+
     .about .register_form {
-        margin-top:30px;
+        margin-left: 30px;
+        margin-top: 30px;
     }
+
     .table_header {
         padding: 25px 0;
     }
@@ -923,13 +931,12 @@ input:active{
 
 
     .table_details_lite, .table_details_dark {
-        padding:15px 0;
+        padding: 15px 0;
     }
 
     .table_details_lite .text_title, .table_details_lite .time_title {
         font-size: 14px;
     }
-
 
 
     .table_details_dark .text_title, .table_details_dark .time_title {
@@ -939,12 +946,15 @@ input:active{
     .table_details_dark img, .table_details_lite img {
         display: none;
     }
+
     .rewards .rewards_button {
-        margin-left: 100px;
+        margin-left:60%;
     }
+
     .speakers .box {
         display: none;
     }
+
     .speakers .box_img {
         background-position: center;
         background-repeat: no-repeat;
@@ -955,9 +965,11 @@ input:active{
         margin-right: 0;
 
     }
-    .speakers .box_active{
+
+    .speakers .box_active {
         display: none;
     }
+
     .back4 {
         height: 769px;
         width: 100%;
@@ -965,28 +977,30 @@ input:active{
         background-position: center;
         margin-top: 90px;
     }
-    .sponsor .sponsor_logo1 {
 
+    .sponsor .sponsor_logo1 {
+        margin-left: 20px;
         background-size: 80%;
 
     }
 
     .sponsor .sponsor_logo2 {
-
+        margin-left: 20px;
         background-size: 80%;
 
     }
 
     .sponsor .sponsor_log03 {
         background-size: 80%;
-
-
+        margin-left: 20px;
     }
+
     .sponsor .sponsor_button {
         display: block;
         margin: 0 auto;
         margin-top: 65px;
     }
+
     .past_events .photo_1 {
         margin-top: 50px;
         height: 215px;
@@ -1008,23 +1022,31 @@ input:active{
         height: 178px;
 
     }
+
     .contacts .fon {
         background-color: #fff;
         height: 480px;
         margin-top: 90px;
     }
-    .contacts_form{
+
+    .contacts_form {
         display: none;
+    }
+    footer .footer_icon:first-child {
+        padding-left: 40px;
     }
 
 }
+
 @media (max-width: 479px) {
     .container {
         width: 780px;
     }
+
     .logo .logo_text {
         left: 30%;
     }
+
     .about .register_form {
         height: 530px;
         width: 390px;
@@ -1033,6 +1055,7 @@ input:active{
         border-right: 1px solid #dbdada;
         border-bottom: 2px solid #949293;
     }
+
     .register_form .register_form_h3 {
         font-family: "Roboto";
         font-size: 25px;
