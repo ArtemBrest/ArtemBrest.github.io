@@ -34,18 +34,18 @@ button {
     background-color: #00b9e1 !important;
     color: #000000;
 }
+
 .content input:focus {
     border: 1px solid #90d23d !important;
     outline: #90d23d !important;
 
 }
+
 .content textarea:focus {
     border: 1px solid #90d23d !important;
     outline: #90d23d !important;
 
 }
-
-
 
 
 .container {
@@ -705,7 +705,6 @@ footer .copyright {
 }
 
 
-
 @media (max-width: 1199px) {
     .container {
         width: 980px;
@@ -975,6 +974,10 @@ footer .copyright {
         display: none;
     }
 
+    .back3 {
+        height: 570px;
+    }
+
     .back4 {
         height: 769px;
         width: 100%;
@@ -1031,15 +1034,20 @@ footer .copyright {
     .contacts .fon {
         background-color: #fff;
         height: 480px;
-        margin-top: 90px;
+        margin-top: 40px;
+        margin-left: 50px;
     }
 
     .contacts_form {
         display: none;
     }
 
+    footer a:first-child {
+        padding-left: 25%;
+    }
+
     footer .footer_icon:first-child {
-        padding-left: 20px;
+        padding-left: 0;
     }
 
 }
@@ -1048,6 +1056,7 @@ footer .copyright {
     .container {
         width: 100%;
     }
+
     .back1 {
         background-image: none !important;
         background-color: #4b4d4f;
@@ -1064,7 +1073,7 @@ footer .copyright {
     }
 
     .back3 {
-
+        height: 570px;
         width: 100%;
     }
 
@@ -1075,20 +1084,25 @@ footer .copyright {
         margin-top: 100px;
         height: 500px;
     }
+
     .logo {
         margin-top: 20px;
     }
-    .menu{
+
+    .menu {
         margin-top: 20px;
     }
-    .logo img{
+
+    .logo img {
         width: 90%;
 
     }
+
     .logo .logo_text {
         font-size: 10px;
         left: 32%;
     }
+
     .about .description .description_text {
         text-align: justify;
     }
@@ -1113,6 +1127,7 @@ footer .copyright {
         margin: 0 15px;
         margin-top: 20px;
     }
+
     .rewards .h1 {
         padding-top: 80px;
         text-align: center;
@@ -1120,17 +1135,21 @@ footer .copyright {
         color: #ffffff;
 
     }
+
     .rewards .rewards_text {
         margin-top: 40px;
         text-align: justify;
     }
+
     .rewards .rewards_button {
         margin-top: 20%;
         margin-left: 20%;
     }
+
     .speakers .box_img {
         margin-left: 20%;
     }
+
     .sponsor .h1 {
         text-align: center;
         padding-top: 65px;
@@ -1155,9 +1174,15 @@ footer .copyright {
         margin: 0 auto;
         margin-top: 65px;
     }
+
     .contacts .fon {
-        margin-left: 15px;
+        margin-left: 30px;
     }
+
+    footer a:first-child {
+        padding-left: 20%;
+    }
+
     footer .footer_icon:first-child {
         padding-left: 0;
     }
