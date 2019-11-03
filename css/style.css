@@ -34,10 +34,18 @@ button {
     background-color: #00b9e1 !important;
     color: #000000;
 }
-
 .content input:focus {
-    border: 1px solid #82b541;
+    border: 1px solid #90d23d !important;
+    outline: #90d23d !important;
+
 }
+.content textarea:focus {
+    border: 1px solid #90d23d !important;
+    outline: #90d23d !important;
+
+}
+
+
 
 
 .container {
@@ -696,9 +704,7 @@ footer .copyright {
     padding-bottom: 40px;
 }
 
-.content input:active {
-    border: #90d23d;
-}
+
 
 @media (max-width: 1199px) {
     .container {
@@ -834,14 +840,14 @@ footer .copyright {
     .menu .menuNav {
         transition: 0.3s;
         transform-origin: right center;
-        transform: scaleX(0) translateX(20%);
+        transform: scaleX(0) translateY(35%);
         opacity: 0;
 
 
     }
 
     .menu .menuNavActive {
-        transform: scaleX(1) translateX(0%);
+        transform: scaleX(1) translateY(35%);
         opacity: 1;
     }
 
