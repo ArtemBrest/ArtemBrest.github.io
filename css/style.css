@@ -1076,19 +1076,19 @@ footer .copyright {
         margin-top: 20px;
     }
     .logo img{
-        width: 80%;
+        width: 90%;
 
     }
     .logo .logo_text {
-        font-size: 14px;
-        left: 25%;
+        font-size: 10px;
+        left: 32%;
     }
     .about .description .description_text {
         text-align: justify;
     }
 
     .about .register_form {
-        width: 340px;
+        width: 310px;
         margin-left: 0;
     }
 
@@ -1097,13 +1097,13 @@ footer .copyright {
     }
 
     .register_form .register_form_input {
-        width: 300px;
+        width: 270px;
         margin: 0 15px;
         margin-top: 20px;
     }
 
     .register_form .register_form_button {
-        width: 300px;
+        width: 270px;
         margin: 0 15px;
         margin-top: 20px;
     }
@@ -1123,7 +1123,7 @@ footer .copyright {
         margin-left: 25%;
     }
     .speakers .box_img {
-        margin-left: 20%;
+        margin-left: 15%;
     }
     .sponsor .h1 {
         text-align: center;
@@ -1150,6 +1150,6 @@ footer .copyright {
         margin-top: 65px;
     }
     .contacts .fon {
-        margin-left: 20px;
+        margin-left: 10px;
     }
 }
