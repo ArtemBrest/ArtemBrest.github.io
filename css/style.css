@@ -1042,9 +1042,17 @@ footer .copyright {
     .container {
         width: 100%;
     }
+    .logo img{
+        width: 80%;
+
+    }
+    .logo .logo_text{
+        font-size: 14px;
+        left: 25%;
+    }
 
     .about .register_form {
-        width: 380px;
+        width: 350px;
         margin-left: 0;
     }
 
@@ -1054,19 +1062,19 @@ footer .copyright {
 
     .register_form .register_form_input {
         width: 300px;
-        margin: 0 35px;
+        margin: 0 25px;
         margin-top: 20px;
     }
 
     .register_form .register_form_button {
         width: 300px;
-        margin: 0 35px;
+        margin: 0 25px;
         margin-top: 20px;
     }
 
     .rewards .rewards_button {
         margin-top: 20px;
-        margin-left: 50%;
+        margin-left: 30%;
     }
 
     .sponsor .sponsor_logo1 {
