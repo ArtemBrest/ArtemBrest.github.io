@@ -1039,7 +1039,7 @@ footer .copyright {
     }
 
     footer .footer_icon:first-child {
-        padding-left: 40px;
+        padding-left: 20px;
     }
 
 }
@@ -1158,4 +1158,8 @@ footer .copyright {
     .contacts .fon {
         margin-left: 15px;
     }
+    footer .footer_icon:first-child {
+        padding-left: 0;
+    }
+
 }
