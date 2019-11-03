@@ -1088,7 +1088,7 @@ footer .copyright {
     }
 
     .about .register_form {
-        width: 350px;
+        width: 340px;
         margin-left: 0;
     }
 
@@ -1098,13 +1098,13 @@ footer .copyright {
 
     .register_form .register_form_input {
         width: 300px;
-        margin: 0 25px;
+        margin: 0 15px;
         margin-top: 20px;
     }
 
     .register_form .register_form_button {
         width: 300px;
-        margin: 0 25px;
+        margin: 0 15px;
         margin-top: 20px;
     }
     .rewards .h1 {
@@ -1121,6 +1121,9 @@ footer .copyright {
     .rewards .rewards_button {
         margin-top: 20%;
         margin-left: 25%;
+    }
+    .speakers .box_img {
+        margin-left: 20%;
     }
     .sponsor .h1 {
         text-align: center;
@@ -1147,6 +1150,6 @@ footer .copyright {
         margin-top: 65px;
     }
     .contacts .fon {
-        margin-left: 40px;
+        margin-left: 20px;
     }
 }
