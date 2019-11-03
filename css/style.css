@@ -1120,10 +1120,10 @@ footer .copyright {
     }
     .rewards .rewards_button {
         margin-top: 20%;
-        margin-left: 25%;
+        margin-left: 20%;
     }
     .speakers .box_img {
-        margin-left: 15%;
+        margin-left: 20%;
     }
     .sponsor .h1 {
         text-align: center;
@@ -1150,6 +1150,6 @@ footer .copyright {
         margin-top: 65px;
     }
     .contacts .fon {
-        margin-left: 10px;
+        margin-left: 15px;
     }
 }
