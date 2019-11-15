@@ -1036,11 +1036,15 @@ a {
   .footer .left {
     display: none;
   }
+  .footer .center {
+    text-align: center;
+    margin-bottom: 0;
+  }
   .footer .center_box {
     display: inline-block;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
     border-radius: 10px;
     background-color: #059feb;
     font-family: "Panton";
@@ -1048,6 +1052,11 @@ a {
     font-size: 16px;
     color: #ffffff;
     text-align: center;
+  }
+  .footer .right {
+    text-align: center;
+    margin-top: 0;
+    padding-top: 20px;
   }
   .footer .right_phone {
     font-family: "Panton";
