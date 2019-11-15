@@ -928,6 +928,9 @@ a {
   .container {
     width: 100%;
   }
+  .topLine {
+    display: none;
+  }
   .sponsor_img {
     width: 15%;
     vertical-align: middle;
@@ -1004,9 +1007,31 @@ a {
   .container {
     width: 100%;
   }
+  .topLine {
+    display: none;
+  }
   .banner_img {
     display: block;
     width: 100%;
+  }
+  .price .info_btn {
+    width: 350px;
+    line-height: 65px;
+    height: 70px;
+    background-color: #059feb;
+    border: none;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    font-size: 18px;
+    width: 200px;
+    margin-top: 60px;
+    line-height: 70px;
   }
   .footer .left {
     display: none;
