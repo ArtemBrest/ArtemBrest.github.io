@@ -109,6 +109,13 @@ a {
     .contact_phone {
       .text(30px, #363636, 900, center);
 
+      &:hover {
+        color: #333333;
+        font-weight: 600;
+        text-decoration: none;
+
+      }
+
     }
 
     .contact_btn {
@@ -119,19 +126,32 @@ a {
       border: 1px solid #000000;
       line-height: 50px;
       border-radius: 10px;
+
+      &:hover {
+        color: #059feb;
+        .trs();
+        border: none;
+        text-decoration: none;
+
+      }
     }
   }
 }
 
 .menu {
   background-color: @bg-color;
-  height: 90px;
   line-height: 90px;
 
   &Nav {
     &_li {
       .text(30px, #ffffff, 300, center);
       padding: 0 10px;
+
+      &:hover {
+        .trs();
+        color: #059feb;
+        text-decoration-line: overline;
+      }
     }
   }
 }
@@ -168,6 +188,12 @@ a {
   &_btn {
     .button_blue;
     margin: 50px auto;
+
+    &:hover {
+      .trs();
+      background-color: rgba(0, 0, 0, 0.2);
+      text-decoration: none;
+    }
   }
 
   &-label_img {
@@ -180,6 +206,7 @@ a {
     color: #ffffff;
     text-align: center;
     padding-top: 20px;
+    padding-bottom: 100px;
   }
 }
 
@@ -344,6 +371,7 @@ a {
           .trs(all, 0.3s);
           background-color: rgba(44, 55, 52, 0.6);
           transform: translateX(0%);
+          text-decoration: none;
         }
       }
 
@@ -368,6 +396,7 @@ a {
         line-height: 90px;
         margin: 10px auto;
         border: 2px solid #059feb;
+        box-shadow: inset 0px 0px 10px #2177a2;
         .text_title(40px, #059feb);
       }
 
@@ -406,6 +435,11 @@ a {
       margin-left: 45%;
       margin-top: 160px;
       line-height: 70px;
+
+      &:hover {
+        .trs();
+        text-decoration: #6610f2 !important;
+      }
     }
   }
 
@@ -417,6 +451,7 @@ a {
 .footer {
   background-color: @bg-color;
   margin-top: 160px;
+
   &_title {
     .text_title(36px, #ffffff);
     padding-top: 70px;
@@ -435,6 +470,7 @@ a {
     margin-top: 75px;
     margin-bottom: 75px;
     text-align: center;
+
     &_box {
       display: inline-block;
       width: 60px;
@@ -442,8 +478,15 @@ a {
       line-height: 60px;
       border-radius: 10px;
       background-color: #059feb;
-      .text(35px,#fff,300,center);
+      .text(35px, #fff, 300, center);
       text-align: center;
+
+      &:hover {
+        .trs();
+        background-color: rgba(0, 0, 0, 0.1);
+        color: #059feb;
+        text-decoration: none;
+      }
 
     }
 
@@ -451,34 +494,340 @@ a {
       .text(24px, #fff, 600, left);
     }
   }
+
   .right {
     margin-top: 75px;
     margin-bottom: 75px;
+
     &_phone {
       .text(24px, #fff, 900, left);
+
+      &:hover {
+        color: #059feb;
+        font-weight: 300;
+        text-decoration: none;
+
+      }
     }
-    &_mail{
+
+    &_mail {
       .text(24px, #fff, 600, center);
       padding-left: 55px;
+
+      &:hover {
+        color: #059feb;
+        font-weight: 300;
+        text-decoration: none;
+
+      }
     }
   }
 }
+
 @media (max-width: 1199px) {
   .container {
     width: 980px;
   }
+  .topLine {
+    .logo {
+      &_text {
+        .text(18px, #363636, 900, center);
+
+      }
+    }
+    .contact {
+      .contact_phone {
+        .text(18px, #363636, 900, center);
+      }
+      .contact_btn {
+        display: block;
+        width: 200px;
+        .text(18px, #363636, 600, center);
+      }
+    }
+  }
+  .menu {
+    background-color: @bg-color;
+    line-height: 20px;
+
+    &Nav {
+      &_li {
+        .text(18px, #ffffff, 300, center);
+        display: block;
+        text-align: left;
+        padding: 10px 20px;
+      }
+    }
+  }
+  .banner {
+    &_img {
+      margin: 75px auto;
+      margin-bottom: 0;
+    }
+
+    &_title {
+      .text(18px, #ffffff, 900, center);
+
+    }
+    &_text {
+      .text(16px, #ffffff, 600, center);
+      text-transform: uppercase;
+    }
+
+    &-label_btn {
+      .text(16px, #ffffff, 600, center);
+      padding-top: 50px;
+    }
+
+    &_btn {
+      .button_blue;
+      width: 200px;
+      font-size: 16px;
+      margin: 50px auto;
+    }
+    &-label_img {
+      .text(16px, #ffffff, 600, center);
+      padding-top: 20px;
+    }
+    &_mouse {
+      font-size: 18px;
+      padding-bottom: 50px;
+    }
+  }
+  .about {
+    &_title {
+      .text_title(18px; #363636);
+      padding-top: 100px;
+
+    }
+
+    .left, .right {
+      position: relative;
+      margin-top: 50px;
+      &_line {
+        width: 75px;
+        position: absolute;
+        left: -20px;
+        top: 30px;
+      }
+      &_title {
+        .text_title(18px; #363636);
+        text-align: left;
+      }
+      &_text {
+        .text(16px, #000000, 600, left);
+      }
+    }
+  }
+  .sponsor {
+    background-color: @bg-color;
+    max-height: 690px;
+    margin-top: 100px;
+
+    &_title {
+      .text_title(18px, #ffffff);
+      padding-top: 60px;
+    }
+
+    &_img {
+      width: 24%;
+      vertical-align: middle;
+      padding: 40px;
+    }
+
+    &_img:last-child {
+      margin-left:0;
+      padding: 0px 0px;
+    }
+  }
+  .advantages {
+    &_title {
+      .text_title(18px, #363636);
+      padding-top: 100px;
+    }
+    &_line {
+      width: 120px;
+    }
+    &_text {
+      .text(16px, #000000, 600, center);
+    }
+    .box1, .box2, .box3, .box4 {
+      width: 48%;
+      &_img {
+        font-size: 70px;
+      }
+      &_title {
+        .text(18px, #333333, 900, center);
+      }
+      &_text {
+        .text(16px, #333333, 600, center);
+      }
+    }
+  }
+  .portfolio {
+    margin-top: 100px;
+
+    &_title {
+      .text_title(18px, #363636);
+    }
+
+    &_line {
+      width: 70px;
+    }
+
+    &_text {
+      .text(16px, #000000, 600, center);
+      padding-top: 20px;
+    }
+
+    .box_top {
+      margin-top: 85px;
+    }
+
+    .row {
+      max-width: 1533px;
+    }
+
+    &_box {
+      .col {
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      .photo {
+        &_text {
+          .text_title(18px, #ffffff);
+          display: block;
+          margin: 0 auto;
+          padding-top: 215px;
+        }
+        &_btn {
+          width: 205px;
+          height: 60px;
+          line-height: 60px;
+          .text_title(18px, #059feb);
+        }
+
+      }
+    }
+  }
+  .price {
+    margin-top: 90px;
+
+    &_title {
+      .text_title(18px,#363636);
+    }
+
+    &_line {
+      width: 100px;
+    }
+
+    &_info {
+      margin-top: 50px;
+
+      .info_text {
+        .text(18px, #333333, 600, left);
+        padding: 20px 0;
+      }
+
+      .info_btn {
+        .button_blue;
+        margin-left: 50%;
+        font-size: 18px;
+        width: 200px;
+        margin-top: 60px;
+        line-height: 70px;
+      }
+    }
+
+    &_img {
+      margin-top: 70px;
+    }
+  }
+  .footer {
+    background-color: @bg-color;
+    margin-top: 100px;
+
+    &_title {
+      .text_title(18px, #ffffff);
+
+    }
+
+    .left {
+      &_img{
+        background-size: cover;
+      }
+      &_text {
+        .text(18px, #fff, 600, left);
+      }
+    }
+    .center {
+      &_text {
+        .text(18px, #fff, 600, left);
+      }
+    }
+    .right {
+      &_phone {
+        .text(18px, #fff, 900, left);
+      }
+      &_mail {
+        .text(18px, #fff, 600, center);
+        padding-left: 40px;
+      }
+    }
+  }
 }
-@media (max-width: 991px){
+
+@media (max-width: 991px) {
   .container {
     width: 780px;
   }
+  .portfolio {
+    .row {
+      max-width: 768px;
+    }
+    &_box {
+      .photo {
+        &_btn {
+          width: 155px;
+          height: 60px;
+          line-height: 60px;
+          .text_title(18px, #059feb);
+        }
+      }
+    }
+  }
+  .price {
+    &_img {
+      display: none;
+    }
+  }
+  .footer {
+    .left {
+      &_img{
+        width: 100%;
+      }
+    }
+
+    .right {
+      &_phone {
+        .text(16px, #fff, 900, left);
+      }
+      &_mail {
+        .text(18px, #fff, 600, center);
+        padding-left: 0;
+      }
+    }
+  }
 }
+
 @media (max-width: 767px) {
   .container {
     width: 100%;
   }
 }
-@media (max-width: 479px){
+
+@media (max-width: 479px) {
   .container {
     width: 100%;
   }
