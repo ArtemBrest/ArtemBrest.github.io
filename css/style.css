@@ -893,9 +893,6 @@ a {
   .container {
     width: 780px;
   }
-  .portfolio .row {
-    max-width: 768px;
-  }
   .portfolio_box .photo_btn {
     width: 155px;
     height: 60px;
@@ -931,9 +928,105 @@ a {
   .container {
     width: 100%;
   }
+  .sponsor_img {
+    width: 15%;
+    vertical-align: middle;
+    padding: 0px;
+  }
+  .sponsor_img:last-child {
+    margin-left: 20%;
+    padding: 0px 0px;
+  }
+  .portfolio {
+    display: none;
+  }
+  .advantages .box1,
+  .advantages .box2,
+  .advantages .box3,
+  .advantages .box4 {
+    width: 45%;
+  }
+  .price .info_btn {
+    display: block;
+    width: 350px;
+    line-height: 65px;
+    height: 70px;
+    background-color: #059feb;
+    border: none;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+    margin-left: 30%;
+    font-size: 18px;
+    width: 200px;
+    margin-top: 60px;
+    line-height: 70px;
+  }
+  .footer .center_box {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 10px;
+    background-color: #059feb;
+    font-family: "Panton";
+    font-weight: 300;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+  }
+  .footer .right_phone {
+    font-family: "Panton";
+    font-weight: 600;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: left;
+  }
+  .footer .right_mail {
+    font-family: "Panton";
+    font-weight: 600;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    padding-left: 0;
+  }
 }
 @media (max-width: 479px) {
   .container {
     width: 100%;
+  }
+  .footer .left {
+    display: none;
+  }
+  .footer .center_box {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 10px;
+    background-color: #059feb;
+    font-family: "Panton";
+    font-weight: 300;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+  }
+  .footer .right_phone {
+    font-family: "Panton";
+    font-weight: 600;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: left;
+  }
+  .footer .right_mail {
+    font-family: "Panton";
+    font-weight: 600;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    padding-left: 0;
   }
 }
