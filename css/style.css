@@ -965,6 +965,9 @@ a {
     margin-top: 60px;
     line-height: 70px;
   }
+  .footer .center {
+    margin-left: 20px;
+  }
   .footer .center_box {
     display: inline-block;
     width: 40px;
@@ -977,6 +980,9 @@ a {
     font-size: 16px;
     color: #ffffff;
     text-align: center;
+  }
+  .footer .right {
+    margin-left: 20px;
   }
   .footer .right_phone {
     font-family: "Panton";
@@ -996,6 +1002,10 @@ a {
 }
 @media (max-width: 479px) {
   .container {
+    width: 100%;
+  }
+  .banner_img {
+    display: block;
     width: 100%;
   }
   .footer .left {
