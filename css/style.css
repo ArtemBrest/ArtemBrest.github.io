@@ -969,7 +969,7 @@ a {
     line-height: 70px;
   }
   .footer .center {
-    margin-left: 20px;
+    margin-left: 40px;
   }
   .footer .center_box {
     display: inline-block;
@@ -984,15 +984,22 @@ a {
     color: #ffffff;
     text-align: center;
   }
+  .footer .center_text {
+    font-family: "Panton";
+    font-weight: 600;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: left;
+  }
   .footer .right {
-    margin-left: 20px;
+    margin-left: 5px;
   }
   .footer .right_phone {
     font-family: "Panton";
     font-weight: 600;
     font-size: 16px;
     color: #ffffff;
-    text-align: left;
+    text-align: right;
   }
   .footer .right_mail {
     font-family: "Panton";
@@ -1000,7 +1007,7 @@ a {
     font-size: 18px;
     color: #ffffff;
     text-align: center;
-    padding-left: 0;
+    padding-left: 20px;
   }
 }
 @media (max-width: 479px) {
@@ -1039,6 +1046,7 @@ a {
   .footer .center {
     text-align: center;
     margin-bottom: 0;
+    margin-left: 0;
   }
   .footer .center_box {
     display: inline-block;
@@ -1049,7 +1057,7 @@ a {
     background-color: #059feb;
     font-family: "Panton";
     font-weight: 300;
-    font-size: 16px;
+    font-size: 30px;
     color: #ffffff;
     text-align: center;
   }
@@ -1071,6 +1079,7 @@ a {
     font-size: 18px;
     color: #ffffff;
     text-align: center;
+    display: block;
     padding-left: 0;
   }
 }

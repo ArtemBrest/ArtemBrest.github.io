@@ -860,7 +860,7 @@ a {
   }
   .footer {
     .center {
-      margin-left: 20px;
+      margin-left: 40px;
       &_box {
         display: inline-block;
         width: 40px;
@@ -871,15 +871,18 @@ a {
         .text(16px, #fff, 300, center);
         text-align: center;
       }
+      &_text {
+        .text(16px, #fff, 600, left);
+      }
     }
     .right {
-      margin-left: 20px;
+      margin-left: 5px;
       &_phone {
-        .text(16px, #fff, 600, left);
+        .text(16px, #fff, 600, right);
       }
       &_mail {
         .text(18px, #fff, 600, center);
-        padding-left: 0;
+        padding-left: 20px;
       }
     }
   }
@@ -917,6 +920,7 @@ a {
     .center {
       text-align: center;
       margin-bottom: 0;
+      margin-left: 0;
       &_box {
         display: inline-block;
         width: 60px;
@@ -924,7 +928,7 @@ a {
         line-height: 60px;
         border-radius: 10px;
         background-color: #059feb;
-        .text(16px, #fff, 300, center);
+        .text(30px, #fff, 300, center);
         text-align: center;
       }
     }
@@ -937,6 +941,7 @@ a {
       }
       &_mail {
         .text(18px, #fff, 600, center);
+        display: block;
         padding-left: 0;
       }
     }
