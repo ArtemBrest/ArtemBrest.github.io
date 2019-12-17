@@ -6,12 +6,12 @@
 }
 body {
   margin: 0 auto;
-  font-family: "P22 Underground CY Pro", sans-serif;
+  font-family: "Panton";
 }
 input,
 textarea,
 button {
-  font-family: "P22 Underground CY Pro", sans-serif;
+  font-family: "Panton";
 }
 h1,
 h2,
@@ -29,9 +29,6 @@ ul {
 }
 a {
   text-decoration: none;
-}
-button {
-  outline: none;
 }
 .container {
   width: 1200px;
@@ -59,329 +56,1030 @@ button {
   display: block;
   clear: both;
 }
-html {
-  font-size: 10px;
-}
-header {
-  background: url("../img/jpg/back.jpg") no-repeat center center;
-  height: 100%;
-  background-size: cover;
-}
-header .topLine {
-  padding-top: 5rem;
-  /*display: flex;
-    justify-content: space-between;*/
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: "left . right";
-}
-header .logo {
-  grid-area: left;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-areas: "box top";
-}
-header .logo_img {
-  grid-area: box;
-}
-header .logo_text-top {
-  font-size: 1.8rem;
-  text-align: left;
-  color: #ffffff;
-  font-weight: 900;
-  grid-area: top;
-}
-header .logo_text-bottom {
-  font-size: 1.6rem;
-  text-align: left;
-  color: #ffffff;
-  font-weight: 100;
-  grid-area: bottom;
-}
-header .contact {
-  grid-area: right;
-}
-header .contact_btn {
-  font-size: 1.5rem;
-  color: #ffffff;
-  font-weight: 100;
-  text-align: center;
-  padding: 2rem 3rem;
-  border: 1px solid #ffffff;
-  line-height: 5rem;
-  vertical-align: middle;
-}
-header .contact_tel {
-  font-size: 2.5rem;
-  line-height: 5.6rem;
-  color: #ffffff;
-  text-align: right;
-  font-weight: 900;
-  padding-left: 2.8rem;
-}
-header .title_text {
-  font-size: 3.7rem;
-  line-height: 4.5rem;
-  font-weight: 900;
-  color: #ffff33;
-  text-align: center;
-  margin-top: 5.5rem;
+.button_blue {
+  display: block;
+  width: 350px;
+  line-height: 65px;
+  height: 70px;
+  background-color: #059feb;
+  border: none;
+  border-radius: 50px;
   text-transform: uppercase;
-}
-header .info {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "info  form";
-}
-header .info .left {
-  grid-area: info;
-  margin-top: 20rem;
-}
-header .info .left_ul {
-  margin-left: 8rem;
-}
-header .info .left_li {
-  font-size: 2rem;
-  line-height: 3.5rem;
+  font-weight: 900;
+  font-size: 30px;
   color: #ffffff;
-  text-align: left;
-  position: relative;
-  font-weight: bold;
+  text-align: center;
 }
-header .info .left .icon-right {
-  display: inline-block;
+.topLine {
+  padding: 50px 0;
+}
+.topLine .logo_text {
+  font-family: "Panton";
+  font-weight: 900;
+  font-size: 24px;
+  color: #363636;
+  text-align: center;
+}
+.topLine .contact {
+  margin-top: -10px;
+}
+.topLine .contact .contact_phone {
+  font-family: "Panton";
+  font-weight: 900;
+  font-size: 30px;
+  color: #363636;
+  text-align: center;
+}
+.topLine .contact .contact_phone:hover {
+  color: #333333;
+  font-weight: 600;
+  text-decoration: none;
+}
+.topLine .contact .contact_btn {
+  display: block;
+  width: 265px;
+  height: 50px;
+  font-family: "Panton";
+  font-weight: 600;
+  font-size: 26px;
+  color: #363636;
+  text-align: center;
+  border: 1px solid #000000;
+  line-height: 50px;
+  border-radius: 10px;
+}
+.topLine .contact .contact_btn:hover {
+  color: #059feb;
+  -webkit-transition: all, 0.2s;
+  transition: all, 0.2s;
+  border: none;
+  text-decoration: none;
+}
+.menu {
+  background-color: #292d30;
+  line-height: 90px;
+}
+.menuNav_li {
+  font-family: "Panton";
+  font-weight: 300;
+  font-size: 30px;
+  color: #ffffff;
+  text-align: center;
+  padding: 0 10px;
+}
+.menuNav_li:hover {
+  -webkit-transition: all, 0.2s;
+  transition: all, 0.2s;
+  color: #059feb;
+  -webkit-text-decoration-line: overline;
+          text-decoration-line: overline;
+}
+.banner {
+  max-width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.banner_img {
+  display: block;
+  margin: 275px auto;
+  margin-bottom: 0;
+}
+.banner_title {
+  font-family: "Panton";
+  font-weight: 900;
+  font-size: 40px;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 30px;
+}
+.banner_text {
+  font-family: "Panton";
+  font-weight: 600;
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 30px;
+}
+.banner-label_btn {
+  font-family: "Panton";
+  font-weight: 600;
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 90px;
+}
+.banner_btn {
+  display: block;
+  width: 350px;
+  line-height: 65px;
+  height: 70px;
+  background-color: #059feb;
+  border: none;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 30px;
+  color: #ffffff;
+  text-align: center;
+  margin: 50px auto;
+}
+.banner_btn:hover {
+  -webkit-transition: all, 0.2s;
+  transition: all, 0.2s;
+  background-color: rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+}
+.banner-label_img {
+  font-family: "Panton";
+  font-weight: 600;
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 100px;
+}
+.banner_mouse {
+  font-size: 40px;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 100px;
+}
+.about_title {
+  font-family: "Panton ExtraBlack";
+  font-size: 36px;
+  color: #363636;
+  text-align: center;
+  padding-top: 140px;
+}
+.about .left,
+.about .right {
+  position: relative;
+  margin-top: 90px;
+}
+.about .left_line,
+.about .right_line {
+  display: block;
+  width: 85px;
+  height: 6px;
+  position: absolute;
+  left: -20px;
+  top: 40px;
+  background-color: #059feb;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  position: absolute;
-  top: .5rem;
-  left: -3rem;
 }
-header .info .form {
-  grid-area: form;
-  margin-top: 5rem;
-  margin-left: 6rem;
-  width: 42.5rem;
-  height: 41rem;
-  background-color: #fff;
+.about .left_icon,
+.about .right_icon {
+  font-size: 50px;
+  color: #000000;
+  text-align: left;
+  padding-left: 30px;
 }
-header .info .form_title {
-  font-size: 2.2rem;
-  line-height: 2.5rem;
-  color: #333333;
+.about .left_title,
+.about .right_title {
+  font-family: "Panton ExtraBlack";
+  font-size: 30px;
+  color: #363636;
   text-align: center;
-  font-weight: bold;
-  padding: 4.5rem;
+  text-align: left;
+  padding-left: 30px;
 }
-header .info .form_icon {
-  font-size: 1.5rem;
+.about .left_text,
+.about .right_text {
+  padding-top: 30px;
+  font-family: "Panton";
+  font-weight: 600;
+  font-size: 18px;
+  color: #000000;
+  text-align: left;
+}
+.sponsor {
+  background-color: #292d30;
+  max-height: 690px;
+  margin-top: 145px;
+}
+.sponsor_title {
+  font-family: "Panton ExtraBlack";
+  font-size: 34px;
   color: #ffffff;
-  line-height: 6rem;
-  padding-left: 2rem;
-  height: 6rem;
-  width: 6rem;
-  border-bottom-left-radius: 5px;
-  border-top-left-radius: 5px;
-  background-color: #333333;
-  margin-left: 5rem;
-  margin-top: .5rem;
+  text-align: center;
+  padding-top: 60px;
 }
-header .info .form_input {
-  height: 6rem;
-  width: 26rem;
-  border: 1px solid #333333;
-  border-bottom-right-radius: 5px;
-  border-top-right-radius: 5px;
-  background-color: #fff;
-  margin-right: 5rem;
-  margin-top: .5rem;
-  font-size: 1.5rem;
-  line-height: 4.5rem;
-  padding-left: 2rem;
-  font-weight: bold;
-  color: #999999;
+.sponsor_img {
+  width: 16%;
+  vertical-align: middle;
+  padding: 40px 5px;
 }
-header .info .form_input:focus {
-  outline: #000000 !important;
-  color: #333333 !important;
+.sponsor_img:last-child {
+  margin-left: 28%;
+  padding: 20px 5px;
 }
-header .info .form_icon,
-header .info .form_iput {
+.advantages_title {
+  font-family: "Panton ExtraBlack";
+  font-size: 36px;
+  color: #363636;
+  text-align: center;
+  padding-top: 100px;
+}
+.advantages_line {
+  display: block;
+  width: 180px;
+  height: 6px;
+  background-color: #059feb;
+  margin: 20px auto;
+}
+.advantages_text {
+  font-family: "Panton";
+  font-weight: 600;
+  font-size: 24px;
+  color: #000000;
+  text-align: center;
+}
+.advantages .box1,
+.advantages .box2,
+.advantages .box3,
+.advantages .box4 {
   display: inline-block;
   vertical-align: top;
-  margin-right: -0.5rem;
+  width: 24%;
+  text-align: center;
+  margin: 0 5px;
+  margin-top: 100px;
 }
-header .info .form_btn {
-  width: 32rem;
-  height: 5rem;
-  border: none;
-  background-color: #ffff33;
-  border-bottom: 4px solid #999900;
-  border-radius: 5px;
-  margin: 1rem 5rem;
-  color: #333333;
-  font-weight: bold;
-  font-size: 1.5rem;
-  line-height: 4.5rem;
+.advantages .box1_img,
+.advantages .box2_img,
+.advantages .box3_img,
+.advantages .box4_img {
+  font-size: 120px;
+  color: #059feb;
 }
-header .photo {
-  display: block;
-  margin: -8rem auto;
-}
-.advantages {
-  margin-top: 10rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-areas: "box_1 box_2 box_3 box_4" "box_5 box_6 box_7 box_8" ". box_9 box_10 .";
-}
-.advantages .box {
-  margin: 4.5rem 0;
-}
-.advantages .box_icon {
-  height: 8rem;
-  width: 9rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #ffff33;
-  border-radius: 50%;
-  font-size: 2.4rem;
-  margin-left: 35%;
-}
-.advantages .box_text {
-  font-size: 1.8rem;
+.advantages .box1_title,
+.advantages .box2_title,
+.advantages .box3_title,
+.advantages .box4_title {
+  font-family: "Panton";
+  font-weight: 600;
+  font-size: 30px;
   color: #333333;
   text-align: center;
-  line-height: 2.2rem;
-  font-weight: bold;
-  padding-top: 3rem;
+  padding-top: 20px;
 }
-.advantages .box:nth-child(1) {
-  grid-area: box_1;
+.advantages .box1_text,
+.advantages .box2_text,
+.advantages .box3_text,
+.advantages .box4_text {
+  font-family: "Panton";
+  font-weight: 600;
+  font-size: 18px;
+  color: #333333;
+  text-align: center;
+  padding-top: 20px;
 }
-.advantages .box:nth-child(2) {
-  grid-area: box_2;
+.portfolio {
+  margin-top: 160px;
 }
-.advantages .box:nth-child(3) {
-  grid-area: box_3;
+.portfolio_title {
+  font-family: "Panton ExtraBlack";
+  font-size: 36px;
+  color: #363636;
+  text-align: center;
 }
-.advantages .box:nth-child(4) {
-  grid-area: box_4;
+.portfolio_line {
+  display: block;
+  width: 180px;
+  height: 6px;
+  background-color: #059feb;
+  margin: 20px auto;
 }
-.advantages .box:nth-child(5) {
-  grid-area: box_5;
+.portfolio_text {
+  font-family: "Panton";
+  font-weight: 600;
+  font-size: 24px;
+  color: #000000;
+  text-align: center;
+  padding-top: 20px;
 }
-.advantages .box:nth-child(6) {
-  grid-area: box_6;
+.portfolio .box_top {
+  margin-top: 85px;
 }
-.advantages .box:nth-child(7) {
-  grid-area: box_7;
+.portfolio .row {
+  max-width: 100%;
 }
-.advantages .box:nth-child(8) {
-  grid-area: box_8;
+.portfolio_box .col {
+  padding-left: 0;
+  padding-right: 0;
 }
-.advantages .box:nth-child(9) {
-  grid-area: box_9;
+.portfolio_box .photo {
+  height: 480px;
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
 }
-.advantages .box:nth-child(10) {
-  grid-area: box_10;
+.portfolio_box .photo:hover .sign {
+  -webkit-transition: all, 0.3s;
+  transition: all, 0.3s;
+  background-color: rgba(44, 55, 52, 0.6);
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  text-decoration: none;
+}
+.portfolio_box .photo .sign {
+  height: 100%;
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+.portfolio_box .photo_text {
+  font-family: "Panton ExtraBlack";
+  font-size: 40px;
+  color: #ffffff;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  padding-top: 215px;
+}
+.portfolio_box .photo_btn {
+  display: block;
+  width: 335px;
+  height: 90px;
+  line-height: 90px;
+  margin: 10px auto;
+  border: 2px solid #059feb;
+  -webkit-box-shadow: inset 0px 0px 10px #2177a2;
+          box-shadow: inset 0px 0px 10px #2177a2;
+  font-family: "Panton ExtraBlack";
+  font-size: 40px;
+  color: #059feb;
+  text-align: center;
+}
+.price {
+  margin-top: 90px;
+}
+.price_title {
+  font-family: "Panton ExtraBlack";
+  font-size: 36px;
+  color: #363636;
+  text-align: center;
+}
+.price_line {
+  display: block;
+  width: 180px;
+  height: 6px;
+  background-color: #059feb;
+  margin: 20px auto;
+}
+.price_info {
+  margin-top: 100px;
+}
+.price_info .info_text {
+  font-family: "Panton";
+  font-weight: 600;
+  font-size: 36px;
+  color: #333333;
+  text-align: left;
+  padding: 40px 0;
+}
+.price_info .info_btn {
+  display: block;
+  width: 350px;
+  line-height: 65px;
+  height: 70px;
+  background-color: #059feb;
+  border: none;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 30px;
+  color: #ffffff;
+  text-align: center;
+  margin-left: 45%;
+  margin-top: 160px;
+  line-height: 70px;
+}
+.price_info .info_btn:hover {
+  -webkit-transition: all, 0.2s;
+  transition: all, 0.2s;
+  -webkit-text-decoration: #6610f2 !important;
+          text-decoration: #6610f2 !important;
+}
+.price_img {
+  margin-top: 180px;
+}
+.footer {
+  background-color: #292d30;
+  margin-top: 160px;
+}
+.footer_title {
+  font-family: "Panton ExtraBlack";
+  font-size: 36px;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 70px;
+}
+.footer .left {
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+.footer .left_text {
+  font-family: "Panton";
+  font-weight: 600;
+  font-size: 24px;
+  color: #ffffff;
+  text-align: left;
+}
+.footer .center {
+  margin-top: 75px;
+  margin-bottom: 75px;
+  text-align: center;
+}
+.footer .center_box {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 10px;
+  background-color: #059feb;
+  font-family: "Panton";
+  font-weight: 300;
+  font-size: 35px;
+  color: #ffffff;
+  text-align: center;
+}
+.footer .center_box:hover {
+  -webkit-transition: all, 0.2s;
+  transition: all, 0.2s;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #059feb;
+  text-decoration: none;
+}
+.footer .center_text {
+  font-family: "Panton";
+  font-weight: 600;
+  font-size: 24px;
+  color: #ffffff;
+  text-align: left;
+}
+.footer .right {
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+.footer .right_phone {
+  font-family: "Panton";
+  font-weight: 900;
+  font-size: 24px;
+  color: #ffffff;
+  text-align: left;
+}
+.footer .right_phone:hover {
+  color: #059feb;
+  font-weight: 300;
+  text-decoration: none;
+}
+.footer .right_mail {
+  font-family: "Panton";
+  font-weight: 600;
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+  padding-left: 55px;
+}
+.footer .right_mail:hover {
+  color: #059feb;
+  font-weight: 300;
+  text-decoration: none;
 }
 @media (max-width: 1199px) {
   .container {
     width: 980px;
   }
-  html {
-    font-size: 9px;
+  .topLine .logo_text {
+    font-family: "Panton";
+    font-weight: 900;
+    font-size: 18px;
+    color: #363636;
+    text-align: center;
   }
-  header .topLine {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+  .topLine .contact .contact_phone {
+    font-family: "Panton";
+    font-weight: 900;
+    font-size: 18px;
+    color: #363636;
+    text-align: center;
+  }
+  .topLine .contact .contact_btn {
+    display: block;
+    width: 200px;
+    font-family: "Panton";
+    font-weight: 600;
+    font-size: 18px;
+    color: #363636;
+    text-align: center;
+  }
+  .menu {
+    background-color: #292d30;
+    line-height: 20px;
+  }
+  .menuNav_li {
+    font-family: "Panton";
+    font-weight: 300;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    display: block;
+    text-align: left;
+    padding: 10px 20px;
+  }
+  .banner_img {
+    margin: 75px auto;
+    margin-bottom: 0;
+  }
+  .banner_title {
+    font-family: "Panton";
+    font-weight: 900;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+  }
+  .banner_text {
+    font-family: "Panton";
+    font-weight: 600;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .banner-label_btn {
+    font-family: "Panton";
+    font-weight: 600;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 50px;
+  }
+  .banner_btn {
+    display: block;
+    width: 350px;
+    line-height: 65px;
+    height: 70px;
+    background-color: #059feb;
+    border: none;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+    width: 200px;
+    font-size: 16px;
+    margin: 50px auto;
+  }
+  .banner-label_img {
+    font-family: "Panton";
+    font-weight: 600;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .banner_mouse {
+    font-size: 18px;
+    padding-bottom: 50px;
+  }
+  .about_title {
+    font-family: "Panton ExtraBlack";
+    font-size: 18px;
+    color: #363636;
+    text-align: center;
+    padding-top: 100px;
+  }
+  .about .left,
+  .about .right {
+    position: relative;
+    margin-top: 50px;
+  }
+  .about .left_line,
+  .about .right_line {
+    width: 75px;
+    position: absolute;
+    left: -20px;
+    top: 30px;
+  }
+  .about .left_title,
+  .about .right_title {
+    font-family: "Panton ExtraBlack";
+    font-size: 18px;
+    color: #363636;
+    text-align: center;
+    text-align: left;
+  }
+  .about .left_text,
+  .about .right_text {
+    font-family: "Panton";
+    font-weight: 600;
+    font-size: 16px;
+    color: #000000;
+    text-align: left;
+  }
+  .sponsor {
+    background-color: #292d30;
+    max-height: 690px;
+    margin-top: 100px;
+  }
+  .sponsor_title {
+    font-family: "Panton ExtraBlack";
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 60px;
+  }
+  .sponsor_img {
+    width: 24%;
+    vertical-align: middle;
+    padding: 40px;
+  }
+  .sponsor_img:last-child {
+    margin-left: 0;
+    padding: 0px 0px;
+  }
+  .advantages_title {
+    font-family: "Panton ExtraBlack";
+    font-size: 18px;
+    color: #363636;
+    text-align: center;
+    padding-top: 100px;
+  }
+  .advantages_line {
+    width: 120px;
+  }
+  .advantages_text {
+    font-family: "Panton";
+    font-weight: 600;
+    font-size: 16px;
+    color: #000000;
+    text-align: center;
+  }
+  .advantages .box1,
+  .advantages .box2,
+  .advantages .box3,
+  .advantages .box4 {
+    width: 48%;
+  }
+  .advantages .box1_img,
+  .advantages .box2_img,
+  .advantages .box3_img,
+  .advantages .box4_img {
+    font-size: 70px;
+  }
+  .advantages .box1_title,
+  .advantages .box2_title,
+  .advantages .box3_title,
+  .advantages .box4_title {
+    font-family: "Panton";
+    font-weight: 900;
+    font-size: 18px;
+    color: #333333;
+    text-align: center;
+  }
+  .advantages .box1_text,
+  .advantages .box2_text,
+  .advantages .box3_text,
+  .advantages .box4_text {
+    font-family: "Panton";
+    font-weight: 600;
+    font-size: 16px;
+    color: #333333;
+    text-align: center;
+  }
+  .portfolio {
+    margin-top: 100px;
+  }
+  .portfolio_title {
+    font-family: "Panton ExtraBlack";
+    font-size: 18px;
+    color: #363636;
+    text-align: center;
+  }
+  .portfolio_line {
+    width: 70px;
+  }
+  .portfolio_text {
+    font-family: "Panton";
+    font-weight: 600;
+    font-size: 16px;
+    color: #000000;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .portfolio .box_top {
+    margin-top: 85px;
+  }
+  .portfolio .row {
+    max-width: 100%;
+  }
+  .portfolio_box .col {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .portfolio_box .photo_text {
+    font-family: "Panton ExtraBlack";
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding-top: 215px;
+  }
+  .portfolio_box .photo_btn {
+    width: 205px;
+    height: 60px;
+    line-height: 60px;
+    font-family: "Panton ExtraBlack";
+    font-size: 18px;
+    color: #059feb;
+    text-align: center;
+  }
+  .price {
+    margin-top: 90px;
+  }
+  .price_title {
+    font-family: "Panton ExtraBlack";
+    font-size: 18px;
+    color: #363636;
+    text-align: center;
+  }
+  .price_line {
+    width: 100px;
+  }
+  .price_info {
+    margin-top: 50px;
+  }
+  .price_info .info_text {
+    font-family: "Panton";
+    font-weight: 600;
+    font-size: 18px;
+    color: #333333;
+    text-align: left;
+    padding: 20px 0;
+  }
+  .price_info .info_btn {
+    display: block;
+    width: 350px;
+    line-height: 65px;
+    height: 70px;
+    background-color: #059feb;
+    border: none;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+    margin-left: 50%;
+    font-size: 18px;
+    width: 200px;
+    margin-top: 60px;
+    line-height: 70px;
+  }
+  .price_img {
+    margin-top: 70px;
+  }
+  .footer {
+    background-color: #292d30;
+    margin-top: 100px;
+  }
+  .footer_title {
+    font-family: "Panton ExtraBlack";
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+  }
+  .footer .left_img {
+    background-size: cover;
+  }
+  .footer .left_text {
+    font-family: "Panton";
+    font-weight: 600;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: left;
+  }
+  .footer .center_text {
+    font-family: "Panton";
+    font-weight: 600;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: left;
+  }
+  .footer .right_phone {
+    font-family: "Panton";
+    font-weight: 900;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: left;
+  }
+  .footer .right_mail {
+    font-family: "Panton";
+    font-weight: 600;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    padding-left: 40px;
   }
 }
 @media (max-width: 991px) {
   .container {
     width: 780px;
   }
-  html {
-    font-size: 8px;
+  .portfolio_box .photo_btn {
+    width: 155px;
+    height: 60px;
+    line-height: 60px;
+    font-family: "Panton ExtraBlack";
+    font-size: 18px;
+    color: #059feb;
+    text-align: center;
   }
-  header .info {
-    display: block;
-  }
-  header .info .left {
+  .price_img {
     display: none;
   }
-  header .info .form {
-    display: block;
-    margin: 3rem auto;
-    width: 42.5rem;
-    height: 41rem;
-    background-color: #fff;
+  .footer .left_img {
+    width: 100%;
   }
-  header .photo {
-    display: block;
-    margin: 8rem auto;
+  .footer .right_phone {
+    font-family: "Panton";
+    font-weight: 900;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: left;
+  }
+  .footer .right_mail {
+    font-family: "Panton";
+    font-weight: 600;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    padding-left: 0;
   }
 }
 @media (max-width: 767px) {
   .container {
     width: 100%;
   }
-  html {
-    font-size: 7px;
+  .topLine {
+    display: none;
   }
-  header .contact {
-    grid-area: right;
+  .sponsor_img {
+    width: 15%;
+    vertical-align: middle;
+    padding: 0px;
   }
-  header .contact_tel {
+  .sponsor_img:last-child {
+    margin-left: 20%;
+    padding: 0px 0px;
+  }
+  .portfolio {
+    display: none;
+  }
+  .advantages .box1,
+  .advantages .box2,
+  .advantages .box3,
+  .advantages .box4 {
+    width: 45%;
+  }
+  .price .info_btn {
     display: block;
-    font-size: 2.5rem;
-    line-height: 5.6rem;
+    width: 350px;
+    line-height: 65px;
+    height: 70px;
+    background-color: #059feb;
+    border: none;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+    margin-left: 30%;
+    font-size: 18px;
+    width: 200px;
+    margin-top: 60px;
+    line-height: 70px;
+  }
+  .footer .center {
+    margin-left: 40px;
+  }
+  .footer .center_box {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 10px;
+    background-color: #059feb;
+    font-family: "Panton";
+    font-weight: 300;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+  }
+  .footer .center_text {
+    font-family: "Panton";
+    font-weight: 600;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: left;
+  }
+  .footer .right {
+    margin-left: 5px;
+  }
+  .footer .right_phone {
+    font-family: "Panton";
+    font-weight: 600;
+    font-size: 16px;
     color: #ffffff;
     text-align: right;
-    font-weight: 900;
-    padding-left: 0;
+  }
+  .footer .right_mail {
+    font-family: "Panton";
+    font-weight: 600;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    padding-left: 20px;
   }
 }
 @media (max-width: 479px) {
   .container {
     width: 100%;
   }
-  header .logo {
-    grid-area: left;
-    display: grid;
-    grid-template-columns: 1fr ;
-    grid-template-areas: "box";
-  }
-  header .logo_text-top {
+  .topLine {
     display: none;
   }
-  header .logo_text-bottom {
-    display: none;
+  .banner_img {
+    display: block;
+    width: 100%;
   }
-  header .contact_btn {
-    font-size: 1.5rem;
+  .price .info_btn {
+    width: 350px;
+    line-height: 65px;
+    height: 70px;
+    background-color: #059feb;
+    border: none;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 30px;
     color: #ffffff;
-    font-weight: 100;
     text-align: center;
-    padding: 1rem 2rem;
-    border: 1px solid #ffffff;
-    line-height: 5rem;
-    vertical-align: middle;
+    display: block;
+    margin: 0 auto;
+    font-size: 18px;
+    width: 200px;
+    margin-top: 60px;
+    line-height: 70px;
   }
-  .advantages {
-    margin-top: 10rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "box_1 box_2 " "box_3 box_4 " "box_5 box_6" "box_7 box_8" "box_9 box_10";
+  .footer .left {
+    display: none;
+  }
+  .footer .center {
+    text-align: center;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+  .footer .center_box {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 10px;
+    background-color: #059feb;
+    font-family: "Panton";
+    font-weight: 300;
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+  }
+  .footer .right {
+    text-align: center;
+    margin-top: 0;
+    padding-top: 20px;
+  }
+  .footer .right_phone {
+    font-family: "Panton";
+    font-weight: 600;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: left;
+  }
+  .footer .right_mail {
+    font-family: "Panton";
+    font-weight: 600;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    display: block;
+    padding-left: 0;
   }
 }
