@@ -31,7 +31,7 @@ a {
   text-decoration: none;
 }
 .container {
-  width: 1250px;
+  width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -412,14 +412,14 @@ footer .table .right .copyright {
   }
 }
 @media (max-width: 767px) {
-  margin-right: 50px;
-  margin-left: 50px;
-  
   .container {
     width: 100%;
   }
 }
 @media (max-width: 479px) {
+  margin-right: 50px;
+  margin-left: 50px;
+  
   .container {
     width: 100%;
   }
