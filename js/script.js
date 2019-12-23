@@ -3,11 +3,11 @@ $(document).ready(function () {
     var menu = $('.menu');
     var nav = $('.menu a');
     link.click(function () {
-        link.toggleClass("menu-link_active")
-        menu.toggleClass("menu_active")
-    })
+        link.toggleClass("menu-link_active");
+        menu.toggleClass("menu_active");
+    });
     nav.click(function () {
-        link.toggleClass("menu-link_active")
-        menu.toggleClass("menu_active")
-    })
+        link.toggleClass("menu-link_active");
+        menu.toggleClass("menu_active");
+    });
 });
