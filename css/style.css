@@ -59,6 +59,29 @@ a {
 body {
   background-color: #000000;
 }
+.banner .topLine {
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.banner .topLine .lan {
+  border: none;
+  outline: none !important;
+  font-size: 14px;
+  background-color: transparent;
+  color: #ffffff;
+}
+.banner .topLine .lan:hover {
+  color: #aeaeae;
+}
+.banner .topLine .lan option {
+  border: none;
+  outline: none !important;
+}
 .banner .menu {
   opacity: 0.95;
   background-color: #000000;
@@ -415,10 +438,14 @@ footer .table .right .copyright {
   .container {
     width: 100%;
   }
+  .content .about_img {
+    margin-right: 95px;
+    margin-left: 95px;
+  }
 }
 @media (max-width: 479px) {
-  margin-right: 50px;
-  margin-left: 50px;
+  margin-right: 40px;
+  margin-left: 40px;
   
   .container {
     width: 100%;
