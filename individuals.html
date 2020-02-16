@@ -13,24 +13,24 @@
 <header class="header">
     <div class="container">
         <div class="row">
-            <div class="header_logo invisLink col-xl-4">
+            <div class="header_logo invisLink col-xl-4 col-lg-4">
                 <span class="logo_img icon-logo_des"></span>
                 <span class="logo_top">ремоффплюс</span>
                 <span class="logo_bottom">Каждой задаче — свое решение</span>
                 <a href="main.html">main</a>
             </div>
-            <div class="header_address col-xl-3">
+            <div class="header_address col-xl-3 col-lg-2">
                 <span class="header_address_icon icon-location"></span>
                 <span class="header_address_text">г. Брест, ул. Краснознаменная 97</span>
                 <a class="header_address_link" href="#contact">Посмотреть на карте</a>
             </div>
-            <div class="header_tel col-xl-3">
+            <div class="header_tel col-xl-3 col-lg-3">
                 <span class="header_tel_icon icon-phone"></span>
-                <a href="tel:+375 29 720 09 85" class="header_tel_top">+375 29 <span>720 09 85</span></a>
-                <a href="tel:+375 29 729 76 54" class="header_tel_bottom">+375 29 <span>729 76 54</span></a>
+                <a href="tel:+375297200985" class="header_tel_top">+375 29 <span>720 09 85</span></a>
+                <a href="tel:+375297297654" class="header_tel_bottom">+375 29 <span>729 76 54</span></a>
                 <a href="#contact" class="header_tel_link">Все телефоны</a>
             </div>
-            <div class="header_soc col-xl-2">
+            <div class="header_soc col-xl-2 col-lg-3">
                 <a class="header_soc_1 icon-viber" href=""></a>
                 <a class="header_soc_2 icon-whatsapp" href=""></a>
                 <a class="header_soc_3 icon-vk" href=""></a>
@@ -91,8 +91,8 @@
         </div>
         <div class="advantages entity_page">
             <h2 class="entity_page_title">Что же выгодно отличает нас от других компаний? </h2>
-            <div class="row top">
-                <div class="box ">
+            <div class="advantages_box">
+                <div class="box top">
                     <h3 class="box_h3">Выгодные покупки</h3>
                     <p class="box_text">Наличный, безналичный расчет, карты<br> рассрочек. Скидки постоянным<br>
                         клиентам
@@ -101,7 +101,7 @@
                         <p class="number">01</p>
                     </div>
                 </div>
-                <div class="box ">
+                <div class="box top">
                     <h3 class="box_h3">Удобная связь</h3>
                     <p class="box_text">Консультация, прием и обработка<br> заказов любым удобным для вас<br> способом:
                         телефон, факс, e-mail, skype,<br> viber, whatsapp</p>
@@ -109,7 +109,7 @@
                         <p class="number">02</p>
                     </div>
                 </div>
-                <div class="box ">
+                <div class="box top">
                     <h3 class="box_h3">Сроки доставки</h3>
                     <p class="box_text">Быстрая обработка заказов, отлаженные<br> системы закупки, широкая
                         складская<br> программа обеспечивают поставку<br> товара «сегодня на сегодня»</p>
@@ -117,9 +117,7 @@
                         <p class="number">03</p>
                     </div>
                 </div>
-            </div>
-            <div class="row bottom">
-                <div class="box ">
+                <div class="box bottom">
                     <h3 class="box_h3">Экономия времени<br> и денег</h3>
                     <p class="box_text text_4">Вы можете купить все в одном месте, на<br> любую машину, любого
                         производителя.<br>
@@ -129,7 +127,7 @@
                         <p class="number">04</p>
                     </div>
                 </div>
-                <div class="box ">
+                <div class="box bottom">
                     <h3 class="box_h3">Эксклюзивные<br> запчасти</h3>
                     <p class="box_text text_5">Занимаемся как стандартными, так и не<br> стандартными заказами на ретро
                         и<br>
@@ -138,7 +136,7 @@
                         <p class="number">05</p>
                     </div>
                 </div>
-                <div class="box ">
+                <div class="box bottom">
                     <h3 class="box_h3">Заказ без предоплаты</h3>
                     <p class="box_text text_6">Заказывайте не выходя из дома. Оплата при получении на магазине<br></p>
                     <div class="box_ellipse" style="background-image: url(img/png/Ellipse.png);">
@@ -220,37 +218,58 @@
             <form id="form" class="form" action="#">
                 <h2 class="form_h2">Оставьте заявку<br> у нас на сайте</h2>
                 <img src="img/png/sale.png" alt="" class="form_img">
-                <select name="mark" class="form_input form_select form_left top">
-                    <option class="form_select_option">Марка автомобиля</option>
-                    <option class="form_select_option" value="BMW">BMW</option>
-                    <option class="form_select_option" value="Audi">Audi</option>
-                    <option class="form_select_option" value="Lamborghini">Lamborghini</option>
-                    <option class="form_select_option" value="Mercedes">Mercedes</option>
-                </select>
-                <input type="text" name="model" class="form_input top " placeholder="Модель">
-                <select name="" class="form_input form_select top">
-                    <option class="form_select_option">Год выпуска</option>
-                    <option class="form_select_option" value="2019">2019</option>
-                    <option class="form_select_option" value="2018">2018</option>
-                    <option class="form_select_option" value="2017">2017</option>
-                    <option class="form_select_option" value="2016">2016</option>
-                    <option class="form_select_option" value="2015">2015</option>
-                    <option class="form_select_option" value="2014">2014</option>
-                    <option class="form_select_option" value="2013">2013</option>
-                    <option class="form_select_option" value="2012">2012</option>
-                    <option class="form_select_option" value="2011">2011</option>
-                    <option class="form_select_option" value="2010">2010</option>
-                </select>
-                <input type="text" class="form_left form_long" placeholder="VIN (номер кузова)">
-                <select name="" class="form_input form_select">
-                    <option class="form_select_option">Тип топлива</option>
-                    <option class="form_select_option" value="Дизель">Дизель</option>
-                    <option class="form_select_option" value="Бензин">Бензин</option>
-                </select>
-                <textarea readonly name="" class="form_comments" placeholder="Какие запчасти ищете?"></textarea>
-                <input type="text" class="form_input form_left" placeholder="Объем двигателя">
-                <input type="text" name="name" class="form_input form_input_rec " placeholder="Ваше имя">
-                <input id="tel" type="tel" name="tel" class="form_input " placeholder="Ваш телефон">
+                <div class="form_grid">
+                    <div class="form_box">
+                        <select name="mark" class="form_input form_select  top">
+                            <option class="form_select_option">Марка автомобиля</option>
+                            <option class="form_select_option" value="BMW">BMW</option>
+                            <option class="form_select_option" value="Audi">Audi</option>
+                            <option class="form_select_option" value="Lamborghini">Lamborghini</option>
+                            <option class="form_select_option" value="Mercedes">Mercedes</option>
+                        </select>
+                    </div>
+                    <div class="form_box">
+                        <input type="text" name="model" class="form_input" placeholder="Модель">
+                    </div>
+                    <div class="form_box">
+                        <select name="years" class="form_input form_select">
+                            <option class="form_select_option">Год выпуска</option>
+                            <option class="form_select_option" value="2019">2019</option>
+                            <option class="form_select_option" value="2018">2018</option>
+                            <option class="form_select_option" value="2017">2017</option>
+                            <option class="form_select_option" value="2016">2016</option>
+                            <option class="form_select_option" value="2015">2015</option>
+                            <option class="form_select_option" value="2014">2014</option>
+                            <option class="form_select_option" value="2013">2013</option>
+                            <option class="form_select_option" value="2012">2012</option>
+                            <option class="form_select_option" value="2011">2011</option>
+                            <option class="form_select_option" value="2010">2010</option>
+                        </select>
+                    </div>
+                    <div class="form_box">
+                        <input type="text" class=" form_long" placeholder="VIN (номер кузова)">
+                    </div>
+                    <div class="form_box">
+                        <select name="toplivo" class="form_input form_select toplivo">
+                            <option class="form_select_option">Тип топлива</option>
+                            <option class="form_select_option" value="Дизель">Дизель</option>
+                            <option class="form_select_option" value="Бензин">Бензин</option>
+                        </select>
+                    </div>
+                    <div class="form_box">
+                        <textarea name="message" class="form_comments" placeholder="Какие запчасти ищете?"></textarea>
+                    </div>
+                    <div class="form_box">
+                        <input type="text" class="form_input " placeholder="Объем двигателя">
+                    </div>
+                    <div class="form_box">
+                        <input type="text" name="name" class="form_input form_input_rec " placeholder="Ваше имя">
+
+                    </div>
+                    <div class="form_box">
+                        <input id="tel" type="tel" name="tel" class="form_input " placeholder="Ваш телефон">
+                    </div>
+                </div>
                 <div data-target="modal" data-toggle="#mainModal">
                     <button class="form_btn btn">Оставить заявку</button>
                 </div>
@@ -282,24 +301,24 @@
             </div>
         </div>
         <div class="row center">
-            <div class="header_logo invisLink col-xl-4">
+            <div class="header_logo invisLink col-xl-4 col-lg-4">
                 <span class="logo_img icon-logo_des"></span>
                 <span class="logo_top">ремоффплюс</span>
                 <span class="logo_bottom">Каждой задаче — свое решение</span>
                 <a href="">main</a>
             </div>
-            <div class="header_address col-xl-3">
+            <div class="header_address col-xl-3 col-lg-2">
                 <span class="header_address_icon icon-location"></span>
                 <span class="header_address_text">г. Брест, ул. Краснознаменная 97</span>
-                <a class="header_address_link" href="">Посмотреть на карте</a>
+                <a class="header_address_link" href="#contact">Посмотреть на карте</a>
             </div>
-            <div class="header_tel col-xl-3">
+            <div class="header_tel col-xl-3 col-lg-3">
                 <span class="header_tel_icon icon-phone"></span>
-                <a href="tel:+375 29 720 09 85" class="header_tel_top">+375 29 <span>720 09 85</span></a>
-                <a href="tel:+375 29 729 76 54" class="header_tel_bottom">+375 29 <span>729 76 54</span></a>
-                <a href="" class="header_tel_link">Все телефоны</a>
+                <a href="tel:+375297200985" class="header_tel_top">+375 29 <span>720 09 85</span></a>
+                <a href="tel:+375297297654" class="header_tel_bottom">+375 29 <span>729 76 54</span></a>
+                <a href="#contact" class="header_tel_link">Все телефоны</a>
             </div>
-            <div class="header_soc col-xl-2">
+            <div class="header_soc col-xl-2 col-lg-3">
                 <a class="header_soc_1 icon-viber" href=""></a>
                 <a class="header_soc_2 icon-whatsapp" href=""></a>
                 <a class="header_soc_3 icon-vk" href=""></a>
