@@ -1,23 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="749acaa5-c477-497c-8a9a-e12c46c0478d" name="Default Changelist" comment="" />
+    <list default="true" id="82427ea3-21a0-42a6-84c5-8541b3d3fb48" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectId" id="1XImYrvTBq2uZcN8y55HrFkfCby" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Less File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Xnarq41rglWOomFdMpCOn6munD" />
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TestExesirceKurs/SETKA" />
+    <property name="list.type.of.created.stylesheet" value="Less" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="OPEN_URL_DIALOG">
+      <recent name="http://azplus.by/yuridicheskim-licam" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -36,12 +51,20 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="749acaa5-c477-497c-8a9a-e12c46c0478d" name="Default Changelist" comment="" />
-      <created>1580742033783</created>
+      <changelist id="82427ea3-21a0-42a6-84c5-8541b3d3fb48" name="Default Changelist" comment="" />
+      <created>1581684514001</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1580742033783</updated>
-      <workItem from="1580742034950" duration="2619000" />
+      <updated>1581684514001</updated>
+      <workItem from="1581684516415" duration="1128000" />
+      <workItem from="1581686136370" duration="5397000" />
+      <workItem from="1581708474752" duration="5000" />
+      <workItem from="1581708490361" duration="4417000" />
+      <workItem from="1581758403283" duration="4108000" />
+      <workItem from="1581762542625" duration="1515000" />
+      <workItem from="1581767947374" duration="10336000" />
+      <workItem from="1581788571091" duration="19673000" />
+      <workItem from="1581839609559" duration="29960000" />
     </task>
     <servers />
   </component>
