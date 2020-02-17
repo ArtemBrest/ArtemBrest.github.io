@@ -2893,6 +2893,12 @@ a {
   }
 
   .header {
+    &_box {
+      display: grid;
+      margin: 0 auto;
+      grid-template-columns: 10fr 2fr;
+      grid-template-areas: "box_1 box_5";
+    }
     .menu {
       &-link {
         right: 50px;
@@ -2903,12 +2909,12 @@ a {
 
   .content {
     .banner {
-
       &_left {
-        position: relative;
+        height: 580px;
         background-color:transparent;
-        background-position: center center;
+        background-repeat: no-repeat;
         background-size: cover;
+        background-image:url(../img/png/back_mob_banner.png);
         width: 100%;
         &_title {
           margin-top: 14px;
@@ -2932,89 +2938,6 @@ a {
       }
 
     }
-   /* .banner {
-      &_left {
-        height: 650px;
-        width: 50%;
-        background-color: @main-color;
-
-        &_title {
-          font-weight: 700;
-          font-size: 60px;
-          line-height: 82px;
-          color: #FFFFFF;
-          margin-left: 20%;
-          margin-top: 90px;
-        }
-
-        &_subtitle {
-          margin-left: 20%;
-          margin-top: 70px;
-          font-weight: 700;
-          font-size: 36px;
-          line-height: 49px;
-          color: #FFFFFF;
-        }
-
-        &_text {
-          margin-left: 20%;
-          margin-top: 123.5px;
-          font-size: 16px;
-          line-height: 28px;
-          color: #FFFFFF;
-        }
-      }
-
-      &_right {
-        z-index: 1;
-        position: relative;
-        margin-left: -1%;
-        width: 50.5%;
-        height: 650px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-
-        &_img {
-          background-position: center;
-          transform: rotate(10deg);
-          margin-left: -13%;
-          padding-top: 80px;
-        }
-
-        &_box {
-          position: absolute;
-          width: 254px;
-          height: 284px;
-          background: #FFFFFF;
-          border: 10px solid #EF6058;
-          box-sizing: border-box;
-          box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
-          right: 10%;
-          bottom: 10%;
-
-          .number {
-            padding-top: 20px;
-            text-align: center;
-            font-weight: 800;
-            font-size: 100px;
-            line-height: 136px;
-            color: #FFFFFF;
-            text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
-          }
-
-          .text {
-            font-weight: 700;
-            font-size: 18px;
-            line-height: 28px;
-            text-align: center;
-            text-transform: uppercase;
-            color: @main-color;
-          }
-        }
-      }
-    }*/
-
     .about {
       &_title {
         font-size: 39px;
@@ -3046,18 +2969,13 @@ a {
         font-size: 28px;
         line-height: 38px;
       }
-
+      .advantages_box .box_text{
+        padding-right: 25px;
+      }
       &_box {
         &_h3{
           font-size: 20px;
           line-height: 27px;
-        }
-        &_text {
-          font-size: 14px;
-          line-height: 20px;
-          padding-left: 45px;
-          padding-top: 5px;
-          padding-right: 90px;
         }
         &_ellipse {
           .number{
@@ -3091,7 +3009,7 @@ a {
           margin-left: 42%;
         }
         &_btn {
-          width: 370px;
+          width: 307px;
           margin-left: 20px;
         }
       }
@@ -3100,8 +3018,13 @@ a {
   .footer {
     &_logo {
       margin-top: 25px;
-      margin-left: 30%;
+      margin-left: 11%;
       position: relative;
+      .logo_bottom{
+        position: absolute;
+        left: 73px;
+
+      }
     }
 
     &_address {
@@ -3146,7 +3069,7 @@ a {
       &_top {
         position: relative !important;
         top: 40px;
-        left: 23%;
+        left: 16%;
         font-weight: 700;
         font-size: 18px;
         line-height: 25px;
@@ -3157,7 +3080,7 @@ a {
       &_bottom {
         position: relative !important;
         top: 70px;
-        left: -16%;
+        left: -29%;
         right: 0;
         font-weight: 700;
         font-size: 18px;
@@ -3168,7 +3091,7 @@ a {
 
       &_link {
         position: absolute;
-        left: 0px;
+        left: 30%;
         top: 100px;
         font-size: 14px;
         line-height: 19px;
@@ -3179,15 +3102,9 @@ a {
 
     &_soc {
       display: block;
-      margin-left: 30%;
+      margin-left: 26%;
       margin-top: 125px;
       font-size: 46px;
-    }
-    &_box {
-      display: grid;
-      margin: 0 auto;
-      grid-template-columns: 12fr;
-      grid-template-areas: "box_1" " box_5"" box_2"" box_3"" box_4";
     }
   }
 }
