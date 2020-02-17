@@ -308,6 +308,7 @@ a {
   height: 650px;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 .content .banner_right_img {
   background-position: center;
@@ -2277,7 +2278,7 @@ a {
     width: 100%;
   }
   .content .banner_left_title {
-    margin-top: 16px;
+    margin-top: 14px;
   }
   .content .banner_left_title_subtitle {
     margin-top: 74px;
