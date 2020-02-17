@@ -1950,7 +1950,7 @@ a {
   .content .banner_left_title {
     z-index: 9999;
     margin-left: 5%;
-    margin-top: 86px;
+    margin-top: 47px;
     font-size: 40px;
     line-height: 58px;
   }
@@ -2312,7 +2312,7 @@ a {
     position: relative;
   }
   .footer_tel_icon {
-    position: relative !important;
+    position: absolute;
     font-size: 40px;
     border: 1px solid #BEC2C3;
     border-radius: 50%;
@@ -2320,7 +2320,7 @@ a {
     left: 47%;
   }
   .footer_tel_top {
-    position: relative !important;
+    position: absolute;
     top: 40px;
     left: 27%;
     font-weight: 700;
@@ -2330,11 +2330,8 @@ a {
     -webkit-transition: .2s;
     transition: .2s;
   }
-  .footer_tel_top span {
-    color: #000000;
-  }
   .footer_tel_bottom {
-    position: relative !important;
+    position: absolute;
     top: 70px;
     left: -18px;
     right: 0;
@@ -2346,7 +2343,7 @@ a {
     transition: .2s;
   }
   .footer_tel_link {
-    position: relative !important;
+    position: absolute;
     right: 0;
     left: -28.5%;
     top: 100px;
@@ -2395,5 +2392,259 @@ a {
 @media (max-width: 479px) {
   .container {
     width: 100%;
+  }
+  .header .menu-link {
+    right: 50px;
+  }
+  .content {
+    /* .banner {
+      &_left {
+        height: 650px;
+        width: 50%;
+        background-color: @main-color;
+
+        &_title {
+          font-weight: 700;
+          font-size: 60px;
+          line-height: 82px;
+          color: #FFFFFF;
+          margin-left: 20%;
+          margin-top: 90px;
+        }
+
+        &_subtitle {
+          margin-left: 20%;
+          margin-top: 70px;
+          font-weight: 700;
+          font-size: 36px;
+          line-height: 49px;
+          color: #FFFFFF;
+        }
+
+        &_text {
+          margin-left: 20%;
+          margin-top: 123.5px;
+          font-size: 16px;
+          line-height: 28px;
+          color: #FFFFFF;
+        }
+      }
+
+      &_right {
+        z-index: 1;
+        position: relative;
+        margin-left: -1%;
+        width: 50.5%;
+        height: 650px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        &_img {
+          background-position: center;
+          transform: rotate(10deg);
+          margin-left: -13%;
+          padding-top: 80px;
+        }
+
+        &_box {
+          position: absolute;
+          width: 254px;
+          height: 284px;
+          background: #FFFFFF;
+          border: 10px solid #EF6058;
+          box-sizing: border-box;
+          box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+          right: 10%;
+          bottom: 10%;
+
+          .number {
+            padding-top: 20px;
+            text-align: center;
+            font-weight: 800;
+            font-size: 100px;
+            line-height: 136px;
+            color: #FFFFFF;
+            text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+          }
+
+          .text {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 28px;
+            text-align: center;
+            text-transform: uppercase;
+            color: @main-color;
+          }
+        }
+      }
+    }*/
+  }
+  .content .banner_left {
+    position: relative;
+    background-color: transparent;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+  }
+  .content .banner_left_title {
+    margin-top: 14px;
+  }
+  .content .banner_left_title_subtitle {
+    margin-top: 74px;
+  }
+  .content .banner_left_text {
+    margin-left: 5%;
+    margin-top: 105.5px;
+    font-size: 12px;
+    line-height: 28px;
+    color: #FFFFFF;
+  }
+  .content .banner_right {
+    display: none;
+  }
+  .content .about_title {
+    font-size: 39px;
+    line-height: 49px;
+  }
+  .content .about_h3 {
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 27px;
+    padding-bottom: 25px;
+  }
+  .content .about_text {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .content .about_btn {
+    font-size: 16px;
+    width: 100%;
+  }
+  .content .advantages_title {
+    padding-top: 45px;
+    padding-bottom: 35px;
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .content .advantages_box_h3 {
+    font-size: 20px;
+    line-height: 27px;
+  }
+  .content .advantages_box_text {
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: 45px;
+    padding-top: 5px;
+    padding-right: 90px;
+  }
+  .content .advantages_box_ellipse .number {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .content .contact_title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .content .contact .circle {
+    margin-left: 32%;
+  }
+  .content .contact_form .form_h2 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .content .contact_form .form_img {
+    width: 150px;
+    height: 90px;
+    margin-left: 42%;
+  }
+  .content .contact_form .form_btn {
+    width: 370px;
+    margin-left: 20px;
+  }
+  .footer_logo {
+    margin-top: 25px;
+    margin-left: 30%;
+    position: relative;
+  }
+  .footer_address {
+    margin-top: 5px;
+    position: relative;
+    text-align: center;
+  }
+  .footer_address_icon {
+    position: relative !important;
+    left: 0;
+    top: 0;
+  }
+  .footer_address_text {
+    position: relative !important;
+    left: 10px;
+    top: 10px;
+    font-size: 14px;
+    line-height: 19px;
+    color: #404040;
+  }
+  .footer_address_link {
+    position: relative !important;
+    display: none;
+  }
+  .footer_tel {
+    margin-top: 25px;
+    position: relative;
+  }
+  .footer_tel_icon {
+    position: relative !important;
+    font-size: 40px;
+    border: 1px solid #BEC2C3;
+    border-radius: 50%;
+    top: 10px;
+    left: 45%;
+  }
+  .footer_tel_top {
+    position: relative !important;
+    top: 40px;
+    left: 23%;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #ED5F55;
+    -webkit-transition: .2s;
+    transition: .2s;
+  }
+  .footer_tel_bottom {
+    position: relative !important;
+    top: 70px;
+    left: -16%;
+    right: 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #ED5F55;
+    -webkit-transition: .2s;
+    transition: .2s;
+  }
+  .footer_tel_link {
+    position: absolute;
+    left: 0px;
+    top: 100px;
+    font-size: 14px;
+    line-height: 19px;
+    color: #8d9293;
+    -webkit-transition: .2s;
+    transition: .2s;
+  }
+  .footer_soc {
+    display: block;
+    margin-left: 30%;
+    margin-top: 125px;
+    font-size: 46px;
+  }
+  .footer_box {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 12fr;
+    grid-template-areas: "box_1" " box_5" " box_2" " box_3" " box_4";
   }
 }
