@@ -2365,25 +2365,91 @@ a {
   .container {
     width: 100%;
   }
+  .content .entity_title {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .content .entity_p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .content .entity_page_title {
+    font-size: 28px;
+    line-height: 38px;
+  }
   .content .line_title {
     font-size: 30px;
   }
   .content .line_h3 {
     font-size: 20px;
   }
+  .content .letter_form_p {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    padding-top: 90px;
+    color: #000000;
+  }
+  .content .letter_form_title {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 44px;
+    text-align: center;
+    padding-top: 80px;
+    color: #ef6058;
+  }
+  .content .letter_form_h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    padding-top: 80px;
+    color: #000000;
+  }
+  .content .cards_title {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .content .cards .mob_box {
+    display: none;
+  }
+  .content .cards .card_box_img {
+    font-size: 40px;
+    padding-top: 15px;
+  }
+  .content .cards .card_box .card_6_text {
+    padding-left: 15%;
+  }
+  .content .cards .card_box .card_5_text {
+    padding-left: 15%;
+  }
+  .content .cards .card_box .card_7_text {
+    padding-left: 31%;
+  }
+  .content .cards .card_box_text {
+    font-size: 14px;
+    line-height: 18px;
+    padding-left: 25%;
+  }
   .content .cards .card_box {
-    width: 96%;
+    width: 160px;
+    height: 115px;
   }
   .content .cards .card_box_1 {
     display: grid;
     margin: 0 auto;
     max-width: 1200px;
-    grid-template-columns: 1fr;
-    grid-template-areas: "box_1" "box_2" "box_3" "box_4" "box_5" "box_6 " "box_7" "box_8" "box_9";
+    grid-template-columns: 6fr 6fr;
+    grid-template-areas: "box_1 box_2" "box_3 box_4" "box_5 box_6 " "box_7 box_8";
     justify-items: end;
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: end;
+  }
+  .content .photo_staff_title {
+    font-size: 28px;
+    line-height: 38px;
   }
   .content .photo_staff .photo_staff .photo_1 .photo_img {
     background-size: cover;
@@ -2401,6 +2467,34 @@ a {
         -ms-flex-align: end;
             align-items: end;
   }
+  .content .company_img_top {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .content .company_img_bottom {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .content .company_title {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .content .company_info_h3 {
+    font-size: 20px;
+    line-height: 27px;
+  }
+  .content .company_h3 {
+    font-size: 20px;
+    line-height: 27px;
+  }
+  .content .company_info_text {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .content .company_info_h4 {
+    font-size: 18px;
+    line-height: 24px;
+  }
   .content .company_img .img_1 {
     width: 340px;
     height: 100%;
@@ -2408,6 +2502,18 @@ a {
   .content .company_img .img_2 {
     width: 340px;
     height: 100%;
+  }
+  .content .advantages_text_h3 {
+    font-size: 20px;
+    line-height: 27px;
+  }
+  .content .advantages_text_p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .content .advantages_text .ul li {
+    font-size: 14px;
+    line-height: 22px;
   }
   .content .pay {
     display: none;

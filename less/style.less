@@ -2049,6 +2049,7 @@ a {
         align-items: end;
       }
     }
+
     .cards {
 
       .card_box_1 {
@@ -2431,9 +2432,9 @@ a {
     }
 
     .cards {
-      .card_box{
-          width: 320px;
-        }
+      .card_box {
+        width: 320px;
+      }
 
       .card_box_1 {
         display: grid;
@@ -2885,6 +2886,21 @@ a {
   }
 
   .content {
+    .entity_title {
+      font-size: 28px;
+      line-height: 38px;
+    }
+
+    .entity_p {
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    .entity_page_title {
+      font-size: 28px;
+      line-height: 38px;
+    }
+
     .line {
       &_title {
         font-size: 30px;
@@ -2894,23 +2910,90 @@ a {
         font-size: 20px;
       }
     }
+
+    .letter_form {
+      &_p {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 27px;
+        text-align: center;
+        padding-top: 90px;
+        color: #000000;
+      }
+
+      &_title {
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 44px;
+        text-align: center;
+        padding-top: 80px;
+        color: @main-color;
+      }
+
+      &_h3 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        text-align: center;
+        padding-top: 80px;
+        color: #000000;
+      }
+    }
+
     .cards {
-      .card_box{
-        width: 96%;
+      &_title {
+        font-size: 28px;
+        line-height: 38px;
+      }
+
+      .mob_box {
+        display: none;
+      }
+
+      .card_box_img {
+        font-size: 40px;
+        padding-top: 15px;
+      }
+
+      .card_box .card_6_text {
+        padding-left: 15%;
+      }
+
+      .card_box .card_5_text {
+        padding-left: 15%;
+      }
+
+      .card_box .card_7_text {
+        padding-left: 31%;
+      }
+
+      .card_box_text {
+        font-size: 14px;
+        line-height: 18px;
+        padding-left: 25%;
+      }
+
+      .card_box {
+        width: 160px;
+        height: 115px;
       }
 
       .card_box_1 {
         display: grid;
         margin: 0 auto;
         max-width: 1200px;
-        grid-template-columns: 1fr;
-        grid-template-areas: "box_1" "box_2" "box_3" "box_4" "box_5" "box_6 " "box_7" "box_8" "box_9";
+        grid-template-columns: 6fr 6fr;
+        grid-template-areas: "box_1 box_2" "box_3 box_4" "box_5 box_6 " "box_7 box_8";
         justify-items: end;
         align-items: end;
       }
     }
 
     .photo_staff {
+      &_title{
+        font-size: 28px;
+        line-height: 38px;
+      }
       .photo_staff .photo_1 .photo_img {
         background-size: cover;
         width: 320px;
@@ -2929,6 +3012,41 @@ a {
     }
 
     .company {
+      &_img_top {
+        font-size: 16px;
+        line-height: 19px;
+      }
+
+      &_img_bottom {
+        font-size: 14px;
+        line-height: 16px;
+      }
+
+      &_title {
+        font-size: 28px;
+        line-height: 38px;
+      }
+
+      &_info_h3 {
+        font-size: 20px;
+        line-height: 27px;
+      }
+
+      &_h3 {
+        font-size: 20px;
+        line-height: 27px;
+      }
+
+      &_info_text {
+        font-size: 14px;
+        line-height: 22px;
+      }
+
+      &_info_h4 {
+        font-size: 18px;
+        line-height: 24px;
+      }
+
       &_img {
         .img_1 {
           width: 340px;
@@ -2940,6 +3058,18 @@ a {
           height: 100%;
         }
       }
+    }
+    .advantages_text_h3{
+      font-size: 20px;
+      line-height: 27px;
+    }
+    .advantages_text_p{
+      font-size: 14px;
+      line-height: 22px;
+    }
+    .advantages_text .ul li{
+      font-size: 14px;
+      line-height: 22px;
     }
 
     .pay {
