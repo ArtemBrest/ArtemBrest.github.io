@@ -2424,6 +2424,23 @@ a {
   .container {
     width: 100%;
   }
+  .content .line_title {
+    font-size: 30px;
+  }
+  .content .line_h3 {
+    font-size: 20px;
+  }
+  .content .photo_staff .photo_1 {
+    display: grid;
+    margin: 0 auto;
+    max-width: 1200px;
+    grid-template-columns: 12fr;
+    grid-template-areas: "box_1" " box_2" "box_3" " box_4" "box_5" " box_6" "box_7" " box_8" "box_9 ";
+    justify-items: end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+  }
   .content .company_img .img_1 {
     width: 340px;
     height: 100%;
@@ -2559,6 +2576,12 @@ a {
   }
   .header .menu-link {
     right: 50px;
+  }
+  .content .line_title {
+    font-size: 58px;
+  }
+  .content .line_h3 {
+    font-size: 27px;
   }
   .content .photo_staff .photo_1 {
     display: grid;
