@@ -20,7 +20,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TestExesirceKurs/MobMenu" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TestExesirceKurs/media/css/style.less" />
     <property name="list.type.of.created.stylesheet" value="Less" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -65,6 +65,8 @@
       <workItem from="1581767947374" duration="10336000" />
       <workItem from="1581788571091" duration="19673000" />
       <workItem from="1581839609559" duration="45731000" />
+      <workItem from="1581923922425" duration="13000" />
+      <workItem from="1581923946386" duration="7298000" />
     </task>
     <servers />
   </component>
