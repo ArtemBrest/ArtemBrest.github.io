@@ -1080,7 +1080,7 @@ a {
   border: none;
   background-color: #ef6058;
   position: fixed;
-  right: 50px;
+  right: 30px;
   bottom: 50px;
   border-radius: 10px;
 }
@@ -2271,7 +2271,7 @@ a {
     width: 100%;
   }
   .content .banner_left_title {
-    margin-top: 0px;
+    margin-top: 16.5px;
   }
   .content .banner_left_title_subtitle {
     margin-top: 74px;
