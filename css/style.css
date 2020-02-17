@@ -2271,11 +2271,14 @@ a {
     width: 100%;
   }
   .content .banner_left_title {
-    margin-top: 40px;
+    margin-top: 0px;
+  }
+  .content .banner_left_title_subtitle {
+    margin-top: 74px;
   }
   .content .banner_left_text {
     margin-left: 5%;
-    margin-top: 66.5px;
+    margin-top: 105.5px;
     font-size: 12px;
     line-height: 28px;
     color: #FFFFFF;
