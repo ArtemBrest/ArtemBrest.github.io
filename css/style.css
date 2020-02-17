@@ -1976,6 +1976,8 @@ a {
     background-size: cover;
     width: 320px;
     border-radius: 10px;
+    display: block;
+    margin: 10px auto;
   }
   .content .line_title {
     font-size: 58px;
@@ -2429,6 +2431,11 @@ a {
   }
   .content .line_h3 {
     font-size: 20px;
+  }
+  .content .photo_staff .photo_staff .photo_1 .photo_img {
+    background-size: cover;
+    width: 320px;
+    border-radius: 10px;
   }
   .content .photo_staff .photo_1 {
     display: grid;
