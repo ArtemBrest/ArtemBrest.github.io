@@ -1944,7 +1944,7 @@ a {
   .content .banner_left_title {
     z-index: 9999;
     margin-left: 5%;
-    margin-top: 55px;
+    margin-top: 17px;
     font-size: 40px;
     line-height: 58px;
   }
@@ -2269,6 +2269,16 @@ a {
 @media (max-width: 767px) {
   .container {
     width: 100%;
+  }
+  .content .banner_left_title {
+    margin-top: 62px;
+  }
+  .content .banner_left_text {
+    margin-left: 5%;
+    margin-top: 66.5px;
+    font-size: 12px;
+    line-height: 28px;
+    color: #FFFFFF;
   }
   .content .contact .circle {
     margin-left: 27%;
