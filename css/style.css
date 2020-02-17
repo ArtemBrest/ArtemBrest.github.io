@@ -1693,6 +1693,11 @@ a {
     grid-template-columns: 6fr 6fr;
     grid-template-areas: "box_1 box_2" " box_3 box_4" "box_5 box_6";
   }
+  .content .advantages_box_text {
+    padding-left: 45px;
+    padding-top: 5px;
+    padding-right: 200px;
+  }
   .content .contact .map_iframe {
     width: 100%;
   }
@@ -1944,7 +1949,7 @@ a {
   .content .banner_left_title {
     z-index: 9999;
     margin-left: 5%;
-    margin-top: 17px;
+    margin-top: 57px;
     font-size: 40px;
     line-height: 58px;
   }
@@ -2052,6 +2057,7 @@ a {
   .content .advantages_box .box_text {
     padding-left: 45px;
     padding-top: 5px;
+    padding-right: 170px;
   }
   .content .advantages_box .box .bottom_text_5 {
     padding-top: 40px;
@@ -2271,7 +2277,7 @@ a {
     width: 100%;
   }
   .content .banner_left_title {
-    margin-top: 16.5px;
+    margin-top: 16px;
   }
   .content .banner_left_title_subtitle {
     margin-top: 74px;
@@ -2282,6 +2288,11 @@ a {
     font-size: 12px;
     line-height: 28px;
     color: #FFFFFF;
+  }
+  .content .advantages_box_text {
+    padding-left: 45px;
+    padding-top: 5px;
+    padding-right: 160px;
   }
   .content .contact .circle {
     margin-left: 27%;

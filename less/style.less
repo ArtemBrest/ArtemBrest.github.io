@@ -2006,6 +2006,11 @@ a {
         margin: 0 auto;
         grid-template-columns: 6fr 6fr;
         grid-template-areas: "box_1 box_2" " box_3 box_4" "box_5 box_6";
+        &_text {
+          padding-left: 45px;
+          padding-top: 5px;
+          padding-right: 200px;
+        }
       }
 
     }
@@ -2330,7 +2335,7 @@ a {
         &_title {
           z-index: 9999;
           margin-left: 5%;
-          margin-top: 17px;
+          margin-top: 57px;
           font-size: 40px;
           line-height: 58px;
         }
@@ -2449,11 +2454,13 @@ a {
           &_h3 {
             padding: 25px;
             padding-left: 45px;
+
           }
 
           &_text {
             padding-left: 45px;
             padding-top: 5px;
+            padding-right: 170px;
           }
 
           .bottom_text_5 {
@@ -2729,17 +2736,19 @@ a {
     width: 100%;
 
   }
+
   .content {
-    .banner{
-      &_left{
+    .banner {
+      &_left {
 
-        &_title{
-          margin-top: 16.5px;
+        &_title {
+          margin-top: 16px;
 
-        &_subtitle{
-          margin-top: 74px;
+          &_subtitle {
+            margin-top: 74px;
+          }
         }
-        }
+
         &_text {
           margin-left: 5%;
           margin-top: 105.5px;
@@ -2750,11 +2759,23 @@ a {
       }
 
     }
+
+    .advantages {
+      &_box {
+        &_text {
+          padding-left: 45px;
+          padding-top: 5px;
+          padding-right: 160px;
+        }
+      }
+    }
+
     .contact {
       .circle {
         margin-left: 27%;
       }
     }
+
     .contact_form {
       .form {
         &_btn {
@@ -2764,6 +2785,7 @@ a {
       }
     }
   }
+
   .footer {
     &_logo {
       margin-top: 25px;
@@ -2793,6 +2815,7 @@ a {
         line-height: 25px;
         color: #ED5F55;
         transition: .2s;
+
         span {
           color: #000000;
         }
@@ -2801,7 +2824,7 @@ a {
       &_bottom {
         position: relative !important;
         top: 70px;
-        left:-18px;
+        left: -18px;
         right: 0;
         font-weight: 700;
         font-size: 18px;
@@ -2813,7 +2836,7 @@ a {
       &_link {
         position: relative !important;
         right: 0;
-        left:-28.5%;
+        left: -28.5%;
         top: 100px;
         font-size: 14px;
         line-height: 19px;
