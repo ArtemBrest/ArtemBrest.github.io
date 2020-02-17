@@ -2347,7 +2347,7 @@ a {
 
         &_text {
           margin-left: 5%;
-          margin-top: 56.5px;
+          margin-top: 117.5px;
           font-size: 12px;
           line-height: 28px;
           color: #FFFFFF;
@@ -2508,7 +2508,7 @@ a {
         }
 
         &_btn {
-          width: 470px;
+          width: 650px;
           margin-left: 20px;
         }
       }
@@ -2523,7 +2523,7 @@ a {
     }
 
     &_address {
-      margin-top: 25px;
+      margin-top: 5px;
       position: relative;
       text-align: center;
 
@@ -2535,7 +2535,8 @@ a {
 
       &_text {
         position: relative !important;
-        left: 0px;
+        left: 10px;
+        top: 10px;
         font-size: 14px;
         line-height: 19px;
         color: #404040;
@@ -2557,13 +2558,13 @@ a {
         font-size: 40px;
         border: 1px solid #BEC2C3;
         border-radius: 50%;
-        top: 0;
+        top: 10px;
         left: 47%;
       }
 
       &_top {
         position: relative !important;
-        top: 30px;
+        top: 40px;
         left: 33%;
         font-weight: 700;
         font-size: 18px;
@@ -2583,7 +2584,7 @@ a {
 
       &_bottom {
         position: relative !important;
-        top: 60px;
+        top: 70px;
         left: 10.5%;
         right: 0;
         font-weight: 700;
@@ -2606,7 +2607,7 @@ a {
         position: relative !important;
         right: 0;
         left: -7%;
-        top: 85px;
+        top: 100px;
         font-size: 14px;
         line-height: 19px;
         color: @signature-color;
@@ -2726,6 +2727,122 @@ a {
 @media (max-width: 767px) {
   .container {
     width: 100%;
+
+  }
+  .content {
+    .contact {
+      .circle {
+        margin-left: 27%;
+      }
+    }
+    .contact_form {
+      .form {
+        &_btn {
+          width: 470px;
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+  .footer {
+    &_logo {
+      margin-top: 25px;
+      margin-left: 24%;
+      position: relative;
+    }
+
+    &_tel {
+      margin-top: 25px;
+      position: relative;
+
+      &_icon {
+        position: relative !important;
+        font-size: 40px;
+        border: 1px solid #BEC2C3;
+        border-radius: 50%;
+        top: 10px;
+        left: 47%;
+      }
+
+      &_top {
+        position: relative !important;
+        top: 40px;
+        left: 27%;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        color: #ED5F55;
+        transition: .2s;
+        span {
+          color: #000000;
+        }
+      }
+
+      &_bottom {
+        position: relative !important;
+        top: 70px;
+        left:-18px;
+        right: 0;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        color: #ED5F55;
+        transition: .2s;
+      }
+
+      &_link {
+        position: relative !important;
+        right: 0;
+        left:-28.5%;
+        top: 100px;
+        font-size: 14px;
+        line-height: 19px;
+        color: @signature-color;
+        transition: .2s;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    &_soc {
+      display: block;
+      margin-left: 36%;
+      margin-top: 125px;
+    }
+
+    &_menu {
+      margin-bottom: 70px;
+
+      &_link:nth-child(1) {
+        padding-left: 0px;
+      }
+
+      &_link {
+        text-align: center;
+        font-weight: 700;
+        margin: 25px 0;
+        display: block;
+        padding-right: 0px;
+        font-size: 14px;
+        line-height: 19px;
+        text-transform: uppercase;
+
+        a {
+          color: @title-color;
+          transition: .2s;
+
+          &:hover {
+            color: @main-color;
+          }
+        }
+      }
+
+      &_link:nth-child(5) {
+        padding-right: 0;
+      }
+    }
   }
 }
 
