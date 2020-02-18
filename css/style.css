@@ -643,7 +643,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 27%;
+  margin-left: 33%;
   position: absolute;
   bottom: -120px;
 }
@@ -707,7 +707,7 @@ a {
   display: block;
   padding: 10px 15px;
   cursor: pointer;
-  color: #404040;
+  color: #2F2F2F;
 }
 .content .contact_form .form .select__item.selected,
 .content .contact_form .form .select__item span:hover {
@@ -719,12 +719,12 @@ a {
   width: 12px;
   height: 6px;
   position: absolute;
-  right: 15px;
-  top: 50%;
+  right: 25px;
+  top: 53%;
   margin-top: -7px;
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
-  border-top: 6px solid #8d9293;
+  border-top: 6px solid #2F2F2F;
   -webkit-transition: all 0.27s ease-in-out;
   transition: all 0.27s ease-in-out;
   -webkit-transform: rotate(0deg);
@@ -2622,7 +2622,7 @@ a {
     text-align: center;
   }
   .header .menu ul .bottom {
-    margin-top: 20px;
+    margin-top: 30px;
   }
   .header .menu ul li:nth-child(1) {
     margin-top: 100px;
