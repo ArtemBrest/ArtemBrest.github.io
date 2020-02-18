@@ -2448,12 +2448,17 @@ a {
   }
   .content .contact_mobTel .mob_a {
     padding-top: 50px;
+    margin-left: 40px;
+  }
+  .content .contact_mobTel .mob_left {
+    margin-left: 20px;
   }
   .content .contact_mobTel .top_email {
     padding-top: 40px;
   }
   .content .contact_mobTel .light_left {
     padding-left: 0px;
+    padding-right: 15px;
   }
   .content .contact_mobTel .light_right {
     padding-left: 60px;
@@ -2485,7 +2490,7 @@ a {
     -webkit-transition: .2s;
     transition: .2s;
     position: absolute;
-    left: 37%;
+    left: 40%;
     bottom: -7%;
   }
   .content .entity_p {
