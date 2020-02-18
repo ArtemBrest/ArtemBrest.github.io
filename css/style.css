@@ -2207,10 +2207,10 @@ a {
   }
   .content .advantages_box .box_h3 {
     padding: 25px;
-    padding-left: 45px;
+    padding-left: 47px;
   }
   .content .advantages_box .box_text {
-    padding-left: 45px;
+    padding-left: 47px;
     padding-top: 5px;
     padding-right: 170px;
   }
@@ -2440,47 +2440,11 @@ a {
     line-height: 38px;
   }
   .content .contact_mobTel {
-    background: #F3F3F3;
-    border-radius: 10px;
-    padding-top: 50px;
     padding-left: 0;
-    padding-bottom: 70px;
     text-align: center;
   }
-  .content .contact_mobTel_title {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 33px;
-    color: #ef6058;
-  }
-  .content .contact_mobTel_link {
-    font-size: 14px;
-    line-height: 19px;
-    color: #404040;
-    display: inline-block;
-    padding-top: 10px;
-    position: relative;
-  }
-  .content .contact_mobTel_light {
-    display: inline-block;
-    padding-left: 10px;
-    font-size: 12px;
-    line-height: 16px;
-    color: #8d9293;
-    position: relative;
-  }
   .content .contact_mobTel_mail {
-    font-size: 14px;
-    line-height: 19px;
     color: #404040;
-  }
-  .content .contact_mobTel .top_h3 {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 22px;
-    color: #2F2F2F;
-    padding-top: 30px;
-    padding-bottom: 20px;
   }
   .content .contact_mobTel .mob_a {
     padding-top: 50px;
