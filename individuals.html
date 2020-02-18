@@ -217,40 +217,40 @@
                 <img src="img/png/sale.png" alt="" class="form_img">
                 <div class="form_grid">
                     <div class="form_box">
-                        <select name="mark" class="form_input form_select  top">
+                        <select name="select-box" id="selectId"   class="select form_input form_select  top">
                             <option class="form_select_option">Марка автомобиля</option>
-                            <option class="form_select_option" value="BMW">BMW</option>
-                            <option class="form_select_option" value="Audi">Audi</option>
-                            <option class="form_select_option" value="Lamborghini">Lamborghini</option>
-                            <option class="form_select_option" value="Mercedes">Mercedes</option>
+                            <option class="form_select_option" value="BMW" name="value">BMW</option>
+                            <option class="form_select_option" value="Audi" name="value">Audi</option>
+                            <option class="form_select_option" value="Lamborghini" name="value">Lamborghini</option>
+                            <option class="form_select_option" value="Mercedes" name="value">Mercedes</option>
                         </select>
                     </div>
                     <div class="form_box">
                         <input type="text" name="model" class="form_input" placeholder="Модель">
                     </div>
                     <div class="form_box">
-                        <select name="years" class="form_input form_select">
+                        <select name="select-box" id="selectId_1"  class="select form_input form_select form_years">
                             <option class="form_select_option">Год выпуска</option>
-                            <option class="form_select_option" value="2019">2019</option>
-                            <option class="form_select_option" value="2018">2018</option>
-                            <option class="form_select_option" value="2017">2017</option>
-                            <option class="form_select_option" value="2016">2016</option>
-                            <option class="form_select_option" value="2015">2015</option>
-                            <option class="form_select_option" value="2014">2014</option>
-                            <option class="form_select_option" value="2013">2013</option>
-                            <option class="form_select_option" value="2012">2012</option>
-                            <option class="form_select_option" value="2011">2011</option>
-                            <option class="form_select_option" value="2010">2010</option>
+                            <option class="form_select_option" value="2019" name="value">2019</option>
+                            <option class="form_select_option" value="2018" name="value">2018</option>
+                            <option class="form_select_option" value="2017" name="value">2017</option>
+                            <option class="form_select_option" value="2016" name="value">2016</option>
+                            <option class="form_select_option" value="2015" name="value">2015</option>
+                            <option class="form_select_option" value="2014" name="value">2014</option>
+                            <option class="form_select_option" value="2013" name="value">2013</option>
+                            <option class="form_select_option" value="2012" name="value">2012</option>
+                            <option class="form_select_option" value="2011" name="value">2011</option>
+                            <option class="form_select_option" value="2010" name="value">2010</option>
                         </select>
                     </div>
                     <div class="form_box">
                         <input type="text" class=" form_long" placeholder="VIN (номер кузова)">
                     </div>
                     <div class="form_box">
-                        <select name="toplivo" class="form_input form_select toplivo">
+                        <select  id="selectId_2"  name="value" class="form_toplivo select form_input form_select toplivo">
                             <option class="form_select_option">Тип топлива</option>
-                            <option class="form_select_option" value="Дизель">Дизель</option>
-                            <option class="form_select_option" value="Бензин">Бензин</option>
+                            <option class="form_select_option" value="Дизель" name="value">Дизель</option>
+                            <option class="form_select_option" value="Бензин" name="value">Бензин</option>
                         </select>
                     </div>
                     <div class="form_box">
@@ -336,7 +336,7 @@
 <script src="js/bootstrap.min.js"></script>
 <script>
     $(document).ready(function () {
-
+        /*button_up*/
         var btnUp = $(".up");
         btnUp.hide();
         $(window).scroll(function () {
@@ -361,7 +361,7 @@
 
         });
 
-
+        /*modal*/
         var link = $('.btn');
         var modal = $('.modal1');
         var close = $('.modal1-close');
@@ -383,8 +383,9 @@
             modal.hide();
             fade.hide();
         })
-    })
-    $(document).ready(function () {
+
+        /*menu*/
+
         var link  = $('.menu-link');
         var menu = $('.menu');
         var nav = $('.menu a');
@@ -396,7 +397,83 @@
             link.toggleClass("menu-link_active")
             menu.toggleClass("menu_active")
         })
-    });
+
+        /*select*/
+        $('.select').each(function(){
+            // Variables
+            var $this = $(this),
+                selectOption = $this.find('option'),
+                selectOptionLength = selectOption.length,
+                selectedOption = selectOption.filter(':selected'),
+                dur = 500;
+
+            $this.hide();
+            // Wrap all in select box
+            $this.wrap('<div class="select"></div>');
+            $('<div>',{
+                class: 'select__gap',
+                text: 'Марка автообиля'
+            }).insertAfter($this);
+
+            var selectGap = $this.next('.select__gap'),
+                caret = selectGap.find('.caret');
+            // Add ul list
+            $('<ul>',{
+                class: 'select__list'
+            }).insertAfter(selectGap);
+
+            var selectList = selectGap.next('.select__list');
+            // Add li - option items
+            for(var i = 0; i < selectOptionLength; i++){
+                $('<li>',{
+                    class: 'select__item',
+                    html: $('<span>',{
+                        text: selectOption.eq(i).text()
+                    })
+                })
+                    .attr('data-value', selectOption.eq(i).val())
+                    .appendTo(selectList);
+            }
+            // Find all items
+            var selectItem = selectList.find('li');
+
+            selectList.slideUp(0);
+            selectGap.on('click', function(){
+                if(!$(this).hasClass('on')){
+                    $(this).addClass('on');
+                    selectList.slideDown(dur);
+
+                    selectItem.on('click', function(){
+                        var chooseItem = $(this).data('value');
+
+                        $('select').val(chooseItem).attr('selected', 'selected');
+                        selectGap.text($(this).find('span').text());
+
+                        selectList.slideUp(dur);
+                        selectGap.removeClass('on');
+                    });
+
+                } else {
+                    $(this).removeClass('on');
+                    selectList.slideUp(dur);
+                }
+            });
+            /*$this_1.wrap('<div class="form_years"></div>');
+            $('<div>',{
+                class: 'form_years',
+                text: 'Год выпуска'
+            }).insertAfter($this_1);
+            $this_2.wrap('<div class="form_toplivo"></div>');
+            $('<div>',{
+                class: 'form_toplivo',
+                text: 'Тип топлива'
+            }).insertAfter($this_2);*/
+        });
+    })
+
+
+
+
 
 </script>
 </body>

@@ -750,7 +750,85 @@ a {
       width: 100%;
       background: #FFFFFF;
       border-radius: 20px;
+      .select {
+        line-height: 40px;
+        width: 310px;
+        margin-top: 17px;
+      }
+      .select__gap {
+        height: 60px;
+        background: #F3F3F3;
+        border-radius: 5px;
+        color: #2F2F2F;
+        border: none;
+        font-size: 14px;
+        padding: 10px 15px;
+        cursor: pointer;
+        position: relative;
+      }
+      .on.select__gap,
+      .select__gap:focus {
+        background: #FFFFFF;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+      }
+      .on.select__gap,
+      .select__gap:hover {
+        color: #000000;
+      }
 
+      .select__list {
+        background: #FFFFFF;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+        border:none;
+        margin: 0px 0;
+      }
+      .select__item:hover{
+        background-color: #EF6058;;
+      }
+
+
+
+      .select__item span {
+        display: block;
+        padding: 10px 15px;
+        cursor: pointer;
+        color: @text-color;
+      }
+
+      .select__item.selected,
+      .select__item span:hover {
+        color: #FFFFFF;
+      }
+
+      .select__gap:after {
+        content: '';
+        display: block;
+        width: 12px;
+        height: 6px;
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        margin-top: -7px;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-top: 6px solid @signature-color;
+
+        -webkit-transition: all .27s ease-in-out;
+        -o-transition: all .27s ease-in-out;
+        transition: all .27s ease-in-out;
+
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+
+      .on.select__gap:after {
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
+      }
       .form_grid {
         padding-left: 80px;
         padding-right: 20px;
@@ -869,11 +947,12 @@ a {
 
       option {
         outline: none !important;
-      }
 
+      }
       select:focus,
       input:focus,
       textarea:focus {
+        border: 1px solid #29B626;
         background: #FFFFFF;
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
       }
