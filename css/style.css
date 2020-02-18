@@ -1707,6 +1707,36 @@ a {
         -ms-flex-align: end;
             align-items: end;
   }
+  .content .contact_mobTel .soc_1 {
+    position: absolute;
+    font-size: 35px;
+    color: #7b519d;
+    -webkit-transition: .2s;
+    transition: .2s;
+    left: 32%;
+    bottom: 27%;
+  }
+  .content .contact_mobTel .soc_1:hover {
+    color: #6e488c;
+  }
+  .content .contact_mobTel .soc_2 {
+    position: absolute;
+    font-size: 35px;
+    color: #29AD1C;
+    -webkit-transition: .2s;
+    transition: .2s;
+    left: 40%;
+    bottom: 27%;
+  }
+  .content .contact_mobTel .soc_3 {
+    font-size: 35px;
+    color: #03A9F4;
+    -webkit-transition: .2s;
+    transition: .2s;
+    position: absolute;
+    left: 4%;
+    bottom: 32%;
+  }
   .content .cards .card_box_1 {
     display: grid;
     margin: 0 auto;
@@ -1862,7 +1892,7 @@ a {
     margin-top: 30px;
   }
   .footer_menu_link:nth-child(1) {
-    padding-left: 35px;
+    padding-left: 20px;
   }
 }
 @media (max-width: 991px) {
@@ -1993,6 +2023,39 @@ a {
   .header_menu_link:hover {
     background-color: rgba(255, 255, 255, 0.4);
   }
+  .content .contact_mobTel .light_right {
+    padding-left: 40px;
+  }
+  .content .contact_mobTel .soc_1 {
+    position: absolute;
+    font-size: 35px;
+    color: #7b519d;
+    -webkit-transition: .2s;
+    transition: .2s;
+    left: 38%;
+    bottom: 27%;
+  }
+  .content .contact_mobTel .soc_1:hover {
+    color: #6e488c;
+  }
+  .content .contact_mobTel .soc_2 {
+    position: absolute;
+    font-size: 35px;
+    color: #29AD1C;
+    -webkit-transition: .2s;
+    transition: .2s;
+    left: 47%;
+    bottom: 27%;
+  }
+  .content .contact_mobTel .soc_3 {
+    font-size: 35px;
+    color: #03A9F4;
+    -webkit-transition: .2s;
+    transition: .2s;
+    position: absolute;
+    left: 4%;
+    bottom: 32%;
+  }
   .content .photo_staff .photo_1 .photo_img {
     background-size: cover;
     width: 320px;
@@ -2019,6 +2082,9 @@ a {
   }
   .content .line_h3 {
     font-size: 27px;
+  }
+  .content .line_img {
+    display: none;
   }
   .content .navigation {
     height: 40px;
@@ -2365,9 +2431,98 @@ a {
   .container {
     width: 100%;
   }
+  .content .clients_title {
+    font-size: 28px;
+    line-height: 38px;
+  }
   .content .entity_title {
     font-size: 28px;
     line-height: 38px;
+  }
+  .content .contact_mobTel {
+    background: #F3F3F3;
+    border-radius: 10px;
+    padding-top: 50px;
+    padding-left: 0;
+    padding-bottom: 70px;
+    text-align: center;
+  }
+  .content .contact_mobTel_title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: #ef6058;
+  }
+  .content .contact_mobTel_link {
+    font-size: 14px;
+    line-height: 19px;
+    color: #404040;
+    display: inline-block;
+    padding-top: 10px;
+    position: relative;
+  }
+  .content .contact_mobTel_light {
+    display: inline-block;
+    padding-left: 10px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #8d9293;
+    position: relative;
+  }
+  .content .contact_mobTel_mail {
+    font-size: 14px;
+    line-height: 19px;
+    color: #404040;
+  }
+  .content .contact_mobTel .top_h3 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #2F2F2F;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .content .contact_mobTel .mob_a {
+    padding-top: 50px;
+  }
+  .content .contact_mobTel .top_email {
+    padding-top: 40px;
+  }
+  .content .contact_mobTel .light_left {
+    padding-left: 0px;
+  }
+  .content .contact_mobTel .light_right {
+    padding-left: 60px;
+  }
+  .content .contact_mobTel .bottom_h3 {
+    padding-top: 45px;
+  }
+  .content .contact_mobTel .soc_1 {
+    position: absolute;
+    font-size: 35px;
+    color: #7b519d;
+    -webkit-transition: .2s;
+    transition: .2s;
+    left: 39%;
+    bottom: 17%;
+  }
+  .content .contact_mobTel .soc_2 {
+    position: absolute;
+    font-size: 35px;
+    color: #29AD1C;
+    -webkit-transition: .2s;
+    transition: .2s;
+    left: 51%;
+    bottom: 17%;
+  }
+  .content .contact_mobTel .soc_3 {
+    font-size: 35px;
+    color: #03A9F4;
+    -webkit-transition: .2s;
+    transition: .2s;
+    position: absolute;
+    left: 37%;
+    bottom: -7%;
   }
   .content .entity_p {
     font-size: 14px;
@@ -2645,6 +2800,91 @@ a {
   }
   .header .menu-link {
     right: 50px;
+  }
+  .content .contact_mobTel {
+    background: #F3F3F3;
+    border-radius: 10px;
+    padding-top: 50px;
+    padding-left: 0;
+    padding-bottom: 70px;
+    text-align: center;
+  }
+  .content .contact_mobTel_title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: #ef6058;
+  }
+  .content .contact_mobTel_link {
+    font-size: 14px;
+    line-height: 19px;
+    color: #404040;
+    display: inline-block;
+    padding-top: 10px;
+    position: relative;
+  }
+  .content .contact_mobTel_light {
+    display: inline-block;
+    padding-left: 10px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #8d9293;
+    position: relative;
+  }
+  .content .contact_mobTel_mail {
+    font-size: 14px;
+    line-height: 19px;
+    color: #404040;
+  }
+  .content .contact_mobTel .top_h3 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #2F2F2F;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .content .contact_mobTel .mob_a {
+    padding-top: 50px;
+  }
+  .content .contact_mobTel .top_email {
+    padding-top: 40px;
+  }
+  .content .contact_mobTel .light_left {
+    padding-left: 0px;
+  }
+  .content .contact_mobTel .light_right {
+    padding-left: 60px;
+  }
+  .content .contact_mobTel .bottom_h3 {
+    padding-top: 45px;
+  }
+  .content .contact_mobTel .soc_1 {
+    position: absolute;
+    font-size: 35px;
+    color: #7b519d;
+    -webkit-transition: .2s;
+    transition: .2s;
+    left: 39%;
+    bottom: 17%;
+  }
+  .content .contact_mobTel .soc_2 {
+    position: absolute;
+    font-size: 35px;
+    color: #29AD1C;
+    -webkit-transition: .2s;
+    transition: .2s;
+    left: 51%;
+    bottom: 17%;
+  }
+  .content .contact_mobTel .soc_3 {
+    font-size: 35px;
+    color: #03A9F4;
+    -webkit-transition: .2s;
+    transition: .2s;
+    position: absolute;
+    left: 37%;
+    bottom: -7%;
   }
   .content .line_title {
     font-size: 58px;

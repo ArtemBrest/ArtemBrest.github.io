@@ -2050,6 +2050,42 @@ a {
       }
     }
 
+    .contact_mobTel {
+
+      .soc {
+        &_1 {
+          position: absolute;
+          font-size: 35px;
+          color: #7b519d;
+          transition: .2s;
+          left: 32%;
+          bottom: 27%;
+
+          &:hover {
+            color: darken(#7b519d, 5%);
+          }
+        }
+
+        &_2 {
+          position: absolute;
+          font-size: 35px;
+          color: #29AD1C;
+          transition: .2s;
+          left: 40%;
+          bottom: 27%;
+        }
+
+        &_3 {
+          font-size: 35px;
+          color: #03A9F4;
+          transition: .2s;
+          position: absolute;
+          left: 4%;
+          bottom: 32%;
+        }
+      }
+    }
+
     .cards {
 
       .card_box_1 {
@@ -2271,7 +2307,7 @@ a {
 
     &_menu {
       &_link:nth-child(1) {
-        padding-left: 35px;
+        padding-left: 20px;
       }
     }
   }
@@ -2423,6 +2459,45 @@ a {
   }
 
   .content {
+    .contact_mobTel {
+      .light_right {
+        padding-left: 40px;
+      }
+
+      .soc {
+        &_1 {
+          position: absolute;
+          font-size: 35px;
+          color: #7b519d;
+          transition: .2s;
+          left: 38%;
+          bottom: 27%;
+
+          &:hover {
+            color: darken(#7b519d, 5%);
+          }
+        }
+
+        &_2 {
+          position: absolute;
+          font-size: 35px;
+          color: #29AD1C;
+          transition: .2s;
+          left: 47%;
+          bottom: 27%;
+        }
+
+        &_3 {
+          font-size: 35px;
+          color: #03A9F4;
+          transition: .2s;
+          position: absolute;
+          left: 4%;
+          bottom: 32%;
+        }
+      }
+    }
+
     .photo_staff .photo_1 .photo_img {
       background-size: cover;
       width: 320px;
@@ -2454,6 +2529,10 @@ a {
 
       &_h3 {
         font-size: 27px;
+      }
+
+      &_img {
+        display: none;
       }
     }
 
@@ -2870,6 +2949,7 @@ a {
       grid-template-areas: "box_1" " box_5"" box_2"" box_3"" box_4";
     }
   }
+
 }
 
 
@@ -2886,9 +2966,112 @@ a {
   }
 
   .content {
+    .clients_title{
+      font-size: 28px;
+      line-height: 38px;
+    }
     .entity_title {
       font-size: 28px;
       line-height: 38px;
+    }
+
+    .contact_mobTel {
+      background: #F3F3F3;
+      border-radius: 10px;
+      padding-top: 50px;
+      padding-left: 0;
+      padding-bottom: 70px;
+      text-align: center;
+
+      &_title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 33px;
+        color: @main-color;
+      }
+
+      &_link {
+        font-size: 14px;
+        line-height: 19px;
+        color: @text-color;
+        display: inline-block;
+        padding-top: 10px;
+        position: relative;
+      }
+
+      &_light {
+        display: inline-block;
+        padding-left: 10px;
+        font-size: 12px;
+        line-height: 16px;
+        color: @signature-color;
+        position: relative;
+
+      }
+
+      &_mail {
+        font-size: 14px;
+        line-height: 19px;
+        color: @text-color;
+      }
+
+      .top_h3 {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        color: #2F2F2F;
+        padding-top: 30px;
+        padding-bottom: 20px;
+      }
+
+      .mob_a {
+        padding-top: 50px;
+      }
+
+      .top_email {
+        padding-top: 40px;
+      }
+
+      .light_left {
+        padding-left: 0px;
+      }
+
+      .light_right {
+        padding-left: 60px;
+      }
+
+      .bottom_h3 {
+        padding-top: 45px;
+      }
+
+      .soc {
+        &_1 {
+          position: absolute;
+          font-size: 35px;
+          color: #7b519d;
+          transition: .2s;
+          left: 39%;
+          bottom: 17%;
+        }
+
+        &_2 {
+          position: absolute;
+          font-size: 35px;
+          color: #29AD1C;
+          transition: .2s;
+          left: 51%;
+          bottom: 17%;
+        }
+
+        &_3 {
+          font-size: 35px;
+          color: #03A9F4;
+          transition: .2s;
+          position: absolute;
+          left: 37%;
+          bottom: -7%;
+        }
+      }
     }
 
     .entity_p {
@@ -2966,9 +3149,11 @@ a {
       .card_box .card_7_text {
         padding-left: 31%;
       }
+
       .card_box .card_8_text {
         padding-left: 33%;
       }
+
       .card_box_text {
         font-size: 14px;
         line-height: 18px;
@@ -3252,6 +3437,104 @@ a {
   }
 
   .content {
+    .contact_mobTel {
+      background: #F3F3F3;
+      border-radius: 10px;
+      padding-top: 50px;
+      padding-left: 0;
+      padding-bottom: 70px;
+      text-align: center;
+
+      &_title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 33px;
+        color: @main-color;
+      }
+
+      &_link {
+        font-size: 14px;
+        line-height: 19px;
+        color: @text-color;
+        display: inline-block;
+        padding-top: 10px;
+        position: relative;
+      }
+
+      &_light {
+        display: inline-block;
+        padding-left: 10px;
+        font-size: 12px;
+        line-height: 16px;
+        color: @signature-color;
+        position: relative;
+
+      }
+
+      &_mail {
+        font-size: 14px;
+        line-height: 19px;
+        color: @text-color;
+      }
+
+      .top_h3 {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        color: #2F2F2F;
+        padding-top: 30px;
+        padding-bottom: 20px;
+      }
+
+      .mob_a {
+        padding-top: 50px;
+      }
+
+      .top_email {
+        padding-top: 40px;
+      }
+
+      .light_left {
+        padding-left: 0px;
+      }
+
+      .light_right {
+        padding-left: 60px;
+      }
+
+      .bottom_h3 {
+        padding-top: 45px;
+      }
+
+      .soc {
+        &_1 {
+          position: absolute;
+          font-size: 35px;
+          color: #7b519d;
+          transition: .2s;
+          left: 39%;
+          bottom: 17%;
+        }
+
+        &_2 {
+          position: absolute;
+          font-size: 35px;
+          color: #29AD1C;
+          transition: .2s;
+          left: 51%;
+          bottom: 17%;
+        }
+
+        &_3 {
+          font-size: 35px;
+          color: #03A9F4;
+          transition: .2s;
+          position: absolute;
+          left: 37%;
+          bottom: -7%;
+        }
+      }
+    }
     .line {
       &_title {
         font-size: 58px;
@@ -3261,6 +3544,7 @@ a {
         font-size: 27px;
       }
     }
+
     .cards {
       &_title {
         font-size: 28px;
@@ -3295,9 +3579,9 @@ a {
       }
 
       .card_box {
-          width: 160px;
-          height: 115px;
-          margin: 5px;
+        width: 160px;
+        height: 115px;
+        margin: 5px;
 
       }
 
@@ -3406,7 +3690,8 @@ a {
 
       .advantages_box .box_text {
         padding-right: 25px;
-        br+br{
+
+        br + br {
           display: none;
         }
       }
