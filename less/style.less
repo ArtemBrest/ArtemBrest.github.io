@@ -286,6 +286,11 @@ a {
       padding-left: 55px;
     }
 
+    .mob_menu_link,
+    .mob_menu {
+      display: none;
+    }
+
     &_link {
 
       display: inline-block;
@@ -723,7 +728,7 @@ a {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-left: 38%;
+      margin-left: 27%;
       position: absolute;
       bottom: -120px;
 
@@ -2285,6 +2290,7 @@ a {
           display: block;
         }
       }
+      
     }
 
     .contact_form {
@@ -2409,6 +2415,8 @@ a {
 
 
     &_logo {
+      z-index: 9999;
+
       .logo_bottom {
         position: absolute;
         left: 70px;
@@ -2440,9 +2448,9 @@ a {
 
     .menu {
       &-link {
-        z-index: 199;
+        z-index: 9999;
         display: block;
-        position: absolute;
+        position: fixed;
         top: 50px;
         right: 160px;
 
@@ -2489,14 +2497,14 @@ a {
       }
 
       opacity: 0.95;
-      background-color: rgba(255, 255, 255, .8);
+      background-color: #FFFFFF;
       position: fixed;
       width: 100vw;
       height: 100vh;
       z-index: 999;
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start;
       transition: all 0.2s;
       left: -100vw;
 
@@ -2509,8 +2517,21 @@ a {
         padding: 0;
         text-align: center;
 
+        .bottom {
+          margin-top: 90px;
+        }
+
+        li:nth-child(1) {
+          margin-top: 100px;
+        }
+
         li {
           width: 100vw;
+          font-size: 18px;
+          line-height: 25px;
+          padding-top: 0px;
+
+
         }
 
         a {
@@ -2519,14 +2540,51 @@ a {
           line-height: 4;
           width: 100%;
           font-weight: 700;
-          letter-spacing: 3px;
+          letter-spacing: 2px;
           transition: all 0.2s;
+          text-transform: uppercase;
 
           &:hover {
             text-decoration: none;
           }
         }
+
+        .mob_menu {
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 25px;
+          color: #ED5F55;
+          transition: .2s;
+          padding-top: 10px;
+          letter-spacing: 0px;
+
+          &:hover {
+            font-weight: 400;
+
+          }
+
+          span {
+            color: #000000;
+          }
+        }
+
+        .mob_menu_link {
+          padding-top: 10px;
+          font-size: 18px;
+          line-height: 25px;
+          color: @text-color;
+          letter-spacing: 0px;
+
+          &:hover {
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+
+        }
       }
+
+
     }
 
     &_menu {
@@ -2619,7 +2677,6 @@ a {
         display: none;
       }
     }
-
 
     .navigation {
       height: 40px;
@@ -2782,7 +2839,7 @@ a {
 
     .contact {
       .circle {
-        margin-left: 33%;
+        margin-left: 37%;
       }
     }
 
@@ -3041,7 +3098,6 @@ a {
   }
 
 }
-
 
 @media (max-width: 767px) {
   .container {
