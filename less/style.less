@@ -2952,21 +2952,23 @@ a {
 
       .card_box_img {
         font-size: 40px;
-        padding-top: 15px;
+        padding-top: 35px;
       }
 
       .card_box .card_6_text {
-        padding-left: 15%;
+        padding-left: 22%;
       }
 
       .card_box .card_5_text {
-        padding-left: 15%;
+        padding-left: 22%;
       }
 
       .card_box .card_7_text {
         padding-left: 31%;
       }
-
+      .card_box .card_8_text {
+        padding-left: 33%;
+      }
       .card_box_text {
         font-size: 14px;
         line-height: 18px;
@@ -2974,8 +2976,8 @@ a {
       }
 
       .card_box {
-        width: 160px;
-        height: 115px;
+        width: 230px;
+        height: 165px;
       }
 
       .card_box_1 {
@@ -2990,10 +2992,11 @@ a {
     }
 
     .photo_staff {
-      &_title{
+      &_title {
         font-size: 28px;
         line-height: 38px;
       }
+
       .photo_staff .photo_1 .photo_img {
         background-size: cover;
         width: 320px;
@@ -3059,15 +3062,18 @@ a {
         }
       }
     }
-    .advantages_text_h3{
+
+    .advantages_text_h3 {
       font-size: 20px;
       line-height: 27px;
     }
-    .advantages_text_p{
+
+    .advantages_text_p {
       font-size: 14px;
       line-height: 22px;
     }
-    .advantages_text .ul li{
+
+    .advantages_text .ul li {
       font-size: 14px;
       line-height: 22px;
     }
@@ -3255,6 +3261,56 @@ a {
         font-size: 27px;
       }
     }
+    .cards {
+      &_title {
+        font-size: 28px;
+        line-height: 38px;
+      }
+
+      .mob_box {
+        display: none;
+      }
+
+      .card_box_img {
+        font-size: 40px;
+        padding-top: 15px;
+      }
+
+      .card_box .card_6_text {
+        padding-left: 15%;
+      }
+
+      .card_box .card_5_text {
+        padding-left: 15%;
+      }
+
+      .card_box .card_7_text {
+        padding-left: 31%;
+      }
+
+      .card_box_text {
+        font-size: 14px;
+        line-height: 18px;
+        padding-left: 25%;
+      }
+
+      .card_box {
+          width: 160px;
+          height: 115px;
+          margin: 5px;
+
+      }
+
+      .card_box_1 {
+        display: grid;
+        margin: 0 auto;
+        max-width: 1200px;
+        grid-template-columns: 6fr 6fr;
+        grid-template-areas: "box_1 box_2" "box_3 box_4" "box_5 box_6 " "box_7 box_8";
+        justify-items: end;
+        align-items: end;
+      }
+    }
 
     .photo_staff {
       .photo_1 {
@@ -3266,6 +3322,10 @@ a {
         justify-items: end;
         align-items: end;
       }
+    }
+
+    .entity_page .box .text_4 {
+      padding-top: 0;
     }
 
     .line {
@@ -3346,6 +3406,9 @@ a {
 
       .advantages_box .box_text {
         padding-right: 25px;
+        br+br{
+          display: none;
+        }
       }
 
       &_box {
@@ -3390,7 +3453,7 @@ a {
         }
 
         &_btn {
-          width: 307px;
+          width: 90%;
           margin-left: 20px;
         }
       }
