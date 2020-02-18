@@ -2291,6 +2291,11 @@ a {
   .content .contact .circle {
     margin-left: 33%;
   }
+  .content .contact_form .form .select {
+    line-height: 40px;
+    width: 100%;
+    margin-top: 17px;
+  }
   .content .contact_form .form_img {
     position: relative !important;
     display: block;
@@ -2838,6 +2843,13 @@ a {
   .header .menu-link {
     right: 50px;
   }
+  .content {
+    /*.clients {
+      .box_none_mob {
+        display: none;
+      }
+    }*/
+  }
   .content .contact_mobTel {
     background: #F3F3F3;
     border-radius: 10px;
@@ -2881,8 +2893,12 @@ a {
     padding-top: 30px;
     padding-bottom: 20px;
   }
+  .content .contact_mobTel .mob_left {
+    margin-left: 0;
+  }
   .content .contact_mobTel .mob_a {
     padding-top: 50px;
+    margin-left: 0px;
   }
   .content .contact_mobTel .top_email {
     padding-top: 40px;
@@ -2903,7 +2919,7 @@ a {
     -webkit-transition: .2s;
     transition: .2s;
     left: 39%;
-    bottom: 17%;
+    bottom: 15%;
   }
   .content .contact_mobTel .soc_2 {
     position: absolute;
@@ -2912,7 +2928,7 @@ a {
     -webkit-transition: .2s;
     transition: .2s;
     left: 51%;
-    bottom: 17%;
+    bottom: 15%;
   }
   .content .contact_mobTel .soc_3 {
     font-size: 35px;
