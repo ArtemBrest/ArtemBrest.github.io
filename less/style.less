@@ -80,6 +80,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;
+  max-width: 100%;
   padding-bottom: 70px;
 }
 
@@ -588,8 +589,9 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  max-width: 100%;
   padding-bottom: 80px;
-  height: 630px;
+  height: auto;
 
   &_h2 {
     .h2_title();
@@ -1059,6 +1061,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 80px;
+  max-width: 100%;
 
   &_h2 {
     .h2_title();
@@ -1563,6 +1566,7 @@ a {
 .footer {
   background-position: center center;
   background-size: cover;
+  max-width: 100%;
 
 
   .footer_grid {
@@ -2314,10 +2318,21 @@ a {
   }
 
   .footer {
+    .footer_grid {
+      display: grid;
+      padding: 30px 0;
+      grid-template-columns: 2fr 7fr 2fr;
+      grid-template-areas: "box_1 box_2 box_3 ";
+      color: #ffffff;
+    }
+    .footer_menu_li {
+      display: inline-block;
+      padding: 35px 20px;
+    }
     &_contact {
 
       &_tel {
-        font-size: 17px;
+        font-size: 15px;
         line-height: 15px;
         color: #ffffff;
         font-weight: 700;
@@ -2539,7 +2554,7 @@ a {
       padding-top: 40px;
 
       .accordion {
-        width: 700px;
+        width: 680px;
       }
 
     }
@@ -2592,7 +2607,7 @@ a {
   .service {
     &_box {
       display: grid;
-      grid-template-columns: 765px;
+      grid-template-columns: 710px;
       grid-template-areas: "box_1" "box_2" "box_3" "box_4" "box_5" "box_6" "box_7" "box_8";
       margin-top: 10px;
 
@@ -2700,7 +2715,7 @@ a {
         position: relative;
 
         &_input {
-          width: 710px;
+          width: 680px;
         }
 
         &_flag {
@@ -2718,7 +2733,7 @@ a {
           color: #939393;
           line-height: 23px;
           margin-top: 20px;
-          width: 740px;
+          width: 710px;
           padding-left: 20px;
           padding-top: 25px;
           resize: none;
@@ -2728,38 +2743,38 @@ a {
 
       #name-error {
         position: absolute;
-        margin-left: -590px;
+        margin-left: -560px;
         margin-top: 43px;
         color: #f95469;
       }
 
       #email-error {
         position: absolute;
-        margin-left: -588px;
+        margin-left: -558px;
         margin-top: 43px;
         color: #f95469;
       }
 
       #telephone-error {
         position: absolute;
-        margin-left: -535px;
+        margin-left: -505px;
         margin-top: 43px;
         color: #f95469;
       }
 
       .input_left {
-        width: 710px;
+        width: 680px;
       }
 
       .input_comments {
         position: absolute;
         top: 40px;
-        right: 35px;
+        right: 65px;
       }
 
       .input_tel {
         margin-top: 20px;
-        width: 675px;
+        width: 645px;
         padding-left: 60px;
       }
 
@@ -2786,7 +2801,7 @@ a {
       display: none;
     }
     &_contact{
-      padding-left: 50px;
+      padding-left: 20px;
     }
 
   }
@@ -2921,7 +2936,7 @@ a {
     }
 
     .sl-nav {
-      margin-left: 50px;
+      margin-left: 30px;
       margin-top: 30px;
       grid-area: box_3;
       width: 600px;
@@ -3060,13 +3075,25 @@ a {
     .table {
       padding-top: 40px;
       .accordion {
-        width: 640px;
+        width: 620px;
       }
 
     }
   }
   .service {
     &_box {
+        display: grid;
+        grid-template-columns: 680px;
+        grid-template-areas:
+                "box_1"
+                "box_2"
+                "box_3"
+                "box_4"
+                "box_5"
+                "box_6"
+                "box_7"
+                "box_8";
+        margin-top: 10px;
       .box {
         width: 655px;
       }
@@ -3094,7 +3121,7 @@ a {
         position: relative;
 
         &_input {
-          width: 650px;
+          width: 630px;
         }
 
         &_flag {
@@ -3112,7 +3139,7 @@ a {
           color: #939393;
           line-height: 23px;
           margin-top: 20px;
-          width: 680px;
+          width: 660px;
           padding-left: 20px;
           padding-top: 25px;
           resize: none;
@@ -3122,38 +3149,38 @@ a {
 
       #name-error {
         position: absolute;
-        margin-left: -530px;
+        margin-left: -510px;
         margin-top: 43px;
         color: #f95469;
       }
 
       #email-error {
         position: absolute;
-        margin-left: -530px;
+        margin-left: -510px;
         margin-top: 43px;
         color: #f95469;
       }
 
       #telephone-error {
         position: absolute;
-        margin-left: -475px;
+        margin-left: -455px;
         margin-top: 43px;
         color: #f95469;
       }
 
       .input_left {
-        width: 650px;
+        width: 630px;
       }
 
       .input_comments {
         position: absolute;
         top: 40px;
-        right: 55px;
+        right: 75px;
       }
 
       .input_tel {
         margin-top: 20px;
-        width: 615px;
+        width: 595px;
         padding-left: 60px;
       }
 
