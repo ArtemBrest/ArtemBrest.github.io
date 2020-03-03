@@ -2797,7 +2797,6 @@ a {
     width: 100%;
   }
 
-
   .header {
 
     &_logo {
@@ -2873,13 +2872,13 @@ a {
 
 
     .left_btn {
-      margin-left: 115px;
+      margin-left: 215px;
       margin-bottom: 0;
     }
 
     .left_btn_2 {
       margin: 50px 0;
-      margin-left: 115px;
+      margin-left: 215px;
     }
 
   }
@@ -2925,7 +2924,7 @@ a {
       margin-left: 50px;
       margin-top: 30px;
       grid-area: box_3;
-      width: 480px;
+      width: 600px;
 
       .sl-slier img {
         width: 130px;
@@ -2938,10 +2937,10 @@ a {
     .sl-slider_img {
       display: block;
       margin: 0;
-      width: 480px;
-      height: 280px;
+      width: 580px;
+      height: 380px;
       background-size: cover;
-      margin-left: 12px;
+      margin-left: 30px;
     }
 
     .slick_slider {
@@ -2952,7 +2951,7 @@ a {
 
     .tablet_img {
       .center_block;
-      width: 130px;
+      width: 170px;
       height: 100px;
       background-size: cover;
 
@@ -2977,7 +2976,7 @@ a {
 
     .box {
       margin-top: 10px;
-      margin-left: 15%;
+      margin-left: 25%;
       position: relative;
 
       &_h4 {
@@ -3061,8 +3060,111 @@ a {
     .table {
       padding-top: 40px;
       .accordion {
-        width: 425px;
+        width: 640px;
       }
+
+    }
+  }
+  .service {
+    &_box {
+      .box {
+        width: 655px;
+      }
+    }
+  }
+  .contact {
+    padding-bottom: 90px;
+
+    &_h2 {
+      font-size: 31px;
+      line-height: 23px;
+      color: #000000;
+      text-align: center;
+      padding-top: 70px;
+    }
+
+
+    .form_grid {
+      display: grid;
+      grid-template-columns: 12fr;
+      grid-template-areas: "box_1" "box_2" "box_3" "box_4 " "box_5" "box_5";
+      margin-top: 10px;
+
+      .form_box {
+        position: relative;
+
+        &_input {
+          width: 650px;
+        }
+
+        &_flag {
+          position: absolute;
+          top: 45px;
+          left: 20px;
+        }
+
+        &_img {
+          margin-left: -50px;
+        }
+
+        &_textarea {
+          font-size: 14px;
+          color: #939393;
+          line-height: 23px;
+          margin-top: 20px;
+          width: 680px;
+          padding-left: 20px;
+          padding-top: 25px;
+          resize: none;
+          height: 150px;
+        }
+      }
+
+      #name-error {
+        position: absolute;
+        margin-left: -530px;
+        margin-top: 43px;
+        color: #f95469;
+      }
+
+      #email-error {
+        position: absolute;
+        margin-left: -530px;
+        margin-top: 43px;
+        color: #f95469;
+      }
+
+      #telephone-error {
+        position: absolute;
+        margin-left: -475px;
+        margin-top: 43px;
+        color: #f95469;
+      }
+
+      .input_left {
+        width: 650px;
+      }
+
+      .input_comments {
+        position: absolute;
+        top: 40px;
+        right: 55px;
+      }
+
+      .input_tel {
+        margin-top: 20px;
+        width: 615px;
+        padding-left: 60px;
+      }
+
+
+    }
+
+
+  }
+  .footer {
+    &_contact {
+      padding-left: 20px;
 
     }
   }
