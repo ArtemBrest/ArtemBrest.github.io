@@ -59,7 +59,8 @@ a {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 850px;
+  height: auto;
+  padding-bottom: 70px;
 }
 .header {
   padding-top: 45px;
@@ -1411,7 +1412,8 @@ a {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 660px;
+    height: auto;
+    padding-bottom: 70px;
   }
   .header {
     padding-top: 45px;
@@ -1433,7 +1435,7 @@ a {
   }
   .header_menu_li {
     display: inline-block;
-    padding: 35px 25px;
+    padding: 0;
   }
   .header_menu_li a {
     font-weight: 700;
@@ -1441,8 +1443,8 @@ a {
   }
   .header_contact {
     grid-area: box_3;
-    display: block;
-    margin: 0 auto;
+    /*.center_block;*/
+    margin-left: 29%;
   }
   .header_btn {
     display: none;
@@ -1526,6 +1528,7 @@ a {
   }
   .menu ul li {
     width: 100vw;
+    padding-top: 15px;
   }
   .menu ul a {
     display: block;
@@ -1661,8 +1664,8 @@ a {
   .portfolio .tablet_img {
     display: block;
     margin: 0 auto;
-    width: 550px;
-    height: 270px;
+    width: 130px;
+    height: 70px;
     background-size: cover;
   }
   .portfolio .box {
@@ -2028,12 +2031,12 @@ a {
     text-align: center;
   }
   .banner_info .left_btn {
-    margin-left: 220px;
+    margin-left: 250px;
     margin-bottom: 0;
   }
   .banner_info .left_btn_2 {
     margin: 50px 0;
-    margin-left: 220px;
+    margin-left: 250px;
   }
   /*content*/
   .portfolio {
@@ -2181,7 +2184,7 @@ a {
     padding-top: 40px;
   }
   .seo .table .accordion {
-    width: 670px;
+    width: 700px;
   }
   .advantages_h2 {
     font-family: "Bebas Neue ";
@@ -2225,7 +2228,7 @@ a {
   }
   .service_box {
     display: grid;
-    grid-template-columns: 730px;
+    grid-template-columns: 765px;
     grid-template-areas: "box_1" "box_2" "box_3" "box_4" "box_5" "box_6" "box_7" "box_8";
     margin-top: 10px;
   }
@@ -2316,7 +2319,7 @@ a {
     position: relative;
   }
   .contact .form_grid .form_box_input {
-    width: 680px;
+    width: 710px;
   }
   .contact .form_grid .form_box_flag {
     position: absolute;
@@ -2331,7 +2334,7 @@ a {
     color: #939393;
     line-height: 23px;
     margin-top: 20px;
-    width: 710px;
+    width: 740px;
     padding-left: 20px;
     padding-top: 25px;
     resize: none;
@@ -2339,39 +2342,39 @@ a {
   }
   .contact .form_grid #name-error {
     position: absolute;
-    margin-left: -560px;
+    margin-left: -590px;
     margin-top: 43px;
     color: #f95469;
   }
   .contact .form_grid #email-error {
     position: absolute;
-    margin-left: -558px;
+    margin-left: -588px;
     margin-top: 43px;
     color: #f95469;
   }
   .contact .form_grid #telephone-error {
     position: absolute;
-    margin-left: -505px;
+    margin-left: -535px;
     margin-top: 43px;
     color: #f95469;
   }
   .contact .form_grid .input_left {
-    width: 680px;
+    width: 710px;
   }
   .contact .form_grid .input_comments {
     position: absolute;
     top: 40px;
-    right: 65px;
+    right: 35px;
   }
   .contact .form_grid .input_tel {
     margin-top: 20px;
-    width: 645px;
+    width: 675px;
     padding-left: 60px;
   }
   .footer .footer_grid {
     display: grid;
     padding: 30px 0;
-    grid-template-columns: 3fr  5fr 4fr;
+    grid-template-columns: 3fr 5fr 4fr;
     grid-template-areas: "box_1 box_2 box_3 ";
     color: #ffffff;
   }
@@ -2379,10 +2382,236 @@ a {
     grid-area: box_2;
     display: none;
   }
+  .footer_contact {
+    padding-left: 50px;
+  }
 }
 @media (max-width: 767px) {
   .container {
     width: 100%;
+  }
+  .header_logo {
+    grid-area: box_1;
+  }
+  .header_logo_top {
+    font-size: 19px;
+    line-height: 10px;
+    font-weight: 700;
+  }
+  .header_logo_bottom {
+    display: none;
+  }
+  .header_contact_address {
+    display: none;
+  }
+  .menu-link {
+    position: absolute;
+    top: 30px;
+  }
+  .banner_info {
+    margin-top: 70px;
+    padding-left: 25px;
+    display: grid;
+    grid-template-columns: 12fr;
+    grid-template-areas: "box_1 ";
+  }
+  .banner_info .left_top {
+    font-size: 12px;
+    line-height: 31px;
+    padding-top: 50px;
+    padding-bottom: 0;
+    text-align: center;
+  }
+  .banner_info .left_bottom {
+    padding-top: 10px;
+    font-size: 12px;
+    line-height: 31px;
+    text-align: center;
+  }
+  .banner_info .number {
+    color: #fedf33;
+    font-size: 17px;
+    line-height: 31px;
+  }
+  .banner_info .free {
+    font-size: 17px;
+    line-height: 31px;
+  }
+  .banner_info_left {
+    grid-area: box_1;
+  }
+  .banner_info .left_h1 {
+    font-size: 40px;
+    line-height: 51px;
+    text-align: center;
+  }
+  .banner_info .left_btn {
+    margin-left: 115px;
+    margin-bottom: 0;
+  }
+  .banner_info .left_btn_2 {
+    margin: 50px 0;
+    margin-left: 115px;
+  }
+  /*content*/
+  .portfolio {
+    padding-bottom: 60px;
+    background-color: #e9eff0;
+  }
+  .portfolio_h2 {
+    padding-top: 50px;
+    font-family: "Bebas Neue ";
+    font-weight: 700;
+    font-size: 30px;
+    color: #000000;
+    text-align: left;
+    line-height: 18px;
+  }
+  .portfolio_btn {
+    margin-top: 50px;
+  }
+  .portfolio .grid_container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: "box_1" "box_2" "box_3";
+  }
+  .portfolio .sl {
+    padding-top: 25px;
+    padding-left: 25px;
+    grid-area: box_2;
+  }
+  .portfolio .right_slick {
+    position: absolute;
+    top: 40%;
+    right: -40px;
+  }
+  .portfolio .left_slick {
+    left: -40px;
+  }
+  .portfolio .sl-nav {
+    margin-left: 50px;
+    margin-top: 30px;
+    grid-area: box_3;
+    width: 480px;
+  }
+  .portfolio .sl-nav .sl-slier img {
+    width: 130px;
+    height: 70px;
+    background-size: cover;
+  }
+  .portfolio .sl-slider_img {
+    display: block;
+    margin: 0;
+    width: 480px;
+    height: 280px;
+    background-size: cover;
+    margin-left: 12px;
+  }
+  .portfolio .slick_slider {
+    margin-top: 0px;
+    margin-left: 20px;
+    width: 100%;
+  }
+  .portfolio .tablet_img {
+    display: block;
+    margin: 0 auto;
+    width: 130px;
+    height: 100px;
+    background-size: cover;
+  }
+  .portfolio .portfolio_info_h3 {
+    font-size: 14px;
+    margin-top: 23px;
+  }
+  .experience_box {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 12fr;
+    grid-template-areas: "box_1" "box_2" "box_3" "box_4" "box_5 " "box_6" "box_7" "box_8" "box_9" "box_10" "box_11" " box_12" "box_13" "box_14";
+  }
+  .experience .box {
+    margin-top: 10px;
+    margin-left: 15%;
+    position: relative;
+  }
+  .experience .box_h4 {
+    position: absolute;
+    top: 20px;
+    left: 15%;
+  }
+  .disadvantages {
+    height: auto;
+  }
+  .disadvantages_h2 {
+    line-height: 35px;
+  }
+  .disadvantages .grid_container {
+    display: grid;
+    grid-template-columns: 12fr;
+    margin-top: 25px;
+    grid-template-areas: "box_1" "box_2";
+  }
+  .disadvantages .disadvantages_right {
+    grid-area: box_2;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  .disadvantages .disadvantages_right .form {
+    margin-left: 0;
+  }
+  .price_h2 {
+    line-height: 35px;
+  }
+  .price .cards {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 12fr;
+    grid-template-areas: "box_1" "box_2" "box_3" "box_4";
+  }
+  .price .card:nth-child(1) {
+    grid-area: box_1;
+    display: block;
+    margin: 0 auto;
+  }
+  .price .card:nth-child(2) {
+    grid-area: box_2;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  .price .card:nth-child(3) {
+    grid-area: box_3;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  .price .card:nth-child(4) {
+    grid-area: box_4;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  .seo {
+    margin-top: 90px;
+    background-color: #e9eff0;
+    height: auto;
+    padding-bottom: 80px;
+  }
+  .seo_h2 {
+    font-family: "Bebas Neue ";
+    font-weight: 700;
+    text-align: left;
+    padding-top: 70px;
+    font-size: 30px;
+    line-height: 18px;
+    color: #000000;
+  }
+  .seo .table {
+    padding-top: 40px;
+  }
+  .seo .table .accordion {
+    width: 425px;
   }
 }
 @media (max-width: 479px) {
