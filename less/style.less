@@ -27,6 +27,7 @@ a {
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+  box-sizing: border-box;
 }
 
 .invisLink {
@@ -295,6 +296,8 @@ a {
       margin-top: 60px;
     }
 
+
+
     &_input {
       font-size: 14px;
       line-height: 30px;
@@ -384,8 +387,18 @@ a {
 
   .sl-nav {
     margin-top: 50px;
-  }
 
+  }
+  .left_slick {
+    position: absolute;
+    top: 40%;
+    left: -30px;
+  }
+  .right_slick {
+    position: absolute;
+    top: 40%;
+    right: -60px;
+  }
   .sl-slider_img {
 
     .center_block;
@@ -2344,7 +2357,7 @@ a {
 
 @media (max-width: 991px) {
   .container {
-    width: 780px;
+    width: 765px;
   }
 
   .banner {
@@ -2411,7 +2424,7 @@ a {
 
     .grid_container {
       display: grid;
-      grid-template-columns: 780px;
+      grid-template-columns: 100%;
       grid-template-areas: "box_1" "box_2" "box_3";
     }
 
@@ -2457,7 +2470,7 @@ a {
 
     .slick_slider {
       margin-top: 0px;
-      margin-left: 20px;
+      margin-left: 0px;
       width: 100%;
     }
 
@@ -3407,6 +3420,7 @@ a {
         width: 340px;
         height: auto;
         padding-bottom: 30px;
+
         #name-error {
           position: absolute;
           margin-left: -183px;
@@ -3427,6 +3441,7 @@ a {
           margin-top: 20px;
           color: #f95469;
         }
+
         &_input {
           font-size: 14px;
           line-height: 30px;

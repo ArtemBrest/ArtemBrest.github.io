@@ -11,8 +11,8 @@ $(document).ready(function () {
         slidesToShow: 3,
         slidesToScroll: 1,
         asNavFor: '.sl',
-        prevArrow: '<img class="left_slick" src="img/png/left.png" alt="" style="position: absolute; top:40%;left: -30px">',
-        nextArrow: '<img class="right_slick" src="img/png/right.png" alt="" style="position: absolute;top:40%;right: -60px">  ',
+        prevArrow: '<img class="left_slick" src="img/png/left.png" alt="" >',
+        nextArrow: '<img class="right_slick" src="img/png/right.png" alt="" >  ',
         dots: false,
         centerMode: true,
         focusOnSelect: true
@@ -30,10 +30,10 @@ $(document).ready(function () {
         } else {
             $(this).addClass("active");
         }
-        if (up.hasClass("icon_active")) {
-            up.removeClass("icon_active");
+        if ($(this).find(".icon").hasClass("icon_active")) {
+            $(this).find(".icon").removeClass("icon_active");
         } else {
-            up.addClass("icon_active");
+            $(this).find(".icon").addClass("icon_active");
         }
     });
 

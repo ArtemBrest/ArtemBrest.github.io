@@ -29,6 +29,8 @@ a {
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .invisLink {
   position: relative;
@@ -320,6 +322,16 @@ a {
 }
 .portfolio .sl-nav {
   margin-top: 50px;
+}
+.portfolio .left_slick {
+  position: absolute;
+  top: 40%;
+  left: -30px;
+}
+.portfolio .right_slick {
+  position: absolute;
+  top: 40%;
+  right: -60px;
 }
 .portfolio .sl-slider_img {
   display: block;
@@ -2015,7 +2027,7 @@ a {
 }
 @media (max-width: 991px) {
   .container {
-    width: 780px;
+    width: 765px;
   }
   .banner {
     background-position: center center;
@@ -2072,7 +2084,7 @@ a {
   }
   .portfolio .grid_container {
     display: grid;
-    grid-template-columns: 780px;
+    grid-template-columns: 100%;
     grid-template-areas: "box_1" "box_2" "box_3";
   }
   .portfolio .sl {
@@ -2109,7 +2121,7 @@ a {
   }
   .portfolio .slick_slider {
     margin-top: 0px;
-    margin-left: 20px;
+    margin-left: 0px;
     width: 100%;
   }
   .portfolio .tablet_img {
