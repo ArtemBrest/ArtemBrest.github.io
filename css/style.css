@@ -306,6 +306,20 @@ a {
   padding-bottom: 60px;
   background-color: #e9eff0;
 }
+.portfolio .nav_line .line {
+  margin-top: 60px;
+}
+.portfolio .nav_line .line-li {
+  display: inline-block;
+  margin-right: 25px;
+  font-size: 14px;
+  line-height: 28px;
+  color: #fc6b4d;
+}
+.portfolio .nav_line .line-bottom {
+  margin-top: 20px;
+  margin-bottom: 65px;
+}
 .portfolio_h2 {
   padding-top: 60px;
   font-family: "Bebas Neue ";
@@ -419,6 +433,9 @@ a {
   position: absolute;
   left: -35px;
   top: 5px;
+}
+.portfolio_page {
+  background-color: #ffffff;
 }
 .experience {
   padding-bottom: 80px;
@@ -859,8 +876,7 @@ a {
   right: 0;
   top: -11px;
   font-size: 40px;
-  /*color: #c4cccd;*/
-  color: #fe6e2e;
+  color: #c4cccd;
   display: inline-block;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
@@ -1065,6 +1081,24 @@ a {
 }
 .progress {
   padding-bottom: 100px;
+}
+.progress_ul-li {
+  padding-left: 80px;
+  padding-top: 35px;
+  position: relative;
+  font-size: 16px;
+  line-height: 23px;
+}
+.progress_ul-li:before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #626262;
+  position: absolute;
+  left: 55px;
+  top: 52%;
 }
 .progress_h2 {
   font-family: "Bebas Neue ";
@@ -1398,11 +1432,15 @@ a {
   color: #f73b5e;
   font-size: 14px;
 }
+.blogs {
+  padding-top: 40px;
+}
 .blogs_cards {
   padding-bottom: 60px;
-  border-bottom: 1px solid#000000;
+  border-bottom: 1px solid #dddddd;
 }
 .blogs_cards_h2 {
+  padding-top: 50px;
   font-family: "Bebas Neue ";
   font-weight: 700;
   font-size: 30px;
@@ -1428,6 +1466,133 @@ a {
 }
 .blogs_cards .card_info {
   grid-area: box_2;
+  margin-left: 30px;
+}
+.blogs_cards .card_span {
+  font-size: 14px;
+  line-height: 73px;
+  color: #adadad;
+}
+.blogs_cards .card_p {
+  padding-top: 30px;
+  line-height: 23px;
+  font-size: 16px;
+  color: #626262;
+}
+.blogs_cards .card_btn {
+  font-weight: 700;
+  font-size: 15px;
+  color: #6a281a;
+  text-align: center;
+  display: block;
+  width: 245px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 30px;
+  margin-top: 30px;
+  background-color: #fedf33;
+}
+.blogs_cards:nth-child(5) {
+  border: none;
+}
+.blogs .pagination .controls,
+.blogs .pagination .pageNum {
+  display: inline-block;
+  vertical-align: middle;
+}
+.blogs .pagination .controls a {
+  color: #dcdcdc;
+  font-size: 31px;
+  line-height: 31px;
+  font-family: 'Bebas Neue';
+}
+.blogs .pagination .pageNum {
+  margin: 0 20px;
+}
+.blogs .pagination .pageNum_li {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid #dcdcdc;
+  position: relative;
+}
+.blogs .pagination .pageNum_li:hover {
+  background-color: #fef1f3;
+  border: 1px solid #f74566;
+}
+.blogs .pagination .pageNum_li:nth-child(6) {
+  border: none;
+}
+.blogs .pagination .pageNum_li:nth-child(6):hover {
+  background-color: transparent;
+  border: none;
+}
+.blogs .pagination .pageNum_a {
+  font-family: 'Bebas Neue';
+  color: #868686;
+  font-size: 17px;
+  line-height: 31px;
+  position: absolute;
+  top: 24%;
+  left: 42%;
+}
+.blogs .pagination .controls:nth-child(1) {
+  margin-left: 20px;
+}
+.contactAbout .box_contact {
+  margin-top: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 85px;
+  border-bottom: 1px solid #dddddd;
+}
+.contactAbout .box_contact .box {
+  display: block;
+  margin: 0 auto;
+}
+.contactAbout .box_contact .box-img {
+  display: block;
+  margin: 0 auto;
+}
+.contactAbout .box_contact .box-title {
+  color: #f87944;
+  font-size: 14px;
+  line-height: 25px;
+  text-align: center;
+  padding-top: 40px;
+}
+.contactAbout .box_contact .box-p {
+  color: #9d9d9d;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  padding-top: 40px;
+}
+.contactRegistration_info .contactRegistration {
+  padding-bottom: 50px;
+  border-bottom: 1px solid #dddddd;
+}
+.contactRegistration_info .contactRegistration_h2 {
+  font-family: "Bebas Neue ";
+  font-weight: 700;
+  font-size: 30px;
+  color: #000000;
+  text-align: left;
+  line-height: 18px;
+  padding-top: 35px;
+  text-transform: uppercase;
+}
+.contactRegistration_info .contactRegistration_p {
+  padding-top: 35px;
+  font-size: 16px;
+  line-height: 35px;
+  color: #9d9d9d;
 }
 .footer {
   background-position: center center;
