@@ -65,6 +65,36 @@ a {
   max-width: 100%;
   padding-bottom: 70px;
 }
+.banner_p {
+  font-size: 11px;
+  line-height: 73px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 60px;
+}
+.banner_h1 {
+  font-weight: 700;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 51px;
+  line-height: 73px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 60px;
+}
+.banner_h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 23px;
+  line-height: 31px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 60px;
+  color: #ffffff;
+}
+.banner .yellow {
+  color: #fee248;
+}
 .header {
   padding-top: 45px;
   display: grid;
@@ -1333,6 +1363,7 @@ a {
 .contact .form_grid .input_comments {
   position: absolute;
   top: 40px;
+  right: 10px;
 }
 .contact .form_grid .input_tel {
   width: 490px;
@@ -1366,6 +1397,37 @@ a {
 .contact .form_text_error span {
   color: #f73b5e;
   font-size: 14px;
+}
+.blogs_cards {
+  padding-bottom: 60px;
+  border-bottom: 1px solid#000000;
+}
+.blogs_cards_h2 {
+  font-family: "Bebas Neue ";
+  font-weight: 700;
+  font-size: 30px;
+  color: #000000;
+  text-align: left;
+  line-height: 18px;
+  line-height: 35px;
+  text-transform: uppercase;
+}
+.blogs_cards .card {
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+  grid-template-areas: "box_1 box_2";
+  margin-top: 40px;
+}
+.blogs_cards .card_img {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 235px;
+  grid-area: box_1;
+}
+.blogs_cards .card_info {
+  grid-area: box_2;
 }
 .footer {
   background-position: center center;
@@ -1419,6 +1481,217 @@ a {
   font-size: 12px;
   padding-top: 10px;
   line-height: 15px;
+}
+@media (max-width: 1590px) {
+  .container {
+    width: 1200px;
+  }
+  .header {
+    padding-top: 45px;
+    display: grid;
+    grid-template-columns: 2fr 5fr 2fr 2fr;
+    grid-template-areas: "box_1 box_2 box_3 box_4";
+    color: #ffffff;
+  }
+  .header .menu-link {
+    display: none;
+  }
+  .header_logo {
+    grid-area: box_1;
+    padding-left: 25px;
+  }
+  .header_logo_top {
+    font-size: 30px;
+    line-height: 15px;
+    font-weight: 700;
+  }
+  .header_logo_bottom {
+    font-size: 9px;
+    line-height: 15px;
+  }
+  .header_menu {
+    margin-left: 5px;
+    grid-area: box_2;
+  }
+  .header_menu_li {
+    display: inline-block;
+    padding: 35px 15px;
+  }
+  .header_menu_li a {
+    font-weight: 700;
+    color: #ffffff;
+  }
+  .header_contact {
+    grid-area: box_3;
+    padding-top: 15px;
+  }
+  .header_contact_tel {
+    font-size: 19px;
+    line-height: 15px;
+    color: #ffffff;
+    font-weight: 700;
+  }
+  .header_contact_address {
+    font-weight: 300;
+    font-size: 12px;
+    padding-top: 10px;
+    line-height: 15px;
+  }
+  .header_btn {
+    grid-area: box_4;
+  }
+  .header_btn .btn {
+    margin-top: 10px;
+    width: 220px;
+    height: 55px;
+    line-height: 55px;
+    border-radius: 30px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .banner_info {
+    padding-left: 25px;
+    margin-top: 120px;
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+    grid-template-areas: "box_1 box_2 ";
+  }
+  .banner_info_left {
+    grid-area: box_1;
+  }
+  .banner_info .left_h1 {
+    font-family: "Bebas Neue ";
+    font-size: 70px;
+    line-height: 73px;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .banner_info .left_h1_span {
+    color: #fcf1b7;
+  }
+  .banner_info .left_top {
+    font-size: 16px;
+    line-height: 37px;
+    color: #ffffff;
+    font-weight: 700;
+    padding: 50px 0;
+  }
+  .banner_info .left_bottom {
+    font-size: 16px;
+    line-height: 37px;
+    color: #ffffff;
+    font-weight: 700;
+  }
+  .banner_info .number {
+    color: #fedf33;
+    font-size: 50px;
+    line-height: 23px;
+  }
+  .banner_info .free {
+    font-size: 23px;
+    line-height: 27px;
+    color: #fedf33;
+    text-transform: uppercase;
+  }
+  .banner_info .left_btn {
+    margin-top: 90px;
+    width: 270px;
+    height: 50px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    border-radius: 30px;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .banner_info .left_btn_2 {
+    margin-top: 90px;
+    width: 285px;
+    height: 50px;
+    background-color: #fedf33;
+    border: none;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-left: 25px;
+  }
+  .banner_info_form {
+    grid-area: box_2;
+  }
+  .banner_info .form {
+    margin-top: -20px;
+    height: 555px;
+    width: 420px;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  .banner_info .form #name-error {
+    position: absolute;
+    margin-left: -225px;
+    margin-top: 67px;
+    color: #f95469;
+  }
+  .banner_info .form #email-error {
+    position: absolute;
+    margin-left: -210px;
+    margin-top: 20px;
+    color: #f95469;
+  }
+  .banner_info .form #address-error {
+    position: absolute;
+    margin-left: -200px;
+    margin-top: 20px;
+    color: #f95469;
+  }
+  .banner_info .form_p {
+    font-size: 12px;
+    line-height: 23px;
+    padding-top: 40px;
+    text-align: center;
+    color: #f95469;
+    letter-spacing: 1px;
+  }
+  .banner_info .form_h2 {
+    font-size: 25px;
+    line-height: 50px;
+    text-align: center;
+    padding-top: 45px;
+    color: #3e3e3e;
+  }
+  .banner_info .form .input_top {
+    margin-top: 60px;
+  }
+  .banner_info .form_input {
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 700;
+    width: 310px;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid #ececec;
+    margin: 15px 50px;
+    outline: none !important;
+  }
+  .banner_info .form_img {
+    margin-left: -70px;
+  }
+  .banner_info .form_btn {
+    border: none;
+    border-radius: 30px;
+    background-color: #f95469;
+    width: 215px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 50px;
+    color: #ffffff;
+    display: block;
+    margin: 50px auto;
+  }
 }
 @media (max-width: 1199px) {
   .container {
@@ -2391,7 +2664,7 @@ a {
   .contact .form_grid .input_comments {
     position: absolute;
     top: 40px;
-    right: 65px;
+    right: 25px;
   }
   .contact .form_grid .input_tel {
     margin-top: 20px;
@@ -2788,11 +3061,11 @@ a {
   }
   .portfolio .grid_container {
     display: grid;
-    grid-template-columns: 350px;
+    grid-template-columns: 100%;
     grid-template-areas: "box_1" "box_2" "box_3";
   }
   .portfolio .slick_slider {
-    width: 350px;
+    width: 100%;
     margin-left: 0;
   }
   .portfolio .sl-nav {
@@ -3133,5 +3406,235 @@ a {
   }
   .footer_contact {
     padding-left: 0;
+  }
+}
+@media (max-width: 354px) {
+  .container {
+    width: 100%;
+  }
+  .banner_info .left_btn_2 {
+    margin: 50px 0;
+    margin-left: 20px;
+  }
+  .portfolio .sl-slider_img {
+    display: block;
+    margin: 0 auto;
+    width: 280px;
+    height: 180px;
+    background-size: cover;
+    margin-left: 0;
+  }
+  .portfolio .sl-nav {
+    margin-left: 130px;
+    margin-top: 30px;
+    grid-area: box_3;
+    width: 3px;
+  }
+  .disadvantages {
+    height: auto;
+  }
+  .disadvantages_h2 {
+    line-height: 35px;
+  }
+  .disadvantages .grid_container {
+    display: grid;
+    grid-template-columns: 100%;
+    margin-top: 25px;
+    grid-template-areas: "box_1" "box_2";
+  }
+  .disadvantages .disadvantages_li {
+    margin-left: 20px;
+  }
+  .disadvantages .disadvantages_right {
+    grid-area: box_2;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  .disadvantages .disadvantages_right .form {
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+    padding-bottom: 30px;
+  }
+  .disadvantages .disadvantages_right .form #name-error {
+    position: absolute;
+    margin-left: -143px;
+    margin-top: 65px;
+    color: #f95469;
+  }
+  .disadvantages .disadvantages_right .form #address-error {
+    position: absolute;
+    margin-left: -120px;
+    margin-top: 20px;
+    color: #f95469;
+  }
+  .disadvantages .disadvantages_right .form #tel-error {
+    position: absolute;
+    margin-left: -105px;
+    margin-top: 20px;
+    color: #f95469;
+  }
+  .disadvantages .disadvantages_right .form_input {
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 700;
+    width: 260px;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid #ececec;
+    margin: 15px 20px;
+    outline: none !important;
+  }
+  .disadvantages .disadvantages_right .form_btn {
+    border: none;
+    border-radius: 30px;
+    background-color: #f95469;
+    width: 260px;
+    height: 55px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 50px;
+    color: #ffffff;
+    display: block;
+    margin: 60px auto;
+  }
+  .seo {
+    margin-top: 90px;
+    background-color: #e9eff0;
+    height: auto;
+    padding-bottom: 80px;
+  }
+  .seo_h2 {
+    font-family: "Bebas Neue ";
+    font-weight: 700;
+    text-align: left;
+    line-height: 18px;
+    padding-top: 70px;
+    font-size: 30px;
+    line-height: 35px;
+    color: #000000;
+  }
+  .seo .table {
+    width: 100%;
+    padding-top: 40px;
+  }
+  .seo .table .accordion {
+    width: 225px;
+  }
+  .seo .table .accordion .icon {
+    position: absolute;
+    right: -5px;
+    top: 5px;
+    font-size: 35px;
+    color: #c4cccd;
+    display: inline-block;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  .seo .table .accordion .icon_active {
+    position: absolute;
+    right: -5px;
+    top: 5px;
+    font-size: 35px;
+    color: #fe6e2e;
+    display: inline-block;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  .service_h2 {
+    line-height: 35px;
+  }
+  .service_box {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: "box_1" "box_2" "box_3" "box_4" "box_5" "box_6" "box_7" "box_8";
+    margin-top: 10px;
+  }
+  .service_box .box {
+    width: 240px;
+    height: auto;
+  }
+  .service_box .box-h4 {
+    line-height: 25px;
+  }
+  .service_box .box-p {
+    margin-top: 25px;
+    margin-left: 20px;
+    color: #626262;
+    font-size: 16px;
+    line-height: 23px;
+  }
+  .contact {
+    padding-bottom: 90px;
+  }
+  .contact_h2 {
+    font-size: 31px;
+    line-height: 23px;
+    color: #000000;
+    text-align: center;
+    padding-top: 70px;
+  }
+  .contact .form_grid {
+    display: grid;
+    grid-template-columns: 12fr;
+    grid-template-areas: "box_1" "box_2" "box_3" "box_4 " "box_5" "box_5";
+    margin-top: 10px;
+  }
+  .contact .form_grid .form_box {
+    position: relative;
+  }
+  .contact .form_grid .form_box_input {
+    width: 240px;
+  }
+  .contact .form_grid .form_box_flag {
+    position: absolute;
+    top: 45px;
+    left: 20px;
+  }
+  .contact .form_grid .form_box_img {
+    margin-left: -50px;
+  }
+  .contact .form_grid .form_box_textarea {
+    font-size: 14px;
+    color: #939393;
+    line-height: 23px;
+    margin-top: 20px;
+    width: 270px;
+    padding-left: 20px;
+    padding-top: 25px;
+    resize: none;
+    height: 150px;
+  }
+  .contact .form_grid #name-error {
+    position: absolute;
+    margin-left: -120px;
+    margin-top: 43px;
+    color: #f95469;
+  }
+  .contact .form_grid #email-error {
+    position: absolute;
+    margin-left: -120px;
+    margin-top: 43px;
+    color: #f95469;
+  }
+  .contact .form_grid #telephone-error {
+    position: absolute;
+    margin-left: -65px;
+    margin-top: 43px;
+    color: #f95469;
+  }
+  .contact .form_grid .input_left {
+    width: 240px;
+  }
+  .contact .form_grid .input_comments {
+    position: absolute;
+    top: 47px;
+    right: 15px;
+  }
+  .contact .form_grid .input_tel {
+    margin-top: 20px;
+    width: 205px;
+    padding-left: 60px;
   }
 }
