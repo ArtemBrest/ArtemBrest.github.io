@@ -63,7 +63,7 @@ a {
   background-size: cover;
   height: auto;
   max-width: 100%;
-  padding-bottom: 70px;
+  padding-bottom: 120px;
 }
 .banner_p {
   font-size: 11px;
@@ -75,21 +75,21 @@ a {
 }
 .banner_h1 {
   font-weight: 700;
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 51px;
+  font-family: "Bebas Neue Cyrillic", sans-serif;
+  font-size: 71px;
   line-height: 73px;
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 60px;
+  padding-top: 15px;
 }
 .banner_h2 {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Bebas Neue Cyrillic", sans-serif;
   font-size: 23px;
   line-height: 31px;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 60px;
+  padding-top: 45px;
   color: #ffffff;
 }
 .banner .yellow {
@@ -98,7 +98,7 @@ a {
 .header {
   padding-top: 45px;
   display: grid;
-  grid-template-columns: 2fr 5fr 2fr 2fr;
+  grid-template-columns: 3fr 4fr 2fr 2fr;
   grid-template-areas: "box_1 box_2 box_3 box_4";
   color: #ffffff;
 }
@@ -107,7 +107,7 @@ a {
 }
 .header_logo {
   grid-area: box_1;
-  padding-left: 205px;
+  padding-left: 260px;
 }
 .header_logo_top {
   font-size: 30px;
@@ -124,15 +124,19 @@ a {
 }
 .header_menu_li {
   display: inline-block;
-  padding: 35px 25px;
+  padding: 35px 23px;
 }
 .header_menu_li a {
   font-weight: 700;
   color: #ffffff;
 }
+.header_menu_li:nth-child(5) {
+  padding-right: 0;
+}
 .header_contact {
   grid-area: box_3;
-  padding-top: 15px;
+  padding-top: 20px;
+  margin-left: 90px;
 }
 .header_contact_tel {
   font-size: 19px;
@@ -162,17 +166,17 @@ a {
   font-weight: 700;
 }
 .banner_info {
-  padding-left: 205px;
-  margin-top: 120px;
+  padding-left: 260px;
+  margin-top: 85px;
   display: grid;
-  grid-template-columns: 8fr 4fr;
+  grid-template-columns: 5fr 4fr;
   grid-template-areas: "box_1 box_2 ";
 }
 .banner_info_left {
   grid-area: box_1;
 }
 .banner_info .left_h1 {
-  font-family: "Bebas Neue ";
+  font-family: "Bebas Neue Cyrillic";
   font-size: 70px;
   line-height: 73px;
   color: #ffffff;
@@ -187,9 +191,10 @@ a {
   line-height: 37px;
   color: #ffffff;
   font-weight: 700;
-  padding: 50px 0;
+  padding-top: 50px;
 }
 .banner_info .left_bottom {
+  padding-top: 20px;
   font-size: 16px;
   line-height: 37px;
   color: #ffffff;
@@ -207,7 +212,7 @@ a {
   text-transform: uppercase;
 }
 .banner_info .left_btn {
-  margin-top: 90px;
+  margin-top: 70px;
   width: 270px;
   height: 50px;
   border: 1px solid #ffffff;
@@ -218,7 +223,7 @@ a {
   text-transform: uppercase;
 }
 .banner_info .left_btn_2 {
-  margin-top: 90px;
+  margin-top: 80px;
   width: 285px;
   height: 50px;
   background-color: #fedf33;
@@ -232,8 +237,8 @@ a {
   grid-area: box_2;
 }
 .banner_info .form {
-  margin-top: -20px;
-  height: 555px;
+  margin-top: -10px;
+  height: 525px;
   width: 420px;
   background-color: #fff;
   border-radius: 10px;
@@ -241,25 +246,25 @@ a {
 .banner_info .form #name-error {
   position: absolute;
   margin-left: -225px;
-  margin-top: 67px;
+  margin-top: 60px;
   color: #f95469;
 }
 .banner_info .form #email-error {
   position: absolute;
   margin-left: -210px;
-  margin-top: 20px;
+  margin-top: 12px;
   color: #f95469;
 }
 .banner_info .form #address-error {
   position: absolute;
   margin-left: -200px;
-  margin-top: 20px;
+  margin-top: 14px;
   color: #f95469;
 }
 .banner_info .form_p {
   font-size: 12px;
   line-height: 23px;
-  padding-top: 40px;
+  padding-top: 30px;
   text-align: center;
   color: #f95469;
   letter-spacing: 1px;
@@ -272,7 +277,7 @@ a {
   color: #3e3e3e;
 }
 .banner_info .form .input_top {
-  margin-top: 60px;
+  margin-top: 55px;
 }
 .banner_info .form_input {
   font-size: 14px;
@@ -282,7 +287,7 @@ a {
   height: 30px;
   border: none;
   border-bottom: 1px solid #ececec;
-  margin: 15px 50px;
+  margin: 10px 50px;
   outline: none !important;
 }
 .banner_info .form_img {
@@ -299,7 +304,8 @@ a {
   line-height: 50px;
   color: #ffffff;
   display: block;
-  margin: 50px auto;
+  margin: 0 auto;
+  margin-top: 50px;
 }
 /*content*/
 .portfolio {
@@ -307,7 +313,7 @@ a {
   background-color: #e9eff0;
 }
 .portfolio .nav_line .line {
-  margin-top: 60px;
+  margin-top: 40px;
 }
 .portfolio .nav_line .line-li {
   display: inline-block;
@@ -317,12 +323,11 @@ a {
   color: #fc6b4d;
 }
 .portfolio .nav_line .line-bottom {
-  margin-top: 20px;
-  margin-bottom: 65px;
+  margin-bottom: 45px;
 }
 .portfolio_h2 {
-  padding-top: 60px;
-  font-family: "Bebas Neue ";
+  padding-top: 65px;
+  font-family: "Bebas Neue Cyrillic";
   font-weight: 700;
   font-size: 41px;
   color: #000000;
@@ -335,7 +340,7 @@ a {
   border-radius: 30px;
   display: block;
   margin: 0 auto;
-  margin-top: 60px;
+  margin-top: 50px;
   background-color: #fc6841;
   border: none;
   font-size: 12px;
@@ -353,7 +358,7 @@ a {
   grid-area: box_1;
 }
 .portfolio .sl {
-  padding-top: 30px;
+  padding-top: 20px;
   padding-left: 30px;
   grid-area: box_2;
 }
@@ -365,17 +370,19 @@ a {
   width: 680px;
 }
 .portfolio .sl-nav {
-  margin-top: 50px;
+  margin-top: 25px;
 }
 .portfolio .left_slick {
   position: absolute;
   top: 40%;
-  left: -30px;
+  left: 0px;
+  z-index: 1000000;
 }
 .portfolio .right_slick {
   position: absolute;
   top: 40%;
-  right: -60px;
+  right: 0px;
+  z-index: 1000000;
 }
 .portfolio .sl-slider_img {
   display: block;
@@ -389,13 +396,20 @@ a {
   background-position: center center;
   background-size: cover;
 }
+.portfolio .tablet_img {
+  display: block;
+  margin: 0 auto;
+  width: 280px;
+  height: 160px;
+  background-size: cover;
+}
 .portfolio .portfolio_info_h3 {
   font-size: 18px;
   line-height: 23px;
   color: #fc6b4d;
   text-align: left;
   font-weight: 700;
-  margin-top: 45px;
+  margin-top: 50px;
   text-transform: uppercase;
 }
 .portfolio .portfolio_info_p {
@@ -403,7 +417,7 @@ a {
   line-height: 23px;
   color: #656565;
   text-align: left;
-  padding: 30px 0;
+  padding: 25px 0;
 }
 .portfolio .portfolio_info_h4 {
   font-size: 14px;
@@ -413,14 +427,14 @@ a {
   font-weight: 700;
 }
 .portfolio .portfolio_info_li:nth-child(1) {
-  margin-top: 15px;
+  margin-top: 25px;
 }
 .portfolio .portfolio_info_li {
   font-size: 14px;
   line-height: 23px;
   color: #656565;
   text-align: left;
-  margin-top: 25px;
+  margin-top: 15px;
   margin-left: 40px;
   position: relative;
 }
@@ -443,7 +457,7 @@ a {
 .experience_h2 {
   padding-top: 65px;
   text-transform: uppercase;
-  font-family: "Bebas Neue ";
+  font-family: "Bebas Neue Cyrillic";
   font-weight: 700;
   font-size: 30px;
   color: #000000;
@@ -465,7 +479,7 @@ a {
   text-align: left;
 }
 .experience_box {
-  margin-top: 60px;
+  margin-top: 40px;
   display: grid;
   grid-template-columns: 4fr 4fr 4fr;
   grid-template-areas: "box_1 box_2 box_3 " "box_1 box_4 box_5 " "box_6 box_7 box_8 " "box_9 box_10 box_11 " "box_12 box_13 box_14 ";
@@ -517,7 +531,7 @@ a {
   position: relative;
 }
 .experience .box_h4 {
-  font-family: "Bebas Neue";
+  font-family: "Bebas Neue Cyrillic";
   font-size: 23px;
   line-height: 18px;
   color: #fc6841;
@@ -529,8 +543,11 @@ a {
   font-size: 14px;
   line-height: 18px;
   color: #595959;
-  padding: 10px 0;
+  padding: 5px 0;
   padding-left: 80px;
+}
+.experience .box_li:nth-child(1) {
+  padding-top: 10px;
 }
 .experience_btn {
   display: block;
@@ -555,7 +572,7 @@ a {
   height: auto;
 }
 .disadvantages_h2 {
-  font-family: "Bebas Neue ";
+  font-family: "Bebas Neue Cyrillic";
   font-weight: 700;
   font-size: 30px;
   color: #000000;
@@ -583,15 +600,15 @@ a {
   margin-left: 90px;
 }
 .disadvantages_li:nth-child(1) {
-  margin-top: 40px;
+  margin-top: 25px;
 }
 .disadvantages_li {
   list-style-type: disc;
   color: #ffffff;
-  margin-left: 50px;
+  margin-left: 70px;
   font-size: 16px;
   line-height: 23px;
-  padding-top: 25px;
+  padding-top: 15px;
 }
 .disadvantages .grid_container {
   margin-top: 25px;
@@ -616,25 +633,26 @@ a {
   font-size: 25px;
   line-height: 50px;
   text-align: center;
-  padding-top: 45px;
+  padding-top: 35px;
   color: #3e3e3e;
+  letter-spacing: 1.4px;
 }
 .disadvantages .disadvantages_right .form #name-error {
   position: absolute;
-  margin-left: -223px;
+  margin-left: -230px;
   margin-top: 65px;
   color: #f95469;
 }
 .disadvantages .disadvantages_right .form #address-error {
   position: absolute;
-  margin-left: -200px;
+  margin-left: -210px;
   margin-top: 20px;
   color: #f95469;
 }
 .disadvantages .disadvantages_right .form #tel-error {
   position: absolute;
-  margin-left: -185px;
-  margin-top: 20px;
+  margin-left: -195px;
+  margin-top: 24px;
   color: #f95469;
 }
 .disadvantages .disadvantages_right .form .input_top {
@@ -646,12 +664,11 @@ a {
 .disadvantages .disadvantages_right .form_input {
   font-size: 14px;
   line-height: 30px;
-  font-weight: 700;
   width: 310px;
   height: 30px;
   border: none;
   border-bottom: 1px solid #ececec;
-  margin: 15px 50px;
+  margin: 20px 50px;
   outline: none !important;
 }
 .disadvantages .disadvantages_right .form_img {
@@ -668,11 +685,11 @@ a {
   line-height: 50px;
   color: #ffffff;
   display: block;
-  margin: 60px auto;
+  margin: 50px auto;
 }
 .price_h2 {
   padding-top: 70px;
-  font-family: "Bebas Neue ";
+  font-family: "Bebas Neue Cyrillic";
   font-weight: 700;
   font-size: 30px;
   color: #000000;
@@ -708,7 +725,7 @@ a {
 .price .card {
   background-color: #f5fafd;
   width: 270px;
-  height: 655px;
+  height: 660px;
   -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.06);
           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.06);
 }
@@ -824,10 +841,10 @@ a {
   margin-top: 90px;
   background-color: #e9eff0;
   height: auto;
-  padding-bottom: 80px;
+  padding-bottom: 85px;
 }
 .seo_h2 {
-  font-family: "Bebas Neue ";
+  font-family: "Bebas Neue Cyrillic";
   font-weight: 700;
   text-align: left;
   padding-top: 70px;
@@ -843,7 +860,7 @@ a {
   margin-top: 30px;
 }
 .seo .table {
-  padding-top: 40px;
+  padding-top: 20px;
 }
 .seo .table .accordion {
   border-radius: 10px;
@@ -906,13 +923,13 @@ a {
   margin-top: 70px;
 }
 .advantages_h2 {
-  font-family: "Bebas Neue ";
+  font-family: "Bebas Neue Cyrillic";
   font-weight: 700;
   font-size: 30px;
   color: #000000;
   text-align: left;
   line-height: 18px;
-  padding-top: 55px;
+  padding-top: 65px;
   text-transform: uppercase;
 }
 .advantages_line {
@@ -976,11 +993,11 @@ a {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 80px;
+  padding-bottom: 90px;
   max-width: 100%;
 }
 .service_h2 {
-  font-family: "Bebas Neue ";
+  font-family: "Bebas Neue Cyrillic";
   font-weight: 700;
   font-size: 30px;
   color: #000000;
@@ -995,7 +1012,7 @@ a {
   width: 60px;
   height: 5px;
   background-color: #ffffff;
-  margin-top: 30px;
+  margin-top: 35px;
 }
 .service_box {
   display: grid;
@@ -1017,11 +1034,11 @@ a {
   color: #323232;
   text-transform: uppercase;
   margin-top: -45px;
-  margin-left: 80px;
+  margin-left: 60px;
 }
 .service_box .box-p {
-  margin-top: 25px;
-  margin-left: 80px;
+  margin-top: 5px;
+  margin-left: 60px;
   color: #626262;
   font-size: 16px;
   line-height: 23px;
@@ -1036,7 +1053,7 @@ a {
   line-height: 45px;
   width: 165px;
   height: 45px;
-  margin-left: 80px;
+  margin-left: 60px;
   margin-top: 25px;
 }
 .service_box .box .btn_5 {
@@ -1080,7 +1097,7 @@ a {
   margin-left: 30px;
 }
 .progress {
-  padding-bottom: 100px;
+  padding-bottom: 105px;
 }
 .progress_ul-li {
   padding-left: 80px;
@@ -1101,33 +1118,33 @@ a {
   top: 52%;
 }
 .progress_h2 {
-  font-family: "Bebas Neue ";
+  font-family: "Bebas Neue Cyrillic";
   font-weight: 700;
   font-size: 30px;
   color: #000000;
   text-align: left;
   line-height: 18px;
   text-transform: uppercase;
-  padding-top: 65px;
+  padding-top: 75px;
 }
 .progress_line {
   display: block;
   width: 60px;
   height: 5px;
   background-color: #fc7042;
-  margin-top: 30px;
+  margin-top: 35px;
 }
 .progress_box {
   display: grid;
   grid-template-columns: 6fr 6fr;
   grid-template-areas: "box_1 box_2" "box_3 box_4" "box_5 box_6" "box_7 box_8";
-  margin-top: 10px;
+  margin-top: 40px;
 }
 .progress_box .box {
   margin-top: 50px;
 }
 .progress_box .box-span {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Bebas Neue Cyrillic", sans-serif;
   font-size: 35px;
   line-height: 18px;
   color: #f73b5e;
@@ -1141,14 +1158,14 @@ a {
   font-weight: 700;
   color: #323232;
   text-transform: uppercase;
-  margin-left: 60px;
+  margin-left: 55px;
   margin-top: -40px;
 }
 .progress_box .box-p {
   color: #626262;
   font-size: 16px;
   line-height: 23px;
-  margin-left: 60px;
+  margin-left: 55px;
 }
 .progress .box:nth-child(1) {
   grid-area: box_1;
@@ -1173,13 +1190,15 @@ a {
 }
 .progress .box:nth-child(7) {
   grid-area: box_7;
+  margin-bottom: 20px;
 }
 .progress .box:nth-child(8) {
   grid-area: box_8;
   margin-left: 30px;
+  margin-bottom: 20px;
 }
 .progress_h3 {
-  padding-top: 60px;
+  padding-top: 50px;
   font-weight: 700;
   font-size: 21px;
   line-height: 18px;
@@ -1210,13 +1229,13 @@ a {
   padding-bottom: 75px;
 }
 .instrument_h2 {
-  font-family: "Bebas Neue ";
+  font-family: "Bebas Neue Cyrillic";
   font-weight: 700;
   font-size: 30px;
   color: #000000;
   text-align: left;
   line-height: 18px;
-  padding-top: 55px;
+  padding-top: 75px;
   text-transform: uppercase;
 }
 .instrument_line {
@@ -1232,18 +1251,18 @@ a {
   grid-template-areas: "box_1 box_2 box_3" "box_4 box_5 box_6" "box_7 box_8 box_9" "box_10 box_11 box_12" "box_13 box_14 box_15" "box_16 box_17 box_18";
 }
 .instrument_box .box {
-  margin-top: 80px;
+  margin-top: 60px;
 }
 .instrument_box .box-h4 {
   font-size: 23px;
   line-height: 18px;
   color: #000000;
   margin-top: -40px;
-  margin-left: 80px;
+  margin-left: 100px;
 }
 .instrument_box .box-p {
   margin-top: 25px;
-  margin-left: 80px;
+  margin-left: 100px;
   color: #464646;
   font-size: 16px;
   line-height: 21px;
@@ -1302,7 +1321,7 @@ a {
 .instrument_btn {
   display: block;
   margin: 0 auto;
-  margin-top: 45px;
+  margin-top: 55px;
   width: 250px;
   height: 55px;
   line-height: 55px;
@@ -1314,12 +1333,13 @@ a {
   font-size: 12px;
 }
 .contact {
-  padding-bottom: 90px;
+  padding-bottom: 100px;
 }
 .contact_h2 {
   font-size: 31px;
   line-height: 23px;
   color: #000000;
+  font-weight: 400;
   text-align: center;
   padding-top: 70px;
 }
@@ -1339,15 +1359,16 @@ a {
 }
 .contact .form_grid {
   display: grid;
-  grid-template-columns: 6fr 6fr;
+  grid-template-columns: 435px 435px;
   grid-template-areas: "box_1 box_2" "box_3 box_4 " "box_5 box_5";
   margin-top: 10px;
+  margin-left: 140px;
 }
 .contact .form_grid .form_box {
   position: relative;
 }
 .contact .form_grid .form_box_input {
-  width: 550px;
+  width: 370px;
   margin-top: 20px;
   padding: 20px 25px;
   font-size: 14px;
@@ -1360,14 +1381,14 @@ a {
   left: 20px;
 }
 .contact .form_grid .form_box_img {
-  margin-left: -35px;
+  margin-left: -45px;
 }
 .contact .form_grid .form_box_textarea {
   font-size: 14px;
   color: #939393;
   line-height: 23px;
   margin-top: 20px;
-  width: 98%;
+  width: 855px;
   padding-left: 20px;
   padding-top: 25px;
   resize: none;
@@ -1375,24 +1396,24 @@ a {
 }
 .contact .form_grid #name-error {
   position: absolute;
-  margin-left: -410px;
+  margin-left: -255px;
   margin-top: 43px;
   color: #f95469;
 }
 .contact .form_grid #email-error {
   position: absolute;
-  margin-left: -430px;
+  margin-left: -195px;
   margin-top: 43px;
   color: #f95469;
 }
 .contact .form_grid #telephone-error {
   position: absolute;
-  margin-left: -350px;
+  margin-left: -250px;
   margin-top: 43px;
   color: #f95469;
 }
 .contact .form_grid .input_left {
-  width: 525px;
+  width: 370px;
 }
 .contact .form_grid .input_comments {
   position: absolute;
@@ -1400,7 +1421,7 @@ a {
   right: 10px;
 }
 .contact .form_grid .input_tel {
-  width: 490px;
+  width: 335px;
   padding-left: 60px;
 }
 .contact .form_box:nth-child(1) {
@@ -1409,6 +1430,7 @@ a {
 }
 .contact .form_box:nth-child(2) {
   grid-area: box_2;
+  margin-left: 20px;
 }
 .contact .form_box:nth-child(3) {
   grid-area: box_3;
@@ -1416,13 +1438,14 @@ a {
 }
 .contact .form_box:nth-child(4) {
   grid-area: box_4;
+  margin-left: 20px;
 }
 .contact .form_box:nth-child(5) {
   grid-area: box_5;
 }
 .contact .form_text_error {
   display: none;
-  padding-left: 20px;
+  padding-left: 145px;
   padding-top: 30px;
   font-size: 14px;
   line-height: 23px;
@@ -1440,8 +1463,8 @@ a {
   border-bottom: 1px solid #dddddd;
 }
 .blogs_cards_h2 {
-  padding-top: 50px;
-  font-family: "Bebas Neue ";
+  padding-top: 30px;
+  font-family: "Bebas Neue Cyrillic";
   font-weight: 700;
   font-size: 30px;
   color: #000000;
@@ -1454,7 +1477,7 @@ a {
   display: grid;
   grid-template-columns: 4fr 8fr;
   grid-template-areas: "box_1 box_2";
-  margin-top: 40px;
+  margin-top: 20px;
 }
 .blogs_cards .card_img {
   background-position: center center;
@@ -1472,9 +1495,10 @@ a {
   font-size: 14px;
   line-height: 73px;
   color: #adadad;
+  display: block;
+  margin-top: -17px;
 }
 .blogs_cards .card_p {
-  padding-top: 30px;
   line-height: 23px;
   font-size: 16px;
   color: #626262;
@@ -1489,11 +1513,14 @@ a {
   height: 50px;
   line-height: 50px;
   border-radius: 30px;
-  margin-top: 30px;
+  margin-top: 20px;
   background-color: #fedf33;
 }
 .blogs_cards:nth-child(5) {
   border: none;
+}
+.blogs .pagination {
+  margin-top: 10px;
 }
 .blogs .pagination .controls,
 .blogs .pagination .pageNum {
@@ -1504,10 +1531,10 @@ a {
   color: #dcdcdc;
   font-size: 31px;
   line-height: 31px;
-  font-family: 'Bebas Neue';
+  font-family: 'Bebas Neue Cyrillic';
 }
 .blogs .pagination .pageNum {
-  margin: 0 20px;
+  margin: 0 5px;
 }
 .blogs .pagination .pageNum_li {
   display: inline-block;
@@ -1530,7 +1557,7 @@ a {
   border: none;
 }
 .blogs .pagination .pageNum_a {
-  font-family: 'Bebas Neue';
+  font-family: 'Bebas Neue Cyrillic';
   color: #868686;
   font-size: 17px;
   line-height: 31px;
@@ -1542,14 +1569,14 @@ a {
   margin-left: 20px;
 }
 .contactAbout .box_contact {
-  margin-top: 75px;
+  margin-top: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-bottom: 85px;
+  padding-bottom: 60px;
   border-bottom: 1px solid #dddddd;
 }
 .contactAbout .box_contact .box {
@@ -1565,21 +1592,21 @@ a {
   font-size: 14px;
   line-height: 25px;
   text-align: center;
-  padding-top: 40px;
+  padding-top: 25px;
 }
 .contactAbout .box_contact .box-p {
   color: #9d9d9d;
   font-size: 16px;
   line-height: 25px;
   text-align: center;
-  padding-top: 40px;
+  padding-top: 25px;
 }
 .contactRegistration_info .contactRegistration {
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   border-bottom: 1px solid #dddddd;
 }
 .contactRegistration_info .contactRegistration_h2 {
-  font-family: "Bebas Neue ";
+  font-family: "Bebas Neue Cyrillic";
   font-weight: 700;
   font-size: 30px;
   color: #000000;
@@ -1589,7 +1616,7 @@ a {
   text-transform: uppercase;
 }
 .contactRegistration_info .contactRegistration_p {
-  padding-top: 35px;
+  padding-top: 15px;
   font-size: 16px;
   line-height: 35px;
   color: #9d9d9d;
@@ -1689,6 +1716,7 @@ a {
   .header_contact {
     grid-area: box_3;
     padding-top: 15px;
+    margin: 0;
   }
   .header_contact_tel {
     font-size: 19px;
@@ -1721,14 +1749,14 @@ a {
     padding-left: 25px;
     margin-top: 120px;
     display: grid;
-    grid-template-columns: 8fr 4fr;
+    grid-template-columns: 7fr 4fr;
     grid-template-areas: "box_1 box_2 ";
   }
   .banner_info_left {
     grid-area: box_1;
   }
   .banner_info .left_h1 {
-    font-family: "Bebas Neue ";
+    font-family: "Bebas Neue Cyrillic";
     font-size: 70px;
     line-height: 73px;
     color: #ffffff;
@@ -1856,6 +1884,16 @@ a {
     color: #ffffff;
     display: block;
     margin: 50px auto;
+  }
+  .portfolio .sl-slider_img {
+    display: block;
+    margin: 0 auto;
+    width: 505px;
+    height: 295px;
+    background-size: cover;
+  }
+  .seo .table .accordion {
+    width: 95%;
   }
 }
 @media (max-width: 1199px) {
@@ -2057,7 +2095,7 @@ a {
   }
   .portfolio_h2 {
     padding-top: 40px;
-    font-family: "Bebas Neue ";
+    font-family: "Bebas Neue Cyrillic";
     font-weight: 700;
     font-size: 30px;
     color: #000000;
@@ -2138,7 +2176,7 @@ a {
     margin-top: 20px;
   }
   .experience_h2 {
-    font-family: "Bebas Neue ";
+    font-family: "Bebas Neue Cyrillic";
     font-weight: 700;
     font-size: 30px;
     color: #000000;
@@ -2169,7 +2207,7 @@ a {
   }
   .price .card:nth-child(1) {
     grid-area: box_1;
-    margin-left: 190px;
+    margin-left: 170px;
   }
   .price .card:nth-child(2) {
     grid-area: box_2;
@@ -2177,7 +2215,7 @@ a {
   .price .card:nth-child(3) {
     grid-area: box_3;
     margin-top: 30px;
-    margin-left: 190px;
+    margin-left: 170px;
   }
   .price .card:nth-child(4) {
     grid-area: box_4;
@@ -2190,7 +2228,7 @@ a {
     padding-bottom: 80px;
   }
   .seo_h2 {
-    font-family: "Bebas Neue ";
+    font-family: "Bebas Neue Cyrillic";
     font-weight: 700;
     text-align: left;
     padding-top: 70px;
@@ -2384,11 +2422,20 @@ a {
     text-align: center;
     padding-top: 70px;
   }
+  .contact .form_box:nth-child(2) {
+    grid-area: box_2;
+    margin-left: 0px;
+  }
+  .contact .form_box:nth-child(4) {
+    grid-area: box_4;
+    margin-left: 0px;
+  }
   .contact .form_grid {
     display: grid;
     grid-template-columns: 12fr;
     grid-template-areas: "box_1" "box_2" "box_3" "box_4 " "box_5" "box_5";
     margin-top: 10px;
+    margin-left: 0;
   }
   .contact .form_grid .form_box {
     position: relative;
@@ -2445,6 +2492,9 @@ a {
     width: 890px;
     padding-left: 60px;
   }
+  .contact .form_text_error {
+    padding-left: 20px;
+  }
   .footer .footer_grid {
     display: grid;
     padding: 30px 0;
@@ -2496,12 +2546,15 @@ a {
     text-align: center;
   }
   .banner_info .left_btn {
-    margin-left: 250px;
-    margin-bottom: 0;
+    display: block;
+    margin: 0 auto;
+    margin-top: 90px;
   }
   .banner_info .left_btn_2 {
-    margin: 50px 0;
-    margin-left: 250px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
   /*content*/
   .portfolio {
@@ -2510,7 +2563,7 @@ a {
   }
   .portfolio_h2 {
     padding-top: 50px;
-    font-family: "Bebas Neue ";
+    font-family: "Bebas Neue Cyrillic";
     font-weight: 700;
     font-size: 30px;
     color: #000000;
@@ -2573,7 +2626,7 @@ a {
     padding-bottom: 60px;
   }
   .experience_h2 {
-    font-family: "Bebas Neue ";
+    font-family: "Bebas Neue Cyrillic";
     font-weight: 700;
     font-size: 30px;
     color: #000000;
@@ -2637,7 +2690,7 @@ a {
     padding-bottom: 80px;
   }
   .seo_h2 {
-    font-family: "Bebas Neue ";
+    font-family: "Bebas Neue Cyrillic";
     font-weight: 700;
     text-align: left;
     padding-top: 70px;
@@ -2652,7 +2705,7 @@ a {
     width: 680px;
   }
   .advantages_h2 {
-    font-family: "Bebas Neue ";
+    font-family: "Bebas Neue Cyrillic";
     font-weight: 700;
     font-size: 30px;
     color: #000000;
@@ -2749,7 +2802,7 @@ a {
     padding-bottom: 75px;
   }
   .instrument_h2 {
-    font-family: "Bebas Neue ";
+    font-family: "Bebas Neue Cyrillic";
     font-weight: 700;
     font-size: 30px;
     color: #000000;
@@ -2925,7 +2978,7 @@ a {
   }
   .portfolio_h2 {
     padding-top: 50px;
-    font-family: "Bebas Neue ";
+    font-family: "Bebas Neue Cyrillic";
     font-weight: 700;
     font-size: 30px;
     color: #000000;
@@ -2974,7 +3027,7 @@ a {
   }
   .portfolio .slick_slider {
     margin-top: 0px;
-    margin-left: 20px;
+    margin-left: 0px;
     width: 100%;
   }
   .portfolio .tablet_img {
@@ -3064,7 +3117,7 @@ a {
     padding-bottom: 80px;
   }
   .seo_h2 {
-    font-family: "Bebas Neue ";
+    font-family: "Bebas Neue Cyrillic";
     font-weight: 700;
     text-align: left;
     padding-top: 70px;
@@ -3376,7 +3429,7 @@ a {
     padding-bottom: 80px;
   }
   .seo_h2 {
-    font-family: "Bebas Neue ";
+    font-family: "Bebas Neue Cyrillic";
     font-weight: 700;
     text-align: left;
     line-height: 18px;
@@ -3463,7 +3516,7 @@ a {
     padding-bottom: 75px;
   }
   .instrument_h2 {
-    font-family: "Bebas Neue ";
+    font-family: "Bebas Neue Cyrillic";
     font-weight: 700;
     font-size: 30px;
     color: #000000;
@@ -3671,7 +3724,7 @@ a {
     padding-bottom: 80px;
   }
   .seo_h2 {
-    font-family: "Bebas Neue ";
+    font-family: "Bebas Neue Cyrillic";
     font-weight: 700;
     text-align: left;
     line-height: 18px;
@@ -3729,6 +3782,9 @@ a {
     color: #626262;
     font-size: 16px;
     line-height: 23px;
+  }
+  .progress_btn {
+    width: 290px;
   }
   .contact {
     padding-bottom: 90px;
