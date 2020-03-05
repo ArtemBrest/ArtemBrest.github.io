@@ -3010,7 +3010,7 @@ a {
     margin-left: 30px;
     margin-top: 30px;
     grid-area: box_3;
-    width: 600px;
+    width: 550px;
   }
   .portfolio .sl-nav .sl-slier img {
     width: 130px;
@@ -3033,7 +3033,7 @@ a {
   .portfolio .tablet_img {
     display: block;
     margin: 0 auto;
-    width: 170px;
+    width: 145px;
     height: 100px;
     background-size: cover;
   }
@@ -3129,7 +3129,7 @@ a {
     padding-top: 40px;
   }
   .seo .table .accordion {
-    width: 620px;
+    width: 570px;
   }
   .service_box {
     display: grid;
@@ -3138,7 +3138,7 @@ a {
     margin-top: 10px;
   }
   .service_box .box {
-    width: 655px;
+    width: 585px;
   }
   .contact {
     padding-bottom: 90px;
@@ -3160,7 +3160,7 @@ a {
     position: relative;
   }
   .contact .form_grid .form_box_input {
-    width: 630px;
+    width: 580px;
   }
   .contact .form_grid .form_box_flag {
     position: absolute;
@@ -3175,7 +3175,7 @@ a {
     color: #939393;
     line-height: 23px;
     margin-top: 20px;
-    width: 660px;
+    width: 610px;
     padding-left: 20px;
     padding-top: 25px;
     resize: none;
@@ -3183,33 +3183,33 @@ a {
   }
   .contact .form_grid #name-error {
     position: absolute;
-    margin-left: -510px;
+    margin-left: -465px;
     margin-top: 43px;
     color: #f95469;
   }
   .contact .form_grid #email-error {
     position: absolute;
-    margin-left: -510px;
-    margin-top: 43px;
+    margin-left: -465px;
+    margin-top: 40px;
     color: #f95469;
   }
   .contact .form_grid #telephone-error {
     position: absolute;
-    margin-left: -455px;
+    margin-left: -410px;
     margin-top: 43px;
     color: #f95469;
   }
   .contact .form_grid .input_left {
-    width: 630px;
+    width: 580px;
   }
   .contact .form_grid .input_comments {
     position: absolute;
     top: 40px;
-    right: 75px;
+    right: 25px;
   }
   .contact .form_grid .input_tel {
     margin-top: 20px;
-    width: 595px;
+    width: 545px;
     padding-left: 60px;
   }
   .footer_contact {
