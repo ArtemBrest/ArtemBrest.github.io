@@ -8,13 +8,12 @@ $(document).ready(function () {
         asNavFor: '.sl-nav'
     });
     $('.sl-nav').slick({
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 1,
         asNavFor: '.sl',
         prevArrow: '<img class="left_slick" src="img/png/left.png" alt="" >',
         nextArrow: '<img class="right_slick" src="img/png/right.png" alt="" >  ',
         dots: false,
-        centerMode: true,
         focusOnSelect: true
     });
 
