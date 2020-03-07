@@ -60,7 +60,7 @@ $(document).ready(function () {
             address:{
                 required: true,
                 minlength:2,
-                email:true
+                address:true
             },
 
         },
@@ -75,7 +75,7 @@ $(document).ready(function () {
             },
             address:{
                 required: '*',
-                email: 'Ведите коректный address'
+                address: 'Ведите коректный address'
             },
 
         }
@@ -97,7 +97,7 @@ $(document).ready(function () {
             },
             email:{
                 required: true,
-                minlength:2,
+                minlength:4,
                 email:true
             },
             tel:{
@@ -134,8 +134,8 @@ $(document).ready(function () {
             },
             address:{
                 required: true,
-                minlength:2,
-                email:true
+                minlength:4,
+                address:true
             },
             tel:{
                 required: true,
@@ -151,7 +151,7 @@ $(document).ready(function () {
             },
             address:{
                 required: '*',
-                email: 'Ведите коректный email'
+                address: 'Ведите коректный email'
             },
             tel:{
                 required: '*',
