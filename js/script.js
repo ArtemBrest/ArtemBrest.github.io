@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
     $('.sl').slick({
         slidesToShow: 1,
@@ -37,88 +36,103 @@ $(document).ready(function () {
     });
 
 
-
-    jQuery(function($){
+    jQuery(function ($) {
         $("#tel").mask("+375(99) 999-99-99");
         $("#telephone").mask("+375(99) 999-99-99");
+        $("#input_modal_tel").mask("+375(99) 999-99-99");
+        $("#modal4_tel").mask("+375(99) 999-99-99");
+        $("#modal5_tel").mask("+375(99) 999-99-99");
+        $("#modal6_tel").mask("+375(99) 999-99-99");
     });
 
 
-
-
     $('#form').validate({
-        rules:{
-            name:{
+        rules: {
+            name: {
                 required: true,
-                minlength:2
+                minlength: 2
             },
-            email:{
+            email: {
                 required: true,
-                minlength:2,
-                email:true
+                minlength: 2,
+                email: true
             },
-            address:{
+            address: {
                 required: true,
-                minlength:2,
-                address:true
+                minlength: 4,
+                // address:true
             },
 
         },
-        messages:{
-            name:{
+        messages: {
+            name: {
                 required: '*',
-                minlength: 'Минимум 2 символа'
+                minlength: ' '
             },
-            email:{
+            email: {
                 required: '*',
-                email: 'Ведите коректный email'
+                email: ' ',
+                minlength: ' '
             },
-            address:{
+            address: {
                 required: '*',
-                address: 'Ведите коректный address'
+                minlength: ' ',
+                address: ' '
             },
 
         }
     });
 
     $(".contact_form_btn").click(function () {
-        if( $('#contact_form').validate){
+        if ($('#contact_form').validate) {
             $(".form_text_error").show();
         }
 
     })
+    $(".form_btn_top").click(function () {
+        if ($('#form').validate){
+            $(".form_text_error").show();
+        }
+    })
+    $(".form_disAdv_btn").click(function () {
+        if ($('#disadvantages_form').validate){
+            $(".form_text_error").show();
+        }
+    })
 
     $('#contact_form').validate({
 
-        rules:{
-            name:{
+        rules: {
+            name: {
                 required: true,
-                minlength:2
+                minlength: 2
             },
-            email:{
+            email: {
                 required: true,
-                minlength:4,
-                email:true
+                minlength: 4,
+                email: true
             },
-            tel:{
+            tel: {
                 required: true,
-                minlength:2,
-                tel:true
+                minlength: 2,
+                tel: true
             },
 
         },
-        messages:{
-            name:{
+        messages: {
+            name: {
                 required: '*',
-                minlength: 'Минимум 2 символа'
+                minlength: ' '
             },
-            email:{
+            email: {
                 required: '*',
-                email: 'Ведите коректный email'
+                minlength: ' ',
+                email: ' '
             },
-            tel:{
+            tel: {
                 required: '*',
-                tel: 'Ведите коректный телефон'
+                minlength: ' ',
+                tel: ' '
             },
 
         }
@@ -127,42 +141,45 @@ $(document).ready(function () {
 
     $('#disadvantages_form').validate({
 
-        rules:{
-            name:{
+        rules: {
+            name: {
                 required: true,
-                minlength:2
+                minlength: 2
             },
-            address:{
+            address: {
                 required: true,
-                minlength:4,
-                address:true
+                minlength: 4,
+                address: true
             },
-            tel:{
+            tel: {
                 required: true,
-                minlength:2,
-                tel:true
+                minlength: 2,
+                tel: true
             },
 
         },
-        messages:{
-            name:{
+        messages: {
+            name: {
                 required: '*',
-                minlength: 'Минимум 2 символа'
+                minlength: ' ',
+                name: ' '
             },
-            address:{
+            address: {
                 required: '*',
-                address: 'Ведите коректный email'
+                minlength: ' ',
+                address: ''
             },
-            tel:{
+            tel: {
                 required: '*',
-                tel: 'Ведите коректный телефон'
+                minlength: ' ',
+                tel: ''
             },
 
         }
 
     });
 
-    var link  = $('.menu-link');
+    var link = $('.menu-link');
     var menu = $('.menu');
     var nav = $('.menu a');
     link.click(function () {

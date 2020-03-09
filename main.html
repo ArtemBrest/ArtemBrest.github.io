@@ -37,9 +37,23 @@
             <a href="tel:+375297431905" class="header_contact_tel">+375 (29) 743 19 05</a>
             <p class="header_contact_address">Минск, ул. Матусевича, д. 52-19</p>
         </div>
-        <div class="header_btn">
-            <button class="btn">ЗАКАЗАТЬ ЗВОНОК</button>
+
+        <div class="header_btn " data-target="modal" data-toggle="#mainModal">
+            <button class="btn header_contact_btn">ЗАКАЗАТЬ ЗВОНОК</button>
         </div>
+        <a href="#close" class="fade1"></a>
+        <div class="modal1" id="mainModal">
+            <a href="#close" class="modal1-close">&times;</a>
+            <form action="#" class="modal1_form">
+                <h2 class="form_h2">ЗАКАЗАТЬ ЗВОНОК</h2>
+                <input name="name" type="text" class="form_input input_top" placeholder="Контактное лицо"> <img
+                    class="form_img" src="img/png/form_users.png" alt="">
+                <input name="tel" type="text" class="form_input " id="input_modal_tel"
+                       placeholder="Введите Ваш Телефон"> <img class="form_img" src="img/png/form_tel.png" alt="">
+                <button class="form_btn">Отправить заявку</button>
+            </form>
+        </div>
+
     </header>
     <div class="banner_info">
         <div class="banner_left">
@@ -48,8 +62,36 @@
             <p class="left_top">Гарантия результата <span class="number"> 100%!</span></p>
             <p class="left_bottom">Если не укладываемся в срок, до момента достижения результата<br>
                 работаем <span class="free">бесплатно!</span></p>
-            <button class="left_btn">ЗАКАЗАТЬ ПРОДВИЖЕНИЕ</button>
-            <button class="left_btn_2">ПОЛУЧИТЬ 60$ НА РЕКЛАМУ</button>
+            <button class="left_btn" data-target="modal" data-toggle="#mainModal4">ЗАКАЗАТЬ ПРОДВИЖЕНИЕ</button>
+            <a href="#close" class="fade4"></a>
+            <div class="modal4" id="mainModal4">
+                <a href="#close" class="modal4-close">&times;</a>
+                <form action="#" class="modal4_form">
+                    <h2 class="form_h2">ЗАКАЗАТЬ ПРОДВИЖЕНИЕ</h2>
+                    <input name="name" type="text" class="form_input input_top" placeholder="Контактное лицо">
+                    <img class="form_img" src="img/png/form_users.png" alt="">
+                    <input name="tel" type="text" class="form_input " id="modal4_tel" placeholder="Введите Ваш Телефон">
+                    <img class="form_img" src="img/png/form_tel.png" alt="">
+                    <input name="address" class="form_input" type="text" placeholder="Адрес Вашего сайта">
+                    <img class="form_img" src="img/png/form_addres.png" alt="">
+                    <textarea name="comment" placeholder="Введите ваше сообщение"></textarea>
+                    <img class="form_img img-commnets" src="img/png/form-comments.png" alt="">
+                    <button class="form_btn">Отправить заявку</button>
+                </form>
+            </div>
+            <button class="left_btn_2" data-target="modal" data-toggle="#mainModal2">ПОЛУЧИТЬ 60$ НА РЕКЛАМУ</button>
+            <a href="#close" class="fade2"></a>
+            <div class="modal2" id="mainModal2">
+                <a href="#close" class="modal2-close">&times;</a>
+                <form action="#" class="modal2_form">
+                    <h2 class="form_h2">ПОЛУЧИТЬ РЕКЛАМУ</h2>
+                    <input name="name" type="text" class="form_input input_top" placeholder="Контактное лицо"> <img
+                        class="form_img" src="img/png/form_users.png" alt="">
+                    <input name="email" type="text" class="form_input " placeholder="Введите Ваш Email"> <img
+                        class="form_img" src="img/png/form_email.png" alt="">
+                    <button class="form_btn">Отправить заявку</button>
+                </form>
+            </div>
         </div>
         <div class="banner_form">
             <form action="#" class="form" id="form">
@@ -69,7 +111,18 @@
                     class="form_img"
                     src="img/png/form_addres.png"
                     alt="">
-                <button class="form_btn">ПОЛУЧИТЬ АУДИТ</button>
+                <p class="form_text_error"><span> * </span> - Поля, обязательные к заполнению.</p>
+                <button class="form_btn form_btn_top" data-target="modal3" data-toggle="#mainModal3">ПОЛУЧИТЬ АУДИТ
+                </button>
+
+
+                 <!--<a href="#close" class="fade3"></a>
+                 <div class="modal3" id="mainModal3">
+                     <a href="#close" class="modal3-close">&times;</a>
+                     <h1>Спасибо за заявку!</h1>
+                     <p>Наши менеджеры свяжутся с вами в ближайшее время!</p>
+                     <button class="btn-close">Отлично!</button>
+                 </div>-->
             </form>
         </div>
     </div>
@@ -136,7 +189,22 @@
                 </div>
             </div>
 
-            <button class="portfolio_btn">ХОЧУ ТАКЖЕ</button>
+            <button class="portfolio_btn" data-target="modal" data-toggle="#mainModal5">ХОЧУ ТАКЖЕ</button>
+
+
+            <a href="#close" class="fade5"></a>
+            <div class="modal5" id="mainModal5">
+                <a href="#close" class="modal5-close">&times;</a>
+                <form action="#" class="modal5_form">
+                    <h2 class="form_h2">ИНТЕРНЕТ-МАГАЗИН МЕБЕЛИ</h2>
+                    <input name="name" type="text" class="form_input input_top" placeholder="Контактное лицо"> <img
+                        class="form_img" src="img/png/form_users.png" alt="">
+                    <input id="modal5_tel" name="tel" type="text" class="form_input " placeholder="Введите Ваш Телефон">
+                    <img
+                            class="form_img" src="img/png/form_tel.png" alt="">
+                    <button class="form_btn close-btn_5">Отправить заявку</button>
+                </form>
+            </div>
         </div>
     </div>
     <div class="experience">
@@ -299,7 +367,27 @@
                     </div>
                 </div>
             </div>
-            <button class="experience_btn">ЗДЕСЬ ЕСТЬ МОЯ ТЕМАТИКА</button>
+
+
+            <button class="experience_btn" data-target="modal" data-toggle="#mainModal6">ЗДЕСЬ ЕСТЬ МОЯ ТЕМАТИКА
+            </button>
+
+
+            <a href="#close" class="fade6"></a>
+            <div class="modal6" id="mainModal6">
+                <a href="#close" class="modal6-close">&times;</a>
+                <form action="#" class="modal6_form">
+                    <h2 class="form_h2">ИНТЕРНЕТ-МАГАЗИН МЕБЕЛИ</h2>
+                    <input name="name" type="text" class="form_input input_top" placeholder="Контактное лицо"> <img
+                        class="form_img" src="img/png/form_users.png" alt="">
+                    <input id="modal6_tel" name="tel" type="text" class="form_input " placeholder="Введите Ваш Телефон">
+                    <img
+                            class="form_img" src="img/png/form_tel.png" alt="">
+                    <input name="address" class="form_input" type="text" placeholder="Адрес Вашего сайта">
+                    <img class="form_img" src="img/png/form_addres.png" alt="">
+                    <button class="form_btn close-btn_6">Отправить заявку</button>
+                </form>
+            </div>
         </div>
     </div>
     <div class="disadvantages " style="background-image: url(img/png/back_4.png);">
@@ -332,13 +420,17 @@
                 <div class="disadvantages_right">
                     <form action="" class="form" id="disadvantages_form">
                         <h2 class="form_h2">Заявка на аудит сайта</h2>
-                        <input name="name" type="text" class="form_input input_first" placeholder="Контактное лицо"> <img
-                            src="img/png/form_users.png" alt="" class="form_img">
-                        <input name="tel" id="tel" type="text" class="form_input" id="tel" placeholder="Введите Ваш телефон"> <img
+                        <input name="name" type="text" class="form_input input_first" placeholder="Контактное лицо">
+                        <img
+                                src="img/png/form_users.png" alt="" class="form_img">
+                        <input name="tel" id="tel" type="text" class="form_input"
+                               placeholder="Введите Ваш телефон"> <img
                             src="img/png/form_tel.png" alt="" class="form_img">
-                        <input  name="address" type="text" class="form_input" placeholder="Адрес Вашего сайта"> <img
+                        <input name="address" type="text" class="form_input" placeholder="Адрес Вашего сайта"> <img
                             src="img/png/form_addres.png" alt="" class="form_img">
-                        <button class="form_btn">ПОЛУЧИТЬ БЕСПЛАТНЫЙ АУДИТ</button>
+                        <p class="form_text_error"><span> * </span> - Поля, обязательные к заполнению.</p>
+                        <button class="form_btn form_disAdv_btn" data-target="modal3" data-toggle="#mainModal3">ПОЛУЧИТЬ БЕСПЛАТНЫЙ АУДИТ</button>
+
                     </form>
                 </div>
 
@@ -393,7 +485,7 @@
                         <span class="card_span_false">Портал/Сервис</span>
                         <img class="card_img_false" src="img/png/no.png" alt="">
                     </div>
-                    <button class="card_btn">ЗАКАЗАТЬ</button>
+                    <button class="card_btn" data-target="modal" data-toggle="#mainModal7">ЗАКАЗАТЬ</button>
                 </div>
                 <div class="card">
                     <h3 class="card_h3">Standard</h3>
@@ -428,7 +520,7 @@
                         <span class="card_span_false">Портал/Сервис</span>
                         <img class="card_img_false" src="img/png/no.png" alt="">
                     </div>
-                    <button class="card_btn">ЗАКАЗАТЬ</button>
+                    <button class="card_btn" data-target="modal" data-toggle="#mainModal7">ЗАКАЗАТЬ</button>
                 </div>
                 <div class="card">
                     <h3 class="card_h3">Premium</h3>
@@ -463,7 +555,7 @@
                         <span class="card_span_false">Портал/Сервис</span>
                         <img class="card_img_false" src="img/png/no.png" alt="">
                     </div>
-                    <button class="card_btn">ЗАКАЗАТЬ</button>
+                    <button class="card_btn" data-target="modal" data-toggle="#mainModal7">ЗАКАЗАТЬ</button>
                 </div>
                 <div class="card">
                     <h3 class="card_h3">Enterprise</h3>
@@ -498,11 +590,29 @@
                         <span class="card_span_true">Портал/Сервис</span>
                         <img class="card_img_true" src="img/png/yes.png" alt="">
                     </div>
-                    <button class="card_btn">ЗАКАЗАТЬ</button>
+                    <button class="card_btn" data-target="modal" data-toggle="#mainModal7">ЗАКАЗАТЬ</button>
                 </div>
+            </div>
+
+            <a href="#close" class="fade7"></a>
+            <div class="modal7" id="mainModal7">
+                <a href="#close" class="modal7-close">&times;</a>
+                <form action="#" class="modal7_form">
+                    <h2 class="form_h2">ЗАКАЗАТЬ ПРОДВИЖЕНИЕ</h2>
+                    <input name="name" type="text" class="form_input input_top" placeholder="Контактное лицо">
+                    <img class="form_img" src="img/png/form_users.png" alt="">
+                    <input name="tel" type="text" class="form_input " id="modal7_tel" placeholder="Введите Ваш Телефон">
+                    <img class="form_img" src="img/png/form_tel.png" alt="">
+                    <input name="address" class="form_input" type="text" placeholder="Адрес Вашего сайта">
+                    <img class="form_img" src="img/png/form_addres.png" alt="">
+                    <textarea name="comment" placeholder="Введите ваше сообщение"></textarea>
+                    <img class="form_img img-commnets" src="img/png/form-comments.png" alt="">
+                    <button class="form_btn close-btn_7">Отправить заявку</button>
+                </form>
             </div>
         </div>
     </div>
+
     <div class="seo">
         <div class="container">
             <h2 class="seo_h2">Часто задаваемые вопросы по SEO</h2>
@@ -712,7 +822,23 @@
                     </div>
                 </div>
             </div>
-            <button class="seo_btn">ЗАДАТЬ ВОПРОС</button>
+            <button class="seo_btn" data-target="modal" data-toggle="#mainModal8">ЗАДАТЬ ВОПРОС</button>
+            <div class="modal8" id="mainModal8">
+                <a href="#close" class="modal8-close">&times;</a>
+                <form action="#" class="modal8_form">
+                    <h2 class="form_h2">Заполните анкету</h2>
+                    <input name="name" type="text" class="form_input input_top" placeholder="Контактное лицо">
+                    <img class="form_img" src="img/png/form_users.png" alt="">
+                    <input name="email" type="text" class="form_input" placeholder="Введите ваш Email">
+                    <img class="form_img" src="img/png/form_email.png" alt="">
+                    <textarea name="comment" placeholder="Введите ваше сообщение"></textarea>
+                    <img class="form_img img-commnets" src="img/png/form-comments.png" alt="">
+                    <button class="form_btn close-btn_7">Отправить заявку</button>
+                </form>
+            </div>
+
+
+
         </div>
     </div>
     <div class="advantages">
@@ -753,9 +879,29 @@
                         доп. расходы (ссылки, контент, доработки и т.п.);</p>
                 </div>
             </div>
-            <button class="advantages_btn">Я ЗАИНТЕРЕСОВАН</button>
+            <button class="advantages_btn" data-target="modal" data-toggle="#mainModal9">Я ЗАИНТЕРЕСОВАН</button>
         </div>
     </div>
+
+
+
+    <a href="#close" class="fade9"></a>
+    <div class="modal9" id="mainModal9">
+        <a href="#close" class="modal9-close">&times;</a>
+        <form action="#" class="modal9_form">
+            <h2 class="form_h2">Заполните анкету</h2>
+            <input name="name" type="text" class="form_input input_top" placeholder="Контактное лицо">
+            <img class="form_img" src="img/png/form_users.png" alt="">
+            <input name="tel" type="text" class="form_input " id="modal9_tel" placeholder="Введите Ваш Телефон">
+            <img class="form_img" src="img/png/form_tel.png" alt="">
+            <textarea name="comment" placeholder="Введите ваше сообщение"></textarea>
+            <img class="form_img img-commnets" src="img/png/form-comments.png" alt="">
+            <button class="form_btn close-btn_7">Отправить заявку</button>
+        </form>
+    </div>
+
+
+
     <div class="service" style="background-image: url(img/png/back_2.png);">
         <div class="container">
             <h2 class="service_h2">сопутствующие услуги</h2>
@@ -1069,12 +1215,13 @@
                         <img src="img/png/contact_email.png" alt="" class="form_box_img">
                     </div>
                     <div class="form_box">
-                        <textarea name="message" class="form_box_textarea" placeholder="Введите Ваше сообщение или пояснение к заявке"></textarea>
+                        <textarea name="message" class="form_box_textarea"
+                                  placeholder="Введите Ваше сообщение или пояснение к заявке"></textarea>
                         <img src="img/png/form-comments.png" alt="" class="form_box_img input_comments">
                     </div>
                 </div>
                 <p class="form_text_error"><span> * </span> - Поля, обязательные к заполнению.</p>
-                <button class="contact_form_btn">ОТПРАВИТЬ ЗАЯВКУ</button>
+                <button class="contact_form_btn" data-target="modal3" data-toggle="#mainModal3" >ОТПРАВИТЬ ЗАЯВКУ</button>
             </form>
         </div>
     </div>
@@ -1113,5 +1260,10 @@
 <script src="js/jquery.maskedinput.min.js"></script>
 <script src="js/jquery.validate.min.js"></script>
 <script src="js/script.js"></script>
+<script src="js/modal_validate_js.js"></script>
+
+<script>
+
+</script>
 </body>
 </html>
