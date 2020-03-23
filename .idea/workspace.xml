@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="67e0beb6-018a-48e7-8a0c-f1fb25aff7ca" name="Default Changelist" comment="" />
+    <list default="true" id="613d9bcb-498f-4dff-a392-291be5b847d8" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,24 +11,18 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Less File" />
         <option value="HTML File" />
+        <option value="XSLT Stylesheet" />
+        <option value="Less File" />
         <option value="JavaScript File" />
       </list>
     </option>
   </component>
-  <component name="ProjectId" id="1YNldw0lbJldxN3wUxGa9hzRYC6" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
+  <component name="ProjectId" id="1ZIsJWTBYiMVdOPAmkxmNPIEllQ" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="E:/мои проекты/ZanDiplomaProJect_2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../2" />
     <property name="list.type.of.created.stylesheet" value="Less" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -54,67 +48,23 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="67e0beb6-018a-48e7-8a0c-f1fb25aff7ca" name="Default Changelist" comment="" />
-      <created>1582791023796</created>
+      <changelist id="613d9bcb-498f-4dff-a392-291be5b847d8" name="Default Changelist" comment="" />
+      <created>1584537871464</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1582791023796</updated>
-      <workItem from="1582791025356" duration="29000" />
-      <workItem from="1582791118789" duration="8352000" />
-      <workItem from="1582873512226" duration="16785000" />
-      <workItem from="1582893885156" duration="6389000" />
-      <workItem from="1582902746596" duration="1189000" />
-      <workItem from="1582960877034" duration="146000" />
-      <workItem from="1582961414362" duration="222000" />
-      <workItem from="1582977040185" duration="7071000" />
-      <workItem from="1582985991699" duration="1984000" />
-      <workItem from="1582988567448" duration="3487000" />
-      <workItem from="1583004534277" duration="2998000" />
-      <workItem from="1583007827363" duration="365000" />
-      <workItem from="1583084340511" duration="5294000" />
-      <workItem from="1583133172118" duration="9498000" />
-      <workItem from="1583152591997" duration="10568000" />
-      <workItem from="1583222740294" duration="11407000" />
-      <workItem from="1583239235630" duration="880000" />
-      <workItem from="1583246076551" duration="6951000" />
-      <workItem from="1583306380242" duration="8741000" />
-      <workItem from="1583320696013" duration="3303000" />
-      <workItem from="1583325788224" duration="9231000" />
-      <workItem from="1583392630170" duration="16231000" />
-      <workItem from="1583415439676" duration="940000" />
-      <workItem from="1583478787898" duration="5105000" />
-      <workItem from="1583502755139" duration="5016000" />
-      <workItem from="1583529104769" duration="643000" />
-      <workItem from="1583578917068" duration="3718000" />
-      <workItem from="1583737762214" duration="17194000" />
-      <workItem from="1583783877042" duration="39000" />
-      <workItem from="1583783936012" duration="834000" />
+      <updated>1584537871464</updated>
+      <workItem from="1584537873953" duration="2411000" />
+      <workItem from="1584716626408" duration="9644000" />
+      <workItem from="1584734214196" duration="6175000" />
+      <workItem from="1584740417689" duration="451000" />
+      <workItem from="1584791658436" duration="14624000" />
+      <workItem from="1584826307853" duration="4444000" />
+      <workItem from="1584891567819" duration="4572000" />
+      <workItem from="1584967100609" duration="3797000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582960986599">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582960986599" />
-    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1582878689696">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582878689696" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1582890052232">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1582890052232" />
-    <state width="254" height="198" key="RunAnythingAction_Filter_Popup" timestamp="1582960998938">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="254" height="198" key="RunAnythingAction_Filter_Popup/0.0.1920.1040@0.0.1920.1040" timestamp="1582960998938" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1582960998948">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1582960998948" />
   </component>
 </project>
