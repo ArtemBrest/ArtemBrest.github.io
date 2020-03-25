@@ -8,6 +8,78 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+
+<!--Modal Windows thanks-->
+
+<!--<a href="#close" class="fade1"></a>
+<div class="modal1" id="mainModal">
+    <a href="#close" class="modal1-close">&times;</a>
+    <h1 class="thanks_h1">Спасибо за заявку!</h1>
+    <p class="thanks_p">Наши менеджеры свяжутся с вами в ближайшее время!</p>
+    <button class="btn-close">Отлично!</button>
+</div>-->
+<!-- end Modal Windows thanks-->
+
+
+<!--Modal Windows -->
+
+<a href="#close" class="fade2"></a>
+<div class="modal2" id="mainModal2">
+    <a href="#close" class="modal2-close">&times;</a>
+    <form class="modal2_form">
+        <h3 class="modal2_form_h3">Заполните форму</h3>
+        <div class="modal2_form_input">
+            <input class="input" type="text" name="name" placeholder="Введите ваше имя">
+        </div>
+        <div class="modal2_form_input">
+            <input class="input" type="text" name="phone" placeholder="Введите Ваш телефон">
+        </div>
+        <div class="modal2_form_input">
+            <textarea class="textarea" placeholder="Ввведите Ваше сообщение"></textarea>
+        </div>
+        <button type="submit" class="modal2_form_btn">получить консультацию</button>
+    </form>
+</div>
+
+
+<a href="#close" class="fade3"></a>
+<div class="modal3" id="mainModal3">
+    <a href="#close" class="modal3-close">&times;</a>
+    <form class="modal3_form">
+        <h3 class="modal3_form_h3">Заполните форму</h3>
+        <div class="modal3_form_input">
+            <input class="input" type="text" name="name" placeholder="Введите ваше имя">
+        </div>
+        <div class="modal3_form_input">
+            <input class="input" type="text" name="phone" placeholder="Введите Ваш телефон">
+        </div>
+        <button type="submit" class="modal3_form_btn">получить консультацию</button>
+    </form>
+</div>
+
+
+<a href="#close" class="fade4"></a>
+<div class="modal4" id="mainModal4">
+    <a href="#close" class="modal4-close">&times;</a>
+    <form class="modal4_form">
+        <h3 class="modal4_form_h3">Заполните форму</h3>
+        <div class="modal4_form_input">
+            <input class="input" type="text" name="name" placeholder="Введите ваше имя">
+        </div>
+        <div class="modal4_form_input">
+            <input class="input" type="text" name="phone" placeholder="Введите Ваш телефон">
+        </div>
+        <div class="modal4_form_input">
+            <textarea class="textarea" placeholder="Ввведите Ваше сообщение"></textarea>
+        </div>
+        <button type="submit" class="modal4_form_btn">получить консультацию</button>
+    </form>
+</div>
+
+<!-- end Modal Windows -->
+
+
 <div class="banner" style="background-image: url(img/png/back_baner_index.png);">
     <div class="container">
         <header class="header">
@@ -21,12 +93,11 @@
             </a>
             <div class="header_menu menu">
                 <ul>
-                    <li class="header_menu_li"><a href="">УСЛУГИ</a></li>
-                    <li class="header_menu_li"><a href="">ЦЕНЫ</a></li>
-                    <li class="header_menu_li"><a href="">БЛОГ</a></li>
-                    <li class="header_menu_li"><a href="">АКЦИИ</a></li>
-                    <li class="header_menu_li"><a href="">О НАС</a></li>
-                    <li class="header_menu_li"><a href="">КОНТАКТЫ</a></li>
+                    <li class="header_menu_li"><a href="service.html">УСЛУГИ</a></li>
+                    <li class="header_menu_li"><a href="price.html">ЦЕНЫ</a></li>
+                    <li class="header_menu_li"><a href="blog.html">БЛОГ</a></li>
+                    <li class="header_menu_li"><a href="about.html">О НАС</a></li>
+                    <li class="header_menu_li"><a href="contact.html">КОНТАКТЫ</a></li>
                 </ul>
             </div>
             <div class="header_contact">
@@ -55,7 +126,7 @@
             </div>
             <div class="form_input">
                 <label class="form_label">получить <span class="green">140$</span> на рекламу</label>
-                <button class="form_btn class=">отправить заявку</button>
+                <button  type="submit" class="form_btn ">отправить заявку</button>
             </div>
         </form>
     </div>
@@ -154,7 +225,7 @@
                         по разумным ценам</p>
                 </div>
             </div>
-            <button class="seo_btn">заказать одну из услуг</button>
+            <button class="seo_btn" data-target="modal2" data-toggle="#mainModal2">заказать одну из услуг</button>
         </div>
     </div>
     <div class="price">
@@ -175,7 +246,7 @@
                     <div class="card_line">
                         <span class="card_span">один регион</span>
                     </div>
-                    <button class="card_btn first_btn">Заказать</button>
+                    <button data-target="modal3" data-toggle="#mainModal3" class="card_btn first_btn">Заказать</button>
                 </div>
                 <div class="card">
                     <h3 class="card_h3">Optima</h3>
@@ -193,7 +264,7 @@
                     <div class="card_line">
                         <span class="card_span">EMAil-рассылки</span>
                     </div>
-                    <button class="card_btn second_btn">Заказать</button>
+                    <button data-target="modal3" data-toggle="#mainModal3" class="card_btn second_btn">Заказать</button>
                 </div>
                 <div class="card">
                     <h3 class="card_h3">Complex</h3>
@@ -214,7 +285,7 @@
                     <div class="card_line">
                         <span class="card_span">+ email, smm, мессенджеры, serm</span>
                     </div>
-                    <button class="card_btn">Заказать</button>
+                    <button data-target="modal3" data-toggle="#mainModal3" class="card_btn">Заказать</button>
                 </div>
             </div>
             <p class="price_text">Являемся сертифицированным партнёром Goggle Реклама и единственным официальным
@@ -236,7 +307,7 @@
                 <div class="box" style="background-image: url(img/png/portfolio_img.png);"></div>
                 <div class="box" style="background-image: url(img/png/portfolio_img.png);"></div>
             </div>
-            <button class="portfolio_btn">хочу посотрудничать</button>
+            <button data-target="modal3" data-toggle="#mainModal3" class="portfolio_btn">хочу посотрудничать</button>
         </div>
     </div>
     <div class="questions">
@@ -294,7 +365,7 @@
                     </div>
                 </div>
             </div>
-            <button class="questions_btn">Задать вопрос</button>
+            <button data-target="modal4" data-toggle="#mainModal4" class="questions_btn">Задать вопрос</button>
         </div>
     </div>
     <div class="progress">
@@ -334,7 +405,7 @@
                     представителем Яндекс Директ в Брестком регионе. При заказе комплексного продвижения <br>
                     сайта в Бресте дарим 90$ на контекстную рекламу Google и 50$ на Яндекс. Итого 140$!</p>
             </div>
-            <button class="progress_btn">получить консультацию</button>
+            <button class="progress_btn" data-target="modal4" data-toggle="#mainModal4">получить консультацию</button>
         </div>
         <div class="back_img" >
             <img src="img/png/back_2.png" alt="">
@@ -426,11 +497,11 @@
             </div>
             <div class="footer_menu">
                 <ul>
-                    <li class="footer_menu_li"><a href="">ЦЕНЫ</a></li>
-                    <li class="footer_menu_li"><a href="">БЛОГ</a></li>
-                    <li class="footer_menu_li"><a href="">АКЦИИ</a></li>
-                    <li class="footer_menu_li"><a href="">О НАС</a></li>
-                    <li class="footer_menu_li"><a href="">КОНТАКТЫ</a></li>
+                    <li class="footer_menu_li"><a href="service.html">УСЛУГИ</a></li>
+                    <li class="footer_menu_li"><a href="price.html">ЦЕНЫ</a></li>
+                    <li class="footer_menu_li"><a href="blog.html">БЛОГ</a></li>
+                    <li class="footer_menu_li"><a href="about.html">О НАС</a></li>
+                    <li class="footer_menu_li"><a href="contact.html">КОНТАКТЫ</a></li>
                 </ul>
             </div>
             <div class="footer_contact">
@@ -457,7 +528,12 @@
         <p class="text-logo">INSOTECH.BY</p>
     </div>
 </footer>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
 <script src="js/script.js"></script>
+<script>
+
+</script>
 </body>
 </html>

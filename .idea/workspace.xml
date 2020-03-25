@@ -11,18 +11,24 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="XSLT Stylesheet" />
         <option value="Less File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1ZIsJWTBYiMVdOPAmkxmNPIEllQ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="Less" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -62,6 +68,11 @@
       <workItem from="1584891567819" duration="4572000" />
       <workItem from="1584967100609" duration="3797000" />
       <workItem from="1584971846306" duration="354000" />
+      <workItem from="1585060643799" duration="2921000" />
+      <workItem from="1585063599808" duration="224000" />
+      <workItem from="1585063827147" duration="4375000" />
+      <workItem from="1585131095046" duration="6165000" />
+      <workItem from="1585146953369" duration="8098000" />
     </task>
     <servers />
   </component>
