@@ -33,7 +33,7 @@
             <input class="input" type="text" name="name" placeholder="Введите ваше имя">
         </div>
         <div class="modal2_form_input">
-            <input class="input" type="text" name="phone" placeholder="Введите Ваш телефон">
+            <input class="input" type="text" id="modal2_tel" name="phone" placeholder="Введите Ваш телефон">
         </div>
         <div class="modal2_form_input">
             <textarea class="textarea" placeholder="Ввведите Ваше сообщение"></textarea>
@@ -46,13 +46,13 @@
 <a href="#close" class="fade3"></a>
 <div class="modal3" id="mainModal3">
     <a href="#close" class="modal3-close">&times;</a>
-    <form class="modal3_form">
+    <form class="modal3_form validate_form">
         <h3 class="modal3_form_h3">Заполните форму</h3>
         <div class="modal3_form_input">
             <input class="input" type="text" name="name" placeholder="Введите ваше имя">
         </div>
         <div class="modal3_form_input">
-            <input class="input" type="text" name="phone" placeholder="Введите Ваш телефон">
+            <input class="input" type="text" name="phone" id="modal3_tel" placeholder="Введите Ваш телефон">
         </div>
         <button type="submit" class="modal3_form_btn">получить консультацию</button>
     </form>
@@ -68,7 +68,7 @@
             <input class="input" type="text" name="name" placeholder="Введите ваше имя">
         </div>
         <div class="modal4_form_input">
-            <input class="input" type="text" name="phone" placeholder="Введите Ваш телефон">
+            <input class="input" type="text" name="phone" id="modal4_tel" placeholder="Введите Ваш телефон">
         </div>
         <div class="modal4_form_input">
             <textarea class="textarea" placeholder="Ввведите Ваше сообщение"></textarea>
@@ -113,15 +113,15 @@
             дарим <span class="green">90$</span> на контекстную рекламу Google и <span class="green">50$</span> на
             Яндекс. Итого <span class="green">140$</span>!<br>
         </p>
-        <form class="banner_form">
+        <form class="banner_form validate_form">
             <div class="form_input">
                 <label class="form_label" for="name">Контактное лицо</label>
-                <input class="" type="text" name="name" id="name">
+                <input class="input" type="text" name="name" id="name">
                 <img class="form_img img_user" src="img/png/form_user.png" alt="">
             </div>
             <div class="form_input">
                 <label class="form_label" for="phone">Ваш Телефон</label>
-                <input class="" type="text" name="phone" id="phone">
+                <input class="input" type="text" name="phone" id="phone">
                 <img class="form_img img_tel" src="img/png/form_tel.png" alt="">
             </div>
             <div class="form_input">
@@ -476,7 +476,7 @@
                         <input class="input" type="text" name="name" placeholder="Введите ваше имя">
                     </div>
                     <div class="form_input">
-                        <input class="input" type="text" name="phone" placeholder="Введите Ваш телефон">
+                        <input class="input" id="contactForm_phone" type="text" name="phone" placeholder="Введите Ваш телефон">
                     </div>
                     <div class="form_input">
                         <textarea class="textarea" placeholder="Ввведите Ваше сообщение"></textarea>
@@ -486,7 +486,6 @@
             </div>
         </div>
     </div>
-
 </div>
 <footer>
     <div class="container">

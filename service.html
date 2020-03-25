@@ -8,6 +8,76 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+
+<!--Modal Windows thanks-->
+
+<!--<a href="#close" class="fade1"></a>
+<div class="modal1" id="mainModal">
+    <a href="#close" class="modal1-close">&times;</a>
+    <h1 class="thanks_h1">Спасибо за заявку!</h1>
+    <p class="thanks_p">Наши менеджеры свяжутся с вами в ближайшее время!</p>
+    <button class="btn-close">Отлично!</button>
+</div>-->
+<!-- end Modal Windows thanks-->
+
+
+<!--Modal Windows -->
+
+<a href="#close" class="fade2"></a>
+<div class="modal2" id="mainModal2">
+    <a href="#close" class="modal2-close">&times;</a>
+    <form class="modal2_form">
+        <h3 class="modal2_form_h3">Заполните форму</h3>
+        <div class="modal2_form_input">
+            <input class="input" type="text" name="name" placeholder="Введите ваше имя">
+        </div>
+        <div class="modal2_form_input">
+            <input class="input" type="text" id="modal2_tel" name="phone" placeholder="Введите Ваш телефон">
+        </div>
+        <div class="modal2_form_input">
+            <textarea class="textarea" placeholder="Ввведите Ваше сообщение"></textarea>
+        </div>
+        <button type="submit" class="modal2_form_btn">получить консультацию</button>
+    </form>
+</div>
+
+
+<a href="#close" class="fade3"></a>
+<div class="modal3" id="mainModal3">
+    <a href="#close" class="modal3-close">&times;</a>
+    <form class="modal3_form validate_form">
+        <h3 class="modal3_form_h3">Заполните форму</h3>
+        <div class="modal3_form_input">
+            <input class="input" type="text" name="name" placeholder="Введите ваше имя">
+        </div>
+        <div class="modal3_form_input">
+            <input class="input" type="text" name="phone" id="modal3_tel" placeholder="Введите Ваш телефон">
+        </div>
+        <button type="submit" class="modal3_form_btn">получить консультацию</button>
+    </form>
+</div>
+
+
+<a href="#close" class="fade4"></a>
+<div class="modal4" id="mainModal4">
+    <a href="#close" class="modal4-close">&times;</a>
+    <form class="modal4_form">
+        <h3 class="modal4_form_h3">Заполните форму</h3>
+        <div class="modal4_form_input">
+            <input class="input" type="text" name="name" placeholder="Введите ваше имя">
+        </div>
+        <div class="modal4_form_input">
+            <input class="input" type="text" name="phone" id="modal4_tel" placeholder="Введите Ваш телефон">
+        </div>
+        <div class="modal4_form_input">
+            <textarea class="textarea" placeholder="Ввведите Ваше сообщение"></textarea>
+        </div>
+        <button type="submit" class="modal4_form_btn">получить консультацию</button>
+    </form>
+</div>
+
+<!-- end Modal Windows -->
 <div class="banner" style="background-image: url(img/png/back_price.png);">
     <div class="container">
         <header class="header">
@@ -40,62 +110,7 @@
 </div>
 
 
-<!--Modal Windows -->
 
-<a href="#close" class="fade2"></a>
-<div class="modal2" id="mainModal2">
-    <a href="#close" class="modal2-close">&times;</a>
-    <form class="modal2_form">
-        <h3 class="modal2_form_h3">Заполните форму</h3>
-        <div class="modal2_form_input">
-            <input class="input" type="text" name="name" placeholder="Введите ваше имя">
-        </div>
-        <div class="modal2_form_input">
-            <input class="input" type="text" name="phone" placeholder="Введите Ваш телефон">
-        </div>
-        <div class="modal2_form_input">
-            <textarea class="textarea" placeholder="Ввведите Ваше сообщение"></textarea>
-        </div>
-        <button type="submit" class="modal2_form_btn">получить консультацию</button>
-    </form>
-</div>
-
-
-<a href="#close" class="fade3"></a>
-<div class="modal3" id="mainModal3">
-    <a href="#close" class="modal3-close">&times;</a>
-    <form class="modal3_form">
-        <h3 class="modal3_form_h3">Заполните форму</h3>
-        <div class="modal3_form_input">
-            <input class="input" type="text" name="name" placeholder="Введите ваше имя">
-        </div>
-        <div class="modal3_form_input">
-            <input class="input" type="text" name="phone" placeholder="Введите Ваш телефон">
-        </div>
-        <button type="submit" class="modal3_form_btn">получить консультацию</button>
-    </form>
-</div>
-
-
-<a href="#close" class="fade4"></a>
-<div class="modal4" id="mainModal4">
-    <a href="#close" class="modal4-close">&times;</a>
-    <form class="modal4_form">
-        <h3 class="modal4_form_h3">Заполните форму</h3>
-        <div class="modal4_form_input">
-            <input class="input" type="text" name="name" placeholder="Введите ваше имя">
-        </div>
-        <div class="modal4_form_input">
-            <input class="input" type="text" name="phone" placeholder="Введите Ваш телефон">
-        </div>
-        <div class="modal4_form_input">
-            <textarea class="textarea" placeholder="Ввведите Ваше сообщение"></textarea>
-        </div>
-        <button type="submit" class="modal4_form_btn">получить консультацию</button>
-    </form>
-</div>
-
-<!-- end Modal Windows -->
 <div class="content">
     <div class="navigation">
         <div class="container">
@@ -250,7 +265,7 @@
                         <input class="input" type="text" name="name" placeholder="Введите ваше имя">
                     </div>
                     <div class="form_input">
-                        <input class="input" type="text" name="phone" placeholder="Введите Ваш телефон">
+                        <input class="input" id="contactForm_phone" type="text" name="phone" placeholder="Введите Ваш телефон">
                     </div>
                     <div class="form_input">
                         <textarea class="textarea" placeholder="Ввведите Ваше сообщение"></textarea>
@@ -261,6 +276,8 @@
         </div>
     </div>
 </div>
+
+
 <footer>
     <div class="container">
         <div class="footer">

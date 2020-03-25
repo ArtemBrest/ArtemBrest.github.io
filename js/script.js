@@ -108,4 +108,145 @@ $(document).ready(function () {
     })
 
     /* end Modal Window*/
+
+
+
+    /*validate Form*/
+    $('.form').validate({
+        rules: {
+            name: {
+                required: true,
+                minlength: 2
+            },
+            phone: {
+                required: true,
+                minlength: 7,
+            },
+
+        },
+        messages: {
+            name: {
+                required: '*',
+                minlength: ' '
+            },
+            phone: {
+                required: '*',
+                minlength: ' ',
+                address: ' '
+            },
+
+        }
+    });
+    $('.banner_form').validate({
+        rules: {
+            name: {
+                required: true,
+                minlength: 2
+            },
+            phone: {
+                required: true,
+                minlength: 7,
+            },
+
+        },
+        messages: {
+            name: {
+                required: 'Это поле обязательное',
+                minlength: ' '
+            },
+            phone: {
+                required: 'Это поле обязательное',
+                minlength: ' ',
+                address: ' '
+            },
+
+        }
+    });
+    $('.modal2_form').validate({
+        rules: {
+            name: {
+                required: true,
+                minlength: 2
+            },
+            phone: {
+                required: true,
+                minlength: 7,
+            },
+
+        },
+        messages: {
+            name: {
+                required: '*',
+                minlength: ' '
+            },
+            phone: {
+                required: '*',
+                minlength: ' ',
+                address: ' '
+            },
+
+        }
+    });
+    $('.modal3_form').validate({
+        rules: {
+            name: {
+                required: true,
+                minlength: 2
+            },
+            phone: {
+                required: true,
+                minlength: 7,
+            },
+
+        },
+        messages: {
+            name: {
+                required: '*',
+                minlength: ' '
+            },
+            phone: {
+                required: '*',
+                minlength: ' ',
+                address: ' '
+            },
+
+        }
+    });
+    $('.modal4_form').validate({
+        rules: {
+            name: {
+                required: true,
+                minlength: 2
+            },
+            phone: {
+                required: true,
+                minlength: 7,
+            },
+
+        },
+        messages: {
+            name: {
+                required: '*',
+                minlength: ' '
+            },
+            phone: {
+                required: '*',
+                minlength: ' ',
+                address: ' '
+            },
+
+        }
+    });
+    /* end validate Form*/
+
+
+   /* maskediput*/
+    jQuery(function ($) {
+        $("#modal2_tel").mask("+375(99) 999-99-99");
+        $("#modal3_tel").mask("+375(99) 999-99-99");
+        $("#modal4_tel").mask("+375(99) 999-99-99");
+        $("#phone").mask("+375(99) 999-99-99");
+        $("#contactForm_phone").mask("+375(99) 999-99-99");
+    });
+    /* end maskediput*/
 });
