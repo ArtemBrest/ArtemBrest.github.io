@@ -9,6 +9,7 @@ body {
 
 input, textarea, button {
   font-family: "Roboto", sans-serif;
+  outline: none!important;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -754,6 +755,319 @@ a {
   }
 }
 
+
+/* modal windows*/
+/*.fade1 {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+
+
+}
+.modal1 {
+  z-index: 999;
+  height: 500px;
+  width: 530px;
+  background-color: #FFFFFF;
+  position: fixed;
+  top: 5%;
+  left: 50%;
+  overflow: hidden;
+  text-align: center;
+  transform: translateX(-50%);
+  display: none;
+  padding: 90px 80px;
+  border-radius: 20px;
+
+  .thanks_h1 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+    color: #478ECC;
+  }
+
+  .thanks_p {
+    padding-top: 50px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    color: #478ECC;
+  }
+
+  .btn-close {
+    width: 395px;
+    height: 60px;
+    background: linear-gradient(180deg, #017CC9 0%, #013D7E 100%);
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 60px;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+    margin-top: 130px;
+  }
+
+  &-close {
+    color: #8D9293;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    text-decoration: none;
+    font-size: 40px;
+
+    &:hover {
+      text-decoration: none;
+      color: #000000;
+    }
+  }
+}*/
+
+.fade2 {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+
+
+}
+.modal2 {
+  z-index: 999;
+  height: 520px;
+  width: 420px;
+  background-color: #FFFFFF;
+  position: fixed;
+  top: 5%;
+  left: 50%;
+  overflow: hidden;
+  text-align: center;
+  transform: translateX(-50%);
+  display: none;
+  border-radius: 20px;
+
+  &_form {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 50px 20px;
+
+    &_h3 {
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 43px;
+      color: #010101;
+      text-align: center;
+      padding-bottom: 40px;
+    }
+
+    &_btn {
+      height: 50px;
+      width: 285px;
+      background: linear-gradient(180deg, #017CC9 0%, #013D7E 100%);
+      border-radius: 5px;
+      border: 1px solid #013D7E;
+      display: block;
+      margin: 0 auto;
+      color: #ffffff;
+      font-size: 14px;
+      line-height: 50px;
+      text-transform: uppercase;
+      margin-top: 30px;
+
+      &:hover {
+        background: transparent;
+        color: #013D7E;
+      }
+
+    }
+
+    #email-error {
+      color: red;
+      position: absolute;
+      top: 17%;
+      left: 51%;
+    }
+
+    #name-error {
+      color: red;
+      position: absolute;
+      top: 23%;
+      left: 50%;
+    }
+
+    &_input {
+      position: relative;
+
+      .input {
+        width: 345px;
+        height: 60px;
+        background-color: #f2f2f2;
+        border-radius: 5px;
+        border: 1px solid #f2f2f2;
+        margin-bottom: 20px;
+        color: #696868;
+        font-size: 17px;
+        line-height: 60px;
+        padding-left: 20px;
+        font-weight: 300;
+      }
+
+      .textarea {
+        width: 345px;
+        height: 110px;
+        background-color: #f2f2f2;
+        border-radius: 5px;
+        border: 1px solid #f2f2f2;
+
+        color: #696868;
+        font-size: 17px;
+        line-height: 60px;
+        padding-left: 20px;
+        font-weight: 300;
+        resize: none;
+      }
+
+    }
+  }
+
+  &-close {
+    color: #8D9293;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    text-decoration: none;
+    font-size: 40px;
+
+    &:hover {
+      text-decoration: none;
+      color: #000000;
+    }
+  }
+}
+
+.fade3 {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+
+
+}
+.modal3 {
+  z-index: 999;
+  height: 420px;
+  width: 420px;
+  background-color: #FFFFFF;
+  position: fixed;
+  top: 5%;
+  left: 50%;
+  overflow: hidden;
+  text-align: center;
+  transform: translateX(-50%);
+  display: none;
+  border-radius: 20px;
+
+  &_form {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 50px 20px;
+
+    &_h3 {
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 43px;
+      color: #010101;
+      text-align: center;
+      padding-bottom: 40px;
+    }
+
+    &_btn {
+      height: 50px;
+      width: 285px;
+      background: linear-gradient(180deg, #017CC9 0%, #013D7E 100%);
+      border-radius: 5px;
+      border: 1px solid #013D7E;
+      display: block;
+      margin: 0 auto;
+      color: #ffffff;
+      font-size: 14px;
+      line-height: 50px;
+      text-transform: uppercase;
+      margin-top: 30px;
+
+      &:hover {
+        background: transparent;
+        color: #013D7E;
+      }
+
+    }
+
+    #modal3_tel-error {
+      color: red;
+      position: absolute;
+      top: 23%;
+      left: 57%;
+    }
+
+    #name-error {
+      color: red;
+      position: absolute;
+      top: 23%;
+      left: 50%;
+    }
+
+    &_input {
+      position: relative;
+
+      .input {
+        width: 345px;
+        height: 60px;
+        background-color: #f2f2f2;
+        border-radius: 5px;
+        border: 1px solid #f2f2f2;
+        margin-bottom: 20px;
+        color: #696868;
+        font-size: 17px;
+        line-height: 60px;
+        padding-left: 20px;
+        font-weight: 300;
+      }
+    }
+  }
+
+  &-close {
+    color: #8D9293;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    text-decoration: none;
+    font-size: 40px;
+
+    &:hover {
+      text-decoration: none;
+      color: #000000;
+    }
+  }
+}
+/* end modal windows*/
+
 @media (max-width: 1500px) {
   .header_desktop {
     padding-top: 40px;
@@ -1266,7 +1580,7 @@ a {
 
         &_h1 {
           font-weight: 700;
-          font-size: 40px;
+          font-size: 32px;
           line-height: 47px;
           text-align: center;
           color: #FFFFFF;
@@ -1277,6 +1591,7 @@ a {
           display: flex;
           flex-direction: column;
           align-items: center;
+          margin-left: 50%;
         }
       }
     }
@@ -1479,7 +1794,6 @@ a {
         }
       }
     }
-
     .partners {
       margin-top: 40px;
 
@@ -1801,6 +2115,7 @@ a {
       width: 100%;
       height: 770px;
 
+
       .banner_info {
         padding-top: 25px;
         width: 100%;
@@ -1837,6 +2152,7 @@ a {
           flex-flow: column wrap;
           align-items: center;
           margin-top: 490px;
+          margin-left: 0;
         }
       }
     }
