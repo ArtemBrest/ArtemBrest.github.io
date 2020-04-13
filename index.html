@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Главная</title>
     <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -65,62 +67,542 @@
     </div>
 </header>
 <div class="content">
-    <div class="banner">
-        <div class="container">
-            <div class="banner_info">
-                <div class="left">
-                    <h1 class="banner_info_h1">Рассрочка на <span class="orange">12 месяцев</span> <br>
-                        под <span class="orange">0%</span></h1>
-                    <p class="banner_info_p">Без справок и поручителей!</p>
-                    <p class="banner_info_p">Без переплат и первоначального взноса!</p>
-                    <p class="banner_info_p">Минимальной суммы заказа для рассрочки нет!</p>
-                    <button class="banner_info_btn"> подробнее...</button>
+    <div class="sl">
+        <div class="banner" style="background-image: url(img/jpg/slider_back.jpg);">
+            <div class="container">
+                <div class="banner_info">
+                    <div class="left">
+                        <h1 class="banner_info_h1">Рассрочка на <span class="orange">12 месяцев</span> <br>
+                            под <span class="orange">0%</span></h1>
+                        <p class="banner_info_p">Без справок и поручителей!</p>
+                        <p class="banner_info_p">Без переплат и первоначального взноса!</p>
+                        <p class="banner_info_p">Минимальной суммы заказа для рассрочки нет!</p>
+                        <button class="banner_info_btn"> подробнее...</button>
+                    </div>
+                    <div class="form_cal">
+                        <div class="form_cal_line">
+                            <p class="form_cal_line_p">Площадь (м/кв)</p>
+                            <div class="counter_group">
+                                <span class="counter_group_span plus">+</span>
+                                <input class="counter_group_input value1" type="text" value="1">
+                                <span class="counter_group_span minus">-</span>
+                            </div>
+                        </div>
+                        <div class="form_cal_line">
+                            <p class="form_cal_line_p">К-во углов</p>
+                            <div class="counter_group">
+                                <span class="counter_group_span plus">+</span>
+                                <input class="counter_group_input value2" type="text" value="1">
+                                <span class="counter_group_span minus">-</span>
+                            </div>
+                        </div>
+                        <div class="form_cal_line">
+                            <p class="form_cal_line_p">К-во светильников</p>
+                            <div class="counter_group">
+                                <span class="counter_group_span plus">+</span>
+                                <input class="counter_group_input value3" type="text" value="1">
+                                <span class="counter_group_span minus">-</span>
+                            </div>
+                        </div>
+                        <div class="form_cal_line">
+                            <p class="form_cal_line_p">К-во труб</p>
+                            <div class="counter_group">
+                                <span class="counter_group_span plus">+</span>
+                                <input class="counter_group_input value4" type="text" value="1">
+                                <span class="counter_group_span minus">-</span>
+                            </div>
+                        </div>
+                        <div class="form_cal_results">
+                            <p class="form_cal_results_p">Примерная цена: </p>
+                            <p class="sum"></p>
+                        </div>
+                        <button class="form_cal_btn">оставить заявку</button>
+                    </div>
                 </div>
-                <div class="form_cal">
-                    <div class="form_cal_line">
-                        <p class="form_cal_line_p">Площадь (м/кв)</p>
-                        <div class="counter_group">
-                            <span class="counter_group_span plus">+</span>
-                            <input class="counter_group_input" id="value1" type="text" value="1">
-                            <span class="counter_group_span minus">-</span>
+            </div>
+        </div>
+        <div class="banner" style="background-image: url(img/jpg/slider_back.jpg);">
+            <div class="container">
+                <div class="banner_info">
+                    <div class="left">
+                        <h1 class="banner_info_h1">Рассрочка на <span class="orange">12 месяцев</span> <br>
+                            под <span class="orange">0%</span></h1>
+                        <p class="banner_info_p">Без справок и поручителей!</p>
+                        <p class="banner_info_p">Без переплат и первоначального взноса!</p>
+                        <p class="banner_info_p">Минимальной суммы заказа для рассрочки нет!</p>
+                        <button class="banner_info_btn"> подробнее...</button>
+                    </div>
+                    <div class="form_cal">
+                        <div class="form_cal_line">
+                            <p class="form_cal_line_p">Площадь (м/кв)</p>
+                            <div class="counter_group">
+                                <span class="counter_group_span plus">+</span>
+                                <input class="counter_group_input value1" type="text" value="1">
+                                <span class="counter_group_span minus">-</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="form_cal_line">
-                        <p class="form_cal_line_p">К-во углов</p>
-                        <div class="counter_group">
-                            <span class="counter_group_span plus">+</span>
-                            <input class="counter_group_input" id="value2" type="text" value="1">
-                            <span class="counter_group_span minus">-</span>
+                        <div class="form_cal_line">
+                            <p class="form_cal_line_p">К-во углов</p>
+                            <div class="counter_group">
+                                <span class="counter_group_span plus">+</span>
+                                <input class="counter_group_input value2" type="text" value="1">
+                                <span class="counter_group_span minus">-</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="form_cal_line">
-                        <p class="form_cal_line_p">К-во светильников</p>
-                        <div class="counter_group">
-                            <span class="counter_group_span plus">+</span>
-                            <input class="counter_group_input" id="value3" type="text" value="1">
-                            <span class="counter_group_span minus">-</span>
+                        <div class="form_cal_line">
+                            <p class="form_cal_line_p">К-во светильников</p>
+                            <div class="counter_group">
+                                <span class="counter_group_span plus">+</span>
+                                <input class="counter_group_input value3" type="text" value="1">
+                                <span class="counter_group_span minus">-</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="form_cal_line">
-                        <p class="form_cal_line_p">К-во труб</p>
-                        <div class="counter_group">
-                            <span class="counter_group_span plus">+</span>
-                            <input class="counter_group_input" id="value4" type="text" value="1">
-                            <span class="counter_group_span minus">-</span>
+                        <div class="form_cal_line">
+                            <p class="form_cal_line_p">К-во труб</p>
+                            <div class="counter_group">
+                                <span class="counter_group_span plus">+</span>
+                                <input class="counter_group_input value4" type="text" value="1">
+                                <span class="counter_group_span minus">-</span>
+                            </div>
                         </div>
+                        <div class="form_cal_results">
+                            <p class="form_cal_results_p">Примерная цена: </p>
+                            <p class="sum"></p>
+                        </div>
+                        <button class="form_cal_btn">оставить заявку</button>
                     </div>
-                    <div class="form_cal_results">
-                        <p class="form_cal_results_p">Примерная цена:  </p>
-                        <p id="sum"></p>
+                </div>
+            </div>
+        </div>
+        <div class="banner" style="background-image: url(img/jpg/slider_back.jpg);">
+            <div class="container">
+                <div class="banner_info">
+                    <div class="left">
+                        <h1 class="banner_info_h1">Рассрочка на <span class="orange">12 месяцев</span> <br>
+                            под <span class="orange">0%</span></h1>
+                        <p class="banner_info_p">Без справок и поручителей!</p>
+                        <p class="banner_info_p">Без переплат и первоначального взноса!</p>
+                        <p class="banner_info_p">Минимальной суммы заказа для рассрочки нет!</p>
+                        <button class="banner_info_btn"> подробнее...</button>
                     </div>
-                    <button></button>
+                    <div class="form_cal">
+                        <div class="form_cal_line">
+                            <p class="form_cal_line_p">Площадь (м/кв)</p>
+                            <div class="counter_group">
+                                <span class="counter_group_span plus">+</span>
+                                <input class="counter_group_input value1" type="text" value="1">
+                                <span class="counter_group_span minus">-</span>
+                            </div>
+                        </div>
+                        <div class="form_cal_line">
+                            <p class="form_cal_line_p">К-во углов</p>
+                            <div class="counter_group">
+                                <span class="counter_group_span plus">+</span>
+                                <input class="counter_group_input value2" type="text" value="1">
+                                <span class="counter_group_span minus">-</span>
+                            </div>
+                        </div>
+                        <div class="form_cal_line">
+                            <p class="form_cal_line_p">К-во светильников</p>
+                            <div class="counter_group">
+                                <span class="counter_group_span plus">+</span>
+                                <input class="counter_group_input value3" type="text" value="1">
+                                <span class="counter_group_span minus">-</span>
+                            </div>
+                        </div>
+                        <div class="form_cal_line">
+                            <p class="form_cal_line_p">К-во труб</p>
+                            <div class="counter_group">
+                                <span class="counter_group_span plus">+</span>
+                                <input class="counter_group_input value4" type="text" value="1">
+                                <span class="counter_group_span minus">-</span>
+                            </div>
+                        </div>
+                        <div class="form_cal_results">
+                            <p class="form_cal_results_p">Примерная цена: </p>
+                            <p class="sum"></p>
+                        </div>
+                        <button class="form_cal_btn">оставить заявку</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner" style="background-image: url(img/jpg/slider_back.jpg);">
+            <div class="container">
+                <div class="banner_info">
+                    <div class="left">
+                        <h1 class="banner_info_h1">Рассрочка на <span class="orange">12 месяцев</span> <br>
+                            под <span class="orange">0%</span></h1>
+                        <p class="banner_info_p">Без справок и поручителей!</p>
+                        <p class="banner_info_p">Без переплат и первоначального взноса!</p>
+                        <p class="banner_info_p">Минимальной суммы заказа для рассрочки нет!</p>
+                        <button class="banner_info_btn"> подробнее...</button>
+                    </div>
+                    <div class="form_cal">
+                        <div class="form_cal_line">
+                            <p class="form_cal_line_p">Площадь (м/кв)</p>
+                            <div class="counter_group">
+                                <span class="counter_group_span plus">+</span>
+                                <input class="counter_group_input value1" type="text" value="1">
+                                <span class="counter_group_span minus">-</span>
+                            </div>
+                        </div>
+                        <div class="form_cal_line">
+                            <p class="form_cal_line_p">К-во углов</p>
+                            <div class="counter_group">
+                                <span class="counter_group_span plus">+</span>
+                                <input class="counter_group_input value2" type="text" value="1">
+                                <span class="counter_group_span minus">-</span>
+                            </div>
+                        </div>
+                        <div class="form_cal_line">
+                            <p class="form_cal_line_p">К-во светильников</p>
+                            <div class="counter_group">
+                                <span class="counter_group_span plus">+</span>
+                                <input class="counter_group_input value3" type="text" value="1">
+                                <span class="counter_group_span minus">-</span>
+                            </div>
+                        </div>
+                        <div class="form_cal_line">
+                            <p class="form_cal_line_p">К-во труб</p>
+                            <div class="counter_group">
+                                <span class="counter_group_span plus">+</span>
+                                <input class="counter_group_input value4" type="text" value="1">
+                                <span class="counter_group_span minus">-</span>
+                            </div>
+                        </div>
+                        <div class="form_cal_results">
+                            <p class="form_cal_results_p">Примерная цена: </p>
+                            <p class="sum"></p>
+                        </div>
+                        <button class="form_cal_btn">оставить заявку</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner" style="background-image: url(img/jpg/slider_back.jpg);">
+            <div class="container">
+                <div class="banner_info">
+                    <div class="left">
+                        <h1 class="banner_info_h1">Рассрочка на <span class="orange">12 месяцев</span> <br>
+                            под <span class="orange">0%</span></h1>
+                        <p class="banner_info_p">Без справок и поручителей!</p>
+                        <p class="banner_info_p">Без переплат и первоначального взноса!</p>
+                        <p class="banner_info_p">Минимальной суммы заказа для рассрочки нет!</p>
+                        <button class="banner_info_btn"> подробнее...</button>
+                    </div>
+                    <div class="form_cal">
+                        <div class="form_cal_line">
+                            <p class="form_cal_line_p">Площадь (м/кв)</p>
+                            <div class="counter_group">
+                                <span class="counter_group_span plus">+</span>
+                                <input class="counter_group_input value1" type="text" value="1">
+                                <span class="counter_group_span minus">-</span>
+                            </div>
+                        </div>
+                        <div class="form_cal_line">
+                            <p class="form_cal_line_p">К-во углов</p>
+                            <div class="counter_group">
+                                <span class="counter_group_span plus">+</span>
+                                <input class="counter_group_input value2" type="text" value="1">
+                                <span class="counter_group_span minus">-</span>
+                            </div>
+                        </div>
+                        <div class="form_cal_line">
+                            <p class="form_cal_line_p">К-во светильников</p>
+                            <div class="counter_group">
+                                <span class="counter_group_span plus">+</span>
+                                <input class="counter_group_input value3" type="text" value="1">
+                                <span class="counter_group_span minus">-</span>
+                            </div>
+                        </div>
+                        <div class="form_cal_line">
+                            <p class="form_cal_line_p">К-во труб</p>
+                            <div class="counter_group">
+                                <span class="counter_group_span plus">+</span>
+                                <input class="counter_group_input value4" type="text" value="1">
+                                <span class="counter_group_span minus">-</span>
+                            </div>
+                        </div>
+                        <div class="form_cal_results">
+                            <p class="form_cal_results_p">Примерная цена: </p>
+                            <p class="sum"></p>
+                        </div>
+                        <button class="form_cal_btn">оставить заявку</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="aboutMain">
+        <div class="container">
+            <h2>Натяжные потолки в Бресте, Кобрине, Жабинке и Каменце</h2>
+            <p>Наша компания предлагает качественные натяжные потолки в Бресте, Кобрине, Каменце и Жабинке по доступным
+                ценам на выгодных условиях. В ассортименте представлен большой
+                выбор модификаций: для спальни, кухни, гостиной, ванной, коридора и т.д. Предоставляется беспроцентная
+                рассрочка на 12 месяцев. Чтобы получить консультацию или заказать
+                натяжной потолки свяжитесь с нами по телефонам +375 29 200 7 100 (Мтс) или +375 29 333 80 30 (A1).
+                Специалисты проведут монтаж с соблюдением сроков по наиболее
+                подходящей стоимости.</p>
+            <p> Натяжной потолок представляет собой универсальную конструкцию, которая может использоваться при отделке
+                помещений разного назначения. Большой выбор цветов и фактур
+                позволяет создавать разные варианты оформления, возможности дизайнера практически ничем не ограничены.
+                Конструкция позволяет скрыть дефекты, неровности потолка. При
+                изготовлении полотен применяются ПВХ-пленка, ткань. Потолки могут быть одно-, двух- и многоуровневыми,
+                все зависит от дизайна</p>
+        </div>
+    </div>
+    <div class="assortment">
+        <div class="assortment_design" style="background-image: url(img/jpg/back_1.jpg);">
+            <div class="container">
+                <h2 class="assortment_h2">виды потолков</h2>
+                <div class="assortment_category">
+                    <span class="line_left"></span>
+                    <span class="assortment_category_span">По типу конструкции</span>
+                    <span class="line_right"></span>
+                </div>
+                <div class="assortment_design_cards">
+                    <div class="card" style="background-image: url(img/jpg/vid_potolok.jpg);">
+                        <h3 class="card-h3">Двухуровневые</h3>
+                        <p class="card-p">Двухуровневые натяжные потолки – это оптимальный <br>
+                            способ оформления верхней части помещения без <br>
+                            необходимости создания тяжеловесных и сложных <br>
+                            конструкций. Мы предлагаем проектировку.</p>
+                        <div class="card_bottom">
+                            <button class="card-btn">Заказать</button>
+                            <span class="card-span">от <span class="number"> 5</span> BYN м2</span>
+                        </div>
+                    </div>
+                    <div class="card" style="background-image: url(img/jpg/vid_potolok.jpg);">
+                        <h3 class="card-h3">Двухуровневые</h3>
+                        <p class="card-p">Двухуровневые натяжные потолки – это оптимальный <br>
+                            способ оформления верхней части помещения без <br>
+                            необходимости создания тяжеловесных и сложных <br>
+                            конструкций. Мы предлагаем проектировку.</p>
+                        <div class="card_bottom">
+                            <button class="card-btn">Заказать</button>
+                            <span class="card-span">от <span class="number"> 5</span> BYN м2</span>
+                        </div>
+                    </div>
+                    <div class="card" style="background-image: url(img/jpg/vid_potolok.jpg);">
+                        <h3 class="card-h3">Двухуровневые</h3>
+                        <p class="card-p">Двухуровневые натяжные потолки – это оптимальный <br>
+                            способ оформления верхней части помещения без <br>
+                            необходимости создания тяжеловесных и сложных <br>
+                            конструкций. Мы предлагаем проектировку.</p>
+                        <div class="card_bottom">
+                            <button class="card-btn">Заказать</button>
+                            <span class="card-span">от <span class="number"> 5</span> BYN м2</span>
+                        </div>
+                    </div>
+                    <div class="card" style="background-image: url(img/jpg/vid_potolok.jpg);">
+                        <h3 class="card-h3">Двухуровневые</h3>
+                        <p class="card-p">Двухуровневые натяжные потолки – это оптимальный <br>
+                            способ оформления верхней части помещения без <br>
+                            необходимости создания тяжеловесных и сложных <br>
+                            конструкций. Мы предлагаем проектировку.</p>
+                        <div class="card_bottom">
+                            <button class="card-btn">Заказать</button>
+                            <span class="card-span">от <span class="number"> 5</span> BYN м2</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="assortment_design_btn">Все виды натяжные потолков по типу конструкции</button>
+            </div>
+        </div>
+        <div class="assortment_material">
+            <div class="container">
+                <div class="assortment_category">
+                    <span class="line_left"></span>
+                    <span class="assortment_category_span">По материалу</span>
+                    <span class="line_right"></span>
+                </div>
+                <div class="assortment_material_cards">
+                    <div class="card" style="background-image: url(img/jpg/vid_potolok.jpg);">
+                        <h3 class="card-h3">Двухуровневые</h3>
+                        <p class="card-p">Двухуровневые натяжные потолки – это оптимальный <br>
+                            способ оформления верхней части помещения без <br>
+                            необходимости создания тяжеловесных и сложных <br>
+                            конструкций. Мы предлагаем проектировку.</p>
+                        <div class="card_bottom">
+                            <button class="card-btn">Заказать</button>
+                            <span class="card-span">от <span class="number"> 5</span> BYN м2</span>
+                        </div>
+                    </div>
+                    <div class="card" style="background-image: url(img/jpg/vid_potolok.jpg);">
+                        <h3 class="card-h3">Двухуровневые</h3>
+                        <p class="card-p">Двухуровневые натяжные потолки – это оптимальный <br>
+                            способ оформления верхней части помещения без <br>
+                            необходимости создания тяжеловесных и сложных <br>
+                            конструкций. Мы предлагаем проектировку.</p>
+                        <div class="card_bottom">
+                            <button class="card-btn">Заказать</button>
+                            <span class="card-span">от <span class="number"> 5</span> BYN м2</span>
+                        </div>
+                    </div>
+                    <div class="card" style="background-image: url(img/jpg/vid_potolok.jpg);">
+                        <h3 class="card-h3">Двухуровневые</h3>
+                        <p class="card-p">Двухуровневые натяжные потолки – это оптимальный <br>
+                            способ оформления верхней части помещения без <br>
+                            необходимости создания тяжеловесных и сложных <br>
+                            конструкций. Мы предлагаем проектировку.</p>
+                        <div class="card_bottom">
+                            <button class="card-btn">Заказать</button>
+                            <span class="card-span">от <span class="number"> 5</span> BYN м2</span>
+                        </div>
+                    </div>
+                    <div class="card" style="background-image: url(img/jpg/vid_potolok.jpg);">
+                        <h3 class="card-h3">Двухуровневые</h3>
+                        <p class="card-p">Двухуровневые натяжные потолки – это оптимальный <br>
+                            способ оформления верхней части помещения без <br>
+                            необходимости создания тяжеловесных и сложных <br>
+                            конструкций. Мы предлагаем проектировку.</p>
+                        <div class="card_bottom">
+                            <button class="card-btn">Заказать</button>
+                            <span class="card-span">от <span class="number"> 5</span> BYN м2</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="assortment_material_btn">Все виды натяжные потолков по типу конструкции</button>
+            </div>
+        </div>
+        <div class="assortment_form" style="background-image: url(img/jpg/back_2.jpg);">
+            <div class="container">
+                <h2 class="assortment_form_h2">закажите консультацию и получите <span class="orange">скидку 10%</span> на натяжной потолок</h2>
+                <p class="assortment_form_p">Наша компания предлагает качественные натяжные потолки в Бресте, Кобрине, Каменце и Жабинке по доступным ценам на выгодных условиях. В ассортименте представлен большой
+                    выбор модификаций: для спальни, кухни, гостиной, ванной, коридора и т.д.</p>
+                <form class="form">
+                    <div class="form_input">
+                        <input class="input" type="text" placeholder="Контактное лицо">
+                    </div>
+                    <div class="form_input">
+                        <input  class="input" type="text" placeholder="Введите Ваш телефон">
+                    </div>
+                    <div class="form_input">
+                        <button class="form_input_btn">получить скидку</button>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+        <div class="assortment_room">
+            <div class="container">
+                <div class="assortment_category">
+                    <span class="line_left"></span>
+                    <span class="assortment_category_span">По типу помещения</span>
+                    <span class="line_right"></span>
+                </div>
+                <div class="assortment_room_cards">
+                    <div class="card" style="background-image: url(img/jpg/vid_potolok.jpg);">
+                        <h3 class="card-h3">Двухуровневые</h3>
+                        <p class="card-p">Двухуровневые натяжные потолки – это оптимальный <br>
+                            способ оформления верхней части помещения без <br>
+                            необходимости создания тяжеловесных и сложных <br>
+                            конструкций. Мы предлагаем проектировку.</p>
+                        <div class="card_bottom">
+                            <button class="card-btn">Заказать</button>
+                            <span class="card-span">от <span class="number"> 5</span> BYN м2</span>
+                        </div>
+                    </div>
+                    <div class="card" style="background-image: url(img/jpg/vid_potolok.jpg);">
+                        <h3 class="card-h3">Двухуровневые</h3>
+                        <p class="card-p">Двухуровневые натяжные потолки – это оптимальный <br>
+                            способ оформления верхней части помещения без <br>
+                            необходимости создания тяжеловесных и сложных <br>
+                            конструкций. Мы предлагаем проектировку.</p>
+                        <div class="card_bottom">
+                            <button class="card-btn">Заказать</button>
+                            <span class="card-span">от <span class="number"> 5</span> BYN м2</span>
+                        </div>
+                    </div>
+                    <div class="card" style="background-image: url(img/jpg/vid_potolok.jpg);">
+                        <h3 class="card-h3">Двухуровневые</h3>
+                        <p class="card-p">Двухуровневые натяжные потолки – это оптимальный <br>
+                            способ оформления верхней части помещения без <br>
+                            необходимости создания тяжеловесных и сложных <br>
+                            конструкций. Мы предлагаем проектировку.</p>
+                        <div class="card_bottom">
+                            <button class="card-btn">Заказать</button>
+                            <span class="card-span">от <span class="number"> 5</span> BYN м2</span>
+                        </div>
+                    </div>
+                    <div class="card" style="background-image: url(img/jpg/vid_potolok.jpg);">
+                        <h3 class="card-h3">Двухуровневые</h3>
+                        <p class="card-p">Двухуровневые натяжные потолки – это оптимальный <br>
+                            способ оформления верхней части помещения без <br>
+                            необходимости создания тяжеловесных и сложных <br>
+                            конструкций. Мы предлагаем проектировку.</p>
+                        <div class="card_bottom">
+                            <button class="card-btn">Заказать</button>
+                            <span class="card-span">от <span class="number"> 5</span> BYN м2</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="assortment_room_btn">Все виды натяжные потолков по типу конструкции</button>
+            </div>
+        </div>
+        <div class="assortment_texture" style="background-image: url(img/jpg/back_3.jpg);">
+            <div class="container">
+                <div class="assortment_category">
+                    <span class="line_left"></span>
+                    <span class="assortment_category_span">По фактуре</span>
+                    <span class="line_right"></span>
+                </div>
+                <div class="assortment_texture_cards">
+                    <div class="card" style="background-image: url(img/jpg/vid_potolok.jpg);">
+                        <h3 class="card-h3">Двухуровневые</h3>
+                        <p class="card-p">Двухуровневые натяжные потолки – это оптимальный <br>
+                            способ оформления верхней части помещения без <br>
+                            необходимости создания тяжеловесных и сложных <br>
+                            конструкций. Мы предлагаем проектировку.</p>
+                        <div class="card_bottom">
+                            <button class="card-btn">Заказать</button>
+                            <span class="card-span">от <span class="number"> 5</span> BYN м2</span>
+                        </div>
+                    </div>
+                    <div class="card" style="background-image: url(img/jpg/vid_potolok.jpg);">
+                        <h3 class="card-h3">Двухуровневые</h3>
+                        <p class="card-p">Двухуровневые натяжные потолки – это оптимальный <br>
+                            способ оформления верхней части помещения без <br>
+                            необходимости создания тяжеловесных и сложных <br>
+                            конструкций. Мы предлагаем проектировку.</p>
+                        <div class="card_bottom">
+                            <button class="card-btn">Заказать</button>
+                            <span class="card-span">от <span class="number"> 5</span> BYN м2</span>
+                        </div>
+                    </div>
+                    <div class="card" style="background-image: url(img/jpg/vid_potolok.jpg);">
+                        <h3 class="card-h3">Двухуровневые</h3>
+                        <p class="card-p">Двухуровневые натяжные потолки – это оптимальный <br>
+                            способ оформления верхней части помещения без <br>
+                            необходимости создания тяжеловесных и сложных <br>
+                            конструкций. Мы предлагаем проектировку.</p>
+                        <div class="card_bottom">
+                            <button class="card-btn">Заказать</button>
+                            <span class="card-span">от <span class="number"> 5</span> BYN м2</span>
+                        </div>
+                    </div>
+                    <div class="card" style="background-image: url(img/jpg/vid_potolok.jpg);">
+                        <h3 class="card-h3">Двухуровневые</h3>
+                        <p class="card-p">Двухуровневые натяжные потолки – это оптимальный <br>
+                            способ оформления верхней части помещения без <br>
+                            необходимости создания тяжеловесных и сложных <br>
+                            конструкций. Мы предлагаем проектировку.</p>
+                        <div class="card_bottom">
+                            <button class="card-btn">Заказать</button>
+                            <span class="card-span">от <span class="number"> 5</span> BYN м2</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="assortment_texture_btn">Все виды натяжные потолков по типу конструкции</button>
+            </div>
+        </div>
+       
+    </div>
 </div>
 
 <script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/slick.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

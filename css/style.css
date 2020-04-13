@@ -7,11 +7,14 @@
 body {
   margin: 0 auto;
   font-family: "FiraSans", sans-serif;
+  font-weight: 400;
 }
 input,
 textarea,
 button {
   font-family: "FiraSans", sans-serif;
+  outline: none;
+  font-weight: 400;
 }
 h1,
 h2,
@@ -21,6 +24,7 @@ h5,
 h6,
 p {
   margin: 0;
+  font-weight: 400;
 }
 ul {
   margin: 0;
@@ -109,27 +113,34 @@ header .header_menu_desktop_li {
   padding: 0px 35px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  /*&:hover{
-        background: linear-gradient(180deg, #ffdf14, #ffc51e, #ffd314);
-        height: 71px;
-        margin-top: -3px;
-        border-bottom: 3px solid #ffa800;
-        color: #000000;
-        text-transform: uppercase;
-      }*/
+}
+header .header_menu_desktop_li:nth-child(3):hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffdf14), color-stop(#ffc51e), to(#ffd314));
+  background: linear-gradient(180deg, #ffdf14, #ffc51e, #ffd314);
+  height: 71px;
+  margin-top: -3px;
+  border-bottom: 3px solid #ffa800;
+  color: #000000;
+  text-transform: uppercase;
+}
+header .header_menu_desktop_li:hover {
+  background-color: #4798D7;
+  color: #FCBE24;
+  text-transform: uppercase;
 }
 header .header_menu_desktop_li:last-child {
-  padding-right: 0;
+  padding-right: 10px;
 }
 header .header_menu_desktop_li:first-child {
   padding-left: 0;
-  padding-right: 0;
-  /*&:hover{
-          height: 65px;
-          background: linear-gradient(180deg, #4da7ec);
-          margin-top: 0;
-          border: none;
-        }*/
+  padding-right: 10px;
+}
+header .header_menu_desktop_li:first-child:hover {
+  height: 65px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#4da7ec));
+  background: linear-gradient(180deg, #4da7ec);
+  margin-top: 0;
+  border: none;
 }
 header .bottom_line {
   padding: 30px 0;
@@ -202,11 +213,17 @@ header .bottom_line .header_phone_p {
   color: #000000;
   font-weight: 700;
 }
+.content .sl {
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
 .content .banner {
-  background-image: url("../img/jpg/slider_back.jpg");
-  height: 530px;
+  height: 550px;
   background-repeat: no-repeat;
   background-size: cover;
+  outline: none;
 }
 .content .banner_info {
   display: -webkit-box;
@@ -217,7 +234,7 @@ header .bottom_line .header_phone_p {
           justify-content: space-between;
 }
 .content .banner_info .left {
-  padding: 100px 0;
+  padding-top: 100px;
 }
 .content .banner_info_h1 {
   font-size: 50px;
@@ -233,6 +250,7 @@ header .bottom_line .header_phone_p {
   font-size: 14px;
   line-height: 30px;
   color: #000000;
+  text-transform: uppercase;
 }
 .content .banner_info_btn {
   margin-top: 60px;
@@ -299,6 +317,7 @@ header .bottom_line .header_phone_p {
 }
 .content .banner_info .form_cal_results {
   margin-top: 40px;
+  margin-bottom: 45px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -315,10 +334,569 @@ header .bottom_line .header_phone_p {
   color: #000000;
   text-transform: uppercase;
 }
-.content .banner_info .form_cal_results #sum {
+.content .banner_info .form_cal_results .sum {
   font-size: 37px;
   line-height: 21px;
   color: #000000;
   font-weight: 700;
   margin: 0 auto;
+}
+.content .banner_info .form_cal_btn {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffdf14), color-stop(#ffc51e), to(#ffd314));
+  background: linear-gradient(180deg, #ffdf14, #ffc51e, #ffd314);
+  height: 60px;
+  width: 195px;
+  line-height: 60px;
+  border: none;
+  border-radius: 30px;
+  border-bottom: 3px solid #ffa800;
+  color: #010101;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 auto;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.content .banner_info .form_cal_btn:hover {
+  line-height: 55px;
+  border: 3px solid #ffa800;
+  background: transparent;
+  color: #ffdf14;
+}
+.content .aboutMain {
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+.content .aboutMain h2 {
+  font-size: 33px;
+  line-height: 30px;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 45px;
+}
+.content .aboutMain p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 25px;
+  color: #525252;
+  padding-bottom: 40px;
+}
+.content .assortment_h2 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 40px;
+}
+.content .assortment_category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.content .assortment_category .line_left {
+  width: 170px;
+  height: 1px;
+  background: -webkit-gradient(linear, left top, right top, from(#f3fafc), color-stop(#eff4f6), to(#e8edee));
+  background: linear-gradient(90deg, #f3fafc, #eff4f6, #e8edee);
+}
+.content .assortment_category .line_right {
+  width: 170px;
+  height: 1px;
+  background: -webkit-gradient(linear, left top, right top, from(#e8edee), color-stop(#eff4f6), to(#f3fafc));
+  background: linear-gradient(90deg, #e8edee, #eff4f6, #f3fafc);
+}
+.content .assortment_category_span {
+  font-size: 16px;
+  line-height: 26px;
+  color: #959595;
+  text-align: center;
+  padding: 0 20px;
+}
+.content .assortment_design {
+  padding: 65px 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.content .assortment_design_cards {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "box_1 box_2" "box_3 box_4";
+}
+.content .assortment_design .card {
+  height: 330px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 40px 20px 30px 40px;
+}
+.content .assortment_design .card-h3 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #ffffff;
+  font-weight: 700;
+  padding-bottom: 30px;
+}
+.content .assortment_design .card-p {
+  font-size: 17px;
+  line-height: 26px;
+  color: #ffffff;
+  padding-bottom: 50px;
+}
+.content .assortment_design .card .card_bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.content .assortment_design .card-btn {
+  border: 3px solid #ac9c96;
+  border-radius: 30px;
+  background-color: transparent;
+  height: 50px;
+  width: 140px;
+  line-height: 45px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.content .assortment_design .card-btn:hover {
+  background-color: #ac9c96;
+}
+.content .assortment_design .card-span {
+  font-size: 25px;
+  line-height: 21px;
+  color: #ffffff;
+  font-weight: 700;
+}
+.content .assortment_design .card-span .number {
+  font-size: 41px;
+}
+.content .assortment_design .card:nth-child(1) {
+  grid-area: box_1;
+}
+.content .assortment_design .card:nth-child(2) {
+  grid-area: box_2;
+  margin-right: 0;
+}
+.content .assortment_design .card:nth-child(3) {
+  grid-area: box_3;
+}
+.content .assortment_design .card:nth-child(4) {
+  grid-area: box_4;
+  margin-right: 0;
+}
+.content .assortment_design_btn {
+  width: 395px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: 300;
+  border-radius: 30px;
+  border: 1px solid #3E3E3E;
+  display: block;
+  background-color: #eaf0f2;
+  margin: 0 auto;
+  color: #3d3d3d;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.content .assortment_design_btn:hover {
+  background-color: #3E3E3E;
+  color: #eaf0f2;
+}
+.content .assortment_material {
+  padding: 65px 0;
+}
+.content .assortment_material_cards {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "box_1 box_2" "box_3 box_4";
+}
+.content .assortment_material .card {
+  height: 330px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 40px 20px 30px 40px;
+}
+.content .assortment_material .card-h3 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #ffffff;
+  font-weight: 700;
+  padding-bottom: 30px;
+}
+.content .assortment_material .card-p {
+  font-size: 17px;
+  line-height: 26px;
+  color: #ffffff;
+  padding-bottom: 50px;
+}
+.content .assortment_material .card .card_bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.content .assortment_material .card-btn {
+  border: 3px solid #ac9c96;
+  border-radius: 30px;
+  background-color: transparent;
+  height: 50px;
+  width: 140px;
+  line-height: 45px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.content .assortment_material .card-btn:hover {
+  background-color: #ac9c96;
+}
+.content .assortment_material .card-span {
+  font-size: 25px;
+  line-height: 21px;
+  color: #ffffff;
+  font-weight: 700;
+}
+.content .assortment_material .card-span .number {
+  font-size: 41px;
+}
+.content .assortment_material .card:nth-child(1) {
+  grid-area: box_1;
+}
+.content .assortment_material .card:nth-child(2) {
+  grid-area: box_2;
+  margin-right: 0;
+}
+.content .assortment_material .card:nth-child(3) {
+  grid-area: box_3;
+}
+.content .assortment_material .card:nth-child(4) {
+  grid-area: box_4;
+  margin-right: 0;
+}
+.content .assortment_material_btn {
+  width: 395px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: 300;
+  border-radius: 30px;
+  border: 1px solid #3E3E3E;
+  display: block;
+  background-color: transparent;
+  margin: 0 auto;
+  color: #3d3d3d;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.content .assortment_material_btn:hover {
+  background-color: #3E3E3E;
+  color: #eaf0f2;
+}
+.content .assortment_form {
+  padding: 60px 0;
+}
+.content .assortment_form_h2 {
+  font-size: 29px;
+  line-height: 30px;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 60px;
+}
+.content .assortment_form_h2 .orange {
+  font-weight: 700;
+  color: #ffbf20;
+}
+.content .assortment_form_p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 25px;
+  color: #525252;
+  padding-bottom: 60px;
+}
+.content .assortment_form .form {
+  width: 100%;
+  border: 12px solid #f6f6f5;
+  padding: 35px 50px;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.content .assortment_form .form_input .input {
+  width: 330px;
+  height: 60px;
+  line-height: 60px;
+  -webkit-box-shadow: inset 2px 2px 12px 3px #f2f2f2;
+          box-shadow: inset 2px 2px 12px 3px #f2f2f2;
+  border-radius: 30px;
+  border: 1px solid #f2f2f2;
+  outline: none;
+  font-size: 14px;
+  color: #707070;
+  padding-left: 35px;
+}
+.content .assortment_form .form_input_btn {
+  width: 330px;
+  height: 60px;
+  line-height: 60px;
+  outline: none;
+  border-radius: 30px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffdf14), color-stop(#ffc51e), to(#ffd314));
+  background: linear-gradient(180deg, #ffdf14, #ffc51e, #ffd314);
+  border: none;
+  border-bottom: 3px solid #ffa800;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.content .assortment_form .form_input_btn:hover {
+  line-height: 55px;
+  border: 3px solid #ffa800;
+  background: transparent;
+}
+.content .assortment_room {
+  padding: 65px 0;
+}
+.content .assortment_room_cards {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "box_1 box_2" "box_3 box_4";
+}
+.content .assortment_room .card {
+  height: 330px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 40px 20px 30px 40px;
+}
+.content .assortment_room .card-h3 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #ffffff;
+  font-weight: 700;
+  padding-bottom: 30px;
+}
+.content .assortment_room .card-p {
+  font-size: 17px;
+  line-height: 26px;
+  color: #ffffff;
+  padding-bottom: 50px;
+}
+.content .assortment_room .card .card_bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.content .assortment_room .card-btn {
+  border: 3px solid #ac9c96;
+  border-radius: 30px;
+  background-color: transparent;
+  height: 50px;
+  width: 140px;
+  line-height: 45px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.content .assortment_room .card-btn:hover {
+  background-color: #ac9c96;
+}
+.content .assortment_room .card-span {
+  font-size: 25px;
+  line-height: 21px;
+  color: #ffffff;
+  font-weight: 700;
+}
+.content .assortment_room .card-span .number {
+  font-size: 41px;
+}
+.content .assortment_room .card:nth-child(1) {
+  grid-area: box_1;
+}
+.content .assortment_room .card:nth-child(2) {
+  grid-area: box_2;
+  margin-right: 0;
+}
+.content .assortment_room .card:nth-child(3) {
+  grid-area: box_3;
+}
+.content .assortment_room .card:nth-child(4) {
+  grid-area: box_4;
+  margin-right: 0;
+}
+.content .assortment_room_btn {
+  width: 395px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: 300;
+  border-radius: 30px;
+  border: 1px solid #3E3E3E;
+  display: block;
+  background-color: transparent;
+  margin: 0 auto;
+  color: #3d3d3d;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.content .assortment_room_btn:hover {
+  background-color: #3E3E3E;
+  color: #eaf0f2;
+}
+.content .assortment_texture {
+  padding: 65px 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.content .assortment_texture_cards {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "box_1 box_2" "box_3 box_4";
+}
+.content .assortment_texture .card {
+  height: 330px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 40px 20px 30px 40px;
+}
+.content .assortment_texture .card-h3 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #ffffff;
+  font-weight: 700;
+  padding-bottom: 30px;
+}
+.content .assortment_texture .card-p {
+  font-size: 17px;
+  line-height: 26px;
+  color: #ffffff;
+  padding-bottom: 50px;
+}
+.content .assortment_texture .card .card_bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.content .assortment_texture .card-btn {
+  border: 3px solid #ac9c96;
+  border-radius: 30px;
+  background-color: transparent;
+  height: 50px;
+  width: 140px;
+  line-height: 45px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.content .assortment_texture .card-btn:hover {
+  background-color: #ac9c96;
+}
+.content .assortment_texture .card-span {
+  font-size: 25px;
+  line-height: 21px;
+  color: #ffffff;
+  font-weight: 700;
+}
+.content .assortment_texture .card-span .number {
+  font-size: 41px;
+}
+.content .assortment_texture .card:nth-child(1) {
+  grid-area: box_1;
+}
+.content .assortment_texture .card:nth-child(2) {
+  grid-area: box_2;
+  margin-right: 0;
+}
+.content .assortment_texture .card:nth-child(3) {
+  grid-area: box_3;
+}
+.content .assortment_texture .card:nth-child(4) {
+  grid-area: box_4;
+  margin-right: 0;
+}
+.content .assortment_texture_btn {
+  width: 395px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: 300;
+  border-radius: 30px;
+  border: 1px solid #3E3E3E;
+  display: block;
+  background-color: #eaf0f2;
+  margin: 0 auto;
+  color: #3d3d3d;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.content .assortment_texture_btn:hover {
+  background-color: #3E3E3E;
+  color: #eaf0f2;
 }
