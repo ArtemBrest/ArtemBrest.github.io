@@ -1,117 +1,63 @@
 $(document).ready(function () {
-     /*Mob menu*/
-    $(".menu-link").click(function() {
-        $(".headerMenu_mobile").slideDown(300);
-    });
-    $(".menu-link_active").click(function() {
-        $(".headerMenu_mobile").slideUp(300);
-    });
-    /* end Mob menu*/
+    $("#sum").html(parseFloat($("#value1").val()) + parseFloat($("#value2").val()) + parseFloat($("#value3").val()) + parseFloat($("#value4").val()));
+    $('body').on("keyup", 'input[type=text]', function (event) {
+        const step = 1;
+        $('.minus').click(function () {
+            var v1 = parseFloat($("#value1").val());
+            var v2 = parseFloat($("#value2").val());
+            var v3 = parseFloat($("#value3").val());
+            var v4 = parseFloat($("#value4").val());
+            var $input1 = $(this).parent().find('#value1');
+            var $input2 = $(this).parent().find('#value2');
+            var $input3 = $(this).parent().find('#value3');
+            var $input4 = $(this).parent().find('#value4');
+            var count1 = parseInt($input1.val()) - step;
+            var count2 = parseInt($input2.val()) - step;
+            var count3 = parseInt($input3.val()) - step;
+            var count4 = parseInt($input4.val()) - step;
+            //count = count < 1 ? 0 : count;
+            $input1.val(count1);
+            $input1.change();
+            $input2.val(count2);
+            $input2.change();
+            $input3.val(count3);
+            $input3.change();
+            $input4.val(count4);
+            $input4.change();
+            $("#sum").html(v1 + v2 + v3 + v4);
+            return false;
+        });
+        $('.plus').click(function () {
+            var v1 = parseFloat($("#value1").val());
+            var v2 = parseFloat($("#value2").val());
+            var v3 = parseFloat($("#value3").val());
+            var v4 = parseFloat($("#value4").val());
+            var $input1 = $(this).parent().find('#value1');
+            var $input2 = $(this).parent().find('#value2');
+            var $input3 = $(this).parent().find('#value3');
+            var $input4 = $(this).parent().find('#value4');
+            var count1 = parseInt($input1.val()) + step;
+            var count2 = parseInt($input2.val()) + step;
+            var count3 = parseInt($input3.val()) + step;
+            var count4 = parseInt($input4.val()) + step;
+            $input1.val(count1);
+            $input1.change();
+            $input2.val(count2);
+            $input2.change();
+            $input3.val(count3);
+            $input3.change();
+            $input4.val(count4);
+            $input4.change();
+            $("#sum").html(v1 + v2 + v3 + v4);
+            return false;
 
-    /*validate form*/
-    $('.modal2_form').validate({
-        rules: {
-            name: {
-                required: true,
-                minlength: 2
-            },
-            email: {
-                required: true,
-                minlength: 2,
-            },
+        });
+        var v1 = parseFloat($("#value1").val());
+        var v2 = parseFloat($("#value2").val());
+        var v3 = parseFloat($("#value3").val());
+        var v4 = parseFloat($("#value4").val());
+        console.log(v1+v2+v3+v4);
+        $("#sum").html(v1 + v2 + v3 + v4);
 
-        },
-        messages: {
-            name: {
-                required: '*',
-                minlength: ' '
-            },
-            email: {
-                required: '*',
-                minlength: ' '
-            },
-        }
-    });
-    $('.modal3_form').validate({
-        rules: {
-            name: {
-                required: true,
-                minlength: 2
-            },
-            phone: {
-                required: true,
-                minlength: 7,
-            },
-
-        },
-        messages: {
-            name: {
-                required: '*',
-                minlength: ' '
-            },
-            phone: {
-                required: '*',
-                minlength: ' '
-            },
-
-        }
-    });
-    /* end validate form*/
-
-
-    /* modal windows*/
-    var link = $('.header_desktop_email_link');
-    var modal = $('.modal2');
-    var close = $('.modal2-close');
-    var close_btn = $('.modal2_form_btn');
-    var fade = $('.fade2');
-    link.click(function () {
-        modal.show();
-        fade.show();
     })
-    close.click(function () {
-        modal.hide();
-        fade.hide();
-    })
-   /* close_btn.click(function () {
-        modal.hide();
-        fade.hide();
-    })*/
-    fade.click(function () {
-        modal.hide();
-        fade.hide();
-    })
-    var link_2 = $('.header_desktop_mobile_link');
-    var modal_2 = $('.modal3');
-    var close_2 = $('.modal3-close');
-    var close_btn_2 = $('.modal3_form_btn');
-    var fade_2 = $('.fade3');
-    link_2.click(function () {
-        modal_2.show();
-        fade_2.show();
-    })
-    close_2.click(function () {
-        modal_2.hide();
-        fade_2.hide();
-    })
-    /*close_btn_2.click(function () {
-        modal_2.hide();
-        fade_2.hide();
-    })*/
-    fade_2.click(function () {
-        modal_2.hide();
-        fade_2.hide();
-    })
-    /* end modal windows*/
-
-
-    /*maska*/
-    jQuery(function ($) {
-        $("#modal3_tel").mask("+375(99) 999-99-99");
-    });
-    /* end maska*/
-
-
-
-
-});
+})
