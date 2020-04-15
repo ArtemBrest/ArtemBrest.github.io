@@ -45,6 +45,24 @@ $(document).ready(function () {
     /* end banner slick*/
 
 
+    $('.sl_Main').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.sl-nav'
+    });
+    $('.sl_nav').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: '.sl_Main',
+        prevArrow: '<div class="sl_nav_left_arrow"><img class="left_slick" src="img/png/left.png" alt="" ></div>',
+        nextArrow: '<div class="sl_nav_right_arrow"><img class="right_slick" src="img/png/right.png" alt="" ></div>  ',
+        dots: false,
+        focusOnSelect: true
+    });
+
+
     /* accordion*/
     var accord = $(".accordion");
     var up = $(".icon");
