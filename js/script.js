@@ -24,6 +24,9 @@ $(document).ready(function () {
         //действия
         $(this).fadeIn();
     });
+    $(".header_menu_first_li").mouseover(function () {
+        $(this).fadeOut();
+    });
     /*  end big menu*/
 
 
