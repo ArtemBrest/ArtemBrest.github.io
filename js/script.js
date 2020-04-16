@@ -20,6 +20,10 @@ $(document).ready(function () {
         //действия
         $(".header_menu_first_li").slideToggle(500);
     });
+    $(".header_menu_first_li").mouseout(function () {
+        //действия
+        $(this).fadeIn();
+    });
     /*  end big menu*/
 
 
