@@ -1,23 +1,50 @@
 $(document).ready(function () {
 
-    /* calculator*/
-   /* $('body').on("keyup", 'input[type=text]', function (event) {
-        var v1 = parseFloat($(".value1").val());
-        var v2 = parseFloat($(".value2").val());
-        console.log(v1+ "  +  "+v2);
-        $(".sum").html(v1 + v2);
+    /* big menu slider*/
+    $('.column_menu_slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+    });
+    /* end big menu slider*/
 
-    });*/
+    /* big menu*/
+    $(".big_menu").mouseover(function () {
+        //действия
+        $(".header_menu_first_li").slideToggle(500);
+
+    });
+
+    $(".big_menu").mouseout(function () {
+        //действия
+        $(".header_menu_first_li").slideToggle(500);
+    });
+    /*  end big menu*/
+
+
+    /* calculator*/
+     $('body').on("keyup", 'input[type=text]', function (event) {
+         var v1 = parseFloat($(".value1").val());
+         var v2 = parseFloat($(".value2").val());
+         var v3 = parseFloat($(".value3").val());
+         var v4 = parseFloat($(".value4").val());
+         console.log(v1+ "  +  "+v2);
+         $(".sum").html(v1 + v2 + v3 + v4 +" p.");
+
+     });
     $('.minus').click(function () {
         var $input = $(this).parent().find('input');
         var count = parseInt($input.val()) - 1;
         count = count < 1 ? 1 : count;
         $input.val(count);
         $input.change();
-        var v1 = parseFloat($(this).prev(".value1").val());
-        var v2 = parseFloat($(this).prev(".value2").val());
-        console.log(v1+ "  -  "+v2);
-        $(".sum").html(v1 + v2);
+        var v1 = parseFloat($(".value1").val());
+        var v2 = parseFloat($(".value2").val());
+        var v3 = parseFloat($(".value3").val());
+        var v4 = parseFloat($(".value4").val());
+        console.log(v1 + "  -  " + v2);
+        $(".sum").html(v1 + v2 + v3 + v4 +" p.");
         return false;
 
     });
@@ -25,17 +52,19 @@ $(document).ready(function () {
         var $input = $(this).parent().find('input');
         $input.val(parseInt($input.val()) + 1);
         $input.change();
-        var v1 = parseFloat($(this).next(".value1").val());
-        var v2 = parseFloat($(this).next(".value2").val());
-        console.log(v1+ "  +  "+v2);
-        $(".sum").html(v1 + v2);
+        var v1 = parseFloat($(".value1").val());
+        var v2 = parseFloat($(".value2").val());
+        var v3 = parseFloat($(".value3").val());
+        var v4 = parseFloat($(".value4").val());
+        console.log(v1 + "  +  " + v2);
+        $(".sum").html(v1 + v2 + v3 + v4 +" p.");
         return false;
     });
     var v1 = parseFloat($(".value1").val());
     var v2 = parseFloat($(".value2").val());
-    $(".sum").html(v1 + v2);
-
-
+    var v3 = parseFloat($(".value3").val());
+    var v4 = parseFloat($(".value4").val());
+    $(".sum").html(v1 + v2 + v3 + v4 +" p.");
 
 
     /* banner slick*/
@@ -50,7 +79,7 @@ $(document).ready(function () {
         slidesToScroll: 1,
         arrows: false,
         fade: true,
-        asNavFor: '.sl-nav'
+        asNavFor: '.sl_nav'
     });
     $('.sl_nav').slick({
         slidesToShow: 4,
@@ -64,17 +93,17 @@ $(document).ready(function () {
     /* end comment slider*/
 
     /* comment*/
-    $(".description_table_link").click(function () {
-        var block =$(".hide_description");
-        if(block.hasClass("active")){
-            block.removeClass("active");
-            block.slideToggle(500);
+    var description = $(".priew_description");
+    description.find(".description_table_link:not(.active)").siblings("div").slideUp();
+    description.find(".description_table_link").on("click", function () {
+        $(this).siblings("div").stop().slideToggle(500);
+
+        if ($(this).hasClass("active")) {
+            $(this).removeClass("active");
+        } else {
+            $(this).addClass("active");
         }
-        else{
-            block.addClass("active");
-            block.slideToggle(500);
-        }
-    })
+    });
     /* end comment*/
 
 
@@ -98,15 +127,13 @@ $(document).ready(function () {
     });
     /*end accordion*/
 
-   /* lamp slider*/
+    /* lamp slider*/
     $('.fixtures_slider').slick({
         slidesToShow: 4,
         slidesToScroll: 2,
         dots: true,
     });
     /* end lamp slider*/
-
-
 
 
 })
