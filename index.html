@@ -9,6 +9,38 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<!--Modal Windows thanks-->
+
+<a href="#close" class="fade"></a>
+<div class="modal" id="mainModal">
+    <!--<a href="#close" class="modal-close">&times;</a>-->
+    <h1 class="thanks_h1">Спасибо за заявку!</h1>
+    <p class="thanks_p">Наши менеджеры свяжутся с вами в ближайшее время!</p>
+    <button class="btn-close">Отлично!</button>
+</div>
+<!-- end Modal Windows thanks-->
+
+
+<!--Modal Windows type -->
+<a href="#close" class="fade1"></a>
+<div class="modal1" id="mainModal1">
+    <!-- <a href="#close" class="modal1-close">&times;</a>-->
+    <form class="form">
+        <h1 class="form_h1">заявка на одноуровневый
+            потолок</h1>
+        <div class="form_input">
+            <input type="text" class="input" name="name" placeholder="Контактное лицо">
+        </div>
+        <div class="form_input">
+            <input type="text" class="input" id="phone_modal1" placeholder="+ 375 (__) ___-__-__">
+        </div>
+        <button class="form_btn-close">Отлично!</button>
+    </form>
+</div>
+
+<!--end Modal Windows type-->
+
+
 <header>
     <div class="container">
         <div class="top_line">
@@ -22,14 +54,85 @@
                 <li class="header_menu_desktop_li">
                     <span class="line"></span>
                 </li>
-                <li class="header_menu_desktop_li big_menu"><a class="header_menu_desktop_link" href="category.html">Потолки</a></li>
+                <li class="header_menu_desktop_li">
+                    <div class="menuPotolok">
+                        <a class="header_menu_desktop_link" href="category.html">Потолки</a>
+                    </div>
+                    <div class="header_menu_first_li">
+                        <div class="row_menu_potolok">
+                            <div class="column_menu_potolok">
+                                <h3 class="column_menu_potolok_h3">По материалу</h3>
+                                <a href="" class="column_menu_potolok_link">Тканевые</a>
+                                <a href="" class="column_menu_potolok_link">Сатиновые</a>
+                                <a href="" class="column_menu_potolok_link">ПВХ</a>
+                            </div>
+                            <div class="column_menu_potolok">
+                                <h3 class="column_menu_potolok_h3">По типу конструкции</h3>
+                                <a href="" class="column_menu_potolok_link">Одноуровнивые</a>
+                                <a href="" class="column_menu_potolok_link">Двухуровнивые</a>
+                                <a href="" class="column_menu_potolok_link">Многоуровнивые</a>
+                            </div>
+                            <div class="column_menu_potolok">
+                                <h3 class="column_menu_potolok_h3">По типу помешщения</h3>
+                                <a href="" class="column_menu_potolok_link">Ванная</a>
+                                <a href="" class="column_menu_potolok_link">Кухня</a>
+                                <a href="" class="column_menu_potolok_link">Детская</a>
+                            </div>
+                            <div class="column_menu_potolok">
+                                <h3 class="column_menu_potolok_h3">По фактуре</h3>
+                                <a href="" class="column_menu_potolok_link">Звёздное небо</a>
+                                <a href="" class="column_menu_potolok_link">С фотопечатью</a>
+                            </div>
+                            <div class="column_menu_potolok column_menu_slider">
+                                <div class="slider_menu" style="background-image: url(img/jpg/header_menu_slider.jpg);">
+                                    <div class="slider_menu-NumChar">
+                                        <p class="slider_menu-number">5</p>
+                                        <p class="slider_menu-char">%</p>
+                                    </div>
+                                    <p class="slider_menu-p">при оформлении договора <br>
+                                        во время замера</p>
+                                    <button class="slider_menu-btn">заказать</button>
+                                </div>
+                                <div class="slider_menu" style="background-image: url(img/jpg/header_menu_slider.jpg);">
+                                    <div class="slider_menu-NumChar">
+                                        <p class="slider_menu-number">5</p>
+                                        <p class="slider_menu-char">%</p>
+                                    </div>
+                                    <p class="slider_menu-p">при оформлении договора <br>
+                                        во время замера</p>
+                                    <button class="slider_menu-btn">заказать</button>
+                                </div>
+                                <div class="slider_menu" style="background-image: url(img/jpg/header_menu_slider.jpg);">
+                                    <div class="slider_menu-NumChar">
+                                        <p class="slider_menu-number">5</p>
+                                        <p class="slider_menu-char">%</p>
+                                    </div>
+                                    <p class="slider_menu-p">при оформлении договора <br>
+                                        во время замера</p>
+                                    <button class="slider_menu-btn">заказать</button>
+                                </div>
+                                <div class="slider_menu" style="background-image: url(img/jpg/header_menu_slider.jpg);">
+                                    <div class="slider_menu-NumChar">
+                                        <p class="slider_menu-number">5</p>
+                                        <p class="slider_menu-char">%</p>
+                                    </div>
+                                    <p class="slider_menu-p">при оформлении договора <br>
+                                        во время замера</p>
+                                    <button class="slider_menu-btn">заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
                 <li class="header_menu_desktop_li"><a class="header_menu_desktop_link" href="">Акции</a></li>
                 <li class="header_menu_desktop_li"><a class="header_menu_desktop_link" href="">Рассрочка</a></li>
                 <li class="header_menu_desktop_li"><a class="header_menu_desktop_link" href="">Цены</a></li>
                 <li class="header_menu_desktop_li"><a class="header_menu_desktop_link" href="">Гарантия</a></li>
-                <li class="header_menu_desktop_li"><a class="header_menu_desktop_link" href="calculator.html">Калькулятор</a></li>
+                <li class="header_menu_desktop_li"><a class="header_menu_desktop_link" href="calculator.html">Калькулятор</a>
+                </li>
                 <li class="header_menu_desktop_li"><a class="header_menu_desktop_link" href="text-page.html">О компании</a></li>
-                <li class="header_menu_desktop_li"><a class="header_menu_desktop_link" href="contact.html">Контакты</a></li>
+                <li class="header_menu_desktop_li"><a class="header_menu_desktop_link" href="contact.html">Контакты</a>
+                </li>
             </ul>
         </div>
     </div>
@@ -66,75 +169,8 @@
         </div>
     </div>
 </header>
-<div class="header_menu_first_li">
-    <div class="container">
-        <div class="row_menu_potolok">
-            <div class="column_menu_potolok">
-                <h3 class="column_menu_potolok_h3">По материалу</h3>
-                <a href="" class="column_menu_potolok_link">Тканевые</a>
-                <a href="" class="column_menu_potolok_link">Сатиновые</a>
-                <a href="" class="column_menu_potolok_link">ПВХ</a>
-            </div>
-            <div class="column_menu_potolok">
-                <h3 class="column_menu_potolok_h3">По типу конструкции</h3>
-                <a href="" class="column_menu_potolok_link">Одноуровнивые</a>
-                <a href="" class="column_menu_potolok_link">Двухуровнивые</a>
-                <a href="" class="column_menu_potolok_link">Многоуровнивые</a>
-            </div>
-            <div class="column_menu_potolok">
-                <h3 class="column_menu_potolok_h3">По типу помешщения</h3>
-                <a href="" class="column_menu_potolok_link">Ванная</a>
-                <a href="" class="column_menu_potolok_link">Кухня</a>
-                <a href="" class="column_menu_potolok_link">Детская</a>
-            </div>
-            <div class="column_menu_potolok">
-                <h3 class="column_menu_potolok_h3">По фактуре</h3>
-                <a href="" class="column_menu_potolok_link">Звёздное небо</a>
-                <a href="" class="column_menu_potolok_link">С фотопечатью</a>
-            </div>
-            <div class="column_menu_potolok column_menu_slider">
-                <div class="slider_menu" style="background-image: url(img/jpg/header_menu_slider.jpg);">
-                    <div class="slider_menu-NumChar">
-                        <p class="slider_menu-number">5</p>
-                        <p class="slider_menu-char">%</p>
-                    </div>
-                    <p class="slider_menu-p">при оформлении договора <br>
-                        во время замера</p>
-                    <button class="slider_menu-btn">заказать</button>
-                </div>
-                <div class="slider_menu" style="background-image: url(img/jpg/header_menu_slider.jpg);">
-                    <div class="slider_menu-NumChar">
-                        <p class="slider_menu-number">5</p>
-                        <p class="slider_menu-char">%</p>
-                    </div>
-                    <p class="slider_menu-p">при оформлении договора <br>
-                        во время замера</p>
-                    <button class="slider_menu-btn">заказать</button>
-                </div>
-                <div class="slider_menu" style="background-image: url(img/jpg/header_menu_slider.jpg);">
-                    <div class="slider_menu-NumChar">
-                        <p class="slider_menu-number">5</p>
-                        <p class="slider_menu-char">%</p>
-                    </div>
-                    <p class="slider_menu-p">при оформлении договора <br>
-                        во время замера</p>
-                    <button class="slider_menu-btn">заказать</button>
-                </div>
-                <div class="slider_menu" style="background-image: url(img/jpg/header_menu_slider.jpg);">
-                    <div class="slider_menu-NumChar">
-                        <p class="slider_menu-number">5</p>
-                        <p class="slider_menu-char">%</p>
-                    </div>
-                    <p class="slider_menu-p">при оформлении договора <br>
-                        во время замера</p>
-                    <button class="slider_menu-btn">заказать</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 <div class="content">
-  <!--  slider and calculator -->
+    <!--  slider and calculator -->
     <div class="container">
         <div class="banner_slider">
             <div class="form_cal">
@@ -1659,10 +1695,10 @@
                         <a href="" class="footer_column_p">Сатиновые</a>
                     </div>
                     <div class="footer_column">
-                        <a  href="" class="footer_column_p">Глянцевые</a>
-                        <a  href="" class="footer_column_p">Матовые</a>
-                        <a  href="" class="footer_column_p">Тканевые</a>
-                        <a  href="" class="footer_column_p">Сатиновые</a>
+                        <a href="" class="footer_column_p">Глянцевые</a>
+                        <a href="" class="footer_column_p">Матовые</a>
+                        <a href="" class="footer_column_p">Тканевые</a>
+                        <a href="" class="footer_column_p">Сатиновые</a>
                     </div>
                 </div>
             </div>
@@ -1683,6 +1719,8 @@
 
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/slick.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

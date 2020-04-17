@@ -15,20 +15,6 @@ $(document).ready(function () {
         autoplaySpeed: 2000,
     });
     /* end big menu slider*/
-
-    /* big menu*/
-    $(".big_menu").mouseover(function () {
-        $(".header_menu_first_li").slideToggle(500);
-    });
-
-    $(".big_menu").mouseout(function () {
-        //действия
-        $(".header_menu_first_li").slideToggle(500);
-    });
-
-    /*  end big menu*/
-
-
     /* calculator*/
      $('body').on("keyup", 'input[type=text]', function (event) {
          var v1 = parseFloat($(".value1").val());
@@ -140,6 +126,14 @@ $(document).ready(function () {
         dots: true,
     });
     /* end lamp slider*/
+
+
+
+    jQuery(function ($) {
+        $("#telephone").mask("+375(99) 999-99-99");
+        $("#phone_calculator").mask("+375(99) 999-99-99");
+        $("#phone_modal1").mask("+375(99) 999-99-99");
+    });
 
 
 })
