@@ -96,6 +96,7 @@ $(document).ready(function () {
         fade: true,
         asNavFor: '.sl_nav'
     });
+
     $('.sl_nav').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
@@ -103,7 +104,23 @@ $(document).ready(function () {
         prevArrow: '<div class="sl_nav_left_arrow"><img class="left_slick" src="img/png/left.png" alt="" ></div>',
         nextArrow: '<div class="sl_nav_right_arrow"><img class="right_slick" src="img/png/right.png" alt="" ></div>  ',
         dots: false,
-        focusOnSelect: true
+        focusOnSelect: true,
+       /* responsive: [
+            {
+                breakpoint:  768,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            }
+        ]*/
     });
     /* end comment slider*/
 
