@@ -1,5 +1,28 @@
 $(document).ready(function () {
 
+    /*Mob menu*/
+    $(".menu-link").click(function() {
+        $(".headerMenu_mobile").slideDown(300);
+    });
+    $(".menu-link-active").click(function() {
+        $(".headerMenu_mobile").slideUp(300);
+    });
+    /* end Mob menu*/
+
+
+    /*Mob menu*/
+
+
+   /* $(".MobMenu_link").click(function() {
+        $(this).addClass("MobMenu_link-active");
+        $(".MobMenu_li_bottom").slideDown(300);
+    });
+    $(".MobMenu_link-active").click(function() {
+        $(".MobMenu_li_bottom").slideUp(300);
+    });*/
+    /* end Mob menu*/
+
+
     /* big menu slider*/
     $('.column_menu_slider').slick({
         slidesToShow: 1,
@@ -124,6 +147,22 @@ $(document).ready(function () {
         slidesToShow: 4,
         slidesToScroll: 2,
         dots: true,
+        responsive: [
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     });
     /* end lamp slider*/
 
