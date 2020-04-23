@@ -2912,7 +2912,7 @@ a {
 }
 .content .fixtures_slider .slick-dots {
   position: absolute;
-  bottom: -50px;
+  bottom: -150px;
   display: block;
   width: 100%;
   padding: 0;
@@ -5385,7 +5385,7 @@ a {
     width: 100%;
     overflow-x: hidden;
     overflow-y: hidden;
-    margin-bottom: 300px;
+    margin-bottom: 250px;
   }
   .content .banner_slider {
     position: relative;
@@ -5394,7 +5394,7 @@ a {
     z-index: 9999;
     position: absolute;
     left: 0;
-    top: 450px;
+    top: 380px;
     padding: 20px 10px;
     margin: 20px 0;
     width: 290px;
@@ -5509,7 +5509,7 @@ a {
             justify-content: space-between;
   }
   .content .banner_info .left {
-    padding-top: 100px;
+    padding-top: 30px;
   }
   .content .banner_info_h1 {
     font-size: 36px;
@@ -5995,7 +5995,7 @@ a {
   .content .review_comment_info .banner_left .sl_nav .sl_slider_nav_img {
     background-repeat: no-repeat;
     background-size: cover;
-    width: 50px;
+    width: 63px;
     height: 43px;
   }
   .content .review_comment_info .banner_left .sl_nav .sl_nav_left_arrow {
@@ -6127,7 +6127,7 @@ a {
     transition: .2s;
   }
   .content .review_comment .comments {
-    padding-top: 25px;
+    padding-top: 0;
   }
   .content .review_comment .comments_icon {
     padding-right: 10px;
@@ -6137,7 +6137,7 @@ a {
     height: 65px;
   }
   .content .review_comment .comments .top_line {
-    padding-bottom: 40px;
+    padding-bottom: 20px;
   }
   .content .review_comment .comments_text {
     grid-area: box_3;
@@ -6148,7 +6148,7 @@ a {
     font-weight: 700;
     color: #000000;
     padding-right: 0px;
-    margin-top: 33px;
+    margin-top: 20px;
   }
   .content .review_comment .comments_text_stars {
     display: none;
@@ -6312,6 +6312,32 @@ a {
   .content .advantages .card_p br {
     display: none;
   }
+  .content .document {
+    padding-top: 30px;
+  }
+  .content .document_h2 {
+    padding-bottom: 20px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .content .documents_card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 800px;
+  }
+  .content .documents_card_img {
+    width: 157px;
+    height: 227px;
+    margin-right: 25px;
+    margin-bottom: 55px;
+  }
+  .content .documents_card_img:last-child {
+    margin-right: 0;
+  }
   .content .question {
     padding-top: 30px;
   }
@@ -6405,7 +6431,7 @@ a {
     margin: 0 auto;
   }
   .content .fixtures {
-    width: 99%;
+    width: 98%;
     padding-top: 30px;
     padding-bottom: 40px;
   }
@@ -6416,6 +6442,10 @@ a {
     color: #000000;
     text-transform: uppercase;
     text-align: center;
+  }
+  .content .fixtures_slider .sl_slider {
+    margin: 0;
+    margin-right: 20px;
   }
   .content .fixtures_slider .sl_slider_img {
     width: 80px;
