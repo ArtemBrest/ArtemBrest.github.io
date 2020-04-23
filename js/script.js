@@ -105,22 +105,22 @@ $(document).ready(function () {
         nextArrow: '<div class="sl_nav_right_arrow"><img class="right_slick" src="img/png/right.png" alt="" ></div>  ',
         dots: false,
         focusOnSelect: true,
-       /* responsive: [
+        responsive: [
             {
                 breakpoint:  768,
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 2
                 }
-            },
-            {
+            }
+            /*{
                 breakpoint: 600,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1
                 }
-            }
-        ]*/
+            }*/
+        ]
     });
     /* end comment slider*/
 

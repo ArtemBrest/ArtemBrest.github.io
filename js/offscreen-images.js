@@ -9,7 +9,7 @@
  */
 'use strict';
 
-const ByteEfficiencyAudit = require('../byte-efficiency-audit.js');
+const ByteEfficiencyAudit = require('./byte-efficiency-audit.js');
 const Sentry = require('../../lib/sentry.js');
 const URL = require('../../lib/url-shim.js');
 const i18n = require('../../lib/i18n/i18n.js');
