@@ -192,4 +192,189 @@ $(document).ready(function () {
     });
 
 
+
+    /* Modal validate*/
+    $('.modal_form').validate({
+        rules: {
+            name: {
+                required: true,
+                minlength: 2
+            }
+        },
+        messages: {
+            name: {
+                required: '*',
+                minlength: ' '
+            }
+        }
+    });
+    $('.price_btn').click(function () {
+        $(".form_h1").html("Заказать потолок");
+        var link_2 = $('.price_btn');
+        var modal_2 = $('.modal1');
+        //var close_2 = $('.modal3-close');
+        var close_btn_2 = $('.form_btn-close');
+        var fade_2 = $('.fade1');
+            modal_2.show();
+            fade_2.show();
+        close_btn_2.click(function () {
+            modal_2.hide();
+            fade_2.hide();
+        })
+        fade_2.click(function () {
+            modal_2.hide();
+            fade_2.hide();
+        })
+    })
+    $('.sale_card-btn').click(function () {
+        $(".form_h1").html("Получить скидку 5%");
+        var link_2 = $('.sale_card-btn');
+        var modal_2 = $('.modal1');
+        //var close_2 = $('.modal3-close');
+        var close_btn_2 = $('.form_btn-close');
+        var fade_2 = $('.fade1');
+            modal_2.show();
+            fade_2.show();
+        close_btn_2.click(function () {
+            modal_2.hide();
+            fade_2.hide();
+        })
+        fade_2.click(function () {
+            modal_2.hide();
+            fade_2.hide();
+        })
+    })
+    $('.description_table_btn').click(function () {
+        $(".form_h1").html("Получить скидку 10%");
+        var link_2 = $('.description_table_btn');
+        var modal_2 = $('.modal1');
+        //var close_2 = $('.modal3-close');
+        var close_btn_2 = $('.form_btn-close');
+        var fade_2 = $('.fade1');
+            modal_2.show();
+            fade_2.show();
+        close_btn_2.click(function () {
+            modal_2.hide();
+            fade_2.hide();
+        })
+        fade_2.click(function () {
+            modal_2.hide();
+            fade_2.hide();
+        })
+    })
+    $('.stage_btn').click(function () {
+        $(".form_h1").html("Вызвать замерщика");
+        var link_2 = $('.stage_btn');
+        var modal_2 = $('.modal1');
+        //var close_2 = $('.modal3-close');
+        var close_btn_2 = $('.form_btn-close');
+        var fade_2 = $('.fade1');
+            modal_2.show();
+            fade_2.show();
+        close_btn_2.click(function () {
+            modal_2.hide();
+            fade_2.hide();
+        })
+        fade_2.click(function () {
+            modal_2.hide();
+            fade_2.hide();
+        })
+    })
+    $('.stage_foot_btn').click(function () {
+        $(".form_h1").html("Вызвать замерщика");
+        var link_2 = $('.stage_foot_btn');
+        var modal_2 = $('.modal1');
+        //var close_2 = $('.modal3-close');
+        var close_btn_2 = $('.form_btn-close');
+        var fade_2 = $('.fade1');
+            modal_2.show();
+            fade_2.show();
+        close_btn_2.click(function () {
+            modal_2.hide();
+            fade_2.hide();
+        })
+        fade_2.click(function () {
+            modal_2.hide();
+            fade_2.hide();
+        })
+    })
+    $('.sale_banner_info_btn').click(function () {
+        $(".form_h1").html("Получить скидку 15%");
+        var link_2 = $('.sale_banner_info_btn');
+        var modal_2 = $('.modal1');
+        //var close_2 = $('.modal3-close');
+        var close_btn_2 = $('.form_btn-close');
+        var fade_2 = $('.fade1');
+            modal_2.show();
+            fade_2.show();
+        close_btn_2.click(function () {
+            modal_2.hide();
+            fade_2.hide();
+        })
+        fade_2.click(function () {
+            modal_2.hide();
+            fade_2.hide();
+        })
+    })
+    $('.cat_banner_btn').click(function () {
+        $(".form_h1").html("Получить скидку 15% на вид потолка");
+        var link_2 = $('.cat_banner_btn');
+        var modal_2 = $('.modal1');
+        //var close_2 = $('.modal3-close');
+        var close_btn_2 = $('.form_btn-close');
+        var fade_2 = $('.fade1');
+        modal_2.show();
+        fade_2.show();
+        close_btn_2.click(function () {
+            modal_2.hide();
+            fade_2.hide();
+        })
+        fade_2.click(function () {
+            modal_2.hide();
+            fade_2.hide();
+        })
+    })
+    $('.portfolio_btn').click(function () {
+        $(".form_h1").html("Оставить заявку");
+        var link_2 = $('.portfolio_btn');
+        var modal_2 = $('.modal1');
+        //var close_2 = $('.modal3-close');
+        var close_btn_2 = $('.form_btn-close');
+        var fade_2 = $('.fade1');
+        modal_2.show();
+        fade_2.show();
+        close_btn_2.click(function () {
+            modal_2.hide();
+            fade_2.hide();
+        })
+        fade_2.click(function () {
+            modal_2.hide();
+            fade_2.hide();
+        })
+    })
+    $('.cat_price_btn').click(function () {
+        $(".form_h1").html("Оставить заявку");
+        var link_2 = $('.cat_price_btn');
+        var modal_2 = $('.modal1');
+        //var close_2 = $('.modal3-close');
+        var close_btn_2 = $('.form_btn-close');
+        var fade_2 = $('.fade1');
+        modal_2.show();
+        fade_2.show();
+        close_btn_2.click(function () {
+            modal_2.hide();
+            fade_2.hide();
+        })
+        fade_2.click(function () {
+            modal_2.hide();
+            fade_2.hide();
+        })
+    })
+
+
+
+
+    /* end  Modal validate*/
+
+
 })
