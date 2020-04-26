@@ -156,9 +156,9 @@ $(document).ready(function () {
 
     /* comment*/
     var description = $(".priew_description");
-    description.find(".description_table_link:not(.active)").siblings("div").slideUp();
+    description.find(".description_table_link:not(.active)").siblings(".ul").slideUp();
     description.find(".description_table_link").on("click", function () {
-        $(this).siblings("div").stop().slideToggle(500);
+        $(this).siblings(".ul").stop().slideToggle(500);
 
         if ($(this).hasClass("active")) {
             $(this).removeClass("active");
