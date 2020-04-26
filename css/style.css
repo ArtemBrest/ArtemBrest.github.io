@@ -7442,6 +7442,18 @@ a {
     font-size: 14px;
     color: #F5FDFF;
   }
+  .content .contact_form .form_input #name-error {
+    position: absolute;
+    color: red;
+    top: 20%;
+    right: 43%;
+  }
+  .content .contact_form .form_input #telephone-error {
+    position: absolute;
+    color: red;
+    top: 20%;
+    right: 37%;
+  }
   .content .contact_form .form_btn {
     font-size: 14px;
     border: 3px solid #FFFFFF;
