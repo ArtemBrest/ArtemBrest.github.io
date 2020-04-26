@@ -13,13 +13,22 @@ $(document).ready(function () {
     /*Mob menu*/
 
 
-   /* $(".MobMenu_link").click(function() {
-        $(this).addClass("MobMenu_link-active");
-        $(".MobMenu_li_bottom").slideDown(300);
+    var Mob_menu = $(".MobMenu_li_top");
+    Mob_menu.find(".MobMenu_link:not(.active)").siblings("div").slideUp();
+    Mob_menu.find(".MobMenu_link").on("click", function () {
+        $(this).siblings("div").stop().slideToggle(500);
+
+        if ($(this).hasClass("active")) {
+            $(this).removeClass("active");
+        } else {
+            $(this).addClass("active");
+        }
+        if ($(this).find(".icon_up").hasClass("icon_up_active")) {
+            $(this).find(".icon_up").removeClass("icon_up_active");
+        } else {
+            $(this).find(".icon_up").addClass("icon_up_active");
+        }
     });
-    $(".MobMenu_link-active").click(function() {
-        $(".MobMenu_li_bottom").slideUp(300);
-    });*/
     /* end Mob menu*/
 
 
@@ -38,6 +47,9 @@ $(document).ready(function () {
         autoplaySpeed: 2000,
     });
     /* end big menu slider*/
+
+
+
     /* calculator*/
      $('body').on("keyup", 'input[type=text]', function (event) {
          var v1 = parseFloat($(".value1").val());
@@ -46,7 +58,10 @@ $(document).ready(function () {
          var v4 = parseFloat($(".value4").val());
          console.log(v1+ "  +  "+v2);
          $(".sum").val(v1 + v2 + v3 + v4 +" p.");
-
+         $('.modal_input1').val(v1);
+         $('.modal_input2').val(v2);
+         $('.modal_input3').val(v3);
+         $('.modal_input4').val(v4);
      });
     $('.minus').click(function () {
         var $input = $(this).parent().find('input');
@@ -60,6 +75,10 @@ $(document).ready(function () {
         var v4 = parseFloat($(".value4").val());
         console.log(v1 + "  -  " + v2);
         $(".sum").val(v1 + v2 + v3 + v4 +" p.");
+        $('.modal_input1').val(v1);
+        $('.modal_input2').val(v2);
+        $('.modal_input3').val(v3);
+        $('.modal_input4').val(v4);
         return false;
 
     });
@@ -73,6 +92,10 @@ $(document).ready(function () {
         var v4 = parseFloat($(".value4").val());
         console.log(v1 + "  +  " + v2);
         $(".sum").val(v1 + v2 + v3 + v4 +" p.");
+        $('.modal_input1').val(v1);
+        $('.modal_input2').val(v2);
+        $('.modal_input3').val(v3);
+        $('.modal_input4').val(v4);
         return false;
     });
     var v1 = parseFloat($(".value1").val());
@@ -80,6 +103,14 @@ $(document).ready(function () {
     var v3 = parseFloat($(".value3").val());
     var v4 = parseFloat($(".value4").val());
     $(".sum").val(v1 + v2 + v3 + v4 +" p.");
+    $('.modal_input1').val(v1);
+    $('.modal_input2').val(v2);
+    $('.modal_input3').val(v3);
+    $('.modal_input4').val(v4);
+
+
+
+
 
 
     /* banner slick*/
@@ -96,7 +127,6 @@ $(document).ready(function () {
         fade: true,
         asNavFor: '.sl_nav'
     });
-
     $('.sl_nav').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
@@ -189,25 +219,136 @@ $(document).ready(function () {
         $("#telephone").mask("+375(99) 999-99-99");
         $("#phone_calculator").mask("+375(99) 999-99-99");
         $("#phone_modal1").mask("+375(99) 999-99-99");
+        $("#phone_modal2").mask("+375(99) 999-99-99");
+        $("#assortment_phone").mask("+375(99) 999-99-99");
+
     });
 
 
 
     /* Modal validate*/
-    $('.modal_form').validate({
+    $('.form_assort').validate({
         rules: {
             name: {
                 required: true,
                 minlength: 2
-            }
+            },
+            phone: {
+                required: true,
+                minlength: 7,
+            },
+
         },
         messages: {
             name: {
                 required: '*',
                 minlength: ' '
-            }
+            },
+            phone: {
+                required: '*',
+                minlength: ' '
+            },
+
         }
     });
+    $('.form-contact').validate({
+        rules: {
+            name: {
+                required: true,
+                minlength: 2
+            },
+            phone: {
+                required: true,
+                minlength: 7,
+            },
+
+        },
+        messages: {
+            name: {
+                required: '*',
+                minlength: ' '
+            },
+            phone: {
+                required: '*',
+                minlength: ' '
+            },
+
+        }
+    });
+    $('.calcul_form').validate({
+        rules: {
+            name: {
+                required: true,
+                minlength: 2
+            },
+            phone: {
+                required: true,
+                minlength: 7,
+            },
+
+        },
+        messages: {
+            name: {
+                required: '*',
+                minlength: ' '
+            },
+            phone: {
+                required: '*',
+                minlength: ' '
+            },
+
+        }
+    });
+    $('.mainModal1_form').validate({
+        rules: {
+            name: {
+                required: true,
+                minlength: 2
+            },
+            phone: {
+                required: true,
+                minlength: 7,
+            },
+
+        },
+        messages: {
+            name: {
+                required: '*',
+                minlength: ' '
+            },
+            phone: {
+                required: '*',
+                minlength: ' '
+            },
+
+        }
+    });
+    $('.mainModal2_form').validate({
+        rules: {
+            name: {
+                required: true,
+                minlength: 2
+            },
+            phone: {
+                required: true,
+                minlength: 7,
+            },
+
+        },
+        messages: {
+            name: {
+                required: '*',
+                minlength: ' '
+            },
+            phone: {
+                required: '*',
+                minlength: ' '
+            },
+
+        }
+    });
+
+
     $('.price_btn').click(function () {
         $(".form_h1").html("Заказать потолок");
         var link_2 = $('.price_btn');
@@ -217,10 +358,10 @@ $(document).ready(function () {
         var fade_2 = $('.fade1');
             modal_2.show();
             fade_2.show();
-        close_btn_2.click(function () {
+        /*close_btn_2.click(function () {
             modal_2.hide();
             fade_2.hide();
-        })
+        })*/
         fade_2.click(function () {
             modal_2.hide();
             fade_2.hide();
@@ -235,10 +376,10 @@ $(document).ready(function () {
         var fade_2 = $('.fade1');
             modal_2.show();
             fade_2.show();
-        close_btn_2.click(function () {
+        /*close_btn_2.click(function () {
             modal_2.hide();
             fade_2.hide();
-        })
+        })*/
         fade_2.click(function () {
             modal_2.hide();
             fade_2.hide();
@@ -253,10 +394,10 @@ $(document).ready(function () {
         var fade_2 = $('.fade1');
             modal_2.show();
             fade_2.show();
-        close_btn_2.click(function () {
+        /*close_btn_2.click(function () {
             modal_2.hide();
             fade_2.hide();
-        })
+        })*/
         fade_2.click(function () {
             modal_2.hide();
             fade_2.hide();
@@ -271,10 +412,10 @@ $(document).ready(function () {
         var fade_2 = $('.fade1');
             modal_2.show();
             fade_2.show();
-        close_btn_2.click(function () {
+        /*close_btn_2.click(function () {
             modal_2.hide();
             fade_2.hide();
-        })
+        })*/
         fade_2.click(function () {
             modal_2.hide();
             fade_2.hide();
@@ -289,10 +430,10 @@ $(document).ready(function () {
         var fade_2 = $('.fade1');
             modal_2.show();
             fade_2.show();
-        close_btn_2.click(function () {
+        /*close_btn_2.click(function () {
             modal_2.hide();
             fade_2.hide();
-        })
+        })*/
         fade_2.click(function () {
             modal_2.hide();
             fade_2.hide();
@@ -307,10 +448,10 @@ $(document).ready(function () {
         var fade_2 = $('.fade1');
             modal_2.show();
             fade_2.show();
-        close_btn_2.click(function () {
+        /*close_btn_2.click(function () {
             modal_2.hide();
             fade_2.hide();
-        })
+        })*/
         fade_2.click(function () {
             modal_2.hide();
             fade_2.hide();
@@ -325,10 +466,10 @@ $(document).ready(function () {
         var fade_2 = $('.fade1');
         modal_2.show();
         fade_2.show();
-        close_btn_2.click(function () {
+        /*close_btn_2.click(function () {
             modal_2.hide();
             fade_2.hide();
-        })
+        })*/
         fade_2.click(function () {
             modal_2.hide();
             fade_2.hide();
@@ -343,10 +484,10 @@ $(document).ready(function () {
         var fade_2 = $('.fade1');
         modal_2.show();
         fade_2.show();
-        close_btn_2.click(function () {
+        /*close_btn_2.click(function () {
             modal_2.hide();
             fade_2.hide();
-        })
+        })*/
         fade_2.click(function () {
             modal_2.hide();
             fade_2.hide();
@@ -361,15 +502,34 @@ $(document).ready(function () {
         var fade_2 = $('.fade1');
         modal_2.show();
         fade_2.show();
-        close_btn_2.click(function () {
+        /*close_btn_2.click(function () {
             modal_2.hide();
             fade_2.hide();
-        })
+        })*/
         fade_2.click(function () {
             modal_2.hide();
             fade_2.hide();
         })
     })
+    $('.form_cal_btn').click(function () {
+        $(".form_h1").html("Заявка на потолок");
+        //var link_2 = $('.form_cal_btn');
+        var modal_3 = $('.modal2');
+        //var close_2 = $('.modal3-close');
+        var close_btn_3 = $('.form_btn-close');
+        var fade_3 = $('.fade2');
+        modal_3.show();
+        fade_3.show();
+        /*close_btn_3.click(function () {
+            modal_3.hide();
+            fade_3.hide();
+        })*/
+        fade_3.click(function () {
+            modal_3.hide();
+            fade_3.hide();
+        })
+    })
+
 
 
 
