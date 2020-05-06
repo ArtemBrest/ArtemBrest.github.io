@@ -1589,9 +1589,6 @@ button:hover {
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
 }
-.content .portfolio_nav li {
-  margin-right: 15px;
-}
 .content .portfolio_nav_li {
   outline: none;
   display: block;
@@ -1606,6 +1603,7 @@ button:hover {
   margin-bottom: 20px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  margin-right: 20px;
 }
 .content .portfolio_nav_li:hover {
   background-color: #FFA800;

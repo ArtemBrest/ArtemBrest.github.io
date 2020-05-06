@@ -114,6 +114,13 @@ $(document).ready(function () {
     });
     /* end banner slick*/
 
+
+    $(".tab_item").not(":first").hide();
+    $(".wrapper .tab").click(function() {
+        $(".wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
+        $(".tab_item").hide().eq($(this).index()).fadeIn()
+    }).eq(0).addClass("active");
+
     /* comment slider*/
     $('.sl_Main').slick({
         slidesToShow: 1,
@@ -148,12 +155,6 @@ $(document).ready(function () {
         ]
     });
     /* end comment slider*/
-
-
-    $("#tabs").tabs({
-        active: 0
-    });
-
     /* comment*/
     var description = $(".priew_description");
     description.find(".description_table_link:not(.active)").siblings(".ul").slideUp();
