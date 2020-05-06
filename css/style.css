@@ -2786,7 +2786,7 @@ button:hover {
   line-height: 30px;
   color: #000000;
   text-transform: uppercase;
-  padding-bottom: 70px;
+  padding-bottom: 55px;
 }
 .content .calculator_page_info {
   display: -webkit-box;
@@ -2795,14 +2795,14 @@ button:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-bottom: 45px;
+  padding-bottom: 40px;
 }
 .content .calculator_page .form_calculator .form {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 .content .calculator_page .form_calculator .form_input {
-  margin-bottom: 45px;
+  margin-bottom: 35px;
   margin-right: 60px;
   position: relative;
 }
@@ -2833,6 +2833,12 @@ button:hover {
   font-weight: 500;
   line-height: 24px;
   color: #000000;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.content .calculator_page .form_calculator .form_input .counter_group_span:hover {
+  cursor: pointer;
+  color: #4da7ec;
 }
 .content .calculator_page .form_calculator .form_input #name-error {
   position: absolute;
@@ -2869,9 +2875,10 @@ button:hover {
   font-size: 17px;
   line-height: 21px;
   color: #000000;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
 .content .calculator_page .form_calculator .form_input_results {
+  margin-top: 20px;
   margin-right: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2879,9 +2886,9 @@ button:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .content .calculator_page .form_calculator .form_input_results_p {
   display: block;
@@ -2899,8 +2906,6 @@ button:hover {
   line-height: 21px;
   color: #ffc020;
   font-weight: 700;
-  border: none;
-  background-color: transparent;
   width: 190px;
 }
 .content .calculator_page .form_calculator .form_input_btn {
@@ -2920,10 +2925,8 @@ button:hover {
   transition: 0.3s;
 }
 .content .calculator_page .form_calculator .form_input_btn:hover {
-  line-height: 55px;
-  border: 3px solid #ffa800;
-  background: transparent;
-  color: #ffdf14;
+  border-bottom: none;
+  border-top: 3px solid #ffa800;
 }
 .content .calculator_page .slider_calculator {
   width: 365px;
@@ -3004,8 +3007,8 @@ button:hover {
   background-color: #ffbf20;
 }
 .content .contact_page {
-  padding-top: 30px;
-  padding-bottom: 75px;
+  padding-top: 25px;
+  padding-bottom: 40px;
 }
 .content .contact_page_row {
   display: -webkit-box;
@@ -3022,7 +3025,7 @@ button:hover {
   font-weight: 700;
   font-size: 18px;
   line-height: 25px;
-  padding-bottom: 35px;
+  padding-bottom: 25px;
   color: #000000;
 }
 .content .contact_page_column_p {
@@ -3030,7 +3033,7 @@ button:hover {
   line-height: 25px;
   font-weight: 300;
   color: #525252;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 }
 .content .contact_page_column_link {
   display: block;
@@ -3042,14 +3045,14 @@ button:hover {
   color: #525252;
 }
 .content .text-pageMain_text {
-  padding-top: 60px;
+  padding-top: 35px;
 }
 .content .text-pageMain_text p {
   font-size: 14px;
   font-weight: 300;
   line-height: 25px;
   color: #525252;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 .content .text-pageMain_text h2 {
   font-size: 33px;
@@ -3057,31 +3060,35 @@ button:hover {
   text-align: left;
   line-height: 30px;
   text-transform: uppercase;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 .content .text-pageMain_text h3 {
-  padding-bottom: 45px;
+  padding-bottom: 25px;
   font-size: 30px;
   line-height: 30px;
   color: #000000;
 }
 .content .text-pageMain_text h4,
 .content .text-pageMain_text h5 {
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   font-size: 25px;
   line-height: 30px;
   color: #000000;
 }
 .content .text-pageMain_text li {
   padding-left: 70px;
-  padding-bottom: 15px;
   position: relative;
   font-size: 14px;
   line-height: 25px;
   color: #525252;
 }
 .content .text-pageMain_text li:last-child {
-  padding-bottom: 40px;
+  padding-bottom: 25px;
+}
+.content .text-pageMain_text li:last-child:before {
+  content: '';
+  position: absolute;
+  top: 19%;
 }
 .content .text-pageMain_text li:before {
   content: "";
@@ -3092,13 +3099,23 @@ button:hover {
   background-color: #999999;
   position: absolute;
   left: 40px;
-  top: 26%;
+  top: 41%;
+}
+.content .text-page_price {
+  padding-top: 5px;
+  padding-bottom: 0;
+}
+.content .text-page_price .price_table_Main {
+  padding-bottom: 25px;
+}
+.content .text-pageBlog {
+  padding-bottom: 10px;
 }
 .content .text-pageBlog_h2 {
   font-size: 30px;
   line-height: 30px;
   color: #000000;
-  padding-bottom: 60px;
+  padding-bottom: 45px;
 }
 .content .text-pageBlog_cards {
   display: -webkit-box;
@@ -3119,17 +3136,17 @@ button:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 .content .text-pageBlog_cards .card .left_img {
-  margin-right: 30px;
+  margin-right: 25px;
 }
 .content .text-pageBlog_cards .card-h3 {
   font-size: 15px;
   line-height: 21px;
   font-weight: 700;
   color: #000000;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 }
 .content .text-pageBlog_cards .card-p {
   font-weight: 300;
@@ -3144,13 +3161,18 @@ button:hover {
   font-size: 14px;
   color: #ffbf20;
   font-weight: 300;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.content .text-pageBlog_cards .card-btn:hover {
+  color: #4299DB;
 }
 .content .blog {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 30px;
+  padding-bottom: 25px;
 }
 .content .blog_h2 {
-  padding-bottom: 30px;
+  padding-bottom: 25px;
   font-size: 33px;
   line-height: 30px;
   color: #000000;
@@ -3169,15 +3191,14 @@ button:hover {
           align-items: center;
 }
 .content .blog .blog_cards .item {
-  border-top: 1px solid #ECECEC;
   width: 390px;
   padding-right: 15px;
-  padding-top: 35px;
-  margin-bottom: 50px;
+  padding-top: 25px;
+  margin-bottom: 30px;
 }
 .content .blog .blog_cards .item_img {
   width: 375px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 .content .blog .blog_cards .item_span {
   font-size: 16px;
@@ -3189,7 +3210,7 @@ button:hover {
   font-size: 23px;
   line-height: 34px;
   color: #000000;
-  padding-bottom: 30px;
+  padding-bottom: 5px;
 }
 .content .blog .blog_cards .item_p {
   font-size: 14px;
@@ -3406,10 +3427,8 @@ button:hover {
           box-shadow: 2px 2px 12px 3px #84B6C3;
 }
 .footer .btn:hover {
-  line-height: 55px;
-  border: 3px solid #ffa800;
-  background: transparent;
-  color: #ffdf14;
+  border-top: 3px solid #ffa800;
+  border-bottom: none;
 }
 @media (max-width: 1428px) {
   .content .sale_banner_info {
@@ -3830,6 +3849,10 @@ button:hover {
   .content {
     /* Page Calculator*/
     /* end Page Calculator*/
+    /* Blog Page*/
+    /* end Blog Page*/
+    /* Text Page*/
+    /* end Text Page*/
   }
   .content .aboutMain h2 {
     line-height: 50px;
@@ -4002,9 +4025,6 @@ button:hover {
     padding: 45px 20px 40px 20px;
     outline: none;
   }
-  .content .calculator_page {
-    padding-top: 30px;
-  }
   .content .calculator_page_info {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4012,7 +4032,6 @@ button:hover {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     width: 100%;
-    padding-bottom: 45px;
   }
   .content .calculator_page .form_calculator .form {
     display: grid;
@@ -4021,6 +4040,37 @@ button:hover {
   .content .calculator_page .form_calculator .form_input {
     margin-bottom: 45px;
     margin-right: 20px;
+  }
+  .content .blog_cards .overlay-link {
+    border-top: 1px solid #ECECEC;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+  }
+  .content .blog_cards .item {
+    border-top: none;
+  }
+  .content .contact br {
+    display: none;
+  }
+  .content .text-pageMain_text h2,
+  .content .text-pageMain_text h3 {
+    line-height: 45px;
+  }
+  .content .text-pageBlog_cards .card {
+    margin: 0 auto;
+    margin-bottom: 50px;
   }
   .footer .middle_line {
     display: -webkit-box;
@@ -4235,10 +4285,11 @@ button:hover {
   .content .category_banner_advantages {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    width: 600px;
+    margin: 0 auto;
   }
   .content .category_banner_advantages .card {
-    margin: 0 auto;
-    margin-bottom: 10px;
+    margin: 10px 0;
   }
   .content .category_banner_advantages .card-img {
     padding-left: 0;
@@ -4249,6 +4300,32 @@ button:hover {
   }
   .content .category_banner_default_h2 {
     line-height: 40px;
+  }
+  .content .advantages_category_h2 {
+    line-height: 45px;
+  }
+  .content .advantages_category_cards {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "box_1 box_2" "box_3 box_4" "box_5 box_6";
+  }
+  .content .advantages_category .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 20px;
+  }
+  .content .advantages_category .card_p {
+    text-align: center;
   }
   .content .advantages_category br {
     display: none;
@@ -4273,33 +4350,33 @@ button:hover {
     -webkit-box-direction: normal;
         -ms-flex-flow: column wrap;
             flex-flow: column wrap;
-    margin-bottom: 75px;
   }
   .content .contact_info {
     width: 100%;
     background: no-repeat center;
     background-size: cover;
-    padding: 65px 75px 80px 75px;
   }
-  .content .contact_page {
-    padding: 30px 0;
+  .content .contact_form {
+    width: 100%;
   }
-  .content .contact_page_row {
+  .content .contact_form .form {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column wrap;
             flex-flow: column wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .content .contact_page_row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
   .content .contact_page_column {
+    margin: 0 auto;
     padding-bottom: 20px;
   }
   .content .contact_page_column_h3 {
@@ -4715,43 +4792,57 @@ button:hover {
   .content .fixtures_h2 {
     line-height: 40px;
   }
-  .content .calculator_page {
-    padding-top: 30px;
-  }
   .content .calculator_page_info {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column wrap;
             flex-flow: column wrap;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
-    padding-bottom: 45px;
   }
   .content .calculator_page .slider_calculator {
     width: 400px;
   }
+  .content .category_banner {
+    background: url("../img/jpg/back_9_mob.jpg") no-repeat center;
+    background-size: cover;
+    width: 100%;
+  }
+  .content .category_banner_info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
   .content .category_banner_info .box {
-    margin-left: 0;
+    margin-top: 150px;
+    margin-left: 0%;
   }
   .content .category_banner_info .box-Top_line .right {
     margin-left: 10px;
   }
   .content .category_banner_advantages {
+    width: 100%;
     grid-template-columns: 1fr;
   }
   .content .category_banner_advantages .card {
     margin-bottom: 20px;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .content .category_banner_advantages .card-img {
     padding-left: 0;
@@ -4759,6 +4850,16 @@ button:hover {
   .content .category_banner_advantages .card-h3 {
     line-height: 18px;
     padding-left: 20px;
+  }
+  .content .contact_info {
+    padding: 40px 30px 70px 30px;
+  }
+  .content .contact_info_h2 {
+    font-size: 44px;
+    line-height: 50px;
+  }
+  .content .contact_form .form_h2 {
+    font-size: 39px;
   }
   .content .text-pageBlog br {
     display: none;
@@ -5953,6 +6054,9 @@ button:hover {
     background-size: cover;
     width: 100%;
   }
+  .content .category_banner br {
+    display: none;
+  }
   .content .category_banner_info {
     padding: 20px 10px;
     width: 100%;
@@ -5974,7 +6078,6 @@ button:hover {
     -webkit-box-direction: normal;
         -ms-flex-flow: column wrap;
             flex-flow: column wrap;
-    margin-top: 65%;
   }
   .content .category_banner_info .box-Top_line {
     padding-bottom: 20px;
@@ -6011,10 +6114,9 @@ button:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-  .content .category_banner_advantages .card-img {
-    width: 50px;
-    height: 50px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   .content .category_banner_advantages .card-h3 {
     font-size: 14px;
@@ -6060,13 +6162,12 @@ button:hover {
     padding-bottom: 10px;
   }
   .content .advantages_category_cards .card_h3 {
-    margin-top: -50px;
     font-size: 16px;
     line-height: 26px;
     color: #000000;
     font-weight: 500;
     padding-bottom: 20px;
-    padding-left: 60px;
+    padding-left: 0px;
   }
   .content .advantages_category_cards .card_p {
     font-size: 14px;
@@ -6211,9 +6312,6 @@ button:hover {
     line-height: 55px;
     margin-top: 20px;
   }
-  .content .text-pageMain_text {
-    padding-top: 60px;
-  }
   .content .text-pageMain_text p {
     font-size: 14px;
     line-height: 23px;
@@ -6318,6 +6416,24 @@ button:hover {
     font-size: 14px;
     color: #ffbf20;
     font-weight: 300;
+  }
+  .content .contact_page_row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .content .contact_page_column {
+    margin: 0;
   }
   .content .contact_page_column_h3 {
     font-weight: 700;
@@ -6480,5 +6596,8 @@ button:hover {
     background-color: #ffffff;
     border-radius: 5px;
     outline: none;
+  }
+  .content .category_banner_info .box {
+    margin-top: 180px;
   }
 }

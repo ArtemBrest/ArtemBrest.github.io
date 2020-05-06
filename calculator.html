@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Калькулятор</title>
     <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
@@ -38,6 +39,37 @@
     </form>
 </div>
 
+<a href="#close" class="fade2"></a>
+<div class="modal2" id="mainModal2">
+    <!-- <a href="#close" class="modal1-close">&times;</a>-->
+    <form class="form mainModal2_form">
+        <h1 class="form_h1"></h1>
+        <div class="form_input">
+            <p class="form_input_p">Площадь (м/кв):</p>
+            <input class="modal_input1 modal-input" type="text">
+        </div>
+        <div class="form_input">
+            <p class="form_input_p">К-во углов:</p>
+            <input class="modal_input2 modal-input" type="text">
+        </div>
+        <div class="form_input">
+            <p class="form_input_p">К-во светильников:</p>
+            <input class="modal_input3 modal-input" type="text">
+        </div>
+        <div class="form_input">
+            <p class="form_input_p">К-во труб:</p>
+            <input class="modal_input4 modal-input" type="text">
+        </div>
+        <div class="form_input">
+            <input type="text" class="input" name="name" placeholder="Контактное лицо">
+        </div>
+        <div class="form_input">
+            <input type="text" class="input" name="phone" id="phone_modal2" placeholder="+ 375 (__) ___-__-__">
+        </div>
+        <button class="form_btn-close">Отправить</button>
+    </form>
+</div>
+
 <!--end Modal Windows type-->
 
 
@@ -53,8 +85,6 @@
             <ul>
                 <li class="header_menu_desktop_li">
                     <span class="line"></span>
-                </li>
-                <li class="header_menu_desktop_li">
                     <div class="menuPotolok">
                         <a class="header_menu_desktop_link" href="category.html">Потолки</a>
                     </div>
@@ -93,33 +123,6 @@
                                         во время замера</p>
                                     <button class="slider_menu-btn sale_card-btn">заказать</button>
                                 </div>
-                                <div class="slider_menu" style="background-image: url(img/jpg/header_menu_slider.jpg);">
-                                    <div class="slider_menu-NumChar">
-                                        <p class="slider_menu-number">5</p>
-                                        <p class="slider_menu-char">%</p>
-                                    </div>
-                                    <p class="slider_menu-p">при оформлении договора <br>
-                                        во время замера</p>
-                                    <button class="slider_menu-btn sale_card-btn">заказать</button>
-                                </div>
-                                <div class="slider_menu" style="background-image: url(img/jpg/header_menu_slider.jpg);">
-                                    <div class="slider_menu-NumChar">
-                                        <p class="slider_menu-number">5</p>
-                                        <p class="slider_menu-char">%</p>
-                                    </div>
-                                    <p class="slider_menu-p">при оформлении договора <br>
-                                        во время замера</p>
-                                    <button class="slider_menu-btn sale_card-btn">заказать</button>
-                                </div>
-                                <div class="slider_menu" style="background-image: url(img/jpg/header_menu_slider.jpg);">
-                                    <div class="slider_menu-NumChar">
-                                        <p class="slider_menu-number">5</p>
-                                        <p class="slider_menu-char">%</p>
-                                    </div>
-                                    <p class="slider_menu-p">при оформлении договора <br>
-                                        во время замера</p>
-                                    <button class="slider_menu-btn sale_card-btn">заказать</button>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -127,10 +130,14 @@
                 <li class="header_menu_desktop_li"><a class="header_menu_desktop_link" href="">Акции</a></li>
                 <li class="header_menu_desktop_li"><a class="header_menu_desktop_link" href="">Рассрочка</a></li>
                 <li class="header_menu_desktop_li"><a class="header_menu_desktop_link" href="">Цены</a></li>
-                <li class="header_menu_desktop_li"><a class="header_menu_desktop_link" href="archive.html">Гарантия</a></li>
-                <li class="header_menu_desktop_li"><a class="header_menu_desktop_link" href="calculator.html">Калькулятор</a></li>
-                <li class="header_menu_desktop_li"><a class="header_menu_desktop_link" href="text-page.html">О компании</a></li>
-                <li class="header_menu_desktop_li"><a class="header_menu_desktop_link" href="contact.html">Контакты</a></li>
+                <li class="header_menu_desktop_li"><a class="header_menu_desktop_link" href="archive.html">Гарантия</a>
+                </li>
+                <li class="header_menu_desktop_li"><a class="header_menu_desktop_link" href="calculator.html">Калькулятор</a>
+                </li>
+                <li class="header_menu_desktop_li"><a class="header_menu_desktop_link" href="text-page.html">О
+                    компании</a></li>
+                <li class="header_menu_desktop_li"><a class="header_menu_desktop_link" href="contact.html">Контакты</a>
+                </li>
             </ul>
         </div>
     </div>
@@ -167,7 +174,6 @@
         </div>
     </div>
 </header>
-
 <header class="header_mobile">
     <div class="header_mobile_main">
         <div class="container">
@@ -186,10 +192,7 @@
                         <a class="menu-link" href="#MobMenu">
                             <span class="line"></span>
                         </a>
-
-                        <a class="header_menu_mobile_link" href="">Меню</a>
                     </li>
-                    <li class="header_menu_mobile_li"><a class="header_menu_mobile_link" href="">Акции</a></li>
                 </ul>
             </div>
         </div>
@@ -206,14 +209,12 @@
         </div>
         <div class="header_menu_mobile">
             <div class="container">
-                <ul>
+                <ul class="header_menu_mobile_ul">
                     <li class="header_menu_mobile_li">
                         <a class="menu-link-active" href="#MobMenu">
                             <span class="line_active"></span>
                         </a>
-                        <a class="header_menu_mobile_link" href="">Меню</a>
                     </li>
-                    <li class="header_menu_mobile_li"><a class="header_menu_mobile_link" href="">Акции</a></li>
                 </ul>
             </div>
             <div class="MobMenu">
@@ -237,6 +238,7 @@
                             </div>
                         </div>
                     </li>
+                    <li class="MobMenu_li"><a class="MobMenu_link" href="">Акции</a></li>
                     <li class="MobMenu_li"><a class="MobMenu_link" href="">Рассрочка</a></li>
                     <li class="MobMenu_li"><a class="MobMenu_link" href="">Цены</a></li>
                     <li class="MobMenu_li"><a class="MobMenu_link" href="archive.html">Гарантия</a></li>
@@ -309,7 +311,7 @@
                         </div>
                         <div class="form_input form_input_results">
                             <p class="form_input_results_p">Примерная цена: </p>
-                            <input class="sum">
+                            <p class="sum"></p>
                         </div>
                         <div class="form_input">
                             <button class="form_input_btn">отправить заявку</button>
@@ -389,9 +391,8 @@
     </div>
     <div class="map">
         <iframe class="map_img"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2305.2916159297315!2d23.70813151567935!3d52.07397507973214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47210c6dfce5bd07%3A0x4cb6923685bcaf8f!2z0JLQsNGA0YjQsNCy0YHQutC-0LUg0YguIDM3LCDQkdGA0LXRgdGCIDIyNDAwMw!5e1!3m2!1sru!2sby!4v1586875133778!5m2!1sru!2sby"
-                style="border:0;" allowfullscreen="" aria-hidden="false"
-                tabindex="0"></iframe>
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2452.31611590919!2d23.70813151567935!3d52.07397507973214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47210c6dfce5bd07%3A0x4cb6923685bcaf8f!2z0JLQsNGA0YjQsNCy0YHQutC-0LUg0YguIDM3LCDQkdGA0LXRgdGCIDIyNDAwMw!5e0!3m2!1sru!2sby!4v1588323221504!5m2!1sru!2sby"
+                style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </div>
 </div>
 <footer class="footer">
@@ -470,14 +471,12 @@
             </p>
         </div>
     </div>
-
 </footer>
-
-
 <script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/slick.min.js"></script>
 <script src="js/jquery.validate.min.js"></script>
 <script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/slick.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
