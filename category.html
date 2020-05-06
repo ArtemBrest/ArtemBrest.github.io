@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Категории</title>
     <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
@@ -53,8 +54,6 @@
             <ul>
                 <li class="header_menu_desktop_li">
                     <span class="line"></span>
-                </li>
-                <li class="header_menu_desktop_li">
                     <div class="menuPotolok">
                         <a class="header_menu_desktop_link" href="category.html">Потолки</a>
                     </div>
@@ -93,33 +92,6 @@
                                         во время замера</p>
                                     <button class="slider_menu-btn sale_card-btn">заказать</button>
                                 </div>
-                                <div class="slider_menu" style="background-image: url(img/jpg/header_menu_slider.jpg);">
-                                    <div class="slider_menu-NumChar">
-                                        <p class="slider_menu-number">5</p>
-                                        <p class="slider_menu-char">%</p>
-                                    </div>
-                                    <p class="slider_menu-p">при оформлении договора <br>
-                                        во время замера</p>
-                                    <button class="slider_menu-btn sale_card-btn">заказать</button>
-                                </div>
-                                <div class="slider_menu" style="background-image: url(img/jpg/header_menu_slider.jpg);">
-                                    <div class="slider_menu-NumChar">
-                                        <p class="slider_menu-number">5</p>
-                                        <p class="slider_menu-char">%</p>
-                                    </div>
-                                    <p class="slider_menu-p">при оформлении договора <br>
-                                        во время замера</p>
-                                    <button class="slider_menu-btn sale_card-btn">заказать</button>
-                                </div>
-                                <div class="slider_menu" style="background-image: url(img/jpg/header_menu_slider.jpg);">
-                                    <div class="slider_menu-NumChar">
-                                        <p class="slider_menu-number">5</p>
-                                        <p class="slider_menu-char">%</p>
-                                    </div>
-                                    <p class="slider_menu-p">при оформлении договора <br>
-                                        во время замера</p>
-                                    <button class="slider_menu-btn sale_card-btn">заказать</button>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -127,10 +99,14 @@
                 <li class="header_menu_desktop_li"><a class="header_menu_desktop_link" href="">Акции</a></li>
                 <li class="header_menu_desktop_li"><a class="header_menu_desktop_link" href="">Рассрочка</a></li>
                 <li class="header_menu_desktop_li"><a class="header_menu_desktop_link" href="">Цены</a></li>
-                <li class="header_menu_desktop_li"><a class="header_menu_desktop_link" href="archive.html">Гарантия</a></li>
-                <li class="header_menu_desktop_li"><a class="header_menu_desktop_link" href="calculator.html">Калькулятор</a></li>
-                <li class="header_menu_desktop_li"><a class="header_menu_desktop_link" href="text-page.html">О компании</a></li>
-                <li class="header_menu_desktop_li"><a class="header_menu_desktop_link" href="contact.html">Контакты</a></li>
+                <li class="header_menu_desktop_li"><a class="header_menu_desktop_link" href="archive.html">Гарантия</a>
+                </li>
+                <li class="header_menu_desktop_li"><a class="header_menu_desktop_link" href="calculator.html">Калькулятор</a>
+                </li>
+                <li class="header_menu_desktop_li"><a class="header_menu_desktop_link" href="text-page.html">О
+                    компании</a></li>
+                <li class="header_menu_desktop_li"><a class="header_menu_desktop_link" href="contact.html">Контакты</a>
+                </li>
             </ul>
         </div>
     </div>
@@ -167,7 +143,6 @@
         </div>
     </div>
 </header>
-
 <header class="header_mobile">
     <div class="header_mobile_main">
         <div class="container">
@@ -186,10 +161,7 @@
                         <a class="menu-link" href="#MobMenu">
                             <span class="line"></span>
                         </a>
-
-                        <a class="header_menu_mobile_link" href="">Меню</a>
                     </li>
-                    <li class="header_menu_mobile_li"><a class="header_menu_mobile_link" href="">Акции</a></li>
                 </ul>
             </div>
         </div>
@@ -206,14 +178,12 @@
         </div>
         <div class="header_menu_mobile">
             <div class="container">
-                <ul>
+                <ul class="header_menu_mobile_ul">
                     <li class="header_menu_mobile_li">
                         <a class="menu-link-active" href="#MobMenu">
                             <span class="line_active"></span>
                         </a>
-                        <a class="header_menu_mobile_link" href="">Меню</a>
                     </li>
-                    <li class="header_menu_mobile_li"><a class="header_menu_mobile_link" href="">Акции</a></li>
                 </ul>
             </div>
             <div class="MobMenu">
@@ -237,6 +207,7 @@
                             </div>
                         </div>
                     </li>
+                    <li class="MobMenu_li"><a class="MobMenu_link" href="">Акции</a></li>
                     <li class="MobMenu_li"><a class="MobMenu_link" href="">Рассрочка</a></li>
                     <li class="MobMenu_li"><a class="MobMenu_link" href="">Цены</a></li>
                     <li class="MobMenu_li"><a class="MobMenu_link" href="archive.html">Гарантия</a></li>
@@ -308,7 +279,7 @@
                 подходящей стоимости.</p>
         </div>
     </div>
-    <div class="portfolio category_portfolio" style="background-image: url(img/jpg/back_portfolio_cat.jpg);">
+    <div class="portfolio category_portfolio" id="tabs" style="background-image: url(img/jpg/back_portfolio_cat.jpg);">
         <div class="container">
             <h2 class="portfolio_h2 portfolio_h2_cat">фото и цены натяжных потолков в бресте с примерами наших работ</h2>
             <p class="portfolio_p">Наша компания предлагает качественные натяжные потолки в Бресте, Кобрине, Каменце и
@@ -319,32 +290,31 @@
                 Специалисты проведут монтаж с соблюдением сроков по наиболее
                 подходящей стоимости.</p>
             <div class="plikta">
-                <nav class="portfolio_nav">
-                    <a class="portfolio_nav_li" href="">В ванную</a>
-                    <a class="portfolio_nav_li" href="">В зал</a>
-                    <a class="portfolio_nav_li" href="">В детскую</a>
-                    <a class="portfolio_nav_li" href="">В кухню</a>
-                    <a class="portfolio_nav_li" href="">В коридор</a>
+                <ul class="tabs portfolio_nav">
+                    <li><a class="portfolio_nav_li" href="#tab-content1">В ванную</a></li>
+                    <li><a class="portfolio_nav_li" href="#tab-content2">В зал</a></li>
+                    <li><a class="portfolio_nav_li" href="#tab-content3">В детскую</a></li>
+                    <li><a class="portfolio_nav_li" href="#tab-content4">В кухню</a></li>
+                    <li><a class="portfolio_nav_li" href="#tab-content5">В коридор</a></li>
 
-                    <a class="portfolio_nav_li" href="">В ванную</a>
-                    <a class="portfolio_nav_li" href="">В зал</a>
-                    <a class="portfolio_nav_li" href="">В детскую</a>
-                    <a class="portfolio_nav_li" href="">В кухню</a>
-                    <a class="portfolio_nav_li" href="">В коридор</a>
+                    <li><a class="portfolio_nav_li" href="#tab-content6">В ванную</a></li>
+                    <li><a class="portfolio_nav_li" href="#tab-content7">В зал</a></li>
+                    <li><a class="portfolio_nav_li" href="#tab-content8">В детскую</a></li>
+                    <li><a class="portfolio_nav_li" href="#tab-content9">В кухню</a></li>
+                    <li><a class="portfolio_nav_li" href="#tab-content10">В коридор</a></li>
 
-                    <a class="portfolio_nav_li" href="">В ванную</a>
-                    <a class="portfolio_nav_li" href="">В зал</a>
-                    <a class="portfolio_nav_li" href="">В детскую</a>
-                    <a class="portfolio_nav_li" href="">В кухню</a>
-                    <a class="portfolio_nav_li" href="">В коридор</a>
+                    <li><a class="portfolio_nav_li" href="#tab-content11">В ванную</a></li>
+                    <li><a class="portfolio_nav_li" href="#tab-content12">В зал</a></li>
+                    <li><a class="portfolio_nav_li" href="#tab-content13">В детскую</a></li>
+                    <li><a class="portfolio_nav_li" href="#tab-content14">В кухню</a></li>
+                    <li><a class="portfolio_nav_li" href="#tab-content15">В коридор</a></li>
 
-                    <a class="portfolio_nav_li" href="">В детскую</a>
-                    <a class="portfolio_nav_li" href="">В кухню</a>
-                    <a class="portfolio_nav_li" href="">В коридор</a>
-                </nav>
+                    <li><a class="portfolio_nav_li" href="#tab-content16">В детскую</a></li>
+                    <li><a class="portfolio_nav_li" href="#tab-content17">В кухню</a></li>
+                    <li><a class="portfolio_nav_li" href="#tab-content18">В коридор</a></li>
+                </ul>
             </div>
-
-            <div class="portfolio_box">
+            <div class="portfolio_box" id="tab-content1">
                 <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
                     <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
                         <p class="box-block_price">300 BYN</p>
@@ -355,6 +325,715 @@
                         <p class="box-block_price">300 BYN</p>
                     </div>
                 </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio_box" id="tab-content2">
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio_box" id="tab-content3">
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio_box" id="tab-content4">
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio_box" id="tab-content5">
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio_box" id="tab-content6">
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio_box" id="tab-content7">
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio_box" id="tab-content8">
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio_box" id="tab-content9">
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio_box" id="tab-content10">
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio_box" id="tab-content11">
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio_box" id="tab-content12">
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio_box" id="tab-content13">
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio_box" id="tab-content14">
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio_box" id="tab-content15">
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio_box" id="tab-content16">
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio_box" id="tab-content17">
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+                <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
+                    <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
+                        <p class="box-block_price">300 BYN</p>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio_box" id="tab-content18">
                 <div class="box" style="background-image: url(img/jpg/photo_potolok.jpg);">
                     <div class="box-block" style="background-image: url(img/png/photo_potolok_blok.png);">
                         <p class="box-block_price">300 BYN</p>
@@ -405,13 +1084,13 @@
                 Специалисты проведут монтаж с соблюдением сроков по наиболее
                 подходящей стоимости.</p>
             <div class="price_table_Main">
-                <div class="table_row table_row_title">
-                    <div class="table_column_main"><span class="table_column_title">Тип</span></div>
-                    <div class="table_column_main"><span class="table_column_title">Ширина полотна, м</span></div>
-                    <div class="table_column_main"><span class="table_column_title">Толщина полотна, мм</span></div>
-                    <div class="table_column_main"><span class="table_column_title">t° эксплуатации ,°С</span></div>
-                    <div class="table_column_main"><span class="table_column_title">Гарантия</span></div>
-                    <div class="table_column_main"><span class="table_column_title">Цена за м/кв, руб</span></div>
+                <div class="table_row">
+                    <div class="table_column"><span class="table_column_span">Тип</span></div>
+                    <div class="table_column"><span class="table_column_span">Ширина полотна, м</span></div>
+                    <div class="table_column"><span class="table_column_span">Толщина полотна, мм</span></div>
+                    <div class="table_column"><span class="table_column_span">t° эксплуатации ,°С</span></div>
+                    <div class="table_column"><span class="table_column_span">Гарантия</span></div>
+                    <div class="table_column"><span class="table_column_span">Цена за м/кв, руб</span></div>
                 </div>
                 <div class="table_row">
                     <div class="table_column"><span class="table_column_span">Одноуровневый</span></div>
@@ -558,7 +1237,7 @@
     </div>
     <div class="review">
         <div class="container">
-            <h2 class="review_h2 review_h2_cat">отзывы клиентов об установке натяжных потолков в бресте</h2>
+            <h2 class="review_h2">отзывы клиентов об установке натяжных потолков в бресте</h2>
             <p class="review_p">Наша компания предлагает качественные натяжные потолки в Бресте, Кобрине, Каменце и
                 Жабинке по доступным ценам на выгодных условиях. В ассортименте представлен большой
                 выбор модификаций: для спальни, кухни, гостиной, ванной, коридора и т.д. Предоставляется беспроцентная
@@ -1221,7 +1900,7 @@
                         <input type="text" name="name" class="input" placeholder="Контактное лицо">
                     </div>
                     <div class="form_input">
-                        <input type="text" name="phone" id="telephone" class="input" placeholder="+ 375 (__) ___-__-__">
+                        <input type="text" name="phone" id="telephone" class="input" placeholder="+375(__) ___-__-__">
                     </div>
                     <div class="form_input">
                         <button class="form_btn">Отправить заявку</button>
@@ -1232,9 +1911,8 @@
     </div>
     <div class="map">
         <iframe class="map_img"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2305.2916159297315!2d23.70813151567935!3d52.07397507973214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47210c6dfce5bd07%3A0x4cb6923685bcaf8f!2z0JLQsNGA0YjQsNCy0YHQutC-0LUg0YguIDM3LCDQkdGA0LXRgdGCIDIyNDAwMw!5e1!3m2!1sru!2sby!4v1586875133778!5m2!1sru!2sby"
-                style="border:0;" allowfullscreen="" aria-hidden="false"
-                tabindex="0"></iframe>
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2452.31611590919!2d23.70813151567935!3d52.07397507973214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47210c6dfce5bd07%3A0x4cb6923685bcaf8f!2z0JLQsNGA0YjQsNCy0YHQutC-0LUg0YguIDM3LCDQkdGA0LXRgdGCIDIyNDAwMw!5e0!3m2!1sru!2sby!4v1588323221504!5m2!1sru!2sby"
+                style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </div>
 </div>
 <footer class="footer">
@@ -1318,9 +1996,10 @@
 
 
 <script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/slick.min.js"></script>
 <script src="js/jquery.validate.min.js"></script>
 <script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/slick.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

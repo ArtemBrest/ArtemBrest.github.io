@@ -33,12 +33,6 @@ $(document).ready(function () {
 
 
     /* big menu slider*/
-    $('.column_menu_slider').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-    });
     $('.slider_calculator').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -57,11 +51,12 @@ $(document).ready(function () {
          var v3 = parseFloat($(".value3").val());
          var v4 = parseFloat($(".value4").val());
          console.log(v1+ "  +  "+v2);
-         $(".sum").val(v1 + v2 + v3 + v4 +" p.");
+         $(".sum").html(v1 + v2 + v3 + v4 +" p.");
          $('.modal_input1').val(v1);
          $('.modal_input2').val(v2);
          $('.modal_input3').val(v3);
          $('.modal_input4').val(v4);
+
      });
     $('.minus').click(function () {
         var $input = $(this).parent().find('input');
@@ -74,7 +69,7 @@ $(document).ready(function () {
         var v3 = parseFloat($(".value3").val());
         var v4 = parseFloat($(".value4").val());
         console.log(v1 + "  -  " + v2);
-        $(".sum").val(v1 + v2 + v3 + v4 +" p.");
+        $(".sum").html(v1 + v2 + v3 + v4 +" p.");
         $('.modal_input1').val(v1);
         $('.modal_input2').val(v2);
         $('.modal_input3').val(v3);
@@ -91,7 +86,7 @@ $(document).ready(function () {
         var v3 = parseFloat($(".value3").val());
         var v4 = parseFloat($(".value4").val());
         console.log(v1 + "  +  " + v2);
-        $(".sum").val(v1 + v2 + v3 + v4 +" p.");
+        $(".sum").html(v1 + v2 + v3 + v4 +" p.");
         $('.modal_input1').val(v1);
         $('.modal_input2').val(v2);
         $('.modal_input3').val(v3);
@@ -102,7 +97,7 @@ $(document).ready(function () {
     var v2 = parseFloat($(".value2").val());
     var v3 = parseFloat($(".value3").val());
     var v4 = parseFloat($(".value4").val());
-    $(".sum").val(v1 + v2 + v3 + v4 +" p.");
+    $(".sum").html(v1 + v2 + v3 + v4 +" p.");
     $('.modal_input1').val(v1);
     $('.modal_input2').val(v2);
     $('.modal_input3').val(v3);
@@ -153,6 +148,11 @@ $(document).ready(function () {
         ]
     });
     /* end comment slider*/
+
+
+    $("#tabs").tabs({
+        active: 0
+    });
 
     /* comment*/
     var description = $(".priew_description");
@@ -356,15 +356,15 @@ $(document).ready(function () {
         //var close_2 = $('.modal3-close');
         var close_btn_2 = $('.form_btn-close');
         var fade_2 = $('.fade1');
-            modal_2.show();
-            fade_2.show();
+            modal_2.show(350);
+            fade_2.show(350);
         /*close_btn_2.click(function () {
             modal_2.hide();
             fade_2.hide();
         })*/
         fade_2.click(function () {
-            modal_2.hide();
-            fade_2.hide();
+            modal_2.hide(350);
+            fade_2.hide(350);
         })
     })
     $('.sale_card-btn').click(function () {
@@ -374,15 +374,15 @@ $(document).ready(function () {
         //var close_2 = $('.modal3-close');
         var close_btn_2 = $('.form_btn-close');
         var fade_2 = $('.fade1');
-            modal_2.show();
-            fade_2.show();
+            modal_2.show(350);
+            fade_2.show(350);
         /*close_btn_2.click(function () {
             modal_2.hide();
             fade_2.hide();
         })*/
         fade_2.click(function () {
-            modal_2.hide();
-            fade_2.hide();
+            modal_2.hide(350);
+            fade_2.hide(350);
         })
     })
     $('.description_table_btn').click(function () {
@@ -392,15 +392,15 @@ $(document).ready(function () {
         //var close_2 = $('.modal3-close');
         var close_btn_2 = $('.form_btn-close');
         var fade_2 = $('.fade1');
-            modal_2.show();
-            fade_2.show();
+            modal_2.show(350);
+            fade_2.show(350);
         /*close_btn_2.click(function () {
             modal_2.hide();
             fade_2.hide();
         })*/
         fade_2.click(function () {
-            modal_2.hide();
-            fade_2.hide();
+            modal_2.hide(350);
+            fade_2.hide(350);
         })
     })
     $('.stage_btn').click(function () {
@@ -410,15 +410,15 @@ $(document).ready(function () {
         //var close_2 = $('.modal3-close');
         var close_btn_2 = $('.form_btn-close');
         var fade_2 = $('.fade1');
-            modal_2.show();
-            fade_2.show();
+            modal_2.show(350);
+            fade_2.show(350);
         /*close_btn_2.click(function () {
             modal_2.hide();
             fade_2.hide();
         })*/
         fade_2.click(function () {
-            modal_2.hide();
-            fade_2.hide();
+            modal_2.hide(350);
+            fade_2.hide(350);
         })
     })
     $('.stage_foot_btn').click(function () {
@@ -428,15 +428,15 @@ $(document).ready(function () {
         //var close_2 = $('.modal3-close');
         var close_btn_2 = $('.form_btn-close');
         var fade_2 = $('.fade1');
-            modal_2.show();
-            fade_2.show();
+            modal_2.show(350);
+            fade_2.show(350);
         /*close_btn_2.click(function () {
             modal_2.hide();
             fade_2.hide();
         })*/
         fade_2.click(function () {
-            modal_2.hide();
-            fade_2.hide();
+            modal_2.hide(350);
+            fade_2.hide(350);
         })
     })
     $('.sale_banner_info_btn').click(function () {
@@ -446,15 +446,15 @@ $(document).ready(function () {
         //var close_2 = $('.modal3-close');
         var close_btn_2 = $('.form_btn-close');
         var fade_2 = $('.fade1');
-            modal_2.show();
-            fade_2.show();
+            modal_2.show(350);
+            fade_2.show(350);
         /*close_btn_2.click(function () {
             modal_2.hide();
             fade_2.hide();
         })*/
         fade_2.click(function () {
-            modal_2.hide();
-            fade_2.hide();
+            modal_2.hide(350);
+            fade_2.hide(350);
         })
     })
     $('.cat_banner_btn').click(function () {
@@ -464,15 +464,15 @@ $(document).ready(function () {
         //var close_2 = $('.modal3-close');
         var close_btn_2 = $('.form_btn-close');
         var fade_2 = $('.fade1');
-        modal_2.show();
-        fade_2.show();
+        modal_2.show(350);
+        fade_2.show(350);
         /*close_btn_2.click(function () {
             modal_2.hide();
             fade_2.hide();
         })*/
         fade_2.click(function () {
-            modal_2.hide();
-            fade_2.hide();
+            modal_2.hide(350);
+            fade_2.hide(350);
         })
     })
     $('.portfolio_btn').click(function () {
@@ -482,15 +482,15 @@ $(document).ready(function () {
         //var close_2 = $('.modal3-close');
         var close_btn_2 = $('.form_btn-close');
         var fade_2 = $('.fade1');
-        modal_2.show();
-        fade_2.show();
+        modal_2.show(350);
+        fade_2.show(350);
         /*close_btn_2.click(function () {
             modal_2.hide();
             fade_2.hide();
         })*/
         fade_2.click(function () {
-            modal_2.hide();
-            fade_2.hide();
+            modal_2.hide(350);
+            fade_2.hide(350);
         })
     })
     $('.cat_price_btn').click(function () {
@@ -500,15 +500,15 @@ $(document).ready(function () {
         //var close_2 = $('.modal3-close');
         var close_btn_2 = $('.form_btn-close');
         var fade_2 = $('.fade1');
-        modal_2.show();
-        fade_2.show();
+        modal_2.show(350);
+        fade_2.show(350);
         /*close_btn_2.click(function () {
             modal_2.hide();
             fade_2.hide();
         })*/
         fade_2.click(function () {
-            modal_2.hide();
-            fade_2.hide();
+            modal_2.hide(350);
+            fade_2.hide(350);
         })
     })
     $('.form_cal_btn').click(function () {
@@ -518,15 +518,15 @@ $(document).ready(function () {
         //var close_2 = $('.modal3-close');
         var close_btn_3 = $('.form_btn-close');
         var fade_3 = $('.fade2');
-        modal_3.show();
-        fade_3.show();
+        modal_3.show(350);
+        fade_3.show(350);
         /*close_btn_3.click(function () {
             modal_3.hide();
             fade_3.hide();
         })*/
         fade_3.click(function () {
-            modal_3.hide();
-            fade_3.hide();
+            modal_3.hide(350);
+            fade_3.hide(350);
         })
     })
 
