@@ -1,4 +1,7 @@
 $(document).ready(function () {
+
+    $("#lightgallery").lightGallery();
+
     $('.icon_open').click(function () {
         //$(".header-mobile").addClass('header-mobile_active');
         $(".header-mobile").slideDown(300);
