@@ -3,12 +3,12 @@ $(document).ready(function () {
     $('.icon_open').click(function () {
         //$(".header-mobile").addClass('header-mobile_active');
         $(".header-mobile").slideDown(300);
-        $('body').addClass('body_overlay');
+        $('.body_overlay').show(300);
     });
     $('.icon-close').click(function () {
         //$(".header-mobile").removeClass('header-mobile_active');
         $(".header-mobile").slideUp(100);
-        $('body').removeClass('body_overlay');
+        $('.body_overlay').hide(300);
     });
     $('.icon_bottom.first').click(function () {
         $(this).siblings(".first_lvl_mob").stop().slideToggle(500);
