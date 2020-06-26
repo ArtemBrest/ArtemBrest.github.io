@@ -8,10 +8,10 @@ $(document).ready(function () {
         slidesToShow: 4,
 
     });
-    $(".portfolio_slider").not(":first").hide();
+    $(".tab_content_box").not(":first").hide();
     $(".wrapper .portfolio_nav_li").click(function() {
         $(".wrapper .portfolio_nav_li").removeClass("active").eq($(this).index()).addClass("active");
-        $(".portfolio_slider").hide().eq($(this).index()).fadeIn();
+        $(".tab_content_box").hide().eq($(this).index()).fadeIn();
 
     }).eq(0).addClass("active");
     $('.portfolio_sl').slick({
@@ -30,6 +30,10 @@ $(document).ready(function () {
     $('.comments_item').slick({
         dots: true,
         slidesToShow: 2,
+    });
+    $('.documents_cards').slick({
+        dots: true,
+        slidesToShow: 5,
     });
 
 });

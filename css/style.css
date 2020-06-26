@@ -434,6 +434,7 @@ button:hover {
           justify-content: space-between;
   overflow: hidden;
   padding-bottom: 75px;
+  margin-right: -20px;
 }
 .content .popularModel_cards .slick-dots {
   position: absolute;
@@ -469,6 +470,9 @@ button:hover {
   height: 100%;
   margin-right: 21px;
   position: relative;
+}
+.content .popularModel .card_img {
+  width: 100%;
 }
 .content .popularModel .card:hover {
   -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.08);
@@ -595,10 +599,21 @@ button:hover {
 .content .portfolio .tab_content {
   padding-bottom: 90px;
 }
+.content .portfolio .tab_content_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 .content .portfolio .tab_content .portfolio_slider {
   display: grid;
-  grid-template-columns: 740px auto auto;
-  grid-template-areas: 'box_1 box_2 box_3';
+  grid-template-columns: 740px auto;
+  grid-template-areas: 'box_1 box_2';
   grid-column-gap: 30px;
 }
 .content .portfolio .tab_content .sl_nav_top_arrow {
@@ -783,8 +798,7 @@ button:hover {
   text-align: center;
 }
 .content .comments_item {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  margin-right: -40px;
 }
 .content .comments_item .slick-dots {
   position: absolute;
@@ -815,6 +829,8 @@ button:hover {
   padding: 21px 27px 28px 21px;
   background: #FFFFFF;
   border: 1px solid #F2F2F2;
+  margin-right: 30px;
+  outline: none;
 }
 .content .comments .item_top {
   display: -webkit-box;
@@ -847,6 +863,50 @@ button:hover {
   font-size: 14px;
   line-height: 23px;
   color: #828282;
+}
+.content .documents {
+  padding-top: 57px;
+  padding-bottom: 115px;
+}
+.content .documents_h2 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 46px;
+  color: #4F4F4F;
+  padding-bottom: 40px;
+  text-align: center;
+}
+.content .documents_cards {
+  margin-right: -33px;
+}
+.content .documents_cards .slick-dots {
+  position: absolute;
+  bottom: -65px;
+}
+.content .documents_cards .slick-dots li button {
+  display: block;
+  width: 20px;
+  height: 20px;
+  outline: none;
+  background: transparent;
+  border: 1px solid #4597DE;
+  border-radius: 50%;
+}
+.content .documents_cards .slick-dots li.slick-active button {
+  display: block;
+  width: 20px;
+  height: 20px;
+  outline: none;
+  background: #4597DE;
+  border: 1px solid #4597DE;
+  border-radius: 50%;
+}
+.content .documents_cards .slick-dots li button:before {
+  color: transparent;
+}
+.content .documents .card {
+  margin-right: 33px;
+  outline: none;
 }
 /*content main page start*/
 @media (max-width: 1199px) {
