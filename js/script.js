@@ -1,53 +1,35 @@
 $(document).ready(function () {
-
-    $('.icon_open').click(function () {
-        //$(".header-mobile").addClass('header-mobile_active');
-        $(".header-mobile").slideDown(300);
-        $('.body_overlay').show(300);
-    });
-    $('.icon-close').click(function () {
-        //$(".header-mobile").removeClass('header-mobile_active');
-        $(".header-mobile").slideUp(100);
-        $('.body_overlay').hide(300);
-    });
-    $('.icon_bottom.first').click(function () {
-        $(this).siblings(".first_lvl_mob").stop().slideToggle(500);
-        if ($(this).hasClass("active")) {
-            $(this).removeClass("active");
-        } else {
-            $(this).addClass("active");
-        }
-    })
-    $('.icon_bottom.second').click(function () {
-        $(this).siblings(".second_lvl_mob").stop().slideToggle(500);
-        if ($(this).hasClass("active")) {
-            $(this).removeClass("active");
-        } else {
-            $(this).addClass("active");
-        }
-    })
-    $('.sl_main').slick({
-        slidesToShow: 3,
-        slidesToScroll: 2,
+    $('.sliderMain').slick({
         dots: true,
-        arrows: true,
-        prevArrow: '<div class="sl_slider_item_left_arrow"><span class="icon-arrow-left"></span></div>',
-        nextArrow: '<div class="sl_slider_item_right_arrow"><span class="icon-arrow-right"></span></div>  ',
-        responsive: [
-            {
-                breakpoint: 1025,
-                settings: {
-                    slidesToShow: 2,
-                }
-            },
-            {
-                breakpoint: 669,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                }
-            }
-        ]
+        slidesToShow: 1,
     });
-    $("#lightgallery").lightGallery();
-})
+    $('.popularModel_cards').slick({
+        dots: true,
+        slidesToShow: 4,
+
+    });
+    $(".portfolio_slider").not(":first").hide();
+    $(".wrapper .portfolio_nav_li").click(function() {
+        $(".wrapper .portfolio_nav_li").removeClass("active").eq($(this).index()).addClass("active");
+        $(".portfolio_slider").hide().eq($(this).index()).fadeIn();
+
+    }).eq(0).addClass("active");
+    $('.portfolio_sl').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        asNavFor: '.portfolio_sl_nav'
+    });
+    $('.portfolio_sl_nav').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        prevArrow: '<div class="sl_nav_top_arrow"><img class="up_slick" src="img/png/up.png" alt="" ></div>',
+        nextArrow: '<div class="sl_nav_bottom_arrow"><img class="down_slick" src="img/png/down.png" alt="" ></div>  ',
+        asNavFor: '.portfolio_sl',
+        vertical: true,
+    });
+    $('.comments_item').slick({
+        dots: true,
+        slidesToShow: 2,
+    });
+
+});

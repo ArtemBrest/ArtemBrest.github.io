@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?skrlz0');
-  src:  url('fonts/icomoon.eot?skrlz0#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?skrlz0') format('truetype'),
-    url('fonts/icomoon.woff?skrlz0') format('woff'),
-    url('fonts/icomoon.svg?skrlz0#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?6u04td');
+  src:  url('fonts/icomoon.eot?6u04td#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?6u04td') format('truetype'),
+    url('fonts/icomoon.woff?6u04td') format('woff'),
+    url('fonts/icomoon.svg?6u04td#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -13,7 +13,7 @@
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
-  speak: none;
+  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -25,30 +25,68 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-angle-right:before {
+.icon-classmates:before {
+  content: "\e909";
+}
+.icon-skype .path1:before {
   content: "\e900";
+  color: rgb(255, 255, 255);
 }
-.icon-angle-down:before {
-  content: "\e901";
-}
-.icon-heart:before {
-  content: "\e902";
-}
-.icon-youtube:before {
+.icon-skype .path2:before {
   content: "\e903";
+  margin-left: -1em;
+  color: rgb(3, 169, 244);
 }
-.icon-instagram:before {
-  content: "\e904";
-}
-.icon-twitter:before {
+.icon-skype .path3:before {
   content: "\e905";
+  margin-left: -1em;
+  color: rgb(3, 169, 244);
 }
 .icon-facebook:before {
+  content: "\e908";
+}
+.icon-vk:before {
+  content: "\e90a";
+}
+.icon-skype_top:before {
+  content: "\e90b";
+}
+.icon-telegram:before {
+  content: "\e911";
+}
+.icon-whatsapp:before {
+  content: "\e912";
+}
+.icon-viber:before {
+  content: "\e913";
+}
+.icon-location:before {
+  content: "\e901";
+}
+.icon-message-circle:before {
+  content: "\e902";
+}
+.icon-location-circle:before {
+  content: "\e904";
+}
+.icon-time-circle:before {
   content: "\e906";
 }
-.icon-arrow-right:before {
-  content: "\ea3c";
+.icon-message:before {
+  content: "\e907";
 }
-.icon-arrow-left:before {
-  content: "\ea40";
+.icon-palitra:before {
+  content: "\e90c";
+}
+.icon-up:before {
+  content: "\e90d";
+}
+.icon-down:before {
+  content: "\e90e";
+}
+.icon-time:before {
+  content: "\e90f";
+}
+.icon-icon-down:before {
+  content: "\e910";
 }
