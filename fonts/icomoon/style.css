@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?6u04td');
-  src:  url('fonts/icomoon.eot?6u04td#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?6u04td') format('truetype'),
-    url('fonts/icomoon.woff?6u04td') format('woff'),
-    url('fonts/icomoon.svg?6u04td#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?v4b8cb');
+  src:  url('fonts/icomoon.eot?v4b8cb#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?v4b8cb') format('truetype'),
+    url('fonts/icomoon.woff?v4b8cb') format('woff'),
+    url('fonts/icomoon.svg?v4b8cb#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-down:before {
+  content: "\e90e";
+}
 .icon-classmates:before {
   content: "\e909";
 }
@@ -44,6 +47,9 @@
 }
 .icon-facebook:before {
   content: "\e908";
+}
+.icon-twitter:before {
+  content: "\e90d";
 }
 .icon-vk:before {
   content: "\e90a";
@@ -78,15 +84,6 @@
 .icon-palitra:before {
   content: "\e90c";
 }
-.icon-up:before {
-  content: "\e90d";
-}
-.icon-down:before {
-  content: "\e90e";
-}
 .icon-time:before {
   content: "\e90f";
-}
-.icon-icon-down:before {
-  content: "\e910";
 }
