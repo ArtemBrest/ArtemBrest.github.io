@@ -2,6 +2,7 @@ $(document).ready(function () {
     $('.sliderMain').slick({
         dots: true,
         slidesToShow: 1,
+        slidesToScroll: 1,
     });
     $('.popularModel_cards').slick({
         dots: true,
@@ -9,22 +10,21 @@ $(document).ready(function () {
         slidesToScroll: 3,
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 1290,
                 settings: {
                     slidesToShow: 3,
-                    slidesToScroll: 1,
-                    infinite: true
+                    slidesToScroll: 2
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 991,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 580,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1
@@ -35,27 +35,12 @@ $(document).ready(function () {
     $('.otherModel_cards').slick({
         dots: true,
         slidesToShow: 4,
-
+        slidesToScroll: 3,
     });
-    $(".tab_content_box").not(":first").hide();
+    $(".portfolio_slider").not(":first").hide();
     $(".wrapper .portfolio_nav_li").click(function() {
         $(".wrapper .portfolio_nav_li").removeClass("active").eq($(this).index()).addClass("active");
-        $(".tab_content_box").hide().eq($(this).index()).fadeIn();
-        $('.portfolio_sl').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            fade: true,
-            asNavFor: '.portfolio_sl_nav'
-        });
-        $('.portfolio_sl_nav').slick({
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            prevArrow: '<div class="sl_nav_top_arrow"><img class="up_slick" src="img/png/up.png" alt="" ></div>',
-            nextArrow: '<div class="sl_nav_bottom_arrow"><img class="down_slick" src="img/png/down.png" alt="" ></div>  ',
-            asNavFor: '.portfolio_sl',
-            vertical: true,
-            focusOnSelect: true
-        });
+        $(".portfolio_slider").hide().eq($(this).index()).fadeIn();
     }).eq(0).addClass("active");
     $('.portfolio_sl').slick({
         slidesToShow: 1,
@@ -69,17 +54,77 @@ $(document).ready(function () {
         prevArrow: '<div class="sl_nav_top_arrow"><img class="up_slick" src="img/png/up.png" alt="" ></div>',
         nextArrow: '<div class="sl_nav_bottom_arrow"><img class="down_slick" src="img/png/down.png" alt="" ></div>  ',
         asNavFor: '.portfolio_sl',
-        vertical: true,
-        focusOnSelect: true
+        focusOnSelect: true,
+        vertical:true,
+        responsive: [
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 4,
+                    vertical:false
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 3,
+                    vertical:false
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2,
+                    vertical:false
+                }
+            }
+        ]
     });
     $('.comments_item').slick({
         dots: true,
         slidesToShow: 2,
+        responsive: [
+            {
+                breakpoint: 818,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
     $('.documents_cards').slick({
         dots: true,
         slidesToShow: 5,
-        slidesToScroll: 3
+        slidesToScroll: 3,
+        responsive: [
+            {
+                breakpoint: 1290,
+                settings: {
+                    slidesToShow: 4,
+                }
+            },
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 2,
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 2,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     });
 
     var accord = $(".menu_li");
