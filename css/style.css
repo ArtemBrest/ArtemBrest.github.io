@@ -319,6 +319,7 @@ button:hover {
 .content .sliderMain {
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: cover;
   padding: 65px 0 100px 0;
   margin: 0;
   overflow: hidden;
@@ -440,7 +441,7 @@ button:hover {
 .content .popularModel {
   background-color: #f9fafe;
   padding-top: 60px;
-  padding-bottom: 40px;
+  padding-bottom: 10px;
 }
 .content .popularModel_h2 {
   padding-bottom: 52px;
@@ -561,6 +562,7 @@ button:hover {
   color: #BDBDBD;
 }
 .content .popularModel .card_content_btn {
+  margin: 0 auto;
   margin-top: 20px;
   display: block;
   border-radius: 25px;
@@ -1658,6 +1660,7 @@ button:hover {
   padding-bottom: 30px;
 }
 .content .contact_page_box {
+  font-style: normal;
   background: #FFFFFF;
   border: 1px solid #F2F2F2;
   padding: 40px 30px 45px 25px;
@@ -2490,23 +2493,229 @@ button:hover {
 .footer_right_social .row_bottom_icon.icon-facebook {
   color: #4E6297;
 }
-@media (max-width: 1199px) {
+@media (max-width: 1290px) {
   .container {
     width: 980px;
+  }
+  .content {
+    /*content главная страница start*/
+    /*content главная страница end*/
+  }
+  .content .product_cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+  }
+  .content .popularModel_cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    overflow: hidden;
+    padding-bottom: 75px;
+    margin-right: -20px;
+  }
+  .content .popularModel_cards .slick-dots {
+    position: absolute;
+    bottom: 25px;
+  }
+  .content .popularModel_cards .slick-dots li button {
+    display: block;
+    width: 20px;
+    height: 20px;
+    outline: none;
+    background: transparent;
+    border: 1px solid #4597DE;
+    border-radius: 50%;
+  }
+  .content .popularModel_cards .slick-dots li.slick-active button {
+    display: block;
+    width: 20px;
+    height: 20px;
+    outline: none;
+    background: #4597DE;
+    border: 1px solid #4597DE;
+    border-radius: 50%;
+  }
+  .content .popularModel_cards .slick-dots li button:before {
+    color: transparent;
+  }
+  .content .popularModel .card {
+    background: #FFFFFF;
+    border: 1px solid #F2F2F2;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    outline: none;
+    height: 100%;
+    margin-right: 21px;
+    position: relative;
+  }
+  .content .popularModel .card_img {
+    width: 100%;
+  }
+  .content .popularModel .card:hover {
+    -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.08);
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.08);
+  }
+  .content .popularModel .card:hover .card_content_h3 {
+    color: #4597de;
+  }
+  .content .popularModel .card:hover .card_content_btn {
+    background: -webkit-gradient(linear, left top, right top, from(#4798de), to(#6db1eb));
+    background: linear-gradient(90deg, #4798de 0%, #6db1eb 100%);
+    color: #ffffff;
+  }
+  .content .popularModel .card .status-discount {
+    display: block;
+    padding: 2px 15px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #F2994A;
+    border-radius: 4px;
+    position: absolute;
+    top: 15px;
+    left: -5px;
+  }
+  .content .popularModel .card_content {
+    padding: 12px 21px 28px 21px;
+  }
+  .content .popularModel .card_content_h3 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    color: #4F4F4F;
+    padding-bottom: 10px;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+  .content .popularModel .card_content_p {
+    font-size: 14px;
+    line-height: 23px;
+    color: #828282;
+    padding-bottom: 20px;
+  }
+  .content .popularModel .card_content_span {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    color: #4F4F4F;
+  }
+  .content .popularModel .card_content_span .price_new {
+    color: #EC6161;
+  }
+  .content .popularModel .card_content_span .price_old {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 23px;
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+    color: #BDBDBD;
+  }
+  .content .popularModel .card_content_btn {
+    margin: 0 auto;
+    margin-top: 20px;
+    display: block;
+    border-radius: 25px;
+    border: 1px solid #4597de;
+    background-color: transparent;
+    padding: 12px 38px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #4597de;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
   }
 }
 @media (max-width: 991px) {
   .container {
     width: 765px;
   }
+  .sliderMain_h1 br {
+    display: none;
+  }
+  .content {
+    /*content главная страница start*/
+    /*content главная страница end*/
+  }
+  .content .product_cards {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
 @media (max-width: 767px) {
   .container {
     width: 100%;
   }
+  .content {
+    /*content главная страница start*/
+    /*content главная страница end*/
+  }
 }
 @media (max-width: 479px) {
   .container {
     width: 100%;
+  }
+  .content {
+    /*content главная страница start*/
+    /*content главная страница end*/
+  }
+  .content .sliderMain {
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 40px 0 70px 0;
+    margin: 0;
+    overflow: hidden;
+  }
+  .content .sliderMain br {
+    display: none;
+  }
+  .content .sliderMain_h1 {
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #4F4F4F;
+    padding-bottom: 20px;
+  }
+  .content .sliderMain_p {
+    padding-bottom: 20px;
+    font-size: 14px;
+    line-height: 23px;
+    color: #828282;
+  }
+  .content .product_cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  .content .product_cards .card_left {
+    display: none;
+    height: 100%;
+    width: 100%;
+  }
+  .content .product_cards .card_left img {
+    height: 100%;
+    width: 100%;
+  }
+  .content .product_cards .card_right {
+    padding: 25px 20px 30px 20px;
+  }
+  .content .product_cards .card_right_h3 {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 30px;
+    color: #4F4F4F;
+    padding-bottom: 10px;
+  }
+  .content .product_cards .card_right_p {
+    padding-bottom: 10px;
+    font-size: 14px;
+    line-height: 23px;
+    color: #828282;
   }
 }
