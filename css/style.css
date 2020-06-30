@@ -829,7 +829,7 @@ button:hover {
 }
 .content .comments {
   padding-top: 55px;
-  padding-bottom: 115px;
+  padding-bottom: 35px;
   background: #f9fafe;
 }
 .content .comments_h2 {
@@ -841,11 +841,14 @@ button:hover {
   text-align: center;
 }
 .content .comments_item {
+  overflow: hidden;
+  margin: 0;
   margin-right: -40px;
+  padding-bottom: 80px;
 }
 .content .comments_item .slick-dots {
   position: absolute;
-  bottom: -65px;
+  bottom: 27px;
 }
 .content .comments_item .slick-dots li button {
   display: block;
@@ -909,7 +912,7 @@ button:hover {
 }
 .content .documents {
   padding-top: 57px;
-  padding-bottom: 115px;
+  padding-bottom: 30px;
 }
 .content .documents_h2 {
   font-weight: 600;
@@ -920,11 +923,14 @@ button:hover {
   text-align: center;
 }
 .content .documents_cards {
+  overflow: hidden;
+  margin: 0;
   margin-right: -33px;
+  padding-bottom: 85px;
 }
 .content .documents_cards .slick-dots {
   position: absolute;
-  bottom: -65px;
+  bottom: 27px;
 }
 .content .documents_cards .slick-dots li button {
   display: block;
@@ -1025,15 +1031,18 @@ button:hover {
   padding: 30px 0;
 }
 .content .contact_group {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.content .contact_img {
+  width: 100%;
+  height: 100%;
+}
+.content .contact_img_item {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .content .contact_form {
   width: 100%;
@@ -2541,6 +2550,24 @@ button:hover {
   .content .portfolio .tab_content .form {
     margin-top: 30px;
   }
+  .content .advantages .advantages_cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 80px;
+    grid-row-gap: 40px;
+    padding-bottom: 30px;
+  }
+  .content .contact_form {
+    width: 100%;
+    background: -webkit-gradient(linear, left top, right top, from(#4798de), to(#6db1eb));
+    background: linear-gradient(90deg, #4798de 0%, #6db1eb 100%);
+    padding: 30px 70px;
+  }
+  .content .contact_form_group {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
 }
 @media (max-width: 991px) {
   .container {
@@ -2556,6 +2583,9 @@ button:hover {
   .content .product_cards {
     display: grid;
     grid-template-columns: 1fr;
+  }
+  .content .popularModel_cards {
+    margin-right: 0px;
   }
   .content .portfolio {
     padding-top: 80px;
@@ -2643,6 +2673,12 @@ button:hover {
   .content .portfolio .tab_content .form {
     margin-left: 0;
   }
+  .content .comments_item {
+    margin: 0;
+  }
+  .content .documents_cards {
+    margin: 0;
+  }
 }
 @media (max-width: 767px) {
   .container {
@@ -2653,10 +2689,66 @@ button:hover {
     /*content главная страница end*/
   }
   .content .comments_item {
-    margin-right: 0px;
+    margin-right: 0;
   }
   .content .comments .item {
     margin-right: 0;
+  }
+  .content .contact_group {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .content .contact_form_input {
+    width: 100%;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 100px;
+    padding-left: 21px;
+    font-size: 14px;
+    color: #FFFFFF;
+    opacity: 0.8;
+  }
+  .content .contact_form_input::-webkit-input-placeholder {
+    font-size: 14px;
+    line-height: 23px;
+    color: #FFFFFF;
+    opacity: 0.8;
+  }
+  .content .contact_form_input:-ms-input-placeholder {
+    font-size: 14px;
+    line-height: 23px;
+    color: #FFFFFF;
+    opacity: 0.8;
+  }
+  .content .contact_form_input::-ms-input-placeholder {
+    font-size: 14px;
+    line-height: 23px;
+    color: #FFFFFF;
+    opacity: 0.8;
+  }
+  .content .contact_form_input::placeholder {
+    font-size: 14px;
+    line-height: 23px;
+    color: #FFFFFF;
+    opacity: 0.8;
+  }
+  .content .contact_form_btn {
+    display: block;
+    margin: 0 auto;
+    padding: 17px 45px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #4597de;
+    background: #FFFFFF;
+    border-radius: 100px;
+    border: 1px solid #FFFFFF;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
   }
 }
 @media (max-width: 579px) {
@@ -2774,6 +2866,12 @@ button:hover {
     color: #4597de;
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
+  }
+  .content .advantages .advantages_cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 40px;
+    padding-bottom: 30px;
   }
 }
 @media (max-width: 479px) {
@@ -2925,16 +3023,13 @@ button:hover {
     padding-bottom: 10px;
   }
   .content .portfolio .tab_content .form_line {
-    width: -webkit-fit-content !important;
-    width: -moz-fit-content !important;
-    width: fit-content !important;
     margin-bottom: 10px;
   }
   .content .portfolio .tab_content .form_line:last-child {
     margin: 0;
   }
   .content .portfolio .tab_content .form_line_input {
-    width: 240px;
+    width: 100%;
     height: 50px;
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -2972,7 +3067,7 @@ button:hover {
     opacity: 0.8;
   }
   .content .portfolio .tab_content .form_line_textarea {
-    width: 240px;
+    width: 100%;
     height: 85px;
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -3015,7 +3110,7 @@ button:hover {
     margin-top: 10px;
     border: 1px solid #FFFFFF;
     background: #FFFFFF;
-    padding: 17px 34px;
+    padding: 17px 19px;
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
     font-weight: 700;
@@ -3090,7 +3185,7 @@ button:hover {
   }
   .content .documents {
     padding-top: 33px;
-    padding-bottom: 90px;
+    padding-bottom: 30px;
   }
   .content .documents_h2 {
     font-weight: 600;
@@ -3102,13 +3197,178 @@ button:hover {
   }
   .content .documents_cards {
     margin: 0;
+    padding-bottom: 60px;
   }
   .content .documents_cards .slick-dots {
     position: absolute;
-    bottom: -55px;
+    bottom: 7px;
   }
   .content .documents .card {
     margin: 0 auto;
     outline: none;
+  }
+  .content .advantages {
+    background-color: #f9fafe;
+    padding-top: 40px;
+  }
+  .content .advantages_h2 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 32px;
+    color: #4F4F4F;
+    padding-bottom: 30px;
+  }
+  .content .advantages .advantages_cards {
+    grid-column-gap: 0;
+    grid-row-gap: 20px;
+    padding-bottom: 60px;
+  }
+  .content .advantages .card_img {
+    padding-bottom: 10px;
+  }
+  .content .advantages .card_h3 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    padding-bottom: 7px;
+    color: #4F4F4F;
+  }
+  .content .advantages .card_p {
+    font-size: 13px;
+    line-height: 22px;
+    color: #828282;
+  }
+  .content .main_text.tab {
+    background: #FFFFFF;
+    border: 1px solid #F2F2F2;
+    border-top: none;
+    padding: 30px 30px 30px 25px;
+  }
+  .content .main_text.other_page {
+    padding-bottom: 30px;
+  }
+  .content .main_text_catalog {
+    padding-bottom: 60px;
+  }
+  .content .main_text h2 {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 32px;
+    padding-bottom: 30px;
+    text-align: left;
+    color: #4F4F4F;
+  }
+  .content .main_text h3 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    color: #4F4F4F;
+    padding: 10px 0;
+  }
+  .content .main_text p {
+    font-size: 14px;
+    line-height: 23px;
+    padding-bottom: 10px;
+    color: #828282;
+  }
+  .content .contact {
+    background-color: #f9fafe;
+    padding-top: 30px;
+    padding-bottom: 0;
+  }
+  .content .contact_group {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .content .contact_img {
+    width: 100%;
+    height: 100%;
+  }
+  .content .contact_img_item {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .content .contact_form {
+    width: 100%;
+    background: -webkit-gradient(linear, left top, right top, from(#4798de), to(#6db1eb));
+    background: linear-gradient(90deg, #4798de 0%, #6db1eb 100%);
+    padding: 20px;
+  }
+  .content .contact_form_h2 {
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 36px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+  }
+  .content .contact_form_p {
+    text-align: center;
+    font-size: 14px;
+    line-height: 23px;
+    padding-bottom: 10px;
+    color: #FFFFFF;
+    opacity: 0.8;
+  }
+  .content .contact_form_group {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  .content .contact_form_input {
+    width: 100%;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 100px;
+    padding-left: 21px;
+    font-size: 14px;
+    color: #FFFFFF;
+    opacity: 0.8;
+  }
+  .content .contact_form_input::-webkit-input-placeholder {
+    font-size: 14px;
+    line-height: 23px;
+    color: #FFFFFF;
+    opacity: 0.8;
+  }
+  .content .contact_form_input:-ms-input-placeholder {
+    font-size: 14px;
+    line-height: 23px;
+    color: #FFFFFF;
+    opacity: 0.8;
+  }
+  .content .contact_form_input::-ms-input-placeholder {
+    font-size: 14px;
+    line-height: 23px;
+    color: #FFFFFF;
+    opacity: 0.8;
+  }
+  .content .contact_form_input::placeholder {
+    font-size: 14px;
+    line-height: 23px;
+    color: #FFFFFF;
+    opacity: 0.8;
+  }
+  .content .contact_form_btn {
+    display: block;
+    margin: 0 auto;
+    padding: 17px 39px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #4597de;
+    background: #FFFFFF;
+    border-radius: 100px;
+    border: 1px solid #FFFFFF;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
   }
 }
