@@ -36,6 +36,29 @@ $(document).ready(function () {
         dots: true,
         slidesToShow: 4,
         slidesToScroll: 3,
+        responsive: [
+            {
+                breakpoint: 1290,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 580,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     });
     $(".portfolio_slider").not(":first").hide();
     $(".wrapper .portfolio_nav_li").click(function() {
@@ -159,9 +182,32 @@ $(document).ready(function () {
         prevArrow: '<div class="sl_nav_top_arrow"><img class="up_slick" src="img/png/up.png" alt="" ></div>',
         nextArrow: '<div class="sl_nav_bottom_arrow"><img class="down_slick" src="img/png/down.png" alt="" ></div>  ',
         dots: false,
-        focusOnSelect: true,
         asNavFor: '.model_card_sl',
+        focusOnSelect: true,
         vertical: true,
+        responsive: [
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 4,
+                    vertical:false
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 3,
+                    vertical:false
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2,
+                    vertical:false
+                }
+            }
+        ]
     });
 
 
