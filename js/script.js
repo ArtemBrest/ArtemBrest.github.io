@@ -10,14 +10,14 @@ $(document).ready(function () {
         slidesToScroll: 3,
         responsive: [
             {
-                breakpoint: 1290,
+                breakpoint: 1321,
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 2
                 }
             },
             {
-                breakpoint: 991,
+                breakpoint: 992,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1
@@ -38,14 +38,14 @@ $(document).ready(function () {
         slidesToScroll: 3,
         responsive: [
             {
-                breakpoint: 1290,
+                breakpoint: 1321,
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 2
                 }
             },
             {
-                breakpoint: 991,
+                breakpoint: 992,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1
@@ -81,21 +81,21 @@ $(document).ready(function () {
         vertical:true,
         responsive: [
             {
-                breakpoint: 991,
+                breakpoint: 992,
                 settings: {
                     slidesToShow: 4,
                     vertical:false
                 }
             },
             {
-                breakpoint: 767,
+                breakpoint: 768,
                 settings: {
                     slidesToShow: 3,
                     vertical:false
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 481,
                 settings: {
                     slidesToShow: 2,
                     vertical:false
@@ -121,27 +121,27 @@ $(document).ready(function () {
         slidesToScroll: 3,
         responsive: [
             {
-                breakpoint: 1290,
+                breakpoint: 1321,
                 settings: {
                     slidesToShow: 4,
                 }
             },
             {
-                breakpoint: 991,
+                breakpoint: 992,
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 2,
                 }
             },
             {
-                breakpoint: 767,
+                breakpoint: 768,
                 settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 2,
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 481,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1
@@ -187,21 +187,21 @@ $(document).ready(function () {
         vertical: true,
         responsive: [
             {
-                breakpoint: 991,
+                breakpoint: 992,
                 settings: {
                     slidesToShow: 4,
                     vertical:false
                 }
             },
             {
-                breakpoint: 767,
+                breakpoint: 768,
                 settings: {
                     slidesToShow: 3,
                     vertical:false
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 481,
                 settings: {
                     slidesToShow: 2,
                     vertical:false
@@ -216,5 +216,25 @@ $(document).ready(function () {
         $(".wrapper .model_tabs_ul_li").removeClass("active").eq($(this).index()).addClass("active");
         $(".main_text").hide().eq($(this).index()).fadeIn();
     }).eq(0).addClass("active");
+
+
+
+
+    var accord = $(".header_mobile_menu_li");
+    var up = $(".header_mobile_menu_group");
+    accord.find(".header_mobile_menu_group:not(.active)").siblings("ul").slideUp();
+    accord.find(".header_mobile_menu_group").on("click", function () {
+        $(this).siblings("ul").stop().slideToggle(500);
+
+        if ($(this).hasClass("active")) {
+            $(this).removeClass("active");
+        } else {
+            $(this).addClass("active");
+        }
+    });
+    $('.header_mobile_menu_line').click(function () {
+        $('.header_mobile_menu_overlay').slideToggle(500);
+    })
+
 
 });
