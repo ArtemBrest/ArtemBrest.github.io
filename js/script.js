@@ -211,10 +211,10 @@ $(document).ready(function () {
     });
 
 
-    $(".main_text").not(":first").hide();
+    $(".main_text_tab").not(":first").hide();
     $(".wrapper .model_tabs_ul_li").click(function() {
         $(".wrapper .model_tabs_ul_li").removeClass("active").eq($(this).index()).addClass("active");
-        $(".main_text").hide().eq($(this).index()).fadeIn();
+        $(".main_text_tab").hide().eq($(this).index()).fadeIn();
     }).eq(0).addClass("active");
 
 

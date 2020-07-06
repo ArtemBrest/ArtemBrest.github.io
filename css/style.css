@@ -48,6 +48,9 @@ button:hover {
   margin: 0 auto;
   padding: 0 15px;
 }
+.container.default {
+  padding: 0;
+}
 .wrap_container {
   width: 990px;
   margin: 0 auto;
@@ -65,7 +68,7 @@ button:hover {
 .header {
   -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.08);
           box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.08);
-  z-index: 999 !important;
+  z-index: 999999!important;
 }
 .header_top_line {
   display: -webkit-box;
@@ -1402,7 +1405,7 @@ button:hover {
   line-height: 23px;
   color: #828282;
 }
-.content .main_text.tab {
+.content .main_text_tab {
   background: #FFFFFF;
   border: 1px solid #F2F2F2;
   border-top: none;
@@ -2213,6 +2216,10 @@ button:hover {
   background-color: #f9fafe;
   padding: 30px 0;
 }
+.content .contact_pageForm.model {
+  background: #FFFFFF;
+  padding: 0;
+}
 .content .contact_pageForm_img {
   width: 100%;
   height: 100%;
@@ -2589,6 +2596,36 @@ button:hover {
 .content .model_tabs_ul_li:hover {
   background-color: #4597de;
   color: #ffffff;
+}
+.content .model_tabs .tab_content_description {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.content .model_tabs .tab_content_description_line {
+  border-bottom: 1px dotted #C2C2C2;
+  position: relative;
+  padding: 0;
+  margin-bottom: 5px;
+}
+.content .model_tabs .tab_content_description_line span {
+  background-color: #FFF;
+  margin: 0;
+}
+.content .model_tabs .tab_content_description_p {
+  position: relative;
+  bottom: -9px;
+  font-size: 16px;
+  line-height: 26px;
+  padding-right: 5px;
+}
+.content .model_tabs .tab_content_description .kol {
+  font-size: 14px;
+  position: absolute;
+  right: 0;
+  top: 11px;
+  padding-left: 2px;
+  font-weight: 500;
 }
 .content .otherModel {
   padding-bottom: 45px;
@@ -5186,7 +5223,7 @@ button:hover {
     line-height: 22px;
     color: #828282;
   }
-  .content .main_text.tab {
+  .content .main_text_tab {
     background: #FFFFFF;
     border: 1px solid #F2F2F2;
     border-top: none;
@@ -5560,6 +5597,13 @@ button:hover {
     padding: 0;
     padding-top: 60px;
   }
+  .content .contact_pageForm.model {
+    background: #FFFFFF;
+    padding: 0;
+  }
+  .content .contact_pageForm.model .contact_pageForm_img {
+    display: none;
+  }
   .content .contact_pageForm_form {
     width: 100%;
     padding: 28px 30px 36px 30px;
@@ -5929,7 +5973,7 @@ button:hover {
     line-height: 26px;
     text-transform: uppercase;
     color: #FFFFFF;
-    padding: 17px 77px;
+    padding: 17px 50px;
     background: #4597de;
     border: 1px solid #4597de;
     margin: 0;
