@@ -12,7 +12,7 @@ $(document).ready(function () {
         else{
             $('.box').show(350);
             $(".box").toggleClass('active');
-            $(".portfolio_btn").html('Свернуть наших работы');
+            $(".portfolio_btn").html('Свернуть наши работы');
         }
     })
 });
