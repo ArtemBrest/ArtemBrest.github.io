@@ -708,10 +708,11 @@ button:hover {
   line-height: 23px;
   color: #828282;
 }
-.content .company {
-  padding: 30px 0 60px 0;
+.content .others_page {
+  max-width: 850px;
+  margin: 0 auto;
 }
-.content .company_h1 {
+.content .others_page h1 {
   font-weight: 900;
   font-size: 32px;
   line-height: 40px;
@@ -719,15 +720,16 @@ button:hover {
   color: #2B2F36;
   padding-bottom: 30px;
 }
-.content .company_p {
+.content .others_page p {
   font-family: Roboto, sans-serif;
   font-size: 18px;
   line-height: 30px;
   text-align: center;
   color: #4F4F4F;
   padding-bottom: 30px;
-  max-width: 850px;
-  margin: 0 auto;
+}
+.content .company {
+  padding: 30px 0 60px 0;
 }
 .content .company_cards {
   display: grid;
@@ -798,26 +800,6 @@ button:hover {
 .content .company_content {
   padding: 30px 0 60px 0;
 }
-.content .company_content_h1 {
-  font-weight: 900;
-  font-size: 32px;
-  line-height: 40px;
-  text-align: center;
-  color: #2B2F36;
-  padding-bottom: 30px;
-  max-width: 770px;
-  margin: 0 auto;
-}
-.content .company_content_p {
-  font-family: Roboto, sans-serif;
-  font-size: 18px;
-  line-height: 30px;
-  text-align: center;
-  color: #4F4F4F;
-  max-width: 770px;
-  margin: 0 auto;
-  padding-bottom: 30px;
-}
 .content .company_content_cards {
   display: grid;
   grid-template-columns: 1fr;
@@ -882,24 +864,6 @@ button:hover {
 }
 .content .production {
   padding: 30px 0 60px 0;
-}
-.content .production_h1 {
-  padding-bottom: 30px;
-  font-weight: 900;
-  font-size: 32px;
-  line-height: 40px;
-  text-align: center;
-  color: #2B2F36;
-}
-.content .production_p {
-  font-family: Roboto, sans-serif;
-  max-width: 850px;
-  padding-bottom: 30px;
-  margin: 0 auto;
-  font-size: 18px;
-  line-height: 30px;
-  text-align: center;
-  color: #4F4F4F;
 }
 .content .production_cards {
   display: grid;
@@ -1077,23 +1041,6 @@ button:hover {
 }
 .content .cooperation {
   padding: 30px 0 60px 0;
-}
-.content .cooperation_h1 {
-  font-weight: 900;
-  font-size: 32px;
-  line-height: 40px;
-  text-align: center;
-  color: #2B2F36;
-  padding-bottom: 30px;
-}
-.content .cooperation_p {
-  font-size: 18px;
-  line-height: 30px;
-  text-align: center;
-  color: #4F4F4F;
-  padding-bottom: 30px;
-  max-width: 850px;
-  margin: 0 auto;
 }
 .content .cooperation_cards {
   display: grid;
@@ -1354,18 +1301,11 @@ button:hover {
 .content .contact {
   padding: 30px 0;
 }
-.content .contact_h1 {
-  font-weight: 900;
-  font-size: 32px;
-  line-height: 40px;
-  text-align: center;
-  color: #2B2F36;
-  padding-bottom: 50px;
-}
 .content .contact_cards {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-gap: 25px;
+  margin-top: 20px;
   margin-bottom: 30px;
 }
 .content .contact_cards .map {
@@ -1824,6 +1764,10 @@ button:hover {
     margin: 0 auto;
     display: block;
     margin-bottom: 40px;
+    max-width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .content .about {
     padding: 75px 0;
@@ -2844,10 +2788,11 @@ button:hover {
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
   }
-  .content .company {
-    padding: 20px 0 60px 0;
+  .content .others_page {
+    max-width: 100%!important;
+    margin: 0;
   }
-  .content .company_h1 {
+  .content .others_page h1 {
     font-weight: 900;
     font-size: 26px;
     line-height: 32px;
@@ -2855,15 +2800,16 @@ button:hover {
     color: #2B2F36;
     padding-bottom: 20px;
   }
-  .content .company_p {
+  .content .others_page p {
     font-family: Roboto, sans-serif;
     font-size: 16px;
     line-height: 26px;
     text-align: left;
     color: #4F4F4F;
     padding-bottom: 20px;
-    max-width: 850px;
-    margin: 0;
+  }
+  .content .company {
+    padding: 20px 0 60px 0;
   }
   .content .company_cards {
     display: grid;
@@ -2932,26 +2878,6 @@ button:hover {
   .content .company_content {
     padding: 20px 0 60px 0;
   }
-  .content .company_content_h1 {
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 32px;
-    text-align: left;
-    color: #2B2F36;
-    padding-bottom: 20px;
-    max-width: 770px;
-    margin: 0 auto;
-  }
-  .content .company_content_p {
-    font-family: Roboto, sans-serif;
-    font-size: 16px;
-    line-height: 26px;
-    text-align: left;
-    color: #4F4F4F;
-    max-width: 770px;
-    margin: 0 auto;
-    padding-bottom: 20px;
-  }
   .content .company_content_cards {
     display: grid;
     grid-template-columns: 1fr;
@@ -2999,24 +2925,6 @@ button:hover {
   }
   .content .production {
     padding: 20px 0 40px 0;
-  }
-  .content .production_h1 {
-    padding-bottom: 20px;
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 32px;
-    text-align: left;
-    color: #2B2F36;
-  }
-  .content .production_p {
-    font-family: Roboto, sans-serif;
-    max-width: 850px;
-    padding-bottom: 20px;
-    margin: 0 auto;
-    font-size: 16px;
-    line-height: 26px;
-    text-align: left;
-    color: #4F4F4F;
   }
   .content .production_cards {
     display: grid;
@@ -3200,23 +3108,6 @@ button:hover {
   }
   .content .cooperation {
     padding: 20px 0 60px 0;
-  }
-  .content .cooperation_h1 {
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 32px;
-    text-align: left;
-    color: #2B2F36;
-    padding-bottom: 20px;
-  }
-  .content .cooperation_p {
-    font-size: 16px;
-    line-height: 26px;
-    text-align: left;
-    color: #4F4F4F;
-    padding-bottom: 20px;
-    max-width: 850px;
-    margin: 0 auto;
   }
   .content .cooperation_cards .form {
     border: 1px solid #E0E0E0;
@@ -3481,6 +3372,7 @@ button:hover {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 25px;
+    margin-top: 0;
     margin-bottom: 30px;
   }
   .content .contact_form {
