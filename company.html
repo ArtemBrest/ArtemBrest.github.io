@@ -6,213 +6,150 @@
     <title>О компании</title>
 
     <link rel="stylesheet" href="fonts/stylesheet.css">
-    <link rel="stylesheet" href="css/lightgallery.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-<div class="menu-overlay"></div>
 <header class="header">
     <div class="container">
-        <div class="top_line">
+        <div class="header_top">
             <div class="header_logo">
-                <a href="index.html">
-                    <img src="img/png/logo_header.png" alt="">
+                <a href="index.html" class="header_logo-link">
+                    <img src="img/svg/logo.svg" alt="" class="header_logo-img">
                 </a>
             </div>
-            <div class="header_address">
-                <span class="header_address-h3">Адрес нашего магазина</span>
-                <span class="header_address-p">224001 г. Брест ул. Кижеватова д.12</span>
-                <span class="header_address-link">Показать на карте</span>
+            <div class="header_menu_desktop">
+                <ul class="header_menu_desktop_ul">
+                    <li class="header_menu_desktop_li"><a href="company.html" class="header_menu_desktop_link">О
+                        компании</a></li>
+                    <li class="header_menu_desktop_li"><a href="production.html" class="header_menu_desktop_link">Продукция</a>
+                    </li>
+                    <li class="header_menu_desktop_li"><a href="сooperation.html" class="header_menu_desktop_link">Для
+                        клиентов</a></li>
+                    <li class="header_menu_desktop_li"><a href="contact.html"
+                                                          class="header_menu_desktop_link">Контакты</a></li>
+                </ul>
             </div>
-            <div class="header_trade">
-                <span class="header_trade-h3">Оптовая торговля</span>
-                <div class="header_trade_row">
-                    <a href="tel:+375296426972" class="header_trade_row-link">+375 (29) 642 69 72 <img
-                            src="img/png/icon_A1.png" alt="" class="header_trade_row-icon"></a>
-                    <a href="tel:+375297829913" class="header_trade_row-link">+375 (29) 782 99 13 <img
-                            src="img/png/icon_mts.png" alt="" class="header_trade_row-icon "></a>
+            <div class="header_contact">
+                <div class="header_contact_left">
+                    <svg class="header_contact_left-img" width="44" height="44" viewBox="0 0 44 44" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="22" cy="22" r="22" fill="#359BDA"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M13.5888 19.1368C12.5846 16.3863 13.1871 14.575 14.1913 13.6358C15.1955 12.6966 15.5302 13.0992 16.1996 13.6358C16.869 14.2396 19.0112 16.3193 19.0112 16.3193C19.0112 16.3193 19.6807 16.7888 19.0782 17.5939C18.5426 18.466 17.1368 19.0697 18.2079 20.3444C19.9484 22.424 21.5551 24.1011 23.6973 25.7783C24.9692 26.8516 25.5717 25.5099 26.375 24.9062C27.1784 24.3024 27.7139 24.9733 27.7139 24.9733C27.7139 24.9733 29.7892 27.12 30.3247 27.7908C30.8603 28.4617 31.3289 28.8642 30.3917 29.8705C29.4544 30.8097 27.58 31.4134 24.8353 30.4072C21.4212 29.1325 14.9277 22.6253 13.5888 19.1368ZM20.9526 15.9838C20.0154 15.9838 20.0823 14.6421 20.9526 14.6421C25.5717 14.575 29.3875 18.3989 29.3875 23.0949C29.3875 23.967 28.0486 23.967 28.0486 23.0949C28.0486 19.1368 24.8353 15.9167 20.9526 15.9838ZM22.0906 19.0697C21.2204 19.0697 21.2204 17.728 22.0906 17.728C24.3667 17.728 26.2411 19.6064 26.2411 21.8873C26.2411 22.7594 24.9023 22.7594 24.9023 21.8873C24.9023 20.3444 23.6303 19.0697 22.0906 19.0697Z"
+                              fill="white"/>
+                    </svg>
                 </div>
-                <span class="header_trade-p">Режим работы: с 08:00 до 20:00 Без выходных</span>
-            </div>
-            <div class="header_shop">
-                <span class="header_shop-h3">Розничный магазин</span>
-                <a href="tel:+375292605655" class="header_shop-link">+375 (29) 260 56 55</a>
-                <div class="header_shop_row">
-                    <a href="" class="header_shop_row-btn">Обратный звонок</a>
-                    <img src="img/png/icon_viber.png" alt="" class="header_shop_row-icon">
-                    <img src="img/png/icon_telegram.png" alt="" class="header_shop_row-icon">
-                    <img src="img/png/icon_whatsapp.png" alt="" class="header_shop_row-icon">
+                <div class="header_contact_right">
+                    <a href="tel:+375291613333" class="header_contact_right-link">+375 29 161 33 33 (мтс)</a>
+                    <a href="tel:+375162575757" class="header_contact_right-link">+375 162 57 57 57</a>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="header_desktop_menu">
-        <div class="container">
-            <ul class="header_desktop_menu_ul">
-                <li class="header_desktop_menu_li"><a href="company-single.html" class="header_desktop_menu_link">Главная</a></li>
-                <li class="header_desktop_menu_li"><a href="company.html" class="header_desktop_menu_link">О компании</a></li>
-                <li class="header_desktop_menu_li"><a href="сooperation.html" class="header_desktop_menu_link">Сотрудничество</a></li>
-                <li class="header_desktop_menu_li"><a href="production.html" class="header_desktop_menu_link">Наша продукция</a></li>
-                <li class="header_desktop_menu_li"><a href="contact.html" class="header_desktop_menu_link">Контакты</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="header_mobile_menu">
-        <div class="container default">
-            <div class="header_mobile_menu_top">
-                <div class="header_mobile_menu_top_icon">
-                    <span class="icon "></span>
-                </div>
-                <a href="tel:+375292605655" class="header_mobile_menu_top-link">+375 (29) 260 56 55</a>
-            </div>
-
-        </div>
-        <ul class="header_mobile_menu_ul">
-            <li class="header_mobile_menu_li"><a href="company-single.html" class="header_mobile_menu_link">Главная</a></li>
-            <li class="header_mobile_menu_li"><a href="company.html" class="header_mobile_menu_link">О компании</a></li>
-            <li class="header_mobile_menu_li"><a href="сooperation.html" class="header_mobile_menu_link">Сотрудничество</a></li>
-            <li class="header_mobile_menu_li"><a href="production.html" class="header_mobile_menu_link">Наша продукция</a></li>
-            <li class="header_mobile_menu_li"><a href="contact.html" class="header_mobile_menu_link">Контакты</a></li>
-        </ul>
     </div>
 </header>
-
 <div class="content">
-    <div class="container">
-        <div class="navigation">
+    <div class="navigation">
+        <div class="container">
             <nav class="nav">
-                <span class="nav_li"><a class="nav_link" href="index.html">Главная</a></span>
-                <span class="nav_li">></span>
+                <span class="nav_li"><a class="nav_li" href="index.html">Главная</a></span>
+                <span class="nav_li"> / </span>
                 <span class="nav_li active">О компании</span>
             </nav>
         </div>
-        <div class="company">
-            <div class="others_page">
-                <h1>О компании «Аванарт Компани»</h1>
-                <p>«Аванарт Компани» производственно торговое предприятие специализирующееся на
-                    производстве и продаже чехлов для автомобильных сидений.</p>
-                <p>За более чем 17 лет ассортимент нашей продукции постепенно расширялся и теперь мы одна
-                    из признанных компаний по изготовлению автомобильных аксессуаров: модельных чехлов для автомобильных
-                    сидений, универсальных чехлов для автомобильных сидений.</p>
+    </div>
+    <div class="company other_page">
+        <div class="container">
+            <div class="company_default other_page">
+                <h1>О компании</h1>
+                <span>Мы уважаем дело, которым Вы занимаетесь. <br>
+                    Мы привносим в Ваш бизнес естественный вкус природной воды из Беларуси!</span>
+                <div class="row">
+                    <img src="img/jpg/company2.jpg" alt="">
+                    <img src="img/jpg/company1.jpg" alt="">
+                </div>
+                <p>Наша компания работает на белорусском рынке питьевых вод с 2019 года. За это время предприятие сумело
+                    увлечь всю Беларусь своей продукцией и, что более сложно, смогло выйти за пределы страны.</p>
+                <p>В основе производственной деятельности компании «Клетное» лежит старинный народный белорусский
+                    принцип: «все, что ты делаешь, ты делаешь для себя». Компании есть чем гордиться — ведь она
+                    предлагает людям продукцию уникальную, полезную, созданную самой природой. Вода «Клетное» наполняет
+                    человека радостью и уверенностью в собственных силах, дает возможность почувствовать кристальную
+                    чистоту, ощутить совершенный вкус, узнать, что такое наслаждение чистой водой — такой же прекрасной
+                    как сама жизнь</p>
             </div>
-            <div class="company_cards">
-                <div class="card">
-                    <div class="card_info">
-                        <div class="card_info_top">
-                            <img src="img/png/asortiment2.png" alt="" class="card_info_top-img">
-                            <span class="card_info_top-h3">Материалы известных мировых производителей</span>
+            <div class="advantages_box other_page">
+                <div class="box_left">
+                    <div class="card">
+                        <div class="card_info">
+                            <span class="card_info-h3">Натуральная</span>
+                            <span class="card_info-p">Натуральная минеральная вода без искусственной минерализации</span>
                         </div>
-                        <div class="card_info_content">
-                            <span class="card_info-p">В изготовлении чехлов мы используем используются материалы известных мировых производителей.</span>
-                            <span class="card_info-p">Широко применяются такие виды материалов как : Экокожа (гладкая и перфорированная), искусственная замша (алькантара), жаккардовые ткани, полотна трикотажные. В дизайне моделей мы применяем самые разные цветовые решения, которые удовлетворят самый взыскательный вкус.</span>
-                            <button class="card_info-btn">Подробнее о Материалах</button>
+                        <div class="card_right">
+                            <span class="card_right-line"></span>
                         </div>
                     </div>
-                    <div class="card_right">
-                        <img src="img/png/company3.png" alt="" class="card_right-img">
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card_right">
-                        <img src="img/png/company1.png" alt="" class="card_right-img">
-                    </div>
-                    <div class="card_info">
-                        <div class="card_info_top">
-                            <img src="img/png/asortiment1.png" alt="" class="card_info_top-img">
-                            <span class="card_info_top-h3">Широкий ассортимент автомобильных аксессуаров</span>
+                    <div class="card">
+                        <div class="card_info">
+                            <span class="card_info-h3">Полезная</span>
+                            <span class="card_info-p">Не подвергается химической̆ очистке, а полезные свойства и вкусовые качества воды сохраняются надолго, даже после открытия бутылки. Железо общее (Fe*) 0,05</span>
                         </div>
-                        <div class="card_info_content">
-                            <span class="card_info-p">Благодаря работе нашей лаборатории весь ассортимент на 100% состоит из работ наших модельеров и регулярно обновляется, что позволяет нашим изделиям всегда оставаться конкурентоспособными на рынке автомобильных аксессуаров, так же мы своевременно реагируем на появление на рынке новых автомобилей, выпуская оригинальные чехлы для них.</span>
-                            <span class="card_info-p">Сильные стороны фирмы - совершенство технологий, современное оборудование, высококвалифицированные специалисты, сочетание передового опыта с пониманием современных требований и веяний дизайна.</span>
-
+                        <div class="card_right">
+                            <span class="card_right-line"></span>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card_info">
-                        <div class="card_info_top">
-                            <img src="img/png/asortiment3.png" alt="" class="card_info_top-img">
-                            <span class="card_info_top-h3">Высокое качество продукции и стабильное производство</span>
+                <div class="box_center">
+                    <img src="img/png/advantages_img.png" alt="" class="box_center-img">
+                </div>
+                <div class="box_right">
+                    <div class="card">
+                        <div class="card_right">
+                            <span class="card_right-line right"></span>
                         </div>
-                        <div class="card_info_content">
-                            <span class="card_info-p">Главными приоритетами компании всегда были высокое качество продукции и обеспечение стабильности производства. Продукция «Аванарт Компани» производится по отработанным технологиям с использованием высококачественных материалов и фурнитуры. Компания постоянно совершенствует производственные и бизнес-процессы, внедряя новые технологии для обеспечения наилучшего качества продукции.</span>
-                            <span class="card_info-p">За годы присутствия на рынке бренд «Аванарт Компани» Завоевал популярность у автовладельцев. Об этом свидетельствуют отзывы наших клиентов, рост числа постоянных покупателей и положительная динамика продаж.</span>
-
+                        <div class="card_info">
+                            <span class="card_info-h3 right">экологическая</span>
+                            <span class="card_info-p right">обывается в экологически чистом районе Беларуси. Современный цех производства с круглосуточной баклабораторией по контролю качества</span>
                         </div>
                     </div>
-                    <div class="card_right">
-                        <img src="img/png/company2.png" alt="" class="card_right-img">
+                    <div class="card">
+                        <div class="card_right">
+                            <span class="card_right-line right"></span>
+                        </div>
+                        <div class="card_info">
+                            <span class="card_info-h3 right">Природная</span>
+                            <span class="card_info-p right">роизводится без изменения природного солесодержания из скважин, глубиной до 50 метров, расположенных в месте залегания базальтовых пород (35 метров), являющихся самым надежным естественным фильтром в природе</span>
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div class="company_default other_page">
+                <p>Наша компания работает на белорусском рынке питьевых вод с 2019 года. За это время предприятие сумело
+                    увлечь всю Беларусь своей продукцией и, что более сложно, смогло выйти за пределы страны.</p>
+                <p>В основе производственной деятельности компании «Клетное» лежит старинный народный белорусский
+                    принцип: «все, что ты делаешь, ты делаешь для себя». Компании есть чем гордиться — ведь она
+                    предлагает людям продукцию уникальную, полезную, созданную самой природой. Вода «Клетное» наполняет
+                    человека радостью и уверенностью в собственных силах, дает возможность почувствовать кристальную
+                    чистоту, ощутить совершенный вкус, узнать, что такое наслаждение чистой водой — такой же прекрасной
+                    как сама жизнь</p>
+                <h3>Контроль продукции</h3>
+                <p>Контроль продукции осуществляется на всех стадиях ее создания. С заботой о здоровье потребителей мы
+                    производим питьевую воду исключительно из артезианской воды из собственных подземных источников</p>
+                <p>Природная питьевая вода из подземного водного источника добывается с глубины до 50 м номер скважины
+                    118/09. Брестской обл. Пружанского р-н. д. Клетное в близости Беловежской Пущи.</p>
             </div>
         </div>
     </div>
 </div>
-
 <footer class="footer">
-    <div class="footer_desktop_menu">
-        <div class="container">
-            <ul class="footer_desktop_menu_ul">
-                <li class="footer_desktop_menu_li"><a href="company-single.html" class="footer_desktop_menu_link">Главная</a></li>
-                <li class="footer_desktop_menu_li"><a href="company.html" class="footer_desktop_menu_link">О компании</a></li>
-                <li class="footer_desktop_menu_li"><a href="сooperation.html" class="footer_desktop_menu_link">Сотрудничество</a></li>
-                <li class="footer_desktop_menu_li"><a href="production.html" class="footer_desktop_menu_link">Наша продукция</a></li>
-                <li class="footer_desktop_menu_li"><a href="contact.html" class="footer_desktop_menu_link">Контакты</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="footer_back">
-        <div class="container">
-            <div class="top_line">
-                <div class="footer_logo">
-                    <a href="index.html" class="footer_logo_link">
-                        <img src="img/png/logo_footer.png" alt="" class="footer_logo_img">
-                    </a>
-                </div>
-                <div class="footer_address">
-                    <span class="footer_address-h3">Адрес нашего магазина</span>
-                    <span class="footer_address-p">224001 г. Брест ул. Кижеватова д.12</span>
-                    <span class="footer_address-link">Показать на карте</span>
-                </div>
-                <div class="footer_trade">
-                    <span class="footer_trade-h3">Оптовая торговля</span>
-                    <div class="footer_trade_row">
-                        <a href="tel:+375296426972" class="footer_trade_row-link">+375 (29) 642 69 72 <img
-                                src="img/png/icon_A1.png" alt="" class="footer_trade_row-icon"></a>
-                        <a href="tel:+375297829913" class="footer_trade_row-link">+375 (29) 782 99 13 <img
-                                src="img/png/icon_mts.png" alt="" class="footer_trade_row-icon "></a>
-                    </div>
-                    <span class="footer_trade-p">Режим работы: с 08:00 до 20:00 Без выходных</span>
-                </div>
-                <div class="footer_shop">
-                    <span class="footer_shop-h3">Розничный магазин</span>
-                    <a href="tel:+375292605655" class="footer_shop-link">+375 (29) 260 56 55</a>
-                    <div class="footer_shop_row">
-                        <a href="" class="footer_shop_row-btn">Обратный звонок</a>
-                        <img src="img/png/icon_viber.png" alt="" class="footer_shop_row-icon">
-                        <img src="img/png/icon_telegram.png" alt="" class="footer_shop_row-icon">
-                        <img src="img/png/icon_whatsapp.png" alt="" class="footer_shop_row-icon">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer_bottom">
-            <div class="container">
-                <div class="bottom_line">
-                    <span class="footer_bottom-span">©2020 АванартКомпани</span>
-                    <span class="footer_bottom-span">Создание и продвижение сайтов - <a href="">InternetSozdateli</a></span>
-                </div>
-            </div>
+    <div class="container">
+        <div class="footer_row">
+            <span class="footer-span">©2020 ЧПСУП «НедрыДикое</span>
+            <span class="footer-span">Создание и продвижение сайтов - <a href="">InternetSozdateli</a></span>
         </div>
     </div>
 </footer>
-
-
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/jquery.validate.min.js"></script>
 <script src="js/jquery.maskedinput.min.js"></script>
-<script src="js/lightgallery.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

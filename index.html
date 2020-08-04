@@ -6,466 +6,260 @@
     <title>Главная</title>
 
     <link rel="stylesheet" href="fonts/stylesheet.css">
-    <link rel="stylesheet" href="css/lightgallery.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="menu-overlay"></div>
 <header class="header">
     <div class="container">
-        <div class="top_line">
+        <div class="header_top">
             <div class="header_logo">
-                <a href="index.html">
-                    <img src="img/png/logo_header.png" alt="">
+                <a href="index.html" class="header_logo-link">
+                    <img src="img/svg/logo.svg" alt="" class="header_logo-img">
                 </a>
             </div>
-            <div class="header_address">
-                <span class="header_address-h3">Адрес нашего магазина</span>
-                <span class="header_address-p">224001 г. Брест ул. Кижеватова д.12</span>
-                <span class="header_address-link">Показать на карте</span>
+            <div class="header_menu_desktop">
+                <ul class="header_menu_desktop_ul">
+                    <li class="header_menu_desktop_li"><a href="company.html" class="header_menu_desktop_link">О
+                        компании</a></li>
+                    <li class="header_menu_desktop_li"><a href="production.html" class="header_menu_desktop_link">Продукция</a>
+                    </li>
+                    <li class="header_menu_desktop_li"><a href="сooperation.html" class="header_menu_desktop_link">Для
+                        клиентов</a></li>
+                    <li class="header_menu_desktop_li"><a href="contact.html"
+                                                          class="header_menu_desktop_link">Контакты</a></li>
+                </ul>
             </div>
-            <div class="header_trade">
-                <span class="header_trade-h3">Оптовая торговля</span>
-                <div class="header_trade_row">
-                    <a href="tel:+375296426972" class="header_trade_row-link">+375 (29) 642 69 72 <img
-                            src="img/png/icon_A1.png" alt="" class="header_trade_row-icon"></a>
-                    <a href="tel:+375297829913" class="header_trade_row-link">+375 (29) 782 99 13 <img
-                            src="img/png/icon_mts.png" alt="" class="header_trade_row-icon "></a>
+            <div class="header_contact">
+                <div class="header_contact_left">
+                    <svg class="header_contact_left-img" width="44" height="44" viewBox="0 0 44 44" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="22" cy="22" r="22" fill="#359BDA"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M13.5888 19.1368C12.5846 16.3863 13.1871 14.575 14.1913 13.6358C15.1955 12.6966 15.5302 13.0992 16.1996 13.6358C16.869 14.2396 19.0112 16.3193 19.0112 16.3193C19.0112 16.3193 19.6807 16.7888 19.0782 17.5939C18.5426 18.466 17.1368 19.0697 18.2079 20.3444C19.9484 22.424 21.5551 24.1011 23.6973 25.7783C24.9692 26.8516 25.5717 25.5099 26.375 24.9062C27.1784 24.3024 27.7139 24.9733 27.7139 24.9733C27.7139 24.9733 29.7892 27.12 30.3247 27.7908C30.8603 28.4617 31.3289 28.8642 30.3917 29.8705C29.4544 30.8097 27.58 31.4134 24.8353 30.4072C21.4212 29.1325 14.9277 22.6253 13.5888 19.1368ZM20.9526 15.9838C20.0154 15.9838 20.0823 14.6421 20.9526 14.6421C25.5717 14.575 29.3875 18.3989 29.3875 23.0949C29.3875 23.967 28.0486 23.967 28.0486 23.0949C28.0486 19.1368 24.8353 15.9167 20.9526 15.9838ZM22.0906 19.0697C21.2204 19.0697 21.2204 17.728 22.0906 17.728C24.3667 17.728 26.2411 19.6064 26.2411 21.8873C26.2411 22.7594 24.9023 22.7594 24.9023 21.8873C24.9023 20.3444 23.6303 19.0697 22.0906 19.0697Z"
+                              fill="white"/>
+                    </svg>
                 </div>
-                <span class="header_trade-p">Режим работы: с 08:00 до 20:00 Без выходных</span>
-            </div>
-            <div class="header_shop">
-                <span class="header_shop-h3">Розничный магазин</span>
-                <a href="tel:+375292605655" class="header_shop-link">+375 (29) 260 56 55</a>
-                <div class="header_shop_row">
-                    <a href="" class="header_shop_row-btn">Обратный звонок</a>
-                    <img src="img/png/icon_viber.png" alt="" class="header_shop_row-icon">
-                    <img src="img/png/icon_telegram.png" alt="" class="header_shop_row-icon">
-                    <img src="img/png/icon_whatsapp.png" alt="" class="header_shop_row-icon">
+                <div class="header_contact_right">
+                    <a href="tel:+375291613333" class="header_contact_right-link">+375 29 161 33 33 (мтс)</a>
+                    <a href="tel:+375162575757" class="header_contact_right-link">+375 162 57 57 57</a>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="header_desktop_menu">
-        <div class="container">
-            <ul class="header_desktop_menu_ul">
-                <li class="header_desktop_menu_li"><a href="company-single.html" class="header_desktop_menu_link">Главная</a></li>
-                <li class="header_desktop_menu_li"><a href="company.html" class="header_desktop_menu_link">О компании</a></li>
-                <li class="header_desktop_menu_li"><a href="сooperation.html" class="header_desktop_menu_link">Сотрудничество</a></li>
-                <li class="header_desktop_menu_li"><a href="production.html" class="header_desktop_menu_link">Наша продукция</a></li>
-                <li class="header_desktop_menu_li"><a href="contact.html" class="header_desktop_menu_link">Контакты</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="header_mobile_menu">
-        <div class="container default">
-            <div class="header_mobile_menu_top">
-                <div class="header_mobile_menu_top_icon">
-                    <span class="icon "></span>
-                </div>
-                <a href="tel:+375292605655" class="header_mobile_menu_top-link">+375 (29) 260 56 55</a>
-            </div>
-        </div>
-        <ul class="header_mobile_menu_ul">
-            <li class="header_mobile_menu_li"><a href="company-single.html" class="header_mobile_menu_link">Главная</a></li>
-            <li class="header_mobile_menu_li"><a href="company.html" class="header_mobile_menu_link">О компании</a></li>
-            <li class="header_mobile_menu_li"><a href="сooperation.html" class="header_mobile_menu_link">Сотрудничество</a></li>
-            <li class="header_mobile_menu_li"><a href="production.html" class="header_mobile_menu_link">Наша продукция</a></li>
-            <li class="header_mobile_menu_li"><a href="contact.html" class="header_mobile_menu_link">Контакты</a></li>
-        </ul>
     </div>
 </header>
 
 <div class="content">
-    <div class="banner" style="background-image: url(img/jpg/back1.jpg);">
+    <div class="banner">
         <div class="container">
-            <a href="index.html" class="banner_mob_logo">
-                <img src="img/png/header_logo_mob.png" alt="" class="banner_mob_logo-img">
-            </a>
-            <span class="banner-h2">ПРОДАЕМ ОРИГИНАЛЬНЫЕ АВТОЧЕХЛЫ ПОД КОНКРЕТНУЮ МАРКУ АВТОМОБИЛЯ</span>
-            <span class="banner-h1"><span class="red">Универсальные и Модельные АВТОЧЕХЛЫ</span> ДЛЯ ВАШЕГО АВТОМОБИЛЯ ОТ 180 РУБ</span>
-            <span class="banner-p">В наличии более 900 моделей</span>
-            <button class="banner-btn">Заказать сейчас</button>
+            <div class="banner_left">
+                <h1 class="banner_left-h1">Натуральная, полезная, природная вода «Клетное»</h1>
+                <img src="img/png/banner.png" alt="" class="banner_right-img">
+                <p class="banner_left-p">Природная питьевая вода из подземного водного источника добывается с глубины до
+                    50 м номер скважины 118/09. Брестской обл. Пружанского р-н. д. Клетное в близости Беловежской
+                    Пущи.</p>
+                <button class="banner_left-btn">Оставить заявку для заказа</button>
+            </div>
         </div>
     </div>
-    <div class="container">
-        <div class="about">
-            <div class="about_left">
-                <h2 class="about_left-h2">Весь ассортимент <span class="red">«Аванарт Компани»</span> на 100% состоит из
-                    работ наших модельеров</h2>
-                <p class="about_left-p">«Аванарт Компани» производственно торговое предприятие специализирующееся на
-                    производстве и продаже чехлов для автомобильных сидений. За более чем 17 лет ассортимент нашей
-                    продукции
-                    постепенно расширялся и теперь мы одна из признанных компаний по изготовлению автомобильных
-                    аксессуаров:
-                    модельных чехлов для автомобильных сидений, универсальных чехлов для автомобильных сидений.</p>
-                <p class="about_left-p">Главными приоритетами компании всегда были высокое качество продукции и
-                    обеспечение
-                    стабильности производства. Продукция «Аванарт Компани» производится по отработанным технологиям с
-                    использованием высококачественных материалов и фурнитуры. Компания постоянно совершенствует
-                    производственные и бизнес-процессы, внедряя новые технологии для обеспечения наилучшего качества
-                    продукции.</p>
-                <p class="about_left-p">Благодаря работе нашей лаборатории весь ассортимент на 100% состоит из работ
-                    наших
-                    модельеров и регулярно обновляется, что позволяет нашим изделиям всегда оставаться
-                    конкурентоспособными
-                    на рынке автомобильных аксессуаров, так же мы своевременно реагируем на появление на рынке новых
-                    автомобилей, выпуская оригинальные чехлы для них.</p>
-                <button class="about_left-btn">Подробнее о компании</button>
-            </div>
-            <div class="about_right">
-                <div class="card">
-                    <img src="img/png/asortiment1.png" alt="" class="card_img">
-                    <span class="card_span">Широкий ассортимент автомобильных аксессуаров</span>
+    <div class="advantages">
+        <div class="container">
+            <h2 class="advantages-h2">Секрет вкуса наших питьевых вод «Клетное»</h2>
+            <p class="advantages-p">Природная питьевая вода из подземного водного источника добывается с глубины до 50 м
+                номер скважины 118/09. Брестской обл. Пружанского р-н. д. Клетное в близости Беловежской Пущи.</p>
+            <div class="advantages_box">
+                <div class="box_left">
+                    <div class="card">
+                        <div class="card_info">
+                            <span class="card_info-h3">Натуральная</span>
+                            <span class="card_info-p">Натуральная минеральная вода без искусственной минерализации</span>
+                        </div>
+                        <div class="card_right">
+                            <span class="card_right-line"></span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_info">
+                            <span class="card_info-h3">Полезная</span>
+                            <span class="card_info-p">Не подвергается химической̆ очистке, а полезные свойства и вкусовые качества воды сохраняются надолго, даже после открытия бутылки. Железо общее (Fe*) 0,05</span>
+                        </div>
+                        <div class="card_right">
+                            <span class="card_right-line"></span>
+                        </div>
+                    </div>
                 </div>
-                <div class="card">
-                    <img src="img/png/asortiment2.png" alt="" class="card_img">
-                    <span class="card_span">Материалы известных мировых производителей</span>
+                <div class="box_center">
+                    <img src="img/png/advantages_img.png" alt="" class="box_center-img">
                 </div>
-                <div class="card">
-                    <img src="img/png/asortiment3.png" alt="" class="card_img">
-                    <span class="card_span">Высокое качество продукции и стабильное производство</span>
+                <div class="box_right">
+                    <div class="card">
+                        <div class="card_right">
+                            <span class="card_right-line right"></span>
+                        </div>
+                        <div class="card_info">
+                            <span class="card_info-h3 right">экологическая</span>
+                            <span class="card_info-p right">обывается в экологически чистом районе Беларуси. Современный цех производства с круглосуточной баклабораторией по контролю качества</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_right">
+                            <span class="card_right-line right"></span>
+                        </div>
+                        <div class="card_info">
+                            <span class="card_info-h3 right">Природная</span>
+                            <span class="card_info-p right">роизводится без изменения природного солесодержания из скважин, глубиной до 50 метров, расположенных в месте залегания базальтовых пород (35 метров), являющихся самым надежным естественным фильтром в природе</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="assortment">
         <div class="container">
-            <h2 class="assortment-h2">Авточехлы, которые мы производим</h2>
+            <h2 class="assortment-h2">Ассортимент нашей продукции</h2>
+            <p class="assortment-p">Производство питьевой воды «Клетное» соответствует высоким требованиям в области
+                обеспечения пищевой безопасности, признаным на международном уровне.</p>
             <div class="assortment_cards">
                 <div class="card">
-                    <img src="img/png/case2.png" alt="" class="card_img">
-                    <span class="card_h3"><span class="red">Универсальные</span> авточехлы</span>
-                    <span class="card_p">Универсальные авточехлы, как становится понятно из названия, подходят для большого количества легковых и коммерческих автомобилей. Конечно же, имеется масса цветовых решений, что позволят разнообразить интерьер салона и добавить оригинальности. Однако при всем этом стоит понимать, что несмотря на универсальность установка таких чехлов может быть сложнее, чем модельных, так как размеры и форма сидений все же отличаются. Это не значит, что выглядеть они будут хуже, но все же установка модельных авточехлов проще и смотрятся они всегда лучше. При изготовлении универсальных чехлов не учитывают индивидуальные особенности — они сшиты так, чтобы примерно подойти сиденью любой машины. Чаще всего для их производства используют недорогие материалы.</span>
-                    <div class="card_advantages">
-                        <div class="item">
-                            <svg  class="item_img" width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="45" cy="45" r="44.5" stroke="#ffffff" stroke-opacity="0.2"/>
-                                <path d="M45.0195 44.8555C44.4614 44.8546 43.9105 44.7467 43.4084 44.5398L29.845 39.011L25.2126 40.8996C24.9583 41.0056 24.7966 41.2255 24.7966 41.4664C24.7966 41.7072 24.9583 41.9271 25.2126 42.0332L44.0522 49.7219C44.6645 49.9674 45.3745 49.9674 45.9867 49.7219L64.8263 42.0363C65.0807 41.9302 65.242 41.7103 65.242 41.4695C65.242 41.2286 65.0807 41.0087 64.8263 40.9026L60.194 39.011L46.6313 44.5425C46.1284 44.7482 45.5776 44.8555 45.0195 44.8555Z" fill="#ffffff"/>
-                                <path d="M24.793 35.1522C24.7897 35.3955 24.9547 35.6182 25.2148 35.7205L44.0523 43.4037C44.6631 43.6547 45.3759 43.6547 45.9867 43.4037L64.8231 35.7205C65.08 35.6151 65.2431 35.3943 65.2431 35.1522C65.2431 34.9101 65.08 34.6893 64.8231 34.5838L45.9867 26.9007C45.3759 26.6493 44.6631 26.6493 44.0523 26.9007L25.2148 34.5838C24.9547 34.6862 24.7897 34.9089 24.793 35.1522Z" fill="#ffffff"/>
-                                <path d="M25.2105 54.668L44.0523 62.3536C44.6645 62.5991 45.3745 62.5991 45.9867 62.3536L64.8253 54.668C65.0847 54.5644 65.25 54.3429 65.25 54.0996C65.25 53.8563 65.0847 53.6349 64.8253 53.5313L60.1933 51.6427L46.6299 57.1767C45.6107 57.5847 44.4301 57.5847 43.4113 57.1767L29.8457 51.6427L25.2127 53.5313C24.9561 53.6367 24.793 53.8575 24.793 54.0996C24.793 54.3417 24.9561 54.5625 25.2127 54.668H25.2105Z" fill="#ffffff"/>
-                                <path d="M45.9867 56.0363L64.8263 48.3519C65.0829 48.2465 65.246 48.0257 65.246 47.7836C65.246 47.5415 65.0829 47.3207 64.8263 47.2152L60.1933 45.3267L46.6299 50.8607C45.6107 51.2687 44.4301 51.2687 43.4113 50.8607L29.8457 45.3267L25.2127 47.2152C24.9561 47.3207 24.793 47.5415 24.793 47.7836C24.793 48.0257 24.9561 48.2465 25.2127 48.3519L44.0523 56.0376C44.6649 56.2827 45.3745 56.2821 45.9867 56.0363Z" fill="#ffffff"/>
-                            </svg>
-                            <span class="item_p">Большой выбор расцветок</span>
-                        </div>
-                        <div class="item">
-                            <svg  class="item_img" width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="45" cy="45" r="44.5" stroke="#ffffff" stroke-opacity="0.2"/>
-                                <path d="M45.0195 44.8555C44.4614 44.8546 43.9105 44.7467 43.4084 44.5398L29.845 39.011L25.2126 40.8996C24.9583 41.0056 24.7966 41.2255 24.7966 41.4664C24.7966 41.7072 24.9583 41.9271 25.2126 42.0332L44.0522 49.7219C44.6645 49.9674 45.3745 49.9674 45.9867 49.7219L64.8263 42.0363C65.0807 41.9302 65.242 41.7103 65.242 41.4695C65.242 41.2286 65.0807 41.0087 64.8263 40.9026L60.194 39.011L46.6313 44.5425C46.1284 44.7482 45.5776 44.8555 45.0195 44.8555Z" fill="#ffffff"/>
-                                <path d="M24.793 35.1522C24.7897 35.3955 24.9547 35.6182 25.2148 35.7205L44.0523 43.4037C44.6631 43.6547 45.3759 43.6547 45.9867 43.4037L64.8231 35.7205C65.08 35.6151 65.2431 35.3943 65.2431 35.1522C65.2431 34.9101 65.08 34.6893 64.8231 34.5838L45.9867 26.9007C45.3759 26.6493 44.6631 26.6493 44.0523 26.9007L25.2148 34.5838C24.9547 34.6862 24.7897 34.9089 24.793 35.1522Z" fill="#ffffff"/>
-                                <path d="M25.2105 54.668L44.0523 62.3536C44.6645 62.5991 45.3745 62.5991 45.9867 62.3536L64.8253 54.668C65.0847 54.5644 65.25 54.3429 65.25 54.0996C65.25 53.8563 65.0847 53.6349 64.8253 53.5313L60.1933 51.6427L46.6299 57.1767C45.6107 57.5847 44.4301 57.5847 43.4113 57.1767L29.8457 51.6427L25.2127 53.5313C24.9561 53.6367 24.793 53.8575 24.793 54.0996C24.793 54.3417 24.9561 54.5625 25.2127 54.668H25.2105Z" fill="#ffffff"/>
-                                <path d="M45.9867 56.0363L64.8263 48.3519C65.0829 48.2465 65.246 48.0257 65.246 47.7836C65.246 47.5415 65.0829 47.3207 64.8263 47.2152L60.1933 45.3267L46.6299 50.8607C45.6107 51.2687 44.4301 51.2687 43.4113 50.8607L29.8457 45.3267L25.2127 47.2152C24.9561 47.3207 24.793 47.5415 24.793 47.7836C24.793 48.0257 24.9561 48.2465 25.2127 48.3519L44.0523 56.0376C44.6649 56.2827 45.3745 56.2821 45.9867 56.0363Z" fill="#ffffff"/>
-                            </svg>
-                            <span class="item_p">Возможность повторного использования на другом автомобиле</span>
-                        </div>
-                        <div class="item">
-                            <svg  class="item_img" width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="45" cy="45" r="44.5" stroke="#ffffff" stroke-opacity="0.2"/>
-                                <path d="M45.0195 44.8555C44.4614 44.8546 43.9105 44.7467 43.4084 44.5398L29.845 39.011L25.2126 40.8996C24.9583 41.0056 24.7966 41.2255 24.7966 41.4664C24.7966 41.7072 24.9583 41.9271 25.2126 42.0332L44.0522 49.7219C44.6645 49.9674 45.3745 49.9674 45.9867 49.7219L64.8263 42.0363C65.0807 41.9302 65.242 41.7103 65.242 41.4695C65.242 41.2286 65.0807 41.0087 64.8263 40.9026L60.194 39.011L46.6313 44.5425C46.1284 44.7482 45.5776 44.8555 45.0195 44.8555Z" fill="#ffffff"/>
-                                <path d="M24.793 35.1522C24.7897 35.3955 24.9547 35.6182 25.2148 35.7205L44.0523 43.4037C44.6631 43.6547 45.3759 43.6547 45.9867 43.4037L64.8231 35.7205C65.08 35.6151 65.2431 35.3943 65.2431 35.1522C65.2431 34.9101 65.08 34.6893 64.8231 34.5838L45.9867 26.9007C45.3759 26.6493 44.6631 26.6493 44.0523 26.9007L25.2148 34.5838C24.9547 34.6862 24.7897 34.9089 24.793 35.1522Z" fill="#ffffff"/>
-                                <path d="M25.2105 54.668L44.0523 62.3536C44.6645 62.5991 45.3745 62.5991 45.9867 62.3536L64.8253 54.668C65.0847 54.5644 65.25 54.3429 65.25 54.0996C65.25 53.8563 65.0847 53.6349 64.8253 53.5313L60.1933 51.6427L46.6299 57.1767C45.6107 57.5847 44.4301 57.5847 43.4113 57.1767L29.8457 51.6427L25.2127 53.5313C24.9561 53.6367 24.793 53.8575 24.793 54.0996C24.793 54.3417 24.9561 54.5625 25.2127 54.668H25.2105Z" fill="#ffffff"/>
-                                <path d="M45.9867 56.0363L64.8263 48.3519C65.0829 48.2465 65.246 48.0257 65.246 47.7836C65.246 47.5415 65.0829 47.3207 64.8263 47.2152L60.1933 45.3267L46.6299 50.8607C45.6107 51.2687 44.4301 51.2687 43.4113 50.8607L29.8457 45.3267L25.2127 47.2152C24.9561 47.3207 24.793 47.5415 24.793 47.7836C24.793 48.0257 24.9561 48.2465 25.2127 48.3519L44.0523 56.0376C44.6649 56.2827 45.3745 56.2821 45.9867 56.0363Z" fill="#ffffff"/>
-                            </svg>
-                            <span class="item_p">Невысокая цена</span>
-                        </div>
-                    </div>
+                    <img src="img/png/assortiment1.png" alt="" class="card-img">
+                    <span class="card-span">Газированная вода, 0.5 л</span>
                 </div>
                 <div class="card">
-                    <img src="img/png/case1.png" alt="" class="card_img">
-                    <span class="card_h3"><span class="red">Модельные</span> авточехлы</span>
-                    <span class="card_p">Модельные авточехлы создаются исключительно под конкретные модели автомобилей. Они, как правило, имеют более долгий срок эксплуатации и отличаются идеальной посадкой. При их создании в учет берутся все геометрические особенности кресел, делаются прорези для например подголовников (и др. элеменов сидений), имеются специальные швы для подушек безопасности и т.д. Конечно же, такие автомобильные чехлы обходятся несколько дороже, чем универсальные, но если хотите, чтобы салон выглядел идеально в каждой детали, – это правильное решение.</span>
-                    <div class="card_advantages">
-                        <div class="item">
-                            <svg  class="item_img" width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="45" cy="45" r="44.5" stroke="#ffffff" stroke-opacity="0.2"/>
-                                <path d="M45.0195 44.8555C44.4614 44.8546 43.9105 44.7467 43.4084 44.5398L29.845 39.011L25.2126 40.8996C24.9583 41.0056 24.7966 41.2255 24.7966 41.4664C24.7966 41.7072 24.9583 41.9271 25.2126 42.0332L44.0522 49.7219C44.6645 49.9674 45.3745 49.9674 45.9867 49.7219L64.8263 42.0363C65.0807 41.9302 65.242 41.7103 65.242 41.4695C65.242 41.2286 65.0807 41.0087 64.8263 40.9026L60.194 39.011L46.6313 44.5425C46.1284 44.7482 45.5776 44.8555 45.0195 44.8555Z" fill="#ffffff"/>
-                                <path d="M24.793 35.1522C24.7897 35.3955 24.9547 35.6182 25.2148 35.7205L44.0523 43.4037C44.6631 43.6547 45.3759 43.6547 45.9867 43.4037L64.8231 35.7205C65.08 35.6151 65.2431 35.3943 65.2431 35.1522C65.2431 34.9101 65.08 34.6893 64.8231 34.5838L45.9867 26.9007C45.3759 26.6493 44.6631 26.6493 44.0523 26.9007L25.2148 34.5838C24.9547 34.6862 24.7897 34.9089 24.793 35.1522Z" fill="#ffffff"/>
-                                <path d="M25.2105 54.668L44.0523 62.3536C44.6645 62.5991 45.3745 62.5991 45.9867 62.3536L64.8253 54.668C65.0847 54.5644 65.25 54.3429 65.25 54.0996C65.25 53.8563 65.0847 53.6349 64.8253 53.5313L60.1933 51.6427L46.6299 57.1767C45.6107 57.5847 44.4301 57.5847 43.4113 57.1767L29.8457 51.6427L25.2127 53.5313C24.9561 53.6367 24.793 53.8575 24.793 54.0996C24.793 54.3417 24.9561 54.5625 25.2127 54.668H25.2105Z" fill="#ffffff"/>
-                                <path d="M45.9867 56.0363L64.8263 48.3519C65.0829 48.2465 65.246 48.0257 65.246 47.7836C65.246 47.5415 65.0829 47.3207 64.8263 47.2152L60.1933 45.3267L46.6299 50.8607C45.6107 51.2687 44.4301 51.2687 43.4113 50.8607L29.8457 45.3267L25.2127 47.2152C24.9561 47.3207 24.793 47.5415 24.793 47.7836C24.793 48.0257 24.9561 48.2465 25.2127 48.3519L44.0523 56.0376C44.6649 56.2827 45.3745 56.2821 45.9867 56.0363Z" fill="#ffffff"/>
-                            </svg>
-                            <span class="item_p">Длительный срок эксплуатации. При должном уходе модельные чехлы не теряют внешней привлекательности очень долгое время. Это обусловлено тем, что при их изготовлении используют качественные материалы и современные технологии.</span>
-                        </div>
-                        <div class="item">
-                            <svg  class="item_img" width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="45" cy="45" r="44.5" stroke="#ffffff" stroke-opacity="0.2"/>
-                                <path d="M45.0195 44.8555C44.4614 44.8546 43.9105 44.7467 43.4084 44.5398L29.845 39.011L25.2126 40.8996C24.9583 41.0056 24.7966 41.2255 24.7966 41.4664C24.7966 41.7072 24.9583 41.9271 25.2126 42.0332L44.0522 49.7219C44.6645 49.9674 45.3745 49.9674 45.9867 49.7219L64.8263 42.0363C65.0807 41.9302 65.242 41.7103 65.242 41.4695C65.242 41.2286 65.0807 41.0087 64.8263 40.9026L60.194 39.011L46.6313 44.5425C46.1284 44.7482 45.5776 44.8555 45.0195 44.8555Z" fill="#ffffff"/>
-                                <path d="M24.793 35.1522C24.7897 35.3955 24.9547 35.6182 25.2148 35.7205L44.0523 43.4037C44.6631 43.6547 45.3759 43.6547 45.9867 43.4037L64.8231 35.7205C65.08 35.6151 65.2431 35.3943 65.2431 35.1522C65.2431 34.9101 65.08 34.6893 64.8231 34.5838L45.9867 26.9007C45.3759 26.6493 44.6631 26.6493 44.0523 26.9007L25.2148 34.5838C24.9547 34.6862 24.7897 34.9089 24.793 35.1522Z" fill="#ffffff"/>
-                                <path d="M25.2105 54.668L44.0523 62.3536C44.6645 62.5991 45.3745 62.5991 45.9867 62.3536L64.8253 54.668C65.0847 54.5644 65.25 54.3429 65.25 54.0996C65.25 53.8563 65.0847 53.6349 64.8253 53.5313L60.1933 51.6427L46.6299 57.1767C45.6107 57.5847 44.4301 57.5847 43.4113 57.1767L29.8457 51.6427L25.2127 53.5313C24.9561 53.6367 24.793 53.8575 24.793 54.0996C24.793 54.3417 24.9561 54.5625 25.2127 54.668H25.2105Z" fill="#ffffff"/>
-                                <path d="M45.9867 56.0363L64.8263 48.3519C65.0829 48.2465 65.246 48.0257 65.246 47.7836C65.246 47.5415 65.0829 47.3207 64.8263 47.2152L60.1933 45.3267L46.6299 50.8607C45.6107 51.2687 44.4301 51.2687 43.4113 50.8607L29.8457 45.3267L25.2127 47.2152C24.9561 47.3207 24.793 47.5415 24.793 47.7836C24.793 48.0257 24.9561 48.2465 25.2127 48.3519L44.0523 56.0376C44.6649 56.2827 45.3745 56.2821 45.9867 56.0363Z" fill="#ffffff"/>
-                            </svg>
-                            <span class="item_p">Идеальная посадка. За счет того, что крепление и форма сидений разработаны специально для конкретной модели авто, они идеально ложатся.</span>
-                        </div>
-                        <div class="item">
-                            <svg  class="item_img" width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="45" cy="45" r="44.5" stroke="#ffffff" stroke-opacity="0.2"/>
-                                <path d="M45.0195 44.8555C44.4614 44.8546 43.9105 44.7467 43.4084 44.5398L29.845 39.011L25.2126 40.8996C24.9583 41.0056 24.7966 41.2255 24.7966 41.4664C24.7966 41.7072 24.9583 41.9271 25.2126 42.0332L44.0522 49.7219C44.6645 49.9674 45.3745 49.9674 45.9867 49.7219L64.8263 42.0363C65.0807 41.9302 65.242 41.7103 65.242 41.4695C65.242 41.2286 65.0807 41.0087 64.8263 40.9026L60.194 39.011L46.6313 44.5425C46.1284 44.7482 45.5776 44.8555 45.0195 44.8555Z" fill="#ffffff"/>
-                                <path d="M24.793 35.1522C24.7897 35.3955 24.9547 35.6182 25.2148 35.7205L44.0523 43.4037C44.6631 43.6547 45.3759 43.6547 45.9867 43.4037L64.8231 35.7205C65.08 35.6151 65.2431 35.3943 65.2431 35.1522C65.2431 34.9101 65.08 34.6893 64.8231 34.5838L45.9867 26.9007C45.3759 26.6493 44.6631 26.6493 44.0523 26.9007L25.2148 34.5838C24.9547 34.6862 24.7897 34.9089 24.793 35.1522Z" fill="#ffffff"/>
-                                <path d="M25.2105 54.668L44.0523 62.3536C44.6645 62.5991 45.3745 62.5991 45.9867 62.3536L64.8253 54.668C65.0847 54.5644 65.25 54.3429 65.25 54.0996C65.25 53.8563 65.0847 53.6349 64.8253 53.5313L60.1933 51.6427L46.6299 57.1767C45.6107 57.5847 44.4301 57.5847 43.4113 57.1767L29.8457 51.6427L25.2127 53.5313C24.9561 53.6367 24.793 53.8575 24.793 54.0996C24.793 54.3417 24.9561 54.5625 25.2127 54.668H25.2105Z" fill="#ffffff"/>
-                                <path d="M45.9867 56.0363L64.8263 48.3519C65.0829 48.2465 65.246 48.0257 65.246 47.7836C65.246 47.5415 65.0829 47.3207 64.8263 47.2152L60.1933 45.3267L46.6299 50.8607C45.6107 51.2687 44.4301 51.2687 43.4113 50.8607L29.8457 45.3267L25.2127 47.2152C24.9561 47.3207 24.793 47.5415 24.793 47.7836C24.793 48.0257 24.9561 48.2465 25.2127 48.3519L44.0523 56.0376C44.6649 56.2827 45.3745 56.2821 45.9867 56.0363Z" fill="#ffffff"/>
-                            </svg>
-                            <span class="item_p">Можно создать интересный стиль салона авто подобрав нужные материалы и расцветки.</span>
-                        </div>
-                    </div>
+                    <img src="img/png/assortiment2.png" alt="" class="card-img">
+                    <span class="card-span">Газированная вода, 0.5 л</span>
+                </div>
+                <div class="card">
+                    <img src="img/png/assortiment3.png" alt="" class="card-img">
+                    <span class="card-span">Газированная вода, 1 л</span>
+                </div>
+                <div class="card">
+                    <img src="img/png/assortiment4.png" alt="" class="card-img">
+                    <span class="card-span">Газированная вода, 1 л</span>
+                </div>
+                <div class="card">
+                    <img src="img/png/assortiment5.png" alt="" class="card-img">
+                    <span class="card-span">Газированная вода, 6 л</span>
                 </div>
             </div>
-            <button class="assortment_btn">Подробнее об авточехлах</button>
+            <button class="assortment-btn">Подробнее о продукции</button>
         </div>
     </div>
-    <div class="container">
-        <div class="partners">
-            <h2 class="partners-h2">Бренды с которыми мы работаем</h2>
-            <div class="partners_cards">
-                <div class="card">
-                    <img src="img/png/partners1.png" alt="" class="card_img">
-                    <span class="card_span">Audi</span>
-                </div>
-                <div class="card">
-                    <img src="img/png/partners2.png" alt="" class="card_img">
-                    <span class="card_span">BMW</span>
-                </div>
-                <div class="card">
-                    <img src="img/png/partners3.png" alt="" class="card_img">
-                    <span class="card_span">CHEVROLET</span>
-                </div>
-                <div class="card">
-                    <img src="img/png/partners4.png" alt="" class="card_img">
-                    <span class="card_span">CITROËN</span>
-                </div>
-                <div class="card">
-                    <img src="img/png/partners5.png" alt="" class="card_img">
-                    <span class="card_span">Fiat</span>
-                </div>
-                <div class="card">
-                    <img src="img/png/partners6.png" alt="" class="card_img">
-                    <span class="card_span">FORD</span>
-                </div>
-                <div class="card">
-                    <img src="img/png/partners7.png" alt="" class="card_img">
-                    <span class="card_span">GEELY</span>
-                </div>
-                <div class="card">
-                    <img src="img/png/partners8.png" alt="" class="card_img">
-                    <span class="card_span">HONDA</span>
-                </div>
-                <div class="card">
-                    <img src="img/png/partners9.png" alt="" class="card_img">
-                    <span class="card_span">HYUNDAI</span>
-                </div>
-                <div class="card">
-                    <img src="img/png/partners10.png" alt="" class="card_img">
-                    <span class="card_span">KIA</span>
-                </div>
-                <div class="card">
-                    <img src="img/png/partners11.png" alt="" class="card_img">
-                    <span class="card_span">LADA</span>
-                </div>
-                <div class="card">
-                    <img src="img/png/partners12.png" alt="" class="card_img">
-                    <span class="card_span">LEXUS</span>
-                </div>
-                <div class="card">
-                    <img src="img/png/partners13.png" alt="" class="card_img">
-                    <span class="card_span">MAZDA</span>
-                </div>
-                <div class="card">
-                    <img src="img/png/partners14.png" alt="" class="card_img">
-                    <span class="card_span">MERCEDES</span>
-                </div>
-                <div class="card">
-                    <img src="img/png/partners15.png" alt="" class="card_img">
-                    <span class="card_span">NISSAN</span>
-                </div>
-                <div class="card">
-                    <img src="img/png/partners16.png" alt="" class="card_img">
-                    <span class="card_span">MITSUBISHI</span>
-                </div>
-                <div class="card">
-                    <img src="img/png/partners17.png" alt="" class="card_img">
-                    <span class="card_span">OPEL</span>
-                </div>
-                <div class="card">
-                    <img src="img/png/partners18.png" alt="" class="card_img">
-                    <span class="card_span">PEUGEOT</span>
-                </div>
-                <div class="card">
-                    <img src="img/png/partners19.png" alt="" class="card_img">
-                    <span class="card_span">RENAULT</span>
-                </div>
-                <div class="card">
-                    <img src="img/png/partners20.png" alt="" class="card_img">
-                    <span class="card_span">SEAT</span>
-                </div>
-                <div class="card">
-                    <img src="img/png/partners21.png" alt="" class="card_img">
-                    <span class="card_span">SKODA</span>
-                </div>
-                <div class="card">
-                    <img src="img/png/partners22.png" alt="" class="card_img">
-                    <span class="card_span">SUBARU</span>
-                </div>
-                <div class="card">
-                    <img src="img/png/partners23.png" alt="" class="card_img">
-                    <span class="card_span">TOYOTA</span>
-                </div>
-                <div class="card">
-                    <img src="img/png/partners24.png" alt="" class="card_img">
-                    <span class="card_span">VOLKSWAGEN</span>
-                </div>
-            </div>
-        </div>
-        <div class="portfolio wrapper">
-            <h2 class="portfolio_h2">Посмотрите примеры выполненных работ</h2>
-            <div class="portfolio_cards" id="lightgallery">
-                <div class="portfolio_cards_preview">
-                    <div class="card" data-src="img/jpg/portfolio1.jpg">
-                        <img src="img/jpg/portfolio1.jpg" alt="" class="card_img">
-                    </div>
-                    <div class="card" data-src="img/jpg/portfolio2.jpg">
-                        <img src="img/jpg/portfolio2.jpg" alt="" class="card_img">
-                    </div>
-                    <div class="card" data-src="img/jpg/portfolio3.jpg">
-                        <img src="img/jpg/portfolio3.jpg" alt="" class="card_img">
-                    </div>
-                    <div class="card" data-src="img/jpg/portfolio4.jpg">
-                        <img src="img/jpg/portfolio4.jpg" alt="" class="card_img">
-                    </div>
-                    <div class="card" data-src="img/jpg/portfolio1.jpg">
-                        <img src="img/jpg/portfolio1.jpg" alt="" class="card_img">
-                    </div>
-                    <div class="card" data-src="img/jpg/portfolio2.jpg">
-                        <img src="img/jpg/portfolio2.jpg" alt="" class="card_img">
-                    </div>
-                    <div class="card" data-src="img/jpg/portfolio3.jpg">
-                        <img src="img/jpg/portfolio3.jpg" alt="" class="card_img">
-                    </div>
-                    <div class="card" data-src="img/jpg/portfolio4.jpg">
-                        <img src="img/jpg/portfolio4.jpg" alt="" class="card_img">
-                    </div>
-                    <div class="card" data-src="img/jpg/portfolio1.jpg">
-                        <img src="img/jpg/portfolio1.jpg" alt="" class="card_img">
-                    </div>
-                    <div class="card" data-src="img/jpg/portfolio2.jpg">
-                        <img src="img/jpg/portfolio2.jpg" alt="" class="card_img">
-                    </div>
-                    <div class="card" data-src="img/jpg/portfolio3.jpg">
-                        <img src="img/jpg/portfolio3.jpg" alt="" class="card_img">
-                    </div>
-                    <div class="card" data-src="img/jpg/portfolio4.jpg">
-                        <img src="img/jpg/portfolio4.jpg" alt="" class="card_img">
-                    </div>
-                    <div class="card" data-src="img/jpg/portfolio1.jpg">
-                        <img src="img/jpg/portfolio1.jpg" alt="" class="card_img">
-                    </div>
-                    <div class="card" data-src="img/jpg/portfolio2.jpg">
-                        <img src="img/jpg/portfolio2.jpg" alt="" class="card_img">
-                    </div>
-                    <div class="card" data-src="img/jpg/portfolio3.jpg">
-                        <img src="img/jpg/portfolio3.jpg" alt="" class="card_img">
-                    </div>
-                    <div class="card" data-src="img/jpg/portfolio4.jpg">
-                        <img src="img/jpg/portfolio4.jpg" alt="" class="card_img">
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="card" data-src="img/jpg/portfolio3.jpg">
-                        <img src="img/jpg/portfolio3.jpg" alt="" class="card_img">
-                    </div>
-                    <div class="card" data-src="img/jpg/portfolio4.jpg">
-                        <img src="img/jpg/portfolio4.jpg" alt="" class="card_img">
-                    </div>
-                </div>
-            </div>
-            <button class="portfolio_btn">Больше наши работ</button>
-        </div>
-    </div>
-    <div class="product">
+    <div class="price">
         <div class="container">
-            <h2 class="product_h2">У нас в магазине вы можете приобрести</h2>
-            <div class="product_cards">
+            <div class="price_left">
+                <h2 class="price-h2">Оптовым покупателям</h2>
+                <p class="price-p">Мы будем рады взаимовыгодному сотрудничеству и готовы ответить на все интересующие
+                    Вас
+                    вопросы, напишите нам на почту: <a href="mailto:alkrechko@mail.ru">alkrechko@mail.ru</a></p>
+                <img src="img/png/back1.png" alt="" class="price_right-img">
+                <form class="price_form">
+                    <span class="price_form-h2">Получите наш оптовый прайс-лист</span>
+                    <span class="price_form-p">Введите свои контактные данные, мы вышлем Вам прайс-лист</span>
+                    <input type="text" class="price_form-input" placeholder="Введите ваше имя">
+                    <input type="text" class="price_form-input" placeholder="Введите ваш телефон">
+                    <input type="text" class="price_form-input" placeholder="Введите вашу электронную почту">
+                    <button class="price_form-btn">Получить прайс-лист</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="company">
+        <div class="container">
+            <div class="company_default">
+                <h2>О компании</h2>
+                <span>Мы уважаем дело, которым Вы занимаетесь. <br>
+                    Мы привносим в Ваш бизнес естественный вкус природной воды из Беларуси!</span>
+                <div class="row">
+                    <img src="img/jpg/company2.jpg" alt="">
+                    <img src="img/jpg/company1.jpg" alt="">
+                </div>
+                <p>Наша компания работает на белорусском рынке питьевых вод с 2019 года. За это время предприятие сумело
+                    увлечь всю Беларусь своей продукцией и, что более сложно, смогло выйти за пределы страны.</p>
+                <p>В основе производственной деятельности компании «Клетное» лежит старинный народный белорусский
+                    принцип: «все, что ты делаешь, ты делаешь для себя». Компании есть чем гордиться — ведь она
+                    предлагает людям продукцию уникальную, полезную, созданную самой природой. Вода «Клетное» наполняет
+                    человека радостью и уверенностью в собственных силах, дает возможность почувствовать кристальную
+                    чистоту, ощутить совершенный вкус, узнать, что такое наслаждение чистой водой — такой же прекрасной
+                    как сама жизнь</p>
+            </div>
+            <button class="company-btn">Подробнее о компании</button>
+        </div>
+    </div>
+    <div class="contact">
+        <div class="container">
+            <h2 class="contact-h2">Наши контакты</h2>
+            <p class="contact-p">Будем рады сотрудничеству!</p>
+            <div class="contact_card-water">
+                <img src="img/png/water1.png" alt="" class="contact_card-water-right">
+                <img src="img/png/water2.png" alt="" class="contact_card-water-left">
+                <a href="" class="contact_card-water-link">+375 29 161 33 33 (мтс)</a>
+                <span class="contact_card-water-span">Сделайте заказ по телефону сегодня и наслаждайтесь природной водой уже завтра.</span>
+            </div>
+            <div class="contact_cards">
                 <div class="card">
-                    <img src="img/png/product1.png" alt="" class="card-img">
-                    <span class="card-span">Коврики EVA</span>
+                    <div class="card_row">
+                        <span class="card-h3">Юридический адрес:</span>
+                        <span class="card-p">Республика Беларусь 225161 Брестская область, Пружанский район, Сухопольский с/с, д. Клетное 55</span>
+                    </div>
                 </div>
                 <div class="card">
-                    <img src="img/png/product2.png" alt="" class="card-img">
-                    <span class="card-span">Подлокотники из экокожи</span>
-                </div>
-                <div class="card">
-                    <img src="img/png/product3.png" alt="" class="card-img">
-                    <span class="card-span">Оплетки на руль</span>
-                </div>
-                <div class="card">
-                    <img src="img/png/product4.png" alt="" class="card-img">
-                    <span class="card-span">Подушки под шею</span>
+                    <div class="card_row">
+                        <span class="card-h3">Почтовый адрес:</span>
+                        <span class="card-p">Республика Беларусь 224030, г. Брест, ул. Советская, 57</span>
+                    </div>
+                    <div class="card_row">
+                        <span class="card-h3">E-mail: </span>
+                        <a href="" class="card_row-link">alkrechko@mail.ru</a>
+                    </div>
+                    <div class="card_row">
+                        <span class="card-h3">Тел./факс: </span>
+                        <a href="" class="card_row-link">+375 162 57 57 57, </a>
+                        <a href="" class="card_row-link">+375 29 161 33 33 (мтс)</a>
+                    </div>
                 </div>
             </div>
+            <span class="contact-span">Частное производственно-строительное унитарное предприятие (ЧПСУП) «НедрыДикое» УНП 291194047 р/с BY40BLBB30120291194047001001 в ОАО «Бeлинвестбанк» МФО BLBBBY2X</span>
         </div>
     </div>
 </div>
-
 <footer class="footer">
-    <div class="footer_desktop_menu">
-        <div class="container">
-            <ul class="footer_desktop_menu_ul">
-                <li class="footer_desktop_menu_li"><a href="company-single.html" class="footer_desktop_menu_link">Главная</a></li>
-                <li class="footer_desktop_menu_li"><a href="company.html" class="footer_desktop_menu_link">О компании</a></li>
-                <li class="footer_desktop_menu_li"><a href="сooperation.html" class="footer_desktop_menu_link">Сотрудничество</a></li>
-                <li class="footer_desktop_menu_li"><a href="production.html" class="footer_desktop_menu_link">Наша продукция</a></li>
-                <li class="footer_desktop_menu_li"><a href="contact.html" class="footer_desktop_menu_link">Контакты</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="footer_back">
-        <div class="container">
-            <div class="top_line">
-                <div class="footer_logo">
-                    <a href="index.html" class="footer_logo_link">
-                        <img src="img/png/logo_footer.png" alt="" class="footer_logo_img">
-                    </a>
-                </div>
-                <div class="footer_address">
-                    <span class="footer_address-h3">Адрес нашего магазина</span>
-                    <span class="footer_address-p">224001 г. Брест ул. Кижеватова д.12</span>
-                    <span class="footer_address-link">Показать на карте</span>
-                </div>
-                <div class="footer_trade">
-                    <span class="footer_trade-h3">Оптовая торговля</span>
-                    <div class="footer_trade_row">
-                        <a href="tel:+375296426972" class="footer_trade_row-link">+375 (29) 642 69 72 <img
-                                src="img/png/icon_A1.png" alt="" class="footer_trade_row-icon"></a>
-                        <a href="tel:+375297829913" class="footer_trade_row-link">+375 (29) 782 99 13 <img
-                                src="img/png/icon_mts.png" alt="" class="footer_trade_row-icon "></a>
-                    </div>
-                    <span class="footer_trade-p">Режим работы: с 08:00 до 20:00 Без выходных</span>
-                </div>
-                <div class="footer_shop">
-                    <span class="footer_shop-h3">Розничный магазин</span>
-                    <a href="tel:+375292605655" class="footer_shop-link">+375 (29) 260 56 55</a>
-                    <div class="footer_shop_row">
-                        <a href="" class="footer_shop_row-btn">Обратный звонок</a>
-                        <img src="img/png/icon_viber.png" alt="" class="footer_shop_row-icon">
-                        <img src="img/png/icon_telegram.png" alt="" class="footer_shop_row-icon">
-                        <img src="img/png/icon_whatsapp.png" alt="" class="footer_shop_row-icon">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer_bottom">
-            <div class="container">
-                <div class="bottom_line">
-                    <span class="footer_bottom-span">©2020 АванартКомпани</span>
-                    <span class="footer_bottom-span">Создание и продвижение сайтов - <a href="">InternetSozdateli</a></span>
-                </div>
-            </div>
+    <div class="container">
+        <div class="footer_row">
+            <span class="footer-span">©2020 ЧПСУП «НедрыДикое</span>
+            <span class="footer-span">Создание и продвижение сайтов - <a href="">InternetSozdateli</a></span>
         </div>
     </div>
 </footer>
-
-
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/jquery.validate.min.js"></script>
 <script src="js/jquery.maskedinput.min.js"></script>
-<script src="js/lightgallery.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
+
+
+<!--Modal Windows thanks-->
+
+<!--<div class="fade"></div>
+<div class="modal" id="mainModal">
+    <span class="modal-close">&times;</span>
+    <h1 class="thanks_h1">Спасибо за заявку!</h1>
+    <p class="thanks_p">Наши менеджеры свяжутся с вами в ближайшее время!</p>
+    <button class="btn-close">Отлично!</button>
+</div>-->
+<!-- end Modal Windows thanks-->
+
+
+<!--Modal Windows type -->
+<!--<div class="fade1" id="fade1"></div>
+<div class="modal1" id="mainModal1">
+    <span class="modal1-close">&times;</span>
+    <form class="modal1_form">
+        <span class="modal1_form-h3">Заполните заявку</span>
+        <span class="modal1_form-p">Оставтье заявку и мы свяжемся с вами</span>
+        <input type="text" class="modal1_form-input" placeholder="Ваше имя*">
+        <input type="text" class="modal1_form-input" placeholder="Ваш телефон*">
+        <textarea name="message" class="modal1_form-textarea" placeholder="Ваше сообщение"></textarea>
+        <button class="modal1_form-btn">Оставить заявку</button>
+    </form>
+</div>-->
+<!--end Modal Windows type-->

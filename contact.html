@@ -6,250 +6,128 @@
     <title>Контакты</title>
 
     <link rel="stylesheet" href="fonts/stylesheet.css">
-    <link rel="stylesheet" href="css/lightgallery.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<div class="menu-overlay"></div>
 <header class="header">
     <div class="container">
-        <div class="top_line">
+        <div class="header_top">
             <div class="header_logo">
-                <a href="index.html">
-                    <img src="img/png/logo_header.png" alt="">
+                <a href="index.html" class="header_logo-link">
+                    <img src="img/svg/logo.svg" alt="" class="header_logo-img">
                 </a>
             </div>
-            <div class="header_address">
-                <span class="header_address-h3">Адрес нашего магазина</span>
-                <span class="header_address-p">224001 г. Брест ул. Кижеватова д.12</span>
-                <span class="header_address-link">Показать на карте</span>
+            <div class="header_menu_desktop">
+                <ul class="header_menu_desktop_ul">
+                    <li class="header_menu_desktop_li"><a href="company.html" class="header_menu_desktop_link">О
+                        компании</a></li>
+                    <li class="header_menu_desktop_li"><a href="production.html" class="header_menu_desktop_link">Продукция</a>
+                    </li>
+                    <li class="header_menu_desktop_li"><a href="сooperation.html" class="header_menu_desktop_link">Для
+                        клиентов</a></li>
+                    <li class="header_menu_desktop_li"><a href="contact.html"
+                                                          class="header_menu_desktop_link">Контакты</a></li>
+                </ul>
             </div>
-            <div class="header_trade">
-                <span class="header_trade-h3">Оптовая торговля</span>
-                <div class="header_trade_row">
-                    <a href="tel:+375296426972" class="header_trade_row-link">+375 (29) 642 69 72 <img
-                            src="img/png/icon_A1.png" alt="" class="header_trade_row-icon"></a>
-                    <a href="tel:+375297829913" class="header_trade_row-link">+375 (29) 782 99 13 <img
-                            src="img/png/icon_mts.png" alt="" class="header_trade_row-icon "></a>
+            <div class="header_contact">
+                <div class="header_contact_left">
+                    <svg class="header_contact_left-img" width="44" height="44" viewBox="0 0 44 44" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="22" cy="22" r="22" fill="#359BDA"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M13.5888 19.1368C12.5846 16.3863 13.1871 14.575 14.1913 13.6358C15.1955 12.6966 15.5302 13.0992 16.1996 13.6358C16.869 14.2396 19.0112 16.3193 19.0112 16.3193C19.0112 16.3193 19.6807 16.7888 19.0782 17.5939C18.5426 18.466 17.1368 19.0697 18.2079 20.3444C19.9484 22.424 21.5551 24.1011 23.6973 25.7783C24.9692 26.8516 25.5717 25.5099 26.375 24.9062C27.1784 24.3024 27.7139 24.9733 27.7139 24.9733C27.7139 24.9733 29.7892 27.12 30.3247 27.7908C30.8603 28.4617 31.3289 28.8642 30.3917 29.8705C29.4544 30.8097 27.58 31.4134 24.8353 30.4072C21.4212 29.1325 14.9277 22.6253 13.5888 19.1368ZM20.9526 15.9838C20.0154 15.9838 20.0823 14.6421 20.9526 14.6421C25.5717 14.575 29.3875 18.3989 29.3875 23.0949C29.3875 23.967 28.0486 23.967 28.0486 23.0949C28.0486 19.1368 24.8353 15.9167 20.9526 15.9838ZM22.0906 19.0697C21.2204 19.0697 21.2204 17.728 22.0906 17.728C24.3667 17.728 26.2411 19.6064 26.2411 21.8873C26.2411 22.7594 24.9023 22.7594 24.9023 21.8873C24.9023 20.3444 23.6303 19.0697 22.0906 19.0697Z"
+                              fill="white"/>
+                    </svg>
                 </div>
-                <span class="header_trade-p">Режим работы: с 08:00 до 20:00 Без выходных</span>
-            </div>
-            <div class="header_shop">
-                <span class="header_shop-h3">Розничный магазин</span>
-                <a href="tel:+375292605655" class="header_shop-link">+375 (29) 260 56 55</a>
-                <div class="header_shop_row">
-                    <a href="" class="header_shop_row-btn">Обратный звонок</a>
-                    <img src="img/png/icon_viber.png" alt="" class="header_shop_row-icon">
-                    <img src="img/png/icon_telegram.png" alt="" class="header_shop_row-icon">
-                    <img src="img/png/icon_whatsapp.png" alt="" class="header_shop_row-icon">
+                <div class="header_contact_right">
+                    <a href="tel:+375291613333" class="header_contact_right-link">+375 29 161 33 33 (мтс)</a>
+                    <a href="tel:+375162575757" class="header_contact_right-link">+375 162 57 57 57</a>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="header_desktop_menu">
-        <div class="container">
-            <ul class="header_desktop_menu_ul">
-                <li class="header_desktop_menu_li"><a href="company-single.html" class="header_desktop_menu_link">Главная</a></li>
-                <li class="header_desktop_menu_li"><a href="company.html" class="header_desktop_menu_link">О компании</a></li>
-                <li class="header_desktop_menu_li"><a href="сooperation.html" class="header_desktop_menu_link">Сотрудничество</a></li>
-                <li class="header_desktop_menu_li"><a href="production.html" class="header_desktop_menu_link">Наша продукция</a></li>
-                <li class="header_desktop_menu_li"><a href="contact.html" class="header_desktop_menu_link">Контакты</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="header_mobile_menu">
-        <div class="container default">
-            <div class="header_mobile_menu_top">
-                <div class="header_mobile_menu_top_icon">
-                    <span class="icon "></span>
-                </div>
-                <a href="tel:+375292605655" class="header_mobile_menu_top-link">+375 (29) 260 56 55</a>
-            </div>
-
-        </div>
-        <ul class="header_mobile_menu_ul">
-            <li class="header_mobile_menu_li"><a href="company-single.html" class="header_mobile_menu_link">Главная</a></li>
-            <li class="header_mobile_menu_li"><a href="company.html" class="header_mobile_menu_link">О компании</a></li>
-            <li class="header_mobile_menu_li"><a href="сooperation.html" class="header_mobile_menu_link">Сотрудничество</a></li>
-            <li class="header_mobile_menu_li"><a href="production.html" class="header_mobile_menu_link">Наша продукция</a></li>
-            <li class="header_mobile_menu_li"><a href="contact.html" class="header_mobile_menu_link">Контакты</a></li>
-        </ul>
     </div>
 </header>
 
 <div class="content">
-    <div class="container">
-        <div class="navigation">
+    <div class="navigation">
+        <div class="container">
             <nav class="nav">
-                <span class="nav_li"><a class="nav_link" href="index.html">Главная</a></span>
-                <span class="nav_li">></span>
-                <span class="nav_li active">Контакты</span>
+                <span class="nav_li"><a class="nav_li" href="index.html">Главная</a></span>
+                <span class="nav_li"> / </span>
+                <span class="nav_li active">Наши контакты</span>
             </nav>
         </div>
-        <div class="contact">
-            <div class="others_page">
-                <h1>Контакты</h1>
-            </div>
-            <div class="contact_cards">
-                <div class="contact_box">
-                    <div class="box">
-                        <div class="box_left">
-                            <img src="img/png/location.png" alt="" class="box_left-img">
-                        </div>
-                        <div class="box_right">
-                            <span class="box_right-h3">Адрес нашего магазина</span>
-                            <span class="box_right-address">Республика Беларусь <br> 224001 г. Брест ул. Кижеватова д.12</span>
-                            <a href="" class="box_right-link">Показать на карте</a>
+    </div>
+    <div class="contact_page">
+        <div class="container">
+            <h1 class="contact_page-h1">Наши контакты</h1>
+            <p class="contact_page-p">Мы будем рады взаимовыгодному сотрудничеству и готовы ответить на все интересующие Вас
+                вопросы, напишите нам на почту: <a href="mailto:alkrechko@mail.ru">alkrechko@mail.ru</a></p>
+            <div class="contact_page_cards">
+                <div class="box_left">
+                    <div class="contact_card-water">
+                        <img src="img/png/water1.png" alt="" class="contact_card-water-right">
+                        <a href="" class="contact_card-water-link">+375 29 161 33 33 (мтс)</a>
+                        <span class="contact_card-water-span">Сделайте заказ по телефону сегодня и наслаждайтесь природной водой уже завтра.</span>
+                    </div>
+                    <div class="card">
+                        <div class="card_row">
+                            <span class="card-h3">Юридический адрес:</span>
+                            <span class="card-p">Республика Беларусь 225161 Брестская область, Пружанский район, Сухопольский с/с, д. Клетное 55</span>
                         </div>
                     </div>
-                    <div class="box">
-                        <div class="box_left">
-                            <img src="img/png/telephone.png" alt="" class="box_left-img">
+                    <div class="card">
+                        <div class="card_row">
+                            <span class="card-h3">Почтовый адрес:</span>
+                            <span class="card-p">Республика Беларусь 224030, г. Брест, ул. Советская, 57</span>
                         </div>
-                        <div class="box_right">
-                            <span class="box_right-h3">Оптовая торговля</span>
-                            <div class="box_right_group">
-                                <div class="item">
-                                    <a href="tel:+375296426972" class="item-link">+375 (29) 642 69 72</a>
-                                    <div class="item_row">
-                                        <a href="" class="item-btn">Обратный звонок</a>
-                                        <img src="img/png/icon_A1.png" alt="" class="item-img">
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <a href="tel:+375297829913" class="item-link">+375 (29) 782 99 13</a>
-                                    <div class="item_row">
-                                        <a href="" class="item-btn">Обратный звонок</a>
-                                        <img src="img/png/icon_mts.png" alt="" class="item-img">
-                                    </div>
-                                </div>
-                            </div>
-                            <span class="box_right-p">Режим работы: с 08:00 до 20:00 Без выходных</span>
+                        <div class="card_row">
+                            <span class="card-h3">E-mail: </span>
+                            <a href="" class="card_row-link">alkrechko@mail.ru</a>
                         </div>
-                    </div>
-                    <div class="box">
-                        <div class="box_left">
-                            <img src="img/png/telephone.png" alt="" class="box_left-img">
-                        </div>
-                        <div class="box_right">
-                            <span class="box_right-h3">Розничный магазин</span>
-                            <div class="box_right_group">
-                                <div class="item">
-                                    <a href="tel:+375292605655" class="item-link">+375 (29) 260 56 55</a>
-                                    <div class="item_row">
-                                        <a href="" class="item-btn">Обратный звонок</a>
-                                        <img src="img/png/icon_telegram.png" alt="" class="item-img">
-                                        <img src="img/png/icon_viber.png" alt="" class="item-img">
-                                        <img src="img/png/icon_whatsapp.png" alt="" class="item-img">
-                                    </div>
-                                </div>
-                            </div>
-                            <span class="box_right-p">Режим работы: с 08:00 до 20:00 Без выходных</span>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="box_left">
-                            <img src="img/png/message.png" alt="" class="box_left-img">
-                        </div>
-                        <div class="box_right">
-                            <div class="row">
-                                <div class="column">
-                                    <span class="box_right-h3">Оптовая торговля</span>
-                                    <a href="mailto:avanart@bk.ru" class="box_right-address">avanart@bk.ru</a>
-                                    <a href="" class="box_right-link">Написать на почту</a>
-                                </div>
-                                <div class="column">
-                                    <span class="box_right-h3">Тел./факс</span>
-                                    <a href="tel:80162555262" class="box_right-address">8 (0162) 55 52 62</a>
-                                </div>
-                            </div>
+                        <div class="card_row">
+                            <span class="card-h3">Тел./факс: </span>
+                            <a href="" class="card_row-link">+375 162 57 57 57, </a>
+                            <a href="" class="card_row-link">+375 29 161 33 33 (мтс)</a>
                         </div>
                     </div>
                 </div>
-                <div class="map">
-                    <iframe class="map_img" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2450.8068464915154!2d23.67690531568044!3d52.10144677973708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47210bdd8b5b004d%3A0xdc42a6c0930bae72!2z0YPQu9C40YbQsCDQmtC40LbQtdCy0LDRgtC-0LLQsCAxMiwg0JHRgNC10YHRgg!5e0!3m2!1sru!2sby!4v1595945089436!5m2!1sru!2sby"
-                            width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""
-                            aria-hidden="false" tabindex="0"></iframe>
+                <div class="box_right">
+                    <div class="contact_page_form">
+                        <span class="contact_page_form-h2">Получите наш оптовый прайс-лист</span>
+                        <span class="contact_page_form-p">Введите свои контактные данные, мы вышлем Вам прайс-лист</span>
+                        <input type="text" class="contact_page_form-input" placeholder="Введите ваше имя">
+                        <input type="text" class="contact_page_form-input" placeholder="Введите ваш телефон">
+                        <input type="text" class="contact_page_form-input" placeholder="Введите вашу электронную почту">
+                        <button class="contact_page_form-btn">Получить прайс-лист</button>
+                    </div>
+                    <img src="img/png/water2.png" alt="" class="contact_page_form-img">
                 </div>
             </div>
-            <div class="contact_form">
-                <span class="contact_form-h2">Обратная связь</span>
-                <span class="contact_form-p">Оставтье заявку и мы подберем авточехол индивидуально под вашу модель автомобиля</span>
-                <div class="contact_form_group">
-                    <input type="text" class="contact_form_group-input" placeholder="Ваше имя">
-                    <input type="text" class="contact_form_group-input" placeholder="Ваш телефон">
-                    <input type="text" class="contact_form_group-input" placeholder="Ваша почта">
-                </div>
-                <button class="contact_form-btn">Оставить заявку</button>
-            </div>
+            <span class="contact_page-span">Частное производственно-строительное унитарное предприятие (ЧПСУП) «НедрыДикое» УНП 291194047 р/с BY40BLBB30120291194047001001 в ОАО «Бeлинвестбанк» МФО BLBBBY2X</span>
         </div>
+    </div>
+    <div class="contact_map">
+        <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2451.338490156062!2d23.691119215680093!3d52.091770979735415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47210bf056a608c5%3A0x933767ef5cc2c60f!2z0YPQuy4g0KHQvtCy0LXRgtGB0LrQsNGPIDU3LCDQkdGA0LXRgdGCIDIyNDAzMA!5e0!3m2!1sru!2sby!4v1596547851139!5m2!1sru!2sby"
+                style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
     </div>
 </div>
 
 <footer class="footer">
-    <div class="footer_desktop_menu">
-        <div class="container">
-            <ul class="footer_desktop_menu_ul">
-                <li class="footer_desktop_menu_li"><a href="company-single.html" class="footer_desktop_menu_link">Главная</a></li>
-                <li class="footer_desktop_menu_li"><a href="company.html" class="footer_desktop_menu_link">О компании</a></li>
-                <li class="footer_desktop_menu_li"><a href="сooperation.html" class="footer_desktop_menu_link">Сотрудничество</a></li>
-                <li class="footer_desktop_menu_li"><a href="production.html" class="footer_desktop_menu_link">Наша продукция</a></li>
-                <li class="footer_desktop_menu_li"><a href="contact.html" class="footer_desktop_menu_link">Контакты</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="footer_back">
-        <div class="container">
-            <div class="top_line">
-                <div class="footer_logo">
-                    <a href="index.html" class="footer_logo_link">
-                        <img src="img/png/logo_footer.png" alt="" class="footer_logo_img">
-                    </a>
-                </div>
-                <div class="footer_address">
-                    <span class="footer_address-h3">Адрес нашего магазина</span>
-                    <span class="footer_address-p">224001 г. Брест ул. Кижеватова д.12</span>
-                    <span class="footer_address-link">Показать на карте</span>
-                </div>
-                <div class="footer_trade">
-                    <span class="footer_trade-h3">Оптовая торговля</span>
-                    <div class="footer_trade_row">
-                        <a href="tel:+375296426972" class="footer_trade_row-link">+375 (29) 642 69 72 <img
-                                src="img/png/icon_A1.png" alt="" class="footer_trade_row-icon"></a>
-                        <a href="tel:+375297829913" class="footer_trade_row-link">+375 (29) 782 99 13 <img
-                                src="img/png/icon_mts.png" alt="" class="footer_trade_row-icon "></a>
-                    </div>
-                    <span class="footer_trade-p">Режим работы: с 08:00 до 20:00 Без выходных</span>
-                </div>
-                <div class="footer_shop">
-                    <span class="footer_shop-h3">Розничный магазин</span>
-                    <a href="tel:+375292605655" class="footer_shop-link">+375 (29) 260 56 55</a>
-                    <div class="footer_shop_row">
-                        <a href="" class="footer_shop_row-btn">Обратный звонок</a>
-                        <img src="img/png/icon_viber.png" alt="" class="footer_shop_row-icon">
-                        <img src="img/png/icon_telegram.png" alt="" class="footer_shop_row-icon">
-                        <img src="img/png/icon_whatsapp.png" alt="" class="footer_shop_row-icon">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer_bottom">
-            <div class="container">
-                <div class="bottom_line">
-                    <span class="footer_bottom-span">©2020 АванартКомпани</span>
-                    <span class="footer_bottom-span">Создание и продвижение сайтов - <a href="">InternetSozdateli</a></span>
-                </div>
-            </div>
+    <div class="container">
+        <div class="footer_row">
+            <span class="footer-span">©2020 ЧПСУП «НедрыДикое</span>
+            <span class="footer-span">Создание и продвижение сайтов - <a href="">InternetSozdateli</a></span>
         </div>
     </div>
 </footer>
 
-
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/jquery.validate.min.js"></script>
 <script src="js/jquery.maskedinput.min.js"></script>
-<script src="js/lightgallery.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
