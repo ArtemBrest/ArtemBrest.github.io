@@ -48,4 +48,72 @@ $(document).ready(function () {
             ul.slideToggle(700);
         }
     })
+
+    var modalClose = $(".mainModal-close");
+    var modalFade = $(".fade");
+    var modalThanks = $("#mainModal");
+    var modalBtn = $(".modal-btn-close");
+
+    modalClose.click(function () {
+        modalClose.hide(350);
+        modalFade.hide(350);
+    });
+    modalFade.click(function () {
+        modalFade.hide(350);
+        modalThanks.hide(350);
+    });
+    modalBtn.click(function () {
+        modalThanks.hide(350);
+        modalFade.hide(350);
+    });
+    $(function () {
+        $('#form_box-btn').on("click", function () {
+            // validate and process form here
+            $('#mainForm').validate({
+                rules: {
+                    name: {
+                        required: true,
+                        minlength: 2,
+                    },
+                    phone: {
+                        required: true,
+                        minlength: 7,
+                    },
+
+                },
+                messages: {
+                    name: {
+                        required: ' ',
+                        minlength: ' '
+                    },
+                    phone: {
+                        required: ' ',
+                        minlength: ' '
+                    },
+                },
+                submitHandler: (function (form) {
+                    var name = $(".form_box_column-input-name").val(),
+                        phone = $('.form_box_column-input-phone').val(),
+                        address = $(".form_box_column-input-address").val()
+                    var options = {
+                        success: function (form) {
+                            $('#mainForm')[0].reset();
+                            $(".fade").show(350);
+                            $(".modal").show(350);
+                        },
+                        type: "POST",
+                        url: "post.php",
+                        data: ({
+                            action: 'plan_form',
+                            name: name,
+                            phone: phone,
+                            address: address
+                        }),
+                    };
+                    console.log(name + phone + address);
+                    $(form).ajaxSubmit(options);
+                })
+            })
+        });
+    });
 });

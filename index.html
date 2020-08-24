@@ -17,10 +17,10 @@
 
 <div class="fade"></div>
 <div class="modal" id="mainModal">
-    <span class="modal-close">&times;</span>
+    <span class="modal-close mainModal-close">&times;</span>
     <h1 class="thanks_h1">Спасибо за заявку!</h1>
     <p class="thanks_p">Наши менеджеры свяжутся с вами в ближайшее время!</p>
-    <button class="btn-close">Отлично!</button>
+    <button class="btn-close modal-btn-close">Отлично!</button>
 </div>
 <!-- end Modal Windows thanks-->
 
@@ -196,26 +196,26 @@
     <div class="back_form">
         <div class="container">
             <div class="contact_form">
-                <form class="form">
+                <form class="form" id="mainForm">
                     <span class="form_h2"><span
                             class="green">Оставьте заявку</span> на установку системы безопасности</span>
                     <span class="form_p">Мы позвоним вам и согласуем удобное время приезда для установки системы безопасности</span>
                     <img src="img/png/back_form.png" alt="" class="form_mob-img">
                     <div class="form_box">
                         <div class="form_box_column">
-                            <label for="name" class="form_box_column-label">Введите номер телефона</label>
-                            <input type="text" id="name" class="form_box_column-input" placeholder="Андрей">
+                            <label for="name" class="form_box_column-label">Введите ваше имя </label>
+                            <input type="text" id="name" name="name" class="form_box_column-input form_box_column-input-name" placeholder="Андрей">
                         </div>
                         <div class="form_box_column">
                             <label for="phone" class="form_box_column-label">Введите номер телефона</label>
-                            <input type="text" id="phone" class="form_box_column-input"
+                            <input type="text" id="phone" name="phone" class="form_box_column-input form_box_column-input-phone"
                                    placeholder="+375(__) ___-__-__">
                         </div>
                         <div class="form_box_column">
                             <label for="address" class="form_box_column-label">Введите ваш адрес</label>
-                            <input type="text" id="address" class="form_box_column-input" placeholder="ул. Светлая, 1">
+                            <input type="text" id="address" name="address" class="form_box_column-input form_box_column-input-address" placeholder="ул. Светлая, 1">
                         </div>
-                        <button class="form_box-btn">Отправить заявку</button>
+                        <button class="form_box-btn" id="form_box-btn">Отправить заявку</button>
                     </div>
                 </form>
                 <div class="right">
@@ -489,6 +489,7 @@
 <script src="js/jquery.validate.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/jquery.form.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

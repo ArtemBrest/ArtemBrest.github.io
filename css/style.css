@@ -750,6 +750,9 @@ button:hover {
   line-height: 16px;
   color: #626666;
 }
+.content .back_form .form_box_column-input.error {
+  border: 1px solid red;
+}
 .content .back_form .form_box_column-input::-webkit-input-placeholder {
   font-size: 14px;
   line-height: 16px;
