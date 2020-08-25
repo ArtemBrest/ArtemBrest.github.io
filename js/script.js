@@ -102,7 +102,7 @@ $(document).ready(function () {
                             $(".modal").show(350);
                         },
                         type: "POST",
-                        url: "post.php",
+                        url: "js/post.php",
                         data: ({
                             action: 'plan_form',
                             name: name,
