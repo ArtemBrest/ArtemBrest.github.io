@@ -101,10 +101,17 @@ $(document).ready(function () {
                             $(".fade").show(350);
                             $(".modal").show(350);
                         },
+                        error:function()
+                        {
+                            alert("Произошла ошибка!");
+                        },
+                        beforeSend: function()
+                        {
+                            alert("Отправляем данные...");
+                        },
                         type: "POST",
                         url: "js/post.php",
                         data: ({
-                            action: 'plan_form',
                             name: name,
                             phone: phone,
                             address: address

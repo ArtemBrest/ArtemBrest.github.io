@@ -1,5 +1,4 @@
 <?php
-function plan_form () {
     $name=$_POST['name'];
     $phone=$_POST['phone'];
     $address=$_POST['address'];
@@ -10,8 +9,14 @@ function plan_form () {
                 <strong>Адрес:</strong> $email;
     $subject = "=?utf-8?b?". base64_encode($subject) ."?=";
     $headers = "From: http://vti.internetsozdateli.by/ <mail@stastroi.ru>\r\nContent-type: text/html; charset=UTF-8 \r\n";
-    mail ($to, $subject, $message, $headers);
+    $send = mail ($to, $subject, $message, $headers);
+    if ($send == "true")
+    {
+            echo "Ваше сообщение отправлено. Мы ответим вам в ближайшее время.";
+    }
+    else
+    {
+            echo "Не удалось отправить, попробуйте снова!";
+    }
     wp_die();
-}
-add_action('wp_ajax_plan_form', 'plan_form');
-add_action('wp_ajax_nopriv_plan_form', 'plan_form');
+?>
