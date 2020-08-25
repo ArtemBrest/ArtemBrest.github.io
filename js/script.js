@@ -110,7 +110,7 @@ $(document).ready(function () {
                             address: address
                         }),
                     };
-                    console.log(name + phone + address);
+                    console.log(name + phone + address + "nen");
                     $(form).ajaxSubmit(options);
                 })
             })
