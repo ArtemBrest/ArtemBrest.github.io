@@ -111,8 +111,6 @@ $(document).ready(function () {
                         }),
 
                     };
-                    alert(data);
-                    alert(url);
                     console.log(name + phone + address + "nen");
                     $(form).ajaxSubmit(options);
                 })
