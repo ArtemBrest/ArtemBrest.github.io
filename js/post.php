@@ -1,5 +1,4 @@
-<?php
-    $name=$_POST['name'];
+<?php  $name=$_POST['name'];
     $phone=$_POST['phone'];
     $address=$_POST['address'];
     $to = "artoym.zan@gmail.com";
@@ -12,11 +11,11 @@
     $send = mail ($to, $subject, $message, $headers);
     if ($send == "true")
     {
-            echo "Ваше сообщение отправлено. Мы ответим вам в ближайшее время.";
+        echo "Ваше сообщение отправлено. Мы ответим вам в ближайшее время.";
     }
     else
     {
-            echo "Не удалось отправить, попробуйте снова!";
+        echo "Не удалось отправить, попробуйте снова!";
     }
     wp_die();
 ?>

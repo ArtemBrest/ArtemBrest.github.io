@@ -55,7 +55,7 @@ $(document).ready(function () {
     var modalBtn = $(".modal-btn-close");
 
     modalClose.click(function () {
-        modalClose.hide(350);
+        modalThanks.hide(350);
         modalFade.hide(350);
     });
     modalFade.click(function () {
