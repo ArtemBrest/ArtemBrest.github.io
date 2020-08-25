@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Oбpaтнaя cвязь</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+
+<!---Скопировать скрипт ниже и вставить между тегами head--->
+
+<SCRIPT LANGUAGE='JAVASCRIPT' TYPE='TEXT/JAVASCRIPT'>
+<!--
+var win=null;
+function NewWindow(mypage,myname,w,h,pos,infocus){
+if(pos=="random"){myleft=(screen.width)?Math.floor(Math.random()*(screen.width-w)):100;mytop=(screen.height)?Math.floor(Math.random()*((screen.height-h)-75)):100;}
+if(pos=="center"){myleft=(screen.width)?(screen.width-w)/2:100;mytop=(screen.height)?(screen.height-h)/2:100;}
+else if((pos!='center' && pos!="random") || pos==null){myleft=0;mytop=120}
+settings="width=" + w + ",height=" + h + ",top=" + mytop + ",left=" + myleft + ",scrollbars=no,location=no,directories=no,status=no,menubar=no,toolbar=no,resizable=no";win=window.open(mypage,myname,settings);
+win.focus();}
+// -->
+</script>
+
+<!---Скопировать скрипт выше--->
+
+</head>
+
+
+<body>
+<p> &nbsp; </p> 
+<h3 align="center">Для отправки письма (сообщения) воспользуйтесь ссылкой ниже.</h3>
+<p> &nbsp; </p>
+<p> &nbsp; </p> 
+
+<p align="center">
+
+<!---Скопировать ссылку ниже и вставить в любое место сайта между тегами body. Укажите адрес расположения папки или файла http://ВАШСАЙТ.ru/feedback/index.php--->
+<a href="javascript:NewWindow('http://ВАШСАЙТ.ru/feedback/','popupgen','500','700','center','front');">Обратная связь</a>
+<!---Скопировать ссылку выше--->
+
+</p>
+
+<p> &nbsp; </p> 
+
+<!---Вариант с картинкой--->
+<p align="center">
+
+<a href="javascript:NewWindow('http://ВАШСАЙТ.ru/feedback/','popupgen','500','700','center','front');">
+<img border="0" src="feedback/email.png" width="32" height="32" title="Отправить сообщение" /></a>
+
+</p>
+<!--- конец Вариант с картинкой--->
+
+</body>
+</html>
