@@ -1,16 +1,495 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-	<meta charset="utf-8">
-	<title>Отправка форм AJAX</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Главная</title>
+
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<form id="form">
-		<input type="text" name="name" placeholder="Ваше имя" required /><br />
-		<input type="text" name="phone" placeholder="Ваш телефон" required /><br />
-		<button>Отправить</button>
-	</form>
-	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-	<script src="common.js"></script>
+
+
+<!--Modal Windows thanks-->
+
+<div class="fade"></div>
+<div class="modal" id="mainModal">
+    <span class="modal-close mainModal-close">&times;</span>
+    <h1 class="thanks_h1">Спасибо за заявку!</h1>
+    <p class="thanks_p">Наши менеджеры свяжутся с вами в ближайшее время!</p>
+    <button class="btn-close modal-btn-close">Отлично!</button>
+</div>
+<!-- end Modal Windows thanks-->
+
+
+<!--Modal Windows type -->
+<div class="modal1" id="mainModal1">
+    <span class="modal1-close">&times;</span>
+    <form class="modal1_form">
+        <span class="modal1_form-h2">Заявка на заказ</span>
+        <span class="modal1_form-p">Введите свои контактные данные, и мы с вами свяжемся</span>
+        <div class="modal1_form_group">
+            <input type="text" class="modal1_form-input" placeholder="Введите ваше имя">
+            <input type="text" class="modal1_form-input modal1_form-input-phone" placeholder="Введите ваш телефон">
+            <textarea type="text" class="modal1_form-textarea" placeholder="Введите ваше сообщение"></textarea>
+        </div>
+        <button class="modal1_form-btn">Заказать</button>
+    </form>
+</div>
+<!--end Modal Windows type-->
+
+
+<header class="header">
+    <div class="container">
+        <div class="topLine">
+            <div class="header_logo">
+                <a href="index.html" class="header_logo_link">
+                    <img src="img/png/logo_header.png" alt="" class="header_logo-img">
+                    <span class="header_logo-name">ОАО «БРЕСТ-ВТИ»</span>
+                </a>
+            </div>
+            <div class="header_contact">
+                <a href="tel:+375(152)559243" class="header_contact-link">+375 (152) 55 92 43</a>
+                <button class="header_contact-btn">
+                    <svg class="header_contact-btn-icon" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M0.346826 4.07574C-0.328044 2.22719 0.0768779 1.00985 0.751748 0.378643C1.42662 -0.252569 1.65157 0.0179505 2.10149 0.378643C2.5514 0.784422 3.99112 2.1821 3.99112 2.1821C3.99112 2.1821 4.44104 2.49771 4.03611 3.03875C3.67618 3.62487 2.73137 4.03065 3.45123 4.8873C4.621 6.28498 5.70079 7.41214 7.14052 8.5393C7.99535 9.26069 8.40027 8.35896 8.94017 7.95318C9.48007 7.5474 9.84 7.99827 9.84 7.99827C9.84 7.99827 11.2347 9.44104 11.5947 9.8919C11.9546 10.3428 12.2695 10.6133 11.6397 11.2896C11.0098 11.9208 9.75001 12.3266 7.90537 11.6503C5.61081 10.7936 1.24665 6.42024 0.346826 4.07574ZM5.29587 1.95667C4.66599 1.95667 4.71098 1.05494 5.29587 1.05494C8.40027 1.00985 10.9648 3.57979 10.9648 6.73584C10.9648 7.32197 10.065 7.32197 10.065 6.73584C10.065 4.07574 7.90537 1.91158 5.29587 1.95667ZM6.06072 4.03065C5.47584 4.03065 5.47584 3.12892 6.06072 3.12892C7.59043 3.12892 8.85019 4.39134 8.85019 5.92429C8.85019 6.51041 7.95036 6.51041 7.95036 5.92429C7.95036 4.8873 7.09553 4.03065 6.06072 4.03065Z"
+                              fill="white"/>
+                    </svg>
+                    Заказать звонок
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="content">
+    <div class="banner" style="background-image: url(img/jpg/back1.jpg);">
+        <div class="container">
+            <h1 class="banner-h1">комплексные системы безопасности</h1>
+            <div class="banner_item"><span class="banner_item-span">вашего дома, офиса, производства</span></div>
+            <p class="banner-text">Мы предлагаем монтаж, модернизация, ремонты и обслуживание систем видеонаблюдения</p>
+            <button class="banner-btn">Оставить заявку</button>
+            <div class="banner_row">
+                <img src="img/png/banner_img.png" alt="" class="banner_row-img">
+                <div class="banner_cards">
+                    <div class="card">
+                        <img src="img/png/banner_icon1.png" alt="" class="card-img">
+                        <span class="card-span">Установка видеонаблюдения</span>
+                    </div>
+                    <div class="card">
+                        <img src="img/png/banner_icon2.png" alt="" class="card-img">
+                        <span class="card-span">Пожарная сигнализация</span>
+                    </div>
+                    <div class="card">
+                        <img src="img/png/banner_icon3.png" alt="" class="card-img">
+                        <span class="card-span">Системы контроля доступа</span>
+                    </div>
+                    <div class="card">
+                        <img src="img/png/banner_icon4.png" alt="" class="card-img">
+                        <span class="card-span">Локальные вычислительные сети</span>
+                    </div>
+                    <div class="card">
+                        <img src="img/png/banner_icon5.png" alt="" class="card-img">
+                        <span class="card-span">Охранная сигнализация</span>
+                    </div>
+                    <div class="card">
+                        <img src="img/png/banner_icon6.png" alt="" class="card-img">
+                        <span class="card-span">Телефонизация</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cooperation">
+        <div class="container">
+            <div class="cooperation_cards">
+                <div class="card">
+                    <div class="card_top">
+                        <img src="img/svg/icon1.svg" alt="" class="card_top-icon">
+                        <span class="card_top-h3">Физические лица</span>
+                    </div>
+                    <span class="card_title">Монтаж, модернизация, ремонты и обслуживание систем видеонаблюдения</span>
+                    <ul class="card_ul">
+                        <li class="card_li">частные дома</li>
+                        <li class="card_li">дачи</li>
+                        <li class="card_li">гаражные кооперативы</li>
+                    </ul>
+                    <span class="card_line"></span>
+                    <ul class="card_ul">
+                        <li class="card_li">бесплатное хранение видеоархива в облаке и удаленный просмотр со смартфона
+                        </li>
+                        <li class="card_li">демонстрация работы оборудования у нас в офисе</li>
+                        <li class="card_li">рассрочка платежа</li>
+                        <li class="card_li">скидка при полной оплате</li>
+                        <li class="card_li">гарантия на оборудование и работы</li>
+                        <li class="card_li">бесплатная техническая поддержка по телефону</li>
+                        <li class="card_li">работаем в Бресте и Брестском районе</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="card_top">
+                        <img src="img/svg/icon2.svg" alt="" class="card_top-icon">
+                        <span class="card_top-h3">Юридические лица</span>
+                    </div>
+                    <span class="card_title">Монтаж, модернизация, ремонты и обслуживание</span>
+                    <ul class="card_ul">
+                        <li class="card_li">систем видеонаблюдения</li>
+                        <li class="card_li">охранной и пожарной сигнализации</li>
+                        <li class="card_li">систем контроля доступа (электронная проходная, шлагбаум, электронная
+                            очередь)
+                        </li>
+                        <li class="card_li">локальных вычислительных сетей и телефонии</li>
+                    </ul>
+                    <span class="card_line"></span>
+                    <span class="card_title">Этапы работы с нами</span>
+                    <ul class="card_ul">
+                        <li class="card_li">звонок</li>
+                        <li class="card_li">консультации</li>
+                        <li class="card_li">выезд нашего специалиста на объект для обследования</li>
+                        <li class="card_li">получение предварительной сметы</li>
+                        <li class="card_li">заключение договора</li>
+                        <li class="card_li">выполнение</li>
+                        <li class="card_li">оплата</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cooperation_form">
+                <span class="cooperation_form-line"></span>
+                <div class="cooperation_form_info">
+                    <span class="cooperation_form_info-h3">Появились вопросы или нужна консультация?</span>
+                    <span class="cooperation_form_info-p">Просто позвоните нам: <a href="tel:+375(152)559243">+375 (152) 55 92 43</a> или оставьте заявку</span>
+                </div>
+                <button class="cooperation_form-btn">Оставить заявку</button>
+            </div>
+        </div>
+    </div>
+    <div class="advantages">
+        <div class="container">
+            <h2 class="advantages_h2">Имеем опыт установки оборудования</h2>
+            <span class="advantages_h3">Видеонаблюдение: NAVICAM, RVI, OPTIMUS, HIKVISION</span>
+            <div class="advantages_cards">
+                <img src="img/png/advan10.png" alt="" class="card_img">
+                <img src="img/png/advan9.png" alt="" class="card_img">
+                <img src="img/png/advan1.png" alt="" class="card_img">
+                <img src="img/png/advan2.png" alt="" class="card_img">
+            </div>
+            <span class="advantages_h3">Системы контроля доступа: PERKO</span>
+            <div class="advantages_cards center">
+                <img src="img/png/advan3.png" alt="" class="card_img card_img_center">
+                <img src="img/png/advan4.png" alt="" class="card_img card_img_center">
+                <img src="img/png/advan5.png" alt="" class="card_img card_img_center">
+                <img src="img/png/advan6.png" alt="" class="card_img card_img_center">
+                <img src="img/png/advan7.png" alt="" class="card_img card_img_center">
+                <img src="img/png/advan8.png" alt="" class="card_img card_img_center">
+            </div>
+            <span class="advantages_h3">Охранная и пожарная сигнализация: Болид, Бирюза, Приборы серии “А”</span>
+            <div class="advantages_cards bottom" >
+                <img src="img/png/advan11.png" alt="" class="card_img">
+            </div>
+        </div>
+    </div>
+    <div class="back_form">
+        <div class="container">
+            <div class="contact_form">
+                <form class="form" id="mainForm">
+                    <span class="form_h2"><span
+                            class="green">Оставьте заявку</span> на установку системы безопасности</span>
+                    <span class="form_p">Мы позвоним вам и согласуем удобное время приезда для установки системы безопасности</span>
+                    <img src="img/png/back_form.png" alt="" class="form_mob-img">
+                    <div class="form_box">
+                        <div class="form_box_column">
+                            <label for="name" class="form_box_column-label">Введите ваше имя </label>
+                            <input type="text" id="name" name="name" class="form_box_column-input form_box_column-input-name" placeholder="Андрей">
+                        </div>
+                        <div class="form_box_column">
+                            <label for="phone" class="form_box_column-label">Введите номер телефона</label>
+                            <input type="text" id="phone" name="phone" class="form_box_column-input form_box_column-input-phone"
+                                   placeholder="+375(__) ___-__-__">
+                        </div>
+                        <div class="form_box_column">
+                            <label for="address" class="form_box_column-label">Введите ваш адрес</label>
+                            <input type="text" id="address" name="address" class="form_box_column-input form_box_column-input-address" placeholder="ул. Светлая, 1">
+                        </div>
+                        <button class="form_box-btn" id="form_box-btn">Отправить заявку</button>
+                    </div>
+                </form>
+                <div class="right">
+                    <img src="img/png/back_form.png" alt="" class="right-img">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="back2" style="background-image: url(img/jpg/back2.jpg);">
+        <div class="portfolio">
+            <h2 class="portfolio-h2">Наши работы</h2>
+            <div class="portfolio_sl">
+                <div class="portfolio_slider">
+                    <img src="img/png/slider1.png" alt="" class="portfolio_slider-img">
+                </div>
+                <div class="portfolio_slider">
+                    <img src="img/png/slider2.png" alt="" class="portfolio_slider-img">
+                </div>
+                <div class="portfolio_slider">
+                    <img src="img/png/slider3.png" alt="" class="portfolio_slider-img">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="partners">
+                <h2 class="partners-h2">Наши заказчики</h2>
+                <span class="partners-h3">Заводы</span>
+                <div class="partners_cards">
+                    <div class="card">
+                        <img src="img/png/partnetr1.png" alt="" class="card-img">
+                    </div>
+                    <div class="card">
+                        <img src="img/png/partnetr2.png" alt="" class="card-img">
+                    </div>
+                    <div class="card">
+                        <img src="img/png/partnetr3.png" alt="" class="card-img">
+                    </div>
+                    <div class="card">
+                        <img src="img/png/partnetr4.png" alt="" class="card-img">
+                    </div>
+                    <div class="card">
+                        <img src="img/png/partnetr5.png" alt="" class="card-img">
+                    </div>
+                    <div class="card">
+                        <img src="img/png/partnetr6.png" alt="" class="card-img">
+                    </div>
+                    <div class="card">
+                        <img src="img/png/partnetr7.png" alt="" class="card-img">
+                    </div>
+                    <div class="card">
+                        <img src="img/png/partnetr8.png" alt="" class="card-img">
+                    </div>
+                    <div class="card">
+                        <img src="img/png/partnetr9.png" alt="" class="card-img">
+                    </div>
+                    <div class="card">
+                        <img src="img/png/partnetr10.png" alt="" class="card-img">
+                    </div>
+                    <div class="card">
+                        <img src="img/png/partnetr11.png" alt="" class="card-img">
+                    </div>
+                    <div class="card">
+                        <img src="img/png/partnetr12.png" alt="" class="card-img">
+                    </div>
+                    <div class="card">
+                        <img src="img/png/partnetr13.png" alt="" class="card-img">
+                    </div>
+                    <div class="card">
+                        <img src="img/png/partnetr14.png" alt="" class="card-img">
+                    </div>
+                    <div class="card">
+                        <img src="img/png/partnetr15.png" alt="" class="card-img">
+                    </div>
+                    <div class="card">
+                        <img src="img/png/partnetr16.png" alt="" class="card-img">
+                    </div>
+                    <div class="card">
+                        <img src="img/png/partnetr17.png" alt="" class="card-img">
+                    </div>
+                    <div class="card">
+                        <img src="img/png/partnetr18.png" alt="" class="card-img">
+                    </div>
+                </div>
+                <span class="partners-h3">Другие заказчики</span>
+                <div class="partners_cards">
+                    <div class="card">
+                        <img src="img/png/partnetr19.png" alt="" class="card-img">
+                    </div>
+                    <div class="card">
+                        <img src="img/png/partnetr20.png" alt="" class="card-img">
+                    </div>
+                    <div class="card">
+                        <img src="img/png/partnetr21.png" alt="" class="card-img">
+                    </div>
+                    <div class="card">
+                        <img src="img/png/partnetr22.png" alt="" class="card-img">
+                    </div>
+                    <div class="card">
+                        <img src="img/png/partnetr23.png" alt="" class="card-img">
+                    </div>
+                    <div class="card">
+                        <img src="img/png/partnetr24.png" alt="" class="card-img">
+                    </div>
+                </div>
+            </div>
+            <div class="partners_mob">
+                <h2 class="partners_mob-h2">Наши заказчики</h2>
+                <span class="partners_mob-h3">Заводы</span>
+                <div class="partners_mob_cards">
+                    <div class="card">
+                        <img src="img/png/partnetr1.png" alt="" class="card-img">
+                    </div>
+                    <div class="card">
+                        <img src="img/png/partnetr2.png" alt="" class="card-img">
+                    </div>
+                    <div class="card">
+                        <img src="img/png/partnetr3.png" alt="" class="card-img">
+                    </div>
+                    <div class="card">
+                        <img src="img/png/partnetr4.png" alt="" class="card-img">
+                    </div>
+                    <div class="card">
+                        <img src="img/png/partnetr5.png" alt="" class="card-img">
+                    </div>
+                    <div class="card">
+                        <img src="img/png/partnetr6.png" alt="" class="card-img">
+                    </div>
+                </div>
+                <div class="partners_mob_ul">
+                    <div class="partners_mob_cards">
+                        <div class="card">
+                            <img src="img/png/partnetr7.png" alt="" class="card-img">
+                        </div>
+                        <div class="card">
+                            <img src="img/png/partnetr8.png" alt="" class="card-img">
+                        </div>
+                        <div class="card">
+                            <img src="img/png/partnetr9.png" alt="" class="card-img">
+                        </div>
+                        <div class="card">
+                            <img src="img/png/partnetr10.png" alt="" class="card-img">
+                        </div>
+                        <div class="card">
+                            <img src="img/png/partnetr11.png" alt="" class="card-img">
+                        </div>
+                        <div class="card">
+                            <img src="img/png/partnetr12.png" alt="" class="card-img">
+                        </div>
+                        <div class="card">
+                            <img src="img/png/partnetr13.png" alt="" class="card-img">
+                        </div>
+                        <div class="card">
+                            <img src="img/png/partnetr14.png" alt="" class="card-img">
+                        </div>
+                        <div class="card">
+                            <img src="img/png/partnetr15.png" alt="" class="card-img">
+                        </div>
+                        <div class="card">
+                            <img src="img/png/partnetr16.png" alt="" class="card-img">
+                        </div>
+                        <div class="card">
+                            <img src="img/png/partnetr17.png" alt="" class="card-img">
+                        </div>
+                        <div class="card">
+                            <img src="img/png/partnetr18.png" alt="" class="card-img">
+                        </div>
+                    </div>
+                    <span class="partners_mob-h3">Другие заказчики</span>
+                    <div class="partners_mob_cards">
+                        <div class="card">
+                            <img src="img/png/partnetr19.png" alt="" class="card-img">
+                        </div>
+                        <div class="card">
+                            <img src="img/png/partnetr20.png" alt="" class="card-img">
+                        </div>
+                        <div class="card">
+                            <img src="img/png/partnetr21.png" alt="" class="card-img">
+                        </div>
+                        <div class="card">
+                            <img src="img/png/partnetr22.png" alt="" class="card-img">
+                        </div>
+                        <div class="card">
+                            <img src="img/png/partnetr23.png" alt="" class="card-img">
+                        </div>
+                        <div class="card">
+                            <img src="img/png/partnetr24.png" alt="" class="card-img">
+                        </div>
+                    </div>
+                </div>
+                <button class="partners_mob-btn">Показать всех заказчиков</button>
+            </div>
+            <div class="contact_group">
+                <div class="contact_info">
+                    <span class="contact_info-h3">Наши контакты</span>
+                    <div class="contact_info_row top">
+                        <img src="img/svg/phone.svg" alt="" class="left-icon">
+                        <div class="right">
+                            <a href="tel:+375292266042" class="right_link">+375 29 226 60 42
+                                <img src="img/svg/viber.svg" alt="" class="right_link-icon">
+                                <img src="img/svg/whatsapp.svg" alt="" class="right_link-icon">
+                            </a>
+                            <a href="tel:+375162466042" class="right-link">+375 (162) 46-60-42, отдел продаж</a>
+                            <a href="tel:+375292266042" class="right-link">+375 (29) 226-60-42, отдел продаж, МТС</a>
+                            <a href="tel:+375291760551" class="right-link">+375 (29) 176-05-51, отдел продаж, A1</a>
+                        </div>
+                    </div>
+                    <div class="contact_info_row">
+                        <img src="img/svg/location.svg" alt="" class="left-icon">
+                        <div class="right">
+                            <span class="right-address">Беларусь, Брестская область, г. Брест, ул.Светлая, 1</span>
+                        </div>
+                    </div>
+                    <div class="contact_info_row">
+                        <img src="img/svg/message.svg" alt="" class="left-icon">
+                        <div class="right">
+                            <a href="mailto:brestvti@tut.by" class="right-mail">brestvti@tut.by</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact_map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2450.7115518810765!2d23.709224286319593!3d52.10318098665378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47210955c0c1887d%3A0x7cf676b432b32cca!2z0KHQstC10YLQu9Cw0Y8g0YPQuy4gMSwg0JHRgNC10YHRgg!5e0!3m2!1sru!2sby!4v1598023967916!5m2!1sru!2sby"
+                            width="100%" height="100%"  style="border:20px solid #FFFFFF;" allowfullscreen=""
+                            aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="footer_top">
+        <div class="container">
+            <div class="footer_top_line">
+                <div class="footer_logo">
+                    <a href="index.html" class="footer_logo_link">
+                        <img src="img/png/logo_footer.png" alt="" class="footer_logo_img">
+                    </a>
+                    <span class="footer_logo-span">Юридическое лицо ОАО "Брест-ВТИ" Беларусь Брестская область Брест ул.Светлая, 1</span>
+                </div>
+                <div class="footer_link">
+                    <a href="tel:+375152559243" class="footer_link-phone">+375 (152) 55 92 43</a>
+                </div>
+                <div class="footer_social">
+                    <a href="" class="footer_social-link">
+                        <img src="img/svg/instagram.svg" alt="" class="footer_social-img">
+                    </a>
+                    <a href="" class="footer_social-link">
+                        <img src="img/svg/vk.svg" alt="" class="footer_social-img">
+                    </a>
+                    <a href="" class="footer_social-link">
+                        <img src="img/svg/facebook.svg" alt="" class="footer_social-img">
+                    </a>
+                </div>
+                <div class="footer_right">
+                    <button class="footer_right-btn">задать вопрос</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer_bottom">
+        <div class="container">
+            <div class="footer_bottom_line">
+                <span class="footer_bottom_line-span">© 2019 ОАО «Брест - ВТИ»</span>
+                <a href="https://internetsozdateli.by" class="footer_bottom_line-span link">Создание и продвижение сайтов - InternetSozdateli</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/jquery.form.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
