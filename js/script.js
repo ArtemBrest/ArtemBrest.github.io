@@ -109,7 +109,10 @@ $(document).ready(function () {
                             phone: phone,
                             address: address
                         }),
+
                     };
+                    alert(data);
+                    alert(url);
                     console.log(name + phone + address + "nen");
                     $(form).ajaxSubmit(options);
                 })
