@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Главная</title>
-
     <link rel="stylesheet" href="fonts/stylesheet.css">
-    <link rel="stylesheet" href="css/slick.css">
+
+    <link rel="stylesheet" href="css/lightgallery.min.css">
     <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slick.css">
+
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+<div class="menu-overlay"></div>
 
 <!--Modal Windows thanks-->
-
 <div class="fade"></div>
 <div class="modal" id="mainModal">
     <span class="modal-close mainModal-close">&times;</span>
@@ -41,455 +43,382 @@
 </div>
 <!--end Modal Windows type-->
 
-
-<header class="header">
+<header class="header" style="background-image:url(img/jpg/back1.jpg);">
     <div class="container">
-        <div class="topLine">
+        <div class="header_group">
             <div class="header_logo">
-                <a href="index.html" class="header_logo_link">
-                    <img src="img/png/logo_header.png" alt="" class="header_logo-img">
-                    <span class="header_logo-name">ОАО «БРЕСТ-ВТИ»</span>
+                <a href="index.html" class="header_logo-link">
+                    <img src="img/svg/logo.svg" alt="" class="header_logo-img">
                 </a>
             </div>
-            <div class="header_contact">
-                <a href="tel:+375(152)559243" class="header_contact-link">+375 (152) 55 92 43</a>
-                <button class="header_contact-btn">
-                    <svg class="header_contact-btn-icon" width="12" height="12" viewBox="0 0 12 12" fill="none"
-                         xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                              d="M0.346826 4.07574C-0.328044 2.22719 0.0768779 1.00985 0.751748 0.378643C1.42662 -0.252569 1.65157 0.0179505 2.10149 0.378643C2.5514 0.784422 3.99112 2.1821 3.99112 2.1821C3.99112 2.1821 4.44104 2.49771 4.03611 3.03875C3.67618 3.62487 2.73137 4.03065 3.45123 4.8873C4.621 6.28498 5.70079 7.41214 7.14052 8.5393C7.99535 9.26069 8.40027 8.35896 8.94017 7.95318C9.48007 7.5474 9.84 7.99827 9.84 7.99827C9.84 7.99827 11.2347 9.44104 11.5947 9.8919C11.9546 10.3428 12.2695 10.6133 11.6397 11.2896C11.0098 11.9208 9.75001 12.3266 7.90537 11.6503C5.61081 10.7936 1.24665 6.42024 0.346826 4.07574ZM5.29587 1.95667C4.66599 1.95667 4.71098 1.05494 5.29587 1.05494C8.40027 1.00985 10.9648 3.57979 10.9648 6.73584C10.9648 7.32197 10.065 7.32197 10.065 6.73584C10.065 4.07574 7.90537 1.91158 5.29587 1.95667ZM6.06072 4.03065C5.47584 4.03065 5.47584 3.12892 6.06072 3.12892C7.59043 3.12892 8.85019 4.39134 8.85019 5.92429C8.85019 6.51041 7.95036 6.51041 7.95036 5.92429C7.95036 4.8873 7.09553 4.03065 6.06072 4.03065Z"
-                              fill="white"/>
-                    </svg>
-                    Заказать звонок
-                </button>
+            <div class="header_left">
+                <div class="topLine">
+                    <div class="card">
+                        <img src="img/svg/message.svg" alt="" class="card-icon">
+                        <a href="mailto:mostootriad-58@mail.ru" class="card-link">mostootriad-58@mail.ru</a>
+                    </div>
+                    <div class="card">
+                        <img src="img/svg/location.svg" alt="" class="card-icon">
+                        <span class="card-span ">г. Брест, ул. Красногвардейская, 108/2</span>
+                    </div>
+                    <div class="card">
+                        <img src="img/svg/telephone.svg" alt="" class="card-icon">
+                        <a href="tel:+375298212212" class="card-link last">+375 (29) 8 212 212</a>
+                        <a href="" class="card-img-telegram">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M30 15C30 23.2875 23.2875 30 15 30C6.7125 30 0 23.2875 0 15C0 6.7125 6.7125 0 15 0C23.2875 0 30 6.7125 30 15Z" fill="#37474F"/>
+                                <path d="M12.25 21.2229C11.7625 21.2229 11.85 21.0354 11.675 20.5729L10.25 15.8729L19.1 10.3479L20.1375 10.6229L19.275 12.9729L12.25 21.2229Z" fill="#878787"/>
+                                <path d="M12.25 21.2229C12.625 21.2229 12.7875 21.0479 13 20.8479C13.325 20.5354 17.5 16.4729 17.5 16.4729L14.9375 15.8479L12.5625 17.3479L12.25 21.0979V21.2229Z" fill="white"/>
+                                <path d="M12.4994 17.3978L18.5494 21.8603C19.2369 22.2353 19.7369 22.0478 19.9119 21.2228L22.3744 9.62277C22.6244 8.61027 21.9869 8.16027 21.3244 8.46027L6.87443 14.0353C5.88693 14.4353 5.89943 14.9853 6.69943 15.2228L10.4119 16.3853L18.9994 10.9728C19.3994 10.7228 19.7744 10.8603 19.4744 11.1353L12.4994 17.3978Z" fill="#FEFFFF"/>
+                            </svg>
+                        </a>
+                        <a href="" class="card-img-viber">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="15" cy="15" r="15" fill="#37474F"/>
+                                <path d="M19.2755 14.1854C19.2913 12.3842 17.716 10.7331 15.7639 10.5048C15.7251 10.5003 15.6828 10.4935 15.638 10.4862C15.5414 10.4706 15.4415 10.4546 15.3406 10.4546C14.9405 10.4546 14.8336 10.7283 14.8054 10.8915C14.7781 11.0502 14.8042 11.1835 14.8829 11.2878C15.0154 11.4632 15.2486 11.4944 15.4358 11.5193C15.4907 11.5267 15.5425 11.5336 15.5858 11.543C17.3397 11.9247 17.9302 12.5246 18.2188 14.218C18.2259 14.2594 18.229 14.3104 18.2324 14.3644C18.245 14.5669 18.2712 14.988 18.7362 14.988H18.7362C18.7749 14.988 18.8165 14.9847 18.8598 14.9783C19.2928 14.9142 19.2792 14.5293 19.2727 14.3443C19.2709 14.2922 19.2691 14.243 19.2737 14.2102C19.2749 14.2019 19.2755 14.1936 19.2755 14.1854Z" fill="white"/>
+                                <path d="M15.2269 9.84397C15.2789 9.84762 15.3281 9.85111 15.369 9.85722C18.249 10.2885 19.5735 11.6173 19.9405 14.4437C19.9467 14.4918 19.9477 14.5504 19.9487 14.6124C19.9524 14.8332 19.9599 15.2926 20.4666 15.3021L20.4823 15.3023C20.6412 15.3023 20.7676 15.2556 20.858 15.1635C21.0157 15.0029 21.0047 14.7642 20.9958 14.5725C20.9936 14.5254 20.9916 14.4811 20.9921 14.4423C21.0287 11.5516 18.4591 8.93028 15.4933 8.8328C15.481 8.83241 15.4692 8.83304 15.4574 8.83467C15.4516 8.8355 15.4408 8.83653 15.4223 8.83653C15.3927 8.83653 15.3563 8.83403 15.3177 8.83149C15.2711 8.8284 15.2182 8.82483 15.1646 8.82483C14.6923 8.82483 14.6025 9.15174 14.591 9.34662C14.5645 9.797 15.0119 9.8287 15.2269 9.84397Z" fill="white"/>
+                                <path d="M19.801 18.097C19.7397 18.0515 19.6764 18.0043 19.6171 17.9578C19.3027 17.7114 18.9682 17.4843 18.6446 17.2646C18.5775 17.2191 18.5104 17.1735 18.4435 17.1278C18.029 16.8443 17.6565 16.7066 17.3044 16.7066C16.8303 16.7066 16.417 16.9617 16.0758 17.4647C15.9246 17.6877 15.7413 17.7961 15.5153 17.7961C15.3816 17.7961 15.2298 17.759 15.064 17.6857C13.7264 17.095 12.7712 16.1893 12.2249 14.9938C11.9609 14.416 12.0465 14.0383 12.5112 13.7309C12.7751 13.5565 13.2663 13.2319 13.2315 12.6101C13.1921 11.904 11.5922 9.77951 10.9182 9.53822C10.6328 9.43602 10.3329 9.43506 10.0253 9.53584C9.25041 9.78951 8.69432 10.235 8.41704 10.8241C8.14908 11.3933 8.16118 12.0616 8.45203 12.7569C9.29286 14.767 10.475 16.5195 11.9658 17.9658C13.425 19.3815 15.2185 20.5412 17.2964 21.4124C17.4837 21.4909 17.6801 21.5337 17.8236 21.5649C17.8725 21.5757 17.9147 21.5848 17.9454 21.593C17.9623 21.5975 17.9798 21.5999 17.9973 21.6001L18.0137 21.6001C18.0137 21.6001 18.0137 21.6001 18.0138 21.6001C18.9911 21.6001 20.1645 20.7305 20.5249 19.739C20.8407 18.8709 20.2642 18.4418 19.801 18.097Z" fill="white"/>
+                                <path d="M15.6604 12.1402C15.4931 12.1443 15.1449 12.1527 15.0227 12.4981C14.9655 12.6595 14.9724 12.7996 15.043 12.9146C15.1468 13.0833 15.3455 13.135 15.5263 13.1633C16.1819 13.2658 16.5185 13.6188 16.5859 14.2742C16.6172 14.5798 16.8285 14.7932 17.0998 14.7932H17.0999C17.1199 14.7932 17.1404 14.7921 17.1608 14.7896C17.4872 14.7518 17.6454 14.5183 17.6311 14.0957C17.6363 13.6547 17.3993 13.154 16.9961 12.7551C16.5916 12.3551 16.104 12.1297 15.6604 12.1402Z" fill="white"/>
+                            </svg>
+                        </a>
+                        <a href="" class="card-img-whatsapp">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="15" cy="15" r="15" fill="#37474F"/>
+                                <path d="M23.3992 14.4917C23.3992 18.8498 19.8388 22.3827 15.4458 22.3827C14.0517 22.3827 12.7422 22.0262 11.6022 21.4018L7.19922 22.8001L8.63449 18.565C7.91078 17.3765 7.49399 15.9808 7.49399 14.4911C7.49451 10.133 11.0539 6.60007 15.4469 6.60007C19.8393 6.60112 23.3992 10.1336 23.3992 14.4917ZM15.4453 7.85837C11.7586 7.85837 8.75968 10.8346 8.75968 14.4933C8.75968 15.9449 9.233 17.2888 10.0333 18.3823L9.19866 20.8455L11.767 20.0294C12.8236 20.7224 14.0877 21.126 15.4453 21.126C19.132 21.126 22.1319 18.1504 22.1319 14.4917C22.133 10.8346 19.1325 7.85837 15.4453 7.85837ZM19.4621 16.3094C19.4125 16.2296 19.2825 16.181 19.0881 16.0838C18.8943 15.9866 17.9344 15.5191 17.7564 15.4557C17.5768 15.3908 17.4468 15.358 17.3169 15.5519C17.1885 15.7457 16.8145 16.181 16.6999 16.311C16.5863 16.4404 16.4727 16.4568 16.2778 16.3612C16.0829 16.2629 15.4543 16.0601 14.7094 15.4013C14.1299 14.8879 13.7385 14.2555 13.6254 14.0617C13.5108 13.8683 13.6138 13.7637 13.7105 13.6676C13.7977 13.5804 13.9054 13.4415 14.0031 13.3279C14.1009 13.2154 14.1331 13.1356 14.1981 13.0062C14.262 12.8768 14.2298 12.7643 14.1817 12.6665C14.1331 12.5694 13.7438 11.6185 13.5805 11.2313C13.4184 10.8446 13.2562 10.9085 13.1421 10.9085C13.0285 10.9085 12.8986 10.8927 12.7686 10.8927C12.6387 10.8927 12.4274 10.9397 12.2493 11.1336C12.0713 11.3274 11.5674 11.7949 11.5674 12.7468C11.5674 13.6998 12.2652 14.6185 12.3629 14.7473C12.4612 14.8757 13.7121 16.8931 15.6936 17.6675C17.6761 18.4414 17.6761 18.1831 18.0332 18.1504C18.3914 18.1176 19.1869 17.6829 19.3486 17.2317C19.5113 16.7785 19.5113 16.3902 19.4621 16.3094Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="bottomLine">
+                    <div class="bottomLine_menu">
+                        <ul class="bottomLine_menu_ul">
+                            <li class="bottomLine_menu_li"><a href="price.html" class="bottomLine_menu_link">Продажа бетона</a></li>
+                            <li class="bottomLine_menu_li"><a href="services.html" class="bottomLine_menu_link">Наши услуги</a></li>
+                            <li class="bottomLine_menu_li"><a href="company.html" class="bottomLine_menu_link">О компании</a></li>
+                            <li class="bottomLine_menu_li"><a href="contact.html" class="bottomLine_menu_link">Контакты</a></li>
+                            <li class="bottomLine_menu_li"><a href="" class="bottomLine_menu_link">Вакансии</a></li>
+                        </ul>
+                    </div>
+                    <button class="bottomLine-btn">Заказать звонок</button>
+                </div>
             </div>
+            <div class="header-line"></div>
+        </div>
+    </div>
+    <div class="header_mobile">
+        <div class="container">
+            <div class="header_mobile_top">
+                <div class="header_mobile_top_block">
+                    <span class="header_mobile_top-icon"></span>
+                </div>
+                <span class="header_mobile_top-text">
+                Филиал «Мостоотряд № 58» ОАО «Мостострой»
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="header_mobile_menu">
+        <ul class="header_mobile_menu_ul">
+            <li class="header_mobile_menu_li"><a href="price.html" class="header_mobile_menu_link">Продажа бетона</a></li>
+            <li class="header_mobile_menu_li"><a href="services.html" class="header_mobile_menu_link">Наши услуги</a></li>
+            <li class="header_mobile_menu_li"><a href="company.html" class="header_mobile_menu_link">О компании</a></li>
+            <li class="header_mobile_menu_li"><a href="contact.html" class="header_mobile_menu_link">Контакты</a></li>
+            <li class="header_mobile_menu_li"><a href="" class="header_mobile_menu_link">Вакансии</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="header_info">
+            <span class="header_info-h1">Выполнение <br> строительно-монтажных работ</span>
+            <span class="header_info-h2">Филиал «Мостоотряд № 58» ОАО «Мостострой»</span>
+            <span class="header_info-p">Специализированная строительная организация, которая уже много лет предоставляет высококачественные услуги в сфере строительства, ремонта, реконструкции мостовых и гидротехнических сооружений на территории Беларуси.</span>
+            <button class="header_info-btn">Оставить заявку</button>
         </div>
     </div>
 </header>
-
 <div class="content">
-    <div class="banner" style="background-image: url(img/jpg/back1.jpg);">
+    <div class="container">
+        <div class="about">
+            <div class="about_left">
+                <img src="img/jpg/about.jpg" alt="" class="about_left-img">
+            </div>
+            <div class="about_right">
+                <h1>Филиал «Мостоотряд № 58» ОАО «Мостострой»</h1>
+                <span class="about_right-line"></span>
+                <p>Филиал "Мостоотряд № 58" ОАО "Мостострой" - специализированная строительная организация, которая уже
+                    много лет предоставляет высококачественные услуги в сфере строительства, ремонта, реконструкции
+                    мостовых и гидротехнических сооружений на территории Беларуси.</p>
+                <p>Мостоотряд №58 был создан в 1975 году на базе Мостопоезда-811. В 2017 году по решению акционеров стал
+                    частью ОАО "Мостострой".</p>
+                <button class="about_right-btn">Подробнее о компании</button>
+            </div>
+        </div>
+    </div>
+    <div class="service">
         <div class="container">
-            <h1 class="banner-h1">комплексные системы безопасности</h1>
-            <div class="banner_item"><span class="banner_item-span">вашего дома, офиса, производства</span></div>
-            <p class="banner-text">Мы предлагаем монтаж, модернизация, ремонты и обслуживание систем видеонаблюдения</p>
-            <button class="banner-btn">Оставить заявку</button>
-            <div class="banner_row">
-                <img src="img/png/banner_img.png" alt="" class="banner_row-img">
-                <div class="banner_cards">
+            <h2 class="service_h2">Наши услуги</h2>
+            <span class="service-line"></span>
+            <div class="service_cards">
+                <a href="" class="card-link">
                     <div class="card">
-                        <img src="img/png/banner_icon1.png" alt="" class="card-img">
-                        <span class="card-span">Установка видеонаблюдения</span>
+                        <div class="card_top">
+                            <img src="img/jpg/service1.jpg" alt="" class="card_top-img">
+                        </div>
+                        <div class="card_content">
+                            <p class="card_content-h3">Товарный бетон и бетонная смесь с доставкой</p>
+                            <p class="card_content-p">У нас своя техника, от миксеров до бетонасосов, готовых к работе в
+                                любое время суток</p>
+                        </div>
                     </div>
+                </a>
+                <a href="" class="card-link">
                     <div class="card">
-                        <img src="img/png/banner_icon2.png" alt="" class="card-img">
-                        <span class="card-span">Пожарная сигнализация</span>
+                        <div class="card_top">
+                            <img src="img/jpg/service2.jpg" alt="" class="card_top-img">
+                        </div>
+                        <div class="card_content">
+                            <p class="card_content-h3">Аренда строительной техники</p>
+                            <p class="card_content-p">У нас своя техника, от миксеров до бетонасосов, готовых к работе в
+                                любое время суток</p>
+                        </div>
                     </div>
+                </a>
+                <a href="" class="card-link">
                     <div class="card">
-                        <img src="img/png/banner_icon3.png" alt="" class="card-img">
-                        <span class="card-span">Системы контроля доступа</span>
+                        <div class="card_top">
+                            <img src="img/jpg/service3.jpg" alt="" class="card_top-img">
+                        </div>
+                        <div class="card_content">
+                            <p class="card_content-h3">Изготовление железобетонных и бетонных изделий</p>
+                            <p class="card_content-p">У нас своя техника, от миксеров до бетонасосов, готовых к работе в
+                                любое время суток</p>
+                        </div>
                     </div>
+                </a>
+                <a href="" class="card-link">
                     <div class="card">
-                        <img src="img/png/banner_icon4.png" alt="" class="card-img">
-                        <span class="card-span">Локальные вычислительные сети</span>
+                        <div class="card_top">
+                            <img src="img/jpg/service4.jpg" alt="" class="card_top-img">
+                        </div>
+                        <div class="card_content">
+                            <p class="card_content-h3">Изготовление металлоконструкций</p>
+                            <p class="card_content-p">У нас своя техника, от миксеров до бетонасосов, готовых к работе в
+                                любое время суток</p>
+                        </div>
                     </div>
+                </a>
+                <a href="" class="card-link">
                     <div class="card">
-                        <img src="img/png/banner_icon5.png" alt="" class="card-img">
-                        <span class="card-span">Охранная сигнализация</span>
+                        <div class="card_top">
+                            <img src="img/jpg/service5.jpg" alt="" class="card_top-img">
+                        </div>
+                        <div class="card_content">
+                            <p class="card_content-h3">Товарный бетон и бетонная смесь с доставкой</p>
+                            <p class="card_content-p">У нас своя техника, от миксеров до бетонасосов, готовых к работе в
+                                любое время суток</p>
+                        </div>
                     </div>
-                    <div class="card">
-                        <img src="img/png/banner_icon6.png" alt="" class="card-img">
-                        <span class="card-span">Телефонизация</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="banner_price">
+        <div class="container">
+            <h2 class="banner_price-h2">Купить бетон с доставкой в Бресте и Брестской области</h2>
+            <div class="banner_price_line">
+                <p class="banner_price-p">*Возможна рассрочка</p>
+                <button class="banner_price-btn">Подробнее</button>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio">
+        <div class="container">
+            <h2 class="portfolio-h2">Галерея наших объектов</h2>
+            <span class="portfolio-line"></span>
+            <div class="portfolio_gallery" id="portfolio_gallery">
+                <div class="portfolio_cards">
+                    <div class="card" data-src="img/png/portfolio1.png">
+                        <img src="img/png/portfolio1.png" alt="" class="card-img">
                     </div>
+                    <div class="card" data-src="img/png/portfolio2.png">
+                        <img src="img/png/portfolio2.png" alt="" class="card-img">
+                    </div>
+                    <div class="card" data-src="img/png/portfolio3.png">
+                        <img src="img/png/portfolio3.png" alt="" class="card-img">
+                    </div>
+                    <div class="card" data-src="img/png/portfolio4.png">
+                        <img src="img/png/portfolio4.png" alt="" class="card-img">
+                    </div>
+                    <div class="card" data-src="img/png/portfolio5.png">
+                        <img src="img/png/portfolio5.png" alt="" class="card-img">
+                    </div>
+                    <div class="card" data-src="img/png/portfolio6.png">
+                        <img src="img/png/portfolio6.png" alt="" class="card-img">
+                    </div>
+                </div>
+                <div class="portfolio_cards_other">
+                    <div class="portfolio_cards" >
+                        <div class="card" data-src="img/png/portfolio1.png">
+                            <img src="img/png/portfolio1.png" alt=""class="card-img">
+                        </div>
+                        <div class="card" data-src="img/png/portfolio2.png">
+                            <img src="img/png/portfolio2.png" alt="" class="card-img">
+                        </div>
+                        <div class="card" data-src="img/png/portfolio3.png">
+                            <img src="img/png/portfolio3.png" alt=""class="card-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="portfolio-btn">Показать больше объектов</button>
+        </div>
+    </div>
+    <div class="document">
+        <div class="container">
+            <h2 class="document-h2">Наши сертификаты качества</h2>
+            <span class="document-line"></span>
+            <div class="document_group">
+                <div class="document_box" id="document_box">
+                    <div class="item" data-src="img/document1.jpg">Сертификат основания, фундаменты</div>
+                    <div class="item" data-src="img/document2.jpg">Сертификат СТБ</div>
+                    <div class="item" data-src="img/document3.jpg">Сертификат Бетоны</div>
+                    <div class="item" data-src="img/document4.jpg">Сертификат общестроительных работ</div>
+                    <div class="item" data-src="img/document5.jpg">Свидетельство о техкомпетентности</div>
+                    <div class="item" data-src="img/document3.jpg">Свидетельство о гос. регистрации</div>
+                    <div class="item" data-src="img/document3.jpg">Свидетельство о гос. регистрации</div>
+                    <div class="item" data-src="img/document3.jpg">Свидетельство о гос. регистрации</div>
+                </div>
+                <div class="document_item">
+                    <img src="img/png/document.png" alt="" class="document_item-img">
                 </div>
             </div>
         </div>
     </div>
-    <div class="cooperation">
+    <div class="contact">
         <div class="container">
-            <div class="cooperation_cards">
-                <div class="card">
-                    <div class="card_top">
-                        <img src="img/svg/icon1.svg" alt="" class="card_top-icon">
-                        <span class="card_top-h3">Физические лица</span>
-                    </div>
-                    <span class="card_title">Монтаж, модернизация, ремонты и обслуживание систем видеонаблюдения</span>
-                    <ul class="card_ul">
-                        <li class="card_li">частные дома</li>
-                        <li class="card_li">дачи</li>
-                        <li class="card_li">гаражные кооперативы</li>
-                    </ul>
-                    <span class="card_line"></span>
-                    <ul class="card_ul">
-                        <li class="card_li">бесплатное хранение видеоархива в облаке и удаленный просмотр со смартфона
-                        </li>
-                        <li class="card_li">демонстрация работы оборудования у нас в офисе</li>
-                        <li class="card_li">рассрочка платежа</li>
-                        <li class="card_li">скидка при полной оплате</li>
-                        <li class="card_li">гарантия на оборудование и работы</li>
-                        <li class="card_li">бесплатная техническая поддержка по телефону</li>
-                        <li class="card_li">работаем в Бресте и Брестском районе</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <div class="card_top">
-                        <img src="img/svg/icon2.svg" alt="" class="card_top-icon">
-                        <span class="card_top-h3">Юридические лица</span>
-                    </div>
-                    <span class="card_title">Монтаж, модернизация, ремонты и обслуживание</span>
-                    <ul class="card_ul">
-                        <li class="card_li">систем видеонаблюдения</li>
-                        <li class="card_li">охранной и пожарной сигнализации</li>
-                        <li class="card_li">систем контроля доступа (электронная проходная, шлагбаум, электронная
-                            очередь)
-                        </li>
-                        <li class="card_li">локальных вычислительных сетей и телефонии</li>
-                    </ul>
-                    <span class="card_line"></span>
-                    <span class="card_title">Этапы работы с нами</span>
-                    <ul class="card_ul">
-                        <li class="card_li">звонок</li>
-                        <li class="card_li">консультации</li>
-                        <li class="card_li">выезд нашего специалиста на объект для обследования</li>
-                        <li class="card_li">получение предварительной сметы</li>
-                        <li class="card_li">заключение договора</li>
-                        <li class="card_li">выполнение</li>
-                        <li class="card_li">оплата</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="cooperation_form">
-                <span class="cooperation_form-line"></span>
-                <div class="cooperation_form_info">
-                    <span class="cooperation_form_info-h3">Появились вопросы или нужна консультация?</span>
-                    <span class="cooperation_form_info-p">Просто позвоните нам: <a href="tel:+375(152)559243">+375 (152) 55 92 43</a> или оставьте заявку</span>
-                </div>
-                <button class="cooperation_form-btn">Оставить заявку</button>
-            </div>
-        </div>
-    </div>
-    <div class="advantages">
-        <div class="container">
-            <h2 class="advantages_h2">Имеем опыт установки оборудования</h2>
-            <span class="advantages_h3">Видеонаблюдение: NAVICAM, RVI, OPTIMUS, HIKVISION</span>
-            <div class="advantages_cards">
-                <img src="img/png/advan10.png" alt="" class="card_img">
-                <img src="img/png/advan9.png" alt="" class="card_img">
-                <img src="img/png/advan1.png" alt="" class="card_img">
-                <img src="img/png/advan2.png" alt="" class="card_img">
-            </div>
-            <span class="advantages_h3">Системы контроля доступа: PERKO</span>
-            <div class="advantages_cards center">
-                <img src="img/png/advan3.png" alt="" class="card_img card_img_center">
-                <img src="img/png/advan4.png" alt="" class="card_img card_img_center">
-                <img src="img/png/advan5.png" alt="" class="card_img card_img_center">
-                <img src="img/png/advan6.png" alt="" class="card_img card_img_center">
-                <img src="img/png/advan7.png" alt="" class="card_img card_img_center">
-                <img src="img/png/advan8.png" alt="" class="card_img card_img_center">
-            </div>
-            <span class="advantages_h3">Охранная и пожарная сигнализация: Болид, Бирюза, Приборы серии “А”</span>
-            <div class="advantages_cards bottom" >
-                <img src="img/png/advan11.png" alt="" class="card_img">
-            </div>
-        </div>
-    </div>
-    <div class="back_form">
-        <div class="container">
-            <div class="contact_form">
-                <form class="form" id="mainForm">
-                    <span class="form_h2"><span
-                            class="green">Оставьте заявку</span> на установку системы безопасности</span>
-                    <span class="form_p">Мы позвоним вам и согласуем удобное время приезда для установки системы безопасности</span>
-                    <img src="img/png/back_form.png" alt="" class="form_mob-img">
-                    <div class="form_box">
-                        <div class="form_box_column">
-                            <label for="name" class="form_box_column-label">Введите ваше имя </label>
-                            <input type="text" id="name" name="name" class="form_box_column-input form_box_column-input-name" placeholder="Андрей">
-                        </div>
-                        <div class="form_box_column">
-                            <label for="phone" class="form_box_column-label">Введите номер телефона</label>
-                            <input type="text" id="phone" name="phone" class="form_box_column-input form_box_column-input-phone"
-                                   placeholder="+375(__) ___-__-__">
-                        </div>
-                        <div class="form_box_column">
-                            <label for="address" class="form_box_column-label">Введите ваш адрес</label>
-                            <input type="text" id="address" name="address" class="form_box_column-input form_box_column-input-address" placeholder="ул. Светлая, 1">
-                        </div>
-                        <button class="form_box-btn" id="form_box-btn">Отправить заявку</button>
-                    </div>
-                </form>
-                <div class="right">
-                    <img src="img/png/back_form.png" alt="" class="right-img">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="back2" style="background-image: url(img/jpg/back2.jpg);">
-        <div class="portfolio">
-            <h2 class="portfolio-h2">Наши работы</h2>
-            <div class="portfolio_sl">
-                <div class="portfolio_slider">
-                    <img src="img/png/slider1.png" alt="" class="portfolio_slider-img">
-                </div>
-                <div class="portfolio_slider">
-                    <img src="img/png/slider2.png" alt="" class="portfolio_slider-img">
-                </div>
-                <div class="portfolio_slider">
-                    <img src="img/png/slider3.png" alt="" class="portfolio_slider-img">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="partners">
-                <h2 class="partners-h2">Наши заказчики</h2>
-                <span class="partners-h3">Заводы</span>
-                <div class="partners_cards">
-                    <div class="card">
-                        <img src="img/png/partnetr1.png" alt="" class="card-img">
-                    </div>
-                    <div class="card">
-                        <img src="img/png/partnetr2.png" alt="" class="card-img">
-                    </div>
-                    <div class="card">
-                        <img src="img/png/partnetr3.png" alt="" class="card-img">
-                    </div>
-                    <div class="card">
-                        <img src="img/png/partnetr4.png" alt="" class="card-img">
-                    </div>
-                    <div class="card">
-                        <img src="img/png/partnetr5.png" alt="" class="card-img">
-                    </div>
-                    <div class="card">
-                        <img src="img/png/partnetr6.png" alt="" class="card-img">
-                    </div>
-                    <div class="card">
-                        <img src="img/png/partnetr7.png" alt="" class="card-img">
-                    </div>
-                    <div class="card">
-                        <img src="img/png/partnetr8.png" alt="" class="card-img">
-                    </div>
-                    <div class="card">
-                        <img src="img/png/partnetr9.png" alt="" class="card-img">
-                    </div>
-                    <div class="card">
-                        <img src="img/png/partnetr10.png" alt="" class="card-img">
-                    </div>
-                    <div class="card">
-                        <img src="img/png/partnetr11.png" alt="" class="card-img">
-                    </div>
-                    <div class="card">
-                        <img src="img/png/partnetr12.png" alt="" class="card-img">
-                    </div>
-                    <div class="card">
-                        <img src="img/png/partnetr13.png" alt="" class="card-img">
-                    </div>
-                    <div class="card">
-                        <img src="img/png/partnetr14.png" alt="" class="card-img">
-                    </div>
-                    <div class="card">
-                        <img src="img/png/partnetr15.png" alt="" class="card-img">
-                    </div>
-                    <div class="card">
-                        <img src="img/png/partnetr16.png" alt="" class="card-img">
-                    </div>
-                    <div class="card">
-                        <img src="img/png/partnetr17.png" alt="" class="card-img">
-                    </div>
-                    <div class="card">
-                        <img src="img/png/partnetr18.png" alt="" class="card-img">
-                    </div>
-                </div>
-                <span class="partners-h3">Другие заказчики</span>
-                <div class="partners_cards">
-                    <div class="card">
-                        <img src="img/png/partnetr19.png" alt="" class="card-img">
-                    </div>
-                    <div class="card">
-                        <img src="img/png/partnetr20.png" alt="" class="card-img">
-                    </div>
-                    <div class="card">
-                        <img src="img/png/partnetr21.png" alt="" class="card-img">
-                    </div>
-                    <div class="card">
-                        <img src="img/png/partnetr22.png" alt="" class="card-img">
-                    </div>
-                    <div class="card">
-                        <img src="img/png/partnetr23.png" alt="" class="card-img">
-                    </div>
-                    <div class="card">
-                        <img src="img/png/partnetr24.png" alt="" class="card-img">
-                    </div>
-                </div>
-            </div>
-            <div class="partners_mob">
-                <h2 class="partners_mob-h2">Наши заказчики</h2>
-                <span class="partners_mob-h3">Заводы</span>
-                <div class="partners_mob_cards">
-                    <div class="card">
-                        <img src="img/png/partnetr1.png" alt="" class="card-img">
-                    </div>
-                    <div class="card">
-                        <img src="img/png/partnetr2.png" alt="" class="card-img">
-                    </div>
-                    <div class="card">
-                        <img src="img/png/partnetr3.png" alt="" class="card-img">
-                    </div>
-                    <div class="card">
-                        <img src="img/png/partnetr4.png" alt="" class="card-img">
-                    </div>
-                    <div class="card">
-                        <img src="img/png/partnetr5.png" alt="" class="card-img">
-                    </div>
-                    <div class="card">
-                        <img src="img/png/partnetr6.png" alt="" class="card-img">
-                    </div>
-                </div>
-                <div class="partners_mob_ul">
-                    <div class="partners_mob_cards">
-                        <div class="card">
-                            <img src="img/png/partnetr7.png" alt="" class="card-img">
-                        </div>
-                        <div class="card">
-                            <img src="img/png/partnetr8.png" alt="" class="card-img">
-                        </div>
-                        <div class="card">
-                            <img src="img/png/partnetr9.png" alt="" class="card-img">
-                        </div>
-                        <div class="card">
-                            <img src="img/png/partnetr10.png" alt="" class="card-img">
-                        </div>
-                        <div class="card">
-                            <img src="img/png/partnetr11.png" alt="" class="card-img">
-                        </div>
-                        <div class="card">
-                            <img src="img/png/partnetr12.png" alt="" class="card-img">
-                        </div>
-                        <div class="card">
-                            <img src="img/png/partnetr13.png" alt="" class="card-img">
-                        </div>
-                        <div class="card">
-                            <img src="img/png/partnetr14.png" alt="" class="card-img">
-                        </div>
-                        <div class="card">
-                            <img src="img/png/partnetr15.png" alt="" class="card-img">
-                        </div>
-                        <div class="card">
-                            <img src="img/png/partnetr16.png" alt="" class="card-img">
-                        </div>
-                        <div class="card">
-                            <img src="img/png/partnetr17.png" alt="" class="card-img">
-                        </div>
-                        <div class="card">
-                            <img src="img/png/partnetr18.png" alt="" class="card-img">
-                        </div>
-                    </div>
-                    <span class="partners_mob-h3">Другие заказчики</span>
-                    <div class="partners_mob_cards">
-                        <div class="card">
-                            <img src="img/png/partnetr19.png" alt="" class="card-img">
-                        </div>
-                        <div class="card">
-                            <img src="img/png/partnetr20.png" alt="" class="card-img">
-                        </div>
-                        <div class="card">
-                            <img src="img/png/partnetr21.png" alt="" class="card-img">
-                        </div>
-                        <div class="card">
-                            <img src="img/png/partnetr22.png" alt="" class="card-img">
-                        </div>
-                        <div class="card">
-                            <img src="img/png/partnetr23.png" alt="" class="card-img">
-                        </div>
-                        <div class="card">
-                            <img src="img/png/partnetr24.png" alt="" class="card-img">
-                        </div>
-                    </div>
-                </div>
-                <button class="partners_mob-btn">Показать всех заказчиков</button>
-            </div>
+            <h2 class="contact-h2">Наши контакты</h2>
+            <span class="contact-line"></span>
             <div class="contact_group">
                 <div class="contact_info">
-                    <span class="contact_info-h3">Наши контакты</span>
-                    <div class="contact_info_row top">
-                        <img src="img/svg/phone.svg" alt="" class="left-icon">
-                        <div class="right">
-                            <a href="tel:+375292266042" class="right_link">+375 29 226 60 42
-                                <img src="img/svg/viber.svg" alt="" class="right_link-icon">
-                                <img src="img/svg/whatsapp.svg" alt="" class="right_link-icon">
-                            </a>
-                            <a href="tel:+375162466042" class="right-link">+375 (162) 46-60-42, отдел продаж</a>
-                            <a href="tel:+375292266042" class="right-link">+375 (29) 226-60-42, отдел продаж, МТС</a>
-                            <a href="tel:+375291760551" class="right-link">+375 (29) 176-05-51, отдел продаж, A1</a>
-                        </div>
-                    </div>
+                    <p class="contact_info-p">Если у вас есть какие-либо вопросы о нас или о том, как мы можем помочь
+                        вам, свяжитесь с нами напрямую, заполнивь нашу короткую форму обратной связи</p>
                     <div class="contact_info_row">
-                        <img src="img/svg/location.svg" alt="" class="left-icon">
-                        <div class="right">
-                            <span class="right-address">Беларусь, Брестская область, г. Брест, ул.Светлая, 1</span>
+                        <a href="tel:84957214695" class="contact_info_row-phone">8(495) 721 46 95</a>
+                        <a href="" class="contact_info_row-viber">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="15" cy="15" r="15" fill="#7B519D"/>
+                                <path d="M19.2755 14.1854C19.2913 12.3842 17.716 10.7331 15.7639 10.5048C15.7251 10.5003 15.6828 10.4935 15.638 10.4862C15.5414 10.4706 15.4415 10.4546 15.3406 10.4546C14.9405 10.4546 14.8336 10.7283 14.8054 10.8915C14.7781 11.0502 14.8042 11.1835 14.8829 11.2878C15.0154 11.4632 15.2486 11.4944 15.4358 11.5193C15.4907 11.5267 15.5425 11.5336 15.5858 11.543C17.3397 11.9247 17.9302 12.5246 18.2188 14.218C18.2259 14.2594 18.229 14.3104 18.2324 14.3644C18.245 14.5669 18.2712 14.988 18.7362 14.988H18.7362C18.7749 14.988 18.8165 14.9847 18.8598 14.9783C19.2928 14.9142 19.2792 14.5293 19.2727 14.3443C19.2709 14.2922 19.2691 14.243 19.2737 14.2102C19.2749 14.2019 19.2755 14.1936 19.2755 14.1854Z"
+                                      fill="white"/>
+                                <path d="M15.2269 9.84397C15.2789 9.84762 15.3281 9.85111 15.369 9.85722C18.249 10.2885 19.5735 11.6173 19.9405 14.4437C19.9467 14.4918 19.9477 14.5504 19.9487 14.6124C19.9524 14.8332 19.9599 15.2926 20.4666 15.3021L20.4823 15.3023C20.6412 15.3023 20.7676 15.2556 20.858 15.1635C21.0157 15.0029 21.0047 14.7642 20.9958 14.5725C20.9936 14.5254 20.9916 14.4811 20.9921 14.4423C21.0287 11.5516 18.4591 8.93028 15.4933 8.8328C15.481 8.83241 15.4692 8.83304 15.4574 8.83467C15.4516 8.8355 15.4408 8.83653 15.4223 8.83653C15.3927 8.83653 15.3563 8.83403 15.3177 8.83149C15.2711 8.8284 15.2182 8.82483 15.1646 8.82483C14.6923 8.82483 14.6025 9.15174 14.591 9.34662C14.5645 9.797 15.0119 9.8287 15.2269 9.84397Z"
+                                      fill="white"/>
+                                <path d="M19.801 18.097C19.7397 18.0515 19.6764 18.0043 19.6171 17.9578C19.3027 17.7114 18.9682 17.4843 18.6446 17.2646C18.5775 17.2191 18.5104 17.1735 18.4435 17.1278C18.029 16.8443 17.6565 16.7066 17.3044 16.7066C16.8303 16.7066 16.417 16.9617 16.0758 17.4647C15.9246 17.6877 15.7413 17.7961 15.5153 17.7961C15.3816 17.7961 15.2298 17.759 15.064 17.6857C13.7264 17.095 12.7712 16.1893 12.2249 14.9938C11.9609 14.416 12.0465 14.0383 12.5112 13.7309C12.7751 13.5565 13.2663 13.2319 13.2315 12.6101C13.1921 11.904 11.5922 9.77951 10.9182 9.53822C10.6328 9.43602 10.3329 9.43506 10.0253 9.53584C9.25041 9.78951 8.69432 10.235 8.41704 10.8241C8.14908 11.3933 8.16118 12.0616 8.45203 12.7569C9.29286 14.767 10.475 16.5195 11.9658 17.9658C13.425 19.3815 15.2185 20.5412 17.2964 21.4124C17.4837 21.4909 17.6801 21.5337 17.8236 21.5649C17.8725 21.5757 17.9147 21.5848 17.9454 21.593C17.9623 21.5975 17.9798 21.5999 17.9973 21.6001L18.0137 21.6001C18.0137 21.6001 18.0137 21.6001 18.0138 21.6001C18.9911 21.6001 20.1645 20.7305 20.5249 19.739C20.8407 18.8709 20.2642 18.4418 19.801 18.097Z"
+                                      fill="white"/>
+                                <path d="M15.6604 12.1402C15.4931 12.1443 15.1449 12.1527 15.0227 12.4981C14.9655 12.6595 14.9724 12.7996 15.043 12.9146C15.1468 13.0833 15.3455 13.135 15.5263 13.1633C16.1819 13.2658 16.5185 13.6188 16.5859 14.2742C16.6172 14.5798 16.8285 14.7932 17.0998 14.7932H17.0999C17.1199 14.7932 17.1404 14.7921 17.1608 14.7896C17.4872 14.7518 17.6454 14.5183 17.6311 14.0957C17.6363 13.6547 17.3993 13.154 16.9961 12.7551C16.5916 12.3551 16.104 12.1297 15.6604 12.1402Z"
+                                      fill="white"/>
+                            </svg>
+                        </a>
+                        <a href="" class="contact_info_row-whatsapp">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="15" cy="15" r="15" fill="#29AD1C"/>
+                                <path d="M23.3992 14.4917C23.3992 18.8498 19.8388 22.3827 15.4458 22.3827C14.0517 22.3827 12.7422 22.0262 11.6022 21.4018L7.19922 22.8001L8.63449 18.565C7.91078 17.3765 7.49399 15.9808 7.49399 14.4911C7.49451 10.133 11.0539 6.60007 15.4469 6.60007C19.8393 6.60112 23.3992 10.1336 23.3992 14.4917ZM15.4453 7.85837C11.7586 7.85837 8.75968 10.8346 8.75968 14.4933C8.75968 15.9449 9.233 17.2888 10.0333 18.3823L9.19866 20.8455L11.767 20.0294C12.8236 20.7224 14.0877 21.126 15.4453 21.126C19.132 21.126 22.1319 18.1504 22.1319 14.4917C22.133 10.8346 19.1325 7.85837 15.4453 7.85837ZM19.4621 16.3094C19.4125 16.2296 19.2825 16.181 19.0881 16.0838C18.8943 15.9866 17.9344 15.5191 17.7564 15.4557C17.5768 15.3908 17.4468 15.358 17.3169 15.5519C17.1885 15.7457 16.8145 16.181 16.6999 16.311C16.5863 16.4404 16.4727 16.4568 16.2778 16.3612C16.0829 16.2629 15.4543 16.0601 14.7094 15.4013C14.1299 14.8879 13.7385 14.2555 13.6254 14.0617C13.5108 13.8683 13.6138 13.7637 13.7105 13.6676C13.7977 13.5804 13.9054 13.4415 14.0031 13.3279C14.1009 13.2154 14.1331 13.1356 14.1981 13.0062C14.262 12.8768 14.2298 12.7643 14.1817 12.6665C14.1331 12.5694 13.7438 11.6185 13.5805 11.2313C13.4184 10.8446 13.2562 10.9085 13.1421 10.9085C13.0285 10.9085 12.8986 10.8927 12.7686 10.8927C12.6387 10.8927 12.4274 10.9397 12.2493 11.1336C12.0713 11.3274 11.5674 11.7949 11.5674 12.7468C11.5674 13.6998 12.2652 14.6185 12.3629 14.7473C12.4612 14.8757 13.7121 16.8931 15.6936 17.6675C17.6761 18.4414 17.6761 18.1831 18.0332 18.1504C18.3914 18.1176 19.1869 17.6829 19.3486 17.2317C19.5113 16.7785 19.5113 16.3902 19.4621 16.3094Z"
+                                      fill="white"/>
+                            </svg>
+                        </a>
+                        <a href="" class="contact_info_row-telegram">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M30 15C30 23.2875 23.2875 30 15 30C6.7125 30 0 23.2875 0 15C0 6.7125 6.7125 0 15 0C23.2875 0 30 6.7125 30 15Z"
+                                      fill="#1E96C8"/>
+                                <path d="M12.25 21.2229C11.7625 21.2229 11.85 21.0354 11.675 20.5729L10.25 15.8729L19.1 10.3479L20.1375 10.6229L19.275 12.9729L12.25 21.2229Z"
+                                      fill="#1E96C8"/>
+                                <path d="M12.25 21.2229C12.625 21.2229 12.7875 21.0479 13 20.8479C13.325 20.5354 17.5 16.4729 17.5 16.4729L14.9375 15.8479L12.5625 17.3479L12.25 21.0979V21.2229Z"
+                                      fill="white"/>
+                                <path d="M12.4994 17.3978L18.5494 21.8603C19.2369 22.2353 19.7369 22.0478 19.9119 21.2228L22.3744 9.62277C22.6244 8.61027 21.9869 8.16027 21.3244 8.46027L6.87443 14.0353C5.88693 14.4353 5.89943 14.9853 6.69943 15.2228L10.4119 16.3853L18.9994 10.9728C19.3994 10.7228 19.7744 10.8603 19.4744 11.1353L12.4994 17.3978Z"
+                                      fill="#FEFFFF"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <a href="mailto:mostootriad-58@mail.ru" class="contact_info_mail">mostootriad-58@mail.ru</a>
+                    <span class="contact_info_address">
+                        «Филиал «Мостоотряд №58» 224024, г. Брест, ул. Красногвардейская, 108/2,
+                    </span>
+                    <a href="" class="contact_info-btn">Показать на карте</a>
+                </div>
+                <form class="form">
+                    <div class="form_group">
+                        <div class="form_group_line">
+                            <label class="form_group_line_label" for="name">Ваше имя*</label>
+                            <input type="text" name="name" id="name"
+                                   class="form_group_line-input form_group_line-input-name">
+                        </div>
+                        <div class="form_group_line">
+                            <label class="form_group_line_label" for="phone">Телефон</label>
+                            <input type="text" name="phone" id="phone"
+                                   class="form_group_line-input form_group_line-input-phone">
+                        </div>
+                        <div class="form_group_line">
+                            <label class="form_group_line_label" for="email">Электронная почта*</label>
+                            <input type="text" name="email" id="email"
+                                   class="form_group_line-input form_group_line-input-email">
+                        </div>
+                        <div class="form_group_line">
+                            <label class="form_group_line_label" for="message">Ваше сообщение</label>
+                            <textarea id="message" class="form_group_line-textarea"></textarea>
+                        </div>
+                        <div class="form_group_line">
+                            <button class="form_group_line-btn">Отправить</button>
                         </div>
                     </div>
-                    <div class="contact_info_row">
-                        <img src="img/svg/message.svg" alt="" class="left-icon">
-                        <div class="right">
-                            <a href="mailto:brestvti@tut.by" class="right-mail">brestvti@tut.by</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact_map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2450.7115518810765!2d23.709224286319593!3d52.10318098665378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47210955c0c1887d%3A0x7cf676b432b32cca!2z0KHQstC10YLQu9Cw0Y8g0YPQuy4gMSwg0JHRgNC10YHRgg!5e0!3m2!1sru!2sby!4v1598023967916!5m2!1sru!2sby"
-                            width="100%" height="100%"  style="border:20px solid #FFFFFF;" allowfullscreen=""
-                            aria-hidden="false" tabindex="0"></iframe>
-                </div>
+                </form>
             </div>
         </div>
     </div>
 </div>
-
 <footer class="footer">
-    <div class="footer_top">
-        <div class="container">
-            <div class="footer_top_line">
-                <div class="footer_logo">
-                    <a href="index.html" class="footer_logo_link">
-                        <img src="img/png/logo_footer.png" alt="" class="footer_logo_img">
-                    </a>
-                    <span class="footer_logo-span">Юридическое лицо ОАО "Брест-ВТИ" Беларусь Брестская область Брест ул.Светлая, 1</span>
+    <div class="container">
+        <div class="footer_top">
+            <div class="footer_top_logo">
+                <a href="index.html" class="footer_top_logo-link">
+                    <img src="img/svg/logo_footer.svg" alt="" class="footer_top_logo-img">
+                </a>
+            </div>
+            <div class="footer_top_info">
+                <span class="footer_top_info-p">
+                    Государственный комитет по имуществу Республики Беларусь Открытое акционерное общество «Управляющая компания холдинга «Белавтодор» ОТКРЫТОЕ АКЦИОНЕРНОЕ ОБЩЕСТВО “МОСТОСТРОЙ”
+                </span>
+                <span class="footer_top_info-span">р/с 3012120810011 в ОАО "БПС-СБЕРБАНК", г. Минск, МФО 153001369 УНП 201028628</span>
+            </div>
+            <div class="footer_top_contact">
+                <div class="footer_top_contact_row">
+                    <span class="footer_top_contact_row-p">Телефон/факс</span>
+                    <a href="tel:0162454156" class="footer_top_contact_row-link">(0162) 45-41-56</a>
                 </div>
-                <div class="footer_link">
-                    <a href="tel:+375152559243" class="footer_link-phone">+375 (152) 55 92 43</a>
+                <div class="footer_top_contact_row">
+                    <span class="footer_top_contact_row-p">Почта</span>
+                    <a href="mailto:mostootriad-58@mail.ru" class="footer_top_contact_row-link">mostootriad-58@mail.ru</a>
                 </div>
-                <div class="footer_social">
-                    <a href="" class="footer_social-link">
-                        <img src="img/svg/instagram.svg" alt="" class="footer_social-img">
-                    </a>
-                    <a href="" class="footer_social-link">
-                        <img src="img/svg/vk.svg" alt="" class="footer_social-img">
-                    </a>
-                    <a href="" class="footer_social-link">
-                        <img src="img/svg/facebook.svg" alt="" class="footer_social-img">
-                    </a>
-                </div>
-                <div class="footer_right">
-                    <button class="footer_right-btn">задать вопрос</button>
+                <div class="footer_top_contact_row">
+                    <span class="footer_top_contact_row-p">Режим работы: с 08:00 до 20:00 Без выходных</span>
                 </div>
             </div>
         </div>
     </div>
     <div class="footer_bottom">
         <div class="container">
-            <div class="footer_bottom_line">
-                <span class="footer_bottom_line-span">© 2019 ОАО «Брест - ВТИ»</span>
-                <a href="https://internetsozdateli.by" class="footer_bottom_line-span link">Создание и продвижение сайтов - InternetSozdateli</a>
+            <div class="footer_bottom-line">
+                <span class="footer_bottom-p">©2020 «Филиал «Мостоотряд №58»</span>
+                <a href="https://internetsozdateli.by" class="footer_bottom-p link">Создание и продвижение сайтов - InternetSozdateli</a>
             </div>
         </div>
     </div>
 </footer>
-
 <script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/jquery.form.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
 <script src="js/jquery.validate.min.js"></script>
 <script src="js/slick.min.js"></script>
-<script src="js/jquery.maskedinput.min.js"></script>
-<script src="js/jquery.form.js"></script>
+<script src="js/lightgallery.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
