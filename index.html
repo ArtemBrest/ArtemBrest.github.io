@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Главная</title>
+    <title>Title</title>
     <link rel="stylesheet" href="fonts/stylesheet.css">
-
+    <link rel="stylesheet" href="css/lightgallery.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <div class="menu-overlay"></div>
+
 <!--Modal Windows thanks-->
-<div class="fade"></div>
+<div class="fade" id="fade"></div>
 <div class="modal" id="mainModal">
     <span class="modal-close mainModal-close">&times;</span>
     <h1 class="thanks_h1">Спасибо за заявку!</h1>
@@ -19,720 +20,466 @@
     <button class="btn-close modal-btn-close">Отлично!</button>
 </div>
 <!-- end Modal Windows thanks-->
-
-
 <!--Modal Windows type -->
 <div class="modal1" id="mainModal1">
-    <span class="modal1-close">&times;</span>
-    <form class="modal1_form">
+    <span class="modal1-close mainModal-close">&times;</span>
+    <form class="modal1_form" id="modal1_form">
         <span class="modal1_form-h2">Заказать обратный звонок</span>
         <span class="modal1_form-p">Введите свои контактные данные, и мы с вами свяжемся</span>
         <div class="modal1_form_group">
-            <input type="text" class="modal1_form-input" placeholder="Введите ваше имя">
-            <input type="text" class="modal1_form-input modal1_form-input-phone" placeholder="Введите ваш телефон">
-            <textarea type="text" class="modal1_form-textarea" placeholder="Введите ваше сообщение"></textarea>
+            <input type="text" class="modal1_form-input modal1_form-input-name" name="name" placeholder="Введите ваше имя">
+            <input type="text" class="modal1_form-input modal1_form-input-phone" name="phone" placeholder="Введите ваш телефон">
+            <textarea type="text" class="modal1_form-textarea" name="message" placeholder="Введите ваше сообщение"></textarea>
         </div>
         <button class="modal1_form-btn">Перезвоните мне</button>
     </form>
 </div>
 <!--end Modal Windows type-->
 
+
 <header class="header">
     <div class="container">
-        <div class="top_line">
-            <div class="header_logo">
-                <a href="index.html" class="header_logo-link">
-                    <img src="img/svg/logo.svg" alt="" class="header_logo-img">
+        <div class="header_top">
+            <div class="header_top_logo">
+                <a href="index.html"> <!--<?php echo get_home_url(); ?>-->
+                    <img src="img/svg/logo_header.svg" alt=""
+                         class="header_top_logo-img"> <!--<?php echo get_template_directory_uri()?>-->
                 </a>
             </div>
-            <div class="header_info">
-                <span class="header_info-p">Ежедневно с 8.00 до 21.00</span>
-                <a href="tel:+375297953217" class="header_info-link">+375 (29) 795-32-17</a>
-            </div>
-            <div class="header_social">
-                <a href="#" class="header_social-link">
-                    <svg class="icon-viber" width="46" height="46" viewBox="0 0 46 46" fill="none"
-                         xmlns="http://www.w3.org/2000/svg">
-                        <path d="M46 23C46 35.7075 35.7075 46 23 46C10.2925 46 0 35.7075 0 23C0 10.2925 10.2925 0 23 0C35.7075 0 46 10.2925 46 23Z"
-                              fill="url(#paint0_linear)"/>
-                        <path d="M18.7835 32.5418C18.036 32.5418 18.1701 32.2543 17.9018 31.5451L15.7168 24.3385L29.2868 15.8668L30.8776 16.2885L29.5551 19.8918L18.7835 32.5418Z"
-                              fill="#C8DAEA"/>
-                        <path d="M18.7834 32.5418C19.3584 32.5418 19.6076 32.2734 19.9334 31.9668C20.4318 31.4876 26.8334 25.2584 26.8334 25.2584L22.9043 24.3001L19.2626 26.6001L18.7834 32.3501V32.5418Z"
-                              fill="#A9C9DD"/>
-                        <path d="M19.1668 26.6766L28.4435 33.5191C29.4976 34.0941 30.2643 33.8066 30.5326 32.5416L34.3085 14.7549C34.6918 13.2024 33.7143 12.5124 32.6985 12.9724L10.5418 21.5208C9.02763 22.1341 9.04679 22.9774 10.2735 23.3416L15.966 25.1241L29.1335 16.8249C29.7468 16.4416 30.3218 16.6524 29.8618 17.0741L19.1668 26.6766Z"
-                              fill="url(#paint1_linear)"/>
-                        <defs>
-                            <linearGradient id="paint0_linear" x1="29.7409" y1="7.26992" x2="18.2409" y2="34.1029"
-                                            gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#37AEE2"/>
-                                <stop offset="1" stop-color="#1E96C8"/>
-                            </linearGradient>
-                            <linearGradient id="paint1_linear" x1="24.7234" y1="22.7196" x2="29.5151" y2="30.3863"
-                                            gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#EFF7FC"/>
-                                <stop offset="1" stop-color="white"/>
-                            </linearGradient>
-                        </defs>
-                    </svg>
-                </a>
-                <a href="#" class="header_social-link">
-                    <svg class="icon-whatsapp" width="46" height="46" viewBox="0 0 46 46" fill="none"
-                         xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="23" cy="23" r="23" fill="#7B519D"/>
-                        <path d="M29.5548 21.7512C29.579 18.9894 27.1635 16.4577 24.1704 16.1076C24.1109 16.1007 24.046 16.0903 23.9774 16.0792C23.8292 16.0553 23.6759 16.0307 23.5213 16.0307C22.9079 16.0307 22.7439 16.4503 22.7007 16.7006C22.6587 16.9439 22.6988 17.1483 22.8195 17.3082C23.0227 17.5772 23.3801 17.625 23.6672 17.6632C23.7514 17.6745 23.8308 17.6851 23.8973 17.6996C26.5865 18.2848 27.492 19.2047 27.9345 21.8012C27.9453 21.8647 27.9502 21.9428 27.9554 22.0258C27.9747 22.3361 28.0149 22.9819 28.7279 22.9819H28.7279C28.7873 22.9819 28.851 22.9769 28.9174 22.967C29.5813 22.8688 29.5605 22.2785 29.5505 21.9949C29.5477 21.915 29.545 21.8395 29.552 21.7892C29.5538 21.7766 29.5548 21.7639 29.5548 21.7512Z"
-                              fill="white"/>
-                        <path d="M23.347 15.0944C23.4267 15.1 23.5021 15.1053 23.5648 15.1147C27.9808 15.776 30.0117 17.8134 30.5745 22.1473C30.584 22.221 30.5855 22.3108 30.5871 22.406C30.5927 22.7446 30.6043 23.449 31.3811 23.4636L31.4052 23.4638C31.6488 23.4638 31.8426 23.3923 31.9812 23.251C32.2231 23.0047 32.2062 22.6388 32.1926 22.3447C32.1893 22.2726 32.1861 22.2046 32.1869 22.1451C32.243 17.7127 28.303 13.6934 23.7554 13.5439C23.7365 13.5433 23.7185 13.5443 23.7003 13.5468C23.6914 13.548 23.6749 13.5496 23.6465 13.5496C23.6011 13.5496 23.5454 13.5458 23.4862 13.5419C23.4147 13.5372 23.3336 13.5317 23.2514 13.5317C22.5271 13.5317 22.3895 14.0329 22.3718 14.3318C22.3312 15.0223 23.0173 15.0709 23.347 15.0944Z"
-                              fill="white"/>
-                        <path d="M30.3617 27.749C30.2678 27.6791 30.1708 27.6069 30.0799 27.5356C29.5977 27.1577 29.0848 26.8095 28.5887 26.4726C28.4858 26.4028 28.3828 26.3329 28.2802 26.2628C27.6448 25.8281 27.0735 25.6169 26.5337 25.6169C25.8068 25.6169 25.1729 26.0081 24.6498 26.7794C24.4181 27.1213 24.1369 27.2876 23.7904 27.2876C23.5855 27.2876 23.3526 27.2307 23.0984 27.1183C21.0473 26.2126 19.5827 24.8239 18.7452 22.9908C18.3403 22.1048 18.4716 21.5257 19.1841 21.0543C19.5887 20.7869 20.3419 20.289 20.2885 19.3357C20.2281 18.253 17.775 14.9955 16.7414 14.6255C16.3038 14.4688 15.8441 14.4673 15.3724 14.6218C14.1842 15.0108 13.3316 15.6939 12.9064 16.5971C12.4955 17.4699 12.5141 18.4947 12.96 19.5607C14.2493 22.6429 16.062 25.3302 18.3478 27.5477C20.5852 29.7185 23.3353 31.4967 26.5214 32.8326C26.8085 32.9529 27.1098 33.0186 27.3297 33.0665C27.4047 33.0829 27.4694 33.0969 27.5166 33.1095C27.5425 33.1163 27.5693 33.12 27.5961 33.1203L27.6212 33.1204C27.6213 33.1204 27.6212 33.1204 27.6214 33.1204C29.1199 33.1204 30.9192 31.7869 31.4718 30.2667C31.956 28.9356 31.072 28.2776 30.3617 27.749Z"
-                              fill="white"/>
-                        <path d="M24.0114 18.6151C23.7549 18.6215 23.2209 18.6343 23.0336 19.1639C22.9459 19.4114 22.9564 19.6262 23.0648 19.8025C23.2239 20.0612 23.5286 20.1405 23.8058 20.184C24.811 20.341 25.3272 20.8823 25.4305 21.8873C25.4785 22.3559 25.8025 22.6831 26.2186 22.6831H26.2186C26.2494 22.6831 26.2808 22.6813 26.3121 22.6776C26.8125 22.6197 27.0551 22.2617 27.0331 21.6137C27.0411 20.9374 26.6777 20.1696 26.0595 19.558C25.4393 18.9446 24.6915 18.5991 24.0114 18.6151Z"
-                              fill="white"/>
-                    </svg>
-                </a>
-                <a href="#" class="header_social-link">
-                    <svg class="icon-telegram" width="46" height="46" viewBox="0 0 46 46" fill="none"
-                         xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="23" cy="23" r="23" fill="#29AD1C"/>
-                        <path d="M35.88 22.2205C35.88 28.9029 30.4207 34.3201 23.6848 34.3201C21.5472 34.3201 19.5393 33.7734 17.7913 32.8159L11.04 34.96L13.2408 28.4663C12.1311 26.6438 11.492 24.5038 11.492 22.2196C11.4928 15.5372 16.9505 10.12 23.6864 10.12C30.4215 10.1216 35.88 15.538 35.88 22.2205ZM23.684 12.0494C18.0311 12.0494 13.4328 16.6129 13.4328 22.2229C13.4328 24.4487 14.1585 26.5094 15.3856 28.186L14.1059 31.963L18.044 30.7116C19.664 31.7743 21.6023 32.3931 23.684 32.3931C29.3369 32.3931 33.9369 27.8305 33.9369 22.2205C33.9385 16.6129 29.3377 12.0494 23.684 12.0494ZM29.8432 25.0076C29.767 24.8853 29.5678 24.8108 29.2697 24.6618C28.9724 24.5127 27.5007 23.7959 27.2277 23.6987C26.9523 23.5991 26.7531 23.5488 26.5538 23.8461C26.357 24.1434 25.7835 24.8108 25.6077 25.0101C25.4336 25.2085 25.2594 25.2336 24.9605 25.087C24.6617 24.9364 23.6978 24.6253 22.5557 23.6153C21.6671 22.8279 21.0669 21.8584 20.8936 21.5611C20.7178 21.2647 20.8758 21.1043 21.024 20.9569C21.1576 20.8232 21.3229 20.6102 21.4727 20.436C21.6226 20.2635 21.672 20.1412 21.7716 19.9428C21.8696 19.7443 21.8202 19.5718 21.7465 19.4219C21.672 19.2729 21.075 17.8149 20.8247 17.2212C20.5761 16.6283 20.3274 16.7263 20.1524 16.7263C19.9783 16.7263 19.779 16.702 19.5798 16.702C19.3805 16.702 19.0565 16.7741 18.7836 17.0713C18.5106 17.3686 17.7379 18.0854 17.7379 19.5451C17.7379 21.0063 18.8079 22.4149 18.9577 22.6125C19.1084 22.8093 21.0264 25.9027 24.0647 27.0901C27.1046 28.2768 27.1046 27.8807 27.6521 27.8305C28.2013 27.7802 29.4212 27.1136 29.669 26.4219C29.9185 25.7269 29.9185 25.1316 29.8432 25.0076Z"
-                              fill="white"/>
-                    </svg>
-                </a>
-            </div>
-            <div class="header_btn">
-                <button class="header_btn-btn">Заказать обратный звонок</button>
-            </div>
+            <address class="header_top_info">
+                <div class="header_top_info_address">1155 Brickell Bay Dr, apt 3205, Miami, Florida, 33131</div>
+                <div class="header_top_info_data">Mon - Sat 7.00 - 19.00</div>
+                <div class="header_top_info_phone">
+                    <a href="tel:000-000-0000" class="header_top_info_phone-link">000-000-0000</a>
+                    <span class="header_top_info_phone-element">|</span>
+                    <a href="tel:000-000-0000" class="header_top_info_phone-link">000-000-0000</a>
+                </div>
+            </address>
+        </div>
+        <div class="header_menu_desktop">
+            <ul class="header_menu_desktop_ul">
+                <li class="header_menu_desktop_li"><a href="index.html" class="header_menu_desktop_link">HOME</a></li>
+                <li class="header_menu_desktop_li"><a href="archive.html" class="header_menu_desktop_link">SERVICES</a></li>
+                <li class="header_menu_desktop_li"><a href="materials.html" class="header_menu_desktop_link">MATERIALS</a></li>
+                <li class="header_menu_desktop_li"><a href="portfolio.html" class="header_menu_desktop_link">PORTFOLIO</a></li>
+                <li class="header_menu_desktop_li"><a href="contact.html" class="header_menu_desktop_link">CONTACT</a></li>
+                <li class="header_menu_desktop_li"><a href="about.html" class="header_menu_desktop_link">ABOUT</a></li>
+            </ul>
         </div>
     </div>
-    <div class="header_mobile">
-        <div class="container">
-            <div class="header_logo header_mobile-logo">
-                <a href="index.html" class="header_logo-link">
-                    <img src="img/svg/logo.svg" alt="" class="header_logo-img">
-                </a>
-            </div>
+    <div class="header_top_mobile">
+        <div class="header_top_mobile_block">
+            <span class="header_top_mobile-icon"></span>
         </div>
-        <div class="header_mobile-line"></div>
-        <div class="container">
-            <div class="header_mobile_row">
-                <div class="header_info">
-                    <span class="header_info-p">Ежедневно с 8.00 до 21.00</span>
-                    <a href="tel:+375297953217" class="header_info-link">+375 (29) 795-32-17</a>
-                </div>
-                <div class="header_social">
-                    <a href="#" class="header_social-link">
-                        <img src="img/svg/telegram.svg" alt="" class="icon-telegram">
-                    </a>
-                    <a href="#" class="header_social-link">
-                        <svg class="icon-whatsapp" width="46" height="46" viewBox="0 0 46 46" fill="none"
-                             xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="23" cy="23" r="23" fill="#7B519D"/>
-                            <path d="M29.5548 21.7512C29.579 18.9894 27.1635 16.4577 24.1704 16.1076C24.1109 16.1007 24.046 16.0903 23.9774 16.0792C23.8292 16.0553 23.6759 16.0307 23.5213 16.0307C22.9079 16.0307 22.7439 16.4503 22.7007 16.7006C22.6587 16.9439 22.6988 17.1483 22.8195 17.3082C23.0227 17.5772 23.3801 17.625 23.6672 17.6632C23.7514 17.6745 23.8308 17.6851 23.8973 17.6996C26.5865 18.2848 27.492 19.2047 27.9345 21.8012C27.9453 21.8647 27.9502 21.9428 27.9554 22.0258C27.9747 22.3361 28.0149 22.9819 28.7279 22.9819H28.7279C28.7873 22.9819 28.851 22.9769 28.9174 22.967C29.5813 22.8688 29.5605 22.2785 29.5505 21.9949C29.5477 21.915 29.545 21.8395 29.552 21.7892C29.5538 21.7766 29.5548 21.7639 29.5548 21.7512Z"
-                                  fill="white"/>
-                            <path d="M23.347 15.0944C23.4267 15.1 23.5021 15.1053 23.5648 15.1147C27.9808 15.776 30.0117 17.8134 30.5745 22.1473C30.584 22.221 30.5855 22.3108 30.5871 22.406C30.5927 22.7446 30.6043 23.449 31.3811 23.4636L31.4052 23.4638C31.6488 23.4638 31.8426 23.3923 31.9812 23.251C32.2231 23.0047 32.2062 22.6388 32.1926 22.3447C32.1893 22.2726 32.1861 22.2046 32.1869 22.1451C32.243 17.7127 28.303 13.6934 23.7554 13.5439C23.7365 13.5433 23.7185 13.5443 23.7003 13.5468C23.6914 13.548 23.6749 13.5496 23.6465 13.5496C23.6011 13.5496 23.5454 13.5458 23.4862 13.5419C23.4147 13.5372 23.3336 13.5317 23.2514 13.5317C22.5271 13.5317 22.3895 14.0329 22.3718 14.3318C22.3312 15.0223 23.0173 15.0709 23.347 15.0944Z"
-                                  fill="white"/>
-                            <path d="M30.3617 27.749C30.2678 27.6791 30.1708 27.6069 30.0799 27.5356C29.5977 27.1577 29.0848 26.8095 28.5887 26.4726C28.4858 26.4028 28.3828 26.3329 28.2802 26.2628C27.6448 25.8281 27.0735 25.6169 26.5337 25.6169C25.8068 25.6169 25.1729 26.0081 24.6498 26.7794C24.4181 27.1213 24.1369 27.2876 23.7904 27.2876C23.5855 27.2876 23.3526 27.2307 23.0984 27.1183C21.0473 26.2126 19.5827 24.8239 18.7452 22.9908C18.3403 22.1048 18.4716 21.5257 19.1841 21.0543C19.5887 20.7869 20.3419 20.289 20.2885 19.3357C20.2281 18.253 17.775 14.9955 16.7414 14.6255C16.3038 14.4688 15.8441 14.4673 15.3724 14.6218C14.1842 15.0108 13.3316 15.6939 12.9064 16.5971C12.4955 17.4699 12.5141 18.4947 12.96 19.5607C14.2493 22.6429 16.062 25.3302 18.3478 27.5477C20.5852 29.7185 23.3353 31.4967 26.5214 32.8326C26.8085 32.9529 27.1098 33.0186 27.3297 33.0665C27.4047 33.0829 27.4694 33.0969 27.5166 33.1095C27.5425 33.1163 27.5693 33.12 27.5961 33.1203L27.6212 33.1204C27.6213 33.1204 27.6212 33.1204 27.6214 33.1204C29.1199 33.1204 30.9192 31.7869 31.4718 30.2667C31.956 28.9356 31.072 28.2776 30.3617 27.749Z"
-                                  fill="white"/>
-                            <path d="M24.0114 18.6151C23.7549 18.6215 23.2209 18.6343 23.0336 19.1639C22.9459 19.4114 22.9564 19.6262 23.0648 19.8025C23.2239 20.0612 23.5286 20.1405 23.8058 20.184C24.811 20.341 25.3272 20.8823 25.4305 21.8873C25.4785 22.3559 25.8025 22.6831 26.2186 22.6831H26.2186C26.2494 22.6831 26.2808 22.6813 26.3121 22.6776C26.8125 22.6197 27.0551 22.2617 27.0331 21.6137C27.0411 20.9374 26.6777 20.1696 26.0595 19.558C25.4393 18.9446 24.6915 18.5991 24.0114 18.6151Z"
-                                  fill="white"/>
-                        </svg>
-                    </a>
-                    <a href="#" class="header_social-link">
-                        <svg class="icon-telegram" width="46" height="46" viewBox="0 0 46 46" fill="none"
-                             xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="23" cy="23" r="23" fill="#29AD1C"/>
-                            <path d="M35.88 22.2205C35.88 28.9029 30.4207 34.3201 23.6848 34.3201C21.5472 34.3201 19.5393 33.7734 17.7913 32.8159L11.04 34.96L13.2408 28.4663C12.1311 26.6438 11.492 24.5038 11.492 22.2196C11.4928 15.5372 16.9505 10.12 23.6864 10.12C30.4215 10.1216 35.88 15.538 35.88 22.2205ZM23.684 12.0494C18.0311 12.0494 13.4328 16.6129 13.4328 22.2229C13.4328 24.4487 14.1585 26.5094 15.3856 28.186L14.1059 31.963L18.044 30.7116C19.664 31.7743 21.6023 32.3931 23.684 32.3931C29.3369 32.3931 33.9369 27.8305 33.9369 22.2205C33.9385 16.6129 29.3377 12.0494 23.684 12.0494ZM29.8432 25.0076C29.767 24.8853 29.5678 24.8108 29.2697 24.6618C28.9724 24.5127 27.5007 23.7959 27.2277 23.6987C26.9523 23.5991 26.7531 23.5488 26.5538 23.8461C26.357 24.1434 25.7835 24.8108 25.6077 25.0101C25.4336 25.2085 25.2594 25.2336 24.9605 25.087C24.6617 24.9364 23.6978 24.6253 22.5557 23.6153C21.6671 22.8279 21.0669 21.8584 20.8936 21.5611C20.7178 21.2647 20.8758 21.1043 21.024 20.9569C21.1576 20.8232 21.3229 20.6102 21.4727 20.436C21.6226 20.2635 21.672 20.1412 21.7716 19.9428C21.8696 19.7443 21.8202 19.5718 21.7465 19.4219C21.672 19.2729 21.075 17.8149 20.8247 17.2212C20.5761 16.6283 20.3274 16.7263 20.1524 16.7263C19.9783 16.7263 19.779 16.702 19.5798 16.702C19.3805 16.702 19.0565 16.7741 18.7836 17.0713C18.5106 17.3686 17.7379 18.0854 17.7379 19.5451C17.7379 21.0063 18.8079 22.4149 18.9577 22.6125C19.1084 22.8093 21.0264 25.9027 24.0647 27.0901C27.1046 28.2768 27.1046 27.8807 27.6521 27.8305C28.2013 27.7802 29.4212 27.1136 29.669 26.4219C29.9185 25.7269 29.9185 25.1316 29.8432 25.0076Z"
-                                  fill="white"/>
-                        </svg>
-                    </a>
-                </div>
-                <div class="header_btn">
-                    <button class="header_btn-btn">Заказать обратный звонок</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="header_menu_desktop">
-        <ul class="header_menu_desktop_ul">
-            <li class="header_menu_desktop_li"><a href="index.html" class="header_menu_desktop_link">Главная</a></li>
-            <li class="header_menu_desktop_li"><a href="service-archive.html" class="header_menu_desktop_link">Услуги и цены</a></li>
-            <li class="header_menu_desktop_li"><a href="about.html" class="header_menu_desktop_link">О нас</a></li>
-            <li class="header_menu_desktop_li"><a href="question.html" class="header_menu_desktop_link">Частые вопросы</a></li>
-            <li class="header_menu_desktop_li"><a href="contact.html" class="header_menu_desktop_link">Контакты</a></li>
-        </ul>
-        <div class="container">
-            <div class="header_menu_desktop-icon">
-                <span class="icon"></span>
-                меню
-            </div>
-        </div>
+        <a href="index.html" class="header_top_mobile_logo">
+            <img src="img/svg/logo_header_mob.svg" alt="">
+        </a>
     </div>
     <div class="header_menu_mobile">
         <ul class="header_menu_mobile_ul">
-            <li class="header_menu_mobile_li"><a href="index.html" class="header_menu_mobile_link">Главная</a></li>
-            <li class="header_menu_mobile_li"><a href="service-archive.html" class="header_menu_mobile_link">Услуги и цены</a></li>
-            <li class="header_menu_mobile_li"><a href="about.html" class="header_menu_mobile_link">О нас</a></li>
-            <li class="header_menu_mobile_li"><a href="question.html" class="header_menu_mobile_link">Частые вопросы</a></li>
-            <li class="header_menu_mobile_li"><a href="contact.html" class="header_menu_mobile_link">Контакты</a></li>
+            <li class="header_menu_mobile_li"><a class="header_menu_mobile_link" href="index.html">HOME</a></li>
+            <li class="header_menu_mobile_li"><a class="header_menu_mobile_link" href="archive.html">SERVICES</a></li>
+            <li class="header_menu_mobile_li"><a class="header_menu_mobile_link" href="materials.html">MATERIALS</a></li>
+            <li class="header_menu_mobile_li"><a class="header_menu_mobile_link" href="portfolio.html">PORTFOLIO</a></li>
+            <li class="header_menu_mobile_li"><a class="header_menu_mobile_link" href="contact.html">CONTACT</a></li>
+            <li class="header_menu_mobile_li"><a class="header_menu_mobile_link" href="about.html">ABOUT</a></li>
         </ul>
     </div>
 </header>
-<div class="content">
+<main class="content">
     <div class="banner" style="background-image: url(img/jpg/back1.jpg);">
         <div class="container">
-            <h1 class="banner-h1">Профессиональная <br> уборка офисов и квартир</h1>
-            <div class="banner_text">С помощью европейского оборудования и моющих средств</div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="banner_form">
-            <form class="form">
-                <div class="form_group">
-                    <div class="form_group_line">
-                        <label class="form_group_line_label" for="form_select">Выберите вид уборки</label>
-                        <select name="select-box" id="form_select" class="form_group_line-select">
-                            <option value="С35/45 F200 W8 П4 St-3" name="value">С35/45 F200 W8 П4 St-3</option>
-                            <option value="С35/45 F200 W8 П4 St-3" name="value">С35/45 F200 W8 П4 St-3</option>
-                            <option value="С35/45 F200 W8 П4 St-3" name="value">С35/45 F200 W8 П4 St-3</option>
-                            <option value="С35/45 F200 W8 П4 St-3" name="value">С35/45 F200 W8 П4 St-3</option>
-                            <option value="С35/45 F200 W8 П4 St-3" name="value">С35/45 F200 W8 П4 St-3</option>
-                            <option value="С35/45 F200 W8 П4 St-3" name="value">С35/45 F200 W8 П4 St-3</option>
-                        </select>
-                    </div>
-                    <div class="form_group_line">
-                        <label class="form_group_line_label" for="name">Как вас зовут *</label>
-                        <input type="text" id="name" placeholder="Ваше имя"
-                               class="form_group_line-input form_group_line-input-name">
-                    </div>
-                    <div class="form_group_line">
-                        <label class="form_group_line_label" for="form_select1">Выберите услугу</label>
-                        <select name="select-box" id="form_select1" class="form_group_line-select">
-                            <option value="С35/45 F200 W8 П4 St-3" name="value">С35/45 F200 W8 П4 St-3</option>
-                            <option value="С35/45 F200 W8 П4 St-3" name="value">С35/45 F200 W8 П4 St-3</option>
-                            <option value="С35/45 F200 W8 П4 St-3" name="value">С35/45 F200 W8 П4 St-3</option>
-                            <option value="С35/45 F200 W8 П4 St-3" name="value">С35/45 F200 W8 П4 St-3</option>
-                            <option value="С35/45 F200 W8 П4 St-3" name="value">С35/45 F200 W8 П4 St-3</option>
-                            <option value="С35/45 F200 W8 П4 St-3" name="value">С35/45 F200 W8 П4 St-3</option>
-                        </select>
-                    </div>
-                    <div class="form_group_line">
-                        <label class="form_group_line_label" for="phone">Номер телефона*</label>
-                        <input type="text" id="phone" class="form_group_line-input form_group_line-input-phone"
-                               placeholder="Введите ваш номер для связи">
-                    </div>
-                    <div class="form_group_info">
-                        <span class="form_group_info-title">Стоимость уборки в Бресте</span>
-                        <span class="form_group_info-price">от 20 руб</span>
-                        <button class="form_group_info-btn">Заказать обратный звонок</button>
-                    </div>
-                </div>
-            </form>
-        </div>
-        <div class="about">
-            <p class="about-p">В последние годы клининговый бизнес вышел на новый уровень. Жесткая конкуренция в секторе
-                рынка
-                заставляет клининговые компании Москвы и Московской области менять подход к выполнению работ. "Первая
-                московская клининговая служба" предлагает качественные и доступные услуги уборки квартир, домов, офисов,
-                помещений различного назначения и профессиональный клининг. Оптимальное соотношение цены и качества
-                обусловлена растущими требованиями частных и корпоративных клиентов.</p>
-            <div class="about_advantages_cards">
-                <div class="item">
-                    <div class="item_circle">
-                        <img src="img/png/advan1.png" alt="" class="item_circle-icon">
-                    </div>
-                    <span class="item_p">Персонал с опытом <br> работы от 2 лет</span>
-                </div>
-                <div class="item">
-                    <div class="item_circle">
-                        <img src="img/png/advan2.png" alt="" class="item_circle-icon">
-                    </div>
-                    <span class="item_p">Оборудование для уборки любой сложности Karcher</span>
-                </div>
-                <div class="item">
-                    <div class="item_circle">
-                        <img src="img/png/advan3.png" alt="" class="item_circle-icon">
-                    </div>
-                    <span class="item_p">100% гарантия <br> сохранности ваших вещей</span>
-                </div>
-                <div class="item">
-                    <div class="item_circle">
-                        <img src="img/png/advan4.png" alt="" class="item_circle-icon">
-                    </div>
-                    <span class="item_p">Оплата за результат <br> после уборки</span>
-                </div>
-                <div class="item">
-                    <div class="item_circle">
-                        <img src="img/png/advan5.png" alt="" class="item_circle-icon">
-                    </div>
-                    <span class="item_p">Гипоаллергенные чистящие средства Solclean и Probrite</span>
-                </div>
-            </div>
-        </div>
-        <div class="services">
-            <h2 class="services-h2">Услуги клининговой компании</h2>
-            <div class="services_cards">
-                <a href="#" class="card-link">
-                    <div class="card">
-                        <div class="card_top">
-                            <img src="img/png/services1.png" alt="" class="card_top-img">
-                        </div>
-                        <div class="card_info">
-                            <span class="card_info_title">УБОРКА КВАРТИР</span>
-                            <span class="card_info_text">Уборка квартир в Москве все чаще доверяют
-                                профессионалам из  клининговых компаний. </span>
-                            <span class="card_info_price">От 30 руб.</span>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="card-link">
-                    <div class="card">
-                        <div class="card_top">
-                            <img src="img/png/services2.png" alt="" class="card_top-img">
-                        </div>
-                        <div class="card_info">
-                            <span class="card_info_title">ГЕНЕРАЛЬНАЯ УБОРКА</span>
-                            <span class="card_info_text">Уборка квартир в Москве все чаще доверяют
-                                профессионалам из клининговых компаний. </span>
-                            <span class="card_info_price">От 2 руб./м2</span>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="card-link">
-                    <div class="card">
-                        <div class="card_top">
-                            <img src="img/png/services3.png" alt="" class="card_top-img">
-                        </div>
-                        <div class="card_info">
-                            <span class="card_info_title">ПРОФЕССИОНАЛЬНАЯ УБОРКА ОФИСОВ</span>
-                            <span class="card_info_text">Уборка квартир в Москве все чаще доверяют
-                                профессионалам из клининговых компаний. </span>
-                            <span class="card_info_price">От 30 руб.</span>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="card-link">
-                    <div class="card">
-                        <div class="card_top">
-                            <img src="img/png/services4.png" alt="" class="card_top-img">
-                        </div>
-                        <div class="card_info">
-                            <span class="card_info_title">УБОРКА ПОСЛЕ РЕМОНТА</span>
-                            <span class="card_info_text">Уборка квартир в Москве все чаще доверяют
-                                профессионалам из клининговых компаний. </span>
-                            <span class="card_info_price">От 2 руб./м2</span>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="card-link">
-                    <div class="card">
-                        <div class="card_top">
-                            <img src="img/png/services5.png" alt="" class="card_top-img">
-                        </div>
-                        <div class="card_info">
-                            <span class="card_info_title">МОЙКА ОКОН, фасадов и ветрин</span>
-                            <span class="card_info_text">Уборка квартир в Москве все чаще доверяют
-                                профессионалам из клининговых компаний. </span>
-                            <span class="card_info_price">От 1,5 руб./м2</span>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="card-link">
-                    <div class="card">
-                        <div class="card_top">
-                            <img src="img/png/services6.png" alt="" class="card_top-img">
-                        </div>
-                        <div class="card_info">
-                            <span class="card_info_title">чистка водоемов</span>
-                            <span class="card_info_text">Уборка квартир в Москве все чаще доверяют
-                                профессионалам из клининговых компаний. </span>
-                            <span class="card_info_price">От 30 руб.</span>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="card-link">
-                    <div class="card">
-                        <div class="card_top">
-                            <img src="img/png/services7.png" alt="" class="card_top-img">
-                        </div>
-                        <div class="card_info">
-                            <span class="card_info_title">ЧИСТКА КОВРОВ</span>
-                            <span class="card_info_text">Уборка квартир в Москве все чаще доверяют
-                                профессионалам из клининговых компаний. </span>
-                            <span class="card_info_price">от 3 руб.м2</span>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="card-link">
-                    <div class="card">
-                        <div class="card_top">
-                            <img src="img/png/services8.png" alt="" class="card_top-img">
-                        </div>
-                        <div class="card_info">
-                            <span class="card_info_title">ЧИСТКА МЕБЕЛИ</span>
-                            <span class="card_info_text">Уборка квартир в Москве все чаще доверяют
-                                профессионалам из клининговых компаний. </span>
-                            <span class="card_info_price">От 30 руб.</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="services_banner">
-                <span class="services_banner-title">Бесплатная консультация</span>
-                <a href="tel:+375297953217" class="services_banner-link">+375 (29) 795-32-17</a>
-            </div>
-            <h2 class="services-h2">Дополнительные услуги</h2>
-            <div class="services_cards addition_cards" id="addition_cards">
-                <a href="#" class="card-link">
-                    <div class="card">
-                        <div class="card_top">
-                            <img src="img/png/services_add1.png" alt="" class="card_top-img">
-                        </div>
-                        <div class="card_info">
-                            <span class="card_info_title">Мытье детских игрушек</span>
-                            <span class="card_info_text">Уборка квартир в Москве все чаще доверяют
-                                профессионалам из  клининговых компаний. </span>
-                            <span class="card_info_price">От 30 руб.</span>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="card-link">
-                    <div class="card">
-                        <div class="card_top">
-                            <img src="img/png/services_add2.png" alt="" class="card_top-img">
-                        </div>
-                        <div class="card_info">
-                            <span class="card_info_title">Глажка одежды, белья</span>
-                            <span class="card_info_text">Уборка квартир в Москве все чаще доверяют
-                                профессионалам из  клининговых компаний. </span>
-                            <span class="card_info_price">От 30 руб.</span>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="card-link">
-                    <div class="card">
-                        <div class="card_top">
-                            <img src="img/png/services_add3.png" alt="" class="card_top-img">
-                        </div>
-                        <div class="card_info">
-                            <span class="card_info_title">ПРОФЕССИОНАЛЬНАЯ ЧИСТКА ШТОР</span>
-                            <span class="card_info_text">Уборка квартир в Москве все чаще доверяют
-                                профессионалам из  клининговых компаний. </span>
-                            <span class="card_info_price">От 30 руб.</span>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="card-link">
-                    <div class="card">
-                        <div class="card_top">
-                            <img src="img/png/services_add4.png" alt="" class="card_top-img">
-                        </div>
-                        <div class="card_info">
-                            <span class="card_info_title">Уборка балкона, лоджии</span>
-                            <span class="card_info_text">Уборка квартир в Москве все чаще доверяют
-                                профессионалам из  клининговых компаний. </span>
-                            <span class="card_info_price">От 30 руб.</span>
-                        </div>
-                    </div>
-                </a>
+            <div class="banner_group">
+                <h1 class="banner-h1">Hardwood floor installation</h1>
+                <span class="banner-p">Looking to upgrade your floors?</span>
+                <button class="banner-btn">CONTACT US NOW</button>
             </div>
         </div>
     </div>
-    <div class="work" style="background-image: url(img/jpg/back1.jpg);">
+    <div class="services">
         <div class="container">
-            <h2 class="work-h2">Как мы работаем</h2>
-            <div class="work_stage_cards">
-                <div class="item">
-                    <div class="item_circle">
-                        <img src="img/png/work1.png" alt="" class="item_circle-img">
+            <h2 class="services-h2">Service Highlights</h2>
+            <div class="default_text services">
+                <h3>Call Now to Speak Directly +1 000-000-0000</h3>
+                <p>loors can simply tell you the story of the house. So, it is not at all a good idea to take the risk
+                    with
+                    it when it comes to your own home or office flooring. Among the different types of flooring, it is
+                    the
+                    wooden flooring which can be the perfect option when it comes to showing the elegance and
+                    extravagance.
+                    Almahdi hardwood flooring provides the best hardwood flooring in Sherman oaks.</p>
+                <p>Starting from installation to finish, hardwood flooring is all about a work of creativity and quality
+                    that mingles with the skill of the workers. We offer installation, repair, polishing of wooden
+                    floors
+                    along with laminating and leveling the floors. With Almahdi hardwood flooring you can only expect
+                    nothing less than the superior quality of hardwood flooring in Los Angeles.</p>
+            </div>
+            <div class="services_cards">
+                <div class="card" style="background-image: url(img/jpg/services1.jpg);">
+                    <div class="card_overlay">
+                        <span class="card_overlay-line"></span>
+                        <span class="card_overlay-h3">Hardwood floor refinishing</span>
+                        <span class="card_overlay-p">
+                                Engineered hardwood is a versatile and resilient flooring option that can be installed in most areas of your home.
+                            </span>
+                        <a href="" class="card_overlay-btn">Learn More</a>
                     </div>
-                    <span class="item-title">Заявка на уборку</span>
-                    <span class="item-p">Просто позвоните нам или оставьте заявку на сайте.</span>
+                    <div class="card_content">
+                        <span class="card_content-line"></span>
+                        <span class="card_content-h3">Hardwood floor refinishing</span>
+                    </div>
                 </div>
-                <div class="item">
-                    <div class="item_circle">
-                        <img src="img/png/work2.png" alt="" class="item_circle-img">
+                <div class="card" style="background-image: url(img/jpg/services1.jpg);">
+                    <div class="card_overlay">
+                        <span class="card_overlay-line"></span>
+                        <span class="card_overlay-h3">Engineered flooring installation</span>
+                        <span class="card_overlay-p">
+                                Engineered hardwood is a versatile and resilient flooring option that can be installed in most areas of your home.
+                            </span>
+                        <a href="" class="card_overlay-btn">Learn More</a>
                     </div>
-                    <span class="item-title">Связываемся с вами</span>
-                    <span class="item-p">Согласовываем детали заказа по телефону. Консультируем по стоимости и сроку уборки.</span>
+                    <div class="card_content">
+                        <span class="card_content-line"></span>
+                        <span class="card_content-h3">Engineered flooring installation</span>
+                    </div>
                 </div>
-                <div class="item">
-                    <div class="item_circle">
-                        <img src="img/png/work3.png" alt="" class="item_circle-img">
+                <div class="card" style="background-image: url(img/jpg/services2.jpg);">
+                    <div class="card_overlay">
+                        <span class="card_overlay-line"></span>
+                        <span class="card_overlay-h3">Repairing floors</span>
+                        <span class="card_overlay-p">
+                                Engineered hardwood is a versatile and resilient flooring option that can be installed in most areas of your home.
+                            </span>
+                        <a href="" class="card_overlay-btn">Learn More</a>
                     </div>
-                    <span class="item-title">Процесс уборки</span>
-                    <span class="item-p">Наша бригада приезжает в назначенный день и время. Производят уборку.</span>
+                    <div class="card_content">
+                        <span class="card_content-line"></span>
+                        <span class="card_content-h3">Repairing floors</span>
+                    </div>
                 </div>
-                <div class="item">
-                    <div class="item_circle">
-                        <img src="img/png/work4.png" alt="" class="item_circle-img">
+                <div class="card" style="background-image: url(img/jpg/services3.jpg);">
+                    <div class="card_overlay">
+                        <span class="card_overlay-line"></span>
+                        <span class="card_overlay-h3">Floors patching</span>
+                        <span class="card_overlay-p">
+                                Engineered hardwood is a versatile and resilient flooring option that can be installed in most areas of your home.
+                            </span>
+                        <a href="" class="card_overlay-btn">Learn More</a>
                     </div>
-                    <span class="item-title">Сдача работы</span>
-                    <span class="item-p">Мы даем вам рекомендации по дальнейшему содержанию объекта в чистоте.</span>
+                    <div class="card_content">
+                        <span class="card_content-line"></span>
+                        <span class="card_content-h3">Floors patching</span>
+                    </div>
                 </div>
-                <div class="item">
-                    <div class="item_circle">
-                        <img src="img/png/work5.png" alt="" class="item_circle-img">
+                <div class="card" style="background-image: url(img/jpg/services4.jpg);">
+                    <div class="card_overlay">
+                        <span class="card_overlay-line"></span>
+                        <span class="card_overlay-h3">Stairs installation</span>
+                        <span class="card_overlay-p">
+                                Engineered hardwood is a versatile and resilient flooring option that can be installed in most areas of your home.
+                            </span>
+                        <a href="" class="card_overlay-btn">Learn More</a>
                     </div>
-                    <span class="item-title">Оплата за результат</span>
-                    <span class="item-p">Вы подписываете акт сдачи-приёмки и оплачиваете наши услуги.</span>
+                    <div class="card_content">
+                        <span class="card_content-line"></span>
+                        <span class="card_content-h3">Stairs installation</span>
+                    </div>
+                </div>
+                <div class="card" style="background-image: url(img/jpg/services5.jpg);">
+                    <div class="card_overlay">
+                        <span class="card_overlay-line"></span>
+                        <span class="card_overlay-h3">Stain floors</span>
+                        <span class="card_overlay-p">
+                                Engineered hardwood is a versatile and resilient flooring option that can be installed in most areas of your home.
+                            </span>
+                        <a href="" class="card_overlay-btn">Learn More</a>
+                    </div>
+                    <div class="card_content">
+                        <span class="card_content-line"></span>
+                        <span class="card_content-h3">Stain floors</span>
+                    </div>
+                </div>
+                <div class="card" style="background-image: url(img/jpg/services6.jpg);">
+                    <div class="card_overlay">
+                        <span class="card_overlay-line"></span>
+                        <span class="card_overlay-h3">Finishing floors</span>
+                        <span class="card_overlay-p">
+                                Engineered hardwood is a versatile and resilient flooring option that can be installed in most areas of your home.
+                            </span>
+                        <a href="" class="card_overlay-btn">Learn More</a>
+                    </div>
+                    <div class="card_content">
+                        <span class="card_content-line"></span>
+                        <span class="card_content-h3">Finishing floors</span>
+                    </div>
+                </div>
+                <div class="card" style="background-image: url(img/jpg/services7.jpg);">
+                    <div class="card_overlay">
+                        <span class="card_overlay-line"></span>
+                        <span class="card_overlay-h3">Laminate installatio</span>
+                        <span class="card_overlay-p">
+                                Engineered hardwood is a versatile and resilient flooring option that can be installed in most areas of your home.
+                            </span>
+                        <a href="" class="card_overlay-btn">Learn More</a>
+                    </div>
+                    <div class="card_content">
+                        <span class="card_content-line"></span>
+                        <span class="card_content-h3">Laminate installatio</span>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="question">
-            <h2 class="question_h2">Часто задаваемые вопросы</h2>
-            <div class="question_item">
-                <div class="accordion">
-                    <div class="accordion_header">
-                        <h3 class="accordion_header-title">Нужно ли подготовить к приходу сотрудников вашей компании инвентарь и моющие
-                            средства?</h3>
-                        <span class="icon">
-                            <img src="img/png/up.png" alt="" class="icon-img">
-                        </span>
-                    </div>
-                    <div class="accordion_content">
-                        <p class="accordion_content_text">Мы работаем сертифицированными средствами марок SOLCLEAN, Probrite,
-                            Pramol производства Германии, Швейцарии, Финляндии и России.</p>
-                    </div>
+    <div class="banner_line">
+        <div class="container">
+            <div class="banner_line_group">
+                <div class="left">
+                    <h3 class="left-h3">Who do we work with</h3>
+                    <div class="left-line"></div>
+                    <h2 class="left-h2">Commercial and residential</h2>
                 </div>
-                <div class="accordion">
-                    <div class="accordion_header">
-                        <h3 class="accordion_header-title">Какие моющие средства вы используете?</h3>
-                        <span class="icon">
-                            <img src="img/png/up.png" alt="" class="icon-img">
-                        </span>
-                    </div>
-                    <div class="accordion_content">
-                        <p class="accordion_content_text">Мы работаем сертифицированными средствами марок SOLCLEAN, Probrite,
-                            Pramol производства Германии, Швейцарии, Финляндии и России.</p>
-                    </div>
+                <button class="banner_line_group-btn">CONTACT US NOW</button>
+            </div>
+        </div>
+    </div>
+    <div class="step">
+        <div class="container">
+            <h2 class="step-h2">3 Simple Steps to Get Started</h2>
+            <p class="step-p">Call Now to Speak Directly +1 000-000-0000</p>
+            <div class="step_cards">
+                <div class="card">
+                    <img src="img/png/step1.png" alt="" class="card-img">
+                    <span class="card-title">Scheduling a call</span>
+                    <div class="card-line"></div>
+                    <span class="card-p">
+                        As you have already made your mind for flooring, it is simple and easy to get in touch with us. You need to give a call only.
+                    </span>
+                    <button class="card-btn">CONTACT US NOW</button>
                 </div>
-                <div class="accordion">
-                    <div class="accordion_header">
-                        <h3 class="accordion_header-title">Выезжаете ли вы в пригород?</h3>
-                        <span class="icon">
-                            <img src="img/png/up.png" alt="" class="icon-img">
-                        </span>
-                    </div>
-                    <div class="accordion_content">
-                        <p class="accordion_content_text">Мы работаем сертифицированными средствами марок SOLCLEAN, Probrite,
-                            Pramol производства Германии, Швейцарии, Финляндии и России.</p>
-                    </div>
+                <div class="card">
+                    <img src="img/png/step2.png" alt="" class="card-img">
+                    <span class="card-title">Plan with us</span>
+                    <div class="card-line"></div>
+                    <span class="card-p">
+                        During your conversation with us, you are free to share your ideas about what type of flooring you are looking for. You can take our expert advice also.
+                    </span>
                 </div>
-                <div class="accordion">
-                    <div class="accordion_header">
-                        <h3 class="accordion_header-title">Вы делаете скидки на уборку постоянным клиентам?</h3>
-                        <span class="icon">
-                            <img src="img/png/up.png" alt="" class="icon-img">
-                        </span>
-                    </div>
-                    <div class="accordion_content">
-                        <p class="accordion_content_text">Мы работаем сертифицированными средствами марок SOLCLEAN, Probrite,
-                            Pramol производства Германии, Швейцарии, Финляндии и России.</p>
-                    </div>
-                </div>
-                <div class="accordion">
-                    <div class="accordion_header">
-                        <h3 class="accordion_header-title">Вы делаете скидки на уборку постоянным клиентам?</h3>
-                        <span class="icon">
-                            <img src="img/png/up.png" alt="" class="icon-img">
-                        </span>
-                    </div>
-                    <div class="accordion_content">
-                        <p class="accordion_content_text">Мы работаем сертифицированными средствами марок SOLCLEAN, Probrite,
-                            Pramol производства Германии, Швейцарии, Финляндии и России.</p>
-                    </div>
-                </div>
-                <div class="accordion">
-                    <div class="accordion_header">
-                        <h3 class="accordion_header-title">Безопасно ли оставлять сотрудника одного в квартире?</h3>
-                        <span class="icon">
-                            <img src="img/png/up.png" alt="" class="icon-img">
-                        </span>
-                    </div>
-                    <div class="accordion_content">
-                        <p class="accordion_content_text">Мы работаем сертифицированными средствами марок SOLCLEAN, Probrite,
-                            Pramol производства Германии, Швейцарии, Финляндии и России.</p>
-                    </div>
-                </div>
-                <div class="accordion">
-                    <div class="accordion_header">
-                        <h3 class="accordion_header-title">Сколько сотрудников выезжает на уборку?</h3>
-                        <span class="icon">
-                            <img src="img/png/up.png" alt="" class="icon-img">
-                        </span>
-                    </div>
-                    <div class="accordion_content">
-                        <p class="accordion_content_text">Мы работаем сертифицированными средствами марок SOLCLEAN, Probrite,
-                            Pramol производства Германии, Швейцарии, Финляндии и России.</p>
-                    </div>
-                </div>
-                <div class="accordion">
-                    <div class="accordion_header">
-                        <h3 class="accordion_header-title">Предоставляются ли дополнительные скидки пенсионерам?</h3>
-                        <span class="icon">
-                            <img src="img/png/up.png" alt="" class="icon-img">
-                        </span>
-                    </div>
-                    <div class="accordion_content">
-                        <p class="accordion_content_text">Мы работаем сертифицированными средствами марок SOLCLEAN, Probrite,
-                            Pramol производства Германии, Швейцарии, Финляндии и России.</p>
-                    </div>
-                </div>
-                <div class="accordion">
-                    <div class="accordion_header">
-                        <h3 class="accordion_header-title">За какое время нужно оставлять заказ на уборку?</h3>
-                        <span class="icon">
-                            <img src="img/png/up.png" alt="" class="icon-img">
-                        </span>
-                    </div>
-                    <div class="accordion_content">
-                        <p class="accordion_content_text">Мы работаем сертифицированными средствами марок SOLCLEAN, Probrite,
-                            Pramol производства Германии, Швейцарии, Финляндии и России.</p>
-                    </div>
-                </div>
-                <div class="accordion">
-                    <div class="accordion_header">
-                        <h3 class="accordion_header-title">Предоставляются ли дополнительные скидки инвалидам?</h3>
-                        <span class="icon">
-                            <img src="img/png/up.png" alt="" class="icon-img">
-                        </span>
-                    </div>
-                    <div class="accordion_content">
-                        <p class="accordion_content_text">Мы работаем сертифицированными средствами марок SOLCLEAN, Probrite,
-                            Pramol производства Германии, Швейцарии, Финляндии и России.</p>
-                    </div>
-                </div>
-                <div class="accordion">
-                    <div class="accordion_header">
-                        <h3 class="accordion_header-title">Каким способом можно оплатить ваши услуги?</h3>
-                        <span class="icon">
-                            <img src="img/png/up.png" alt="" class="icon-img">
-                        </span>
-                    </div>
-                    <div class="accordion_content">
-                        <p class="accordion_content_text">Мы работаем сертифицированными средствами марок SOLCLEAN, Probrite,
-                            Pramol производства Германии, Швейцарии, Финляндии и России.</p>
-                    </div>
-                </div>
-                <div class="accordion">
-                    <div class="accordion_header">
-                        <h3 class="accordion_header-title">Сколько времени занимает комплексная уборка?</h3>
-                        <span class="icon">
-                            <img src="img/png/up.png" alt="" class="icon-img">
-                        </span>
-                    </div>
-                    <div class="accordion_content">
-                        <p class="accordion_content_text">Мы работаем сертифицированными средствами марок SOLCLEAN, Probrite,
-                            Pramol производства Германии, Швейцарии, Финляндии и России.</p>
-                    </div>
+                <div class="card">
+                    <img src="img/png/step3.png" alt="" class="card-img">
+                    <span class="card-title">Property inspection</span>
+                    <div class="card-line"></div>
+                    <span class="card-p">
+                        Give your convenient time to our experts to visit your home for inspecting the property for hardwood flooring design & installation.
+                    </span>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="comments">
+        <div class="container">
+            <div class="comments_group">
+                <div class="comments_bottom">
+                    <div class="comments_bottom_info">
+                        <div class="comments_top">
+                            <img src="img/jpg/back_2.jpg" alt="" class="comments_top-img">
+                        </div>
+                        <h3 class="comments_bottom_info-h3">We are a local flooring service contractor on Cape Cod</h3>
+                        <div class="comments_bottom_info-line"></div>
+                        <h2 class="comments_bottom_info-h2">Customer satisfaction is our priority</h2>
+                        <p class="comments_bottom_info-p">Flooring Wizards provides the highest quality craftsmanship,
+                            at an affordable price. We listen to our customer's needs and then design a plan that will
+                            meet and exceed their expectations. Customer satisfaction is our number 1 priority at
+                            Flooring Wizards and we will never leave a job until our Customer is completely happy.</p>
+                        <p class="comments_bottom_info-p">We pride ourselves on providing only the best for our clients,
+                            which includes top quality service and skills, the finest finishes and stains, and the best
+                            equipment the industry has to offer.</p>
+                        <p class="comments_bottom_info-p">Professional floor installation specializes in dustless
+                            refinishing and installation, but we also offer a wide variety of services including custom
+                            designs, hand distressed, wire brushed for both residential and commercial projects.</p>
+                        <p class="comments_bottom_info-p">When you choose to work with CProfessional floor installation
+                            , you can rest assured that we will treat your home and project as if it were our own. But
+                            don’t take our word for it, see what our clients . </p>
+                        <p class="comments_bottom_info-p">Ready to schedule a free consultation? Fill in the Request a
+                            Quote form here. We look forward to hearing from you!</p>
+                    </div>
+                    <div class="comments_bottom_advantages">
+                        <div class="item">
+                            <span class="item-number">10</span>
+                            <div class="item-line"></div>
+                            <div class="item-text">YEARS IN BUSINESS</div>
+                        </div>
+                        <div class="item">
+                            <span class="item-number">1800</span>
+                            <div class="item-line"></div>
+                            <div class="item-text">HAPPY CLIENTS</div>
+                        </div>
+                        <div class="item">
+                            <span class="item-number">1800</span>
+                            <div class="item-line"></div>
+                            <div class="item-text">PROJECTS DONE</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="comments_right">
+                    <img src="img/jpg/back3.png" alt="" class="comments_right-img">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="project">
+        <div class="container">
+            <h2 class="project-h2">Recently Completed Projects</h2>
+            <p class="project-p">Some of the projects we’ve done in the past</p>
+            <div class="project_cards" id="project_cards_preview">
+                <div class="card" data-src="img/png/portfolio1.png">
+                    <img src="img/png/portfolio1.png" alt="" class="card-img">
+                </div>
+                <div class="card" data-src="img/png/portfolio2.png">
+                    <img src="img/png/portfolio2.png" alt="" class="card-img">
+                </div>
+                <div class="card" data-src="img/png/portfolio3.png">
+                    <img src="img/png/portfolio3.png" alt="" class="card-img">
+                </div>
+                <div class="card" data-src="img/png/portfolio4.png">
+                    <img src="img/png/portfolio4.png" alt="" class="card-img">
+                </div>
+                <div class="card" data-src="img/png/portfolio5.png">
+                    <img src="img/png/portfolio5.png" alt="" class="card-img">
+                </div>
+                <div class="card" data-src="img/png/portfolio6.png">
+                    <img src="img/png/portfolio6.png" alt="" class="card-img">
+                </div>
+                <div class="card" data-src="img/png/portfolio7.png">
+                    <img src="img/png/portfolio7.png" alt="" class="card-img">
+                </div>
+                <div class="card" data-src="img/png/portfolio8.png">
+                    <img src="img/png/portfolio8.png" alt="" class="card-img">
+                </div>
+                <div class="card" data-src="img/png/portfolio9.png">
+                    <img src="img/png/portfolio9.png" alt="" class="card-img">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact">
+        <div class="contact_left">
+            <img src="img/jpg/form_back.jpg" alt="" class="contact_left-img">
         </div>
         <div class="contact_form">
-            <form class="form">
+            <form class="form" id="mainForm">
+                <h3 class="form-h3">Schedule A Call</h3>
+                <div class="form-line"></div>
+                <p class="form-p">If you have any questions or want to schedule an estimate or a new job, please call
+                    us, email or complete the form below:</p>
                 <div class="form_group">
                     <div class="form_group_line">
-                        <label class="form_group_line_label other_box" for="contact_form_select">Выберите вид
-                            уборки</label>
-                        <select name="select-box" id="contact_form_select" class="form_group_line-select">
-                            <option value="С35/45 F200 W8 П4 St-3" name="value">С35/45 F200 W8 П4 St-3</option>
-                            <option value="С35/45 F200 W8 П4 St-3" name="value">С35/45 F200 W8 П4 St-3</option>
-                            <option value="С35/45 F200 W8 П4 St-3" name="value">С35/45 F200 W8 П4 St-3</option>
-                            <option value="С35/45 F200 W8 П4 St-3" name="value">С35/45 F200 W8 П4 St-3</option>
-                            <option value="С35/45 F200 W8 П4 St-3" name="value">С35/45 F200 W8 П4 St-3</option>
-                            <option value="С35/45 F200 W8 П4 St-3" name="value">С35/45 F200 W8 П4 St-3</option>
-                        </select>
+                        <label for="name" class="form_group_line-label">Your Name (required)</label>
+                        <input name="name" type="text" class="form_group_line-input form_group_line-input-name" id="name">
                     </div>
                     <div class="form_group_line">
-                        <label class="form_group_line_label other_box" for="contact_name">Как вас зовут *</label>
-                        <input type="text" id="contact_name" placeholder="Ваше имя"
-                               class="form_group_line-input form_group_line-input-name">
+                        <label for="email" class="form_group_line-label">Your Email (required)</label>
+                        <input name="email" type="text" class="form_group_line-input form_group_line-input-email" id="email">
                     </div>
                     <div class="form_group_line">
-                        <label class="form_group_line_label other_box" for="contact_form_select1">Выберите
-                            услугу</label>
-                        <select name="select-box" id="contact_form_select1" class="form_group_line-select">
-                            <option value="С35/45 F200 W8 П4 St-3" name="value">С35/45 F200 W8 П4 St-3</option>
-                            <option value="С35/45 F200 W8 П4 St-3" name="value">С35/45 F200 W8 П4 St-3</option>
-                            <option value="С35/45 F200 W8 П4 St-3" name="value">С35/45 F200 W8 П4 St-3</option>
-                            <option value="С35/45 F200 W8 П4 St-3" name="value">С35/45 F200 W8 П4 St-3</option>
-                            <option value="С35/45 F200 W8 П4 St-3" name="value">С35/45 F200 W8 П4 St-3</option>
-                            <option value="С35/45 F200 W8 П4 St-3" name="value">С35/45 F200 W8 П4 St-3</option>
-                        </select>
-                    </div>
-                    <div class="form_group_line">
-                        <label class="form_group_line_label other_box" for="contact_phone">Номер телефона*</label>
-                        <input type="text" id="contact_phone" class="form_group_line-input form_group_line-input-phone"
-                               placeholder="Введите ваш номер для связи">
-                    </div>
-                    <div class="form_group_info">
-                        <span class="form_group_info-title other_box">Стоимость уборки в Бресте</span>
-                        <span class="form_group_info-price other_box">от 20 руб</span>
-                        <button class="form_group_info-btn other_box">Заказать обратный звонок</button>
+                        <label for="textarea" class="form_group_line-label">Your Message</label>
+                        <textarea name="message" class="form_group_line-textarea" id="textarea"></textarea>
                     </div>
                 </div>
+                <button class="form-btn" id="mainForm-btn">Send Message</button>
             </form>
         </div>
     </div>
-    <div class="contact_box">
-        <div class="container">
-            <div class="contact_box_column">
-                <span class="contact_box_column-time">Ежедневно с 8.00 до 21.00</span>
-                <a href="tel:+375297953217" class="contact_box_column-link">+375 (29) 795-32-17</a>
-                <div class="contact_box_column_row">
-                    <a href="#" class="contact_box_column_row-link">
-                        <img src="img/svg/telegram.svg" alt="" class="icon-telegram">
-                    </a>
-                    <a href="#" class="contact_box_column_row-link">
-                        <svg class="icon-whatsapp" width="46" height="46" viewBox="0 0 46 46" fill="none"
-                             xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="23" cy="23" r="23" fill="#7B519D"/>
-                            <path d="M29.5548 21.7512C29.579 18.9894 27.1635 16.4577 24.1704 16.1076C24.1109 16.1007 24.046 16.0903 23.9774 16.0792C23.8292 16.0553 23.6759 16.0307 23.5213 16.0307C22.9079 16.0307 22.7439 16.4503 22.7007 16.7006C22.6587 16.9439 22.6988 17.1483 22.8195 17.3082C23.0227 17.5772 23.3801 17.625 23.6672 17.6632C23.7514 17.6745 23.8308 17.6851 23.8973 17.6996C26.5865 18.2848 27.492 19.2047 27.9345 21.8012C27.9453 21.8647 27.9502 21.9428 27.9554 22.0258C27.9747 22.3361 28.0149 22.9819 28.7279 22.9819H28.7279C28.7873 22.9819 28.851 22.9769 28.9174 22.967C29.5813 22.8688 29.5605 22.2785 29.5505 21.9949C29.5477 21.915 29.545 21.8395 29.552 21.7892C29.5538 21.7766 29.5548 21.7639 29.5548 21.7512Z"
-                                  fill="white"/>
-                            <path d="M23.347 15.0944C23.4267 15.1 23.5021 15.1053 23.5648 15.1147C27.9808 15.776 30.0117 17.8134 30.5745 22.1473C30.584 22.221 30.5855 22.3108 30.5871 22.406C30.5927 22.7446 30.6043 23.449 31.3811 23.4636L31.4052 23.4638C31.6488 23.4638 31.8426 23.3923 31.9812 23.251C32.2231 23.0047 32.2062 22.6388 32.1926 22.3447C32.1893 22.2726 32.1861 22.2046 32.1869 22.1451C32.243 17.7127 28.303 13.6934 23.7554 13.5439C23.7365 13.5433 23.7185 13.5443 23.7003 13.5468C23.6914 13.548 23.6749 13.5496 23.6465 13.5496C23.6011 13.5496 23.5454 13.5458 23.4862 13.5419C23.4147 13.5372 23.3336 13.5317 23.2514 13.5317C22.5271 13.5317 22.3895 14.0329 22.3718 14.3318C22.3312 15.0223 23.0173 15.0709 23.347 15.0944Z"
-                                  fill="white"/>
-                            <path d="M30.3617 27.749C30.2678 27.6791 30.1708 27.6069 30.0799 27.5356C29.5977 27.1577 29.0848 26.8095 28.5887 26.4726C28.4858 26.4028 28.3828 26.3329 28.2802 26.2628C27.6448 25.8281 27.0735 25.6169 26.5337 25.6169C25.8068 25.6169 25.1729 26.0081 24.6498 26.7794C24.4181 27.1213 24.1369 27.2876 23.7904 27.2876C23.5855 27.2876 23.3526 27.2307 23.0984 27.1183C21.0473 26.2126 19.5827 24.8239 18.7452 22.9908C18.3403 22.1048 18.4716 21.5257 19.1841 21.0543C19.5887 20.7869 20.3419 20.289 20.2885 19.3357C20.2281 18.253 17.775 14.9955 16.7414 14.6255C16.3038 14.4688 15.8441 14.4673 15.3724 14.6218C14.1842 15.0108 13.3316 15.6939 12.9064 16.5971C12.4955 17.4699 12.5141 18.4947 12.96 19.5607C14.2493 22.6429 16.062 25.3302 18.3478 27.5477C20.5852 29.7185 23.3353 31.4967 26.5214 32.8326C26.8085 32.9529 27.1098 33.0186 27.3297 33.0665C27.4047 33.0829 27.4694 33.0969 27.5166 33.1095C27.5425 33.1163 27.5693 33.12 27.5961 33.1203L27.6212 33.1204C27.6213 33.1204 27.6212 33.1204 27.6214 33.1204C29.1199 33.1204 30.9192 31.7869 31.4718 30.2667C31.956 28.9356 31.072 28.2776 30.3617 27.749Z"
-                                  fill="white"/>
-                            <path d="M24.0114 18.6151C23.7549 18.6215 23.2209 18.6343 23.0336 19.1639C22.9459 19.4114 22.9564 19.6262 23.0648 19.8025C23.2239 20.0612 23.5286 20.1405 23.8058 20.184C24.811 20.341 25.3272 20.8823 25.4305 21.8873C25.4785 22.3559 25.8025 22.6831 26.2186 22.6831H26.2186C26.2494 22.6831 26.2808 22.6813 26.3121 22.6776C26.8125 22.6197 27.0551 22.2617 27.0331 21.6137C27.0411 20.9374 26.6777 20.1696 26.0595 19.558C25.4393 18.9446 24.6915 18.5991 24.0114 18.6151Z"
-                                  fill="white"/>
-                        </svg>
-                    </a>
-                    <a href="#" class="contact_box_column_row-link">
-                        <svg class="icon-telegram" width="46" height="46" viewBox="0 0 46 46" fill="none"
-                             xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="23" cy="23" r="23" fill="#29AD1C"/>
-                            <path d="M35.88 22.2205C35.88 28.9029 30.4207 34.3201 23.6848 34.3201C21.5472 34.3201 19.5393 33.7734 17.7913 32.8159L11.04 34.96L13.2408 28.4663C12.1311 26.6438 11.492 24.5038 11.492 22.2196C11.4928 15.5372 16.9505 10.12 23.6864 10.12C30.4215 10.1216 35.88 15.538 35.88 22.2205ZM23.684 12.0494C18.0311 12.0494 13.4328 16.6129 13.4328 22.2229C13.4328 24.4487 14.1585 26.5094 15.3856 28.186L14.1059 31.963L18.044 30.7116C19.664 31.7743 21.6023 32.3931 23.684 32.3931C29.3369 32.3931 33.9369 27.8305 33.9369 22.2205C33.9385 16.6129 29.3377 12.0494 23.684 12.0494ZM29.8432 25.0076C29.767 24.8853 29.5678 24.8108 29.2697 24.6618C28.9724 24.5127 27.5007 23.7959 27.2277 23.6987C26.9523 23.5991 26.7531 23.5488 26.5538 23.8461C26.357 24.1434 25.7835 24.8108 25.6077 25.0101C25.4336 25.2085 25.2594 25.2336 24.9605 25.087C24.6617 24.9364 23.6978 24.6253 22.5557 23.6153C21.6671 22.8279 21.0669 21.8584 20.8936 21.5611C20.7178 21.2647 20.8758 21.1043 21.024 20.9569C21.1576 20.8232 21.3229 20.6102 21.4727 20.436C21.6226 20.2635 21.672 20.1412 21.7716 19.9428C21.8696 19.7443 21.8202 19.5718 21.7465 19.4219C21.672 19.2729 21.075 17.8149 20.8247 17.2212C20.5761 16.6283 20.3274 16.7263 20.1524 16.7263C19.9783 16.7263 19.779 16.702 19.5798 16.702C19.3805 16.702 19.0565 16.7741 18.7836 17.0713C18.5106 17.3686 17.7379 18.0854 17.7379 19.5451C17.7379 21.0063 18.8079 22.4149 18.9577 22.6125C19.1084 22.8093 21.0264 25.9027 24.0647 27.0901C27.1046 28.2768 27.1046 27.8807 27.6521 27.8305C28.2013 27.7802 29.4212 27.1136 29.669 26.4219C29.9185 25.7269 29.9185 25.1316 29.8432 25.0076Z"
-                                  fill="white"/>
-                        </svg>
-                    </a>
+    <div class="container">
+        <div class="contact_info">
+            <address class="contact_details">
+                <h3 class="contact_details-h3">Contact Details</h3>
+                <div class="contact_details_row">
+                    <div class="contact_details_row_icon">
+                        <img src="img/svg/icon_phone.svg" alt="">
+                    </div>
+                    <div class="contact_details_row_info">
+                        <a href="tel:000-000-0000" class="contact_details_row-phone">000-000-0000</a>
+                        <span class="element">|</span>
+                        <a href="tel:000-000-0000" class="contact_details_row-phone">000-000-0000</a>
+                    </div>
                 </div>
-                <button class="contact_box_column-btn">Заказать обратный звонок</button>
-                <span class="contact_box_column-address">Брест, ул. Дубровская, д.8</span>
-                <a href="mailto:klining.yborka@gmail.com" class="contact_box_column-email">klining.yborka@gmail.com</a>
+                <div class="contact_details_row">
+                    <div class="contact_details_row_icon">
+                        <img src="img/svg/icon_mail.svg" alt="">
+                    </div>
+                    <div class="contact_details_row_info">
+                        <a href="mailto:info@internetsozdateli.com" class="contact_details_row-email">info@internetsozdateli.com</a>
+                    </div>
+                </div>
+                <div class="contact_details_row">
+                    <div class="contact_details_row_icon">
+                        <img src="img/svg/icon_time.svg" alt="">
+                    </div>
+                    <div class="contact_details_row_info">
+                        <span class="contact_details_row-p">Mon - Sat 7.00 - 19.00</span>
+                    </div>
+                </div>
+                <div class="contact_details_row">
+                    <div class="contact_details_row_icon">
+                        <img src="img/svg/icon_location.svg" alt="">
+                    </div>
+                    <div class="contact_details_row_info">
+                        <span class="contact_details_row-p">1155 Brickell Bay Dr, apt 3205,
+                        Miami, Florida, 33131</span>
+                    </div>
+                </div>
+            </address>
+            <div class="contact_award">
+                <h3 class="contact_award-h3">Award Winner</h3>
+                <p class="contact_award-p">The Super Service Award honors service professionals who have maintained
+                    exceptional service ratings and reviews on Angie’s List </p>
+                <div class="contact_award_item">
+                    <div class="item">
+                        <img src="img/png/award1.png" alt="" class="item-img">
+                    </div>
+                    <div class="item">
+                        <img src="img/png/award2.png" alt="" class="item-img">
+                    </div>
+                    <div class="item">
+                        <img src="img/png/award3.png" alt="" class="item-img">
+                    </div>
+                    <div class="item">
+                        <img src="img/png/award4.png" alt="" class="item-img">
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="contact_box_map">
-            <iframe class="map"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2449.499864062815!2d23.65260091594214!3d52.12522817316212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4721099b53ce927b%3A0xf85f8ac4a667120f!2z0YPQuy4g0JTRg9Cx0YDQvtCy0YHQutCw0Y8gOCwg0JHRgNC10YHRgiAyMjQwMjU!5e0!3m2!1sru!2sby!4v1601376758997!5m2!1sru!2sby"
-                    style="border:0;" allowfullscreen=""
-                    aria-hidden="false" tabindex="0"></iframe>
-        </div>
     </div>
-</div>
-<footer class="footer">
+    <div class="map">
+        <iframe class="map-iframe"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.253661557265!2d-80.19117728514246!3d25.76218378363653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b6818c3f4637%3A0xfe9c16e9952dce3!2sThe%20Mark%20on%20Brickell%2C%201155%20Brickell%20Bay%20Dr%20%233205%2C%20Miami%2C%20FL%2033131%2C%20%D0%A1%D0%A8%D0%90!5e0!3m2!1sru!2sby!4v1602829909910!5m2!1sru!2sby"
+                style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+    </div>
+</main>
+<footer class="footer"> 
     <div class="container">
-        <div class="footer_row">
-            <span class="footer_row_p">©2020 Профессиональная уборка офисов и квартир в Бресте</span>
-            <a href="https://internetsozdateli.by/" class="footer_row_p link">Создание и продвижение сайтов -
-                InternetSozdateli</a>
+        <div class="footer_top">
+            <ul class="footer_top_ul">
+                <li class="footer_top_li"><a href="index.html" class="footer_top_link">HOME</a></li>
+                <li class="footer_top_li"><a href="archive.html" class="footer_top_link">SERVICES</a>                </li>
+                <li class="footer_top_li"><a href="materials.html"class="footer_top_link">MATERIALS</a></li>
+                <li class="footer_top_li"><a href="portfolio.html"class="footer_top_link">PORTFOLIO</a></li>
+                <li class="footer_top_li"><a href="contact.html" class="footer_top_link">CONTACT</a></li>
+                <li class="footer_top_li"><a href="about.html" class="footer_top_link">ABOUT</a></li>
+            </ul>
+        </div>
+        <div class="footer_bottom">
+            <span class="footer_bottom-p">Copyright © 2020 Professional floor installation - All rights reserved.</span>
+            <a href="https://internetsozdateli.com" class="footer_bottom-p link">InternetSozdateli</a>
         </div>
     </div>
 </footer>
 <script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/jquery.form.js"></script>
 <script src="js/jquery.maskedinput.min.js"></script>
 <script src="js/jquery.validate.min.js"></script>
+<script src="js/jquery.form.js"></script>
+<script src="js/lightgallery.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
