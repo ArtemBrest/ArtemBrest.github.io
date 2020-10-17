@@ -10,6 +10,31 @@
 </head>
 <body>
 <div class="menu-overlay"></div>
+<!--Modal Windows thanks-->
+<div class="fade" id="fade"></div>
+<div class="modal" id="mainModal">
+    <span class="modal-close mainModal-close">&times;</span>
+    <h1 class="thanks_h1">Спасибо за заявку!</h1>
+    <p class="thanks_p">Наши менеджеры свяжутся с вами в ближайшее время!</p>
+    <button class="btn-close modal-btn-close">Отлично!</button>
+</div>
+<!-- end Modal Windows thanks-->
+<!--Modal Windows type -->
+<div class="modal1" id="mainModal1">
+    <span class="modal1-close mainModal-close">&times;</span>
+    <form class="modal1_form" id="modal1_form">
+
+        <span class="modal1_form-h2">Submit an application</span>
+        <span class="modal1_form-p">Submit an application and our specialist will get in touch</span>
+        <div class="modal1_form_group">
+            <input type="text" class="modal1_form-input modal1_form-input-name" name="name" placeholder="Введите ваше имя">
+            <input type="text" class="modal1_form-input modal1_form-input-phone" name="phone" placeholder="Введите ваш телефон">
+            <textarea type="text" class="modal1_form-textarea" name="message" placeholder="Введите ваше сообщение"></textarea>
+        </div>
+        <button class="modal1_form-btn">Send</button>
+    </form>
+</div>
+<!--end Modal Windows type-->
 <header class="header">
     <div class="container">
         <div class="header_top">
@@ -106,7 +131,7 @@
             <img src="img/jpg/form_back.jpg" alt="" class="contact_left-img">
         </div>
         <div class="contact_form">
-            <form class="form">
+            <form class="form" id="mainForm">
                 <h3 class="form-h3">Schedule A Call</h3>
                 <div class="form-line"></div>
                 <p class="form-p">If you have any questions or want to schedule an estimate or a new job, please call
@@ -114,18 +139,18 @@
                 <div class="form_group">
                     <div class="form_group_line">
                         <label for="name" class="form_group_line-label">Your Name (required)</label>
-                        <input name="name" type="text" class="form_group_line-input" id="name">
+                        <input name="name" type="text" class="form_group_line-input form_group_line-input-name" id="name">
                     </div>
                     <div class="form_group_line">
                         <label for="email" class="form_group_line-label">Your Email (required)</label>
-                        <input name="email" type="text" class="form_group_line-input" id="email">
+                        <input name="email" type="text" class="form_group_line-input form_group_line-input-email" id="email">
                     </div>
                     <div class="form_group_line">
                         <label for="textarea" class="form_group_line-label">Your Message</label>
                         <textarea name="message" class="form_group_line-textarea" id="textarea"></textarea>
                     </div>
                 </div>
-                <button class="form-btn">Send Message</button>
+                <button class="form-btn" id="mainForm-btn">Send Message</button>
             </form>
         </div>
     </div>
