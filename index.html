@@ -3,484 +3,946 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Title</title>
+    <title>BeriHost</title>
     <link rel="stylesheet" href="fonts/stylesheet.css">
-    <link rel="stylesheet" href="css/lightgallery.min.css">
+    <link rel="stylesheet" href="css/resent.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
 </head>
 <body>
-<div class="menu-overlay"></div>
-
-<!--Modal Windows thanks-->
-<div class="fade" id="fade"></div>
-<div class="modal" id="mainModal">
-    <span class="modal-close mainModal-close">&times;</span>
-    <h1 class="thanks_h1">Спасибо за заявку!</h1>
-    <p class="thanks_p">Наши менеджеры свяжутся с вами в ближайшее время!</p>
-    <button class="btn-close modal-btn-close">Отлично!</button>
-</div>
-<!-- end Modal Windows thanks-->
-<!--Modal Windows type -->
-<div class="modal1" id="mainModal1">
-    <span class="modal1-close mainModal-close">&times;</span>
-    <form class="modal1_form" id="modal1_form">
-
-        <span class="modal1_form-h2">Submit an application</span>
-        <span class="modal1_form-p">Submit an application and our specialist will get in touch</span>
-        <div class="modal1_form_group">
-            <input type="text" class="modal1_form-input modal1_form-input-name" name="name" placeholder="Введите ваше имя">
-            <input type="text" class="modal1_form-input modal1_form-input-phone" name="phone" placeholder="Введите ваш телефон">
-            <textarea class="modal1_form-textarea" name="message" placeholder="Введите ваше сообщение"></textarea>
-        </div>
-        <button class="modal1_form-btn">Send</button>
-    </form>
-</div>
-<!--end Modal Windows type-->
-
-
-<header class="header">
+<div class="fade"></div>
+<div class="BigBanner" style="background-image: url(img/png/big-banner.png);">
     <div class="container">
-        <div class="header_top">
-            <div class="header_top_logo">
-                <a href="index.html"> <!--<?php echo get_home_url(); ?>-->
-                    <img src="img/svg/logo_header.svg" alt=""
-                         class="header_top_logo-img"> <!--<?php echo get_template_directory_uri()?>-->
+        <header class="header">
+            <div class="header_logo">
+                <a href="index.html" class="header_logo-text">
+                    Бери<span>Холст</span>
                 </a>
             </div>
-            <address class="header_top_info">
-                <div class="header_top_info_address">1155 Brickell Bay Dr, apt 3205, Miami, Florida, 33131</div>
-                <div class="header_top_info_data">Mon - Sat 7.00 - 19.00</div>
-                <div class="header_top_info_phone">
-                    <a href="tel:000-000-0000" class="header_top_info_phone-link">000-000-0000</a>
-                    <span class="header_top_info_phone-element">|</span>
-                    <a href="tel:000-000-0000" class="header_top_info_phone-link">000-000-0000</a>
+            <div class="header_menu">
+                <ul class="header_menu_ul">
+                    <li class="header_menu_li"><a href="#" class="header_menu_link">Наши стили</a></li>
+                    <li class="header_menu_li"><a href="#" class="header_menu_link">Примеры работ</a></li>
+                    <li class="header_menu_li"><a href="#" class="header_menu_link">Отзывы</a></li>
+                    <li class="header_menu_li"><a href="#" class="header_menu_link">Как узнать стоимость? </a></li>
+                </ul>
+            </div>
+            <div class="header_contacts">
+                <div class="header_contacts_social">
+                    <img src="img/svg/telegram.svg" alt="" class="header_contacts_social-icon">
+                    <img src="img/svg/whatsapp.svg" alt="" class="header_contacts_social-icon">
                 </div>
-            </address>
-        </div>
-        <div class="header_menu_desktop">
-            <ul class="header_menu_desktop_ul">
-                <li class="header_menu_desktop_li"><a href="index.html" class="header_menu_desktop_link">HOME</a></li>
-                <li class="header_menu_desktop_li"><a href="archive.html" class="header_menu_desktop_link">SERVICES</a></li>
-                <li class="header_menu_desktop_li"><a href="materials.html" class="header_menu_desktop_link">MATERIALS</a></li>
-                <li class="header_menu_desktop_li"><a href="portfolio.html" class="header_menu_desktop_link">PORTFOLIO</a></li>
-                <li class="header_menu_desktop_li"><a href="contact.html" class="header_menu_desktop_link">CONTACT</a></li>
-                <li class="header_menu_desktop_li"><a href="about.html" class="header_menu_desktop_link">ABOUT</a></li>
-            </ul>
+                <div class="header_contacts_info">
+                    <a href="tel:+73432279949" class="header_contacts_info-number">+7 (343) 227-99-49</a>
+                    <span class="header_contacts_info-time">Ежедневно с 9.00 до 21.00</span>
+                </div>
+            </div>
+        </header>
+        <div class="BigBanner_info">
+            <div class="BigBanner_info_pre-title">
+                <svg width="21" height="1" viewBox="0 0 21 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="21" height="1" fill="#5C677A"/>
+                </svg>
+                <p>Дизайнерский портрет за сутки</p>
+            </div>
+            <h1 class="BigBanner_info_h1 big-banner__title">
+                Идеальный подарок <br>
+                <span class="txt-rotate" data-period="2000"
+                      data-rotate='[ "на праздник твоей подруги", "на юбилей твоих родителей", "на годовщину свадьбы", "на любимому человеку 14 февраля", "на начальнику на Новый год"]'></span>
+                </p>
+            </h1>
+            <a href="#main_form" class="BigBanner_info-btn">Получить бесплатный 3D-макет картины</a>
+            <img src="img/png/banner.png" alt="" class="BigBanner_info-img">
+            <div class="BigBanner_info_img">
+                <img src="img/png/banner_mob.png" alt="" class="BigBanner_info-img_mob">
+                <img src="img/png/banner_main-circle.png" alt="" class="BigBanner_info_big-circle">
+                <img src="img/png/form_order_back-circle.png" alt="" class="BigBanner_info_small-circle">
+            </div>
         </div>
     </div>
-    <div class="header_top_mobile">
-        <div class="header_top_mobile_block">
-            <span class="header_top_mobile-icon"></span>
-        </div>
-        <a href="index.html" class="header_top_mobile_logo">
-            <img src="img/svg/logo_header_mob.svg" alt="">
-        </a>
-    </div>
-    <div class="header_menu_mobile">
-        <ul class="header_menu_mobile_ul">
-            <li class="header_menu_mobile_li"><a class="header_menu_mobile_link" href="index.html">HOME</a></li>
-            <li class="header_menu_mobile_li"><a class="header_menu_mobile_link" href="archive.html">SERVICES</a></li>
-            <li class="header_menu_mobile_li"><a class="header_menu_mobile_link" href="materials.html">MATERIALS</a></li>
-            <li class="header_menu_mobile_li"><a class="header_menu_mobile_link" href="portfolio.html">PORTFOLIO</a></li>
-            <li class="header_menu_mobile_li"><a class="header_menu_mobile_link" href="contact.html">CONTACT</a></li>
-            <li class="header_menu_mobile_li"><a class="header_menu_mobile_link" href="about.html">ABOUT</a></li>
-        </ul>
-    </div>
-</header>
+</div>
 <main class="content">
-    <div class="banner" style="background-image: url(img/jpg/back1.jpg);">
-        <div class="container">
-            <div class="banner_group">
-                <h1 class="banner-h1">Hardwood floor installation</h1>
-                <span class="banner-p">Looking to upgrade your floors?</span>
-                <button class="banner-btn">CONTACT US NOW</button>
-            </div>
-        </div>
-    </div>
-    <div class="services">
-        <div class="container">
-            <h2 class="services-h2">Service Highlights</h2>
-            <div class="default_text services">
-                <h3>Call Now to Speak Directly +1 000-000-0000</h3>
-                <p>loors can simply tell you the story of the house. So, it is not at all a good idea to take the risk
-                    with
-                    it when it comes to your own home or office flooring. Among the different types of flooring, it is
-                    the
-                    wooden flooring which can be the perfect option when it comes to showing the elegance and
-                    extravagance.
-                    Almahdi hardwood flooring provides the best hardwood flooring in Sherman oaks.</p>
-                <p>Starting from installation to finish, hardwood flooring is all about a work of creativity and quality
-                    that mingles with the skill of the workers. We offer installation, repair, polishing of wooden
-                    floors
-                    along with laminating and leveling the floors. With Almahdi hardwood flooring you can only expect
-                    nothing less than the superior quality of hardwood flooring in Los Angeles.</p>
-            </div>
+    <div class="container">
+        <div class="services">
+            <p class="services_sub_title">Почему стоит выбрать нас?</p>
+            <h2 class="services_h2">В нашей студии <span>17 стилей арт-обработки!</span>
+                Вы точно найдете тот самый</h2>
             <div class="services_cards">
-                <div class="card" style="background-image: url(img/jpg/services1.jpg);">
-                    <div class="card_overlay">
-                        <span class="card_overlay-line"></span>
-                        <span class="card_overlay-h3">Hardwood floor refinishing</span>
-                        <span class="card_overlay-p">
-                                Engineered hardwood is a versatile and resilient flooring option that can be installed in most areas of your home.
-                            </span>
-                        <a href="" class="card_overlay-btn">Learn More</a>
-                    </div>
-                    <div class="card_content">
-                        <span class="card_content-line"></span>
-                        <span class="card_content-h3">Hardwood floor refinishing</span>
-                    </div>
-                </div>
-                <div class="card" style="background-image: url(img/jpg/services1.jpg);">
-                    <div class="card_overlay">
-                        <span class="card_overlay-line"></span>
-                        <span class="card_overlay-h3">Engineered flooring installation</span>
-                        <span class="card_overlay-p">
-                                Engineered hardwood is a versatile and resilient flooring option that can be installed in most areas of your home.
-                            </span>
-                        <a href="" class="card_overlay-btn">Learn More</a>
-                    </div>
-                    <div class="card_content">
-                        <span class="card_content-line"></span>
-                        <span class="card_content-h3">Engineered flooring installation</span>
-                    </div>
-                </div>
-                <div class="card" style="background-image: url(img/jpg/services2.jpg);">
-                    <div class="card_overlay">
-                        <span class="card_overlay-line"></span>
-                        <span class="card_overlay-h3">Repairing floors</span>
-                        <span class="card_overlay-p">
-                                Engineered hardwood is a versatile and resilient flooring option that can be installed in most areas of your home.
-                            </span>
-                        <a href="" class="card_overlay-btn">Learn More</a>
-                    </div>
-                    <div class="card_content">
-                        <span class="card_content-line"></span>
-                        <span class="card_content-h3">Repairing floors</span>
-                    </div>
-                </div>
-                <div class="card" style="background-image: url(img/jpg/services3.jpg);">
-                    <div class="card_overlay">
-                        <span class="card_overlay-line"></span>
-                        <span class="card_overlay-h3">Floors patching</span>
-                        <span class="card_overlay-p">
-                                Engineered hardwood is a versatile and resilient flooring option that can be installed in most areas of your home.
-                            </span>
-                        <a href="" class="card_overlay-btn">Learn More</a>
-                    </div>
-                    <div class="card_content">
-                        <span class="card_content-line"></span>
-                        <span class="card_content-h3">Floors patching</span>
-                    </div>
-                </div>
-                <div class="card" style="background-image: url(img/jpg/services4.jpg);">
-                    <div class="card_overlay">
-                        <span class="card_overlay-line"></span>
-                        <span class="card_overlay-h3">Stairs installation</span>
-                        <span class="card_overlay-p">
-                                Engineered hardwood is a versatile and resilient flooring option that can be installed in most areas of your home.
-                            </span>
-                        <a href="" class="card_overlay-btn">Learn More</a>
-                    </div>
-                    <div class="card_content">
-                        <span class="card_content-line"></span>
-                        <span class="card_content-h3">Stairs installation</span>
-                    </div>
-                </div>
-                <div class="card" style="background-image: url(img/jpg/services5.jpg);">
-                    <div class="card_overlay">
-                        <span class="card_overlay-line"></span>
-                        <span class="card_overlay-h3">Stain floors</span>
-                        <span class="card_overlay-p">
-                                Engineered hardwood is a versatile and resilient flooring option that can be installed in most areas of your home.
-                            </span>
-                        <a href="" class="card_overlay-btn">Learn More</a>
-                    </div>
-                    <div class="card_content">
-                        <span class="card_content-line"></span>
-                        <span class="card_content-h3">Stain floors</span>
-                    </div>
-                </div>
-                <div class="card" style="background-image: url(img/jpg/services6.jpg);">
-                    <div class="card_overlay">
-                        <span class="card_overlay-line"></span>
-                        <span class="card_overlay-h3">Finishing floors</span>
-                        <span class="card_overlay-p">
-                                Engineered hardwood is a versatile and resilient flooring option that can be installed in most areas of your home.
-                            </span>
-                        <a href="" class="card_overlay-btn">Learn More</a>
-                    </div>
-                    <div class="card_content">
-                        <span class="card_content-line"></span>
-                        <span class="card_content-h3">Finishing floors</span>
-                    </div>
-                </div>
-                <div class="card" style="background-image: url(img/jpg/services7.jpg);">
-                    <div class="card_overlay">
-                        <span class="card_overlay-line"></span>
-                        <span class="card_overlay-h3">Laminate installatio</span>
-                        <span class="card_overlay-p">
-                                Engineered hardwood is a versatile and resilient flooring option that can be installed in most areas of your home.
-                            </span>
-                        <a href="" class="card_overlay-btn">Learn More</a>
-                    </div>
-                    <div class="card_content">
-                        <span class="card_content-line"></span>
-                        <span class="card_content-h3">Laminate installatio</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="banner_line">
-        <div class="container">
-            <div class="banner_line_group">
-                <div class="left">
-                    <h3 class="left-h3">Who do we work with</h3>
-                    <div class="left-line"></div>
-                    <h2 class="left-h2">Commercial and residential</h2>
-                </div>
-                <button class="banner_line_group-btn">CONTACT US NOW</button>
-            </div>
-        </div>
-    </div>
-    <div class="step">
-        <div class="container">
-            <h2 class="step-h2">3 Simple Steps to Get Started</h2>
-            <p class="step-p">Call Now to Speak Directly +1 000-000-0000</p>
-            <div class="step_cards">
                 <div class="card">
-                    <img src="img/png/step1.png" alt="" class="card-img">
-                    <span class="card-title">Scheduling a call</span>
-                    <div class="card-line"></div>
-                    <span class="card-p">
-                        As you have already made your mind for flooring, it is simple and easy to get in touch with us. You need to give a call only.
-                    </span>
-                    <button class="card-btn">CONTACT US NOW</button>
+                    <img src="img/jpg/example-work-1.jpg" alt="" class="card-img">
+                    <p class="card-title">Портрет на холсте в стиле "Дрим Арт"</p>
+                    <p class="card-body">Давайте порадуем Ваших дорогих и любимых необыкновенной картиной на холсте
+                        по фотографии!</p>
+                    <a href="#" class="card-link">Получить 3D-макет картины</a>
                 </div>
                 <div class="card">
-                    <img src="img/png/step2.png" alt="" class="card-img">
-                    <span class="card-title">Plan with us</span>
-                    <div class="card-line"></div>
-                    <span class="card-p">
-                        During your conversation with us, you are free to share your ideas about what type of flooring you are looking for. You can take our expert advice also.
-                    </span>
+                    <img src="img/jpg/example-work-2.jpg" alt="" class="card-img">
+                    <p class="card-title">Портрет на холсте в стиле "Дрим Арт"</p>
+                    <p class="card-body">Давайте порадуем Ваших дорогих и любимых необыкновенной картиной на холсте
+                        по фотографии!</p>
+                    <a href="#" class="card-link">Получить 3D-макет картины</a>
                 </div>
                 <div class="card">
-                    <img src="img/png/step3.png" alt="" class="card-img">
-                    <span class="card-title">Property inspection</span>
-                    <div class="card-line"></div>
-                    <span class="card-p">
-                        Give your convenient time to our experts to visit your home for inspecting the property for hardwood flooring design & installation.
-                    </span>
+                    <img src="img/jpg/example-work-3.jpg" alt="" class="card-img">
+                    <p class="card-title">Портрет на холсте в стиле "Дрим Арт"</p>
+                    <p class="card-body">Давайте порадуем Ваших дорогих и любимых необыкновенной картиной на холсте
+                        по фотографии!</p>
+                    <a href="#" class="card-link">Получить 3D-макет картины</a>
+                </div>
+                <div class="card">
+                    <img src="img/jpg/example-work-4.jpg" alt="" class="card-img">
+                    <p class="card-title">Портрет на холсте в стиле "Дрим Арт"</p>
+                    <p class="card-body">Давайте порадуем Ваших дорогих и любимых необыкновенной картиной на холсте
+                        по фотографии!</p>
+                    <a href="#" class="card-link">Получить 3D-макет картины</a>
+                </div>
+                <div class="card">
+                    <img src="img/jpg/example-work-1.jpg" alt="" class="card-img">
+                    <p class="card-title">Портрет на холсте в стиле "Дрим Арт"</p>
+                    <p class="card-body">Давайте порадуем Ваших дорогих и любимых необыкновенной картиной на холсте
+                        по фотографии!</p>
+                    <a href="#" class="card-link">Получить 3D-макет картины</a>
+                </div>
+                <div class="card">
+                    <img src="img/jpg/example-work-2.jpg" alt="" class="card-img">
+                    <p class="card-title">Портрет на холсте в стиле "Дрим Арт"</p>
+                    <p class="card-body">Давайте порадуем Ваших дорогих и любимых необыкновенной картиной на холсте
+                        по фотографии!</p>
+                    <a href="#" class="card-link">Получить 3D-макет картины</a>
+                </div>
+                <div class="card">
+                    <img src="img/jpg/example-work-3.jpg" alt="" class="card-img">
+                    <p class="card-title">Портрет на холсте в стиле "Дрим Арт"</p>
+                    <p class="card-body">Давайте порадуем Ваших дорогих и любимых необыкновенной картиной на холсте
+                        по фотографии!</p>
+                    <a href="#" class="card-link">Получить 3D-макет картины</a>
+                </div>
+                <div class="card">
+                    <img src="img/jpg/example-work-4.jpg" alt="" class="card-img">
+                    <p class="card-title">Портрет на холсте в стиле "Дрим Арт"</p>
+                    <p class="card-body">Давайте порадуем Ваших дорогих и любимых необыкновенной картиной на холсте
+                        по фотографии!</p>
+                    <a href="#" class="card-link">Получить 3D-макет картины</a>
+                </div>
+            </div>
+            <a href="#" class="services-btn">Показать еще</a>
+        </div>
+    </div>
+    <div class="calculator-background" style="background-image: url(img/png/back1.png);">
+        <div class="container">
+            <div class="calculator">
+                <p class="calculator_sub_title">Как узнать стоимость?</p>
+                <h2 class="calculator_h2">
+                    Мы ценим ваше время, <br>
+                    и сделали <span>удобный калькулятор цен</span>
+                </h2>
+                <p class="calculator_p">Загрузите свое фото, и конструктор автоматически посчитает сумму портрета, исходя из выбранных размеров и качества печати</p>
+                <div class="calculator_iframe"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="comments">
+            <p class="comments_sub_title">Отзывы наших клиентов</p>
+            <h2 class="comments_h2">
+                Арт-портрет на холсте - <br>
+                идеальный <span>подарок на любой случай</span>
+            </h2>
+            <p class="comments_p">Отзывы - подтверждение качества нашей работы</p>
+            <div class="comments_sl">
+                <div class="comments_slider">
+                    <img src="img/jpg/present-portrait-1.jpg" alt="" class="comments_slider-img">
+                </div>
+                <div class="comments_slider">
+                    <img src="img/jpg/present-portrait-2.jpg" alt="" class="comments_slider-img">
+                </div>
+                <div class="comments_slider">
+                    <img src="img/jpg/present-portrait-3.jpg" alt="" class="comments_slider-img">
+                </div>
+                <div class="comments_slider">
+                    <img src="img/jpg/present-portrait-4.jpg" alt="" class="comments_slider-img">
+                </div>
+                <div class="comments_slider">
+                    <img src="img/jpg/present-portrait-1.jpg" alt="" class="comments_slider-img">
+                </div>
+                <div class="comments_slider">
+                    <img src="img/jpg/present-portrait-2.jpg" alt="" class="comments_slider-img">
                 </div>
             </div>
         </div>
     </div>
-    <div class="comments">
+    <div class="other-background" style="background-image: url(img/png/other-background.png);">
         <div class="container">
-            <div class="comments_group">
-                <div class="comments_bottom">
-                    <div class="comments_bottom_info">
-                        <div class="comments_top">
-                            <img src="img/jpg/back_2.jpg" alt="" class="comments_top-img">
+            <div class="price wrapper">
+                <p class="price_sub_title">Размеры и стоимость</p>
+                <h2 class="price_h2">
+                    Мы изготовим <span>арт любого размера,</span> <br>
+                    от 40х40 до 80х100 см
+                </h2>
+                <p class="price_p">Выберите подходящий формат! <br>
+                    Но вы также можете заказать портрет по персональным размерам </p>
+                <div class="price_tabs">
+                    <span class="price_tabs_span">Прямоугольные размеры</span>
+                    <span class="price_tabs_span">Квадратные размеры</span>
+                </div>
+                <div class="price_tab_content">
+                    <div class="card price_card_size">
+                        <div class="card_tabs">
+                            <div class="card_tabs_row">
+                                <span class="card_size">30×40 см</span>
+                                <span class="card_price">от 1440 руб.</span>
+                            </div>
+                            <div class="card_tabs_row">
+                                <span class="card_size">40×60 см</span>
+                                <span class="card_price">от 1440 руб.</span>
+                            </div>
+                            <div class="card_tabs_row">
+                                <span class="card_size">50×70 см</span>
+                                <span class="card_price">от 1440 руб.</span>
+                            </div>
+                            <div class="card_tabs_row">
+                                <span class="card_size">60×80 см</span>
+                                <span class="card_price">от 1440 руб.</span>
+                            </div>
+                            <div class="card_tabs_row">
+                                <span class="card_size">70×90 см</span>
+                                <span class="card_price">от 1440 руб.</span>
+                            </div>
+                            <div class="card_tabs_row">
+                                <span class="card_size">80×100 см</span>
+                                <span class="card_price">от 1440 руб.</span>
+                            </div>
                         </div>
-                        <h3 class="comments_bottom_info-h3">We are a local flooring service contractor on Cape Cod</h3>
-                        <div class="comments_bottom_info-line"></div>
-                        <h2 class="comments_bottom_info-h2">Customer satisfaction is our priority</h2>
-                        <p class="comments_bottom_info-p">Flooring Wizards provides the highest quality craftsmanship,
-                            at an affordable price. We listen to our customer's needs and then design a plan that will
-                            meet and exceed their expectations. Customer satisfaction is our number 1 priority at
-                            Flooring Wizards and we will never leave a job until our Customer is completely happy.</p>
-                        <p class="comments_bottom_info-p">We pride ourselves on providing only the best for our clients,
-                            which includes top quality service and skills, the finest finishes and stains, and the best
-                            equipment the industry has to offer.</p>
-                        <p class="comments_bottom_info-p">Professional floor installation specializes in dustless
-                            refinishing and installation, but we also offer a wide variety of services including custom
-                            designs, hand distressed, wire brushed for both residential and commercial projects.</p>
-                        <p class="comments_bottom_info-p">When you choose to work with CProfessional floor installation
-                            , you can rest assured that we will treat your home and project as if it were our own. But
-                            don’t take our word for it, see what our clients . </p>
-                        <p class="comments_bottom_info-p">Ready to schedule a free consultation? Fill in the Request a
-                            Quote form here. We look forward to hearing from you!</p>
+                        <div class="card_tab_content">
+                            <div class="card_right">
+                                <img src="img/png/tab1.png" alt="" class="card_right-img">
+                            </div>
+                            <div class="card_right">
+                                <img src="img/png/tab1.png" alt="" class="card_right-img">
+                            </div>
+                            <div class="card_right">
+                                <img src="img/png/tab1.png" alt="" class="card_right-img">
+                            </div>
+                            <div class="card_right">
+                                <img src="img/png/tab1.png" alt="" class="card_right-img">
+                            </div>
+                            <div class="card_right">
+                                <img src="img/png/tab1.png" alt="" class="card_right-img">
+                            </div>
+                            <div class="card_right">
+                                <img src="img/png/tab1.png" alt="" class="card_right-img">
+                            </div>
+                        </div>
                     </div>
-                    <div class="comments_bottom_advantages">
-                        <div class="item">
-                            <span class="item-number">10</span>
-                            <div class="item-line"></div>
-                            <div class="item-text">YEARS IN BUSINESS</div>
+                    <div class="card price_card_size">
+                        <div class="card_tabs">
+                            <div class="card_tabs_row">
+                                <span class="card_size">40×40 см</span>
+                                <span class="card_price">от 1440 руб.</span>
+                            </div>
+                            <div class="card_tabs_row">
+                                <span class="card_size">50×50 см</span>
+                                <span class="card_price">от 1440 руб.</span>
+                            </div>
+                            <div class="card_tabs_row">
+                                <span class="card_size">60×60 см</span>
+                                <span class="card_price">от 1440 руб.</span>
+                            </div>
+                            <div class="card_tabs_row">
+                                <span class="card_size">70×70 см</span>
+                                <span class="card_price">от 1440 руб.</span>
+                            </div>
+                            <div class="card_tabs_row">
+                                <span class="card_size">80×80 см</span>
+                                <span class="card_price">от 1440 руб.</span>
+                            </div>
+                            <div class="card_tabs_row">
+                                <span class="card_size">90×90 см</span>
+                                <span class="card_price">от 1440 руб.</span>
+                            </div>
                         </div>
-                        <div class="item">
-                            <span class="item-number">1800</span>
-                            <div class="item-line"></div>
-                            <div class="item-text">HAPPY CLIENTS</div>
-                        </div>
-                        <div class="item">
-                            <span class="item-number">1800</span>
-                            <div class="item-line"></div>
-                            <div class="item-text">PROJECTS DONE</div>
+                        <div class="card_tab_content">
+                            <div class="card_right">
+                                <img src="img/png/tab1.png" alt="" class="card_right-img">
+                            </div>
+                            <div class="card_right">
+                                <img src="img/png/tab1.png" alt="" class="card_right-img">
+                            </div>
+                            <div class="card_right">
+                                <img src="img/png/tab1.png" alt="" class="card_right-img">
+                            </div>
+                            <div class="card_right">
+                                <img src="img/png/tab1.png" alt="" class="card_right-img">
+                            </div>
+                            <div class="card_right">
+                                <img src="img/png/tab1.png" alt="" class="card_right-img">
+                            </div>
+                            <div class="card_right">
+                                <img src="img/png/tab1.png" alt="" class="card_right-img">
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="comments_right">
-                    <img src="img/jpg/back3.png" alt="" class="comments_right-img">
+                <span class="price_sub_text">*цена указана за фотопечать без обработки</span>
+                <div class="price_work">
+                    <img src="img/png/price_img.png" alt="" class="price_work_main">
+                    <img src="img/png/price_circle.png" alt="" class="price_work_sub">
+                    <div class="price_work_info">
+                        <h3 class="price_work_info-h3">В работу входит</h3>
+                        <ul class="price_work_info_ul">
+                            <li class="price_work_info_li">Печать портрета <strong>на художественном холсте</strong>
+                            </li>
+                            <li class="price_work_info_li">Удобные условия оплаты</li>
+                            <li class="price_work_info_li"><strong>Гарантия 15 лет</strong> на качество цветопередачи и
+                                форму
+                            </li>
+                            <li class="price_work_info_li">Крафтовая <strong>упаковка</strong>, крепления не требующие
+                                сверления
+                            </li>
+                            <li class="price_work_info_li">И <strong>открытка с вашими пожеланиями</strong> для
+                                получателя!
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="project">
+    <div class="portfolio">
         <div class="container">
-            <h2 class="project-h2">Recently Completed Projects</h2>
-            <p class="project-p">Some of the projects we’ve done in the past</p>
-            <div class="project_cards" id="project_cards_preview">
-                <div class="card" data-src="img/png/portfolio1.png">
+            <p class="comments_sub_title">Посмотрите наши работы</p>
+            <h2 class="comments_h2">
+                Более <span>500 примеров наших работ</span> <br>
+                помогут вам сориентироваться с выбором
+            </h2>
+            <div class="portfolio_cards grid">
+                <div class="card item_sub">
                     <img src="img/png/portfolio1.png" alt="" class="card-img">
                 </div>
-                <div class="card" data-src="img/png/portfolio2.png">
+                <div class="card item_sub">
                     <img src="img/png/portfolio2.png" alt="" class="card-img">
                 </div>
-                <div class="card" data-src="img/png/portfolio3.png">
+                <div class="card item_sub">
                     <img src="img/png/portfolio3.png" alt="" class="card-img">
                 </div>
-                <div class="card" data-src="img/png/portfolio4.png">
+                <div class="card item_sub">
                     <img src="img/png/portfolio4.png" alt="" class="card-img">
                 </div>
-                <div class="card" data-src="img/png/portfolio5.png">
+                <div class="card item_sub">
                     <img src="img/png/portfolio5.png" alt="" class="card-img">
                 </div>
-                <div class="card" data-src="img/png/portfolio6.png">
+                <div class="card item_sub">
                     <img src="img/png/portfolio6.png" alt="" class="card-img">
                 </div>
-                <div class="card" data-src="img/png/portfolio7.png">
-                    <img src="img/png/portfolio7.png" alt="" class="card-img">
-                </div>
-                <div class="card" data-src="img/png/portfolio8.png">
+                <div class="card item_sub">
                     <img src="img/png/portfolio8.png" alt="" class="card-img">
                 </div>
-                <div class="card" data-src="img/png/portfolio9.png">
+                <div class="card item_sub">
+                    <img src="img/png/portfolio7.png" alt="" class="card-img">
+                </div>
+                <div class="card item_sub">
+                    <img src="img/png/portfolio11.png" alt="" class="card-img">
+                </div>
+                <div class="card item_sub">
                     <img src="img/png/portfolio9.png" alt="" class="card-img">
                 </div>
+                <div class="card item_sub">
+                    <img src="img/png/portfolio10.png" alt="" class="card-img">
+                </div>
+                <div class="card item_sub">
+                    <img src="img/png/portfolio12.png" alt="" class="card-img">
+                </div>
             </div>
+            <a href="#" class="portfolio-btn">Показать еще</a>
         </div>
     </div>
-    <div class="contact">
-        <div class="contact_left">
-            <img src="img/jpg/form_back.jpg" alt="" class="contact_left-img">
-        </div>
-        <div class="contact_form">
-            <form class="form" id="mainForm">
-                <h3 class="form-h3">Schedule A Call</h3>
-                <div class="form-line"></div>
-                <p class="form-p">If you have any questions or want to schedule an estimate or a new job, please call
-                    us, email or complete the form below:</p>
-                <div class="form_group">
-                    <div class="form_group_line">
-                        <label for="name" class="form_group_line-label">Your Name (required)</label>
-                        <input name="name" type="text" class="form_group_line-input form_group_line-input-name" id="name">
+    <div class="other-background" style="background-image: url(img/png/other-background.png);">
+        <div class="advantages">
+            <div class="container">
+                <p class="advantages_sub_title">Почему именно мы</p>
+                <h2 class="advantages_h2">
+                    Когда речь заходит о подарке, <br>
+                    <span>почему выбирают нас?</span>
+                </h2>
+                <div class="advantages_cards">
+                    <div class="item">
+                        <div class="item_left">
+                            <img src="img/png/advantages1.png" alt="" class="item_left-img">
+                        </div>
+                        <div class="item_right">
+                            <span class="item_right-text">Используем популярную <strong>галерейную натяжку холста</strong>, придающую глубину портрета</span>
+                        </div>
                     </div>
-                    <div class="form_group_line">
-                        <label for="email" class="form_group_line-label">Your Email (required)</label>
-                        <input name="email" type="text" class="form_group_line-input form_group_line-input-email" id="email">
+                    <div class="item">
+                        <div class="item_left">
+                            <img src="img/png/advantages2.png" alt="" class="item_left-img">
+                        </div>
+                        <div class="item_right">
+                            <span class="item_right-text">Вы можете вносить неограниченное количество <strong>правок бесплатно</strong></span>
+                        </div>
                     </div>
-                    <div class="form_group_line">
-                        <label for="textarea" class="form_group_line-label">Your Message</label>
-                        <textarea name="message" class="form_group_line-textarea" id="textarea"></textarea>
+                    <div class="item">
+                        <div class="item_left">
+                            <img src="img/png/advantages3.png" alt="" class="item_left-img">
+                        </div>
+                        <div class="item_right">
+                            <span class="item_right-text">Нам важен комфорт в общении, потому к каждому подбираем <strong>особый подход</strong></span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item_left">
+                            <img src="img/png/advantages4.png" alt="" class="item_left-img">
+                        </div>
+                        <div class="item_right">
+                            <span class="item_right-text">Даже самые маленькие детали не останутся без внимания благодаря нашему <strong>качеству печати</strong></span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item_left">
+                            <img src="img/png/advantages5.png" alt="" class="item_left-img">
+                        </div>
+                        <div class="item_right">
+                            <span class="item_right-text">Оперативность, ведь мы делаем портрет <strong>в течении 1 рабочего дня</strong></span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item_left">
+                            <img src="img/png/advantages6.png" alt="" class="item_left-img">
+                        </div>
+                        <div class="item_right">
+                            <span class="item_right-text">Предлагаем <strong>17 разнообразных стилей</strong> для дизайна портрета</span>
+                        </div>
                     </div>
                 </div>
-                <button class="form-btn" id="mainForm-btn">Send Message</button>
-            </form>
+                <div class="advantages_group" style="background-image: url(img/jpg/back_form.jpg);">
+                    <h3 class="advantages_group-h3">Получите <span>бесплатный 3D-макет</span><br>
+                        вашего портрета!</h3>
+                    <p class="advantages_group-p">Оставьте заявку на бесплатный макет, и мы свяжемся <br>
+                        с вами в течении часа для обсуждения всех деталей!</p>
+                    <a href="#main_form" class="advantages_group-btn">Получить бесплатный
+                        3D-макет картины
+                    </a>
+                </div>
+                <img src="img/png/back3.png" alt="" class="advantages-main-img">
+            </div>
         </div>
     </div>
     <div class="container">
-        <div class="contact_info">
-            <address class="contact_details">
-                <p class="contact_details-h3">Contact Details</p>
-                <div class="contact_details_row">
-                    <div class="contact_details_row_icon">
-                        <img src="img/svg/icon_phone.svg" alt="">
+        <div class="work">
+            <p class="work_sub_title">Посмотрите наши работы</p>
+            <h2 class="work_h2">
+                Все этапы мы выполняем согласно вашим рекомендациям. <br>
+                <span>Каждая деталь сделана с любовью</span>
+            </h2>
+            <div class="work_cards">
+                <div class="step">
+                    <div class="step_left">
+                        <img src="img/jpg/step1.jpg" alt="" class="step_left-img">
+                        <div class="step_left_video">
+                            <img src="img/png/circle-video.png" alt="" class="step_left-video">
+                            <img src="img/png/video-line.png" alt="" class="step_left-line">
+                            <span class="step_content-link">Посмотрите видео про эскиз</span>
+                        </div>
+                        <div class="modal_video">
+                            <span class="modal_video-h3">Делаем эскиз</span>
+                            <div class="modal_video_iframe">
+                                <iframe class="modal_video_iframe-img" src="https://www.youtube.com/embed/2fiKcCD7zpM"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="step_left-number" style="background-image: url(img/png/circle-step.png);">1</div>
                     </div>
-                    <div class="contact_details_row_info">
-                        <a href="tel:000-000-0000" class="contact_details_row-phone">000-000-0000</a>
-                        <span class="element">|</span>
-                        <a href="tel:000-000-0000" class="contact_details_row-phone">000-000-0000</a>
-                    </div>
-                </div>
-                <div class="contact_details_row">
-                    <div class="contact_details_row_icon">
-                        <img src="img/svg/icon_mail.svg" alt="">
-                    </div>
-                    <div class="contact_details_row_info">
-                        <a href="mailto:info@internetsozdateli.com" class="contact_details_row-email">info@internetsozdateli.com</a>
-                    </div>
-                </div>
-                <div class="contact_details_row">
-                    <div class="contact_details_row_icon">
-                        <img src="img/svg/icon_time.svg" alt="">
-                    </div>
-                    <div class="contact_details_row_info">
-                        <span class="contact_details_row-p">Mon - Sat 7.00 - 19.00</span>
-                    </div>
-                </div>
-                <div class="contact_details_row">
-                    <div class="contact_details_row_icon">
-                        <img src="img/svg/icon_location.svg" alt="">
-                    </div>
-                    <div class="contact_details_row_info">
-                        <span class="contact_details_row-p">1155 Brickell Bay Dr, apt 3205,
-                        Miami, Florida, 33131</span>
+                    <div class="step_content">
+                        <span class="step_content-h3">Делаем эскиз</span>
+                        <span class="step_content-p">Дизайнер вручную создает эскиз по вашей фотографии, уделяя внимание даже самым мелким деталям. После того, как эскиз готов, мы высылаем его вам на проверку, и после утверждения начинаем печать</span>
                     </div>
                 </div>
-            </address>
-            <div class="contact_award">
-                <h3 class="contact_award-h3">Award Winner</h3>
-                <p class="contact_award-p">The Super Service Award honors service professionals who have maintained
-                    exceptional service ratings and reviews on Angie’s List </p>
-                <div class="contact_award_item">
-                    <div class="item">
-                        <img src="img/png/award1.png" alt="" class="item-img">
+                <div class="step">
+                    <div class="step_content right">
+                        <span class="step_content-h3">А на чем портрет?</span>
+                        <span class="step_content-p">Мы печатаем на синтетических и натуральных хлопковым холстах, вручную делаем галерейную натяжку на сосновые подрамники. Особенность хлопковых холстов в том, что они имеют красивую фактуру, а главное — не теряют форму со временем!</span>
                     </div>
-                    <div class="item">
-                        <img src="img/png/award2.png" alt="" class="item-img">
+                    <div class="step_left step_right">
+                        <img src="img/jpg/step2.jpg" alt="" class="step_left-img">
+                        <div class="step_left-number right" style="background-image: url(img/png/circle-step.png);">2
+                        </div>
                     </div>
-                    <div class="item">
-                        <img src="img/png/award3.png" alt="" class="item-img">
+                </div>
+                <div class="step">
+                    <div class="step_left">
+                        <img src="img/jpg/step3.jpg" alt="" class="step_left-img">
+                        <div class="step_left-number" style="background-image: url(img/png/circle-step.png);">3</div>
                     </div>
-                    <div class="item">
-                        <img src="img/png/award4.png" alt="" class="item-img">
+                    <div class="step_content">
+                        <span class="step_content-h3">А на чем портрет?</span>
+                        <span class="step_content-p">Мы печатаем на синтетических и натуральных хлопковым холстах, вручную делаем галерейную натяжку на сосновые подрамники. Особенность хлопковых холстов в том, что они имеют красивую фактуру, а главное — не теряют форму со временем!</span>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step_content step_right">
+                        <span class="step_content-h3">Делаем эскиз</span>
+                        <span class="step_content-p right">Дизайнер вручную создает эскиз по вашей фотографии, уделяя внимание даже самым мелким деталям. После того, как эскиз готов, мы высылаем его вам на проверку, и после утверждения начинаем печать</span>
+                        <button class="step_content-btn">Узнать про варианты упаковки</button>
+                    </div>
+                    <div class="step_left right step_right">
+                        <img src="img/jpg/step4.jpg" alt="" class="step_left-img">
+                        <div class="step_left_video right">
+                            <img src="img/png/circle-video.png" alt="" class="step_left-video">
+                            <img src="img/png/video-line.png" alt="" class="step_left-line">
+                            <span class="step_content-link right">Посмотрите <br> видео про эскиз</span>
+                        </div>
+                        <div class="modal_video">
+                            <span class="modal_video-h3">Делаем эскиз</span>
+                            <div class="modal_video_iframe">
+                                <iframe class="modal_video_iframe-img" src="https://www.youtube.com/embed/9qJ2CdLEcVs"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="step_left-number right" style="background-image: url(img/png/circle-step.png);">1
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="map">
-        <iframe class="map-iframe"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.253661557265!2d-80.19117728514246!3d25.76218378363653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b6818c3f4637%3A0xfe9c16e9952dce3!2sThe%20Mark%20on%20Brickell%2C%201155%20Brickell%20Bay%20Dr%20%233205%2C%20Miami%2C%20FL%2033131%2C%20%D0%A1%D0%A8%D0%90!5e0!3m2!1sru!2sby!4v1602829909910!5m2!1sru!2sby"
-                style="border:0;" allowfullscreen="" aria-hidden="false"
-                tabindex="0"></iframe>
+    <div class="other-background" style="background-image: url(img/png/other-background.png);">
+        <div class="target">
+            <div class="container">
+                <p class="target_sub_title">Мы даем возможность выбрать каждую деталь</p>
+                <h2 class="target_h2">
+                    Холст премиум класса или эконом? <br>
+                    А может, <span>деревянная панель?</span>
+                </h2>
+                <p class="target_p">Все зависит от целей и бюджета</p>
+                <div class="target_cards">
+                    <div class="item">
+                        <div class="item_top">
+                            <img src="img/jpg/target3.jpg" alt="" class="item_top-img">
+                        </div>
+                        <div class="item_content">
+                            <span class="item_content-h3">Эконом-холст</span>
+                            <span class="item_content-text">Плотностью 280 гр/м2.Портрет на холсте эконом класса будет смотреться ярко и насыщенно, к тому же это не сильно ударит по расходам</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item_top">
+                            <img src="img/jpg/target2.jpg" alt="" class="item_top-img">
+                        </div>
+                        <div class="item_content">
+                            <span class="item_content-h3">Премиум-холст</span>
+                            <span class="item_content-text">Плотностью 500 гр/м2.На премиум холсте рисунок будет еще более сочным, ярким и точным!</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item_top">
+                            <img src="img/jpg/target1.jpg" alt="" class="item_top-img">
+                        </div>
+                        <div class="item_content">
+                            <span class="item_content-h3">Деревянная панель</span>
+                            <span class="item_content-text">Эксцентричное модное решение для тех, кто любит нестандартные фактуры!</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact_form_back" style="background-image: url(img/png/back4.png);">
+        <div class="container">
+            <div class="contact_from">
+                <form class="form" id="main_form" style="background-image: url(img/png/form_contact_back.png);">
+                    <div class="form_content">
+                        <h2 class="form_h2">Закажите <span>бесплатный 3D-макет</span> <br>
+                            будущей картины</h2>
+                        <p class="form_p">После отправления заявки мы свяжемся с вами, и вышлем готовый макет.
+                            Ответим на все вопросы, и приступим к дальнейшей работе!</p>
+                        <div class="form_group">
+                            <div class="form_group_line">
+                                <label for="name" class="form_group_line-label">Как вас зовут *</label>
+                                <input type="text" class="form_group_line-input form_group_line-name" id="name"
+                                       name="name" placeholder="Ваше имя">
+                            </div>
+                            <div class="form_group_line">
+                                <label for="phone" class="form_group_line-label">Номер телефона*</label>
+                                <input type="text" class="form_group_line-input form_group_line-phone" id="phone"
+                                       name="name" placeholder="Введите ваш номер для связи">
+                            </div>
+                            <div class="form_group_line">
+                                <input type="file" class="form_group_line-photo" name="photo">
+                            </div>
+                        </div>
+                        <div class="form_row">
+                            <button class="form_row-btn">Получить бесплатный
+                                3D-макет картины
+                            </button>
+                            <span class="form_row-text">Я принимаю условия <span>передачи информации</span></span>
+                        </div>
+                    </div>
+                    <img src="img/png/fom_img_17.png" alt="" class="form_left">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="material">
+            <p class="material_sub_title">Заранее учли все моменты</p>
+            <h2 class="material_h2">Упаковка уже включена!</h2>
+            <div class="material_video" style="background-image: url(img/png/form_contact_back.png);">
+                <div class="material_video_left">
+                    <div class="material_video_left-el"></div>
+                    <div class="material_video_left_content">
+                        <p class="material_video_left_content-p">Мы можем упаковать картину как <strong>в стандартную
+                            крафтовую бумагу</strong>, так и <strong>в красивую подарочную бумагу</strong>
+                            из имеющихся в ассортименте
+                            вариантов!</p>
+                    </div>
+                </div>
+                <div class="material_video_center">
+                    <div class="material_video_center_group">
+                        <span class="material_video_center_group-link">Посмотрите <br> видео про эскиз</span>
+                        <img src="img/png/video-line.png" alt="" class="material_video_center_group-line">
+                        <img src="img/png/circle-video.png" alt="" class="material_video_center_group-video">
+                    </div>
+                    <img src="img/png/material_bakc_form.png" alt="" class="material_video_center-img">
+                    <div class="modal_video">
+                        <span class="modal_video-h3">Делаем эскиз</span>
+                        <div class="modal_video_iframe">
+                            <iframe class="modal_video_iframe-img" src="https://www.youtube.com/embed/9qJ2CdLEcVs"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="material_video_right">
+                    <h3 class="material_video_right-h3">Картине предстоит путешествие по России, и вы волнуетесь за
+                        качество транспортировки?</h3>
+                    <p class="material_video_right-p">Нет поводов для переживаний, ведь мы:</p>
+                    <ul class="material_video_right-ul">
+                        <li class="material_video_right-li">Дополнительно добавим гофрокартон, который <strong>защитит
+                            заказ от механических повреждений</strong></li>
+                        <li class="material_video_right-li">Пользуемся только <strong>надежными службами
+                            доставки</strong>, где специалисты с ответственностью относятся к своей работе!
+                        </li>
+                    </ul>
+                    <div class="material_video_right_block">
+                        <p class="material_video_right_block-p">Будьте уверены, ваш заказ в надежных руках</p>
+                    </div>
+                </div>
+            </div>
+            <h3 class="material-h3">Примеры упаковочных бумаг</h3>
+            <div class="material_primer">
+                <div class="card">
+                    <img src="img/jpg/primer_mat1.jpg" alt="" class="card-img">
+                </div>
+                <div class="card">
+                    <img src="img/jpg/primer_mat2.jpg" alt="" class="card-img">
+                </div>
+                <div class="card">
+                    <img src="img/jpg/primer_mat3.jpg" alt="" class="card-img">
+                </div>
+                <div class="card">
+                    <img src="img/jpg/primer_mat4.jpg" alt="" class="card-img">
+                </div>
+                <div class="card">
+                    <img src="img/jpg/primer_mat5.jpg" alt="" class="card-img">
+                </div>
+            </div>
+            <p class="material_sub_title">Любите продумывать подарок до мелочей?</p>
+            <h3 class="material-h3">Мы сделаем уникальную открытку с вашими пожеланиями</h3>
+            <div class="material_primer_other">
+                <div class="card">
+                    <img src="img/jpg/primer_mat6.jpg" alt="" class="card-img">
+                </div>
+                <div class="card">
+                    <img src="img/jpg/primer_mat7.jpg" alt="" class="card-img">
+                </div>
+                <div class="card">
+                    <img src="img/jpg/primer_mat8.jpg" alt="" class="card-img">
+                </div>
+                <div class="card">
+                    <img src="img/jpg/primer_mat9.jpg" alt="" class="card-img">
+                </div>
+            </div>
+        </div>
+        <div class="certificate">
+            <p class="certificate_sub_title">Уникальный подарок на любой повод</p>
+            <h2 class="certificate_h2"><span>Подарочный сертификат</span> <br>
+                на холст для ваших близкий</h2>
+            <div class="certificate_video" style="background-image: url(img/png/form_contact_back.png);">
+                <div class="certificate_video_right">
+                    <h3 class="certificate_video_right-h3">Сделайте ваш подарок оригинальным вместе
+                        с нашим сертификатом!</h3>
+                    <ul class="certificate_video_right-ul">
+                        <li class="certificate_video_right-li">Сертификат <strong>действует 1 год</strong> с момента
+                            приобретения.
+                        </li>
+                        <li class="certificate_video_right-li">Получатель оценит ваш подарок</li>
+                    </ul>
+                    <a href="#main_form" class="certificate_video_right-btn">Заказать подарочный сертификат</a>
+                </div>
+                <div class="certificate_video_center">
+                    <div class="certificate_video_center_group">
+                        <span class="certificate_video_center_group-link">Посмотрите <br>видео про сертификат</span>
+                        <img src="img/png/video-line2.png" alt="" class="certificate_video_center_group-line">
+                        <img src="img/png/circle-video.png" alt="" class="certificate_video_center_group-video">
+                    </div>
+                    <img src="img/png/certificate_form.png" alt="" class="certificate_video_center-img">
+                    <div class="modal_video">
+                        <span class="modal_video-h3">Делаем эскиз</span>
+                        <div class="modal_video_iframe">
+                            <iframe class="modal_video_iframe-img" src="https://www.youtube.com/embed/9qJ2CdLEcVs"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="certificate_video_left">
+                    <div class="certificate_video_left-el"></div>
+                    <div class="certificate_video_left_content">
+                        <h3 class="certificate_video_left_content-h3">Наш подарочный сертификат удивить
+                            по-настоящему!</h3>
+                        <p class="certificate_video_left_content-p">Это очень удачный корпоративный подарок, а так же
+                            необычный подарок для друзей и родственников.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="other-background" style="background-image: url(img/png/other-background.png);">
+        <div class="order">
+            <div class="container">
+                <p class="order_sub_title">О нашей работе</p>
+                <h2 class="order_h2">
+                    <span>Как сделать заказ? </span>Все просто!
+                </h2>
+                <p class="order_p">Мы описали каждый этап, чтобы вы могли лучше понять все детали изготовления заказа!
+                    Также, можете посмотреть отзывы тех, кто уже воспользовался услугами Бери Холст</p>
+                <div class="order_plan">
+                    <div class="box">
+                        <div class="box_top">
+                            <div class="box_top_icon">1</div>
+                            <span class="box_top_title">Начинаем работу!</span>
+                        </div>
+                        <div class="box_content">
+                            <p>Просто загрузите фото, и выберите нужные размеры и стиль.</p>
+                            <a href="#main_form" class="box_content-btn">Загрузить фото</a>
+                            <p>В течении часа с вами свяжется наш менеджер для обсуждения всех деталей заказа.</p>
+                            <p>Далее дизайнер сделает эскиз по предоставленной фотографии, и вы получите 3D-макет
+                                будущей картины.</p>
+                            <p>Если вас устраивает эскиз мы переходим к следующему шагу</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box_top">
+                            <div class="box_top_icon">2</div>
+                            <span class="box_top_title">Приступаем к печати</span>
+                        </div>
+                        <div class="box_content">
+                            <p>Готовый портрет отправляется на печать, а мы в это время готовим подрамник.</p>
+                            <p>Когда картина напечатана специалист приступает к галерейной натяжке, тщательно закрепляя
+                                холст. При желании, мы можем покрыть картину лаком для придания блеска.</p>
+                            <p>Теперь дело за упаковкой, вы можете выбрать выбрать несколько вариантов упаковочной
+                                бумаги:</p>
+                            <ul>
+                                <li>крафт бумагу</li>
+                                <li>яркую подарочную бумагу</li>
+                            </ul>
+                            <p>А если портрету предстоит путешествие в другой город — мы надёжно упакуем его в прочный
+                                гофрокартон. Также вы получите страховку</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box_top">
+                            <div class="box_top_icon">3</div>
+                            <span class="box_top_title">Заказ уже едет к вам!</span>
+                        </div>
+                        <div class="box_content">
+                            <p>Просто загрузите фото, и выберите нужные размеры и стиль.</p>
+                            <p>В течении часа с вами свяжется наш менеджер для обсуждения всех деталей заказа.</p>
+                            <p>Далее дизайнер сделает эскиз по предоставленной фотографии, и вы получите 3D-макет
+                                будущей картины.</p>
+                            <p>Если вас устраивает эскиз мы переходим к следующему шагу</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="order_group" style="background-image: url(img/png/form_contact_back.png);">
+                    <h3 class="order_group-h3">Доставка <span>курьером за 3 дня</span> в любой город до двери!</h3>
+                    <a href="#main_form" class="order_group-btn">Получить бесплатный 3D-макет картины</a>
+                    <img src="img/png/form_order_back.png" alt="" class="order_group_main-img">
+                    <img src="img/png/form_order_back-circle.png" alt="" class="order_group_circle">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="question">
+            <p class="question_sub_title">Часто задаваемые вопросы</p>
+            <h2 class="question_h2">Отвечаем на частые вопросы клиентов </h2>
+            <div class="question_tabs">
+                <div class="accordion">
+                    <div class="accordion_top">
+                        <span class="accordion_top-h3">Почему стоит заказать печать фото на холсте у нас?</span>
+                        <div class="accordion_top-icon">
+                            <img src="img/svg/up.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="accordion_content">
+                        <p>Для многих выбор подарка для близкого человека, коллеги или начальника – огромная проблема,
+                            возникающая буквально перед любым праздником или важным событием. Поэтому печать портрета на
+                            холсте – один из лучших вариантов подарка на любой праздник:</p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="accordion_top">
+                        <span class="accordion_top-h3">Почему стоит заказать печать фото на холсте у нас?</span>
+                        <div class="accordion_top-icon">
+                            <img src="img/svg/up.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="accordion_content">
+                        <p>Для многих выбор подарка для близкого человека, коллеги или начальника – огромная проблема,
+                            возникающая буквально перед любым праздником или важным событием. Поэтому печать портрета на
+                            холсте – один из лучших вариантов подарка на любой праздник:</p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="accordion_top">
+                        <span class="accordion_top-h3">Почему стоит заказать печать фото на холсте у нас?</span>
+                        <div class="accordion_top-icon">
+                            <img src="img/svg/up.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="accordion_content">
+                        <p>Для многих выбор подарка для близкого человека, коллеги или начальника – огромная проблема,
+                            возникающая буквально перед любым праздником или важным событием. Поэтому печать портрета на
+                            холсте – один из лучших вариантов подарка на любой праздник:</p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="accordion_top">
+                        <span class="accordion_top-h3">Почему стоит заказать печать фото на холсте у нас?</span>
+                        <div class="accordion_top-icon">
+                            <img src="img/svg/up.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="accordion_content">
+                        <p>Для многих выбор подарка для близкого человека, коллеги или начальника – огромная проблема,
+                            возникающая буквально перед любым праздником или важным событием. Поэтому печать портрета на
+                            холсте – один из лучших вариантов подарка на любой праздник:</p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="accordion_top">
+                        <span class="accordion_top-h3">Почему стоит заказать печать фото на холсте у нас?</span>
+                        <div class="accordion_top-icon">
+                            <img src="img/svg/up.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="accordion_content">
+                        <p>Для многих выбор подарка для близкого человека, коллеги или начальника – огромная проблема,
+                            возникающая буквально перед любым праздником или важным событием. Поэтому печать портрета на
+                            холсте – один из лучших вариантов подарка на любой праздник:</p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="accordion_top">
+                        <span class="accordion_top-h3">Почему стоит заказать печать фото на холсте у нас?</span>
+                        <div class="accordion_top-icon">
+                            <img src="img/svg/up.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="accordion_content">
+                        <p>Для многих выбор подарка для близкого человека, коллеги или начальника – огромная проблема,
+                            возникающая буквально перед любым праздником или важным событием. Поэтому печать портрета на
+                            холсте – один из лучших вариантов подарка на любой праздник:</p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="accordion_top">
+                        <span class="accordion_top-h3">Почему стоит заказать печать фото на холсте у нас?</span>
+                        <div class="accordion_top-icon">
+                            <img src="img/svg/up.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="accordion_content">
+                        <p>Для многих выбор подарка для близкого человека, коллеги или начальника – огромная проблема,
+                            возникающая буквально перед любым праздником или важным событием. Поэтому печать портрета на
+                            холсте – один из лучших вариантов подарка на любой праздник:</p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="accordion_top">
+                        <span class="accordion_top-h3">Почему стоит заказать печать фото на холсте у нас?</span>
+                        <div class="accordion_top-icon">
+                            <img src="img/svg/up.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="accordion_content">
+                        <p>Для многих выбор подарка для близкого человека, коллеги или начальника – огромная проблема,
+                            возникающая буквально перед любым праздником или важным событием. Поэтому печать портрета на
+                            холсте – один из лучших вариантов подарка на любой праздник:</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </main>
-<footer class="footer"> 
-    <div class="container">
-        <div class="footer_top">
-            <ul class="footer_top_ul">
-                <li class="footer_top_li"><a href="index.html" class="footer_top_link">HOME</a></li>
-                <li class="footer_top_li"><a href="archive.html" class="footer_top_link">SERVICES</a>                </li>
-                <li class="footer_top_li"><a href="materials.html" class="footer_top_link">MATERIALS</a></li>
-                <li class="footer_top_li"><a href="portfolio.html" class="footer_top_link">PORTFOLIO</a></li>
-                <li class="footer_top_li"><a href="contact.html" class="footer_top_link">CONTACT</a></li>
-                <li class="footer_top_li"><a href="about.html" class="footer_top_link">ABOUT</a></li>
-            </ul>
+<div class="other-background" style="background-image: url(img/png/other-background.png);">
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_group">
+                <div class="footer_group_left">
+                    <div class="BigBanner_info_pre-title">
+                        <svg width="21" height="1" viewBox="0 0 21 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="21" height="1" fill="#5C677A"/>
+                        </svg>
+                        <span>Чтобы обсудть изготовление портрета на холсте</span>
+                    </div>
+                    <span class="footer_group_h2"><span>Свяжитесь с нами,</span> прямо сейчас</span>
+                    <div class="footer_group_left_row">
+                        <div class="column">
+                            <span class="column-title">Телефоны</span>
+                            <a href="tel:+73432279949" class="column-link">+7 (343) 227-99-49</a>
+                            <a href="tel:+73432279949" class="column-link">+7 (343) 227-99-49</a>
+                        </div>
+                        <div class="column">
+                            <span class="column-title">Связаться с нами через мессенджеры:</span>
+                            <a href="#" class="column-icon">
+                                <img src="img/svg/telegram.svg" alt="">
+                            </a>
+                            <a href="#" class="column-icon">
+                                <img src="img/svg/whatsapp.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <address class="footer_group_left_address">
+                        <span class="footer_group_left_address-title">Адрес:</span>
+                        <span class="footer_group_left_address-text">Екатеринбург, Антона Валека, 15, оф. 300 (3 этаж)</span>
+                        <a href="mailto:beriholst@mail.ru" class="footer_group_left_address-email">beriholst@mail.ru</a>
+                    </address>
+                </div>
+                <div class="footer_group_right">
+                    <iframe class="footer_group_right-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2182.4185045400172!2d60.58909431587371!3d56.8387649808577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43c16e5f8d678117%3A0x2a43f95dece67db7!2z0YPQuy4g0JDQvdGC0L7QvdCwINCS0LDQu9C10LrQsCwgMTUsINC-0YQuIDMwMCAoMyDRjdGC0LDQtiwg0JXQutCw0YLQtdGA0LjQvdCx0YPRgNCzLCDQodCy0LXRgNC00LvQvtCy0YHQutCw0Y8g0L7QsdC7Liwg0KDQvtGB0YHQuNGPLCA2MjAwMTQ!5e0!3m2!1sru!2sby!4v1603735305856!5m2!1sru!2sby"
+                            style="border:0;" allowfullscreen=""
+                            aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+            <div class="footer_bottom_line">
+                <span class="footer_bottom_line-text">© 2020 Печать на холсте Екатеринбург</span>
+                <span class="footer_bottom_line-text last">Политика конфиденциальности</span>
+            </div>
         </div>
-        <div class="footer_bottom">
-            <span class="footer_bottom-p">Copyright © 2020 Professional floor installation - All rights reserved.</span>
-            <a href="https://internetsozdateli.com" class="footer_bottom-p link">InternetSozdateli</a>
-        </div>
-    </div>
-</footer>
-<script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/jquery.maskedinput.min.js"></script>
-<script src="js/jquery.validate.min.js"></script>
-<script src="js/jquery.form.js"></script>
-<script src="js/lightgallery.min.js"></script>
-<script src="js/script.js"></script>
+    </footer>
+</div>
 </body>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="slick/slick.min.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+<script src="js/main.js"></script>
 </html>
