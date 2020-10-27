@@ -215,7 +215,7 @@ strong{
       transition: all 0.2s;
       box-shadow: 0px 10px 20px rgba(220, 54, 121, 0.1);
       &:hover{
-        background: linear-gradient(101.81deg, #f5d0f3 6.76%, #f2d7dc 99.62%);
+        background: linear-gradient(89.12deg, lighten(#F98B26,10%) 0.39%, lighten(#D92E7F,10%) 100%);
       }
     }
     &-img{
@@ -316,7 +316,7 @@ strong{
       margin: 0 auto;
       transition: all 0.2s;
       &:hover{
-        background: linear-gradient(101.81deg, #f5d0f3 6.76%, #f2d7dc 99.62%);
+        background: linear-gradient(89.12deg, lighten(#F98B26,10%) 0.39%, lighten(#D92E7F,10%) 100%);
       }
     }
   }
@@ -460,6 +460,13 @@ strong{
             padding: 17px 34px;
             background: #FFFFFF;
             border-radius: 6px;
+            &:hover{
+              background: linear-gradient(89.12deg, #F98B26 0.39%, #D92E7F 100%);
+              .card_size,
+              .card_price{
+                color: #ffffff;
+              }
+            }
             .card_size{
               font-size: 20px;
               line-height: 26px;
@@ -575,7 +582,7 @@ strong{
       margin: 0 auto;
       transition: all 0.2s;
       &:hover{
-        background: linear-gradient(101.81deg, #f5d0f3 6.76%, #f2d7dc 99.62%);
+        background: linear-gradient(89.12deg, lighten(#F98B26,10%) 0.39%, lighten(#D92E7F,10%) 100%);
       }
     }
   }
@@ -610,7 +617,6 @@ strong{
           margin-right: 22px;
           &-img{
             display: block;
-            max-width: 100%;
             height: auto;
             object-fit: cover;
           }
@@ -625,6 +631,7 @@ strong{
       }
     }
     &_group{
+      border-radius: 6px;
       padding: 51px 86px;
       background-size: cover;
       background-repeat: no-repeat;
@@ -652,7 +659,7 @@ strong{
         max-width: 281px;
         transition: all 0.2s;
         &:hover{
-          background: linear-gradient(101.81deg, #f5d0f3 6.76%, #f2d7dc 99.62%);
+          background: linear-gradient(89.12deg, lighten(#F98B26,10%) 0.39%, lighten(#D92E7F,10%) 100%);
         }
       }
     }
@@ -922,6 +929,7 @@ strong{
       background-repeat: no-repeat;
     }
     .form{
+      border-radius: 6px;
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -1046,7 +1054,7 @@ strong{
           margin-right: 32px;
           transition: all 0.2s;
           &:hover{
-            background: linear-gradient(101.81deg, #f5d0f3 6.76%, #f2d7dc 99.62%);
+            background: linear-gradient(89.12deg, lighten(#F98B26,10%) 0.39%, lighten(#D92E7F,10%) 100%);
           }
         }
         &-text{
@@ -1082,6 +1090,7 @@ strong{
       margin-bottom: 110px;
     }
     &_video{
+      border-radius: 6px;
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -1249,6 +1258,7 @@ strong{
       }
     }
     &_video{
+      border-radius: 6px;
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -1324,7 +1334,7 @@ strong{
           margin-top: 30px;
           transition: all 0.2s;
           &:hover{
-            background: linear-gradient(101.81deg, #f5d0f3 6.76%, #f2d7dc 99.62%);
+            background: linear-gradient(89.12deg, lighten(#F98B26,10%) 0.39%, lighten(#D92E7F,10%) 100%);
           }
         }
       }
@@ -1489,6 +1499,7 @@ strong{
       }
     }
     &_group{
+      border-radius: 6px;
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -1514,7 +1525,7 @@ strong{
         margin-top: 30px;
         transition: all 0.2s;
         &:hover{
-          background: linear-gradient(101.81deg, #f5d0f3 6.76%, #f2d7dc 99.62%);
+          background: linear-gradient(89.12deg, lighten(#F98B26,10%) 0.39%, lighten(#D92E7F,10%) 100%);
         }
       }
       &_main-img{
@@ -1837,6 +1848,13 @@ strong{
       &_cards{
         display: grid;
         grid-template-columns: repeat(2,1fr);
+        .item{
+          &_left{
+            &-img{
+              max-width: 100%;
+            }
+          }
+        }
       }
       &-main-img{
         position: relative;
