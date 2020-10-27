@@ -206,6 +206,7 @@ strong{
       line-height: 80px;
       color: @bg-color;
       & span{
+        font-style: italic;
         color: #db317d;
       }
     }
@@ -215,15 +216,17 @@ strong{
       transition: all 0.2s;
       box-shadow: 0px 10px 20px rgba(220, 54, 121, 0.1);
       &:hover{
-        .gradient_text;
+        background: linear-gradient(101.81deg, #f5d0f3 6.76%, #f2d7dc 99.62%);
       }
     }
     &-img{
       display: block;
       max-width: 100%;
+      margin: 0 auto;
     }
     &-img_mob{
       display: none;
+      margin: 0 auto;
     }
     &_big-circle{
       position: absolute;
@@ -239,7 +242,7 @@ strong{
 }
 .content{
   .services{
-    padding: 50px 0;
+    padding: 100px 0;
     &_sub_title{
       .sub-title;
     }
@@ -249,8 +252,6 @@ strong{
       line-height: 46px;
       text-align: center;
       color: @bg-color;
-      max-width: 955px;
-      margin: 0 auto;
       margin-bottom: 20px;
       & span{
         .gradient_text;
@@ -263,7 +264,7 @@ strong{
       grid-row-gap: 60px;
       margin-bottom: 30px;
       .card{
-        padding: 0 15px 15px;
+        padding: 0 0 15px;
         transition: 0.2s;
         cursor: pointer;
         &:hover{
@@ -316,9 +317,7 @@ strong{
       margin: 0 auto;
       transition: all 0.2s;
       &:hover{
-        background: transparent;
-        .gradient_text;
-        border: 1px solid @pink-color;
+        background: linear-gradient(101.81deg, #f5d0f3 6.76%, #f2d7dc 99.62%);
       }
     }
   }
@@ -505,6 +504,8 @@ strong{
       display: flex;
       justify-content: flex-end;
       position: relative;
+      width: 1070px;
+      margin: 0 auto;
       &_main{
         position: absolute;
         left: -50px;
@@ -513,7 +514,7 @@ strong{
       &_sub{
         position: absolute;
         top: -30px;
-        left: 25%;
+        left: 28%;
       }
       &_info{
         &-h3{
@@ -575,9 +576,7 @@ strong{
       margin: 0 auto;
       transition: all 0.2s;
       &:hover{
-        background: transparent;
-        .gradient_text;
-        border: 1px solid @pink-color;
+        background: linear-gradient(101.81deg, #f5d0f3 6.76%, #f2d7dc 99.62%);
       }
     }
   }
@@ -654,8 +653,7 @@ strong{
         max-width: 281px;
         transition: all 0.2s;
         &:hover{
-          background: transparent;
-          .gradient_text;
+          background: linear-gradient(101.81deg, #f5d0f3 6.76%, #f2d7dc 99.62%);
         }
       }
     }
@@ -685,6 +683,8 @@ strong{
       display: grid;
       grid-template-columns: 1fr;
       grid-gap: 75px;
+      width: 1190px;
+      margin: 0 auto;
       .step{
         display: flex;
         justify-content: space-between;
@@ -714,8 +714,8 @@ strong{
               transform: rotate(120deg);
               & span{
                 transform: rotate(-120deg);
-                bottom: 40px;
-                right: -60px;
+                bottom: 28px;
+                right: -83px;
               }
             }
           }
@@ -990,6 +990,27 @@ strong{
             width: 189px;
             height: 60px;
             position: relative;
+            &:active{
+              color: #ffffff;
+              .form_group_line-photo:after{
+                background: @pink-color;
+                color: #ffffff;
+              }
+            }
+            &:focus{
+              color: #ffffff;
+              .form_group_line-photo:after{
+                background: @pink-color;
+                color: #ffffff;
+              }
+            }
+            &:visited{
+              color: #ffffff;
+              .form_group_line-photo:after{
+                background: @pink-color;
+                color: #ffffff;
+              }
+            }
             &:after { /* Mask the no file chosen label */
               content: 'Загрузить фото';
               height: 100%;
@@ -1026,8 +1047,7 @@ strong{
           margin-right: 32px;
           transition: all 0.2s;
           &:hover{
-            background: transparent;
-            .gradient_text;
+            background: linear-gradient(101.81deg, #f5d0f3 6.76%, #f2d7dc 99.62%);
           }
         }
         &-text{
@@ -1036,6 +1056,7 @@ strong{
           line-height: 17px;
           color: #091A38;
           span{
+            text-decoration: underline;
             color: @pink-color;
           }
         }
@@ -1304,8 +1325,7 @@ strong{
           margin-top: 30px;
           transition: all 0.2s;
           &:hover{
-            background: transparent;
-            .gradient_text;
+            background: linear-gradient(101.81deg, #f5d0f3 6.76%, #f2d7dc 99.62%);
           }
         }
       }
@@ -1495,8 +1515,7 @@ strong{
         margin-top: 30px;
         transition: all 0.2s;
         &:hover{
-          background: transparent;
-          .gradient_text;
+          background: linear-gradient(101.81deg, #f5d0f3 6.76%, #f2d7dc 99.62%);
         }
       }
       &_main-img{
@@ -1506,7 +1525,7 @@ strong{
       }
       &_circle{
         position: absolute;
-        left: 50%;
+        left: 53%;
         top: -38px;
       }
     }
@@ -1609,6 +1628,7 @@ strong{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 91px;
+        margin-bottom: 60px;
         .column{
           &-title{
             display: block;
@@ -1804,6 +1824,7 @@ strong{
     }
     .price{
       &_work{
+        width: 100%;
         &_sub{
           position: absolute;
           top: -30px;
@@ -1826,6 +1847,11 @@ strong{
         max-width: 100%;
         height: auto;
         margin-top: -80px;
+      }
+    }
+    .work{
+      &_cards{
+        width: 100%;
       }
     }
     .order{

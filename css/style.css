@@ -235,6 +235,7 @@ strong {
   color: #091a38;
 }
 .BigBanner_info_h1 span {
+  font-style: italic;
   color: #db317d;
 }
 .BigBanner_info-btn {
@@ -259,17 +260,16 @@ strong {
           box-shadow: 0px 10px 20px rgba(220, 54, 121, 0.1);
 }
 .BigBanner_info-btn:hover {
-  background: linear-gradient(89.12deg, #f98b26 0.39%, #d92e7f 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: #d92e7f;
+  background: linear-gradient(101.81deg, #f5d0f3 6.76%, #f2d7dc 99.62%);
 }
 .BigBanner_info-img {
   display: block;
   max-width: 100%;
+  margin: 0 auto;
 }
 .BigBanner_info-img_mob {
   display: none;
+  margin: 0 auto;
 }
 .BigBanner_info_big-circle {
   position: absolute;
@@ -282,7 +282,7 @@ strong {
   right: 28%;
 }
 .content .services {
-  padding: 50px 0;
+  padding: 100px 0;
 }
 .content .services_sub_title {
   margin-bottom: 20px;
@@ -302,8 +302,6 @@ strong {
   line-height: 46px;
   text-align: center;
   color: #091a38;
-  max-width: 955px;
-  margin: 0 auto;
   margin-bottom: 20px;
 }
 .content .services_h2 span {
@@ -320,7 +318,7 @@ strong {
   margin-bottom: 30px;
 }
 .content .services_cards .card {
-  padding: 0 15px 15px;
+  padding: 0 0 15px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
   cursor: pointer;
@@ -397,12 +395,7 @@ strong {
   transition: all 0.2s;
 }
 .content .services-btn:hover {
-  background: transparent;
-  background: linear-gradient(89.12deg, #f98b26 0.39%, #d92e7f 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: #d92e7f;
-  border: 1px solid #db317d;
+  background: linear-gradient(101.81deg, #f5d0f3 6.76%, #f2d7dc 99.62%);
 }
 .content .calculator {
   padding: 100px 0;
@@ -643,6 +636,8 @@ strong {
       -ms-flex-pack: end;
           justify-content: flex-end;
   position: relative;
+  width: 1070px;
+  margin: 0 auto;
 }
 .content .price_work_main {
   position: absolute;
@@ -652,7 +647,7 @@ strong {
 .content .price_work_sub {
   position: absolute;
   top: -30px;
-  left: 25%;
+  left: 28%;
 }
 .content .price_work_info-h3 {
   font-weight: 700;
@@ -739,12 +734,7 @@ strong {
   transition: all 0.2s;
 }
 .content .portfolio-btn:hover {
-  background: transparent;
-  background: linear-gradient(89.12deg, #f98b26 0.39%, #d92e7f 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: #d92e7f;
-  border: 1px solid #db317d;
+  background: linear-gradient(101.81deg, #f5d0f3 6.76%, #f2d7dc 99.62%);
 }
 .content .advantages {
   padding: 74px 0 100px 0;
@@ -858,11 +848,7 @@ strong {
   transition: all 0.2s;
 }
 .content .advantages_group-btn:hover {
-  background: transparent;
-  background: linear-gradient(89.12deg, #f98b26 0.39%, #d92e7f 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: #d92e7f;
+  background: linear-gradient(101.81deg, #f5d0f3 6.76%, #f2d7dc 99.62%);
 }
 .content .advantages-main-img {
   position: absolute;
@@ -902,6 +888,8 @@ strong {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 75px;
+  width: 1190px;
+  margin: 0 auto;
 }
 .content .work_cards .step {
   display: -webkit-box;
@@ -942,8 +930,8 @@ strong {
 .content .work_cards .step_left_video.right span {
   -webkit-transform: rotate(-120deg);
           transform: rotate(-120deg);
-  bottom: 40px;
-  right: -60px;
+  bottom: 28px;
+  right: -83px;
 }
 .content .work_cards .step_left-video {
   /*position: absolute;
@@ -1243,6 +1231,27 @@ strong {
   height: 60px;
   position: relative;
 }
+.content .contact_from .form_group_line-photo:active {
+  color: #ffffff;
+}
+.content .contact_from .form_group_line-photo:active .form_group_line-photo:after {
+  background: #db317d;
+  color: #ffffff;
+}
+.content .contact_from .form_group_line-photo:focus {
+  color: #ffffff;
+}
+.content .contact_from .form_group_line-photo:focus .form_group_line-photo:after {
+  background: #db317d;
+  color: #ffffff;
+}
+.content .contact_from .form_group_line-photo:visited {
+  color: #ffffff;
+}
+.content .contact_from .form_group_line-photo:visited .form_group_line-photo:after {
+  background: #db317d;
+  color: #ffffff;
+}
 .content .contact_from .form_group_line-photo:after {
   /* Mask the no file chosen label */
   content: 'Загрузить фото';
@@ -1306,11 +1315,7 @@ strong {
   transition: all 0.2s;
 }
 .content .contact_from .form_row-btn:hover {
-  background: transparent;
-  background: linear-gradient(89.12deg, #f98b26 0.39%, #d92e7f 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: #d92e7f;
+  background: linear-gradient(101.81deg, #f5d0f3 6.76%, #f2d7dc 99.62%);
 }
 .content .contact_from .form_row-text {
   display: inline-block;
@@ -1319,6 +1324,7 @@ strong {
   color: #091A38;
 }
 .content .contact_from .form_row-text span {
+  text-decoration: underline;
   color: #db317d;
 }
 .content .contact_from .form_left {
@@ -1649,11 +1655,7 @@ strong {
   transition: all 0.2s;
 }
 .content .certificate_video_right-btn:hover {
-  background: transparent;
-  background: linear-gradient(89.12deg, #f98b26 0.39%, #d92e7f 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: #d92e7f;
+  background: linear-gradient(101.81deg, #f5d0f3 6.76%, #f2d7dc 99.62%);
 }
 .content .certificate_video_center {
   position: relative;
@@ -1898,11 +1900,7 @@ strong {
   transition: all 0.2s;
 }
 .content .order_group-btn:hover {
-  background: transparent;
-  background: linear-gradient(89.12deg, #f98b26 0.39%, #d92e7f 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: #d92e7f;
+  background: linear-gradient(101.81deg, #f5d0f3 6.76%, #f2d7dc 99.62%);
 }
 .content .order_group_main-img {
   position: absolute;
@@ -1911,7 +1909,7 @@ strong {
 }
 .content .order_group_circle {
   position: absolute;
-  left: 50%;
+  left: 53%;
   top: -38px;
 }
 .content .question {
@@ -2053,6 +2051,7 @@ strong {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 91px;
+  margin-bottom: 60px;
 }
 .footer_group_left_row .column-title {
   display: block;
@@ -2253,6 +2252,9 @@ strong {
     height: 1px;
     background: url(../img/svg/lines.svg);
   }
+  .content .price_work {
+    width: 100%;
+  }
   .content .price_work_sub {
     position: absolute;
     top: -30px;
@@ -2272,6 +2274,9 @@ strong {
     max-width: 100%;
     height: auto;
     margin-top: -80px;
+  }
+  .content .work_cards {
+    width: 100%;
   }
   .content .order_group_main-img {
     position: absolute;
