@@ -95,6 +95,7 @@ strong {
   line-height: 20px;
   color: #5c677a;
   text-align: center;
+  position: relative;
 }
 .sub-title::before,
 .sub-title::after {
@@ -289,6 +290,7 @@ strong {
   line-height: 20px;
   color: #5c677a;
   text-align: center;
+  position: relative;
 }
 .content .services_sub_title::before,
 .content .services_sub_title::after {
@@ -410,6 +412,7 @@ strong {
   line-height: 20px;
   color: #5c677a;
   text-align: center;
+  position: relative;
 }
 .content .calculator_sub_title::before,
 .content .calculator_sub_title::after {
@@ -453,6 +456,7 @@ strong {
   line-height: 20px;
   color: #5c677a;
   text-align: center;
+  position: relative;
 }
 .content .comments_sub_title::before,
 .content .comments_sub_title::after {
@@ -505,6 +509,7 @@ strong {
   line-height: 20px;
   color: #5c677a;
   text-align: center;
+  position: relative;
 }
 .content .price_sub_title::before,
 .content .price_sub_title::after {
@@ -547,24 +552,26 @@ strong {
 .content .price_tabs_span {
   display: block;
   padding: 21px 26px;
-  border: 1px solid #db317d;
+  border: 1px solid #091a38;
   margin: 0 15px;
   border-radius: 6px;
-  background: linear-gradient(89.12deg, #f98b26 0.39%, #d92e7f 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: #d92e7f;
+  color: #091a38;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 .content .price_tabs_span.active {
-  -webkit-text-fill-color: #ffffff;
-  color: #ffffff;
+  border: 1px solid #db317d;
   background: linear-gradient(89.12deg, #f98b26 0.39%, #d92e7f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #d92e7f;
 }
 .content .price_tabs_span:hover {
-  -webkit-text-fill-color: #ffffff;
+  border: 1px solid #db317d;
   background: linear-gradient(89.12deg, #f98b26 0.39%, #d92e7f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #d92e7f;
 }
 .content .price_tab_content {
   margin-bottom: 15px;
@@ -683,6 +690,7 @@ strong {
   line-height: 20px;
   color: #5c677a;
   text-align: center;
+  position: relative;
 }
 .content .portfolio_sub_title::before,
 .content .portfolio_sub_title::after {
@@ -752,6 +760,7 @@ strong {
   line-height: 20px;
   color: #5c677a;
   text-align: center;
+  position: relative;
 }
 .content .advantages_sub_title::before,
 .content .advantages_sub_title::after {
@@ -860,6 +869,7 @@ strong {
   position: absolute;
   bottom: 0;
   right: 0;
+  height: 550px;
 }
 .content .work {
   padding: 100px 0;
@@ -870,6 +880,7 @@ strong {
   line-height: 20px;
   color: #5c677a;
   text-align: center;
+  position: relative;
 }
 .content .work_sub_title::before,
 .content .work_sub_title::after {
@@ -1016,6 +1027,10 @@ strong {
   text-align: right;
 }
 .content .work_cards .step_content-btn {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   margin-top: 20px;
   position: relative;
   font-weight: 700;
@@ -1080,6 +1095,7 @@ strong {
   line-height: 20px;
   color: #5c677a;
   text-align: center;
+  position: relative;
 }
 .content .target_sub_title::before,
 .content .target_sub_title::after {
@@ -1238,25 +1254,11 @@ strong {
   height: 60px;
   position: relative;
 }
-.content .contact_from .form_group_line-photo:active {
-  color: #ffffff;
+.content .contact_from .form_group_line-photo:hover {
+  -webkit-box-shadow: 0px 10px 20px rgba(220, 54, 121, 0.1);
+          box-shadow: 0px 10px 20px rgba(220, 54, 121, 0.1);
 }
-.content .contact_from .form_group_line-photo:active .form_group_line-photo:after {
-  background: #db317d;
-  color: #ffffff;
-}
-.content .contact_from .form_group_line-photo:focus {
-  color: #ffffff;
-}
-.content .contact_from .form_group_line-photo:focus .form_group_line-photo:after {
-  background: #db317d;
-  color: #ffffff;
-}
-.content .contact_from .form_group_line-photo:visited {
-  color: #ffffff;
-}
-.content .contact_from .form_group_line-photo:visited .form_group_line-photo:after {
-  background: #db317d;
+.content .contact_from .form_group_line-photo:hover:after {
   color: #ffffff;
 }
 .content .contact_from .form_group_line-photo:after {
@@ -1349,6 +1351,7 @@ strong {
   line-height: 20px;
   color: #5c677a;
   text-align: center;
+  position: relative;
 }
 .content .material_sub_title::before,
 .content .material_sub_title::after {
@@ -1500,6 +1503,11 @@ strong {
   right: -26px;
   top: 67px;
 }
+.content .material_video_center_group-video {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
 .content .material-h3 {
   font-weight: 700;
   font-size: 24px;
@@ -1542,6 +1550,7 @@ strong {
   line-height: 20px;
   color: #5c677a;
   text-align: center;
+  position: relative;
 }
 .content .certificate_sub_title::before,
 .content .certificate_sub_title::after {
@@ -1563,6 +1572,7 @@ strong {
   color: #d92e7f;
 }
 .content .certificate_video {
+  margin-bottom: 0;
   border-radius: 6px;
   background-position: center;
   background-size: cover;
@@ -1722,6 +1732,7 @@ strong {
   line-height: 20px;
   color: #5c677a;
   text-align: center;
+  position: relative;
 }
 .content .order_sub_title::before,
 .content .order_sub_title::after {
@@ -1931,6 +1942,7 @@ strong {
   line-height: 20px;
   color: #5c677a;
   text-align: center;
+  position: relative;
 }
 .content .question_sub_title::before,
 .content .question_sub_title::after {
@@ -3348,7 +3360,7 @@ strong {
   .content .price_tabs_span {
     display: block;
     padding: 21px 26px;
-    border: 1px solid #db317d;
+    border: 1px solid #091a38;
     margin: 5px 15px;
     border-radius: 6px;
   }
@@ -3666,16 +3678,29 @@ strong {
     height: 36px;
   }
   .sub-title {
-    margin-bottom: 20px;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 20px;
     color: #5c677a;
     text-align: center;
+    position: relative;
+    max-width: 260px;
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
-  .sub-title::before,
-  .sub-title::after {
+  .sub-title::before {
     content: "—";
-    margin: 0 10px;
+    margin: 0;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -15px;
+  }
+  .sub-title::after {
+    display: block;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: -15px;
   }
   .header {
     display: -webkit-box;
@@ -3808,16 +3833,29 @@ strong {
     padding: 30px 0 60px 0;
   }
   .content .services_sub_title {
-    margin-bottom: 20px;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 20px;
     color: #5c677a;
     text-align: center;
+    position: relative;
+    max-width: 260px;
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
-  .content .services_sub_title::before,
-  .content .services_sub_title::after {
+  .content .services_sub_title::before {
     content: "—";
-    margin: 0 10px;
+    margin: 0;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -15px;
+  }
+  .content .services_sub_title::after {
+    display: block;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: -15px;
   }
   .content .services_h2 {
     font-weight: 700;
@@ -3935,16 +3973,29 @@ strong {
     background-repeat: no-repeat;
   }
   .content .calculator_sub_title {
-    margin-bottom: 20px;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 20px;
     color: #5c677a;
     text-align: center;
+    position: relative;
+    max-width: 260px;
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
-  .content .calculator_sub_title::before,
-  .content .calculator_sub_title::after {
+  .content .calculator_sub_title::before {
     content: "—";
-    margin: 0 10px;
+    margin: 0;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -15px;
+  }
+  .content .calculator_sub_title::after {
+    display: block;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: -15px;
   }
   .content .calculator_h2 {
     font-weight: 700;
@@ -3971,16 +4022,29 @@ strong {
     padding: 60px 0;
   }
   .content .comments_sub_title {
-    margin-bottom: 20px;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 20px;
     color: #5c677a;
     text-align: center;
+    position: relative;
+    max-width: 260px;
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
-  .content .comments_sub_title::before,
-  .content .comments_sub_title::after {
+  .content .comments_sub_title::before {
     content: "—";
-    margin: 0 10px;
+    margin: 0;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -15px;
+  }
+  .content .comments_sub_title::after {
+    display: block;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: -15px;
   }
   .content .comments_h2 {
     font-weight: 700;
@@ -4020,16 +4084,29 @@ strong {
     padding: 60px 0;
   }
   .content .portfolio_sub_title {
-    margin-bottom: 20px;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 20px;
     color: #5c677a;
     text-align: center;
+    position: relative;
+    max-width: 260px;
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
-  .content .portfolio_sub_title::before,
-  .content .portfolio_sub_title::after {
+  .content .portfolio_sub_title::before {
     content: "—";
-    margin: 0 10px;
+    margin: 0;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -15px;
+  }
+  .content .portfolio_sub_title::after {
+    display: block;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: -15px;
   }
   .content .portfolio_h2 {
     font-weight: 700;
@@ -4064,16 +4141,29 @@ strong {
     padding: 60px 0;
   }
   .content .price_sub_title {
-    margin-bottom: 20px;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 20px;
     color: #5c677a;
     text-align: center;
+    position: relative;
+    max-width: 260px;
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
-  .content .price_sub_title::before,
-  .content .price_sub_title::after {
+  .content .price_sub_title::before {
     content: "—";
-    margin: 0 10px;
+    margin: 0;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -15px;
+  }
+  .content .price_sub_title::after {
+    display: block;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: -15px;
   }
   .content .price_h2 {
     font-weight: 700;
@@ -4112,14 +4202,10 @@ strong {
     display: block;
     padding: 21px 0;
     width: 100%;
-    border: 1px solid #db317d;
+    border: 1px solid #091a38;
     margin: 10px 0;
     border-radius: 6px;
     text-align: center;
-    background: linear-gradient(89.12deg, #f98b26 0.39%, #d92e7f 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: #d92e7f;
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
   }
@@ -4238,16 +4324,29 @@ strong {
     position: relative;
   }
   .content .advantages_sub_title {
-    margin-bottom: 20px;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 20px;
     color: #5c677a;
     text-align: center;
+    position: relative;
+    max-width: 260px;
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
-  .content .advantages_sub_title::before,
-  .content .advantages_sub_title::after {
+  .content .advantages_sub_title::before {
     content: "—";
-    margin: 0 10px;
+    margin: 0;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -15px;
+  }
+  .content .advantages_sub_title::after {
+    display: block;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: -15px;
   }
   .content .advantages_h2 {
     font-weight: 700;
@@ -4361,16 +4460,29 @@ strong {
     padding: 60px 0;
   }
   .content .work_sub_title {
-    margin-bottom: 20px;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 20px;
     color: #5c677a;
     text-align: center;
+    position: relative;
+    max-width: 260px;
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
-  .content .work_sub_title::before,
-  .content .work_sub_title::after {
+  .content .work_sub_title::before {
     content: "—";
-    margin: 0 10px;
+    margin: 0;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -15px;
+  }
+  .content .work_sub_title::after {
+    display: block;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: -15px;
   }
   .content .work_h2 {
     font-weight: 700;
@@ -4494,16 +4606,29 @@ strong {
     padding: 60px 0;
   }
   .content .target_sub_title {
-    margin-bottom: 20px;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 20px;
     color: #5c677a;
     text-align: center;
+    position: relative;
+    max-width: 260px;
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
-  .content .target_sub_title::before,
-  .content .target_sub_title::after {
+  .content .target_sub_title::before {
     content: "—";
-    margin: 0 10px;
+    margin: 0;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -15px;
+  }
+  .content .target_sub_title::after {
+    display: block;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: -15px;
   }
   .content .target_h2 {
     font-weight: 700;
@@ -4634,9 +4759,6 @@ strong {
   .content .contact_from .form_group_line-input.error {
     border: 2px solid red;
   }
-  .content .contact_from .form_group_line-photo {
-    display: none;
-  }
   .content .contact_from .form_row {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4695,7 +4817,7 @@ strong {
   .content .contact_from .form_left {
     width: 260px;
     height: 325px;
-    bottom: 42%;
+    bottom: 46%;
     position: absolute;
     right: 0;
     max-width: 100%;
@@ -4704,16 +4826,29 @@ strong {
     padding-top: 60px;
   }
   .content .material_sub_title {
-    margin-bottom: 20px;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 20px;
     color: #5c677a;
     text-align: center;
+    position: relative;
+    max-width: 260px;
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
-  .content .material_sub_title::before,
-  .content .material_sub_title::after {
+  .content .material_sub_title::before {
     content: "—";
-    margin: 0 10px;
+    margin: 0;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -15px;
+  }
+  .content .material_sub_title::after {
+    display: block;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: -15px;
   }
   .content .material_h2 {
     font-size: 20px;
@@ -4910,16 +5045,29 @@ strong {
     padding-bottom: 60px;
   }
   .content .certificate_sub_title {
-    margin-bottom: 20px;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 20px;
     color: #5c677a;
     text-align: center;
+    position: relative;
+    max-width: 260px;
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
-  .content .certificate_sub_title::before,
-  .content .certificate_sub_title::after {
+  .content .certificate_sub_title::before {
     content: "—";
-    margin: 0 10px;
+    margin: 0;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -15px;
+  }
+  .content .certificate_sub_title::after {
+    display: block;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: -15px;
   }
   .content .certificate_h2 {
     font-size: 20px;
@@ -5085,16 +5233,29 @@ strong {
     padding: 40px 0;
   }
   .content .order_sub_title {
-    margin-bottom: 20px;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 20px;
     color: #5c677a;
     text-align: center;
+    position: relative;
+    max-width: 260px;
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
-  .content .order_sub_title::before,
-  .content .order_sub_title::after {
+  .content .order_sub_title::before {
     content: "—";
-    margin: 0 10px;
+    margin: 0;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -15px;
+  }
+  .content .order_sub_title::after {
+    display: block;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: -15px;
   }
   .content .order_h2 {
     font-weight: 700;
@@ -5300,16 +5461,29 @@ strong {
     padding: 60px 0;
   }
   .content .question_sub_title {
-    margin-bottom: 20px;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 20px;
     color: #5c677a;
     text-align: center;
+    position: relative;
+    max-width: 260px;
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
-  .content .question_sub_title::before,
-  .content .question_sub_title::after {
+  .content .question_sub_title::before {
     content: "—";
-    margin: 0 10px;
+    margin: 0;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -15px;
+  }
+  .content .question_sub_title::after {
+    display: block;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: -15px;
   }
   .content .question_h2 {
     font-weight: 700;

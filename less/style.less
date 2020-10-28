@@ -90,6 +90,7 @@ strong{
     line-height: 20px;
     color: @grey-color;
     text-align: center;
+    position: relative;
     &::before,
     &::after {
       content: "—";
@@ -427,19 +428,18 @@ strong{
       &_span{
         display: block;
         padding: 21px 26px;
-        border: 1px solid @pink-color;
+        border: 1px solid @bg-color;
         margin: 0 15px;
         border-radius: 6px;
-        .gradient_text;
+        color: @bg-color;
         transition: all 0.2s;
         &.active{
-          -webkit-text-fill-color: #ffffff;
-          color: #ffffff;
-          background: linear-gradient(89.12deg, #f98b26 0.39%, #d92e7f 100%);
+          border: 1px solid @pink-color;
+          .gradient_text;
         }
         &:hover{
-          -webkit-text-fill-color: #ffffff;
-          background: linear-gradient(89.12deg, #f98b26 0.39%, #d92e7f 100%);
+          border: 1px solid @pink-color;
+          .gradient_text;
         }
       }
     }
@@ -667,6 +667,7 @@ strong{
       position: absolute;
       bottom: 0;
       right: 0;
+      height: 550px;
     }
   }
   .work{
@@ -801,6 +802,8 @@ strong{
                 display: none;
               }
             }
+            display: block;
+            width: fit-content;
             margin-top: 20px;
             position: relative;
             font-weight: 700;
@@ -997,24 +1000,9 @@ strong{
             width: 189px;
             height: 60px;
             position: relative;
-            &:active{
-              color: #ffffff;
-              .form_group_line-photo:after{
-                background: @pink-color;
-                color: #ffffff;
-              }
-            }
-            &:focus{
-              color: #ffffff;
-              .form_group_line-photo:after{
-                background: @pink-color;
-                color: #ffffff;
-              }
-            }
-            &:visited{
-              color: #ffffff;
-              .form_group_line-photo:after{
-                background: @pink-color;
+            &:hover{
+              box-shadow: 0px 10px 20px rgba(220, 54, 121, 0.1);
+              &:after{
                 color: #ffffff;
               }
             }
@@ -1202,6 +1190,9 @@ strong{
             right: -26px;
             top: 67px;
           }
+          &-video{
+            width: fit-content;
+          }
         }
       }
     }
@@ -1258,6 +1249,7 @@ strong{
       }
     }
     &_video{
+      margin-bottom: 0;
       border-radius: 6px;
       background-position: center;
       background-size: cover;
@@ -2834,7 +2826,7 @@ strong{
         &_span{
           display: block;
           padding: 21px 26px;
-          border: 1px solid @pink-color;
+          border: 1px solid @bg-color;
           margin: 5px 15px;
           border-radius: 6px;
         }
@@ -3111,15 +3103,28 @@ strong{
   }
 
   .sub-title{
-    margin-bottom: 20px;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 20px;
     color: @grey-color;
     text-align: center;
-    &::before,
-    &::after {
+    position: relative;
+    max-width: 260px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    &::before{
       content: "—";
-      margin: 0 10px;
+      margin: 0;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: -15px;
+    }
+    &::after{
+      display: block;
+      margin: 0;
+      position: absolute;
+      top: 0;
+      right: -15px;
     }
   }
 
@@ -3430,11 +3435,10 @@ strong{
           display: block;
           padding: 21px 0;
           width: 100%;
-          border: 1px solid @pink-color;
+          border: 1px solid @bg-color;
           margin: 10px 0;
           border-radius: 6px;
           text-align: center;
-          .gradient_text;
           transition: all 0.2s;
         }
       }
@@ -3868,10 +3872,6 @@ strong{
                 border: 2px solid red;
               }
             }
-            &-photo{
-              display: none;
-
-            }
           }
         }
         &_row{
@@ -3904,7 +3904,7 @@ strong{
         &_left{
           width: 260px;
           height: 325px;
-          bottom: 42%;
+          bottom: 46%;
           position: absolute;
           right: 0;
           max-width: 100%;
