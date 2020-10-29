@@ -44,6 +44,12 @@ strong{
   margin: 0 auto;
   padding: 0 15px;
 }
+.lg-icon{
+  border: none;
+}
+.lg-backdrop {
+  background: rgba(0, 0, 0, 0.7);
+}
 .prev-comments_sl {
   position: absolute;
   left: -47px;
@@ -101,7 +107,7 @@ strong{
 .fade {
   display: none;
   position: fixed;
-  z-index: 999;
+  z-index: 9999!important;
   left: 0;
   right: 0;
   top: 0;
@@ -187,6 +193,7 @@ strong{
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
+  min-height: 500px;
   &_info{
     position: relative;
     &_pre-title{
@@ -271,13 +278,22 @@ strong{
           .card-title{
             .gradient_text;
           }
+          .card-img{
+            transform: scale(1.2);
+          }
+        }
+        &_top{
+          width: 100%;
+          display: inline-block;
+          border-radius: 6px;
+          overflow: hidden;
+          margin-bottom: 20px;
         }
         &-img{
           display: block;
           width: 100%;
           height: 360px;
-          margin-bottom: 20px;
-          border-radius: 6px;
+          transition: 1s;
         }
         &-title{
           width: fit-content;
@@ -358,7 +374,7 @@ strong{
     }
   }
   .comments{
-    padding: 50px 0;
+    padding: 100px 0;
     &_sub_title{
       .sub-title;
     }
@@ -398,7 +414,7 @@ strong{
     background-repeat: no-repeat;
   }
   .price{
-    padding: 50px 0;
+    padding: 100px 0;
     &_sub_title{
       .sub-title;
     }
@@ -428,18 +444,20 @@ strong{
       &_span{
         display: block;
         padding: 21px 26px;
-        border: 1px solid @bg-color;
+        border: 1px solid @pink-color;
         margin: 0 15px;
         border-radius: 6px;
-        color: @bg-color;
+        .gradient_text;
         transition: all 0.2s;
-        &.active{
-          border: 1px solid @pink-color;
-          .gradient_text;
-        }
         &:hover{
-          border: 1px solid @pink-color;
-          .gradient_text;
+          -webkit-text-fill-color: #ffffff;
+          color: #ffffff;
+          background: linear-gradient(89.12deg, #F98B26 0.39%, #D92E7F 100%);
+        }
+        &.active{
+          -webkit-text-fill-color: #ffffff;
+          color: #ffffff;
+          background: linear-gradient(89.12deg, #F98B26 0.39%, #D92E7F 100%);
         }
       }
     }
@@ -459,12 +477,13 @@ strong{
             justify-content: space-between;
             padding: 17px 34px;
             background: #FFFFFF;
+            border: 1px solid #FFFFFF;
             border-radius: 6px;
             &:hover{
-              background: linear-gradient(89.12deg, #F98B26 0.39%, #D92E7F 100%);
+              border: 1px solid @pink-color;
               .card_size,
               .card_price{
-                color: #ffffff;
+               .gradient_text;
               }
             }
             .card_size{
@@ -563,10 +582,20 @@ strong{
       }
     }
     &_cards{
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-gap: 30px;
+      /*display: grid;*/
+      /*grid-template-columns: repeat(4, 1fr);
+      grid-gap: 30px;*/
       margin-bottom: 60px;
+      &.active{
+        margin-bottom: 0;
+      }
+      &_preview{
+        display: none;
+        .card {
+          width: 25%;
+          padding: 10px;
+        }
+      }
       .card{
         width: 25%;
         padding: 10px;
@@ -828,7 +857,7 @@ strong{
     }
   }
   .modal_video{
-    z-index: 999;
+    z-index: 9999!important;
     width: 455px;
     background-color: #FFFFFF;
     position: fixed;
@@ -945,6 +974,7 @@ strong{
         text-align: left;
         color: @bg-color;
         margin-bottom: 20px;
+        text-transform: uppercase;
         & span{
           .gradient_text;
         }
@@ -992,17 +1022,13 @@ strong{
             border: 1px solid #DB317D;
             box-sizing: border-box;
             border-radius: 6px;
-            font-weight: 600;
-            font-size: 14px;
-            line-height: 26px;
-            text-transform: uppercase;
-            color: #DB317D;
             width: 189px;
             height: 60px;
             position: relative;
             &:hover{
               box-shadow: 0px 10px 20px rgba(220, 54, 121, 0.1);
               &:after{
+                background: linear-gradient(89.12deg, #f98b26 0.39%, #d92e7f 100%);
                 color: #ffffff;
               }
             }
@@ -1603,6 +1629,150 @@ strong{
       }
     }
   }
+  .gallery{
+    padding: 50px 0 110px;
+    &_sub_title{
+      .sub-title;
+    }
+    &_h2{
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 46px;
+      text-align: center;
+      color: @bg-color;
+      margin-bottom: 20px;
+      & span{
+        .gradient_text;
+      }
+    }
+    &_p{
+      font-size: 16px;
+      line-height: 26px;
+      text-align: center;
+      color: #4f4f4f;
+      margin-bottom: 60px;
+    }
+    &_box{
+      width: 1010px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 3fr 1fr;
+      grid-gap: 36px;
+      &_main{
+        height: 100%;
+        &_column{
+          height: 100%;
+          &-img{
+            height: 100%;
+          }
+        }
+      }
+      &_column{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 23px;
+        &-img{
+          display: block;
+          max-width: 100%;
+          height: auto;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+  .about{
+    width: 1130px;
+    margin: 0 auto;
+    padding: 60px 0 70px 0;
+    &_sub_title{
+      .sub-title;
+    }
+    &_h2{
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 46px;
+      text-align: center;
+      color: @bg-color;
+      margin-bottom: 20px;
+      & span{
+        .gradient_text;
+      }
+    }
+    &_p{
+      font-size: 16px;
+      line-height: 26px;
+      text-align: center;
+      color: #4f4f4f;
+      max-width: 670px;
+      margin: 0 auto;
+      margin-bottom: 60px;
+    }
+    &_row{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 52px;
+      margin-bottom: 60px;
+      &_description{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-end;
+        position: relative;
+        /*&-img{
+          position: absolute;
+          right: 0;
+          bottom: 0;
+        }*/
+        &-p{
+          font-style: italic;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 28px;
+          color: @bg-color;
+          max-width: 425px;
+        }
+      }
+    }
+    &_content{
+      p{
+        font-size: 14px;
+        line-height: 24px;
+        color: #4F4F4F;
+        padding-bottom: 10px;
+      }
+      ul li{
+        font-size: 14px;
+        line-height: 24px;
+        color: #4F4F4F;
+        padding-bottom: 5px;
+        padding-left: 20px;
+        position: relative;
+        &:after{
+          position: absolute;
+          top: 13px;
+          left: 5px;
+          content: "";
+          display: block;
+          height: 1px;
+          width: 7px;
+          background-color:#4F4F4F;
+        }
+      }
+      ol{
+        list-style-type: decimal;
+        padding-left: 20px;
+      }
+      ol li {
+        font-size: 14px;
+        line-height: 24px;
+        color: #4F4F4F;
+        padding-bottom: 5px;
+        padding-left: 20px;
+      }
+      ol ul{
+        padding-bottom: 10px;
+      }
+    }
+  }
 }
 .footer{
   padding: 100px 0 54px 0;
@@ -1766,7 +1936,6 @@ strong{
         grid-column-gap: 30px;
         grid-row-gap: 60px;
         margin-bottom: 30px;
-
         .card {
           padding: 0 15px 15px;
           transition: 0.2s;
@@ -1783,7 +1952,6 @@ strong{
             width: 100%;
             height: 360px;
             object-fit: cover;
-            margin-bottom: 20px;
             border-radius: 6px;
           }
 
@@ -2162,7 +2330,6 @@ strong{
             width: 100%;
             height: 360px;
             object-fit: cover;
-            margin-bottom: 20px;
             border-radius: 6px;
           }
 
@@ -2752,7 +2919,6 @@ strong{
             width: 100%;
             height: 360px;
             object-fit: cover;
-            margin-bottom: 20px;
             border-radius: 6px;
           }
 
@@ -2826,7 +2992,6 @@ strong{
         &_span{
           display: block;
           padding: 21px 26px;
-          border: 1px solid @bg-color;
           margin: 5px 15px;
           border-radius: 6px;
         }
@@ -3253,11 +3418,13 @@ strong{
               .gradient_text;
             }
           }
+          &_top{
+            margin-bottom: 10px;
+          }
           &-img {
             display: block;
             width: 100%;
             height: 360px;
-            margin-bottom: 10px;
             border-radius: 6px;
           }
           &-title {
@@ -3435,7 +3602,6 @@ strong{
           display: block;
           padding: 21px 0;
           width: 100%;
-          border: 1px solid @bg-color;
           margin: 10px 0;
           border-radius: 6px;
           text-align: center;

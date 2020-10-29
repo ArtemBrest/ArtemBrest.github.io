@@ -112,11 +112,27 @@ $(".wrapper .price_tabs_span").click(function() {
 
 $(".price_card_size").not(":first").hide();
 $(".wrapper .card_tabs_row").click(function() {
-  console.log($(this).parent(".price_card_size"));
   $(this).removeClass("active").eq($(this).index()).addClass("active");
   $(this).parent(".card_tabs").parent(".price_card_size").find(".card_right").hide().eq($(this).index()).fadeIn();
 }).eq(0).addClass("active");
 
+$(".portfolio-btn").click(function () {
+  if ($(".portfolio_cards_preview").hasClass("active")){
+    $('.portfolio_cards_preview').removeClass("active");
+    $('.portfolio_cards_preview').fadeOut(350);
+    $(".portfolio-btn").html("Показать еще");
+    $(".portfolio_cards").removeClass("active");
+  }
+  else{
+    $(".portfolio_cards_preview").fadeIn(350);
+    $(".portfolio_cards_preview").addClass("active");
+    $(".portfolio-btn").html("Скрыть");
+    $(".portfolio_cards").addClass("active");
+  }
+  $('.portfolio_cards_preview').isotope({
+    itemSelector: '.item_sub',
+  });
+});
 $('.grid').isotope({
   itemSelector: '.item_sub',
 });
@@ -170,4 +186,74 @@ jQuery(function($){
     });
   });
 });
+$(".grid").lightGallery({
+  selector: '.card'
+});
+
+
+
+
+$('.ba-slider').beforeAfter();
+var _beforeAfter = {
+  init: function () {
+    var u = document.querySelectorAll(".before-after"),o;
+    for (var i = 0; i < u.length; i++) {
+      u[i].addEventListener("click", _beforeAfter.trackLocation, false);
+      u[i].addEventListener("mousemove", _beforeAfter.trackLocation, false);
+      u[i].addEventListener("touchstart", _beforeAfter.trackLocation, false);
+      u[i].addEventListener('touchend', _beforeAfter.trackLocation, false);
+      u[i].addEventListener("touchmove", _beforeAfter.trackLocation, false);
+      o=u[i].getElementsByTagName("IMG")[0];
+      o.addEventListener("drag", cancelBubble, false);
+      o.addEventListener("dragstart", cancelBubble, false);
+      o.addEventListener("dragdrop", cancelBubble, false);
+    }
+  },
+  trackLocation: function (e) {
+    e = e || window.event;
+    //console.log(e, e.type, e.buttons);
+    if(e.type.substr(0,5)!='touch' && e.buttons != 1 && e.type!='click')return;
+    var pos=(e.type.substr(0,5)=='touch' && e.changedTouches ? e.changedTouches[0].pageX : e.pageX);
+    var o = getEventTarget(e);
+    var u = o.parentNode;
+    var d = u.getElementsByTagName("DIV")[0];
+    i = u.getElementsByTagName("IMG")[0];
+
+    var rect = i.getBoundingClientRect();
+    var position = ((pos - rect.left) / i.offsetWidth) * 100;
+    if (position>=0 && position <= 100 && d.nextElementSibling) {
+      if(e.type=='click')addClass(u,'transition');
+      d.style.width = position + "%";
+      d.nextElementSibling.style.right=i.offsetWidth-(pos-rect.left)-23+'px';
+      if(e.type=='click')setTimeout(function (){removeClass(u,'transition');},1000);
+    }
+  },
+  change: function (t,o) {
+    o=document.getElementById(o);
+    var b=t.src.replace('.jpg','_before.jpg'), a=t.src.replace('.jpg','_after.jpg'),
+        b1=new Image(), a1=new Image();
+    document.getElementsByTagName('body')[0].style.cursor='wait';
+    //b1.onload = function (e) { console.log("image1 is loaded",e); };
+    b1.src = b;
+    a1.onload = function (e) {
+      console.log("image2 is loaded",e);
+      function getEventTarget(e) {
+        return undefined;
+      }
+      var t= getEventTarget(e);
+      //var w=parseInt(t.width), h=parseInt(t.height);
+      //o.style.width= (w+35)+'px';
+      var o1=o.firstElementChild;
+      var o2=o1.getElementsByTagName('DIV')[0].style;
+      o2.backgroundImage='url('+a+')';
+      o2.width='calc(100% - 50%)';
+      //o1.getElementsByTagName("DIV")[1].style.right='37px';
+      o1.getElementsByTagName('IMG')[0].src=b;
+      //o1.style.height=h+'px';
+      //o1.style.width= w+'px';
+      document.getElementsByTagName('body')[0].style.cursor='inherit';
+    };
+    a1.src = a;
+  }
+};
 
