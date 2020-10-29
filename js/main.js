@@ -120,13 +120,13 @@ $(".portfolio-btn").click(function () {
   if ($(".portfolio_cards_preview").hasClass("active")){
     $('.portfolio_cards_preview').removeClass("active");
     $('.portfolio_cards_preview').fadeOut(350);
-    $(".portfolio-btn").html("Показать еще");
+    $(".portfolio-btn p").html("Показать еще");
     $(".portfolio_cards").removeClass("active");
   }
   else{
     $(".portfolio_cards_preview").fadeIn(350);
     $(".portfolio_cards_preview").addClass("active");
-    $(".portfolio-btn").html("Скрыть");
+    $(".portfolio-btn p").html("Скрыть");
     $(".portfolio_cards").addClass("active");
   }
   $('.portfolio_cards_preview').isotope({
@@ -256,4 +256,5 @@ var _beforeAfter = {
     a1.src = a;
   }
 };
+
 
