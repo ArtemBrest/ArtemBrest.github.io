@@ -657,6 +657,11 @@ strong{
         .card {
           width: 25%;
           padding: 10px;
+          &-img{
+            display: block;
+            height: 100%;
+            width: 100%;
+          }
         }
       }
       .card{
@@ -2532,9 +2537,13 @@ strong{
     }
     .portfolio{
       &_cards{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 30px;
+        &_preview{
+          display: none;
+          .card {
+            width: 33.3333%;
+            padding: 10px;
+          }
+        }
         .card{
           width: 33.3333%;
           padding: 10px;
@@ -3121,9 +3130,13 @@ strong{
     }
     .portfolio{
       &_cards{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 30px;
+        &_preview{
+          display: none;
+          .card {
+            width: 50%;
+            padding: 10px;
+          }
+        }
         .card{
           width: 50%;
           padding: 10px;
@@ -3750,10 +3763,14 @@ strong{
         }
       }
       &_cards{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 20px;
         margin-bottom: 30px;
+        &_preview{
+          display: none;
+          .card {
+            width: 100%;
+            padding: 10px;
+          }
+        }
         .card{
           width: 100%;
           padding: 10px;

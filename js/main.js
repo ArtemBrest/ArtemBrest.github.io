@@ -90,7 +90,7 @@ $('.comments_sl').slick({
   ]
 });
 
-
+/* start tabs */
 $(".card_tab_content .card_right").not(":first").hide();
 $(".wrapper .price_tabs_span").click(function() {
   $(".wrapper .price_tabs_span").removeClass("active").eq($(this).index()).addClass("active");
@@ -116,6 +116,9 @@ $(".wrapper .card_tabs_row").click(function() {
   $(this).parent(".card_tabs").parent(".price_card_size").find(".card_right").hide().eq($(this).index()).fadeIn();
 }).eq(0).addClass("active");
 
+/* end tabs */
+
+/* start portfolio */
 $(".portfolio-btn").click(function () {
   if ($(".portfolio_cards_preview").hasClass("active")){
     $('.portfolio_cards_preview').removeClass("active");
@@ -133,10 +136,14 @@ $(".portfolio-btn").click(function () {
     itemSelector: '.item_sub',
   });
 });
+
 $('.grid').isotope({
   itemSelector: '.item_sub',
 });
 
+/* end portfolio */
+
+/* modal video */
 $(".step_left_video").click(function () {
     var parent_sub = $(this).parent(".step_left").find(".modal_video").fadeIn(350);
     $(".fade").fadeIn(350);
@@ -153,6 +160,7 @@ $(".fade").click(function () {
   $(".modal_video").fadeOut(350);
   $(this).fadeOut(350);
 });
+/* modal video */
 
 /* accordion*/
 var accord = $(".accordion");
@@ -174,6 +182,7 @@ accord.find(".accordion_top").on("click", function () {
 });
 /*end accordion*/
 
+
 jQuery(function($){
   $('a[href*="#"]').on('click.smoothscroll', function( e ){
     var hash    = this.hash, _hash   = hash.replace(/#/,''), theHref = $(this).attr('href').replace(/#.*/, '');
@@ -192,7 +201,7 @@ $(".grid").lightGallery({
 
 
 
-
+/* beforeAfter slider */
 $('.ba-slider').beforeAfter();
 var _beforeAfter = {
   init: function () {
@@ -256,5 +265,5 @@ var _beforeAfter = {
     a1.src = a;
   }
 };
-
+/* beforeAfter slider */
 

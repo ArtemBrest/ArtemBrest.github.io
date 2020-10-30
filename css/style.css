@@ -824,6 +824,11 @@ strong {
   width: 25%;
   padding: 10px;
 }
+.content .portfolio_cards_preview .card-img {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
 .content .portfolio_cards .card {
   width: 25%;
   padding: 10px;
@@ -3078,10 +3083,12 @@ strong {
     height: 1px;
     background: url(../img/svg/lines.svg);
   }
-  .content .portfolio_cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
+  .content .portfolio_cards_preview {
+    display: none;
+  }
+  .content .portfolio_cards_preview .card {
+    width: 33.3333%;
+    padding: 10px;
   }
   .content .portfolio_cards .card {
     width: 33.3333%;
@@ -3699,10 +3706,12 @@ strong {
     height: 1px;
     background: url(../img/svg/lines.svg);
   }
-  .content .portfolio_cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 30px;
+  .content .portfolio_cards_preview {
+    display: none;
+  }
+  .content .portfolio_cards_preview .card {
+    width: 50%;
+    padding: 10px;
   }
   .content .portfolio_cards .card {
     width: 50%;
@@ -4533,10 +4542,14 @@ strong {
     color: #d92e7f;
   }
   .content .portfolio_cards {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
     margin-bottom: 30px;
+  }
+  .content .portfolio_cards_preview {
+    display: none;
+  }
+  .content .portfolio_cards_preview .card {
+    width: 100%;
+    padding: 10px;
   }
   .content .portfolio_cards .card {
     width: 100%;
