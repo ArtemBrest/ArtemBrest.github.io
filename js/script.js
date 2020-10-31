@@ -40,28 +40,32 @@ $(document).ready(function () {
 
     /*masked input*/
     jQuery(function ($) {
-        $(".modal1_form-input-phone").mask("+375(99) 999-99-99");
+        $(".main_form_group_line-input_phone").mask("+375(99) 999-99-99");
+        $(".modal1_form_group_line-input_phone").mask("+375(99) 999-99-99");
     });
     /* end masked input*/
 
-    /* my jquery submit*/
-    (function( $ ) {
-        $.fn.myPlugin = function() {
-            $("#fade").fadeIn(350);
-            $("#mainModal1").fadeIn(350);
-            $('#modal1_form').validate({
+    /* start submit form */
+    $(function () {
+        $('.main_form-btn').on("click", function () {
+            $('#main_form').validate({
                 rules: {
+                    organization: {
+                        required: true,
+                    },
                     name: {
                         required: true,
                         minlength: 2,
                     },
                     phone: {
                         required: true,
-                        minlength: 10,
+                        minlength: 7,
                     },
-
                 },
                 messages: {
+                    organization: {
+                        required: ' '
+                    },
                     name: {
                         required: ' ',
                         minlength: ' '
@@ -73,21 +77,26 @@ $(document).ready(function () {
 
                 },
                 submitHandler: (function (form) {
-                    var name = $(".modal1_form-input-name").val(),
-                        phone = $('.modal1_form-input-phone').val(),
-                        message = $(".modal1_form-textarea").val()
+                    var organization = $(".main_form_group_line-input_organization").val(),
+                        name = $(".main_form_group_line-input_name").val(),
+                        phone = $('.main_form_group_line-input_phone').val(),
+                        email = $(".main_form_group_line-input_email").val(),
+                        message = $(".main_form_group_line-textarea").val()
+
                     var options = {
                         success: function (form) {
-                            $('#modal1_form')[0].reset();
-                            $("#mainModal1").fadeOut(350);
+                            $('#main_form')[0].reset();
                             $(".modal").fadeIn(350);
+                            $(".fade").fadeIn(350);
                         },
                         type: "POST",
                         url: "/wp-admin/admin-ajax.php",
                         data: ({
                             action: 'plan_form',
+                            organization: organization,
                             name: name,
                             phone: phone,
+                            email: email,
                             message: message
                         }),
 
@@ -95,86 +104,191 @@ $(document).ready(function () {
                     $(form).ajaxSubmit(options);
                 })
             })
-        };
-    })(jQuery);
-    /* end my jquery submit*/
+        });
+        $('.back_submit_row_form-btn').on("click", function () {
+            $('.back_submit_row_form').validate({
+                rules: {
+                    email: {
+                        required: true,
+                        minlength: 2,
+                        email: true,
+                    },
+                },
+                messages: {
+                    email: {
+                        required: ' ',
+                        minlength: ' ',
+                        email: ' '
+                    }
+                },
+                submitHandler: (function (form) {
+                    var email = $(".back_submit_row_form-input").val()
+                    var options = {
+                        success: function (form) {
+                            $('.back_submit_row_form')[0].reset();
+                            $(".thanks_h1").html("Спасибо за подписку");
+                            $(".thanks_p").html("Мы будем присылать вам письма с новыми публикациями. Одно письмо по четвернам и иногда во вторник.")
+                            $(".modal").fadeIn(350);
+                            $(".fade").fadeIn(350);
+                        },
+                        type: "POST",
+                        url: "/wp-admin/admin-ajax.php",
+                        data: ({
+                            action: 'plan_form',
+                            email: email
+                        }),
 
-    $(function () {
-        $('.banner-btn').on("click", function () {
-            // validate and process form here
-            $(this).myPlugin();
+                    };
+                    $(form).ajaxSubmit(options);
+                })
+            })
         });
-        $('.banner_line_group-btn').on("click", function () {
-            // validate and process form here
-            $(this).myPlugin();
+        $('.model_card_right_btn').on("click", function () {
+            $(".modal1").fadeIn(350);
+            $(".fade").fadeIn(350);
+            $(".modal1_form-h2").html("Заявка на заказ оптом");
+            $('.modal1_form').validate({
+                rules: {
+                    name: {
+                        required: true,
+                        minlength: 2,
+                    },
+                    phone: {
+                        required: true,
+                        minlength: 7,
+                    },
+                    email: {
+                        required: true,
+                        minlength: 2,
+                        email: true,
+                    },
+                },
+                messages: {
+                    name: {
+                        required: ' ',
+                        minlength: ' '
+                    },
+                    phone: {
+                        required: ' ',
+                        minlength: ' '
+                    },
+                    email: {
+                        required: ' ',
+                        minlength: ' ',
+                        email: ' '
+                    }
+                },
+                submitHandler: (function (form) {
+                    var name = $(".modal1_form_group_line-input_name").val(),
+                        phone = $('.modal1_form_group_line-input_phone').val(),
+                        email = $(".modal1_form_group_line-input_email").val(),
+                        message = $(".modal1_form_group_line-textarea").val()
+
+                    var options = {
+                        success: function (form) {
+                            $('#main_form')[0].reset();
+                            $(".modal").fadeIn(350);
+                            $(".fade").fadeIn(350);
+                        },
+                        type: "POST",
+                        url: "/wp-admin/admin-ajax.php",
+                        data: ({
+                            action: 'plan_form',
+                            name: name,
+                            phone: phone,
+                            email: email,
+                            message: message
+                        }),
+
+                    };
+                    $(form).ajaxSubmit(options);
+                })
+            })
         });
-        $('.step_cards .card-btn').on("click", function () {
-            // validate and process form here
-            $(this).myPlugin();
+        $('.model_card_right_btn.other_btn').on("click", function () {
+            $(".modal1").fadeIn(350);
+            $(".fade").fadeIn(350);
+            $(".modal1_form-h2").html("Заявка на заказ в розницу");
+            $('.modal1_form').validate({
+                rules: {
+                    name: {
+                        required: true,
+                        minlength: 2,
+                    },
+                    phone: {
+                        required: true,
+                        minlength: 7,
+                    },
+                    email: {
+                        required: true,
+                        minlength: 2,
+                        email: true,
+                    },
+                },
+                messages: {
+                    name: {
+                        required: ' ',
+                        minlength: ' '
+                    },
+                    phone: {
+                        required: ' ',
+                        minlength: ' '
+                    },
+                    email: {
+                        required: ' ',
+                        minlength: ' ',
+                        email: ' '
+                    }
+                },
+                submitHandler: (function (form) {
+                    var name = $(".modal1_form_group_line-input_name").val(),
+                        phone = $('.modal1_form_group_line-input_phone').val(),
+                        email = $(".modal1_form_group_line-input_email").val(),
+                        message = $(".modal1_form_group_line-textarea").val()
+
+                    var options = {
+                        success: function (form) {
+                            $('#main_form')[0].reset();
+                            $(".modal").fadeIn(350);
+                            $(".fade").fadeIn(350);
+                        },
+                        type: "POST",
+                        url: "/wp-admin/admin-ajax.php",
+                        data: ({
+                            action: 'plan_form',
+                            name: name,
+                            phone: phone,
+                            email: email,
+                            message: message
+                        }),
+
+                    };
+                    $(form).ajaxSubmit(options);
+                })
+            })
         });
     });
     $(".fade").click(function () {
         $(".modal").fadeOut(350);
         $(".modal1").fadeOut(350);
         $(".fade").fadeOut(350);
-    })
+    });
     $(".modal-btn-close").click(function () {
         $(".modal").fadeOut(350);
         $(".fade").fadeOut(350);
-    })
+    });
     $(".mainModal-close").click(function () {
         $(".modal").fadeOut(350);
         $(".modal1").fadeOut(350);
         $(".fade").fadeOut(350);
-    })
-    $("#mainForm-btn").click(function () {
-        $('#mainForm').validate({
-            rules: {
-                name: {
-                    required: true,
-                    minlength: 2,
-                },
-                email: {
-                    required: true,
-                    minlength: 5,
-                },
-
-            },
-            messages: {
-                name: {
-                    required: ' ',
-                    minlength: ' '
-                },
-                email: {
-                    required: ' ',
-                    minlength: ' '
-                },
-
-            },
-            submitHandler: (function (form) {
-                var name = $(".form_group_line-input-name").val(),
-                    email = $('.form_group_line-input-email').val(),
-                    message = $(".form_group_line-textarea").val()
-                var options = {
-                    success: function (form) {
-                        $('#mainForm')[0].reset();
-                        $(".modal").fadeIn(350);
-                        $("#fade").fadeIn(350);
-                    },
-                    type: "POST",
-                    url: "/wp-admin/admin-ajax.php",
-                    data: ({
-                        action: 'plan_form',
-                        name: name,
-                        email: email,
-                        message: message
-                    }),
-
-                };
-                $(form).ajaxSubmit(options);
-            })
-        })
     });
+    $(".modal1-close").click(function () {
+        $(".modal1").fadeOut(350);
+        $(".fade").fadeOut(350);
+    });
+    /* end submit form */
+
+    /* start slider */
     $(".banner_sl").slick({
         dots: true,
         infinite: true,
@@ -209,13 +323,6 @@ $(document).ready(function () {
         focusOnSelect: true,
         vertical: true,
         responsive: [
-            /*{
-                breakpoint: 1330,
-                settings: {
-                    slidesToShow: 2,
-                    vertical:false
-                }
-            },*/
             {
                 breakpoint: 768,
                 settings: {
@@ -232,7 +339,6 @@ $(document).ready(function () {
             }
         ]
     });
-
     $("#model_other").slick({
         dots: false,
         infinite: true,
@@ -256,14 +362,13 @@ $(document).ready(function () {
             }
         ]
     });
+    /* end slider */
 });
 
 var accord = $(".header_mob_menu_li");
 $(function() {
     $("li[class='header_mob_menu_li']").each(function(indx, el){
         $(el).has(".header_mob_menu_ul_sub").length || $(el).find(".header_mob_menu_li_icon").remove();
-        //$(el).has("ul").length || $(el).find("span").addClass("menu_li_icon icon-down");
-        //console.log($(el).has("menu_sub-ul").length || $(el));
     });
 });
 if (accord.find(".line").parent().is(':has(ul)')){
