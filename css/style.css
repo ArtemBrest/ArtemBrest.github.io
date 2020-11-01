@@ -1888,6 +1888,8 @@ button:hover {
     color: #4F4F4F;
   }
   .header_mob_menu_info {
+    z-index: 99!important;
+    position: relative;
     padding: 33px 0;
     background: #333333;
   }
