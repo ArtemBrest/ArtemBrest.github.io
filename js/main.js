@@ -58,26 +58,29 @@ $(document).ready(function () {
     centerMode: true,
     centerPadding: '0px',
     slidesToShow: 3,
-    variableWidth: true,
+    //variableWidth: true,
     infinity: true,
     nextArrow: '<div class="main__slider-next main__slider-arrow "><span></span><span></span></div>',
     prevArrow: '<div class="main__slider-prev main__slider-arrow"><span></span><span></span></div>',
 
     responsive: [{
+        breakpoint: 992,
+        settings: {
+          centerMode: true,
+          slidesToShow: 3
+        }
+      },
+      {
         breakpoint: 768,
         settings: {
-
           centerMode: true,
-
-          slidesToShow: 3
+          slidesToShow: 2
         }
       },
       {
         breakpoint: 480,
         settings: {
-
           centerMode: true,
-
           slidesToShow: 1
         }
       }

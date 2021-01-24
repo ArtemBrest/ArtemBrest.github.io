@@ -1938,7 +1938,7 @@ pre {
   justify-content: center;
 
   &::before {
-    top: 0;
+    /*top: 0;
     bottom: 0;
     margin-top: auto;
     margin-bottom: auto;
@@ -1951,25 +1951,25 @@ pre {
 
     @media only screen and (max-width : 600px) {
       width: 30vw;
-    }
+    }*/
 
   }
 
   &-left__line {
-    &::before {
+    /*&::before {
       left: 0px;
-    }
+    }*/
   }
 
   &-right__line {
-    &::before {
+    /*&::before {
       right: 0px;
-    }
+    }*/
   }
 
-  &:hover {
+  /*&:hover {
     color: #8B1A12;
-  }
+  }*/
 }
 
 .main__slider {
@@ -2228,7 +2228,8 @@ filter: drop-shadow(0px 3px 7px rgba(0, 0, 0, 0.1));
 
   img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     @include _border_radius(2px);
   }
 }
@@ -8732,27 +8733,6 @@ filter: drop-shadow(0px 3px 7px rgba(0, 0, 0, 0.1));
     }
   }
 }
-.header__wrapper-top__content_group{
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.header__wrapper-top__content_group a:first-child{
-  margin-right: 30px;
-}
-.t1_span{
-  font-family: "Philosopher", sans-serif;
-  font-style: italic;
-  font-size: 40px;
-  line-height: 60px;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #8B1A12;
-  margin: 0;
-  padding: 0;
-  font-weight: normal;
-  position: relative;
-  z-index: 1;
-}
 
 @media only screen and (max-width : 1920px) {}
 
@@ -8775,3 +8755,194 @@ filter: drop-shadow(0px 3px 7px rgba(0, 0, 0, 0.1));
 @media only screen and (max-width : 460px) {}
 
 @media only screen and (max-width : 320px) {}
+
+
+/* new style artem*/
+.main__slider .slick-track{
+  display: flex;
+}
+.main__slider-item_a{
+  margin: 0 10px;
+  height: inherit;
+}
+.main__slider-card{
+  display: block;
+  height: 100%;
+}
+.main__slider_top{
+  height: 345px;
+  width: 100%;
+}
+.main__slider_top-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main__slider_bottom{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-flow: column wrap;
+  height: calc(100% - 345px);
+  padding-top: 20px;
+}
+.main__slider_bottom-title{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: #333333;
+  padding-bottom: 20px;
+}
+.title_caps{
+  display: block;
+  text-transform: uppercase;
+}
+.main__slider_bottom-text{
+  font-size: 16px;
+  font-style: normal;
+  line-height: 26px;
+  text-align: left;
+  color: #333333;
+  margin-bottom: 20px;
+  max-width: 300px;
+}
+.main__slider_bottom-btn{
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  padding: 11px 0;
+  color: #ffffff;
+  text-transform: uppercase;
+  width: 100%;
+  background: #D9576B;
+  border-radius: 2px;
+  border: 1px solid #D9576B;
+  transition: all 0.3s;
+}
+.main__slider_bottom-btn:hover{
+  border: 1px solid #8B1A12;
+}
+.header__wrapper-top__content_group{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.header__wrapper-top__content_group a:first-child{
+  margin-right: 30px;
+}
+.t1_span{
+  font-family: "Philosopher", sans-serif;
+  font-style: italic;
+  font-size: 40px;
+  line-height: 60px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #8B1A12;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  position: relative;
+  z-index: 1;
+}
+.medication__section_cards{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-gap: 15px;
+  margin-bottom: 100px;
+}
+.medication__section_cards.rehabilitation{
+  grid-template-columns: repeat(5,1fr);
+  max-width: 1265px;
+}
+.medication__section_cards.hospital{
+  grid-template-columns: repeat(4,1fr);
+  max-width: 1010px;
+  margin-bottom: 80px;
+}
+.medication__section_cards .card{
+  padding: 37px 27px 40px 27px;
+  background: #FFFFFF;
+  border: 1px solid #F7DDE1;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: column wrap;
+}
+.medication__section_cards .card-span{
+  display: inline-block;
+  text-align: center;
+  padding-top: 15px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  background: linear-gradient(83.9deg, #B82945 0.78%, #B82945 0.79%, #D12A42 95.87%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #B82945;
+  max-width: 185px;
+}
+@media (max-width: 1570px){
+  .medication__section_cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 15px;
+  }
+}
+@media (max-width: 1310px){
+  .medication__section_cards.rehabilitation{
+    grid-template-columns: repeat(3,1fr);
+    max-width: 1265px;
+  }
+}
+@media (max-width: 992px){
+  .medication__section_cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 15px;
+    margin-bottom: 100px;
+  }
+  .medication__section_cards.hospital{
+    grid-template-columns: repeat(2,1fr);
+    max-width: 1010px;
+    margin-bottom: 80px;
+  }
+}
+@media (max-width: 768px){
+  .medication__section_cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 15px;
+    margin-bottom: 100px;
+  }
+  .medication__section_cards.rehabilitation{
+    grid-template-columns: repeat(2,1fr);
+    max-width: 1265px;
+  }
+}
+@media (max-width: 530px){
+  .medication__section_cards{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+    margin-bottom: 50px;
+  }
+  .medication__section_cards.rehabilitation{
+    grid-template-columns: 1fr;
+    max-width: 1265px;
+  }
+  .medication__section_cards.hospital{
+    grid-template-columns: 1fr;
+    max-width: 1010px;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 479px){
+  .header__wrapper-top__content_group a:first-child{
+    margin-right: 0;
+  }
+  .header__wrapper-top__content_group{
+    display: flex;
+    flex-flow: column wrap;
+  }
+}

@@ -1708,29 +1708,33 @@ pre {
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  /*&:hover {
+    color: #8B1A12;
+  }*/ }
   .section__title::before {
-    top: 0;
+    /*top: 0;
     bottom: 0;
     margin-top: auto;
     margin-bottom: auto;
     position: absolute;
     display: block;
     content: '';
-    max-width: 42.7083333333vw;
-    width: 100%;
+    @include _widthW(820);
     height: 1px;
-    background: -webkit-gradient(linear, left top, right top, from(#8B1A12), to(#8572BA));
-    background: linear-gradient(90deg, #8B1A12 0%, #8572BA 100%); }
-    @media only screen and (max-width: 600px) {
-      .section__title::before {
-        width: 30vw; } }
-  .section__title-left__line::before {
-    left: 0px; }
-  .section__title-right__line::before {
-    right: 0px; }
-  .section__title:hover {
-    color: #8B1A12; }
+    background: linear-gradient(90deg, #8B1A12 0%, #8572BA 100%);
+
+    @media only screen and (max-width : 600px) {
+      width: 30vw;
+    }*/ }
+  .section__title-left__line {
+    /*&::before {
+      left: 0px;
+    }*/ }
+  .section__title-right__line {
+    /*&::before {
+      right: 0px;
+    }*/ }
 
 .main__slider {
   width: 100vw;
@@ -1960,7 +1964,9 @@ pre {
   overflow: hidden; }
   .about__img img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -7432,6 +7438,84 @@ pre {
     .massage__popup-text p:last-child {
       margin-bottom: 0; }
 
+/* new style artem*/
+.main__slider .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.main__slider-item_a {
+  margin: 0 10px;
+  height: inherit; }
+
+.main__slider-card {
+  display: block;
+  height: 100%; }
+
+.main__slider_top {
+  height: 345px;
+  width: 100%; }
+
+.main__slider_top-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+.main__slider_bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  height: calc(100% - 345px);
+  padding-top: 20px; }
+
+.main__slider_bottom-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: #333333;
+  padding-bottom: 20px; }
+
+.title_caps {
+  display: block;
+  text-transform: uppercase; }
+
+.main__slider_bottom-text {
+  font-size: 16px;
+  font-style: normal;
+  line-height: 26px;
+  text-align: left;
+  color: #333333;
+  margin-bottom: 20px;
+  max-width: 300px; }
+
+.main__slider_bottom-btn {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  padding: 11px 0;
+  color: #ffffff;
+  text-transform: uppercase;
+  width: 100%;
+  background: #D9576B;
+  border-radius: 2px;
+  border: 1px solid #D9576B;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.main__slider_bottom-btn:hover {
+  border: 1px solid #8B1A12; }
+
 .header__wrapper-top__content_group {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7458,5 +7542,112 @@ pre {
   font-weight: normal;
   position: relative;
   z-index: 1; }
+
+.medication__section_cards {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 15px;
+  margin-bottom: 100px; }
+
+.medication__section_cards.rehabilitation {
+  grid-template-columns: repeat(5, 1fr);
+  max-width: 1265px; }
+
+.medication__section_cards.hospital {
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1010px;
+  margin-bottom: 80px; }
+
+.medication__section_cards .card {
+  padding: 37px 27px 40px 27px;
+  background: #FFFFFF;
+  border: 1px solid #F7DDE1;
+  -webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap; }
+
+.medication__section_cards .card-span {
+  display: inline-block;
+  text-align: center;
+  padding-top: 15px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  background: linear-gradient(83.9deg, #B82945 0.78%, #B82945 0.79%, #D12A42 95.87%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #B82945;
+  max-width: 185px; }
+
+@media (max-width: 1570px) {
+  .medication__section_cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px; } }
+@media (max-width: 1310px) {
+  .medication__section_cards.rehabilitation {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1265px; } }
+@media (max-width: 992px) {
+  .medication__section_cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    margin-bottom: 100px; }
+
+  .medication__section_cards.hospital {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1010px;
+    margin-bottom: 80px; } }
+@media (max-width: 768px) {
+  .medication__section_cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    margin-bottom: 100px; }
+
+  .medication__section_cards.rehabilitation {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1265px; } }
+@media (max-width: 530px) {
+  .medication__section_cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+    margin-bottom: 50px; }
+
+  .medication__section_cards.rehabilitation {
+    grid-template-columns: 1fr;
+    max-width: 1265px; }
+
+  .medication__section_cards.hospital {
+    grid-template-columns: 1fr;
+    max-width: 1010px;
+    margin-bottom: 50px; } }
+@media (max-width: 479px) {
+  .header__wrapper-top__content_group a:first-child {
+    margin-right: 0; }
+
+  .header__wrapper-top__content_group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap; } }
 
 /*# sourceMappingURL=main.css.map */
