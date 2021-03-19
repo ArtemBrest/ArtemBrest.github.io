@@ -1,49 +1,22 @@
 $(document).ready(function () {
-    $('.association_slider').slick({
+    $('.banner').slick({
         infinite: true,
-        slidesToShow: 6,
-        slidesToScroll: 3,
-        arrows: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: '<div class="banner_left_arrow banner_arrow"><img src="img/svg/left.svg" alt="" class="banner_left_arrow-icon"></div>',
+        nextArrow: '<div class="banner_right_arrow banner_arrow"><img src="img/svg/right.svg" alt="" class="banner_right_arrow-icon"></div>',
         dots: true,
         responsive: [
             {
-                breakpoint: 992,
+                breakpoint: 991,
                 settings: {
-                    slidesToShow: 4,
-                }
-            },
-            {
-                breakpoint: 580,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                }
-            }
-        ]
-    });
-    $('.calendar_slider').slick({
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 2,
-        arrows: false,
-        dots: true,
-        responsive: [
-            {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                }
-            },
-            {
-                breakpoint: 580,
-                settings: {
-                    slidesToShow: 1,
+                    arrows: false
                 }
             }
         ]
     });
 
+    /* menu */
     var btnMenu = $(".header_mobile_top_block");
     var menu = $(".header_mobile_menu");
     var overlay = $(".menu-overlay");
@@ -63,124 +36,54 @@ $(document).ready(function () {
         menu.hide(350);
         btnMenu.removeClass("active");
         overlay.hide(350);
-    })
+    });
+    /*  end menu */
 
 
-    $(function () {
-        $('.main_form-btn').on("click", function () {
-            $('.main_form').validate({
-                rules: {
-                    name: {
-                        required: true,
-                        minlength: 2,
-                    },
-                    email: {
-                        required: true,
-                        email: true,
-                    },
 
-                },
-                messages: {
-                    name: {
-                        required: ' ',
-                        minlength: ' '
-                    },
-                    email: {
-                        required: ' ',
-                        email: ' '
-                    },
+    /* tabs */
+    $(".tab_item").not(":first").hide();
+    let typeRitualItem = $('.tab_item:first-child .portfolio_box');
+    if(typeRitualItem.length > 4){
+        typeRitualItem.slice(4).slideToggle();
+    }
+    else{
+        $(".portfolio-show_more").addClass("none")
+    }
+    $('.portfolio-show_more').click(function (e) {
+        if (typeRitualItem.slice(4).is(':visible')) {
+            typeRitualItem.slice(4).slideToggle('slow');
+            $(this).delay(300).text('Загрузить еще');
+        } else {
+            typeRitualItem.slice(4).slideToggle('slow');
+            $(this).delay(300).text('Скрыть');
+        }
+        e.preventDefault();
+    });
+    $(".portfolio_nav .portfolio_nav_li").click(function() {
+        $('.portfolio-show_more').delay(300).text('Загрузить еще');
+        $(".portfolio_nav .portfolio_nav_li").removeClass("active").eq($(this).index()).addClass("active");
+        $(".tab_item").hide().eq($(this).index()).fadeIn();
+        let index = $(this).index() + 1;
+        let typeRitualItem = $('.tab_item:nth-child(' + index +')').children(".portfolio_box");
+        if(typeRitualItem.length > 4){
+            typeRitualItem.slice(4).slideToggle();
+            $(".portfolio-show_more").removeClass("none")
+        }
+        else{
+            $(".portfolio-show_more").addClass("none");
+        }
+        $('.portfolio-show_more').click(function (e) {
+            if (typeRitualItem.slice(4).is(':visible')) {
+                typeRitualItem.slice(4).slideToggle('slow');
+                $(this).delay(300).text('Загрузить еще');
+            } else {
+                typeRitualItem.slice(4).slideToggle('slow');
+                $(this).delay(300).text('Скрыть');
+            }
+            e.preventDefault();
 
-                },
-                submitHandler: (function (form) {
-                    var name = $(".main_form_item-input-name").val(),
-                        email = $('.main_form_item-input-email').val(),
-                        message = $(".main_form_item-textarea").val()
-                    var options = {
-                        success: function (form) {
-                            $('.main_form')[0].reset();
-                            $(".modal").fadeIn(350);
-                        },
-                        type: "POST",
-                        url: "/wp-admin/admin-ajax.php",
-                        data: ({
-                            action: 'plan_form',
-                            name: name,
-                            email: email,
-                            message: message
-                        }),
-                    };
-                    $(form).ajaxSubmit(options);
-                })
-            })
         });
-        /*$('.header_btn_link').on("click", function () {
-            $(".fade").fadeIn(350);
-            $(".modal1").fadeIn(350);
-            $('.modal1_form').validate({
-                rules: {
-                    name: {
-                        required: true,
-                        minlength: 2,
-                    },
-                    email: {
-                        required: true,
-                        email: true,
-                    },
-
-                },
-                messages: {
-                    name: {
-                        required: ' ',
-                        minlength: ' '
-                    },
-                    email: {
-                        required: ' ',
-                        email: ' '
-                    },
-
-                },
-                submitHandler: (function (form) {
-                    var name = $("modal1_form-input-name").val(),
-                        email = $('modal1_form-input-email').val(),
-                        message = $(".modal1_form-textarea").val()
-                    var options = {
-                        success: function (form) {
-                            $('.modal1_form')[0].reset();
-                            $(".modal").show(350);
-                            $(".modal1").fadeOut(350);
-                        },
-                        type: "POST",
-                        url: "/wp-admin/admin-ajax.php",
-                        data: ({
-                            action: 'plan_form',
-                            name: name,
-                            email: email,
-                            message: message
-                        }),
-                    };
-                    $(form).ajaxSubmit(options);
-                })
-            })
-        });*/
-    });
-
-
-    $(".modal-btn-close").click(function () {
-        $(".fade").hide(350);
-        $("#mainModal").hide(350);
-    });
-    $(".fade").click(function () {
-        $(".fade").hide(350);
-        $("#mainModal").hide(350);
-        $("#mainModal1").hide(350);
-    });
-    $(".mainModal-close").click(function () {
-        $(".fade").hide(350);
-        $("#mainModal").hide(350);
-    });
-    $(".modal1-close").click(function () {
-        $(".fade").hide(350);
-        $("#mainModal1").hide(350);
-    })
-
+    }).eq(0).addClass("active");
+    /* tabs */
 });
