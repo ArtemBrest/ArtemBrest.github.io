@@ -326,6 +326,7 @@ button:hover {
   color: #333333;
 }
 .h1.other_page {
+  padding-top: 20px;
   padding-bottom: 40px;
 }
 .h2 {
@@ -608,7 +609,6 @@ button:hover {
   background-color: #fff;
   width: 27px;
   height: 2px;
-  border-radius: 10px;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
@@ -620,7 +620,6 @@ button:hover {
   background-color: #fff;
   width: 27px;
   height: 2px;
-  border-radius: 10px;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
@@ -791,9 +790,9 @@ button:hover {
   max-width: 900px;
 }
 .banner_info-h1 {
+  font-family: 'Yeseva One', sans-serif;
   font-size: 72px;
   line-height: 87px;
-  font-weight: 800;
   text-transform: uppercase;
   color: #FFFFFF;
   padding-bottom: 60px;
@@ -1223,7 +1222,7 @@ button:hover {
 }
 .step_cards .card .form-btn:hover {
   background: transparent;
-  color: #ffffff;
+  color: #333333;
 }
 .project {
   padding: 60px 0;
@@ -1632,7 +1631,7 @@ button:hover {
 }
 .contact_info_form .main_form-btn:hover {
   background: transparent;
-  color: #ffffff;
+  color: #333333;
 }
 .contact_info_form .main_form-btn.contact_page {
   border: 1px solid #dbb43f;
@@ -1645,7 +1644,6 @@ button:hover {
 }
 .breadcrumb_nav {
   padding: 10px 0 15px 0;
-  background: #F8F8FA;
 }
 .breadcrumb_nav .nav {
   display: -webkit-box;
@@ -2140,7 +2138,6 @@ button:hover {
   .banner_info-h1 {
     font-size: 72px;
     line-height: 87px;
-    font-weight: 800;
     text-transform: uppercase;
     color: #FFFFFF;
     padding-bottom: 60px;
@@ -2220,7 +2217,6 @@ button:hover {
   .banner_info-h1 {
     font-size: 72px;
     line-height: 87px;
-    font-weight: 800;
     text-transform: uppercase;
     color: #FFFFFF;
     padding-bottom: 60px;
