@@ -5,42 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Главная</title>
     <link rel="stylesheet" href="fonts/stylesheet.css">
-    <link rel="stylesheet" href="slick/slick.css">
-    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="css/lightgallery.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <div class="menu-overlay"></div>
 <header class="header">
-    <div class="container">
-        <div class="header_top">
-            <div class="header_logo">
-                <a href="index.html" class="header_logo_link">
-                    <img src="img/svg/logo.svg" alt="logo" class="header_logo_link-img">
-                </a>
-                <span class="header_logo-text">Системы вентиляции, кондиционирования, отопления и водоснабжения</span>
+    <div class="header_top">
+        <div class="container">
+            <div class="header_top_menu">
+                <ul class="header_top_menu_ul">
+                    <li class="header_top_menu_li"><a href="about.html" class="header_top_menu_link">О компании</a></li>
+                    <li class="header_top_menu_li"><a href="archive.html" class="header_top_menu_link">Заборы</a></li>
+                    <li class="header_top_menu_li"><a href="service.html" class="header_top_menu_link">Услуги</a></li>
+                    <li class="header_top_menu_li"><a href="sale.html" class="header_top_menu_link">Скидки и акции</a>
+                    </li>
+                    <li class="header_top_menu_li"><a href="portfolio.html" class="header_top_menu_link">Примеры
+                        работ</a></li>
+                    <li class="header_top_menu_li"><a href="contact.html" class="header_top_menu_link">Контакты</a></li>
+                </ul>
             </div>
-            <div class="header_right">
-                <div class="header_right_info">
-                    <address class="header_right_info_address">
-                        <img src="img/svg/location.svg" alt="location">
-                        <span class="header_right_info_address-text">г. Брест, ул. Дзержинского, 63</span>
-                    </address>
-                    <div class="header_right_info_phone">
-                        <img src="img/svg/phone.svg" alt="phone">
-                        <a href="tel:+375297373322" class="header_right_info_phone-link">+375 (29) 737 33 22</a>
-                        <a href="tel:+375293162555" class="header_right_info_phone-link">+375 (29) 316 25 55</a>
-                    </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="header_row">
+            <a href="index.html" class="header_logo">
+                <div class="header_logo-link">
+                    <img src="img/svg/logo.svg" alt="logo">
                 </div>
-                <div class="header_right_menu">
-                    <ul class="header_right_menu_ul">
-                        <li class="header_right_menu_li active"><a href="index.html" class="header_right_menu_link">Главная</a></li>
-                        <li class="header_right_menu_li"><a href="service.html" class="header_right_menu_link">Наши услуги</a></li>
-                        <li class="header_right_menu_li"><a href="portfolio.html" class="header_right_menu_link">наши обЪекты</a></li>
-                        <li class="header_right_menu_li"><a href="about.html" class="header_right_menu_link">О компании</a></li>
-                        <li class="header_right_menu_li"><a href="contact.html" class="header_right_menu_link">Контакты</a></li>
-                    </ul>
+                <div class="header_logo_text">
+                    <span class="header_logo_text-top">vseZabory.by</span>
+                    <span class="header_logo_text-bottom">Монтаж заборов в Брестской области под ключ</span>
                 </div>
+            </a>
+            <div class="header_social">
+                <img src="img/svg/instagramm.svg" alt="">
+                <span class="header_social-text">
+                    Больше наших работ смотрите в <a href="#">Instagram</a>
+                </span>
+            </div>
+            <div class="header_phone">
+                <div class="header_phone_row">
+                    <a href="tel:+375336070600" class="header_phone_row-link">+375 (33) <span>607-06-00</span></a>
+                    <a href="#" class="header_phone_row-messenger">
+                        <img src="img/svg/viber.svg" alt="viber">
+                    </a>
+                    <a href="#" class="header_phone_row-messenger">
+                        <img src="img/svg/telegram.svg" alt="telegram">
+                    </a>
+                </div>
+                <span class="header_phone-text">Работаем с 10:00 - 20:00, без выходных</span>
+            </div>
+            <div class="header_right-btn">
+                <button class="header_btn">Заказать звонок</button>
             </div>
         </div>
     </div>
@@ -50,10 +67,17 @@
                 <div class="header_mobile_top_block">
                     <span class="header_mobile_top-icon"></span>
                 </div>
-                <div class="header_mobile_top_logo">
-                    <a href="index.html" class="header_mobile_top_logo-link">
-                        <img src="img/svg/logo.svg" alt="logo">
+                <div class="header_mobile_top_group">
+                    <a href="index.html" class="header_mobile_top_logo">
+                        <div class="header_mobile_top_logo-link">
+                            <img src="img/svg/logo.svg" alt="logo">
+                        </div>
                     </a>
+                    <div class="header_mobile_top_logo_text">
+                        <span class="header_mobile_top_logo_text-top">vseZabory.by</span>
+                        <a href="tel:+375336070600" class="header_mobile_top_logo_text-link">+375 (33)
+                            <span>607-06-00</span></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -61,273 +85,376 @@
     <div class="header_mobile_menu">
         <div class="container">
             <ul class="header_mobile_menu_ul">
-                <li class="header_mobile_menu_li active"><a href="index.html" class="header_mobile_menu_link">Главная</a></li>
-                <li class="header_mobile_menu_li"><a href="service.html" class="header_mobile_menu_link">Наши услуги</a></li>
-                <li class="header_mobile_menu_li"><a href="portfolio.html" class="header_mobile_menu_link">наши обЪекты</a></li>
-                <li class="header_mobile_menu_li"><a href="about.html" class="header_mobile_menu_link">О компании</a></li>
-                <li class="header_mobile_menu_li"><a href="contact.html" class="header_mobile_menu_link">Контакты</a></li>
+                <li class="header_mobile_menu_li"><a href="index.html" class="header_mobile_menu_link">Главная</a></li>
+                <li class="header_mobile_menu_li"><a href="about.html" class="header_mobile_menu_link">О компании</a>
+                </li>
+                <li class="header_mobile_menu_li"><a href="archive.html" class="header_mobile_menu_link">Заборы</a></li>
+                <li class="header_mobile_menu_li"><a href="service.html" class="header_mobile_menu_link">Услуги</a></li>
+                <li class="header_mobile_menu_li"><a href="sale.html" class="header_mobile_menu_link">Скидки и акции</a>
+                </li>
+                <li class="header_mobile_menu_li"><a href="portfolio.html" class="header_mobile_menu_link">Примеры
+                    работ</a></li>
+                <li class="header_mobile_menu_li"><a href="contact.html" class="header_mobile_menu_link">Контакты</a>
+                </li>
             </ul>
+        </div>
+        <div class="header_mobile_menu_info">
+            <div class="container">
+                <div class="header_mobile_menu_info_group">
+                    <div class="header_mobile_menu_info_phone">
+                        <div class="header_mobile_menu_info_phone_row">
+                            <a href="tel:+375336070600" class="header_mobile_menu_info_phone_row-link">+375 (33)
+                                607-06-00</a>
+                            <a href="#" class="header_mobile_menu_info_phone_row-messenger">
+                                <img src="img/svg/viber.svg" alt="viber">
+                            </a>
+                            <a href="#" class="header_mobile_menu_info_phone_row-messenger">
+                                <img src="img/svg/telegram.svg" alt="telegram">
+                            </a>
+                        </div>
+                        <span class="header_mobile_menu_info_phone-text">Работаем с 10:00 - 20:00, без выходных</span>
+                    </div>
+                    <button class="header_mobile_menu_info-btn">Заказать звонок</button>
+                </div>
+            </div>
         </div>
     </div>
 </header>
-<div class="container_big">
-    <section class="banner">
-        <div class="banner_slider" style="background-image: url(img/jpg/banner.jpg);">
-            <div class="container">
-                <h1 class="h1 banner_slider-h1">Комплексные инженерные решения любой сложности </h1>
-                <p class="banner_slider-text">Поставка, монтаж и диспетчеризация систем вентиляции, кондиционирования и
-                    отопления.</p>
-                <a href="portfolio.html" class="banner_slider-btn">Посмотреть все проекты</a>
-            </div>
-        </div>
-        <div class="banner_slider" style="background-image: url(img/jpg/banner.jpg);">
-            <div class="container">
-                <h1 class="h1 banner_slider-h1">Комплексные инженерные решения любой сложности </h1>
-                <p class="banner_slider-text">Поставка, монтаж и диспетчеризация систем вентиляции, кондиционирования и
-                    отопления.</p>
-                <a href="portfolio.html" class="banner_slider-btn">Посмотреть все проекты</a>
+<main>
+    <section class="banner" style="background-image: url(img/jpg/main_banner.jpg);">
+        <div class="container">
+            <div class="banner_info">
+                <h1 class="banner_info-h1">Заборы под ключ в Бресте</h1>
+                <div class="banner_info_advantages">
+                    <div class="item">
+                        <img src="img/png/banner_advanatages1.png" alt="">
+                        <span class="item-title">Материалы по оптовым ценам</span>
+                    </div>
+                    <div class="item">
+                        <img src="img/png/banner_advanatages2.png" alt="">
+                        <span class="item-title">Доставка материалов</span>
+                    </div>
+                    <div class="item">
+                        <img src="img/png/banner_advanatages3.png" alt="">
+                        <span class="item-title">Бесплатная консультация</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-</div>
-<div class="container">
+    <section class="service">
+        <div class="container">
+            <div class="service_cards">
+                <div class="card">
+                    <img src="img/png/service_icon1.png" alt="" class="card-img">
+                    <span class="card-title">Фундамент</span>
+                </div>
+                <div class="card">
+                    <img src="img/png/service_icon2.png" alt="" class="card-img">
+                    <span class="card-title">Забор из металла</span>
+                </div>
+                <div class="card">
+                    <img src="img/png/service_icon3.png" alt="" class="card-img">
+                    <span class="card-title">Забор из профильной трубы</span>
+                </div>
+                <div class="card">
+                    <img src="img/png/service_icon4.png" alt="" class="card-img">
+                    <span class="card-title">Забор из кирпича и блока</span>
+                </div>
+                <div class="card">
+                    <img src="img/png/service_icon5.png" alt="" class="card-img">
+                    <span class="card-title">Забор с отделкой</span>
+                </div>
+                <div class="card">
+                    <img src="img/png/service_icon6.png" alt="" class="card-img">
+                    <span class="card-title">Деревянный забор</span>
+                </div>
+                <div class="card">
+                    <img src="img/png/service_icon7.png" alt="" class="card-img">
+                    <span class="card-title">Ворота и калитки</span>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="about">
-        <h2 class="h2 about-h2">За 20 лет работы мы сделали <span>более 1000 проектов</span> и стали первыми в Брестском
-            регионе</h2>
-        <div class="default_text main">
-            <p>Особенностью нашей компании является нацеленность на освоение и внедрение новой техники и передовых
-                технологий. Мы проектируем, поставляем, осуществляем монтаж и своевременное обслуживание климатического
-                оборудования ведущих мировых брендов, предлагаем оригинальные технические решения и разработки систем
-                автоматизации и диспетчеризации. Мы не просто продаем оборудование, мы создаем комплексные инженерные
-                решения.</p>
-            <p>Мы знаем свое дело. Мы всегда внимательно изучаем проблемы и пожелания наших клиентов и используем
-                большой практический опыт для эффективного решения задач любого масштаба.</p>
-        </div>
-        <div class="about_advantages">
-            <div class="about_advantages_cards">
-                <div class="card">
-                    <img src="img/svg/li.svg" alt="li" class="card-img">
-                    <div class="card_info">
-                        <span class="card_info-title">Реализация проектов любого масштаба</span>
-                    </div>
+        <div class="container">
+            <div class="about_group">
+                <div class="default_text">
+                    <h2>Установка заборов в Бресте под ключ</h2>
+                    <p>Наша компания специализируется на строительстве заборов полностью под ключ.
+                        Опыт нашей компании позволяет рекомендовать покупателям делать выбор в сторону профессиональных
+                        услуг по созданию ограждений и въездных групп. Строительство заборов — процесс, требующий
+                        практических навыков, а не только теоретических расчетов. Вы можете напилить материал и
+                        поставить забор самостоятельно, но такая конструкция будет лишена гарантии, а хозяин —
+                        уверенности в том, что она не покосится от первого порыва ветра или не просядет после ливня. Все
+                        равно придется платить за бесконечный ремонт, постоянно увеличивая общие расходы на забор. Если
+                        же вы хотите удачно купить забор, то ошибки при выборе модели и установщиков вообще могут
+                        обернуться полным крахом проекта.
+                    </p>
                 </div>
-                <div class="card">
-                    <img src="img/svg/li.svg" alt="li" class="card-img">
-                    <div class="card_info">
-                        <span class="card_info-title">Собственная проектная группа</span>
+                <div class="about_group_img">
+                    <img src="img/jpg/about_img.jpg" alt="">
+                    <div class="about_group_img-number">
+                        Скидка
+                        <span class="number">10%</span>
+                        <span class="text">на все услуги</span>
                     </div>
-                </div>
-                <div class="card">
-                    <img src="img/svg/li.svg" alt="li" class="card-img">
-                    <div class="card_info">
-                        <span class="card_info-title">Более 1000 реализованных проектов</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="img/svg/li.svg" alt="li" class="card-img">
-                    <div class="card_info">
-                        <span class="card_info-title">Более 20 лет на рынке</span>
-                        <span class="card_info-text">Первые в Брестском регионе</span>
-                    </div>
-                </div>
-            </div>
-            <div class="about_advantages-p"><span>Более 1000 реализованных проектов</span> клиенты которых готовы
-                рекомендовать нас высоко отмечая наш сервис и компетентность
-            </div>
-        </div>
-    </section>
-</div>
-<div class="container">
-    <section class="direction">
-        <h2 class="h2 direction-h2">Направления работы</h2>
-        <p class="direction-p">Компания специализируется на оказании широкого спектра услуг в области вентиляции,
-            кондиционирования, отопления, водоснабжения и канализации.</p>
-        <div class="direction_cards">
-            <div class="card">
-                <div class="card_img">
-                    <img src="img/jpg/work.jpg" alt="work">
-                </div>
-                <div class="card_info">
-                    <div class="card_info-text">Для объектов административного промышленного назначения</div>
-                    <div class="direction_text">
-                        <h3>Комплексные инженерные решения любой сложности </h3>
-                        <p>Мы проектируем, поставляем, осуществляем монтаж и своевременное обслуживание климатического
-                            оборудования ведущих мировых брендов, предлагаем оригинальные технические решения и
-                            разработки систем автоматизации и диспетчеризации.</p>
-                        <ul>
-                            <li>Услуги по монтажу систем вентиляции, кондиционирования, отопления, водоснабжения и канализации.</li>
-                            <li>Разработка, согласование и реализация проектов любой сложности.</li>
-                        </ul>
-                    </div>
-                    <a href="areas_of_work.html" class="card_info-btn">Подробнее</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card_info">
-                    <div class="card_info-text">Для объектов общегражданского назначения</div>
-                    <div class="direction_text">
-                        <h3>Комплексные инженерные решения любой сложности </h3>
-                        <p>Мы проектируем, поставляем, осуществляем монтаж и своевременное обслуживание климатического
-                            оборудования ведущих мировых брендов, предлагаем оригинальные технические решения и
-                            разработки систем автоматизации и диспетчеризации.</p>
-                        <ul>
-                            <li>Услуги по монтажу систем вентиляции, кондиционирования, отопления, водоснабжения и канализации.</li>
-                            <li>Разработка, согласование и реализация проектов любой сложности.</li>
-                        </ul>
-                    </div>
-                    <a href="#" class="card_info-btn">Подробнее</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card_info">
-                    <div class="card_info-text">Комплекс профессиональных услуг по сервисному обслуживанию</div>
-                    <div class="direction_text">
-                        <h3>Комплексные инженерные решения любой сложности </h3>
-                        <p>Мы проектируем, поставляем, осуществляем монтаж и своевременное обслуживание климатического
-                            оборудования ведущих мировых брендов, предлагаем оригинальные технические решения и
-                            разработки систем автоматизации и диспетчеризации.</p>
-                        <ul>
-                            <li>Услуги по монтажу систем вентиляции, кондиционирования, отопления, водоснабжения и канализации.</li>
-                            <li>Разработка, согласование и реализация проектов любой сложности.</li>
-                        </ul>
-                    </div>
-                    <a href="#" class="card_info-btn">Подробнее</a>
                 </div>
             </div>
         </div>
     </section>
-</div>
-<div class="container_big">
-    <div class="contact_form">
-        <div class="container contact_form_container">
-            <form class="form" id="form">
-                <h2 class="h2 form-h2">Свяжитесь с нами!</h2>
-                <p class="form-p">Наши специалисты ответят на любой интересующий вопрос по проекту</p>
-                <div class="form_group">
-                    <div class="form_group_item">
-                        <label for="name" class="form_group_item-label">Как к Вам обращаться?*</label>
-                        <input id="name" name="name" type="text" class="form_group_item-input" placeholder="Введите Ваше имя">
-                    </div>
-                    <div class="form_group_item">
-                        <label for="phone" class="form_group_item-label">Ваш контактный номер*</label>
-                        <input id="phone" name="phone" type="text" class="form_group_item-input">
-                    </div>
-                    <div class="form_group_item">
-                        <label for="message" class="form_group_item-label">Ваше сообщение</label>
-                        <textarea id="message" name="phone" class="form_group_item-textarea" placeholder="Введите сообщение"></textarea>
-                    </div>
+    <section class="step" style="background-image: url(img/jpg/step_banner.jpg);">
+        <div class="container">
+            <h2 class="h2 step-h2">Как мы работаем?</h2>
+            <div class="step_cards">
+                <div class="card card_form">
+                    <form class="form" id="step_form">
+                        <div class="form-number">1</div>
+                        <span class="form-title">Заявка</span>
+                        <p class="form-text">Вы отправляете вашу заявку на email: <a href="mailto:info@vsezabory.by">info@vsezabory.by</a>
+                            или через форму и
+                            наши специалисты свяжеться с вами</p>
+                        <div class="form_group">
+                            <div class="form_group_item">
+                                <input type="text" name="name" class="form_group_item-input form_group_item-input-name" placeholder="Ваше имя*">
+                            </div>
+                            <div class="form_group_item">
+                                <input type="text" name="phone" class="form_group_item-input form_group_item-input-phone" placeholder="Ваш телефон*">
+                            </div>
+                            <div class="form_group_item">
+                                <input type="text" name="address" class="form_group_item-input form_group_item-input-address" placeholder="Адрес с участком для замера">
+                            </div>
+                            <div class="form_group_item">
+                                <input type="text" name="message" class="form_group_item-input form_group_item-input-message" placeholder="Ваше сообщение">
+                            </div>
+                        </div>
+                        <button class="form-btn">Отправить заявку</button>
+                    </form>
                 </div>
-                <button class="form-btn">Записаться на консультацию</button>
-            </form>
-            <img src="img/png/contact_form.png" alt="contact_form" class="contact_form-img">
-        </div>
-    </div>
-</div>
-<div class="container">
-    <div class="contact_info">
-        <div class="contact_info_column">
-            <div class="item item_phone">
-                <a href="tel:+375297373322" class="item_top-phone h2">+375 (29) 737 33 22</a>
-                <div class="item_row">
-                    <a href="tel:+375293162555" class="item_row-phone">+375 (29) 316 25 55</a>
-                    <a href="tel:+375162205210" class="item_row-phone">+375 (162) 205 210</a>
+                <div class="card">
+                    <div class="card-number">2</div>
+                    <span class="card-title">Замеры</span>
+                    <p class="card-text">Мы отправляем на ваш участок замерщика. Он снимет замеры, согласует с вами
+                        конфигурацию ограждения — его геометрию, тип фундамента, место расположения ворот и калитки.</p>
                 </div>
-            </div>
-            <div class="item item_phone">
-                <div class="item_row">
-                    <span class="item_row-text">Мы в соцсетях</span>
-                    <a href="#" class="item_row-link">Facebook</a>
+                <div class="card">
+                    <div class="card-number">3</div>
+                    <span class="card-title">Расчет сметы</span>
+                    <p class="card-text">На основании замеров наши специалисты рассчитают количество материалов,
+                        стоимость доставки и монтажа. Мы отправляем вам по электронной почте смету для согласования.</p>
                 </div>
-            </div>
-        </div>
-        <div class="contact_info_column">
-            <div class="contact_info_column_row">
-                <div class="item">
-                    <address class="item-text">г. Брест, ул. Дзержинского, 63</address>
-                    <a href="#" class="item-link">Посмотреть на карте</a>
+                <div class="card">
+                    <div class="card-number">4</div>
+                    <span class="card-title">Доставка</span>
+                    <p class="card-text">Организуем доставку материалов, комплектующих и необходимого оборудования на
+                        ваш участок. Машину сопровождает наш представитель, который привезет вам договор для
+                        подписания.</p>
                 </div>
-                <div class="item">
-                    <a href="mailto:info@tris.by" class="item-text mail">info@tris.by</a>
-                    <a href="#" class="item-link">Написать на почту</a>
+                <div class="card">
+                    <div class="card-number">5</div>
+                    <span class="card-title">Установка</span>
+                    <p class="card-text">Выполняется разметка площадки, установка опор или заливка фундамента, монтаж
+                        секций, сборка и установка ворот.</p>
                 </div>
-            </div>
-            <span class="border"></span>
-            <div class="contact_info_column_row">
-                <div class="item">
-                    <span class="item-title">График работы офиса</span>
-                    <span class="item-span">пн–пт с 9:00 до 17:00</span>
+                <div class="card">
+                    <div class="card-number">6</div>
+                    <span class="card-title">Прием работы</span>
+                    <p class="card-text">После завершения монтажа вы проверяете и принимаете работу, подписываете акт
+                        сдачи-приемки выполненных работ.</p>
                 </div>
-                <div class="item">
-                    <span class="item-title">Прием заявок</span>
-                    <span class="item-span">с 9:00 до 22:00 без выходных</span>
-                </div>
-            </div>
-        </div>
-        <div class="contact_info_column_mob">
-            <div class="item item_phone">
-                <div class="item_row">
-                    <span class="item_row-text">Мы в соцсетях</span>
-                    <a href="#" class="item_row-link">Facebook</a>
+                <div class="card">
+                    <div class="card-number">7</div>
+                    <span class="card-title">Оплата</span>
+                    <p class="card-text">Предоплата от 40% от стоимости договора,окончательный расчет по факту монтажных
+                        работ. Гарантия на продукцию 24 месяца.</p>
                 </div>
             </div>
         </div>
-    </div>
-</div>
+    </section>
+    <section class="project">
+        <div class="container">
+            <h2 class="h2 project-h2">Примеры наших работ</h2>
+            <div class="project_cards">
+                <div class="card" data-src="img/jpg/project1.jpg"><img src="img/jpg/project1.jpg" alt=""
+                                                                       class="card-img"></div>
+                <div class="card" data-src="img/jpg/project2.jpg"><img src="img/jpg/project2.jpg" alt=""
+                                                                       class="card-img"></div>
+                <div class="card" data-src="img/jpg/project3.jpg"><img src="img/jpg/project3.jpg" alt=""
+                                                                       class="card-img"></div>
+                <div class="card" data-src="img/jpg/project4.jpg"><img src="img/jpg/project4.jpg" alt=""
+                                                                       class="card-img"></div>
+                <div class="card" data-src="img/jpg/project5.jpg"><img src="img/jpg/project5.jpg" alt=""
+                                                                       class="card-img"></div>
+                <div class="card" data-src="img/jpg/project6.jpg"><img src="img/jpg/project6.jpg" alt=""
+                                                                       class="card-img"></div>
+                <div class="card" data-src="img/jpg/project7.jpg"><img src="img/jpg/project7.jpg" alt=""
+                                                                       class="card-img"></div>
+                <div class="card" data-src="img/jpg/project8.jpg"><img src="img/jpg/project8.jpg" alt=""
+                                                                       class="card-img"></div>
+                <div class="card" data-src="img/jpg/project9.jpg"><img src="img/jpg/project9.jpg" alt=""
+                                                                       class="card-img"></div>
+                <div class="card" data-src="img/jpg/project10.jpg"><img src="img/jpg/project10.jpg" alt=""
+                                                                        class="card-img"></div>
+                <div class="card" data-src="img/jpg/project11.jpg"><img src="img/jpg/project11.jpg" alt=""
+                                                                        class="card-img"></div>
+                <div class="card" data-src="img/jpg/project12.jpg"><img src="img/jpg/project12.jpg" alt=""
+                                                                        class="card-img"></div>
+            </div>
+            <a href="portfolio.html" class="project-btn">Посмотреть все примеры работ</a>
+        </div>
+    </section>
+    <section class="contact" style="background-image:url(img/jpg/contact_banner.jpg);">
+        <div class="container">
+            <div class="contact_info">
+                <div class="contact_info_left">
+                    <h3 class="contact_info_left-title">Отправьте вашу заявку на email: <a href="mailto:info@vsezabory.by">info@vsezabory.by</a> или через форму</h3>
+                    <p class="contact_info_left-text">На основании замеров наши специалисты рассчитают количество материалов, стоимость доставки и
+                        монтажа. Мы отправляем вам по электронной почте смету для согласования.</p>
+                </div>
+                <div class="contact_info_form">
+                    <form class="main_form" id="main_form">
+                        <span class="main_form-title h2">Отправить заявку</span>
+                        <span class="main_form-subtitle">на бесплатный выезд замерщика</span>
+                        <p class="main_form-text">Наши специалисты свяжеться с вами в течении 15 минут и ответят на любой
+                            интересующий вопрос</p>
+                        <div class="main_form_group">
+                            <div class="main_form_group_item">
+                                <input type="text" name="name" class="main_form_group_item-input main_form_group_item-input-name" placeholder="Ваше имя*">
+                            </div>
+                            <div class="main_form_group_item">
+                                <input type="text" name="phone" class="main_form_group_item-input main_form_group_item-input-phone" placeholder="Ваш телефон*">
+                            </div>
+                            <div class="main_form_group_item">
+                                <input type="text" name="address" class="main_form_group_item-input main_form_group_item-input-address" placeholder="Адрес с участком для замера">
+                            </div>
+                            <div class="main_form_group_item">
+                                <input type="text" name="message" class="main_form_group_item-input main_form_group_item-input-message" placeholder="Ваше сообщение">
+                            </div>
+                        </div>
+                        <button class="main_form-btn" id="main_form-btn">Отправить заявку</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
 <footer class="footer">
     <div class="container">
-        <div class="footer_menu">
-            <ul class="footer_menu_ul">
-                <li class="footer_column">
-                    <p class="footer_column-title">Вентиляция</p>
-                    <ul class="sub_menu_ul">
-                        <li class="sub_menu_li"><a href="#" class="sub_menu_link">Коммерческая вентиляция</a></li>
-                        <li class="sub_menu_li"><a href="#" class="sub_menu_link">Промышленная вентиляция</a></li>
-                        <li class="sub_menu_li"><a href="#" class="sub_menu_link">Бытовая вентиляция</a></li>
-                        <li class="sub_menu_li"><a href="#" class="sub_menu_link">Каталог</a></li>
-                    </ul>
-                </li>
-                <li class="footer_column">
-                    <p class="footer_column-title">Кондиционирование</p>
-                    <ul class="sub_menu_ul">
-                        <li class="sub_menu_li"><a href="#" class="sub_menu_link">Для офисов</a></li>
-                        <li class="sub_menu_li"><a href="#" class="sub_menu_link">Для административных зданий и
-                            бизнес-центров</a></li>
-                        <li class="sub_menu_li"><a href="#" class="sub_menu_link">Для квартир и коттеджей</a></li>
-                        <li class="sub_menu_li"><a href="#" class="sub_menu_link">Каталог</a></li>
-                    </ul>
-                </li>
-                <li class="footer_column">
-                    <p class="footer_column-title">Отопление</p>
-                    <ul class="sub_menu_ul">
-                        <li class="sub_menu_li"><a href="#" class="sub_menu_link">Для частных домов</a></li>
-                        <li class="sub_menu_li"><a href="#" class="sub_menu_link">Для промышленных объектов</a></li>
-                        <li class="sub_menu_li"><a href="#" class="sub_menu_link">Каталог</a></li>
-                    </ul>
-                </li>
-                <li class="footer_column">
-                    <p class="footer_column-title">Водоснабжение</p>
-                    <ul class="sub_menu_ul">
-                        <li class="sub_menu_li"><a href="#" class="sub_menu_link">Коммерческое водоснабжение</a></li>
-                        <li class="sub_menu_li"><a href="#" class="sub_menu_link">Промышленное водоснабжение</a></li>
-                        <li class="sub_menu_li"><a href="#" class="sub_menu_link">Бытовое водоснабжение</a></li>
-                    </ul>
-                </li>
-            </ul>
+        <div class="footer_row">
+            <div class="footer_column">
+                <div class="footer_column_logo">
+                    <a href="index.html" class="footer_column_logo-link">
+                        <img src="img/svg/logo_footer.svg" alt="logo">
+                        <span class="footer_column_logo-text">vseZabory.by</span>
+                    </a>
+                </div>
+                <p class="footer_column-text">Монтаж заборов в Брестской области под ключ. Строительство заборов —
+                    процесс, требующий практических навыков, а не только теоретических расчетов.</p>
+                <div class="footer_column_social">
+                    <a href="#" class="footer_column_social-link">
+                        <img src="img/svg/odna_footer.svg" alt="odnoklassniki">
+                    </a>
+                    <a href="#" class="footer_column_social-link">
+                        <img src="img/svg/facebook_footer.svg" alt="facebook">
+                    </a>
+                    <a href="#" class="footer_column_social-link">
+                        <img src="img/svg/vk_footer.svg" alt="vk">
+                    </a>
+                </div>
+            </div>
+            <div class="footer_column menu_main">
+                <p class="footer_column-h3">Навигация</p>
+                <ul class="footer_column_ul">
+                    <li class="footer_column_li"><a href="about.html" class="footer_column_link">О компании</a></li>
+                    <li class="footer_column_li"><a href="archive.html" class="footer_column_link">Заборы</a></li>
+                    <li class="footer_column_li"><a href="service.html" class="footer_column_link">Услуги</a></li>
+                    <li class="footer_column_li"><a href="sale.html" class="footer_column_link">Скидки и акции</a></li>
+                    <li class="footer_column_li"><a href="portfolio.html" class="footer_column_link">Примеры работ</a>
+                    </li>
+                    <li class="footer_column_li"><a href="contact.html" class="footer_column_link">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer_column menu_catalog">
+                <p class="footer_column-h3">Каталог</p>
+                <ul class="footer_column_ul">
+                    <li class="footer_column_li"><a href="about.html" class="footer_column_link">Фундамент</a></li>
+                    <li class="footer_column_li"><a href="archive.html" class="footer_column_link">Забор из металла</a>
+                    </li>
+                    <li class="footer_column_li"><a href="service.html" class="footer_column_link">Забор из профильной
+                        трубы</a></li>
+                    <li class="footer_column_li"><a href="sale.html" class="footer_column_link">Забор из кирпича</a>
+                    </li>
+                    <li class="footer_column_li"><a href="portfolio.html" class="footer_column_link">Деревянный
+                        забор</a></li>
+                    <li class="footer_column_li"><a href="contact.html" class="footer_column_link">Забор с отделкой</a>
+                    </li>
+                    <li class="footer_column_li"><a href="contact.html" class="footer_column_link">Ворота и калитки</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_column column_info">
+                <p class="footer_column-h3">Наши контакты</p>
+                <div class="footer_column_phone">
+                    <a href="tel:+375336070600" class="footer_column_phone-link">+375 (33) <span>607-06-00</span></a>
+                    <div class="footer_column_phone_row">
+                        <a href="#" class="footer_column_phone_row-messenger">
+                            <img src="img/svg/viber.svg" alt="viber">
+                        </a>
+                        <a href="#" class="footer_column_phone_row-messenger">
+                            <img src="img/svg/telegram.svg" alt="telegram">
+                        </a>
+                    </div>
+                    <span class="footer_column_phone-text">Работаем с 10:00 - 20:00,без выходных</span>
+                </div>
+                <a href="mailto:info@vsezabory.by" class="footer_column-email">info@vsezabory.by</a>
+                <address class="footer_column-address">г.Брест, ул. Советская 62, офис 402</address>
+            </div>
         </div>
     </div>
     <div class="footer_bottom">
         <div class="container">
             <div class="footer_copyright">
-                <p class="footer_copyright-text">© 2020 ООО «ТриС - Сети Системы Сервис»</p>
-                <p class="footer_copyright-text">Создание и продвижение сайтов - <a href="#"
-                                                                                    class="footer_copyright-text link">InternetSozdateli</a>
-                </p>
+                <p class="footer_copyright-text">©2020 vsezabory.by</p>
+                <div class="footer_copyright-block">
+                    <p class="footer_copyright-text">Создание и продвижение сайтов</p>
+                    <a href="https://internetsozdateli.by">
+                        <img src="img/svg/logo_company.svg" alt="internetsozdateli">
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 </footer>
+<!--Modal Windows thanks-->
+<div class="fade"></div>
+<div class="modal" id="mainModal">
+    <span class="modal-close mainModal-close">&times;</span>
+    <p class="thanks_h1">Спасибо за заявку!</p>
+    <p class="thanks_p">Наши менеджеры свяжутся с вами в ближайшее время!</p>
+    <button class="btn-close modal-btn-close">Отлично!</button>
+</div>
+<!-- end Modal Windows thanks-->
+<!--Modal Windows type -->
+<div class="modal1" id="mainModal1">
+    <span class="modal1-close">&times;</span>
+    <form class="modal1_form" id="modal1_form">
+        <span class="modal1_form-h2">Заявка на заказ</span>
+        <span class="modal1_form-p">Введите свои контактные данные, и мы с вами свяжемся</span>
+        <div class="modal1_form_group">
+            <input type="text" name="name" class="modal1_form-input modal1_form-input-name" placeholder="Введите ваше имя">
+            <input type="text" name="phone" class="modal1_form-input modal1_form-input-phone" placeholder="Введите ваш телефон">
+            <textarea type="text" class="modal1_form-textarea" placeholder="Введите ваше сообщение"></textarea>
+        </div>
+        <button class="modal1_form-btn">Заказать</button>
+    </form>
+</div>
+<!--end Modal Windows type-->
 <script src="js/jquery-3.5.1.min.js"></script>
-<script src="slick/slick.min.js"></script>
+<script src="js/lightgallery.min.js"></script>
+<script src="js/jquery.form.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
+
