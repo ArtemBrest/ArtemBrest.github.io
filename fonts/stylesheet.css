@@ -1,35 +1,51 @@
 @font-face {
-    font-family: 'Circe';
-    src: url('Circe-Bold.eot');
-    src: url('Circe-Bold.eot?#iefix') format('embedded-opentype'),
-        url('Circe-Bold.woff2') format('woff2'),
-        url('Circe-Bold.woff') format('woff'),
-        url('Circe-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Circe';
-    src: url('Circe-Regular.eot');
-    src: url('Circe-Regular.eot?#iefix') format('embedded-opentype'),
-        url('Circe-Regular.woff2') format('woff2'),
-        url('Circe-Regular.woff') format('woff'),
-        url('Circe-Regular.ttf') format('truetype');
+    font-family: 'Play';
+    src: url('Play.eot');
+    src: url('Play.eot?#iefix') format('embedded-opentype'),
+        url('Play.woff2') format('woff2'),
+        url('Play.woff') format('woff'),
+        url('Play.ttf') format('truetype'),
+        url('Play.svg#Play') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Circe';
-    src: url('Circe-ExtraBold.eot');
-    src: url('Circe-ExtraBold.eot?#iefix') format('embedded-opentype'),
-        url('Circe-ExtraBold.woff2') format('woff2'),
-        url('Circe-ExtraBold.woff') format('woff'),
-        url('Circe-ExtraBold.ttf') format('truetype');
-    font-weight: 800;
+    font-family: 'Play';
+    src: url('Play-Bold.eot');
+    src: url('Play-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Play-Bold.woff2') format('woff2'),
+        url('Play-Bold.woff') format('woff'),
+        url('Play-Bold.ttf') format('truetype'),
+        url('Play-Bold.svg#Play-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SonyEricssonLogo';
+    src: url('SonyEricssonLogo.eot');
+    src: url('SonyEricssonLogo.eot?#iefix') format('embedded-opentype'),
+        url('SonyEricssonLogo.woff2') format('woff2'),
+        url('SonyEricssonLogo.woff') format('woff'),
+        url('SonyEricssonLogo.ttf') format('truetype'),
+        url('SonyEricssonLogo.svg#SonyEricssonLogo') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Regular.eot');
+    src: url('Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Roboto-Regular.woff2') format('woff2'),
+        url('Roboto-Regular.woff') format('woff'),
+        url('Roboto-Regular.ttf') format('truetype'),
+        url('Roboto-Regular.svg#Roboto-Regular') format('svg');
+    font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
