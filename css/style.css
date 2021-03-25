@@ -306,6 +306,14 @@ button:hover {
   font-size: 18px;
   line-height: 150%;
   color: #FFFFFF;
+  grid-area: box2;
+}
+.and_photo {
+  grid-area: box1;
+}
+.and_photo img {
+  max-width: 100%;
+  height: auto;
 }
 @-webkit-keyframes scroll {
   0% {
@@ -508,7 +516,7 @@ button:hover {
   padding: 250px 0;
 }
 .reviews_slider {
-  width: 760px;
+  max-width: 760px;
   margin: 0 auto;
 }
 .reviews_slider .slick-dots {
@@ -656,19 +664,411 @@ button:hover {
   .container {
     width: 980px;
   }
+  .trial_course_right {
+    display: none;
+    margin: 0;
+  }
+  .photo_and_text {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "box1" "box2";
+    grid-gap: 30px;
+  }
+  .and_photo img {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .and_text {
+    margin-top: 30px;
+    margin-left: 140px;
+  }
+  .advantages_cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+  }
+  .advantages_cards .card {
+    padding: 60px 20px;
+  }
+  .reviews_slider .slick-dots {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: inherit;
+    bottom: -65px;
+    margin: 0;
+  }
+  .reviews_slider .slick-dots li {
+    margin: 0 15px;
+  }
+  .reviews_slider .sl_right_arrow {
+    background: #111111;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: absolute;
+    right: 0;
+    margin: 0;
+    bottom: -75px;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    z-index: 99;
+  }
+  .reviews_slider .sl_left_arrow {
+    background: #111111;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: absolute;
+    left: 0;
+    right: inherit;
+    margin: 0;
+    bottom: -75px;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    z-index: 99;
+  }
 }
 @media (max-width: 991px) {
   .container {
     width: 765px;
+  }
+  .fits_cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+  }
+  .fits_cards .column_step {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+  }
+  .fits_cards .column_img {
+    display: none;
+  }
+  .advantages_cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
   }
 }
 @media (max-width: 767px) {
   .container {
     width: 100%;
   }
+  .img_head_main {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .and_text {
+    margin: 0;
+    padding: 0 30px;
+    max-width: 100%;
+  }
+  .and_photo img {
+    max-width: 100%;
+    height: auto;
+  }
+  .fits_cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+  }
+  .fits_cards .column_step {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+  }
+  .fits_cards .column_step:first-child .card {
+    margin-right: 0;
+  }
+  .fits_cards .column_step:first-child .card-title {
+    text-align: left;
+  }
+  .fits_cards .column_step:first-child .card-text {
+    text-align: left;
+  }
+  .fits_cards .column_step:last-child .card {
+    margin-left: 0;
+  }
+  .advantages_cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+  .reviews {
+    padding: 250px 0;
+  }
+  .reviews_slider {
+    width: 100%;
+    max-width: 100%;
+  }
+  .reviews_item {
+    display: -webkit-box!important;
+    display: -ms-flexbox!important;
+    display: flex!important;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    outline: none;
+  }
+  .reviews_item_left {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .contact_row {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  .contact_row_column-h2 {
+    max-width: 855px;
+    margin-bottom: 30px;
+    color: #ffffff;
+    font-weight: 700;
+  }
+  .contact_row_column-span {
+    font-size: 18px;
+    line-height: 21px;
+    background: linear-gradient(90.26deg, #1cb86d 0%, #2d9f8f 65.1%, #00b6ef 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .contact_row_column:last-child {
+    display: block;
+    margin: 0 auto;
+  }
+  .contact_row_column:last-child .trial_course_left {
+    margin: 0;
+  }
+  .contact_row_column:last-child .bounse_left1 {
+    width: 192px;
+    height: 192px;
+  }
+  .contact_row_column:last-child .course_text {
+    top: 0;
+  }
 }
 @media (max-width: 479px) {
   .container {
     width: 100%;
+  }
+  .h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 150%;
+    color: #C4C4C4;
+  }
+  .h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    color: #C4C4C4;
+  }
+  .h4 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    color: #C4C4C4;
+  }
+  .bg_home .bg_right_home {
+    display: none;
+  }
+  .bg_home .bg_left_home {
+    width: 100%;
+  }
+  .header_flex {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .header {
+    padding: 30px 0;
+  }
+  .header_lang {
+    display: none;
+  }
+  .img_head_main {
+    margin: 40px auto 0px;
+  }
+  .head_logo_text {
+    display: block;
+    margin: 0 auto;
+    max-width: 215px;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: left;
+  }
+  .head_content_course {
+    margin-top: 65px;
+  }
+  .trial_course_left {
+    margin: 0 auto;
+  }
+  .center_main_text {
+    margin-top: 100px;
+    font-size: 36px;
+    line-height: 54px;
+    text-align: left;
+  }
+  .and_text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .move_stroke {
+    margin-top: 100px;
+  }
+  .fits {
+    padding: 100px 0 150px;
+  }
+  .fits_cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+  .fits_cards .column_step {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+  .fits_cards .column_step:first-child .card {
+    background: linear-gradient(89.44deg, #2c2c2c 2.59%, rgba(44, 44, 44, 0.921875) 11.91%, rgba(44, 44, 44, 0) 121.95%);
+    border-radius: 12px;
+    padding: 32px 24px;
+  }
+  .fits_cards .column_step:last-child .card {
+    background: linear-gradient(89.44deg, #2c2c2c 2.59%, rgba(44, 44, 44, 0.921875) 11.91%, rgba(44, 44, 44, 0) 121.95%);
+    border-radius: 12px;
+    padding: 32px 24px;
+  }
+  .platform-h2 {
+    font-weight: 700;
+    display: block;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+  }
+  .platform_line {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    background: #0B4428;
+    height: 0.8px;
+  }
+  .platform_video {
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .advantages {
+    padding: 100px 0 120px;
+  }
+  .advantages_cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+  .advantages_cards .card {
+    padding: 60px 30px;
+  }
+  .teachers {
+    padding: 0;
+  }
+  .teachers-h2 {
+    font-weight: 700;
+    display: block;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+  }
+  .teachers_line {
+    display: block;
+    max-width: 300px;
+    background: #0B4428;
+    height: 0.8px;
+    margin: 0 auto;
+  }
+  .reviews {
+    padding: 100px 0 180px 0;
+  }
+  .reviews_slider .slick-dots li {
+    margin: 0 5px;
+  }
+  .reviews_item {
+    display: -webkit-box!important;
+    display: -ms-flexbox!important;
+    display: flex!important;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    outline: none;
+  }
+  .reviews_item_info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse wrap;
+            flex-flow: column-reverse wrap;
+  }
+  .reviews_item_info-text {
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin: 0;
+    margin-top: 30px;
   }
 }
