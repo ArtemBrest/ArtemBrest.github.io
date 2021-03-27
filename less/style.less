@@ -6,9 +6,7 @@ body {
   margin: 0 auto;
   font-family: "Play", sans-serif;
   font-weight: 400;
-  color: #ffffff;
   background: #000000;
-  transition: 0.2s;
   overflow-x: hidden;
 }
 
@@ -1109,7 +1107,7 @@ button:hover {
       width: 100%;
       border: none;
       padding: 18px 0;
-      font-weight: bold;
+      font-weight: 700;
       font-size: 16px;
       line-height: 150%;
       color: #FFFFFF;
@@ -1158,7 +1156,7 @@ button:hover {
     padding-bottom: 60px;
   }
   .modal-btn-close{
-    font-weight: bold;
+    font-weight: 700;
     font-size: 14px;
     line-height: 150%;
     padding: 15px 115px;
@@ -1310,7 +1308,7 @@ button:hover {
     width: 100%;
     border: none;
     padding: 18px 0;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 16px;
     line-height: 150%;
     color: #FFFFFF;
@@ -2027,6 +2025,245 @@ button:hover {
   margin-top: 10px;
   background: linear-gradient(90deg,#031A21,#00B6EF);
 }
+.profile_page{
+  padding: 70px 0 200px 0;
+  &_header{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 1px solid #141414;
+    &-title{
+      display: block;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 150%;
+      color: #1CB86D;
+      padding-bottom: 49px;
+    }
+    &_nav{
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      &_link{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 150%;
+        color: #9D9D9D;
+        padding: 0 36px 49px 36px;
+        border-bottom: 1px solid transparent;
+        &:last-child{
+          padding-right: 0;
+        }
+        &:first-child{
+          padding-left: 0;
+        }
+        &.active,
+        &:hover{
+          color: #ffffff;
+          border-bottom: 1px solid #1CB86D;
+        }
+      }
+    }
+  }
+  &_info{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 70px 0;
+    &.active{
+      display: none;
+    }
+    &_text{
+      display: block;
+      max-width: 720px;
+      font-size: 16px;
+      line-height: 150%;
+      color: #FFFFFF;
+      margin-right: 90px;
+    }
+    &_btn{
+      border: none;
+      display: block;
+      width: fit-content;
+      padding: 18px 95px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 150%;
+      color: #FFFFFF;
+      background: linear-gradient(90deg, #1CB86D 0%, #00B6EF 100%);
+      border-radius: 2px;
+      transition: all 0.2s;
+      &:hover{
+        background: linear-gradient(90deg, #1CB86D 0%, #1CB86D 100%);
+      }
+    }
+  }
+  &_box{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "box1 box2";
+    grid-gap: 30px;
+    &.active{
+      margin-top: 70px;
+    }
+    .card_profile{
+      padding: 50px 60px 60px;
+      background: #0C0C0C;
+      display: flex;
+      align-items: center;
+      flex-flow: column wrap;
+      height: fit-content;
+      grid-area: box1;
+      &_top{
+        margin-bottom: 50px;
+        position: relative;
+        &.active:hover .card_profile_overlay{
+          opacity: 1;
+        }
+      }
+      &_overlay{
+        background: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(4px);
+        font-size: 14px;
+        line-height: 150%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #FFFFFF;
+        width: 110px;
+        height: 110px;
+        padding: 0 26px;
+        border-radius: 50%;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        opacity: 0;
+        transition: all 0.2s;
+      }
+      &_name{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 150%;
+        color: #FFFFFF;
+        margin-bottom: 10px;
+      }
+      &_link{
+        font-size: 16px;
+        line-height: 150%;
+        background: linear-gradient(90deg, #1CB86D 0%, #00B6EF 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        position: relative;
+        display: block;
+        margin-bottom: 50px;
+        &:before{
+          content: "";
+          position: absolute;
+          display: block;
+          height: 0.7px;
+          width: 100%;
+          background: linear-gradient(90deg, #1CB86D 0%, #00B6EF 100%);
+          bottom: 3px;
+        }
+      }
+      &_row{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      &_btn{
+        display: block;
+        padding: 10px 37px;
+        font-size: 14px;
+        line-height: 150%;
+        color: #FFFFFF;
+        background: #1cb86d;
+        border: 1px solid #1cb86d;
+        &.telegram{
+          margin-left: 10px;
+          background: #00B6EF;
+          border: 1px solid #00B6EF;
+        }
+        &:hover{
+          background: transparent;
+        }
+      }
+    }
+    .lessons_cards{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 15px;
+      grid-area: box2;
+      .item{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 33px 50px;
+        background: #0C0C0C;
+        border-radius: 2px;
+        transition: all 0.2s;
+        &:hover{
+          background: #1A1A1A;
+        }
+        &:first-child{
+          & .item_name{
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 150%;
+            color: #ffffff;
+            & span{
+              color: #1CB86D;
+            }
+          }
+          & .item_status_unlock{
+            display: none;
+          }
+          & .item_status_lock{
+            display: block;
+          }
+        }
+        &.active{
+          & .item_name{
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 150%;
+            color: #ffffff;
+            & span{
+              color: #1CB86D;
+            }
+          }
+          & .item_status_unlock{
+            display: none;
+          }
+          & .item_status_lock{
+            display: block;
+          }
+        }
+        &_name{
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 150%;
+          color: #9D9D9D;
+        }
+        &_status{
+          &_lock{
+            display: none;
+            width: 10px;
+            height: 10px;
+            background: transparent;
+            border: 1px solid #B6AFAF;
+            border-radius: 50%;
+          }
+          &.active .item_status_lock{
+            background: #1CB86D;
+            border: 1px solid #1CB86D;
+          }
+        }
+      }
+    }
+  }
+}
 @media (max-width: 1600px){
   .course_advantages-title:before{
     width: 370px;
@@ -2554,6 +2791,39 @@ button:hover {
   .line_blue{
     display: none;
   }
+  .profile_page{
+    padding: 70px 0 200px 0;
+    &_header{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-flow: column wrap;
+      border-bottom: 1px solid #141414;
+      &-title{
+        display: block;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 150%;
+        color: #1CB86D;
+        padding-bottom: 49px;
+        text-align: center;
+      }
+    }
+    &_info{
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-flow: column wrap;
+      padding: 70px 0;
+      &.active{
+        display: none;
+      }
+      &_text{
+        margin: 0;
+        margin-bottom: 30px;
+      }
+    }
+  }
 }
 @media (max-width: 767px) {
   .container {
@@ -2734,6 +3004,43 @@ button:hover {
         margin-top: 30px;
 
       }
+    }
+  }
+  .profile_page{
+    padding: 70px 0 200px 0;
+    &_header{
+      .mob_scroll{
+        overflow-x: scroll;
+        width: 100%;
+      }
+      &_nav{
+        width: 800px;
+        &_link{
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 150%;
+          color: #9D9D9D;
+          padding: 0 36px 49px 36px;
+          border-bottom: 1px solid transparent;
+          &:last-child{
+            padding-right: 0;
+          }
+          &:first-child{
+            padding-left: 0;
+          }
+          &.active,
+          &:hover{
+            color: #ffffff;
+            border-bottom: 1px solid #1CB86D;
+          }
+        }
+      }
+    }
+    &_box{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 120px;
+      grid-template-areas: "box2" "box1";
     }
   }
 }
@@ -3590,6 +3897,116 @@ button:hover {
             line-height: 150%;
             color: #1CB86D;
           }
+        }
+      }
+    }
+  }
+  .profile_page{
+    padding: 40px 0 100px 0;
+    &_info{
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 60px 0;
+      &.active{
+        display: none;
+      }
+    }
+    &_box{
+      &.active{
+        margin-top: 60px;
+      }
+      .card_profile{
+        padding: 25px;
+        background: #0C0C0C;
+        display: flex;
+        align-items: center;
+        flex-flow: column wrap;
+        height: fit-content;
+        grid-area: box1;
+        &_top{
+          margin-bottom: 50px;
+          position: relative;
+          &:hover .card_profile_overlay{
+            opacity: 1;
+          }
+        }
+        &_overlay{
+          background: rgba(0, 0, 0, 0.8);
+          backdrop-filter: blur(4px);
+          font-size: 14px;
+          line-height: 150%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          color: #FFFFFF;
+          width: 110px;
+          height: 110px;
+          padding: 0 26px;
+          border-radius: 50%;
+          position: absolute;
+          top: 20px;
+          left: 20px;
+          opacity: 0;
+          transition: all 0.2s;
+        }
+        &_name{
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 150%;
+          color: #FFFFFF;
+          margin-bottom: 10px;
+        }
+        &_link{
+          font-size: 16px;
+          line-height: 150%;
+          background: linear-gradient(90deg, #1CB86D 0%, #00B6EF 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          position: relative;
+          display: block;
+          margin-bottom: 50px;
+          &:before{
+            content: "";
+            position: absolute;
+            display: block;
+            height: 0.7px;
+            width: 100%;
+            background: linear-gradient(90deg, #1CB86D 0%, #00B6EF 100%);
+            bottom: 3px;
+          }
+        }
+        &_row{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+        &_btn{
+          display: block;
+          padding: 10px 37px;
+          font-size: 14px;
+          line-height: 150%;
+          color: #FFFFFF;
+          background: #1cb86d;
+          border: 1px solid #1cb86d;
+          &.telegram{
+            margin-left: 10px;
+            background: #00B6EF;
+            border: 1px solid #00B6EF;
+          }
+          &:hover{
+            background: transparent;
+          }
+        }
+      }
+      .lessons_cards{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 15px;
+        grid-area: box2;
+        .item{
+          padding: 30px;
         }
       }
     }
