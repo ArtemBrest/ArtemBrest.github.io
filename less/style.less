@@ -403,8 +403,28 @@ button:hover {
 }
 .trial_course_right {
   display: flex;
+  width: 100%;
+  &_scroll{
+    overflow: hidden;
+  }
   & .course_item:nth-child(n + 2) {
     margin-left: -180px;
+  }
+}
+.mini-card-grid{
+  &::-webkit-scrollbar {
+    width: 2px;
+  }
+  &::-webkit-scrollbar-button {
+    width: 2px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background:  #1CB86D;
+    border-radius: 2px;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+    border: 1px solid transparent;
   }
 }
 .trial_course_right .course_item:nth-child(2n+1) .course_item_teach_name {
@@ -450,6 +470,9 @@ button:hover {
   box-sizing: border-box;
   box-shadow: -45px 0px 36px #000000;
   transition: 0.2s;
+  &:last-child{
+    margin-right: 100px;
+  }
   &:hover{
     z-index: 10;
     background: #2a2a2a;
