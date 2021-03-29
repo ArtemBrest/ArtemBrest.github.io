@@ -76,6 +76,7 @@ button:hover {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.8);
 }
+
 .bg_home {
   display: flex;
   justify-content: space-between;
@@ -145,6 +146,7 @@ button:hover {
       font-size: 20px;
       line-height: 150%;
       color: #1CB86D;
+      padding-left: 30px;
     }
     .scroll{
       overflow-y: scroll;
@@ -681,6 +683,13 @@ button:hover {
 }
 .advantages{
   padding: 200px 0 250px;
+  &-title_mob{
+    display: none;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+  }
   &_cards{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -995,7 +1004,29 @@ button:hover {
     flex-flow: row;
     outline: none;
     &_left{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       margin-right: 45px;
+      &-p{
+        display: none;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 150%;
+        background: linear-gradient(90.26deg, #1cb86d 0%, #00b6ef 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-left: 30px;
+        & span{
+          display: block;
+          margin-top: 10px;
+          font-size: 16px;
+          line-height: 150%;
+          background: #FFFFFF;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
     }
     &_info{
       &-text{
@@ -2578,6 +2609,13 @@ button:hover {
   &_group{
     padding: 40px 140px 60px 125px;
     border-right: 1px solid #202020;
+    &_mob{
+      display: none;
+      font-size: 16px;
+      line-height: 150%;
+      color: #9D9D9D;
+      margin-bottom: 10px;
+    }
     &-h2{
       display: block;
       font-weight: 700;
@@ -4153,7 +4191,24 @@ button:hover {
     line-height: 150%;
     color: #C4C4C4;
   }
-
+  .bounse_left1{
+    width: 127px;
+    height: 127px;
+    background: url(../img/svg/bounse__big.svg) no-repeat center center;
+    background-size: cover;
+  }
+  .course_text{
+    width: 110px;
+    height: 110px;
+  }
+  .bounse_left2{
+    width: 130px;
+    height: 130px;
+    & img{
+      width: 100%;
+      height: 100%;
+    }
+  }
   .bg_home {
     .bg_right_home {
       display: none;
@@ -4216,23 +4271,27 @@ button:hover {
   }
   .fits{
     padding: 100px 0 150px;
+    & .scroll{
+      overflow: hidden;
+    }
     &_cards{
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-gap: 30px;
+       display: flex;
+      overflow: auto;
       .column_step{
-        display: grid;
+        display: flex;
         grid-template-columns: 1fr;
         grid-gap: 30px;
         &:first-child .card{
           background: linear-gradient(89.44deg, #2C2C2C 2.59%, rgba(44, 44, 44, 0.921875) 11.91%, rgba(44, 44, 44, 0) 121.95%);
           border-radius: 12px;
           padding: 32px 24px;
+          width: 300px;
         }
         &:last-child .card{
           background: linear-gradient(89.44deg, #2C2C2C 2.59%, rgba(44, 44, 44, 0.921875) 11.91%, rgba(44, 44, 44, 0) 121.95%);
           border-radius: 12px;
           padding: 32px 24px;
+          width: 300px;
         }
       }
     }
@@ -4261,6 +4320,9 @@ button:hover {
   }
   .advantages{
     padding: 100px 0 120px;
+    &-title_mob{
+      display: block;
+    }
     &_cards{
       display: grid;
       grid-template-columns: 1fr;
@@ -4440,9 +4502,21 @@ button:hover {
       display: flex!important;
       align-items: flex-start;
       outline: none;
+      &_left{
+        &-img{
+          width: 90px;
+          height: 90px;
+        }
+        &-p{
+          display: block;
+        }
+      }
       &_info{
         display: flex;
         flex-flow: column-reverse wrap;
+        &_bottom{
+          display: none;
+        }
         &-text{
           display: block;
           font-size: 16px;
@@ -4482,6 +4556,13 @@ button:hover {
         }
       }
     }
+  }
+  .contact_row_column:last-child .course_text {
+    top: 10px;
+  }
+  .contact_row_column:last-child .bounse_left1 {
+    width: 127px;
+    height: 127px;
   }
   .footer{
     padding: 100px 0 80px 0;
@@ -5001,6 +5082,7 @@ button:hover {
         }
       }
       &_row{
+        position: relative;
         &-text{
           max-width: 320px;
           font-size: 16px;
@@ -5027,6 +5109,11 @@ button:hover {
         }
       }
     }
+  }
+  .trial_course_left.course{
+    position: absolute;
+    bottom: 0;
+    right: 0;
   }
   .profile_page{
     padding: 40px 0 100px 0;
@@ -5144,6 +5231,9 @@ button:hover {
     &_group{
       padding: 40px 10px;
       border: none;
+      &_mob{
+        display: block;
+      }
       &_video{
         height: 250px;
       }

@@ -174,6 +174,7 @@ button:hover {
   font-size: 20px;
   line-height: 150%;
   color: #1CB86D;
+  padding-left: 30px;
 }
 .header_menu .scroll {
   overflow-y: scroll;
@@ -781,6 +782,13 @@ button:hover {
 .advantages {
   padding: 200px 0 250px;
 }
+.advantages-title_mob {
+  display: none;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  margin-bottom: 40px;
+}
 .advantages_cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1171,7 +1179,35 @@ button:hover {
   outline: none;
 }
 .reviews_item_left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-right: 45px;
+}
+.reviews_item_left-p {
+  display: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  background: linear-gradient(90.26deg, #1cb86d 0%, #00b6ef 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 30px;
+}
+.reviews_item_left-p span {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 150%;
+  background: #FFFFFF;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .reviews_item_info-text {
   display: block;
@@ -3081,6 +3117,13 @@ button:hover {
   padding: 40px 140px 60px 125px;
   border-right: 1px solid #202020;
 }
+.lessons_group_mob {
+  display: none;
+  font-size: 16px;
+  line-height: 150%;
+  color: #9D9D9D;
+  margin-bottom: 10px;
+}
 .lessons_group-h2 {
   display: block;
   font-weight: 700;
@@ -4943,6 +4986,24 @@ button:hover {
     line-height: 150%;
     color: #C4C4C4;
   }
+  .bounse_left1 {
+    width: 127px;
+    height: 127px;
+    background: url(../img/svg/bounse__big.svg) no-repeat center center;
+    background-size: cover;
+  }
+  .course_text {
+    width: 110px;
+    height: 110px;
+  }
+  .bounse_left2 {
+    width: 130px;
+    height: 130px;
+  }
+  .bounse_left2 img {
+    width: 100%;
+    height: 100%;
+  }
   .bg_home .bg_right_home {
     display: none;
   }
@@ -5004,13 +5065,19 @@ button:hover {
   .fits {
     padding: 100px 0 150px;
   }
+  .fits .scroll {
+    overflow: hidden;
+  }
   .fits_cards {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: auto;
   }
   .fits_cards .column_step {
-    display: grid;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     grid-template-columns: 1fr;
     grid-gap: 30px;
   }
@@ -5018,11 +5085,13 @@ button:hover {
     background: linear-gradient(89.44deg, #2c2c2c 2.59%, rgba(44, 44, 44, 0.921875) 11.91%, rgba(44, 44, 44, 0) 121.95%);
     border-radius: 12px;
     padding: 32px 24px;
+    width: 300px;
   }
   .fits_cards .column_step:last-child .card {
     background: linear-gradient(89.44deg, #2c2c2c 2.59%, rgba(44, 44, 44, 0.921875) 11.91%, rgba(44, 44, 44, 0) 121.95%);
     border-radius: 12px;
     padding: 32px 24px;
+    width: 300px;
   }
   .platform-h2 {
     font-weight: 700;
@@ -5046,6 +5115,9 @@ button:hover {
   }
   .advantages {
     padding: 100px 0 120px;
+  }
+  .advantages-title_mob {
+    display: block;
   }
   .advantages_cards {
     display: grid;
@@ -5236,6 +5308,13 @@ button:hover {
             align-items: flex-start;
     outline: none;
   }
+  .reviews_item_left-img {
+    width: 90px;
+    height: 90px;
+  }
+  .reviews_item_left-p {
+    display: block;
+  }
   .reviews_item_info {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -5244,6 +5323,9 @@ button:hover {
     -webkit-box-direction: reverse;
         -ms-flex-flow: column-reverse wrap;
             flex-flow: column-reverse wrap;
+  }
+  .reviews_item_info_bottom {
+    display: none;
   }
   .reviews_item_info-text {
     display: block;
@@ -5279,6 +5361,13 @@ button:hover {
   }
   .contact_row_column:last-child {
     margin: 0 auto;
+  }
+  .contact_row_column:last-child .course_text {
+    top: 10px;
+  }
+  .contact_row_column:last-child .bounse_left1 {
+    width: 127px;
+    height: 127px;
   }
   .footer {
     padding: 100px 0 80px 0;
@@ -5910,6 +5999,9 @@ button:hover {
   .course_contact-h2 span {
     color: #1CB86D;
   }
+  .course_contact_row {
+    position: relative;
+  }
   .course_contact_row-text {
     max-width: 320px;
     font-size: 16px;
@@ -5940,6 +6032,11 @@ button:hover {
     font-size: 40px;
     line-height: 150%;
     color: #1CB86D;
+  }
+  .trial_course_left.course {
+    position: absolute;
+    bottom: 0;
+    right: 0;
   }
   .profile_page {
     padding: 40px 0 100px 0;
@@ -6087,6 +6184,9 @@ button:hover {
   .lessons_group {
     padding: 40px 10px;
     border: none;
+  }
+  .lessons_group_mob {
+    display: block;
   }
   .lessons_group_video {
     height: 250px;
