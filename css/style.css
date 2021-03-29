@@ -178,20 +178,20 @@ button:hover {
 .header_menu .scroll {
   overflow-y: scroll;
   height: 100%;
+  /*&::-webkit-scrollbar-thumb {
+        background:  #1CB86D;
+        border-radius: 2px;
+      }
+      &::-webkit-scrollbar-track {
+        background: #f2f2f2;
+        border: 5px solid #fff;
+      }*/
 }
 .header_menu .scroll::-webkit-scrollbar {
   width: 6px;
 }
 .header_menu .scroll::-webkit-scrollbar-button {
   width: 6px;
-}
-.header_menu .scroll::-webkit-scrollbar-thumb {
-  background: #1CB86D;
-  border-radius: 2px;
-}
-.header_menu .scroll::-webkit-scrollbar-track {
-  background: #f2f2f2;
-  border: 5px solid #fff;
 }
 .header_menu-close {
   font-size: 35px;
@@ -201,6 +201,11 @@ button:hover {
   position: absolute;
   right: 70px;
   top: 70px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.header_menu-close:hover {
+  cursor: pointer;
 }
 .header_menu_ul {
   display: -webkit-box;
@@ -576,6 +581,13 @@ button:hover {
       -ms-flex-align: center;
           align-items: center;
 }
+.container_photo_text_line {
+  display: block;
+  height: 0.7px;
+  max-width: 1450px;
+  background: -webkit-gradient(linear, left top, right top, from(#1cb86d), to(#03180e));
+  background: linear-gradient(90deg, #1cb86d, #03180e);
+}
 .and_text {
   margin-left: 154px;
   max-width: 350px;
@@ -621,7 +633,7 @@ button:hover {
 }
 .move_stroke_item {
   display: inline-block;
-  padding-left: 100%;
+  padding-right: 100%;
   -webkit-animation: scroll 55s infinite linear;
           animation: scroll 55s infinite linear;
   font-size: 60px;
@@ -746,7 +758,8 @@ button:hover {
   display: block;
   max-width: 990px;
   margin-bottom: 135px;
-  background: #0B4428;
+  background: -webkit-gradient(linear, left top, right top, from(#1cb86d), to(#03180e));
+  background: linear-gradient(90deg, #1cb86d, #03180e);
   height: 0.8px;
 }
 .platform_video {
@@ -775,11 +788,19 @@ button:hover {
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
-  padding: 60px 70px;
   background: #111111;
   -webkit-backdrop-filter: blur(100px);
           backdrop-filter: blur(100px);
   border-radius: 20px;
+  position: relative;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+.advantages_cards .card:hover .card_overlay {
+  opacity: 1;
+}
+.advantages_cards .card:hover .card_preview {
+  display: none;
 }
 .advantages_cards .card-img {
   margin-bottom: 40px;
@@ -805,6 +826,30 @@ button:hover {
   text-align: center;
   color: #FFFFFF;
 }
+.advantages_cards .card_preview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  padding: 60px 70px;
+}
+.advantages_cards .card_overlay {
+  padding: 60px;
+  opacity: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
 .step {
   padding-bottom: 250px;
   background-repeat: no-repeat;
@@ -816,7 +861,8 @@ button:hover {
 }
 .step_line {
   max-width: 1147px;
-  background: #0B4428;
+  background: -webkit-gradient(linear, left top, right top, from(#1cb86d), to(#03180e));
+  background: linear-gradient(90deg, #1cb86d, #03180e);
   height: 0.8px;
   display: block;
 }
@@ -1003,8 +1049,20 @@ button:hover {
 .teachers_line {
   display: block;
   max-width: 1135px;
-  background: #0B4428;
+  background: -webkit-gradient(linear, left top, right top, from(#1cb86d), to(#03180e));
+  background: linear-gradient(90deg, #1cb86d, #03180e);
   height: 0.8px;
+}
+.teachers .photo_and_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.teachers .and_text {
+  margin-right: 154px;
 }
 .reviews {
   padding: 250px 0;
@@ -1303,6 +1361,13 @@ button:hover {
   font-size: 14px;
   line-height: 150%;
   color: #FFFFFF;
+}
+.footer_copyright_text.link {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.footer_copyright_text.link:hover {
+  color: #1cb86d;
 }
 .footer_copyright_row {
   display: -webkit-box;
@@ -1787,6 +1852,11 @@ button:hover {
   color: #878787;
   font-size: 20px;
   line-height: 10px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.wallet_table_row-close:hover {
+  cursor: pointer;
 }
 .wallet_table_row-bottom {
   display: -webkit-box;
@@ -1912,6 +1982,7 @@ button:hover {
   transition: all 0.2s;
 }
 .wallet_btn:hover {
+  cursor: pointer;
   background: -webkit-gradient(linear, left top, right top, from(#1cb86d), to(#1cb86d));
   background: linear-gradient(90deg, #1cb86d 0%, #1cb86d 100%);
 }
@@ -2156,6 +2227,16 @@ button:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 85px 0 155px 0;
+}
+.course-img {
+  position: relative;
+  padding: 85px 0 155px 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
 .course_page {
   display: grid;
@@ -3767,12 +3848,18 @@ button:hover {
     margin-top: 30px;
     margin-left: 140px;
   }
+  .teachers .photo_and_text {
+    display: grid;
+  }
+  .teachers .and_text {
+    margin-right: 140px;
+  }
   .advantages_cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
   }
-  .advantages_cards .card {
+  .advantages_cards .card_preview {
     padding: 60px 20px;
   }
   .step_cards {
@@ -4459,6 +4546,9 @@ button:hover {
     max-width: 100%;
     height: auto;
   }
+  .teachers .and_text {
+    margin-right: 0;
+  }
   .fits_cards {
     display: grid;
     grid-template-columns: 1fr;
@@ -4917,7 +5007,6 @@ button:hover {
     width: 300px;
     margin: 0 auto;
     margin-bottom: 5px;
-    background: #0B4428;
     height: 0.8px;
   }
   .platform_video {
@@ -4935,8 +5024,17 @@ button:hover {
     grid-template-columns: 1fr;
     grid-gap: 30px;
   }
-  .advantages_cards .card {
+  .advantages_cards .card:hover .card_overlay {
+    display: block;
+  }
+  .advantages_cards .card_preview {
     padding: 60px 30px;
+  }
+  .advantages_cards .card_overlay {
+    padding: 60px 30px;
+    position: relative;
+    opacity: 1;
+    display: none;
   }
   .step {
     padding-bottom: 150px;
@@ -4950,7 +5048,6 @@ button:hover {
   .step_line {
     max-width: 300px;
     margin: 0 auto;
-    background: #0B4428;
     height: 0.8px;
     display: block;
     margin-bottom: 55px;
@@ -5093,7 +5190,6 @@ button:hover {
   .teachers_line {
     display: block;
     max-width: 300px;
-    background: #0B4428;
     height: 0.8px;
     margin: 0 auto;
   }
@@ -5452,6 +5548,9 @@ button:hover {
     background: linear-gradient(90deg, #1cb86d 0%, #00b6ef 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    padding: 40px 0 130px 0;
+  }
+  .course-img {
     padding: 40px 0 130px 0;
   }
   .course_page {
@@ -6231,6 +6330,14 @@ button:hover {
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
+  }
+  .container_photo_text_line {
+    display: block;
+    height: 0.7px;
+    margin: 0 15px;
+    margin-top: 40px;
+    background: -webkit-gradient(linear, left top, right top, from(#1cb86d), to(#03180e));
+    background: linear-gradient(90deg, #1cb86d, #03180e);
   }
 }
 @media (max-width: 380px) {

@@ -155,14 +155,14 @@ button:hover {
       &::-webkit-scrollbar-button {
         width: 6px;
       }
-      &::-webkit-scrollbar-thumb {
+      /*&::-webkit-scrollbar-thumb {
         background:  #1CB86D;
         border-radius: 2px;
       }
       &::-webkit-scrollbar-track {
         background: #f2f2f2;
         border: 5px solid #fff;
-      }
+      }*/
     }
     &-close{
       font-size: 35px;
@@ -172,6 +172,10 @@ button:hover {
       position: absolute;
       right: 70px;
       top: 70px;
+      transition: all 0.2s;
+      &:hover{
+        cursor: pointer;
+      }
     }
     &_ul{
       display: flex;
@@ -494,6 +498,12 @@ button:hover {
   display: flex;
   align-items: center;
 }
+.container_photo_text_line{
+  display: block;
+  height: 0.7px;
+  max-width: 1450px;
+  background: linear-gradient(90deg,#1CB86D,#03180E);
+}
 .and_text {
   margin-left: 154px;
   max-width: 350px;
@@ -546,7 +556,7 @@ button:hover {
   margin-top: 200px;
   &_item{
     display: inline-block;
-    padding-left: 100%;
+    padding-right: 100%;
     animation: scroll 55s infinite linear;
     font-size: 60px;
     line-height: 150%;
@@ -657,7 +667,7 @@ button:hover {
     display: block;
     max-width: 990px;
     margin-bottom: 135px;
-    background: #0B4428;
+    background: linear-gradient(90deg,#1CB86D,#03180E);
     height: 0.8px;
   }
   &_video{
@@ -678,10 +688,17 @@ button:hover {
       display: flex;
       align-items: center;
       flex-flow: column wrap;
-      padding: 60px 70px;
       background: #111111;
       backdrop-filter: blur(100px);
       border-radius: 20px;
+      position: relative;
+      transition: all 1s;
+      &:hover .card_overlay{
+        opacity: 1;
+      }
+      &:hover .card_preview{
+        display: none;
+      }
       &-img{
         margin-bottom: 40px;
       }
@@ -706,6 +723,22 @@ button:hover {
         text-align: center;
         color: #FFFFFF;
       }
+      &_preview{
+        display: flex;
+        align-items: center;
+        flex-flow: column wrap;
+        padding: 60px 70px;
+      }
+      &_overlay{
+        padding: 60px;
+        opacity: 0;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        transition: all 1s;
+      }
     }
   }
 }
@@ -719,7 +752,7 @@ button:hover {
   }
   &_line{
     max-width: 1147px;
-    background: #0B4428;
+    background: linear-gradient(90deg,#1CB86D,#03180E);
     height: 0.8px;
     display: block;
   }
@@ -878,8 +911,15 @@ button:hover {
   &_line{
     display: block;
     max-width: 1135px;
-    background: #0B4428;
+    background: linear-gradient(90deg,#1CB86D,#03180E);
     height: 0.8px;
+  }
+  & .photo_and_text{
+    display: flex;
+    justify-content: flex-end;
+  }
+  & .and_text{
+    margin-right: 154px;
   }
 }
 .reviews{
@@ -1121,6 +1161,12 @@ button:hover {
       font-size: 14px;
       line-height: 150%;
       color: #FFFFFF;
+      &.link{
+        transition: all 0.2s;
+        &:hover{
+          color: #1cb86d;
+        }
+      }
     }
     &_row{
       display: flex;
@@ -1515,6 +1561,10 @@ button:hover {
         color: #878787;
         font-size: 20px;
         line-height: 10px;
+        transition: all 0.2s;
+        &:hover{
+          cursor: pointer;
+        }
       }
       &-bottom{
         display: flex;
@@ -1610,6 +1660,7 @@ button:hover {
     margin-left: auto;
     transition: all 0.2s;
     &:hover{
+      cursor: pointer;
       background: linear-gradient(90deg, #1CB86D 0%, #1CB86D 100%);
     }
   }
@@ -1816,6 +1867,15 @@ button:hover {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 85px 0 155px 0;
+  }
+  &-img{
+    position: relative;
+    padding: 85px 0 155px 0;
+    object-fit: cover;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
   }
   &_page{
     display: grid;
@@ -3174,13 +3234,23 @@ button:hover {
     margin-top: 30px;
     margin-left: 140px;
   }
+  .teachers{
+    & .photo_and_text{
+      display: grid;
+    }
+    & .and_text{
+      margin-right: 140px;
+    }
+  }
   .advantages{
     &_cards{
       display: grid;
       grid-template-columns: repeat(3,1fr);
       grid-gap: 30px;
       .card{
-        padding: 60px 20px;
+        &_preview{
+          padding: 60px 20px;
+        }
       }
     }
   }
@@ -3729,6 +3799,11 @@ button:hover {
     max-width: 100%;
     height: auto;
   }
+  .teachers{
+    & .and_text{
+      margin-right: 0;
+    }
+  }
   .fits{
     &_cards{
       display: grid;
@@ -4153,7 +4228,6 @@ button:hover {
       width: 300px;
       margin: 0 auto;
       margin-bottom: 5px;
-      background: #0B4428;
       height: 0.8px;
     }
     &_video{
@@ -4171,7 +4245,18 @@ button:hover {
       grid-template-columns: 1fr;
       grid-gap: 30px;
       .card{
-        padding: 60px 30px;
+        &:hover .card_overlay{
+          display: block;
+        }
+        &_preview{
+          padding: 60px 30px;
+        }
+        &_overlay{
+          padding: 60px 30px;
+          position: relative;
+          opacity: 1;
+          display: none;
+        }
       }
     }
   }
@@ -4186,7 +4271,6 @@ button:hover {
     &_line{
       max-width: 300px;
       margin: 0 auto;
-      background: #0B4428;
       height: 0.8px;
       display: block;
       margin-bottom: 55px;
@@ -4318,7 +4402,6 @@ button:hover {
     &_line{
       display: block;
       max-width: 300px;
-      background: #0B4428;
       height: 0.8px;
       margin: 0 auto;
     }
@@ -4621,6 +4704,9 @@ button:hover {
       background: linear-gradient(90deg, #1CB86D 0%, #00B6EF 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      padding: 40px 0 130px 0;
+    }
+    &-img{
       padding: 40px 0 130px 0;
     }
     &_page{
@@ -5269,6 +5355,13 @@ button:hover {
   }
   .lessons_group_cards .card_content_radio_row-title{
     flex-flow: row wrap;
+  }
+  .container_photo_text_line{
+    display: block;
+    height: 0.7px;
+    margin: 0 15px;
+    margin-top: 40px;
+    background: linear-gradient(90deg,#1CB86D,#03180E);
   }
 }
 @media (max-width: 380px) {
