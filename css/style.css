@@ -159,7 +159,7 @@ button:hover {
           box-shadow: -20px 10px 100px rgba(0, 182, 239, 0.2);
   position: fixed;
   height: 100vh;
-  padding: 140px 269px 130px 239px;
+  padding: 140px 269px 60px 239px;
   right: 0;
   top: 0;
   z-index: 99;
@@ -506,6 +506,7 @@ button:hover {
   color: #FFFFFF;
   margin-top: 250px;
   text-align: center;
+  margin-bottom: 30px;
 }
 .course_item {
   display: block;
@@ -604,26 +605,34 @@ button:hover {
   max-width: 100%;
   height: auto;
 }
-@-webkit-keyframes scroll {
+/*@-webkit-keyframes scroll {
   0% {
     -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
   }
   100% {
     -webkit-transform: translate(-100%, 0);
-    transform: translate(-100%, 0);
+    transform: translate(-100%, 0)
+  }
+}
+@-moz-keyframes scroll {
+  0% {
+    -moz-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  100% {
+    -moz-transform: translate(-100%, 0);
+    transform: translate(-100%, 0)
   }
 }
 @keyframes scroll {
   0% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
+    transform: translate(0, 0);
   }
   100% {
-    -webkit-transform: translate(-100%, 0);
-            transform: translate(-100%, 0);
+    transform: translate(-100%, 0)
   }
-}
+}*/
 .move_stroke {
   display: block;
   width: 100%;
@@ -798,6 +807,7 @@ button:hover {
 }
 .advantages_cards .card:hover .card_overlay {
   opacity: 1;
+  cursor: pointer;
 }
 .advantages_cards .card:hover .card_preview {
   display: none;
@@ -1292,7 +1302,7 @@ button:hover {
 .footer_right {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 120px;
+  grid-gap: 115px;
 }
 .footer_column-title {
   display: block;
@@ -1399,6 +1409,17 @@ button:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background: #000000;
+  position: relative;
+}
+.Form_group-close {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.Form_group-close:hover {
+  cursor: pointer;
 }
 .Form_group .Form_form {
   padding: 100px 150px 140px 150px;
@@ -1621,7 +1642,7 @@ button:hover {
 }
 .error_img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   margin: 0 auto;
@@ -2242,6 +2263,7 @@ button:hover {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   grid-gap: 250px;
+  position: relative;
 }
 .course_page .card.card_blue {
   margin-top: 30px;
@@ -2493,7 +2515,7 @@ button:hover {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  margin-bottom: 200px;
+  margin: 200px 0;
 }
 .course_schedule_info {
   max-width: 450px;
@@ -2632,6 +2654,7 @@ button:hover {
   color: #1CB86D;
 }
 .line_green {
+  position: relative;
   display: block;
   max-width: 370px;
   height: 1px;
@@ -2639,6 +2662,7 @@ button:hover {
   background: linear-gradient(90deg, #1cb86d, #031a21);
 }
 .line_blue {
+  position: relative;
   display: block;
   margin-left: auto;
   max-width: 755px;
@@ -4152,7 +4176,7 @@ button:hover {
     position: relative;
     height: auto;
     width: 100vw;
-    padding: 140px 30px 30px 50px;
+    padding: 140px 30px 30px 30px;
     right: 0;
     top: 0;
     z-index: 99;
@@ -4161,9 +4185,9 @@ button:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column wrap;
@@ -4218,7 +4242,7 @@ button:hover {
   .header_lang_mob {
     display: block;
     position: absolute;
-    top: 75px;
+    top: 45px;
     left: 30px;
   }
   .fits_cards {
@@ -4955,6 +4979,10 @@ button:hover {
   }
   .trial_course_left {
     margin: 0 auto;
+    margin-bottom: 80px;
+  }
+  .bg_plus_img {
+    top: 100%;
   }
   .center_main_text {
     margin-top: 100px;
@@ -5319,21 +5347,33 @@ button:hover {
     margin-bottom: 0;
   }
   .wallet_table_row-close {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    color: #878787;
-    font-size: 20px;
-    line-height: 10px;
+    display: none;
   }
   .wallet_table_row-bottom {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    padding: 60px 10px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 60px 30px;
+  }
+  .wallet_table_row-bottom .wallet_table_end {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .wallet_table_row-bottom .wallet_table_end.wallet_table-title {
+    width: 100%;
+  }
+  .wallet_table_row-bottom .wallet_table_end .price {
+    padding-left: 0;
+  }
+  .wallet_table_row-top {
+    padding: 30px;
   }
   .wallet_promocode {
     padding: 60px 0;
@@ -5374,7 +5414,21 @@ button:hover {
     width: 100%;
   }
   .wallet_promocode-end {
+    padding: 0 15px;
     margin-top: 60px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .wallet_promocode-end .price {
+    padding-left: 0;
   }
   .wallet_btn {
     background: -webkit-gradient(linear, left top, right top, from(#1cb86d), to(#00b6ef));
@@ -5385,9 +5439,8 @@ button:hover {
     font-size: 16px;
     line-height: 150%;
     color: #FFFFFF;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+    width: 100%;
+    text-align: center;
     margin-left: auto;
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
@@ -5537,6 +5590,8 @@ button:hover {
   }
   .order_btn {
     padding: 18px 45px;
+    width: 100%;
+    text-align: center;
   }
   .course-h1 {
     position: relative;
@@ -5640,7 +5695,7 @@ button:hover {
             flex-flow: column wrap;
   }
   .course_accordion_group .accordion_content_li {
-    font-size: 18px;
+    font-size: 14px;
     padding-left: 40px;
     line-height: 150%;
     padding-bottom: 22px;
@@ -5689,9 +5744,7 @@ button:hover {
     font-size: 16px;
     line-height: 150%;
     color: #FFFFFF;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+    width: 100%;
     margin: 0 auto;
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
@@ -5774,6 +5827,7 @@ button:hover {
     text-align: center;
   }
   .course_schedule {
+    margin-top: 100px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -5804,16 +5858,8 @@ button:hover {
     width: 100%;
   }
   .course_schedule_cards .card {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     width: 100%;
     background: #0C0C0C;
   }
@@ -5824,17 +5870,29 @@ button:hover {
     font-size: 18px;
     line-height: 150%;
     color: #1CB86D;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
   }
   .course_schedule_cards .card-time {
-    display: block;
-    padding: 30px 32px 0 32px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 30px 25px 30px 25px;
     font-size: 16px;
     line-height: 150%;
     text-align: center;
     color: #FFFFFF;
   }
-  .course_schedule_cards .card-time:last-child {
-    padding-bottom: 30px;
+  .course_schedule-btn {
+    width: 100%;
   }
   .course_contact {
     padding: 50px 0 100px 0;

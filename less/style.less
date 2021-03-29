@@ -131,7 +131,7 @@ button:hover {
     box-shadow: -20px 10px 100px rgba(0, 182, 239, 0.2);
     position: fixed;
     height: 100vh;
-    padding: 140px 269px 130px 239px;
+    padding: 140px 269px 60px 239px;
     right: 0;
     top: 0;
     z-index: 99;
@@ -435,6 +435,7 @@ button:hover {
   color: #FFFFFF;
   margin-top: 250px;
   text-align: center;
+  margin-bottom: 30px;
 }
 .course_item {
   display: block;
@@ -520,7 +521,7 @@ button:hover {
   max-width: 100%;
   height: auto;
 }
-@-webkit-keyframes scroll {
+/*@-webkit-keyframes scroll {
   0% {
     -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
@@ -547,7 +548,7 @@ button:hover {
   100% {
     transform: translate(-100%, 0)
   }
-}
+}*/
 .move_stroke {
   display: block;
   width: 100%;
@@ -695,6 +696,7 @@ button:hover {
       transition: all 1s;
       &:hover .card_overlay{
         opacity: 1;
+        cursor: pointer;
       }
       &:hover .card_preview{
         display: none;
@@ -1104,7 +1106,7 @@ button:hover {
   &_right{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-gap: 120px;
+    grid-gap: 115px;
   }
   &_column{
     &-title{
@@ -1189,6 +1191,16 @@ button:hover {
   align-items: center;
   justify-content: space-between;
   background: #000000;
+  position: relative;
+  &-close{
+    position: absolute;
+    top: 13px;
+    right: 13px;
+    transition: all 0.2s;
+    &:hover{
+      cursor: pointer;
+    }
+  }
   .Form_form{
     padding: 100px 150px 140px 150px;
     &_h2{
@@ -1373,7 +1385,7 @@ button:hover {
   padding-bottom: 170px;
   &_img{
     display: block;
-    width: 100%;
+    max-width: 100%;
     object-fit: cover;
     margin: 0 auto;
   }
@@ -1881,6 +1893,7 @@ button:hover {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     grid-gap: 250px;
+    position: relative;
     .card{
       &.card_blue{
         margin-top: 30px;
@@ -2086,7 +2099,7 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-bottom: 200px;
+    margin: 200px 0;
     &_info{
       max-width: 450px;
       display: block;
@@ -2197,12 +2210,14 @@ button:hover {
   }
 }
 .line_green{
+  position: relative;
   display: block;
   max-width: 370px;
   height: 1px;
   background: linear-gradient(90deg,#1CB86D,#031A21);
 }
 .line_blue{
+  position: relative;
   display: block;
   margin-left: auto;
   max-width: 755px;
@@ -3200,6 +3215,8 @@ button:hover {
     width: 370px;
   }
 }
+
+
 @media (max-width: 1140px) {
   .container {
     width: 980px;
@@ -3490,13 +3507,13 @@ button:hover {
       position: relative;
       height: auto;
       width: 100vw;
-      padding: 140px 30px 30px 50px;
+      padding: 140px 30px 30px 30px;
       right: 0;
       top: 0;
       z-index: 99;
       .scroll{
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         flex-flow: column wrap;
         overflow: hidden;
       }
@@ -3542,7 +3559,7 @@ button:hover {
     &_lang_mob{
       display: block;
       position: absolute;
-      top: 75px;
+      top: 45px;
       left: 30px;
     }
   }
@@ -4173,6 +4190,10 @@ button:hover {
   }
   .trial_course_left{
     margin: 0 auto;
+    margin-bottom: 80px;
+  }
+  .bg_plus_img{
+    top: 100%;
   }
   .center_main_text{
     margin-top: 100px;
@@ -4521,17 +4542,25 @@ button:hover {
           margin-bottom: 0;
         }
         &-close{
-          position: absolute;
-          top: 20px;
-          right: 20px;
-          color: #878787;
-          font-size: 20px;
-          line-height: 10px;
+          display: none;
         }
         &-bottom{
           display: flex;
-          justify-content: flex-end;
-          padding: 60px 10px;
+          justify-content: space-between;
+          padding: 60px 30px;
+          .wallet_table_end{
+            display: flex;
+            justify-content: space-between;
+            &.wallet_table-title{
+              width: 100%;
+            }
+            & .price{
+              padding-left: 0;
+            }
+          }
+        }
+        &-top{
+          padding: 30px
         }
       }
     }
@@ -4558,7 +4587,15 @@ button:hover {
         width: 100%;
       }
       &-end{
+        padding: 0 15px;
         margin-top: 60px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        & .price{
+          padding-left: 0;
+        }
       }
     }
     &_btn{
@@ -4569,7 +4606,8 @@ button:hover {
       font-size: 16px;
       line-height: 150%;
       color: #FFFFFF;
-      width: fit-content;
+      width: 100%;
+      text-align: center;
       margin-left: auto;
       transition: all 0.2s;
       &:hover{
@@ -4692,6 +4730,8 @@ button:hover {
     }
     &_btn{
       padding: 18px 45px;
+      width: 100%;
+      text-align: center;
     }
   }
   .course{
@@ -4774,7 +4814,7 @@ button:hover {
               flex-flow: column wrap;
             }
             &_li{
-              font-size: 18px;
+              font-size: 14px;
               padding-left: 40px;
               line-height: 150%;
               padding-bottom: 22px;
@@ -4819,7 +4859,7 @@ button:hover {
         font-size: 16px;
         line-height: 150%;
         color: #FFFFFF;
-        width: fit-content;
+        width: 100%;
         margin: 0 auto;
         transition: all 0.2s;
         &:hover{
@@ -4891,6 +4931,7 @@ button:hover {
       }
     }
     &_schedule{
+      margin-top: 100px;
       display: flex;
       flex-flow: column-reverse wrap;
       align-items: flex-start;
@@ -4912,9 +4953,8 @@ button:hover {
         grid-gap: 30px;
         width: 100%;
         .card{
-          display: flex;
-          align-items: center;
-          flex-flow: column wrap;
+          display: grid;
+          grid-template-columns: repeat(3,1fr);
           width: 100%;
           background: #0C0C0C;
           &-title{
@@ -4924,19 +4964,25 @@ button:hover {
             font-size: 18px;
             line-height: 150%;
             color: #1CB86D;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            text-align: center;
           }
           &-time{
-            display: block;
-            padding: 30px 32px 0 32px;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            padding: 30px 25px 30px 25px;
             font-size: 16px;
             line-height: 150%;
             text-align: center;
             color: #FFFFFF;
-            &:last-child{
-              padding-bottom: 30px;
-            }
+
           }
         }
+      }
+      &-btn{
+        width: 100%;
       }
     }
     &_contact{
@@ -5364,6 +5410,9 @@ button:hover {
     background: linear-gradient(90deg,#1CB86D,#03180E);
   }
 }
+
+
+
 @media (max-width: 380px) {
   .container {
     width: 100%;

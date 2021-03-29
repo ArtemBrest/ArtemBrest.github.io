@@ -237,4 +237,13 @@ $(document).ready(function () {
             }
         });
     });
+
+
+    $(function() {
+        $('.move_stroke').marquee({
+            duration: 7000,
+            startVisible: true,
+            duplicated: true
+        });
+    });
 });
