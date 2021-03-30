@@ -496,6 +496,7 @@ button:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 1310px;
 }
 .bounse_left1 {
   position: relative;
@@ -541,13 +542,13 @@ button:hover {
           box-shadow: -45px 0px 36px #000000;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  /*&:hover{
+    z-index: 10;
+    background: #2a2a2a;
+  }*/
 }
 .course_item:last-child {
   margin-right: 100px;
-}
-.course_item:hover {
-  z-index: 10;
-  background: #2a2a2a;
 }
 .course_item .course_item {
   margin-left: 0;
@@ -791,7 +792,7 @@ button:hover {
   margin-bottom: 135px;
   background: -webkit-gradient(linear, left top, right top, from(#1cb86d), to(#03180e));
   background: linear-gradient(90deg, #1cb86d, #03180e);
-  height: 0.8px;
+  height: 1px;
 }
 .platform_video {
   height: 500px;
@@ -876,7 +877,7 @@ button:hover {
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
-  padding: 60px 70px;
+  padding: 60px 50px;
 }
 .advantages_cards .card_overlay {
   padding: 60px;
@@ -3918,6 +3919,15 @@ button:hover {
   .trial_course_right {
     display: none;
     margin: 0;
+  }
+  .head_trial_course {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
   }
   .photo_and_text {
     display: grid;
