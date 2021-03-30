@@ -838,9 +838,17 @@ button:hover {
 .advantages_cards .card:hover .card_overlay {
   opacity: 1;
   cursor: pointer;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
 }
 .advantages_cards .card:hover .card_preview {
   display: none;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 .advantages_cards .card-img {
   margin-bottom: 40px;
@@ -887,8 +895,16 @@ button:hover {
   width: 100%;
   top: 0;
   left: 0;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.advantages_cards .card_preview {
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
 }
 .step {
   padding-bottom: 250px;
@@ -1861,6 +1877,19 @@ button:hover {
 .registration_form_p a:hover {
   color: #00b6ef;
 }
+.registration_form #eye {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  width: 24px;
+}
+.registration_form #eye path {
+  fill: white;
+}
+.registration_form #eye.active path {
+  fill: #1CB86D;
+  opacity: .8;
+}
 .thanks_card {
   margin: 150px 0;
   text-align: center;
@@ -2407,6 +2436,19 @@ button:hover {
 }
 .course_accordion_group .accordion_top-title span {
   color: #1CB86D;
+}
+.course_accordion_group .accordion_top .course_item-icon.icon_active .icon-minus {
+  display: block;
+}
+.course_accordion_group .accordion_top .course_item-icon.icon_active svg {
+  display: none;
+}
+.course_accordion_group .accordion_top .icon-minus {
+  display: none;
+  height: 2px;
+  width: 16px;
+  background: white;
+  opacity: .7;
 }
 .course_accordion_group .accordion_content {
   border-top: 1px solid #202020;

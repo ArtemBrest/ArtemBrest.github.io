@@ -10,7 +10,7 @@ $(document).ready(function () {
     var accord = $(".head_content_course_mob .course_item");
     accord.find(".course_item_name:not(.active)").siblings("div").slideUp();
     accord.find(".course_item_name").on("click", function () {
-        $(this).siblings("div").stop().slideToggle(500);
+        $(this).siblings("div").stop().slideToggle(250);
 
         if ($(this).hasClass("active")) {
             $(this).removeClass("active");
@@ -129,7 +129,7 @@ $(document).ready(function () {
     var accord = $(".course_accordion .accordion");
     accord.find(".accordion_top:not(.active)").siblings("div").slideUp();
     accord.find(".accordion_top").on("click", function () {
-        $(this).siblings("div").stop().slideToggle(500);
+        $(this).siblings("div").stop().slideToggle(250);
         if ($(this).hasClass("active")) {
             $(this).removeClass("active");
         } else {
@@ -246,4 +246,10 @@ $(document).ready(function () {
             duplicated: true
         });
     });
+
+
+
 });
+
+
+
