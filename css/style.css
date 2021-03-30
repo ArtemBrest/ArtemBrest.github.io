@@ -1131,6 +1131,7 @@ button:hover {
 }
 .reviews_slider .slick-dots li button:before {
   color: #5a5a5a;
+  opacity: 1;
 }
 .reviews_slider .slick-dots li.slick-active button:before {
   opacity: 1;
