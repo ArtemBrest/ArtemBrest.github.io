@@ -179,14 +179,6 @@ button:hover {
 .header_menu .scroll {
   overflow-y: scroll;
   height: 100%;
-  /*&::-webkit-scrollbar-thumb {
-        background:  #1CB86D;
-        border-radius: 2px;
-      }
-      &::-webkit-scrollbar-track {
-        background: #f2f2f2;
-        border: 5px solid #fff;
-      }*/
 }
 .header_menu .scroll::-webkit-scrollbar {
   width: 6px;
@@ -542,10 +534,6 @@ button:hover {
           box-shadow: -45px 0px 36px #000000;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  /*&:hover{
-    z-index: 10;
-    background: #2a2a2a;
-  }*/
 }
 .course_item:last-child {
   margin-right: 100px;
@@ -628,34 +616,6 @@ button:hover {
   max-width: 100%;
   height: auto;
 }
-/*@-webkit-keyframes scroll {
-  0% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-  }
-  100% {
-    -webkit-transform: translate(-100%, 0);
-    transform: translate(-100%, 0)
-  }
-}
-@-moz-keyframes scroll {
-  0% {
-    -moz-transform: translate(0, 0);
-    transform: translate(0, 0);
-  }
-  100% {
-    -moz-transform: translate(-100%, 0);
-    transform: translate(-100%, 0)
-  }
-}
-@keyframes scroll {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(-100%, 0)
-  }
-}*/
 .move_stroke {
   display: block;
   width: 100%;
