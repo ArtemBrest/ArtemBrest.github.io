@@ -103,6 +103,8 @@ button:hover {
 .header {
   background: linear-gradient(91.99deg, #01b1ac 3.06%, #2fb669 99.38%);
   padding: 19px 0;
+  position: relative;
+  z-index: 999;
 }
 .header_top {
   display: -webkit-box;
@@ -175,6 +177,40 @@ button:hover {
   border-radius: 84.1949px;
   margin: 5px 0;
   margin-left: -7px;
+}
+.header_mob_menu {
+  display: none;
+  position: relative;
+  z-index: 999!important;
+}
+.header_mob_menu_ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  margin-top: 10px;
+}
+.header_mob_menu_li {
+  border-top: 1px solid #ffffff;
+  padding: 30px 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.header_mob_menu_link {
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
 }
 .main {
   position: relative;
