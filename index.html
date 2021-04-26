@@ -85,7 +85,7 @@
                         </svg>
                     </a>
                 </div>
-                <button class="banner-btn">Получить каталог</button>
+                <button class="banner-btn catalog_btn">Получить каталог</button>
             </div>
         </div>
     </section>
@@ -239,12 +239,11 @@
                         <a href="mailto:kalinda.dom@mail.ru" class="contact_input-email">kalinda.dom@mail.ru</a>
                     </div>
                 </div>
-                <button class="contact-btn">Получить каталог</button>
+                <button class="contact-btn catalog_btn">Получить каталог</button>
             </div>
         </div>
     </section>
 </main>
-
 <footer class="footer">
     <div class="container">
         <div class="footer_row">
@@ -257,10 +256,10 @@
 
 
 <!--Modal Windows thanks-->
-<div class="fade"></div>
+<div class="fade" id="fade"></div>
 <div class="modal" id="mainModal">
     <span class="modal-close mainModal-close">&times;</span>
-    <h1 class="thanks_h1">Спасибо за заявку!</h1>
+    <span class="thanks_h1">Спасибо за заявку!</span>
     <p class="thanks_p">Наши менеджеры свяжутся с вами в ближайшее время!</p>
     <button class="btn-close modal-btn-close">Отлично!</button>
 </div>
@@ -269,12 +268,11 @@
 <div class="modal1" id="mainModal1">
     <span class="modal1-close">&times;</span>
     <form class="modal1_form">
-        <span class="modal1_form-h2">Заявка на заказ</span>
+        <span class="modal1_form-h2">Заявка на каталог</span>
         <span class="modal1_form-p">Введите свои контактные данные, и мы с вами свяжемся</span>
         <div class="modal1_form_group">
             <input type="text" class="modal1_form-input" placeholder="Введите ваше имя">
-            <input type="text" class="modal1_form-input modal1_form-input-phone" placeholder="Введите ваш телефон">
-            <textarea type="text" class="modal1_form-textarea" placeholder="Введите ваше сообщение"></textarea>
+            <input type="text" class="modal1_form-input modal1_form-input-email" placeholder="Введите ваш email">
         </div>
         <button class="modal1_form-btn">Заказать</button>
     </form>

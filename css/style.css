@@ -655,11 +655,7 @@ button:hover {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.8);
 }
-.modal,
-.modal1 {
-  display: none;
-}
-/*.modal {
+.modal {
   z-index: 99999;
   width: 455px;
   background-color: #FFFFFF;
@@ -668,55 +664,58 @@ button:hover {
   left: 50%;
   overflow: hidden;
   text-align: center;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   display: none;
   border-radius: 5px;
   padding: 55px;
-
-  .thanks_h1 {
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 40px;
-    color: @black-color;
-    text-align: center;
-    display: block;
-    padding-bottom: 55px;
-  }
-
-  .thanks_p {
-    display: block;
-    padding-bottom: 30px;
-    font-size: 16px;
-    line-height: 26px;
-    text-align: center;
-    color: @black-color;
-  }
-
-  .btn-close {
-    padding: 13px 35px;
-    border: 1px solid transparent;
-    background: @bg_gradient;
-    .btn-main;
-    transition: all 0.2s;
-
-    &:hover {
-      background: transparent;
-    }
-  }
-
-  &-close {
-    color: @black-color;
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    text-decoration: none;
-    font-size: 40px;
-
-    &:hover {
-      text-decoration: none;
-      color:#4F4F4F;
-    }
-  }
+}
+.modal .thanks_h1 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  color: #193b46;
+  text-align: center;
+  display: block;
+  padding-bottom: 55px;
+}
+.modal .thanks_p {
+  display: block;
+  padding-bottom: 30px;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #193b46;
+}
+.modal .btn-close {
+  display: block;
+  border: none;
+  padding: 25px 64px;
+  background: linear-gradient(91.99deg, #01b1ac 3.06%, #2fb669 99.38%);
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 100px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #FFFFFF;
+  margin: 0 auto;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.modal .btn-close:hover {
+  background: linear-gradient(91.99deg, #2fb669 3.06%, #01b1ac 99.38%);
+}
+.modal-close {
+  color: #193b46;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  text-decoration: none;
+  font-size: 40px;
+}
+.modal-close:hover {
+  cursor: pointer;
 }
 .modal1 {
   z-index: 99999;
@@ -727,92 +726,111 @@ button:hover {
   left: 50%;
   overflow: hidden;
   text-align: center;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   display: none;
   border-radius: 5px;
-  &_form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: column wrap;
-    padding: 39px 35px;
-    width: 100%;
-    &-h2 {
-      .h2;
-      max-width: 415px;
-      margin: 0 auto;
-      padding-bottom: 15px;
-    }
-    &-p {
-      font-size: 14px;
-      line-height: 23px;
-      text-align: center;
-      color: @black-color;
-      max-width: 340px;
-      margin: 0 auto;
-      padding-bottom: 20px;
-    }
-
-    &-input {
-      width: 100%;
-      height: 60px;
-      background: #F4F9FF;
-      border: 2px solid #F4F9FF;
-      font-size: 14px;
-      line-height: 23px;
-      color: @grey-color;
-      padding-left: 28px;
-      margin-bottom: 10px;
-      &::placeholder {
-        font-size: 14px;
-        line-height: 23px;
-        color: @grey-color;
-      }
-
-      &.error {
-        border: 2px solid red;
-      }
-    }
-    &-textarea{
-      width: 100%;
-      height: 140px;
-      resize: none;
-      background: #F4F9FF;
-      border: 2px solid #F4F9FF;
-      font-size: 14px;
-      line-height: 23px;
-      color: @grey-color;
-      padding-top: 10px;
-      padding-left: 28px;
-      margin-bottom: 20px;
-      &::placeholder {
-        font-size: 14px;
-        line-height: 23px;
-        color: @grey-color;
-      }
-    }
-
-    &-btn {
-      .btn-main;
-      &:hover {
-        background: transparent;
-        color: @main-color;
-      }
-    }
-  }
-  &-close {
-    color: @black-color;
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    text-decoration: none;
-    font-size: 40px;
-    &:hover {
-      cursor: pointer;
-      color: @grey-color;
-    }
-  }
-}*/
+}
+.modal1_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  padding: 45px 30px;
+  width: 100%;
+}
+.modal1_form-h2 {
+  font-family: "Yeseva One", sans-serif;
+  text-align: center;
+  font-size: 40px;
+  line-height: 48px;
+  color: #193b46;
+  max-width: 415px;
+  margin: 0 auto;
+  padding-bottom: 15px;
+}
+.modal1_form-p {
+  font-size: 14px;
+  line-height: 23px;
+  text-align: center;
+  color: #193b46;
+  max-width: 340px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+.modal1_form-input {
+  width: 100%;
+  height: 60px;
+  background: #F4F9FF;
+  border: 2px solid #F4F9FF;
+  font-size: 14px;
+  line-height: 23px;
+  color: #193b46;
+  padding-left: 28px;
+  margin-bottom: 10px;
+}
+.modal1_form-input::-webkit-input-placeholder {
+  font-size: 14px;
+  line-height: 23px;
+  color: #193b46;
+}
+.modal1_form-input:-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 23px;
+  color: #193b46;
+}
+.modal1_form-input::-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 23px;
+  color: #193b46;
+}
+.modal1_form-input::placeholder {
+  font-size: 14px;
+  line-height: 23px;
+  color: #193b46;
+}
+.modal1_form-input.error {
+  border: 2px solid red;
+}
+.modal1_form-btn {
+  display: block;
+  border: none;
+  padding: 25px 64px;
+  background: linear-gradient(91.99deg, #01b1ac 3.06%, #2fb669 99.38%);
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 100px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #FFFFFF;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  margin-top: 20px;
+}
+.modal1_form-btn:hover {
+  background: linear-gradient(91.99deg, #2fb669 3.06%, #01b1ac 99.38%);
+}
+.modal1-close {
+  color: #193b46;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  text-decoration: none;
+  font-size: 40px;
+}
+.modal1-close:hover {
+  cursor: pointer;
+}
 @media (max-width: 1320px) {
   .container {
     width: 980px;
@@ -980,6 +998,56 @@ button:hover {
     color: #193b46;
   }
   .btn-main {
+    display: block;
+    border: none;
+    padding: 20px 48px;
+    background: linear-gradient(91.99deg, #01b1ac 3.06%, #2fb669 99.38%);
+    -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+  .modal {
+    width: 90%;
+    top: 5%;
+    left: 50%;
+    padding: 55px 10px;
+  }
+  .modal1 {
+    z-index: 99999;
+    width: 90%;
+    top: 5%;
+  }
+  .modal1_form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    padding: 45px 10px;
+    width: 100%;
+  }
+  .modal1_form-h2 {
+    font-family: "Yeseva One", sans-serif;
+    text-align: center;
+    font-size: 26px;
+    line-height: 32px;
+    color: #193b46;
+  }
+  .modal1_form-btn {
     display: block;
     border: none;
     padding: 20px 48px;

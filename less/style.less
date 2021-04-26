@@ -541,12 +541,7 @@ button:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.modal, .modal1{
-  display: none;
-}
-
-
-/*.modal {
+.modal {
   z-index: 99999;
   width: 455px;
   background-color: #FFFFFF;
@@ -580,17 +575,13 @@ button:hover {
   }
 
   .btn-close {
-    padding: 13px 35px;
-    border: 1px solid transparent;
-    background: @bg_gradient;
     .btn-main;
+    margin: 0 auto;
     transition: all 0.2s;
-
     &:hover {
-      background: transparent;
+      background: linear-gradient(91.99deg, #2FB669 3.06%, #01B1AC 99.38%);;
     }
   }
-
   &-close {
     color: @black-color;
     position: absolute;
@@ -598,10 +589,8 @@ button:hover {
     right: 20px;
     text-decoration: none;
     font-size: 40px;
-
     &:hover {
-      text-decoration: none;
-      color:#4F4F4F;
+      cursor: pointer;
     }
   }
 }
@@ -622,7 +611,7 @@ button:hover {
     align-items: center;
     justify-content: center;
     flex-flow: column wrap;
-    padding: 39px 35px;
+    padding: 45px 30px;
     width: 100%;
     &-h2 {
       .h2;
@@ -647,43 +636,24 @@ button:hover {
       border: 2px solid #F4F9FF;
       font-size: 14px;
       line-height: 23px;
-      color: @grey-color;
+      color: @black-color;
       padding-left: 28px;
       margin-bottom: 10px;
       &::placeholder {
         font-size: 14px;
         line-height: 23px;
-        color: @grey-color;
+        color: @black-color;
       }
 
       &.error {
         border: 2px solid red;
       }
     }
-    &-textarea{
-      width: 100%;
-      height: 140px;
-      resize: none;
-      background: #F4F9FF;
-      border: 2px solid #F4F9FF;
-      font-size: 14px;
-      line-height: 23px;
-      color: @grey-color;
-      padding-top: 10px;
-      padding-left: 28px;
-      margin-bottom: 20px;
-      &::placeholder {
-        font-size: 14px;
-        line-height: 23px;
-        color: @grey-color;
-      }
-    }
-
     &-btn {
       .btn-main;
+      margin-top: 20px;
       &:hover {
-        background: transparent;
-        color: @main-color;
+        background: linear-gradient(91.99deg, #2FB669 3.06%, #01B1AC 99.38%);;
       }
     }
   }
@@ -696,10 +666,9 @@ button:hover {
     font-size: 40px;
     &:hover {
       cursor: pointer;
-      color: @grey-color;
     }
   }
-}*/
+}
 
 @media (max-width: 1320px) {
   .container {
@@ -879,6 +848,33 @@ button:hover {
     line-height: 18px;
     color: #FFFFFF;
     transition: all 0.2s;
+  }
+
+
+  .modal {
+    width: 90%;
+    top: 5%;
+    left: 50%;
+    padding: 55px 10px;
+  }
+  .modal1 {
+    z-index: 99999;
+    width: 90%;
+    top: 5%;
+    &_form {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: column wrap;
+      padding: 45px 10px;
+      width: 100%;
+      &-h2 {
+        .h2;
+      }
+      &-btn {
+        .btn-main;
+      }
+    }
   }
 
   .banner{

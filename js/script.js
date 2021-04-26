@@ -79,7 +79,7 @@ for (let smoothLink of smoothLinks) {
 let btnMenu = document.getElementsByClassName("header_top_icon");
 let menu = document.getElementsByClassName("header_mob_menu");
 let overlay = document.getElementById("menu-overlay");
-let menu_link = document.getElementsByClassName("header_mob_menu_link");
+
 [].forEach.call(btnMenu,function(el){
     el.addEventListener('click', function (e) {
         if (this.classList.contains('active')){
@@ -107,4 +107,42 @@ overlay.addEventListener('click', function (e) {
         btnMenu[i].classList.remove("active");
     }
     fadeOut(overlay);
+});
+
+let modal = document.getElementById("mainModal1");
+let modal_thanks = document.getElementById("mainModal");
+let fade = document.getElementById("fade");
+let modal_btn = document.getElementsByClassName("modal-btn-close");
+let modal_close = document.getElementsByClassName("modal-close");
+let modal1_close = document.getElementsByClassName("modal1-close");
+let catalog_bnt = document.getElementsByClassName("catalog_btn");
+
+[].forEach.call(catalog_bnt,function(el){
+    el.addEventListener('click', function (e) {
+        fadeIn(fade,"block");
+        fadeIn(modal,'block');
+    });
+});
+[].forEach.call(modal1_close,function(el){
+    el.addEventListener('click', function (e) {
+        fadeOut(fade);
+        fadeOut(modal);
+    });
+});
+[].forEach.call(modal_close,function(el){
+    el.addEventListener('click', function (e) {
+        fadeOut(fade);
+        fadeOut(modal_thanks);
+    });
+});
+[].forEach.call(modal_btn,function(el){
+    el.addEventListener('click', function (e) {
+        fadeOut(fade);
+        fadeOut(modal_thanks);
+    });
+});
+fade.addEventListener('click', function (e) {
+    fadeOut(fade);
+    fadeOut(modal);
+    fadeOut(modal_thanks);
 });
