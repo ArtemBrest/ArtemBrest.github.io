@@ -53,4 +53,19 @@ $(document).ready(function () {
             $('.pagesSlider').slick('slickSetOption', 'adaptiveHeight', true, true);
         }
     });
+    if($(window).width() <= 845 ){
+        if($(".intro_src").hasClass("left")){
+            $(".screen_compact").hide();
+            $(".screen_left").hide();
+            $(".screen_center").show();
+            $(".intro_src").removeClass("left");
+        }
+        else if($(".intro_src").hasClass("compact")){
+            $(".screen_compact").hide();
+            $(".screen_left").hide();
+            $(".screen_center").show();
+            $(".intro_src").removeClass("compact");
+        }
+        $('.pagesSlider').slick('slickSetOption', 'adaptiveHeight', true, true);
+    }
 });
