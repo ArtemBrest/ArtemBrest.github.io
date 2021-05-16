@@ -55,6 +55,7 @@ $(document).ready(function () {
     });
     if($(window).width() <= 845 ){
         if($(".intro_src").hasClass("left")){
+            console.log(1)
             $(".screen_compact").hide();
             $(".screen_left").hide();
             $(".screen_center").show();
