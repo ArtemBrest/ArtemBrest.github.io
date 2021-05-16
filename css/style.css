@@ -82,6 +82,9 @@ body.intro_src {
   background-position: center center;
   background-size: cover;
 }
+.pagesSlider {
+  overflow: hidden;
+}
 .pagesSlider .slick-track {
   display: -webkit-box;
   display: -ms-flexbox;
