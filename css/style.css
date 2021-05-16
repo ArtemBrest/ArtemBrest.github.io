@@ -10,7 +10,6 @@ body {
   font-weight: 400;
   background: #ffffff;
   color: #353538;
-  min-height: 100%;
 }
 input,
 textarea,
@@ -87,6 +86,9 @@ body.intro_src {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.pagesSlider .slick-list {
+  height: 100%!important;
 }
 .pagesSlider .page_slider1 {
   height: inherit;
