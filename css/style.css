@@ -182,32 +182,33 @@ body.intro_src {
   color: #10342f;
   opacity: 0.55;
 }
-.pagesSlider .page_slider1.screen_left .intro {
+.pagesSlider .page_slider1 .screen_left .intro {
   margin-top: 100px;
   margin-left: 160px;
 }
-.pagesSlider .page_slider1.screen_left .intro-h1 {
+.pagesSlider .page_slider1 .screen_left .intro-h1 {
   text-align: left;
 }
-.pagesSlider .page_slider1.screen_left .intro-p {
+.pagesSlider .page_slider1 .screen_left .intro-p {
   margin: 0;
   text-align: left;
 }
-.pagesSlider .page_slider1.screen_left .intro_box {
+.pagesSlider .page_slider1 .screen_left .intro_box {
   position: absolute;
   bottom: 30px;
   right: 60px;
 }
-.pagesSlider .page_slider1.screen_compact .container {
+.pagesSlider .page_slider1 .screen_compact .container {
   height: 100%;
 }
-.pagesSlider .page_slider1.screen_compact .intro {
+.pagesSlider .page_slider1 .screen_compact .intro {
   margin: 45px 0 30px 0;
   background-color: #ffffff;
   padding: 0 120px;
   height: 100%;
+  padding-bottom: 50px;
 }
-.pagesSlider .page_slider1.screen_compact .header {
+.pagesSlider .page_slider1 .screen_compact .header {
   padding: 45px 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -216,7 +217,7 @@ body.intro_src {
 .pagesSlider .page_sliders {
   height: inherit;
 }
-.pagesSlider .page_sliders.screen_compact .header.header_fixed {
+.pagesSlider .page_sliders .screen_compact .header.header_fixed {
   -webkit-box-shadow: none;
           box-shadow: none;
   padding: 30px 45px 30px 45px;
@@ -230,20 +231,26 @@ body.intro_src {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.pagesSlider .page_sliders.screen_compact .header_pagination {
+.pagesSlider .page_sliders .screen_compact .header_pagination {
   position: absolute;
   right: 45px;
 }
-.pagesSlider .page_sliders.screen_compact .container {
+.pagesSlider .page_sliders .screen_compact .container {
   height: 100%;
 }
-.pagesSlider .page_sliders.screen_compact .back_white {
+.pagesSlider .page_sliders .screen_compact .back_white {
   margin: 45px 0 30px 0;
   height: 100%;
+  padding-bottom: 50px;
 }
-.pagesSlider .page_sliders.screen_compact .page_sliders_arrow {
-  right: 50%;
-  margin-right: -80px;
+.pagesSlider .page_sliders .screen_compact .page_sliders_arrow {
+  right: inherit;
+  bottom: inherit;
+  position: inherit;
+  margin: 50px 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .pagesSlider .page_sliders .header {
   padding: 50px 55px;
@@ -398,23 +405,23 @@ body.intro_src {
   background-image: url(../img/svg/check.svg);
   background-repeat: no-repeat;
 }
-.pagesSlider .page_sliders ~ .page_slider2.screen_compact .page_slider2_question {
+.pagesSlider .page_sliders .page_slider2.screen_compact .page_slider2_question {
   padding: 30px 160px 0 160px;
 }
-.pagesSlider .page_sliders ~ .page_slider2.screen_left .container {
+.pagesSlider .page_sliders .page_slider2.screen_left .container {
   margin: 0;
   padding: 0;
 }
-.pagesSlider .page_sliders ~ .page_slider2.screen_left .page_slider2-img {
+.pagesSlider .page_sliders .page_slider2.screen_left .page_slider2-img {
   left: inherit;
   right: 0;
   -webkit-transform: scale(-1, 1);
           transform: scale(-1, 1);
 }
-.pagesSlider .page_sliders ~ .page_slider2.screen_left .page_slider2_question {
+.pagesSlider .page_sliders .page_slider2.screen_left .page_slider2_question {
   padding: 70px 157px 0 157px;
 }
-.pagesSlider .page_sliders ~ .page_slider2.screen_left .page_slider2_question-h1 {
+.pagesSlider .page_sliders .page_slider2.screen_left .page_slider2_question-h1 {
   text-align: left;
 }
 .pagesSlider .page_sliders .page_slider3_question {
@@ -450,17 +457,17 @@ body.intro_src {
   line-height: 30px;
   opacity: 0.56;
 }
-.pagesSlider .page_sliders ~ .page_slider3.screen_compact .page_slider3_question {
+.pagesSlider .page_sliders .page_slider3.screen_compact .page_slider3_question {
   padding: 30px 90px 0 90px;
 }
-.pagesSlider .page_sliders ~ .page_slider3.screen_left .container {
+.pagesSlider .page_sliders .page_slider3.screen_left .container {
   margin: 0;
   padding: 0;
 }
-.pagesSlider .page_sliders ~ .page_slider3.screen_left .page_slider3_question-h1 {
+.pagesSlider .page_sliders .page_slider3.screen_left .page_slider3_question-h1 {
   text-align: left;
 }
-.pagesSlider .page_sliders ~ .page_slider3.screen_left .page_slider3_question-p {
+.pagesSlider .page_sliders .page_slider3.screen_left .page_slider3_question-p {
   text-align: left;
 }
 .pagesSlider .page_sliders .page_slider4-img_top {
@@ -528,28 +535,28 @@ body.intro_src {
 .pagesSlider .page_sliders .page_slider4_question-btn:hover {
   background: #10342f;
 }
-.pagesSlider .page_sliders ~ .page_slider4.screen_compact .page_slider4_question {
+.pagesSlider .page_sliders .page_slider4.screen_compact .page_slider4_question {
   padding: 90px 114px 0 114px;
 }
-.pagesSlider .page_sliders ~ .page_slider4.screen_compact .page_slider4-img_top {
+.pagesSlider .page_sliders .page_slider4.screen_compact .page_slider4-img_top {
   position: absolute;
   top: 180px;
   left: -220px;
 }
-.pagesSlider .page_sliders ~ .page_slider4.screen_left .container {
+.pagesSlider .page_sliders .page_slider4.screen_left .container {
   margin: 0;
   padding: 0;
 }
-.pagesSlider .page_sliders ~ .page_slider4.screen_left .page_slider4-img_top {
+.pagesSlider .page_sliders .page_slider4.screen_left .page_slider4-img_top {
   right: 200px;
   left: inherit;
   bottom: 250px;
   top: inherit;
 }
-.pagesSlider .page_sliders ~ .page_slider4.screen_left .page_slider4_question-h1 {
+.pagesSlider .page_sliders .page_slider4.screen_left .page_slider4_question-h1 {
   text-align: left;
 }
-.pagesSlider .page_sliders ~ .page_slider4.screen_left .page_slider4_question-p {
+.pagesSlider .page_sliders .page_slider4.screen_left .page_slider4_question-p {
   text-align: left;
 }
 .pagesSlider .page_sliders .page_slider5-img_top {
@@ -616,27 +623,27 @@ body.intro_src {
 .pagesSlider .page_sliders .page_slider5_question-btn:hover {
   background: #10342f;
 }
-.pagesSlider .page_sliders ~ .page_slider5.screen_compact .page_slider5-img_top {
+.pagesSlider .page_sliders .page_slider5.screen_compact .page_slider5-img_top {
   top: 35px;
   left: 55px;
 }
-.pagesSlider .page_sliders ~ .page_slider5.screen_compact .page_slider5_question {
+.pagesSlider .page_sliders .page_slider5.screen_compact .page_slider5_question {
   padding: 30px 114px 0 114px;
 }
-.pagesSlider .page_sliders ~ .page_slider5.screen_left .container {
+.pagesSlider .page_sliders .page_slider5.screen_left .container {
   margin: 0;
   padding: 0;
 }
-.pagesSlider .page_sliders ~ .page_slider5.screen_left .page_slider5_question-h1 {
+.pagesSlider .page_sliders .page_slider5.screen_left .page_slider5_question-h1 {
   text-align: left;
 }
-.pagesSlider .page_sliders ~ .page_slider5.screen_left .page_slider5_question-p {
+.pagesSlider .page_sliders .page_slider5.screen_left .page_slider5_question-p {
   text-align: left;
 }
-.pagesSlider .page_sliders ~ .page_slider5.screen_left .page_slider5_question-img {
+.pagesSlider .page_sliders .page_slider5.screen_left .page_slider5_question-img {
   margin: 0 0 40px 0;
 }
-.pagesSlider .page_sliders ~ .page_slider5.screen_left .page_slider5-img_top {
+.pagesSlider .page_sliders .page_slider5.screen_left .page_slider5-img_top {
   left: 50%;
   top: -20px;
 }
@@ -686,7 +693,7 @@ body.intro_src {
   outline: none;
 }
 @media (max-width: 1350px) {
-  .pagesSlider .page_sliders ~ .page_slider4.screen_left .page_slider4-img_bottom {
+  .pagesSlider .page_sliders .page_slider4.screen_left .page_slider4-img_bottom {
     -webkit-transform: scale(-1, 1);
             transform: scale(-1, 1);
     right: inherit;
@@ -704,13 +711,13 @@ body.intro_src {
     width: 845px;
     left: -20px;
   }
-  .pagesSlider .page_sliders ~ .page_slider5.screen_left .page_slider5-img_top {
+  .pagesSlider .page_sliders .page_slider5.screen_left .page_slider5-img_top {
     display: none;
   }
-  .pagesSlider .page_sliders ~ .page_slider4.screen_compact .page_slider4-img_top {
+  .pagesSlider .page_sliders .page_slider4.screen_compact .page_slider4-img_top {
     left: 0;
   }
-  .pagesSlider .page_sliders ~ .page_slider5.screen_compact .page_slider5-img_top {
+  .pagesSlider .page_sliders .page_slider5.screen_compact .page_slider5-img_top {
     left: -20px;
   }
 }
