@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Papilio</title>
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header_top">
+            <div class="header_top_el">
+                <div class="header_top_lang">
+                    <div class="header_top_lang_dropdown_trigger" onclick="myFunction()">
+                        <span class="link_text">RU</span>
+                        <img src="img/svg/switch.svg" alt="switch" class="header_top_lang_dropdown-img">
+                    </div>
+                    <div class="header_top_lang_links_dropdown" id="links_dropdown">
+                        <a href="#" data-lang="RU" class="set_lang">RU</a>
+                        <a href="#" data-lang="EN" class="set_lang">EN</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header_top_logo">
+                <a href="#">
+                    <img src="img/svg/logo.svg" alt="Papilio">
+                </a>
+            </div>
+            <div class="header_top_el right">
+                <div class="header_top_login">Войти</div>
+                <div class="header_top_cart">Коризина (<span class="number">0</span>)</div>
+            </div>
+        </div>
+    </div>
+    <div class="header_bottom" id="header_fixed">
+        <div class="container">
+            <div class="header_menu">
+                <ul class="header_menu_ul">
+                    <li class="header_menu_li">
+                        <a class="header_menu_link" href="#">Платья на заказ</a>
+                    </li>
+                    <li class="header_menu_li">
+                        <a class="header_menu_link" href="#">Коллекции</a>
+                        <div class="header_menu_catalog">
+                            <div class="container">
+                                <div class="header_menu_catalog_row">
+                                    <div class="header_menu_catalog_menu">
+                                        <ul class="catalog_menu_ul">
+                                            <li class="catalog_menu_li">
+                                                <a href="#" class="catalog_menu_link">BRIDAL</a>
+                                                <ul class="catalog_menu_sub_ul">
+                                                    <li class="catalog_menu_sub_li"><a class="catalog_menu_sub_link" href="#">Summer Garden</a></li>
+                                                    <li class="catalog_menu_sub_li"><a class="catalog_menu_sub_link" href="#">Ballet</a></li>
+                                                    <li class="catalog_menu_sub_li"><a class="catalog_menu_sub_link" href="#">Freedom</a></li>
+                                                    <li class="catalog_menu_sub_li"><a class="catalog_menu_sub_link" href="#">Impression</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="catalog_menu_li">
+                                                <a href="#" class="catalog_menu_link">EVENING</a>
+                                                <ul class="catalog_menu_sub_ul">
+                                                    <li class="catalog_menu_sub_li"><a class="catalog_menu_sub_link" href="#">Galatea</a></li>
+                                                    <li class="catalog_menu_sub_li"><a class="catalog_menu_sub_link" href="#">Cassiopeia</a></li>
+                                                    <li class="catalog_menu_sub_li"><a class="catalog_menu_sub_link" href="#">Admire</a></li>
+                                                    <li class="catalog_menu_sub_li"><a class="catalog_menu_sub_link" href="#">Allure</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="header_menu_catalog_banner">
+                                        <img src="img/jpg/banner_menu.jpg" alt="banner_menu">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header_menu_li">
+                        <a class="header_menu_link" href="#">Магазин</a>
+                        <ul class="header_menu_sub">
+                            <li class="header_menu_sub_li">
+                                <a class="header_menu_sub_link" href="#">FAQ</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header_menu_li">
+                        <a class="header_menu_link" href="#">Бренд</a>
+                        <ul class="header_menu_sub">
+                            <li class="header_menu_sub_li">
+                                <a class="header_menu_sub_link" href="#">О нас</a>
+                            </li>
+                            <li class="header_menu_sub_li">
+                                <a class="header_menu_sub_link" href="#">Отзывы</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header_menu_li">
+                        <a class="header_menu_link" href="#">INFO</a>
+                        <ul class="header_menu_sub">
+                            <li class="header_menu_sub_li">
+                                <a class="header_menu_sub_link" href="#">FAQ</a>
+                            </li>
+                            <li class="header_menu_sub_li">
+                                <a class="header_menu_sub_link" href="#">Контакты</a>
+                            </li>
+                            <li class="header_menu_sub_li">
+                                <a class="header_menu_sub_link" href="#">Оплата</a>
+                            </li>
+                            <li class="header_menu_sub_li">
+                                <a class="header_menu_sub_link" href="#">Доставка</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<main class="content">
+    <div class="container">
+        <nav class="nav">
+            <a href="#" class="nav_li">Главная</a>
+            <span class="nav_li">/</span>
+            <span class="nav_li active">Каталог</span>
+        </nav>
+        <section class="product_page">
+            <div class="product_page_slider">
+                <div class="swiper-container swiper_slider-main" >
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/png/catalog-4.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/png/catalog-1.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/png/catalog-2.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/png/catalog-3.png" />
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next">
+                    <img src="img/svg/next.svg" alt="">
+                </div>
+                <div class="swiper-button-prev">
+                    <img src="img/svg/prev.svg" alt="">
+                </div>
+                <div thumbsSlider="" class="swiper-container swiper_slider-sub">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/png/catalog-4.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/png/catalog-1.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/png/catalog-2.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/png/catalog-3.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product_page_info">
+                <span class="product_page_info-artikul">A1686/1</span>
+                <h1 class="product_page_info-name">Платье Colorful dreams</h1>
+                <div class="product_page_info_color">
+                    <p class="product_page_info_color-name">Цвет:</p>
+                    <div class="product_page_info_color_row">
+                        <div class="color active">
+                            <div class="color1 color-img"></div>
+                        </div>
+                        <div class="color">
+                            <div class="color2 color-img"></div>
+                        </div>
+                        <div class="color">
+                            <div class="color3 color-img"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product_page_info_size">
+                    <p class="product_page_info_size-name">Размер:</p>
+                    <div class="product_page_info_size_group">
+                        <div class="product_page_info_size_row">
+                            <div class="size ">40</div>
+                            <div class="size">42</div>
+                            <div class="size active">44</div>
+                            <div class="size">46</div>
+                        </div>
+                        <a href="#" class="product_page_info_size-table">Таблица размеров</a>
+                    </div>
+                </div>
+                <span class="product_page_info-price">600$</span>
+                <div class="product_page_info_row">
+                    <button class="product_page_info_row-btn">Добавить в корзину</button>
+                    <button class="product_page_info_row-btn1">Заказать в один клик</button>
+                </div>
+                <div class="product_page_info_accordion">
+                    <div class="accordion">
+                        <div class="accordion_row">
+                            <p class="accordion_row-name">Описание</p>
+                            <div class="accordion_row-icon">
+                                <svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1L5 4L9 1" stroke="#4F4F4F" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="accordion_content">
+                            <ul>
+                                <li>Платье из плательной ткани, прямого силуэта, с центральной бортовой застежкой, на шесть петель и пуговиц.</li>
+                                <li>Перед с отрезным бочком, в шве которого обработан карман.</li>
+                                <li>Рукава втачные, одношовные, длинной 3/4, окат и низ рукава присборен, с притачными манжетами, манжеты с вставкой, вставка с отделочными строчками, выполненными эластичной нитью.</li>
+                                <li>Горловина переда с вырезом фигурной формы, горловина спинки круглая.</li>
+                                <li>Платье со съемным поясом, застегивающимся на пряжку и шесть блочек.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion_row">
+                            <p class="accordion_row-name">Состав</p>
+                            <div class="accordion_row-icon">
+                                <svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1L5 4L9 1" stroke="#4F4F4F" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="accordion_content">
+                            <ul>
+                                <li>Платье из плательной ткани, прямого силуэта, с центральной бортовой застежкой, на шесть петель и пуговиц.</li>
+                                <li>Перед с отрезным бочком, в шве которого обработан карман.</li>
+                                <li>Рукава втачные, одношовные, длинной 3/4, окат и низ рукава присборен, с притачными манжетами, манжеты с вставкой, вставка с отделочными строчками, выполненными эластичной нитью.</li>
+                                <li>Горловина переда с вырезом фигурной формы, горловина спинки круглая.</li>
+                                <li>Платье со съемным поясом, застегивающимся на пряжку и шесть блочек.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="product_page_shop">
+            <div class="product_page_shop_cards">
+                <div class="card">
+                    <div class="card_preview">
+                        <img src="img/png/catalog-1.png" alt="catalog-1" class="card_preview-img">
+                    </div>
+                    <div class="card_hover">
+                        <img src="img/png/catalog-2.png" alt="catalog-2" class="card_hover-img">
+                    </div>
+                    <div class="card_content">
+                        <span class="card_content_title">Платье из льна</span>
+                        <span class="card_content-price">600$</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_preview">
+                        <img src="img/png/catalog-3.png" alt="catalog-3" class="card_preview-img">
+                    </div>
+                    <div class="card_hover">
+                        <img src="img/png/catalog-4.png" alt="catalog-4" class="card_hover-img">
+                    </div>
+                    <div class="card_content">
+                        <span class="card_content_title">Платье из льна</span>
+                        <span class="card_content-price">600$</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_preview">
+                        <img src="img/png/catalog-5.png" alt="catalog-5" class="card_preview-img">
+                    </div>
+                    <div class="card_hover">
+                        <img src="img/png/catalog-6.png" alt="catalog-6" class="card_hover-img">
+                    </div>
+                    <div class="card_content">
+                        <span class="card_content_title">Платье из льна</span>
+                        <span class="card_content-price">600$</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_preview">
+                        <img src="img/png/catalog-7.png" alt="catalog-7" class="card_preview-img">
+                    </div>
+                    <div class="card_hover">
+                        <img src="img/png/catalog-8.png" alt="catalog-8" class="card_hover-img">
+                    </div>
+                    <div class="card_content">
+                        <span class="card_content_title">Платье из льна</span>
+                        <span class="card_content-price">600$</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+<footer class="footer">
+    <div class="footer_top-line">
+        <div class="container">
+            <div class="footer_top">
+                <ul class="footer_top_menu_ul">
+                    <li class="footer_top_menu_li"><a href="#" class="footer_top_menu_link">Доставка</a></li>
+                    <li class="footer_top_menu_li"><a href="#" class="footer_top_menu_link">Оплата</a></li>
+                    <li class="footer_top_menu_li"><a href="#" class="footer_top_menu_link">Возврат</a></li>
+                    <li class="footer_top_menu_li"><a href="#" class="footer_top_menu_link">Договор публичной оферты</a></li>
+                    <li class="footer_top_menu_li"><a href="#" class="footer_top_menu_link">Политика конфиденциальности</a></li>
+                </ul>
+                <div class="footer_top_social">
+                    <a href="#" class="footer_top_social-link">Instagram</a>
+                    <a href="#" class="footer_top_social-link">Facebook</a>
+                    <a href="#" class="footer_top_social-link">Pinterest</a>
+                    <a href="#" class="footer_top_social-link">You Tube</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer_middle-line">
+        <div class="container">
+            <div class="footer_middle">
+                <a href="#" class="footer_middle_logo">
+                    <img src="img/svg/logo.svg" alt="" class="footer_middle_logo-img">
+                </a>
+                <div class="footer_middle_column">
+                    <a href="tel:+375333338008" class="footer_middle_column-link">+375 (33) 333-80-08</a>
+                    <address class="footer_middle_column-address">г. Брест, ул. Суворова, д. 101 «А», кв.5</address>
+                    <span class="footer_middle_column-time">Пн-птн – с 10.00 до 17.00</span>
+                </div>
+                <div class="footer_middle-text">Интернет-магазин Alena Goretskaya. ИП Горецкая Арина Львовна.
+                    УНП 290941152. Свидетельство о государственной регистрации № 0168757, выдано Администрацией Московского района г. Бреста 12.10.2009.
+                    Регистрационный номер в Торговом реестре РБ № 445476 от 2 апреля 2019 года</div>
+            </div>
+        </div>
+    </div>
+    <div class="footer_bottom">
+        <div class="container">
+            <div class="footer_bottom_row">
+                <p class="footer_bottom_row-text">© 2021 Papilio</p>
+                <p class="footer_bottom_row-text">Создание и продвижение сайтов - <a href="#">InternetSozdateli</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="menu-overlay"></div>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
