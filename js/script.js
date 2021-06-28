@@ -156,7 +156,6 @@ var swiper = new Swiper(".swiper_slider-sub", {
     loop: true,
 });
 var swiper2 = new Swiper(".swiper_slider-main", {
-    spaceBetween: 20,
     loop: true,
     navigation: {
         nextEl: ".swiper-button-next",
@@ -175,17 +174,29 @@ var swiper3 = new Swiper(".about_production_swiper", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+            centeredSlides: false,
+        },
+        992: {
+            slidesPerView: 2,
+            centeredSlides: true,
+        },
+    },
 });
 
 
 //this is the button
 var acc = document.getElementsByClassName("accordion_row");
+//var acc_btn = document.querySelectorAll("accordion_row");
 var i;
 
 for (i = 0; i < acc.length; i++) {
     //when one of the buttons are clicked run this function
     acc[i].onclick = function() {
         //variables
+
         var panel = this.nextElementSibling;
         var coursePanel = document.getElementsByClassName("accordion_content");
         var courseAccordion = document.getElementsByClassName("accordion_row");
@@ -197,6 +208,7 @@ for (i = 0; i < acc.length; i++) {
             panel.style.maxHeight = null;
             //removes the 'active' class as toggle didnt work on browsers minus chrome
             this.classList.remove("active");
+            this.innerHTML = "Показть  ответ Papilio";
         } else { //pannel isnt open...
             //goes through the buttons and removes the 'active' css (+ and -)
             for (var ii = 0; ii < courseAccordionActive.length; ii++) {
@@ -211,6 +223,7 @@ for (i = 0; i < acc.length; i++) {
             panel.style.maxHeight = panel.scrollHeight + "px";
             //adds the 'active' addition to the css.
             this.classList.add("active");
+            this.innerHTML = "Свернуть ответ Papilio";
         }
     }//closing to the acc onclick function
 }//closing to the for loop.
