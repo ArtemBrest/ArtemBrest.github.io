@@ -2193,6 +2193,9 @@ button:hover {
   .container {
     width: 980px;
   }
+  .header {
+    display: none;
+  }
   .product_page {
     display: -webkit-box;
     display: -ms-flexbox;
