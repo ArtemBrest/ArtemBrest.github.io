@@ -1,19 +1,3 @@
-function myFunction() {
-    document.getElementById("links_dropdown").classList.toggle("show");
-}
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-    if (!event.target.matches('.header_top_lang_dropdown_trigger')) {
-        var dropdowns = document.querySelectorAll(".header_top_lang_links_dropdown");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-            }
-        }
-    }
-}
 function fadeOut(el) {
     el.style.opacity = 1;
     (function fade() {
@@ -37,91 +21,25 @@ function fadeIn(el, display) {
     })();
 };
 
-let li = document.querySelectorAll(".header_menu_li");
-let li_filter = document.querySelectorAll(".filter_menu_li");
+function myFunction() {
+    document.getElementById("links_dropdown").classList.toggle("show");
+}
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+    if (!event.target.matches('.header_top_lang_dropdown_trigger')) {
+        var dropdowns = document.querySelectorAll(".header_top_lang_links_dropdown");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
+////////////////////////////// header fixed ///////////////////////////////
 let menu_overlay = document.querySelector(".menu-overlay");
 let header_filter = document.querySelector(".header");
-let filter = document.querySelector(".catalog_page_filter");
-
-
-
-
-
-
-for( let i = 0; i < li.length; i++){ // проходим циклом по всем элементам объекта
-    if (li[i].querySelector('.header_menu_sub') != null){
-        li[i].classList.add("has-children");
-        var image = document.createElement('img');
-        image.src='img/svg/switch.svg';
-        image.alt='switch';
-        li[i].appendChild(image);
-    }
-    if (li[i].querySelector('.header_menu_catalog') != null){
-        li[i].classList.add("has-catalog");
-        var image = document.createElement('img');
-        image.src='img/svg/switch.svg';
-        image.alt='switch';
-        li[i].appendChild(image);
-    }
-    li[i].querySelector('.header_menu_link').addEventListener('click', event => {
-        header_filter.style.zIndex = '99999';
-        for( let i = 0; i < li.length; i++){
-            li[i].classList.remove("show");
-        }
-        if(li[i].classList.contains("has-children")){
-            li[i].classList.add("show");
-            fadeIn(menu_overlay, "block");
-            filter.style.zIndex = '9';
-        }
-        else if(li[i].classList.contains("has-catalog")){
-            li[i].classList.add("show");
-            fadeIn(menu_overlay, "block");
-            filter.style.zIndex = '9';
-        }
-        else{
-            fadeOut(menu_overlay);
-            filter.style.zIndex = '9999';
-        }
-    });
-    menu_overlay.addEventListener('click', event => {
-        fadeOut(menu_overlay);
-        for( let i = 0; i < li.length; i++){
-            li[i].classList.remove("show");
-        }
-    });
-}
-for( let i = 0; i < li_filter.length; i++){ // проходим циклом по всем элементам объекта
-    filter.style.zIndex = '9999';
-    if (li_filter[i].querySelector('.filter_menu_dropdown') != null){
-        li_filter[i].classList.add("has-filter");
-        var image = document.createElement('img');
-        image.src='img/svg/switch.svg';
-        image.alt='switch';
-        li_filter[i].appendChild(image);
-    }
-    li_filter[i].querySelector('.filter_menu_link').addEventListener('click', event => {
-        for( let i = 0; i < li.length; i++){
-            li_filter[i].classList.remove("show");
-        }
-        if(li_filter[i].classList.contains("has-filter")){
-            li_filter[i].classList.add("show");
-            fadeIn(menu_overlay, "block");
-            header_filter.style.zIndex = '9';
-        }
-        else{
-            fadeOut(menu_overlay);
-            header_filter.style.zIndex = '99999';
-        }
-    });
-    menu_overlay.addEventListener('click', event => {
-        fadeOut(menu_overlay);
-        for( let i = 0; i < li.length; i++){
-            li_filter[i].classList.remove("show");
-        }
-    });
-}
-
-
 var header = document.getElementById("header_fixed");
 var lang_switch = document.querySelector('.header_top_lang')
 var stuck = false;
@@ -149,7 +67,130 @@ window.onscroll = function(e) {
         stuck = false;
     }
 }
+////////////////////////////// end header fixed ///////////////////////////////
 
+
+
+
+////////////////////////////// filter ///////////////////////////////
+let li_filter = document.querySelectorAll(".filter_menu_li");
+let filter = document.querySelector(".catalog_page_filter");
+let filter_mob = document.querySelector(".catalog_page_filter_mob");
+if (filter_mob !== null) {
+    filter_mob.addEventListener('click', event => {
+        if(filter_mob.classList.contains("active")){
+            fadeOut(filter);
+            filter_mob.classList.remove("active")
+        }
+        else{
+            fadeIn(filter,"flex");
+            filter_mob.classList.add("active")
+        }
+    });
+}
+for( let i = 0; i < li_filter.length; i++){ // проходим циклом по всем элементам объекта
+    filter.style.zIndex = '9999';
+    if (li_filter[i].querySelector('.filter_menu_dropdown') != null){
+        li_filter[i].classList.add("has-filter");
+        var image = document.createElement('img');
+        image.src='img/svg/switch.svg';
+        image.alt='switch';
+        li_filter[i].appendChild(image);
+    }
+    li_filter[i].querySelector('.filter_menu_link').addEventListener('click', event => {
+        for( let i = 0; i < li.length; i++){
+            li_filter[i].classList.remove("show");
+        }
+        if(li_filter[i].classList.contains("has-filter")){
+            li_filter[i].classList.add("show");
+            if(window.screen.width > 1520){
+                fadeIn(menu_overlay, "block");
+                header_filter.style.zIndex = '9';
+            }
+        }
+        else{
+            if(window.screen.width > 1520){
+                fadeOut(menu_overlay);
+                header_filter.style.zIndex = '99999';
+            }
+        }
+    });
+    menu_overlay.addEventListener('click', event => {
+        fadeOut(menu_overlay);
+        for( let i = 0; i < li.length; i++){
+            li_filter[i].classList.remove("show");
+        }
+    });
+}
+////////////////////////////// end filter ///////////////////////////////
+
+
+////////////////////////////// header menu ///////////////////////////////
+let li = document.querySelectorAll(".header_menu_li");
+for( let i = 0; i < li.length; i++){ // проходим циклом по всем элементам объекта
+    if (li[i].querySelector('.header_menu_sub') != null){
+        li[i].classList.add("has-children");
+        var image = document.createElement('img');
+        image.src='img/svg/switch.svg';
+        image.alt='switch';
+        li[i].appendChild(image);
+    }
+    if (li[i].querySelector('.header_menu_catalog') != null){
+        li[i].classList.add("has-catalog");
+        var image = document.createElement('img');
+        image.src='img/svg/switch.svg';
+        image.alt='switch';
+        li[i].appendChild(image);
+    }
+    li[i].querySelector('.header_menu_link').addEventListener('click', event => {
+        header_filter.style.zIndex = '99999';
+        for( let i = 0; i < li.length; i++){
+            li[i].classList.remove("show");
+        }
+        if(li[i].classList.contains("has-children")){
+            li[i].classList.add("show");
+            if(window.screen.width > 1520) {
+                fadeIn(menu_overlay, "block");
+                if (filter !== null) {
+                    filter.style.zIndex = '9';
+                }
+            }
+        }
+        else if(li[i].classList.contains("has-catalog")){
+            li[i].classList.add("show");
+            if(window.screen.width > 1520) {
+                fadeIn(menu_overlay, "block");
+                if (filter !== null) {
+                    filter.style.zIndex = '9';
+                }
+            }
+        }
+        else{
+            if(window.screen.width > 1520) {
+                fadeOut(menu_overlay);
+                if (filter !== null) {
+                    filter.style.zIndex = '9999';
+                }
+            }
+        }
+    });
+    menu_overlay.addEventListener('click', event => {
+        if(window.screen.width > 1520){
+            header_filter.style.zIndex = '9';
+            if (filter !== null) {
+                filter.style.zIndex = '9999';
+            }
+        }
+        fadeOut(menu_overlay);
+        for( let i = 0; i < li.length; i++){
+            li[i].classList.remove("show");
+        }
+    });
+}
+////////////////////////////// end header menu ///////////////////////////////
+
+
+////////////////////////////// slider ///////////////////////////////
 var swiper = new Swiper(".swiper_slider-sub", {
     spaceBetween: 20,
     slidesPerView: 4,
@@ -185,13 +226,12 @@ var swiper3 = new Swiper(".about_production_swiper", {
         },
     },
 });
+////////////////////////////// end slider ///////////////////////////////
 
 
-//this is the button
+////////////////////////////// accordion ///////////////////////////////
 var acc = document.getElementsByClassName("accordion_row");
-//var acc_btn = document.querySelectorAll("accordion_row");
 var i;
-
 for (i = 0; i < acc.length; i++) {
     //when one of the buttons are clicked run this function
     acc[i].onclick = function() {
@@ -208,7 +248,9 @@ for (i = 0; i < acc.length; i++) {
             panel.style.maxHeight = null;
             //removes the 'active' class as toggle didnt work on browsers minus chrome
             this.classList.remove("active");
-            this.innerHTML = "Показть  ответ Papilio";
+            if(this.classList.contains("review_accordion-btn")){
+                this.innerHTML = "Показть  ответ Papilio";
+            }
         } else { //pannel isnt open...
             //goes through the buttons and removes the 'active' css (+ and -)
             for (var ii = 0; ii < courseAccordionActive.length; ii++) {
@@ -223,30 +265,60 @@ for (i = 0; i < acc.length; i++) {
             panel.style.maxHeight = panel.scrollHeight + "px";
             //adds the 'active' addition to the css.
             this.classList.add("active");
-            this.innerHTML = "Свернуть ответ Papilio";
+            if(this.classList.contains("review_accordion-btn")){
+                this.innerHTML = "Свернуть ответ Papilio";
+            }
+            //this.innerHTML = "Свернуть ответ Papilio";
         }
     }//closing to the acc onclick function
 }//closing to the for loop.
+////////////////////////////// end accordion ///////////////////////////////
 
 
-////////////////////////////// review pop
+////////////////////////////// review popup ///////////////////////////////
 let review_btn = document.querySelector(".review_banner_column-btn");
+let order_btn = document.querySelector(".order_dress_page_info-btn")
 let fade_bg = document.querySelector(".fade");
 let review_popup = document.querySelector(".modal1");
+let order_popup = document.querySelector(".order_modal");
 let review_close = document.querySelector(".modal1-close");
-
-review_btn.addEventListener('click', event => {
-    fadeIn(review_popup,'block');
-    fadeIn(fade_bg,'block');
-});
-fade_bg.addEventListener('click', event => {
-    fadeOut(review_popup);
-    fadeOut(fade_bg);
-});
-review_close.addEventListener('click', event => {
-    fadeOut(review_popup);
-    fadeOut(fade_bg);
-});
+let order_close = document.querySelector(".order_modal-close")
+if (review_btn !== null) {
+    review_btn.addEventListener('click', event => {
+        fadeIn(review_popup,'block');
+        fadeIn(fade_bg,'block');
+    });
+}
+if (order_btn !== null) {
+    order_btn.addEventListener('click', event => {
+        fadeIn(order_popup,'block');
+        fadeIn(fade_bg,'block');
+    });
+}
+if (review_close !== null) {
+    review_close.addEventListener('click', event => {
+        fadeOut(review_popup);
+        fadeOut(fade_bg);
+    });
+}
+if (order_close !== null) {
+    order_close.addEventListener('click', event => {
+        fadeOut(order_popup);
+        fadeOut(fade_bg);
+    });
+}
+if (fade_bg !== null) {
+    fade_bg.addEventListener('click', event => {
+        if (review_popup !== null) {
+            fadeOut(review_popup);
+        }
+        if (order_popup !== null) {
+            fadeOut(order_popup);
+        }
+        fadeOut(fade_bg);
+    });
+}
+////////////////////////////// end review popup ///////////////////////////////
 
 
 
