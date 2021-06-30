@@ -558,6 +558,10 @@ button:hover {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
+.header_menu_li.show .header_menu_catalog_banner img {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
 .header_menu_link {
   display: block;
   font-size: 14px;
@@ -2096,6 +2100,23 @@ button:hover {
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
+  position: relative;
+}
+.contact_page_banner:before {
+  content: "";
+  background: #F2F2F2;
+  position: absolute;
+  left: -75px;
+  width: 1px;
+  height: 100%;
+}
+.contact_page_banner:after {
+  content: "";
+  background: #F2F2F2;
+  position: absolute;
+  right: -75px;
+  width: 1px;
+  height: 100%;
 }
 .contact_page_form .contact_form {
   display: grid;
@@ -3720,6 +3741,22 @@ button:hover {
     -webkit-box-direction: normal;
         -ms-flex-flow: column wrap;
             flex-flow: column wrap;
+  }
+  .contact_page_banner:before {
+    content: "";
+    background: #F2F2F2;
+    top: -40px;
+    left: inherit;
+    width: 100%;
+    height: 1px;
+  }
+  .contact_page_banner:after {
+    content: "";
+    background: #F2F2F2;
+    right: inherit;
+    width: 100%;
+    height: 1px;
+    bottom: -40px;
   }
   .order_dress_page {
     display: grid;

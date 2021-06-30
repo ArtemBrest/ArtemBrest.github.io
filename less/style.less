@@ -466,6 +466,9 @@ button:hover {
       &.show img{
         transform: rotate(180deg);
       }
+      &.show .header_menu_catalog_banner img{
+        transform: rotate(0deg);
+      }
       &nk{
         display: block;
         font-size: 14px;
@@ -1771,6 +1774,23 @@ button:hover {
     display: flex;
     align-items: center;
     flex-flow: column wrap;
+    position: relative;
+    &:before{
+      content: "";
+      background: #F2F2F2;
+      position: absolute;
+      left: -75px;
+      width: 1px;
+      height: 100%;
+    }
+    &:after{
+      content: "";
+      background: #F2F2F2;
+      position: absolute;
+      right: -75px;
+      width: 1px;
+      height: 100%;
+    }
   }
   &_form{
     .contact_form{
@@ -3191,6 +3211,22 @@ button:hover {
       display: flex;
       align-items: flex-start;
       flex-flow: column wrap;
+      &:before{
+        content: "";
+        background: #F2F2F2;
+        top: -40px;
+        left: inherit;
+        width: 100%;
+        height: 1px;
+      }
+      &:after{
+        content: "";
+        background: #F2F2F2;
+        right: inherit;
+        width: 100%;
+        height: 1px;
+        bottom: -40px;
+      }
     }
   }
   .order_dress_page{
