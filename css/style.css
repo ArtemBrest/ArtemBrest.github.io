@@ -787,6 +787,9 @@ button:hover {
 .sale {
   padding: 85px 0 100px 0;
 }
+.sale.other_page {
+  padding-top: 0;
+}
 .sale_back {
   background-repeat: no-repeat;
   background-size: cover;
@@ -987,6 +990,57 @@ button:hover {
   font-size: 14px;
   line-height: 150%;
   color: #828282;
+}
+.assortment-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: transparent;
+  border: 1px solid #6ccb7f;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 6px;
+  padding: 18px 30px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #6ccb7f;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  margin: 60px auto 0 auto;
+}
+.assortment-btn span {
+  z-index: 2;
+}
+.assortment-btn:after {
+  content: "";
+  position: absolute;
+  height: 0%;
+  left: 50%;
+  top: 50%;
+  width: 150%;
+  z-index: 1;
+  -webkit-transition: all 0.75s ease 0s;
+  transition: all 0.75s ease 0s;
+}
+.assortment-btn:after {
+  background: #6ccb7f;
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+          transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+}
+.assortment-btn:hover {
+  color: #FFF;
+}
+.assortment-btn:hover:after {
+  height: 450%;
 }
 .related {
   padding: 85px 0 100px 0;
@@ -2734,6 +2788,9 @@ button:hover {
   }
   .assortment_cards .card_info {
     padding: 20px 20px 30px 20px;
+  }
+  .assortment-btn {
+    margin: 30px auto 0 auto;
   }
   .related {
     padding: 50px 0 60px 0;

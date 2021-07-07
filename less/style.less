@@ -563,6 +563,9 @@ button:hover {
 }
 .sale{
   padding: 85px 0 100px 0;
+  &.other_page{
+    padding-top: 0;
+  }
   &_back{
     background-repeat: no-repeat;
     background-size: cover;
@@ -712,6 +715,16 @@ button:hover {
           color: #828282;
         }
       }
+    }
+  }
+  &-btn{
+    .btn-main(@main-color);
+    margin: 60px auto 0 auto;
+    &:hover{
+      color: #FFF;
+    }
+    &:hover:after {
+      height: 450%;
     }
   }
 }
@@ -1997,6 +2010,9 @@ button:hover {
           padding: 20px 20px 30px 20px;
         }
       }
+    }
+    &-btn{
+      margin: 30px auto 0 auto;
     }
   }
   .related{
