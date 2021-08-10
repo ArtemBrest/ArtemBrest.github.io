@@ -1,51 +1,51 @@
 @font-face {
-    font-family: 'Muller';
-    src: url('MullerBold.eot');
-    src: url('MullerBold.eot?#iefix') format('embedded-opentype'),
-        url('MullerBold.woff2') format('woff2'),
-        url('MullerBold.woff') format('woff'),
-        url('MullerBold.ttf') format('truetype'),
-        url('MullerBold.svg#MullerBold') format('svg');
+    font-family: 'Gotham Pro';
+    src: url('GothamPro-Bold.eot');
+    src: url('GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('GothamPro-Bold.woff2') format('woff2'),
+        url('GothamPro-Bold.woff') format('woff'),
+        url('GothamPro-Bold.ttf') format('truetype'),
+        url('GothamPro-Bold.svg#GothamPro-Bold') format('svg');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Muller';
-    src: url('MullerExtraBold.eot');
-    src: url('MullerExtraBold.eot?#iefix') format('embedded-opentype'),
-        url('MullerExtraBold.woff2') format('woff2'),
-        url('MullerExtraBold.woff') format('woff'),
-        url('MullerExtraBold.ttf') format('truetype'),
-        url('MullerExtraBold.svg#MullerExtraBold') format('svg');
-    font-weight: 800; /*bold*/
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Muller';
-    src: url('MullerMedium.eot');
-    src: url('MullerMedium.eot?#iefix') format('embedded-opentype'),
-        url('MullerMedium.woff2') format('woff2'),
-        url('MullerMedium.woff') format('woff'),
-        url('MullerMedium.ttf') format('truetype'),
-        url('MullerMedium.svg#MullerMedium') format('svg');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Muller';
-    src: url('MullerRegular.eot');
-    src: url('MullerRegular.eot?#iefix') format('embedded-opentype'),
-        url('MullerRegular.woff2') format('woff2'),
-        url('MullerRegular.woff') format('woff'),
-        url('MullerRegular.ttf') format('truetype'),
-        url('MullerRegular.svg#MullerRegular') format('svg');
+    font-family: 'Gotham Pro';
+    src: url('GothamPro.eot');
+    src: url('GothamPro.eot?#iefix') format('embedded-opentype'),
+        url('GothamPro.woff2') format('woff2'),
+        url('GothamPro.woff') format('woff'),
+        url('GothamPro.ttf') format('truetype'),
+        url('GothamPro.svg#GothamPro') format('svg');
     font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ChunkFive Ex';
+    src: url('ChunkFiveEx.eot');
+    src: url('ChunkFiveEx.eot?#iefix') format('embedded-opentype'),
+        url('ChunkFiveEx.woff2') format('woff2'),
+        url('ChunkFiveEx.woff') format('woff'),
+        url('ChunkFiveEx.ttf') format('truetype'),
+        url('ChunkFiveEx.svg#ChunkFiveEx') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('GothamPro-Medium.eot');
+    src: url('GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('GothamPro-Medium.woff2') format('woff2'),
+        url('GothamPro-Medium.woff') format('woff'),
+        url('GothamPro-Medium.ttf') format('truetype'),
+        url('GothamPro-Medium.svg#GothamPro-Medium') format('svg');
+    font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
