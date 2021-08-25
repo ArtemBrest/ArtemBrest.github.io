@@ -28,6 +28,10 @@ window.addEventListener("load", function(){
                 delay: 4500,
                 disableOnInteraction: false,
             },
+            pagination: {
+                clickable: true,
+                el: ".swiper-pagination",
+            },
         });
     }
 
@@ -266,8 +270,4 @@ window.addEventListener("load", function(){
             }
         });
     }
-
-
-
-
 })
