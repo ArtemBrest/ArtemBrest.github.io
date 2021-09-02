@@ -1127,10 +1127,10 @@ button:hover {
   transition: all 0.2s;
 }
 .hits_swiper .swiper-slide_row_download:hover circle {
-  fill: #FFFFFF;
+  fill: #33cba0;
 }
 .hits_swiper .swiper-slide_row_download:hover path {
-  fill: #33cba0;
+  fill: #FFFFFF;
 }
 .hits_swiper .swiper-button-prev:after,
 .hits_swiper .swiper-rtl .swiper-button-next:after {
