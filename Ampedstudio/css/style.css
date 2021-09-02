@@ -314,7 +314,7 @@ button:hover {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   font-size: 16px;
-  padding: 17px 40px;
+  padding: 16px 40px;
 }
 .header_top_group-btn.other_btn {
   font-family: "Quicksand", sans-serif;
@@ -1385,11 +1385,10 @@ button:hover {
       -ms-flex-pack: center;
           justify-content: center;
   background: #EDFEF5;
-  border-radius: 100px;
-  padding: 15px 30px;
+  border-radius: 10px;
+  padding: 12px 30px;
   font-weight: 600;
-  font-size: 18px;
-  line-height: 180%;
+  font-size: 16px;
   text-transform: uppercase;
   color: #000000;
   margin: 5px 10px 5px 0;
@@ -1407,6 +1406,11 @@ button:hover {
 }
 .blog_cards .card {
   background: #F9F8F9;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.blog_cards .card:hover .card_content-title {
+  color: #33cba0;
 }
 .blog_cards .card_top {
   height: 290px;
@@ -1434,6 +1438,9 @@ button:hover {
   line-height: 180%;
   color: #333333;
   padding-bottom: 15px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 .blog_cards .card_content_row {
   display: -webkit-box;
@@ -1500,6 +1507,7 @@ button:hover {
   border-radius: 100px;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+  padding: 15px 32px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -1752,6 +1760,11 @@ button:hover {
       -ms-flex-pack: start;
           justify-content: flex-start;
   background: #F9F8F9;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.single_page_aside_cards .card:hover .card-text {
+  color: #33cba0;
 }
 .single_page_aside_cards .card-img {
   display: block;
@@ -2026,12 +2039,14 @@ button:hover {
   line-height: 160%;
   color: #333333;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 .manual_grid_aside_li_sub {
   padding-bottom: 5px;
   margin-bottom: 5px;
 }
 .manual_grid_aside_li_sub a {
+  font-weight: 400;
   font-size: 16px;
   line-height: 160%;
   color: #333333;
@@ -2042,7 +2057,9 @@ button:hover {
 .manual_grid_aside_li_sub.active {
   border-bottom: 2px solid #33cba0;
 }
-.manual_grid_aside_li:hover {
+.manual_grid_aside_li:hover,
+.manual_grid_aside_li.active {
+  font-weight: 600;
   color: #33cba0;
 }
 .manual_grid_aside_li.active .manual_grid_aside_ul_sub {

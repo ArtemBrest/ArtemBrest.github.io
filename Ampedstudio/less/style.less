@@ -256,7 +256,7 @@ button:hover {
       &-btn{
         .btn-main;
         font-size: 16px;
-        padding: 17px 40px;
+        padding: 16px 40px;
         &.other_btn{
           font-family: "Quicksand", sans-serif;
           font-weight: 400;
@@ -1033,11 +1033,10 @@ button:hover {
       align-items: center;
       justify-content: center;
       background: #EDFEF5;
-      border-radius: 100px;
-      padding: 15px 30px;
+      border-radius: 10px;
+      padding: 12px 30px;
       font-weight: 600;
-      font-size: 18px;
-      line-height: 180%;
+      font-size: 16px;
       text-transform: uppercase;
       color: #000000;
       margin: 5px 10px 5px 0;
@@ -1055,6 +1054,10 @@ button:hover {
     margin-bottom: 60px;
     .card{
       background: #F9F8F9;
+      transition: all 0.2s;
+      &:hover .card_content-title{
+        color: @main-color;
+      }
       &_top{
         height: 290px;
         &-img{
@@ -1074,6 +1077,8 @@ button:hover {
           line-height: 180%;
           color: @black-color;
           padding-bottom: 15px;
+          cursor: pointer;
+          transition: all 0.2s;
         }
         &_row{
           display: flex;
@@ -1109,6 +1114,7 @@ button:hover {
         }
         &-btn{
           .btn-main;
+          padding: 15px 32px;
           width: fit-content;
           &:hover{
             background: transparent;
@@ -1312,6 +1318,10 @@ button:hover {
         align-items: flex-start;
         justify-content: flex-start;
         background: #F9F8F9;
+        transition: all 0.2s;
+        &:hover .card-text{
+          color: @main-color;
+        }
         &-img{
           display: block;
           height: 100%;
@@ -1539,10 +1549,12 @@ button:hover {
         line-height: 160%;
         color: @black-color;
         margin-bottom: 10px;
+        cursor: pointer;
         &_sub{
           padding-bottom: 5px;
           margin-bottom: 5px;
           & a{
+            font-weight: 400;
             font-size: 16px;
             line-height: 160%;
             color: @black-color;
@@ -1554,7 +1566,9 @@ button:hover {
             border-bottom: 2px solid @main-color;
           }
         }
-        &:hover{
+        &:hover,
+        &.active{
+          font-weight: 600;
           color: @main-color;
         }
         &.active .manual_grid_aside_ul_sub{

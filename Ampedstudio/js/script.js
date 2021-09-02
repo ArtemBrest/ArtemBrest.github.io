@@ -174,20 +174,30 @@ window.addEventListener("load", function(){
         return topDist;
     }
     window.onscroll = function(e) {
-        if(window.pageYOffset)
-        var distance = getDistance() - window.pageYOffset;
-        var offset = window.pageYOffset;
-        if ( (distance <= 0) && !stuck) {
-            if(header.querySelector(".header_top").classList.contains("other_page")){
-                header_home = false;
+        if(window.pageYOffset > 500){
+            var distance = getDistance() - window.pageYOffset;
+            var offset = window.pageYOffset;
+            if ( (distance <= 0) && !stuck) {
+                if(header.querySelector(".header_top").classList.contains("other_page")){
+                    header_home = false;
+                }
+                else{
+                    header.querySelector(".header_top").classList.add("other_page");
+                    header_home = true;
+                }
+                header.classList.add("active");
+                stuck = true;
+            } else if (stuck && (offset <= stickPoint)){
+                if(header_home == true){
+                    header.querySelector(".header_top").classList.remove("other_page");
+                }
+                if (!header_mob.classList.contains("active")){
+                    header.classList.remove("active");
+                }
+                stuck = false;
             }
-            else{
-                header.querySelector(".header_top").classList.add("other_page");
-                header_home = true;
-            }
-            header.classList.add("active");
-            stuck = true;
-        } else if (stuck && (offset <= stickPoint)){
+        }
+        else{
             if(header_home == true){
                 header.querySelector(".header_top").classList.remove("other_page");
             }
