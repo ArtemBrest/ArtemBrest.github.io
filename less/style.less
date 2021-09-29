@@ -121,6 +121,9 @@ button:hover {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.8);
 }
+.main{
+  min-height: calc(~"100vh - 295px");
+}
 .modal_thanks {
   z-index: 999;
   width: 455px;
@@ -322,6 +325,46 @@ button:hover {
       &-btn{
         .btn-main;
         width: 100%;
+      }
+    }
+    &_icon{
+      display: none;
+      align-items: center;
+      justify-content: center;
+      flex-flow: column wrap;
+      width: 40px;
+      height: 40px;
+      position: relative;
+      background: @main-color;
+      border-radius: 50%;
+      &.active{
+        display: block;
+        & .line:nth-child(2){
+          display: none;
+        }
+        & .line:nth-child(1){
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin: 0 0 0 -10px;
+          transform: translate(-50%, -50%);
+          transform: rotate(45deg);
+        }
+        & .line:nth-child(3){
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin: 0 0 0 -10px;
+          transform: translate(-50%, -50%);
+          transform: rotate(-45deg);
+        }
+      }
+      & .line{
+        display: block;
+        height: 2px;
+        width: 20px;
+        background: #FFFFFF;
+        margin: 2px 0;
       }
     }
   }
@@ -873,6 +916,87 @@ button:hover {
         transition: all 1s;
       }
     }
+  }
+}
+.document{
+  margin: 50px 0 100px 0;
+  &-h1{
+    padding-bottom: 50px;
+  }
+  &_column{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    .item{
+      display: block;
+      padding: 25px 30px;
+      background: #F7F7F8;
+      border: 1px solid #F2F2F2;
+      font-size: 16px;
+      line-height: 180%;
+      text-decoration-line: underline;
+      color: #00963F;
+      &:hover{
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+        text-decoration: none;
+      }
+    }
+  }
+}
+.contact{
+  margin-top: 50px;
+  &-h1{
+    padding-bottom: 50px;
+  }
+  &_cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 130px;
+    & .card{
+      display: flex;
+      flex-flow: column wrap;
+      &-title{
+        display: block;
+        font-size: 16px;
+        line-height: 150%;
+        color: #828282;
+        margin-bottom: 10px;
+      }
+      &-text{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 180%;
+        color: #333333;
+        font-style: normal;
+      }
+      & a.card-text:hover{
+        color: @main-color;
+      }
+      &-link{
+        display: flex;
+        justify-content: flex-start;
+        border: none;
+        background: transparent;
+        font-size: 14px;
+        line-height: 150%;
+        text-decoration-line: underline;
+        color: #00963F;
+        padding: 0;
+        margin-top: 10px;
+        &:hover{
+          color: @active-color;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+.map{
+  width: 100%;
+  height: 370px;
+  & iframe{
+    width: 100%;
+    height: 100%;
   }
 }
 .default_text{
