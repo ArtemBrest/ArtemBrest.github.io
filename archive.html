@@ -66,7 +66,7 @@
                     </svg>
                     <p class="header_top_right_row-p">Версия для слабовидящих</p>
                 </div>
-                <button class="header_top_right-btn">Задать вопрос</button>
+                <button class="header_top_right-btn ModalBtnOpen">Задать вопрос</button>
             </div>
             <div class="header_top_icon">
                 <span class="line"></span>
@@ -116,6 +116,67 @@
                 </li>
                 <li class="header_menu_li"><a href="contact.html" class="header_menu_link">Контакты</a></li>
             </ul>
+            <div class="header_menu_phone">
+                <div class="header_menu_phone-icon">
+                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.7563 10.5421L10.1632 7.96272C9.83905 7.64031 9.38524 7.64031 9.0611 7.96272L7.95901 9.05895C6.53278 10.5421 3.03203 7.05995 4.45826 5.64131L5.56035 4.54508C5.88449 4.22266 5.88449 3.77127 5.56035 3.44885L2.9672 0.8695C2.64306 0.547081 2.18926 0.547081 1.86512 0.8695L1.08717 1.64331C-0.274231 2.99747 1.02234 6.4796 4.06929 9.44585C7.05141 12.4121 10.5522 13.7663 11.9136 12.4121L12.7563 11.6383C13.0805 11.3159 13.0805 10.8645 12.7563 10.5421Z"
+                              fill="#FFFFFF"/>
+                    </svg>
+                </div>
+                <p>
+                    <a href="tel:80162217533" class="header_menu_phone-link">8 (0162) 21-75-33,</a>
+                    <a href="tel:80162582052" class="header_menu_phone-link">8 (0162) 58-20-52 (факс)</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="header_menu_mob">
+        <ul class="header_menu_mob_ul">
+            <li class="header_menu_mob_li"><a href="index.html" class="header_menu_mob_link">Главная</a></li>
+            <li class="header_menu_mob_li">
+                <div class="header_menu_mob_li_group">
+                    <a href="about.html" class="header_menu_mob_link">О ПРОФСОЮЗЕ</a>
+                </div>
+                <ul class="sub_menu">
+                    <li class="sub_menu_li"><a href="#" class="sub_menu_link">Вступить в профсоюз</a></li>
+                    <li class="sub_menu_li"><a href="#" class="sub_menu_link">Структура</a></li>
+                    <li class="sub_menu_li"><a href="#" class="sub_menu_link">Символика</a></li>
+                    <li class="sub_menu_li"><a href="#" class="sub_menu_link">Основные документы</a></li>
+                </ul>
+            </li>
+            <li class="header_menu_mob_li">
+                <div class="header_menu_mob_li_group">
+                    <a href="#" class="header_menu_mob_link">НАПРАВЛЕНИЯ РАБОТЫ</a>
+                </div>
+                <ul class="sub_menu">
+                    <li class="sub_menu_li"><a href="#" class="sub_menu_link">Правовая защита</a></li>
+                    <li class="sub_menu_li"><a href="#" class="sub_menu_link">Социальное партнерство</a></li>
+                    <li class="sub_menu_li"><a href="#" class="sub_menu_link">Охрана труда</a></li>
+                    <li class="sub_menu_li"><a href="#" class="sub_menu_link">Организационная работа</a></li>
+                    <li class="sub_menu_li"><a href="#" class="sub_menu_link">Работа с молодежью</a></li>
+                    <li class="sub_menu_li"><a href="#" class="sub_menu_link">Физкультурно-оздоровительная
+                        и культурно-массовая работа</a></li>
+                    <li class="sub_menu_li"><a href="#" class="sub_menu_link">Методические рекомендации</a></li>
+                </ul>
+            </li>
+            <li class="header_menu_mob_li">
+                <div class="header_menu_mob_li_group">
+                    <a href="#" class="header_menu_mob_link">Новости и События </a>
+                </div>
+                <ul class="sub_menu">
+                    <li class="sub_menu_li"><a href="archive.html" class="sub_menu_link">Новости</a></li>
+                    <li class="sub_menu_li"><a href="archive.html" class="sub_menu_link">События</a></li>
+                </ul>
+            </li>
+            <li class="header_menu_mob_li"><a href="contact.html" class="header_menu_mob_link">Контакты</a></li>
+        </ul>
+        <div class="header_menu_mob_row">
+            <svg class="header_menu_mob_row-icon" width="17" height="11" viewBox="0 0 17 11" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.2 4.3471L15.1992 5.09768C15.168 5.06641 12.2282 1.25097 8.1 1.25097C3.97181 1.25097 1.03205 5.06641 1.00077 5.12896L0 4.3471C0.125097 4.19073 3.34633 0 8.1 0C12.8537 0 16.0749 4.19073 16.2 4.3471ZM8.1 3.03359C6.161 3.03359 4.5973 4.5973 4.5973 6.53629C4.5973 8.47529 6.161 10.039 8.1 10.039C10.039 10.039 11.6027 8.47529 11.6027 6.53629C11.634 4.5973 10.039 3.03359 8.1 3.03359Z"
+                      fill="#FFFFFF"/>
+            </svg>
+            <p class="header_menu_mob_row-p">Версия для слабовидящих</p>
         </div>
     </div>
 </header>
@@ -402,15 +463,15 @@
 <div class="modal" id="modal">
     <span class="modal-close">&times;</span>
     <form class="modal_form">
-        <span class="modal_form-h2">Заявка на заказ</span>
+        <span class="modal_form-h2">Обратный звонок</span>
         <span class="modal_form-p">Введите свои контактные данные, и мы с вами свяжемся</span>
         <div class="modal_form_group">
             <input type="text" class="modal_form-input" name="name" placeholder="Введите ваше имя">
             <input type="text" class="modal_form-input" name="phone" placeholder="Введите ваш телефон">
-            <textarea type="text" class="modal_form-input textarea" name="message"
+            <textarea class="modal_form-input textarea" name="message"
                       placeholder="Введите ваше сообщение"></textarea>
         </div>
-        <button class="modal_form-btn">Заказать</button>
+        <button class="modal_form-btn">Отправить</button>
     </form>
 </div>
 <!--end Modal Windows type-->
