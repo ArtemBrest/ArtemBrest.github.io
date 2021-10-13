@@ -21,79 +21,43 @@ function fadeOut(el) {
     })();
 };
 window.addEventListener("load", function(){
-    if (document.querySelector(".banner_swiper") !== null) {
-        var swiper = new Swiper(".banner_swiper", {
-            loop: true,
-            navigation: {
-                slidesPerView: 2,
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
-    }
-    let tab_link = document.querySelectorAll(".card_info_tab-link");
-    let tab_content = document.querySelectorAll(".tabcontent");
-    if (tab_link !== null || tab_content !== null) {
-        for(var i=0; i <tab_link.length; i++) {
-            (function(i) {
-                var link = tab_link[i];
-                link.onclick = function() {
-                    for(var j=0; j < tab_content.length; j++) {
-                        var display = window.getComputedStyle(tab_content[j]).display;
-                        if(display == "block") {
-                            link.classList.remove("active");
-                            fadeOut(tab_content[j]);
-                            tab_link[j].classList.remove("active");
-                        }
+    let header_menu_li = document.querySelectorAll(".header_menu_li");
+    if(header_menu_li !== null){
+        for (let i = 0; i < header_menu_li.length; i++){
+            if(header_menu_li[i].querySelector(".sub_menu")){
+                header_menu_li[i].classList.add("has_children");
+                var image = document.createElement('img');
+                image.src='img/svg/icon_arrow.svg';
+                image.alt='menu_icon';
+                image.className='header_menu_li_icon';
+                header_menu_li[i].querySelector('.header_menu_li_group').appendChild(image);
+            }
+            var mouseenter_ev
+            header_menu_li[i].addEventListener("mouseenter", function () {
+                mouseenter_ev = setTimeout(() => {
+                    header_menu_li[i].classList.add("active_li");
+                    if(header_menu_li[i].querySelector(".sub_menu")){
+                        fadeIn(header_menu_li[i].querySelector(".sub_menu"),"flex")
                     }
-                    tab_link[i].classList.add("active");
-                    fadeIn(tab_content[i],"block");
+                },100);
+            })
+            header_menu_li[i].addEventListener("mouseleave", function () {
+                clearTimeout(mouseenter_ev);
+                header_menu_li[i].classList.remove("active_li");
+                if(header_menu_li[i].querySelector(".sub_menu")){
+                    fadeOut(header_menu_li[i].querySelector(".sub_menu"));
                 }
-            })(i);
+            })
         }
     }
-
-
-    let menu_overlay = document.querySelector(".menu-overlay");
-    let mob_menu = document.querySelector(".header_mob_menu");
-    let mob_menu_icon = document.querySelector(".header_info_mob");
-    if(menu_overlay !== null){
-        menu_overlay.addEventListener('click', event => {
-            mob_menu_icon.classList.remove("active");
-            fadeOut(mob_menu);
-            fadeOut(menu_overlay);
-        })
-    }
-    if (mob_menu_icon !== null) {
-        mob_menu_icon.addEventListener('click', event => {
-            if(mob_menu_icon.classList.contains("active")){
-                mob_menu_icon.classList.remove("active");
-                fadeOut(mob_menu);
-                fadeOut(menu_overlay);
-            }
-            else{
-                mob_menu_icon.classList.add("active");
-                fadeIn(mob_menu,"block");
-                fadeIn(menu_overlay,"block");
-            }
-
-        });
-    }
-
-    const anchors = document.querySelectorAll('a[href*="#"]')
-
-    for (let anchor of anchors) {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault()
-            mob_menu_icon.classList.remove("active");
-            fadeOut(mob_menu);
-            fadeOut(menu_overlay);
-            const blockID = anchor.getAttribute('href').substr(1)
-            document.getElementById(blockID).scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            })
-        })
-    }
-
+    var swiper = new Swiper(".banner_swiper", {
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
 })
