@@ -1,10 +1,403 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Главная</title>
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+<div class="menu-overlay"></div>
+<header class="header">
+    <div class="header_top">
+        <div class="container">
+            <div class="header_top_row">
+                <div class="header_top_left">
+                    <address class="header_top_left-text">
+                        <img src="img/svg/icon_location.svg" alt="" class="header_top_left-icon">
+                        <span>ул. Кижеватова, 10/1 224001 г. Брест</span>
+                    </address>
+                    <a href="mailto:csm@brest.by" class="header_top_left-text">
+                        <img src="img/svg/icon_mail.svg" alt="" class="header_top_left-icon">
+                        <span>csm@brest.by</span>
+                    </a>
+                    <div class="header_top_left_social">
+                        <a href="#" target="_blank" class="header_top_left_social-link">
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect y="0.741943" width="22.2258" height="22.2258" rx="3.38298" fill="white"/>
+                                <path d="M17.0397 7.77041C17.0397 6.79155 16.176 5.92786 15.1971 5.92786H7.76931C6.79045 5.92786 5.92676 6.79155 5.92676 7.77041V15.1982C5.92676 16.1771 6.79045 17.0408 7.76931 17.0408H11.512V12.8374H10.1301V10.9949H11.512V10.2463C11.512 8.97959 12.4333 7.88557 13.5849 7.88557H15.082V9.72812H13.5849C13.4121 9.72812 13.2394 9.90086 13.2394 10.2463V10.9949H15.082V12.8374H13.2394V17.0408H15.1971C16.176 17.0408 17.0397 16.1771 17.0397 15.1982V7.77041Z" fill="#2787F5"/>
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank" class="header_top_left_social-link">
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.77417" y="0.741943" width="22.2258" height="22.2258" rx="3.38298" fill="white"/>
+                                <path d="M17.4744 6.38132C17.2908 6.38942 17.1197 6.44291 16.969 6.50381C16.8279 6.56057 16.2888 6.7918 15.4396 7.15597C14.5896 7.52045 13.4642 8.00362 12.2637 8.51988C9.86272 9.5524 7.16335 10.7147 5.78072 11.3095C5.72873 11.3319 5.54732 11.3898 5.35478 11.5401C5.16223 11.6905 4.95752 12.0019 4.95752 12.349C4.95752 12.6289 5.09089 12.9069 5.25877 13.0729C5.42665 13.2389 5.60429 13.3209 5.75645 13.383C6.30853 13.6082 8.02079 14.3089 8.34413 14.4412C8.45792 14.7898 9.07768 16.6856 9.22141 17.1503C9.31615 17.4569 9.40634 17.6489 9.52376 17.8013C9.58248 17.8775 9.65072 17.9443 9.73343 17.9967C9.76648 18.0176 9.80273 18.0337 9.83936 18.0485L9.84157 18.0496C9.85001 18.053 9.85729 18.0588 9.86585 18.0618C9.88199 18.0674 9.8928 18.0681 9.9144 18.0728C10.0005 18.1006 10.0873 18.118 10.1649 18.118C10.4955 18.118 10.6979 17.936 10.6979 17.936L10.71 17.9271L12.4105 16.4562L14.4729 18.4072C14.502 18.4482 14.7728 18.8199 15.3701 18.8199C15.7247 18.8199 16.006 18.6419 16.1866 18.4524C16.3673 18.2629 16.4798 18.0638 16.5276 17.8135V17.8124C16.5724 17.5758 18.4731 7.81806 18.4731 7.81806L18.4698 7.8313C18.5254 7.57734 18.54 7.34082 18.4786 7.10741C18.4172 6.87401 18.2554 6.65054 18.0549 6.53029C17.8543 6.41006 17.6581 6.37322 17.4744 6.38132ZM17.3685 7.56205C17.3658 7.57854 17.3705 7.57025 17.3663 7.58964L17.3652 7.59626L17.3641 7.60288C17.3641 7.60288 15.4869 17.2359 15.4175 17.6027C15.4226 17.575 15.3994 17.6301 15.3756 17.6634C15.3419 17.6402 15.273 17.6104 15.273 17.6104L15.2619 17.5983L12.4447 14.9334L10.4529 16.6548L11.0455 14.2823C11.0455 14.2823 14.7496 10.4479 14.9728 10.2248C15.1525 10.0462 15.1902 9.984 15.1902 9.92242C15.1902 9.83993 15.1472 9.78007 15.0511 9.78007C14.9647 9.78007 14.8485 9.86411 14.7863 9.90366C13.9766 10.4198 10.422 12.4915 8.82856 13.4183C8.57535 13.3147 6.81614 12.5945 6.21991 12.3512C6.22443 12.3492 6.22294 12.3499 6.22764 12.3479C7.61062 11.7529 10.3089 10.5906 12.7095 9.55827C13.9099 9.04208 15.0361 8.55854 15.8854 8.19435C16.7216 7.83577 17.3026 7.58899 17.3685 7.56205Z" fill="#29B6F6"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="header_top_right">
+                    <div class="header_top_right_row">
+                        <svg width="19" height="12" viewBox="0 0 19 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.8312 5.5148C18.8312 5.5148 14.8797 0.831299 9.50002 0.831299C4.12068 0.831299 0.168872 5.5148 0.168872 5.5148C-0.0562906 5.78164 -0.0562906 6.21839 0.168872 6.48555C0.168872 6.48523 4.12068 11.1687 9.50002 11.1687C14.8794 11.1687 18.8308 6.48523 18.8308 6.48523C19.0563 6.21839 19.0563 5.78164 18.8312 5.5148ZM9.50002 9.97896C7.30267 9.97896 5.52108 8.19769 5.52108 6.00002C5.52108 3.80234 7.30267 2.02107 9.50002 2.02107C11.6974 2.02107 13.479 3.80266 13.479 6.00002C13.479 8.19737 11.6977 9.97896 9.50002 9.97896Z" fill="#012255"/>
+                            <path d="M11.3763 5.1674C10.9089 5.1674 10.5296 4.78847 10.5296 4.3207C10.5296 4.19859 10.5558 4.08229 10.6023 3.97763C10.2747 3.79866 9.89905 3.6969 9.49976 3.6969C8.22794 3.6969 7.19678 4.72806 7.19678 5.99989C7.19678 7.27171 8.22794 8.30319 9.49976 8.30319C10.7716 8.30319 11.8028 7.27204 11.8028 6.00021C11.8028 5.6917 11.7417 5.39741 11.6315 5.12831C11.5511 5.15351 11.4652 5.1674 11.3763 5.1674Z" fill="#012255"/>
+                        </svg>
+                        <span>Версия для слабовидящих</span>
+                    </div>
+                    <div class="header_top_right_lang">
+                        <a href="#" class="language-select" data-lang="en">EN</a>
+                        <a href="#" class="language-select active " data-lang="ru">RU</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="header_info">
+            <a href="index.html" class="header_info_logo">
+                <img src="img/png/logo.png" alt="">
+                <span class="header_info_logo-text">Брестский центр стандартизации, метрологии и сертификации</span>
+            </a>
+            <form class="header_info_search">
+                <div class="header_info_search_group">
+                    <input type="search" id="input_search" name="search" class="input_search" placeholder="Поиск по сайту">
+                    <button class="button_search">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.215 11.6946C13.1169 11.5965 13.0004 11.5188 12.8723 11.4658C12.7441 11.4127 12.6067 11.3855 12.468 11.3856C12.3293 11.3857 12.192 11.4132 12.0639 11.4664C11.9358 11.5196 11.8195 11.5975 11.7215 11.6957L11.7063 11.7108C11.6081 11.8086 11.5301 11.9248 11.4768 12.0528C11.4236 12.1808 11.3961 12.318 11.396 12.4567C11.3959 12.5953 11.4232 12.7326 11.4762 12.8607C11.5293 12.9887 11.6071 13.1051 11.7052 13.203L14.1922 15.6876C14.3885 15.8837 14.6534 15.9956 14.9308 15.9999C15.2082 16.0041 15.4764 15.9003 15.6786 15.7103C15.7813 15.6074 15.8625 15.4852 15.9176 15.3508C15.9728 15.2163 16.0008 15.0722 16 14.9269C15.9991 14.7816 15.9696 14.6379 15.9129 14.504C15.8563 14.3702 15.7737 14.2489 15.67 14.1471L13.215 11.6946Z" fill="white"/>
+                            <path d="M6.49487 12.9778C7.778 12.9767 9.03199 12.5951 10.0983 11.8814C11.1646 11.1677 11.9954 10.1538 12.4856 8.96801C12.9758 7.78221 13.1035 6.47769 12.8524 5.21936C12.6014 3.96102 11.9829 2.80536 11.0752 1.89846C10.1675 0.991566 9.01123 0.374146 7.75266 0.124251C6.4941 -0.125644 5.1897 0.00320559 4.00435 0.494511C2.819 0.985817 1.80592 1.81752 1.09317 2.88449C0.38042 3.95146 5.38826e-07 5.20579 0 6.48892C0.00274389 8.21008 0.688093 9.85987 1.90569 11.0764C3.12329 12.2928 4.77371 12.9767 6.49487 12.9778ZM6.49487 2.13334C7.35615 2.13413 8.19787 2.39026 8.91361 2.86933C9.62936 3.34841 10.187 4.02893 10.5161 4.82488C10.8451 5.62083 10.9308 6.49646 10.7623 7.3411C10.5938 8.18573 10.1786 8.96145 9.56933 9.57019C8.96003 10.1789 8.18393 10.5934 7.33914 10.7611C6.49435 10.9288 5.6188 10.8424 4.82315 10.5126C4.02751 10.1828 3.34749 9.62452 2.86907 8.90834C2.39065 8.19215 2.1353 7.35021 2.1353 6.48892C2.13713 5.33362 2.59715 4.22622 3.41445 3.40967C4.23174 2.59312 5.33957 2.13411 6.49487 2.13334Z" fill="white"/>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+            <div class="header_info_line">
+                <span class="header_info_line-title">Горячая линия</span>
+                <a href="tel:80162537212" class="header_info_line-link">8 (0162) 53-72-12</a>
+            </div>
+            <div class="header_info_phone">
+                <div class="item">
+                    <span class="item-title">Телефон:</span>
+                    <a href="tel:80162580870" class="item-link">8 (0162) 58-08-70</a>
+                </div>
+                <div class="item">
+                    <span class="item-title">Факс:</span>
+                    <a href="tel:80162580870" class="item-link">8 (0162) 58-08-70</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header_menu">
+        <div class="container">
+            <ul class="header_menu_ul">
+                <li class="header_menu_li active">
+                    <div class="header_menu_li_group">
+                        <a href="index.html" class="header_menu_link">Главная</a>
+                    </div>
+                </li>
+                <li class="header_menu_li">
+                    <div class="header_menu_li_group">
+                        <a href="#" class="header_menu_link">О нас</a>
+                    </div>
+                    <ul class="sub_menu">
+                        <li class="sub_menu_li"><a href="#" class="sub_menu_link">Виды деятельности</a></li>
+                    </ul>
+                </li>
+                <li class="header_menu_li">
+                    <div class="header_menu_li_group">
+                        <a href="archive.html" class="header_menu_link">Новости</a>
+                    </div>
+                </li>
+                <li class="header_menu_li full_menu">
+                    <div class="header_menu_li_group">
+                        <a href="services.html" class="header_menu_link">Услуги</a>
+                    </div>
+                    <ul class="sub_menu">
+                        <li class="sub_menu_li"><a href="services_single.html" class="sub_menu_link">Метрологические услуги</a></li>
+                        <li class="sub_menu_li"><a href="services_single.html" class="sub_menu_link">Сертификация и декларирование</a></li>
+                        <li class="sub_menu_li"><a href="services_single.html" class="sub_menu_link">Сертификация систем менеджмента</a></li>
+                        <li class="sub_menu_li"><a href="services_single.html" class="sub_menu_link">Услуги в области охраны окружающей среды</a></li>
+                        <li class="sub_menu_li"><a href="services_single.html" class="sub_menu_link">Услуги в области охраны труда</a></li>
+                        <li class="sub_menu_li"><a href="services_single.html" class="sub_menu_link">Межлабораторные сличения (МЛС)</a></li>
+                        <li class="sub_menu_li"><a href="services_single.html" class="sub_menu_link">Лабораторные испытания продукции</a></li>
+                        <li class="sub_menu_li"><a href="services_single.html" class="sub_menu_link">Испытания и Измерения</a></li>
+                        <li class="sub_menu_li"><a href="services_single.html" class="sub_menu_link">ЦТО КСА и СКС</a></li>
+                        <li class="sub_menu_li"><a href="services_single.html" class="sub_menu_link">Продажа средств измерений</a></li>
+                        <li class="sub_menu_li"><a href="services_single.html" class="sub_menu_link">Семинары</a></li>
+                        <li class="sub_menu_li"><a href="services_single.html" class="sub_menu_link">Разработка документации</a></li>
+                        <li class="sub_menu_li"><a href="services_single.html" class="sub_menu_link">Ремонт средств измерений</a></li>
+                        <li class="sub_menu_li"><a href="services_single.html" class="sub_menu_link">Информационное обеспечение</a></li>
+                        <li class="sub_menu_li"><a href="services_single.html" class="sub_menu_link">Ремонт средств измерений</a></li>
+                        <li class="sub_menu_li"><a href="services_single.html" class="sub_menu_link">Информационное обеспечение</a></li>
+                    </ul>
+                </li>
+                <li class="header_menu_li">
+                    <div class="header_menu_li_group">
+                        <a href="#" class="header_menu_link">Заказчику</a>
+                    </div>
+                    <ul class="sub_menu">
+                        <li class="sub_menu_li"><a href="obrashcheniye.html" class="sub_menu_link">Обращения граждан</a></li>
+                        <li class="sub_menu_li"><a href="#" class="sub_menu_link">График проведения "прямых телефонных линий"</a></li>
+                        <li class="sub_menu_li"><a href="faq.html" class="sub_menu_link">Вопрос-ответ</a></li>
+                        <li class="sub_menu_li"><a href="questioning.html" class="sub_menu_link">Анкетирование</a></li>
+                        <li class="sub_menu_li"><a href="one_window.html" class="sub_menu_link">Одно окно</a></li>
+                        <li class="sub_menu_li"><a href="readiness.html" class="sub_menu_link">Готовность приборов</a></li>
+                        <li class="sub_menu_li"><a href="price_services.html" class="sub_menu_link">Стоимость услуг</a></li>
+                    </ul>
+                </li>
+                <li class="header_menu_li">
+                    <div class="header_menu_li_group">
+                        <a href="contact.html" class="header_menu_link">Контакты</a>
+                    </div>
+                </li>
+                <li class="header_menu_li">
+                    <div class="header_menu_li_group">
+                        <a href="vakansii.html" class="header_menu_link">Вакансии</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+<main class="main">
+    <div class="navigation">
+        <div class="container">
+            <nav class="nav">
+                <span>
+                    <span>
+                        <a href="index.html">Главная</a>
+                        /
+                        <span class="breadcrumb_last">Услуги</span>
+                    </span>
+                </span>
+            </nav>
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="other_page-h1 h1">Контакты</h1>
+        <section class="contact other_page">
+            <div class="contact_tabs_info">
+                <div class="tab_content active" data-index="0">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2450.8153474064534!2d23.67651351594154!3d52.101292074926576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47210bdd8db8ef99%3A0x9254e9f344efac91!2z0YPQu9C40YbQsCDQmtC40LbQtdCy0LDRgtC-0LLQsCAxMC8xLCDQkdGA0LXRgdGC!5e0!3m2!1sru!2sby!4v1634196059761!5m2!1sru!2sby"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="tab_content" data-index="1">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2448.454541467499!2d23.657965815942703!3d52.14424297175996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472109baae685953%3A0x27a89bd6e43842d9!2z0YPQu9C40YbQsCDQmtCw0YLQuNC9INCR0L7RgCA5OSwg0JHRgNC10YHRgiAyMjQwMjU!5e0!3m2!1sru!2sby!4v1634196172444!5m2!1sru!2sby"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="tab_content" data-index="2">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2450.609766239658!2d23.66983131594163!3d52.10503327465077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47210bd95c98b45b%3A0xba0e391f63d35157!2z0L_QtdGALiDQkdGA0LXRgdGC0YHQutC40YUg0JTQuNCy0LjQt9C40LkgNCwg0JHRgNC10YHRgg!5e0!3m2!1sru!2sby!4v1634196252113!5m2!1sru!2sby"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="tab_content" data-index="3">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2451.489429967236!2d23.722925915941122!3d52.08902367583056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47210c1ac03fec97%3A0xc9ef48373e3d2ac5!2z0YPQuy4g0KHQv9C-0LrQvtC50L3QsNGPIDEsINCR0YDQtdGB0YIgMjI0MDMw!5e0!3m2!1sru!2sby!4v1634196307616!5m2!1sru!2sby"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="contact_tabs_cards">
+                <div class="item tabs_item active">
+                    <span class="item-title">РУП «Брестский ЦСМС»</span>
+                    <div class="item_info">
+                        <span class="item_info-title">Основные телефоны:</span>
+                        <p class="item_info-text">8 (0162) 58-08-70 – телефон директора</p>
+                        <p class="item_info-text">8 (0162) 53-72-12 – горячая линия</p>
+                        <p class="item_info-text">8 (0162) 58-08-71 – факс</p>
+                    </div>
+                    <div class="item_info">
+                        <span class="item_info-title">Адрес:</span>
+                        <p class="item_info-text">224001 г. Брест, ул. Кижеватова, 10/1 </p>
+                    </div>
+                    <a href="#" class="item-link">Схема проезда</a>
+                </div>
+                <div class="item tabs_item">
+                    <span class="item-title">Поверка, активация и инспекция тахографов</span>
+                    <div class="item_info">
+                        <span class="item_info-title">Телефоны:</span>
+                        <p class="item_info-text">+375(33) 340-73-80</p>
+                        <p class="item_info-text">8(0162) 29-01-98</p>
+                    </div>
+                    <div class="item_info">
+                        <span class="item_info-title">Адрес:</span>
+                        <p class="item_info-text">г.Брест, ул Катин Бор 99Б (Брестский райагросервис)</p>
+                    </div>
+                    <a href="#" class="item-link">Схема проезда</a>
+                </div>
+                <div class="item tabs_item">
+                    <span class="item-title">Бюро приема-выдачи средств измерений №1</span>
+                    <div class="item_info">
+                        <span class="item_info-title">Телефоны:</span>
+                        <p class="item_info-text">8(0162) 53-77-94</p>
+                        <p class="item_info-text">8(033) 356-73-73 мтс</p>
+                    </div>
+                    <div class="item_info">
+                        <span class="item_info-title">Адрес:</span>
+                        <p class="item_info-text">г.Брест, пер. Брестских Дивизий, 4</p>
+                    </div>
+                    <a href="#" class="item-link">Схема проезда</a>
+                </div>
+                <div class="item tabs_item">
+                    <span class="item-title">Бюро приема-выдачи средств измерений №2</span>
+                    <div class="item_info">
+                        <span class="item_info-title">Телефоны:</span>
+                        <p class="item_info-text">8(0162) 55-01-42</p>
+                        <p class="item_info-text">8(029) 553-11-32</p>
+                    </div>
+                    <div class="item_info">
+                        <span class="item_info-title">Адрес:</span>
+                        <p class="item_info-text">ул. Спокойная, 1/6, г.Брест</p>
+                    </div>
+                    <a href="#" class="item-link">Схема проезда</a>
+                </div>
+            </div>
+            <span class="contact-caption">Подразделения</span>
+            <div class="contact_table">
+                <div class="contact_table_head">
+                    <div class="item">Подразделения</div>
+                    <div class="item">Ф.И.О.</div>
+                    <div class="item">Телефон и адрес</div>
+                </div>
+                <div class="contact_table_row">
+                    <div class="item">Ведущий юрисконсульт</div>
+                    <div class="item">Ковалёк Руслан Викторович</div>
+                    <div class="item">тел: 8(0162) 58-08-66</div>
+                </div>
+                <div class="contact_table_row">
+                    <div class="item">Ведущий юрисконсульт</div>
+                    <div class="item">Ковалёк Руслан Викторович</div>
+                    <div class="item">тел: 8(0162) 58-08-66</div>
+                </div>
+                <div class="contact_table_row">
+                    <div class="item">Ведущий юрисконсульт</div>
+                    <div class="item">Ковалёк Руслан Викторович</div>
+                    <div class="item">тел: 8(0162) 58-08-66</div>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+<footer class="footer">
+    <div class="container">
+        <div class="footer_menu">
+            <ul class="footer_menu_ul">
+                <li class="footer_menu_li"><a href="index.html" class="footer_menu_link">Главная</a></li>
+                <li class="footer_menu_li"><a href="about.html" class="footer_menu_link">О нас</a></li>
+                <li class="footer_menu_li"><a href="archive.html" class="footer_menu_link">Новости</a></li>
+                <li class="footer_menu_li"><a href="services.html" class="footer_menu_link">Услуги</a></li>
+                <li class="footer_menu_li"><a href="#" class="footer_menu_link">Заказчику</a></li>
+                <li class="footer_menu_li"><a href="contact.html" class="footer_menu_link">Контакты</a></li>
+                <li class="footer_menu_li"><a href="vakansii.html" class="footer_menu_link">Вакансии</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer_border">
+        <div class="container">
+            <div class="footer_info">
+                <div class="item">
+                    <span class="item-title">РУП «Брестский ЦСМС»</span>
+                    <div class="item_info">
+                        <span class="item_info-title">Основные телефоны:</span>
+                        <p class="item_info-text">8 (0162) 58-08-70 – телефон директора</p>
+                        <p class="item_info-text">8 (0162) 53-72-12 – горячая линия</p>
+                        <p class="item_info-text">8 (0162) 58-08-71 – факс</p>
+                    </div>
+                    <div class="item_info">
+                        <span class="item_info-title">Адрес:</span>
+                        <p class="item_info-text">224001 г. Брест, ул. Кижеватова, 10/1 </p>
+                    </div>
+                    <a href="#" class="item-link">Схема проезда</a>
+                    <div class="item_info">
+                        <span class="item_info-title">Email:</span>
+                        <p class="item_info-text">csm@brest.by</p>
+                    </div>
+                    <div class="item_social">
+                        <a href="#" class="item_social_icon">
+                            <svg width="25" height="25" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect y="0.741943" width="22.2258" height="22.2258" rx="3.38298" fill="#4B4848"/>
+                                <path d="M17.0397 7.77041C17.0397 6.79155 16.176 5.92786 15.1971 5.92786H7.76931C6.79045 5.92786 5.92676 6.79155 5.92676 7.77041V15.1982C5.92676 16.1771 6.79045 17.0408 7.76931 17.0408H11.512V12.8374H10.1301V10.9949H11.512V10.2463C11.512 8.97959 12.4333 7.88557 13.5849 7.88557H15.082V9.72812H13.5849C13.4121 9.72812 13.2394 9.90086 13.2394 10.2463V10.9949H15.082V12.8374H13.2394V17.0408H15.1971C16.176 17.0408 17.0397 16.1771 17.0397 15.1982V7.77041Z" fill="#2787F5"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="item_social_icon">
+                            <svg width="25" height="25" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.77417" y="0.741943" width="22.2258" height="22.2258" rx="3.38298" fill="#4B4848"/>
+                                <path d="M17.4744 6.38132C17.2908 6.38942 17.1197 6.44291 16.969 6.50381C16.8279 6.56057 16.2888 6.7918 15.4396 7.15597C14.5896 7.52045 13.4642 8.00362 12.2637 8.51988C9.86272 9.5524 7.16335 10.7147 5.78072 11.3095C5.72873 11.3319 5.54732 11.3898 5.35478 11.5401C5.16223 11.6905 4.95752 12.0019 4.95752 12.349C4.95752 12.6289 5.09089 12.9069 5.25877 13.0729C5.42665 13.2389 5.60429 13.3209 5.75645 13.383C6.30853 13.6082 8.02079 14.3089 8.34413 14.4412C8.45792 14.7898 9.07768 16.6856 9.22141 17.1503C9.31615 17.4569 9.40634 17.6489 9.52376 17.8013C9.58248 17.8775 9.65072 17.9443 9.73343 17.9967C9.76648 18.0176 9.80273 18.0337 9.83936 18.0485L9.84157 18.0496C9.85001 18.053 9.85729 18.0588 9.86585 18.0618C9.88199 18.0674 9.8928 18.0681 9.9144 18.0728C10.0005 18.1006 10.0873 18.118 10.1649 18.118C10.4955 18.118 10.6979 17.936 10.6979 17.936L10.71 17.9271L12.4105 16.4562L14.4729 18.4072C14.502 18.4482 14.7728 18.8199 15.3701 18.8199C15.7247 18.8199 16.006 18.6419 16.1866 18.4524C16.3673 18.2629 16.4798 18.0638 16.5276 17.8135V17.8124C16.5724 17.5758 18.4731 7.81806 18.4731 7.81806L18.4698 7.8313C18.5254 7.57734 18.54 7.34082 18.4786 7.10741C18.4172 6.87401 18.2554 6.65054 18.0549 6.53029C17.8543 6.41006 17.6581 6.37322 17.4744 6.38132ZM17.3685 7.56205C17.3658 7.57854 17.3705 7.57025 17.3663 7.58964L17.3652 7.59626L17.3641 7.60288C17.3641 7.60288 15.4869 17.2359 15.4175 17.6027C15.4226 17.575 15.3994 17.6301 15.3756 17.6634C15.3419 17.6402 15.273 17.6104 15.273 17.6104L15.2619 17.5983L12.4447 14.9334L10.4529 16.6548L11.0455 14.2823C11.0455 14.2823 14.7496 10.4479 14.9728 10.2248C15.1525 10.0462 15.1902 9.984 15.1902 9.92242C15.1902 9.83993 15.1472 9.78007 15.0511 9.78007C14.9647 9.78007 14.8485 9.86411 14.7863 9.90366C13.9766 10.4198 10.422 12.4915 8.82856 13.4183C8.57535 13.3147 6.81614 12.5945 6.21991 12.3512C6.22443 12.3492 6.22294 12.3499 6.22764 12.3479C7.61062 11.7529 10.3089 10.5906 12.7095 9.55827C13.9099 9.04208 15.0361 8.55854 15.8854 8.19435C16.7216 7.83577 17.3026 7.58899 17.3685 7.56205Z" fill="#29B6F6"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <span class="item-title">Поверка, активация и инспекция тахографов</span>
+                    <div class="item_info">
+                        <span class="item_info-title">Телефоны:</span>
+                        <p class="item_info-text">+375(33) 340-73-80</p>
+                        <p class="item_info-text">8(0162) 29-01-98</p>
+                    </div>
+                    <div class="item_info">
+                        <span class="item_info-title">Адрес:</span>
+                        <p class="item_info-text">г.Брест, ул Катин Бор 99Б (Брестский райагросервис)</p>
+                    </div>
+                    <a href="#" class="item-link">Схема проезда</a>
+                </div>
+                <div class="item">
+                    <span class="item-title">Бюро приема-выдачи средств измерений №1</span>
+                    <div class="item_info">
+                        <span class="item_info-title">Телефоны:</span>
+                        <p class="item_info-text">8(0162) 53-77-94</p>
+                        <p class="item_info-text">8(033) 356-73-73 мтс</p>
+                    </div>
+                    <div class="item_info">
+                        <span class="item_info-title">Адрес:</span>
+                        <p class="item_info-text">г.Брест, пер. Брестских Дивизий, 4</p>
+                    </div>
+                    <a href="#" class="item-link">Схема проезда</a>
+                </div>
+                <div class="item">
+                    <span class="item-title">Бюро приема-выдачи средств измерений №2</span>
+                    <div class="item_info">
+                        <span class="item_info-title">Телефоны:</span>
+                        <p class="item_info-text">8(0162) 55-01-42</p>
+                        <p class="item_info-text">8(029) 553-11-32</p>
+                    </div>
+                    <div class="item_info">
+                        <span class="item_info-title">Адрес:</span>
+                        <p class="item_info-text">ул. Спокойная, 1/6, г.Брест</p>
+                    </div>
+                    <a href="#" class="item-link">Схема проезда</a>
+                </div>
+                <div class="item">
+                    <span class="item-title">Время работы</span>
+                    <div class="item_info">
+                        <span class="item_info-title">Понедельник-пятница:</span>
+                        <p class="item_info-text">08.15 — 17.00</p>
+                    </div>
+                    <div class="item_address">
+                        <span class="item_info-title">Перерыв:</span>
+                        <p class="item_info-text">12.30 — 13.15</p>
+                    </div>
+                    <div class="item_phone">
+                        <span class="item_info-title">Выходной:</span>
+                        <p class="item_info-text">суббота, воскресенье</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="footer_bottom">
+            <p class="footer_bottom-text">© 2020. Все права защищены</p>
+            <div class="footer_bottom_group">
+                <img src="img/svg/icon_star.svg" alt="" class="footer_bottom_group-star">
+                <img src="img/svg/icon_star.svg" alt="" class="footer_bottom_group-star">
+                <img src="img/svg/icon_star.svg" alt="" class="footer_bottom_group-star">
+                <img src="img/svg/icon_star.svg" alt="" class="footer_bottom_group-star">
+                <img src="img/svg/icon_star.svg" alt="" class="footer_bottom_group-star">
+                <div class="footer_bottom_group-p">Наш рейтинг: 5 (Головос: 112)</div>
+            </div>
+            <p class="footer_bottom-text">Создание и продвижение сайтов — <a href="https://internetsozdateli.by/" target="_blank">InternetSozdateli</a></p>
+        </div>
+    </div>
+</footer>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

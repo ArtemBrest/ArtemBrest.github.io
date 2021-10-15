@@ -50,14 +50,84 @@ window.addEventListener("load", function(){
             })
         }
     }
-    var swiper = new Swiper(".banner_swiper", {
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-    });
+    if(document.querySelector(".banner_swiper") !== null){
+        var banner_swiper = new Swiper(".banner_swiper", {
+            navigation: {
+                nextEl: ".banner-button-next",
+                prevEl: ".banner-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    }
+    if(document.querySelector(".cooperation_swiper") !== null){
+        var cooperation_swiper = new Swiper(".cooperation_swiper", {
+            slidesPerView: 4,
+            spaceBetween: 25,
+            navigation: {
+                nextEl: ".cooperation-button-next",
+                prevEl: ".cooperation-button-prev",
+            }
+        });
+    }
+
+    let tabLinks = document.querySelectorAll(".tabs_item");
+    let tabPanels = document.querySelectorAll(".tab_content");
+    if(tabPanels !== null || tabLinks !== null) {
+        for (let el of tabLinks) {
+            el.addEventListener("click", e => {
+                e.preventDefault();
+                if (document.querySelector(".tabs_item.active")) {
+                    document.querySelector(".tabs_item.active").classList.remove("active");
+                }
+                if (document.querySelector(".tab_content.active")) {
+                    document.querySelector(".tab_content.active").classList.remove("active");
+                }
+                //const parentListItem = el.parentElement;
+                el.classList.add("active");
+                var index = [...el.parentElement.children].indexOf(el);
+                var panel = [...tabPanels].filter(el => el.getAttribute("data-index") == index);
+                panel[0].classList.add("active");
+            });
+        }
+    }
+    let toolBarBtn = document.querySelector(".news_toolBar_group");
+    if(toolBarBtn !== null){
+        let item_grid = toolBarBtn.querySelector(".item_grid");
+        let item_flex = toolBarBtn.querySelector(".item_flex");
+        let news_cards = document.querySelector(".news_cards");
+        item_grid.addEventListener("click",function () {
+            item_flex.classList.remove("active");
+            item_grid.classList.add("active");
+            news_cards.classList.remove("flex_column");
+        });
+        item_flex.addEventListener("click",function () {
+            item_grid.classList.remove("active");
+            item_flex.classList.add("active");
+            news_cards.classList.add("flex_column");
+        })
+    }
+    let  cFiles = document.getElementById("input_resume")
+    if(cFiles !== null) {
+        cFiles.addEventListener('change', function () {
+            cFiles.parentElement.querySelector(".item_label-file").innerHTML = "+ Выбрано файлов:" + cFiles.files.length;
+        });
+    }
+
+    let FormBtnClear = document.querySelector(".vakansi-btn");
+    let VakansiForm = document.querySelector(".contact_form");
+    if(FormBtnClear !== null) {
+        FormBtnClear.addEventListener('click', function () {
+            if(FormBtnClear.classList.contains("active")){
+                FormBtnClear.classList.remove("active");
+                fadeOut(VakansiForm)
+            }
+            else{
+                FormBtnClear.classList.add("active");
+                fadeIn(VakansiForm,"grid")
+            }
+        });
+    }
 })
