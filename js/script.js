@@ -21,16 +21,50 @@ function fadeOut(el) {
     })();
 };
 window.addEventListener("load", function(){
+    let headerMobBtn = document.querySelector(".header_info_mobBtn");
+    let headerMenu = document.querySelector(".header_menu");
+    let menu_overlay = document.querySelector(".menu-overlay");
+    if(headerMobBtn !== null && headerMenu!== null && menu_overlay!== null){
+        headerMobBtn.addEventListener("click",function () {
+            if(headerMobBtn.classList.contains("active")){
+                headerMobBtn.classList.remove("active");
+                fadeOut(headerMenu);
+                fadeOut(menu_overlay);
+            }
+            else{
+                headerMobBtn.classList.add("active");
+                fadeIn(headerMenu);
+                fadeIn(menu_overlay);
+            }
+        });
+        menu_overlay.addEventListener("click",function () {
+            if(headerMobBtn.classList.contains("active")){
+                headerMobBtn.classList.remove("active");
+                fadeOut(headerMenu);
+                fadeOut(menu_overlay);
+            }
+        });
+    }
     let header_menu_li = document.querySelectorAll(".header_menu_li");
     if(header_menu_li !== null){
         for (let i = 0; i < header_menu_li.length; i++){
             if(header_menu_li[i].querySelector(".sub_menu")){
                 header_menu_li[i].classList.add("has_children");
-                var image = document.createElement('img');
-                image.src='img/svg/icon_arrow.svg';
-                image.alt='menu_icon';
-                image.className='header_menu_li_icon';
-                header_menu_li[i].querySelector('.header_menu_li_group').appendChild(image);
+                let svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+                svg.setAttribute("class", "header_menu_li_icon");
+                svg.setAttribute("viewBox", "0 0 13 9");
+                svg.setAttribute("width", "13");
+                svg.setAttribute("height", "9");
+                svg.setAttribute("fill", "none");
+                let path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+                path.setAttribute("fill", "white");
+                path.setAttribute("d", "M11.09 0.795044L6.5 5.37504L1.91 0.795044L0.5 2.20504L6.5 8.20504L12.5 2.20504L11.09 0.795044Z");
+                svg.appendChild(path);
+                //var image = document.createElement('');
+                //image.src='img/svg/icon_arrow.svg';
+                //image.alt='menu_icon';
+                //image.className='header_menu_li_icon';
+                header_menu_li[i].querySelector('.header_menu_li_group').appendChild(svg);
             }
             var mouseenter_ev
             header_menu_li[i].addEventListener("mouseenter", function () {
@@ -75,7 +109,7 @@ window.addEventListener("load", function(){
 
     let tabLinks = document.querySelectorAll(".tabs_item");
     let tabPanels = document.querySelectorAll(".tab_content");
-    if(tabPanels !== null || tabLinks !== null) {
+    if(tabPanels !== null && tabLinks !== null) {
         for (let el of tabLinks) {
             el.addEventListener("click", e => {
                 e.preventDefault();
@@ -129,5 +163,11 @@ window.addEventListener("load", function(){
                 fadeIn(VakansiForm,"grid")
             }
         });
+    }
+    let PriceSearch =  document.querySelector(".price_page_search");
+    if(PriceSearch !== null) {
+        if(PriceSearch.classList.contains("true")){
+            fadeIn(document.querySelector(".price_page_result"));
+        }
     }
 })
