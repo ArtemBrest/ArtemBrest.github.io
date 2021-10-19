@@ -807,6 +807,15 @@ button:hover {
       }
     }
   }
+  &-link {
+    display: none;
+    font-size: 14px;
+    text-decoration-line: underline;
+    color: @main-color;
+    &:hover {
+      text-decoration: none;
+    }
+  }
   &_toolBar{
     display: flex;
     align-items: center;
@@ -945,7 +954,7 @@ button:hover {
       grid-template-columns: 1fr;
       & .card{
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         &:nth-child(1),
         &:nth-child(2),
         &:nth-child(5),
@@ -1008,6 +1017,10 @@ button:hover {
   margin: 100px 0;
   &.other_page{
     margin: 0 0 100px 0;
+  }
+  &-h2{
+    display: none;
+    padding-bottom: 40px;
   }
   &_wrapper{
     display: grid;
@@ -1129,6 +1142,16 @@ button:hover {
       }
     }
   }
+  &-btn{
+    .btn-main;
+    display: none;
+    margin-top: 40px;
+    width: fit-content;
+    &:hover{
+      background: @main-color;
+      color: #ffffff;
+    }
+  }
 }
 .column_cards{
   margin: 100px 0;
@@ -1180,7 +1203,7 @@ button:hover {
     &_right{
       grid-area: box2;
       padding: 35px 50px 25px 50px;
-      background: #EFF7FD;
+      background: #FFFFFF;
       border: 1px solid #F2F2F2;
       &-title{
         display: block;
@@ -1218,19 +1241,30 @@ button:hover {
     background: #FBFBFB;
     padding: 60px 0;
   }
+  &-link {
+    display: none;
+    margin-top: 40px;
+    font-size: 14px;
+    text-decoration-line: underline;
+    color: @main-color;
+    &:hover {
+      text-decoration: none;
+    }
+  }
   &_title{
     padding-bottom: 40px;
     display: flex;
     align-items: center;
-  }
-  &-link{
-    display: block;
-    margin-left: 20px;
-    font-size: 14px;
-    text-decoration-line: underline;
-    color: @main-color;
-    &:hover{
-      text-decoration: none;
+    & .contact-link{
+      display: block;
+      margin-top: 0;
+      margin-left: 20px;
+      font-size: 14px;
+      text-decoration-line: underline;
+      color: @main-color;
+      &:hover{
+        text-decoration: none;
+      }
     }
   }
   &_tabs{
@@ -2796,7 +2830,6 @@ button:hover {
           padding-bottom: 50px;
         }
         &-btn{
-          .btn-main;
           position: relative;
           z-index: 9;
           background: @main-color;
@@ -2834,6 +2867,88 @@ button:hover {
       }
       &-img{
         display: none;
+      }
+    }
+  }
+  .news{
+    &_cards{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-gap: 30px;
+      .card{
+        background: #FFFFFF;
+        border: 1px solid #F2F2F2;
+        transition: all 0.2s;
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(5),
+        &:nth-child(6),
+        &:nth-child(9),
+        &:nth-child(10){
+          grid-column-start: initial;
+          grid-column-end: initial;
+          grid-row-start: initial;
+          grid-row-end: initial;
+        }
+        &_top{
+          width: 100%;
+          height: 255px;
+          &-img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+  .services{
+    &_wrapper{
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-gap: 30px;
+    }
+    &_cards{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-gap: 20px;
+    }
+  }
+  .column_cards{
+    .item{
+      display: grid;
+      grid-template-columns: 7fr 5fr;
+      grid-template-areas: "box1 box2";
+      grid-gap: 30px;
+      &_left{
+        grid-area: box1;
+        padding: 25px 20px;
+        background: #EFF7FD;
+        border: 1px solid #F2F2F2;
+        position: relative;
+        display: grid;
+        grid-auto-columns: 1fr;
+        &-img{
+          position: inherit;
+          top: inherit;
+          right: inherit;
+          height: inherit;
+          max-width: 100%;
+          display: block;
+          margin: 20px 0 0;
+        }
+      }
+      &_right{
+        padding: 25px 20px;
+      }
+    }
+  }
+  .contact{
+    &_tabs{
+      &_cards{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 30px;
       }
     }
   }
@@ -2927,6 +3042,25 @@ button:hover {
       }
     }
   }
+  .aside_menu{
+    display: none;
+  }
+  .services{
+    &_wrapper{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 30px;
+    }
+  }
+  .contact{
+    &_tabs{
+      &_cards{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 30px;
+      }
+    }
+  }
   .footer{
     &_menu{
       &_ul{
@@ -2984,6 +3118,8 @@ button:hover {
       &_right{
         display: flex;
         align-items: center;
+        justify-content: space-between;
+        width: 100%;
         gap: 10px;
         &_row{
           display: flex;
@@ -3143,6 +3279,226 @@ button:hover {
       }
     }
   }
+  .news{
+    margin: 50px 0;
+    &.other_page{
+      margin: 0 0 50px 0;
+    }
+    &_category-btn{
+      border: 1px solid #F2F2F2;
+      border-radius: 6px;
+      padding: 12px 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: fit-content;
+      font-size: 14px;
+      line-height: 120%;
+      color: #4DADFF;
+      margin-bottom: 30px;
+    }
+    &_single{
+      &-title{
+        font-weight: 700;
+        font-size: 23px;
+        line-height: 140%;
+        color: #333333;
+        padding-bottom: 20px;
+      }
+      &_data{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        font-size: 15px;
+        line-height: 18px;
+        color: #BDBDBD;
+        margin-bottom: 20px;
+      }
+      &_info{
+        position: relative;
+        &-img{
+          display: block;
+          height: auto;
+          width: auto;
+          max-width: 100%;
+          object-fit: cover;
+          float: none;
+          margin: 0 auto 20px auto;
+          padding: 0;
+        }
+      }
+    }
+    &_title{
+      display: flex;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+    &_toolBar{
+      &_group{
+        display: none;
+      }
+    }
+    &_cards{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 20px;
+      .card{
+        &_top{
+          height: 255px;
+          &-img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        &_content{
+          padding: 25px 20px;
+          &-title{
+            display: block;
+            font-size: 15px;
+            line-height: 140%;
+            padding-bottom: 20px;
+          }
+          &-text{
+            font-size: 13px;
+            line-height: 22px;
+            padding-bottom: 20px;
+          }
+        }
+
+      }
+      &.flex_column{
+        & .card {
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+      }
+    }
+    &_pagination{
+      .pageNum{
+        &_li{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 8px;
+          width: 40px;
+          height: 40px;
+        }
+        &_li.controls {
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+  .services{
+    margin: 50px 0;
+    &.other_page{
+      margin: 0 0 50px 0;
+    }
+    &-h2{
+      display: block;
+    }
+    &_info{
+      &-h1{
+        padding-bottom: 40px;
+      }
+      &_cards{
+        display: grid;
+        grid-template-columns: 1fr;
+        .card{
+          padding: 25px 20px;
+          &-text{
+            padding-bottom: 20px;
+          }
+        }
+      }
+    }
+    &_cards{
+      .card{
+        padding: 20px;
+      }
+      .item{
+        display: none;
+      }
+    }
+    &-btn{
+      display: flex;
+    }
+  }
+  .column_cards{
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    .item{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas: "box1" "box2";
+      &_left{
+        grid-area: box1;
+        padding: 25px 20px;
+      }
+      &_right{
+        grid-area: box2;
+        padding: 25px 20px;
+      }
+      &:nth-child(even){
+        grid-template-columns: 1fr;
+        grid-template-areas: "box2" "box1";
+      }
+    }
+  }
+  .contact{
+    &.other_page{
+      margin: 0 0 50px 0;
+    }
+    &_bg{
+      background: #FBFBFB;
+      padding: 50px 0;
+    }
+    &-link {
+      display: block;
+    }
+    &_title{
+      & .contact-link{
+        display: none;
+      }
+    }
+    &-caption{
+      display: block;
+      margin: 40px 0 20px 0;
+    }
+    &_table{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 10px;
+      overflow-x: scroll;
+      &::-webkit-scrollbar {
+        width: 4px;
+        height: 4px;
+        background-color: #d6d6d6;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: @main-color;
+        border-radius: 3px;
+      }
+      &_head{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 10px;
+        width: 800px;
+      }
+      &_row{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 10px;
+        width: 800px;
+        .item{
+          padding: 20px;
+        }
+      }
+    }
+  }
   .navigation{
     margin-bottom: 40px;
     .nav {
@@ -3162,7 +3518,6 @@ button:hover {
   }
   .questioning{
     margin: 0 0 50px 0;
-    background: #FBFBFB;
     padding: 15px 10px;
     &-text{
       font-size: 14px;
@@ -3195,9 +3550,6 @@ button:hover {
           width: 100%;
           height: 135px;
           resize: none;
-          &::placeholder{
-            color: #BDBDBD;
-          }
         }
         &-input{
           display: block;
@@ -3211,40 +3563,6 @@ button:hover {
           width: 100%;
           height: 50px;
           resize: none;
-          &::placeholder{
-            color: #BDBDBD;
-          }
-        }
-        .radio{
-          &-input {
-            position: absolute;
-            z-index: -1;
-            opacity: 0;
-          }
-          &-input+label {
-            display: inline-flex;
-            align-items: center;
-            user-select: none;
-          }
-          &-input+label::before {
-            content: '';
-            display: inline-block;
-            width: 20px;
-            height: 20px;
-            flex-shrink: 0;
-            flex-grow: 0;
-            border: 1px solid #F2F2F2;
-            border-radius: 50%;
-            margin-right: 10px;
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: 47% 47%;
-          }
-          &-input:checked+label::before {
-            border-color: @main-color;
-            background-color: @main-color;
-            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
-          }
         }
       }
       &_bottom{
@@ -3402,9 +3720,81 @@ button:hover {
     }
   }
 }
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+  .contact{
+    &_tabs{
+      &_cards{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+      }
+    }
+  }
+}
 @media (max-width: 479px) {
   .container {
     width: 100%;
+  }
+  .news{
+    &_category-btn{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+    &_title{
+      & .news-link{
+        display: none;
+      }
+    }
+    &-link {
+      display: block;
+      font-size: 14px;
+      text-decoration-line: underline;
+      color: @main-color;
+      margin-top: 20px;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    &_cards{
+      .card{
+        &_top{
+          height: 200px;
+          &-img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+  .services{
+    &_cards{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      grid-gap: 20px;
+    }
+  }
+  .column_cards{
+    .item{
+      &_left{
+        &-btn{
+          width: 100%;
+          padding: 20px 0;
+        }
+      }
+      &_right{
+        &-btn{
+          width: 100%;
+          padding: 20px 0;
+        }
+      }
+    }
   }
   .footer{
     &_info{
