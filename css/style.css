@@ -729,7 +729,10 @@ button:hover {
 }
 .aside_menu_li {
   width: 100%;
-  border: 1px solid #F2F2F2;
+  border-top: 1px solid #F2F2F2;
+  border-right: 1px solid #F2F2F2;
+  border-bottom: 1px solid #F2F2F2;
+  border-left: 3px solid transparent;
 }
 .aside_menu_li:not(:last-child) {
   border-bottom: none;
@@ -1871,6 +1874,9 @@ button:hover {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: inherit;
   gap: 20px;
 }
@@ -3797,6 +3803,31 @@ button:hover {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
   }
+  .cooperation_wrapper {
+    position: relative;
+    padding-bottom: 70px;
+  }
+  .cooperation_wrapper .swiper-button-prev,
+  .cooperation_wrapper .swiper-rtl .swiper-button-next {
+    left: 50%;
+    right: auto;
+    margin-left: -50px;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .cooperation_wrapper .swiper-button-next,
+  .cooperation_wrapper .swiper-rtl .swiper-button-prev {
+    right: 50%;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+    margin-right: -50px;
+    left: auto;
+  }
+  .cooperation_wrapper .swiper-button-next,
+  .cooperation_wrapper .swiper-button-prev {
+    bottom: 0;
+    top: initial;
+  }
   .questioning {
     padding: 55px 30px 90px 30px;
   }
@@ -4395,6 +4426,12 @@ button:hover {
   }
   .contact_table_row .item {
     padding: 20px;
+  }
+  .cooperation {
+    margin: 50px 0;
+  }
+  .cooperation_bg {
+    padding: 50px 0;
   }
   .navigation {
     margin-bottom: 40px;

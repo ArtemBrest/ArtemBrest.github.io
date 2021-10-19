@@ -103,7 +103,21 @@ window.addEventListener("load", function(){
             navigation: {
                 nextEl: ".cooperation-button-next",
                 prevEl: ".cooperation-button-prev",
-            }
+            },
+            breakpoints:{
+                200: {
+                    slidesPerView:1,
+                    spaceBetween:10,
+                },480:{
+                    slidesPerView:2,
+                    spaceBetween:15,
+                },991:{
+                    slidesPerView:3,
+                    spaceBetween:20,
+                },1320:{
+                    slidesPerView:4,
+                }
+            },
         });
     }
 

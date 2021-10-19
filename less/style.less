@@ -558,7 +558,10 @@ button:hover {
   }
   &_li{
     width: 100%;
-    border: 1px solid #F2F2F2;
+    border-top: 1px solid #F2F2F2;
+    border-right: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+    border-left: 3px solid transparent;
     &:not(:last-child){
       border-bottom: none;
     }
@@ -1438,6 +1441,7 @@ button:hover {
     display: flex;
     flex-flow: row wrap;
     align-items: stretch;
+    justify-content: center;
     height: inherit;
     gap: 20px;
     .card{
@@ -2952,6 +2956,31 @@ button:hover {
       }
     }
   }
+  .cooperation{
+    &_wrapper{
+      position: relative;
+      padding-bottom: 70px;
+      & .swiper-button-prev,
+      & .swiper-rtl .swiper-button-next {
+        left: 50%;
+        right: auto;
+        margin-left: -50px;
+        transform: translateX(-50%);
+      }
+      & .swiper-button-next,
+      & .swiper-rtl .swiper-button-prev {
+        right: 50%;
+        transform: translateX(50%);
+        margin-right: -50px;
+        left: auto;
+      }
+      & .swiper-button-next,
+      & .swiper-button-prev {
+        bottom: 0;
+        top: initial;
+      }
+    }
+  }
   .questioning{
     padding: 55px 30px 90px 30px;
   }
@@ -3497,6 +3526,12 @@ button:hover {
           padding: 20px;
         }
       }
+    }
+  }
+  .cooperation{
+    margin: 50px 0;
+    &_bg{
+      padding: 50px 0;
     }
   }
   .navigation{
