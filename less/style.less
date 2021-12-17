@@ -658,7 +658,7 @@ button:hover {
       right: 0;
       width: 255px;
       background: #000000;
-      height: 410px;
+      max-height: 410px;
       overflow-y: auto;
       &::-webkit-scrollbar {
         width: 4px;
@@ -2063,7 +2063,7 @@ button:hover {
   .h1{
     font-size: 30px;
     line-height: 140%;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
   }
   .h2{
     font-size: 30px;
@@ -2251,13 +2251,22 @@ button:hover {
       }
     }
     &_bottom{
-      padding: 15px;
+      padding: 15px 0;
     }
   }
 }
 @media (max-width: 767px) {
   .container {
     width: 100%;
+  }
+  .h1{
+    font-size: 20px;
+    line-height: 140%;
+    padding-bottom: 20px;
+  }
+  .h2{
+    font-size: 20px;
+    line-height: 140%;
   }
   .header{
     min-height: 500px;
@@ -2326,6 +2335,205 @@ button:hover {
           }
         }
       }
+    }
+  }
+
+  .default_text{
+    & p{
+      font-size: 14px;
+      line-height: 160%;
+    }
+    & ul{
+      & li{
+        font-size: 14px;
+        line-height: 160%;
+      }
+    }
+    & ol{
+      & li{
+        font-size: 14px;
+        line-height: 160%;
+      }
+    }
+    & h2{
+      font-size: 17px;
+      line-height: 140%;
+    }
+    & h3{
+      font-size: 16px;
+      line-height: 140%;
+    }
+    & .row{
+      display: flex;
+      align-items: center;
+      flex-flow: column;
+      gap: 10px;
+      margin-bottom: 20px;
+      & img{
+        margin: 0;
+        width: auto;
+        max-width: 100%;
+      }
+    }
+  }
+  .footer{
+    &_top{
+      padding: 30px 0;
+      &_row{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-flow: column;
+        gap: 30px;
+      }
+      &_info{
+        &_logo{
+          margin-bottom: 20px;
+        }
+        &_address{
+          margin-bottom: 20px;
+          gap: 10px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 550px) {
+  .container {
+    width: 100%;
+  }
+  .company{
+    &.first{
+      margin-top: 40px;
+    }
+    &-h2{
+      margin: 0 auto 20px auto;
+    }
+    &_blockquote{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: column;
+      margin: 40px auto;
+      max-width: 850px;
+      &-text{
+        font-size: 18px;
+        line-height: 160%;
+        margin-bottom: 5px;
+      }
+    }
+    &_cards{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 10px;
+    }
+    &_advantages{
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 10px;
+    }
+  }
+  .video{
+    &-h2{
+      margin-bottom: 20px;
+    }
+    &_cards{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 10px;
+      margin-bottom: 20px;
+      .card{
+        &-img{
+          width: 100%;
+        }
+      }
+    }
+  }
+  .photogallery{
+    &-h2{
+      margin-bottom: 20px;
+    }
+    &_cards{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 10px;
+      margin-bottom: 20px;
+    }
+  }
+  .categories{
+    &_cards{
+      display: grid;
+      grid-gap: 40px;
+      & .item{
+        &-h2{
+          margin-bottom: 15px;
+        }
+        &_column{
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-gap: 15px;
+          & .card{
+            padding: 0 0 0 40px;
+            position: relative;
+            &-title{
+              font-size: 16px;
+              line-height: 120%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .articles{
+    &.other_page{
+      margin: 0 0 50px 0;
+    }
+    &-h2{
+      margin-bottom: 20px;
+    }
+    &_cards{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 10px;
+      margin-bottom: 20px;
+      & .item{
+        display: grid;
+        grid-template-columns: 1fr;
+        &_content{
+          display: flex;
+          flex-flow: column;
+          padding: 10px 15px;
+        }
+      }
+    }
+  }
+  .cities{
+    margin: 50px 0;
+    &-h2{
+      margin-bottom: 20px;
+    }
+    &_row{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: row wrap;
+      max-width: 1230px;
+      margin: 0 auto;
+      gap: 20px;
+    }
+  }
+  .cooperation{
+    position: relative;
+    z-index: 2;
+    padding: 60px 0;
+    &-h2{
+      color: #FFFFFF;
+      padding-bottom: 15px;
+    }
+    &-text{
+      font-size: 14px;
+      line-height: 160%;
     }
   }
 }
