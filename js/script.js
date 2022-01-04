@@ -257,8 +257,16 @@ window.addEventListener("load", function(){
     });
 
 
-
-    const preview_img = 9;
+    let preview_img = 9;
+    if( window.screen.width < 992 && window.screen.width > 480){
+        preview_img = 6;
+    }
+    else if( window.screen.width < 480){
+        preview_img = 4;
+    }
+    else{
+        preview_img = 9;
+    }
     let category = document.getElementById("photogallery_cards");
     let category_more_btn = document.querySelector(".photogallery-btn");
     if(category !== null && category_more_btn !== null) {
@@ -291,8 +299,17 @@ window.addEventListener("load", function(){
             plugins: [lgZoom],
         });
     }
+    let colors_img = 20;
+    if( window.screen.width < 992 && window.screen.width > 480){
+        colors_img = 16;
+    }
+    else if( window.screen.width < 480){
+        colors_img = 12;
+    }
+    else{
+        colors_img = 20;
+    }
 
-    const colors_img = 20;
     let production_color = document.querySelector(".production_catalog");
     let color_btn = document.querySelectorAll(".card-btn");
     let ColorNumber_all, ColorNumber;
