@@ -84,4 +84,26 @@ window.addEventListener("load", function(){
             });
         }
     }
+
+    let menu_overlay = document.querySelector(".menu-overlay");
+    let header_btn_menu = document.querySelector(".header_row_icon");
+    let header_menu_mob = document.querySelector(".menu_mob");
+    if (header_btn_menu !== null && menu_overlay !== null) {
+        header_btn_menu.addEventListener("click", function () {
+            if (header_btn_menu.classList.contains("active")) {
+                header_btn_menu.classList.remove("active");
+                header_menu_mob.style.display = "none";
+                fadeOut(menu_overlay);
+            } else {
+                header_btn_menu.classList.add("active");
+                header_menu_mob.style.display = "flex";
+                fadeIn(menu_overlay)
+            }
+        })
+        menu_overlay.addEventListener("click", function () {
+            header_btn_menu.classList.remove("active");
+            header_menu_mob.style.display = "none";
+            fadeOut(menu_overlay);
+        })
+    }
 })
