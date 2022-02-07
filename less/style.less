@@ -66,7 +66,7 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 30px;
+    padding: 15px 0;
     max-width: 1340px;
     margin: 0 auto;
   }
@@ -122,7 +122,9 @@ button:hover {
       }
       &_right{
         position: relative;
-        padding: 50px 20px 0 20px;
+        &_info{
+          padding: 50px 20px 0 20px;
+        }
         p{
           max-width: 275px;
           font-size: 18px;
@@ -699,12 +701,285 @@ button:hover {
   .container {
     max-width: 100%;
   }
+  .about{
+    position: relative;
+    &-img{
+      position: absolute;
+      right: 0;
+      top: 20px;
+      width: 540px;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .header{
+    & .menu{
+      display: flex;
+      align-items: center;
+      margin: 0 0 0 20px;
+      &-li{
+        padding: 0 20px;
+      }
+    }
+  }
+  .banner{
+    &_group{
+      display: grid;
+      grid-template-columns: 1fr;
+      & .item{
+        position: relative;
+        &_left{
+          height: 100%;
+          position: initial;
+        }
+        &_right{
+          position: relative;
+          display: flex;
+          flex-flow: column;
+          justify-content: flex-end;
+          &-bottom{
+            position: relative;
+            bottom: inherit;
+            right: inherit;
+          }
+          &_info{
+            display: none;
+            padding: 0;
+          }
+        }
+      }
+    }
+    &_form{
+      position: relative;
+      padding: 19px 31px;
+      background: rgba(223, 223, 217, 0.85);
+      border: 1.5px solid #FFFFFF;
+      &-h2{
+        padding-bottom: 26px;
+      }
+      &-block{
+        font-family: "Roboto",sans-serif;
+        font-weight: 700;
+        font-size: 28px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+        background: var(--banner-main-color);
+        border: 1.5px solid #FFFFFF;
+        padding: 10px 12px;
+        margin-bottom: 20px;
+        position: static;
+        top: inherit;
+        right: inherit;
+      }
+      &_group{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 30px;
+        & .item{
+          display: flex;
+          flex-flow: column;
+          &-label{
+            font-size: 22px;
+            line-height: 28px;
+            color: #082044;
+            padding-bottom: 13px;
+          }
+          &-input{
+            font-size: 20px;
+            line-height: 26px;
+            color: #082044;
+            background: #FFFFFF;
+            border: 1px solid #FFFFFF;
+            box-sizing: border-box;
+            backdrop-filter: blur(4px);
+            text-align: center;
+          }
+        }
+      }
+      &-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 230px;
+        padding: 12px 0;
+        margin: 0;
+        height: fit-content;
+        font-weight: 700;
+        font-size: 24px;
+        color: #FFFFFF;
+        background: var(--banner-main-color);
+        border: 1.5px solid #FFFFFF;
+      }
+    }
+  }
+  .about{
+    position: relative;
+    &-img{
+      position: static;
+      right: 0;
+      top: 0;
+      width: 100%;
+    }
+    &_wrapper{
+      background: #FFFFFF;
+      padding: 20px 0 0 0;
+      max-width: 1340px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0 20px;
+      &-line{
+        margin-left: 0;
+        padding: 10px;
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+    }
+    &_list{
+      margin: 0;
+    }
+  }
+  .advantages{
+    &_wrapper{
+      background: #FFFFFF;
+      padding: 100px 80px 0 80px;
+      max-width: 1340px;
+      margin: 0 auto;
+      height: 460px;
+    }
+    &_cards{
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      grid-gap: 20px;
+      padding: 0 20px;
+      max-width: 1340px;
+      margin: -270px auto 0 auto;
+      position: relative;
+      z-index: 2;
+    }
+  }
+  .footer{
+    background: #F7F7F7;
+    &_row{
+      max-width: 1340px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 30px;
+      padding: 68px 0 50px 0;
+    }
+  }
 }
 @media (max-width: 991px) {
+  .header{
+    & .menu{
+      display: none;
+    }
+  }
 
+  .advantages{
+    &_wrapper{
+      background: #FFFFFF;
+      padding: 100px 80px 0 80px;
+      max-width: 1340px;
+      margin: 0 auto;
+      height: auto;
+    }
+    &_cards{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-gap: 20px;
+      padding: 0;
+      max-width: 1340px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+    }
+    &-bg-line{
+      display: none;
+    }
+  }
+  .footer{
+    background: #F7F7F7;
+    &_row{
+      max-width: 1340px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 30px;
+      padding: 68px 0 50px 0;
+      & .column{
+        &.menu{
+          display: none;
+        }
+      }
+    }
+  }
 }
 @media (max-width: 767px) {
+  .about{
+    position: relative;
+    &-img{
+      position: static;
+      right: 0;
+      top: 0;
+    }
+    &_wrapper{
+      background: #FFFFFF;
+      padding: 20px 20px 0 20px;
+      max-width: 1340px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 20px;
+      &-line{
+        margin-left: -20px;
+        padding: 10px;
+        width: ~"calc(100% + 40px)";
+        grid-column-start: 1;
+        grid-column-end: 2;
+      }
+    }
+  }
+}
+@media (max-width: 560px) {
+  .banner{
+    &_group{
+      height: 550px;
+    }
+    &_form{
+      &-block{
+        display: none;
+      }
+      &_group{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+      }
+    }
+  }
+  .advantages{
+    &_cards{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 20px;
+    }
+  }
+  .footer{
+    background: #F7F7F7;
+    &_row{
+      max-width: 1340px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 30px;
+      padding: 68px 0 50px 0;
+      & .column{
 
+      }
+    }
+  }
 }
 @media (max-width: 479px) {
 
