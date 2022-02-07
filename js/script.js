@@ -21,79 +21,67 @@ function fadeOut(el) {
     })();
 };
 window.addEventListener("load", function(){
-    if (document.querySelector(".banner_swiper") !== null) {
-        var swiper = new Swiper(".banner_swiper", {
-            loop: true,
-            navigation: {
-                slidesPerView: 2,
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
+    let BannerSwiper = document.querySelector(".banner-swiper");
+    if (BannerSwiper !== null) {
+        var swiper = new Swiper(BannerSwiper, {
+            autoplay: {
+                delay: 20000,
+                disableOnInteraction: false,
             },
         });
     }
-    let tab_link = document.querySelectorAll(".card_info_tab-link");
-    let tab_content = document.querySelectorAll(".tabcontent");
-    if (tab_link !== null || tab_content !== null) {
-        for(var i=0; i <tab_link.length; i++) {
-            (function(i) {
-                var link = tab_link[i];
-                link.onclick = function() {
-                    for(var j=0; j < tab_content.length; j++) {
-                        var display = window.getComputedStyle(tab_content[j]).display;
-                        if(display == "block") {
-                            link.classList.remove("active");
-                            fadeOut(tab_content[j]);
-                            tab_link[j].classList.remove("active");
-                        }
-                    }
-                    tab_link[i].classList.add("active");
-                    fadeIn(tab_content[i],"block");
-                }
-            })(i);
-        }
-    }
-
-
-    let menu_overlay = document.querySelector(".menu-overlay");
-    let mob_menu = document.querySelector(".header_mob_menu");
-    let mob_menu_icon = document.querySelector(".header_info_mob");
-    if(menu_overlay !== null){
-        menu_overlay.addEventListener('click', event => {
-            mob_menu_icon.classList.remove("active");
-            fadeOut(mob_menu);
-            fadeOut(menu_overlay);
-        })
-    }
-    if (mob_menu_icon !== null) {
-        mob_menu_icon.addEventListener('click', event => {
-            if(mob_menu_icon.classList.contains("active")){
-                mob_menu_icon.classList.remove("active");
-                fadeOut(mob_menu);
-                fadeOut(menu_overlay);
-            }
-            else{
-                mob_menu_icon.classList.add("active");
-                fadeIn(mob_menu,"block");
-                fadeIn(menu_overlay,"block");
-            }
-
+    let ReviewSwiper = document.querySelector(".review-swiper");
+    if (ReviewSwiper !== null) {
+        var swiper = new Swiper(ReviewSwiper, {
+            navigation: {
+                nextEl: ".review-swiper-button-next",
+                prevEl: ".review-swiper-button-prev",
+            },
         });
     }
 
-    const anchors = document.querySelectorAll('a[href*="#"]')
 
-    for (let anchor of anchors) {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault()
-            mob_menu_icon.classList.remove("active");
-            fadeOut(mob_menu);
-            fadeOut(menu_overlay);
-            const blockID = anchor.getAttribute('href').substr(1)
-            document.getElementById(blockID).scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            })
-        })
+    function initAcc(elem) {
+        let item = elem.querySelectorAll(".card_header");
+        for (let i = 0; i < item.length; i++) {
+            item[i].addEventListener('click', function(e) {
+                let content = this.parentElement.querySelector(".card_info");
+                if (!this.classList.contains('active')) {
+                    this.classList.add('active');
+                    fadeIn(content,'flex');
+                } else {
+                    this.classList.remove('active');
+                    fadeOut(content);
+                }
+            });
+        }
+    }
+    let faq_acc = document.querySelector(".tab_content.active");
+    let tabLinks = document.querySelectorAll(".aside_elem");
+    let tabPanels = document.querySelectorAll(".tab_content");
+    if(faq_acc !== null){
+        initAcc(faq_acc);
     }
 
+    if(tabPanels !== null && tabLinks !== null && faq_acc !== null) {
+        for (let el of tabLinks) {
+            el.addEventListener("click", e => {
+                e.preventDefault();
+                if (document.querySelector(".aside_elem.active")) {
+                    document.querySelector(".aside_elem.active").classList.remove("active");
+                }
+                if (document.querySelector(".tab_content.active")) {
+                    document.querySelector(".tab_content.active").classList.remove("active");
+                }
+                //const parentListItem = el.parentElement;
+                el.classList.add("active");
+                var index = [...el.parentElement.children].indexOf(el);
+                var panel = [...tabPanels].filter(el => el.getAttribute("data-index") == index);
+                initAcc(panel[0])
+                panel[0].classList.add("active");
+
+
+            });
+        }
+    }
 })
