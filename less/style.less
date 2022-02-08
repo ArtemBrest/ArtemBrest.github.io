@@ -780,6 +780,189 @@ button:hover {
     }
   }
 }
+.block_title{
+  min-height: 350px;
+  padding: 65px 0 230px 0;
+  &-h1{
+    padding-left: 70px;
+  }
+}
+.kreditanfrage{
+  display: grid;
+  grid-template-columns: 420px auto;
+  margin-bottom: 100px;
+  &_steps{
+    width: 420px;
+    padding: 75px 40px 125px 40px;
+    background: #FFFFFF;
+    height: max-content;
+    & .step{
+      position: relative;
+      &.finish{
+        & path{
+          fill: rgba(160, 200, 90, 0.7);
+        }
+      }
+      &.active{
+        & path{
+          fill: rgba(248, 223, 75, 0.7);
+        }
+      }
+      &-name{
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 30px;
+        transform: translateY(-50%);
+        font-weight: 700;
+        font-size: 24px;
+        color: #082044;
+        background: rgba(255, 255, 255, 0.69);
+        min-width: 280px;
+        padding: 12px 10px;
+      }
+    }
+  }
+  &_form{
+    border: 3px solid rgba(8, 32, 68, 1);
+    background: #ffffff;
+    margin-top: -115px;
+    padding: 15px;
+    height: max-content;
+    & .tab{
+      display: none;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 40px;
+      padding: 0;
+      margin: 0;
+      border: none;
+      &_info{
+        display: none;
+      }
+      &.first{
+        display: block!important;
+      }
+      & .column_info{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 15px;
+        & .item{
+          display: block;
+          font-size: 14px;
+          line-height: 19px;
+          color: #082044;
+          padding: 15px;
+          &.color-1{
+            background: rgba(170, 94, 146, 0.21);
+          }
+          &.color-2{
+            background: rgba(248, 223, 75, 0.21);
+          }
+        }
+      }
+    }
+    & .kreditdate{
+      background: rgba(223, 223, 217, 0.85);
+      padding: 20px 30px 30px 30px;
+      margin-bottom: 15px;
+      &-h2{
+        padding-bottom: 25px;
+      }
+      &_group{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 40px;
+        max-width: 750px;
+        margin-bottom: 30px;
+      }
+      & .item{
+        display: flex;
+        flex-flow: column;
+        &-label{
+          display: block;
+          font-size: 22px;
+          line-height: 28px;
+          color: #082044;
+          margin-bottom: 15px;
+        }
+        &-input{
+          width: 167px;
+          height: 26px;
+          background: #FFFFFF;
+          border: 1px solid #FFFFFF;
+          backdrop-filter: blur(4px);
+          font-size: 20px;
+          text-align: center;
+          color: #082044;
+        }
+        &-textarea{
+          display: block;
+          resize: none;
+          width: 700px;
+          height: 68px;
+          background: #FFFFFF;
+          border: 1px solid #FFFFFF;
+          box-sizing: border-box;
+          backdrop-filter: blur(4px);
+          font-size: 18px;
+          color: #082044;
+          font-weight: 700;
+          padding-left: 10px;
+          &::placeholder{
+            color: rgba(8, 32, 68, 0.5);
+          }
+        }
+      }
+    }
+    &_info{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 15px;
+      & .item{
+        display: block;
+        font-size: 14px;
+        line-height: 19px;
+        color: #082044;
+        padding: 15px;
+        &.color-1{
+          background: rgba(170, 94, 146, 0.21);
+        }
+        &.color-2{
+          background: rgba(248, 223, 75, 0.21);
+        }
+      }
+    }
+    &-buttons{
+      margin: 50px 0;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    &-btn{
+      font-size: 20px;
+      line-height: 26px;
+      padding: 15px 55px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #082044;
+      background: #E4E4DF;
+      border: none;
+      min-width: 182px;
+      margin: 0 40px;
+    }
+    #prevBtn{
+      clip-path: polygon(20% 100%, 0 50%, 20% 0, 100% 0%, 80% 50%, 100% 100%);
+    }
+    #nextBtn{
+      background-color: rgba(160, 200, 90, .7);
+      clip-path: polygon(0 100%, 20% 50%, 0 0, 80% 0%, 100% 50%, 80% 100%);
+      margin-right: 0;
+    }
+
+  }
+}
 
 @media (max-width: 1440px) {
   .container {
