@@ -953,6 +953,12 @@ button:hover {
   height: -moz-max-content;
   height: max-content;
 }
+.kreditanfrage_form-subTitle {
+  font-weight: 700;
+  font-size: 24px;
+  color: #082044;
+  margin: 35px 0 30px 0;
+}
 .kreditanfrage_form .tab {
   display: none;
   grid-template-columns: 1fr 1fr;
@@ -968,9 +974,7 @@ button:hover {
   display: block!important;
 }
 .kreditanfrage_form .tab .column_info {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 15px;
+  display: block;
 }
 .kreditanfrage_form .tab .column_info .item {
   display: block;
@@ -978,6 +982,9 @@ button:hover {
   line-height: 19px;
   color: #082044;
   padding: 15px;
+}
+.kreditanfrage_form .tab .column_info .item:not(:first-child) {
+  margin-top: 15px;
 }
 .kreditanfrage_form .tab .column_info .item.color-1 {
   background: rgba(170, 94, 146, 0.21);
@@ -1114,6 +1121,256 @@ button:hover {
   -webkit-clip-path: polygon(0 100%, 20% 50%, 0 0, 80% 0%, 100% 50%, 80% 100%);
           clip-path: polygon(0 100%, 20% 50%, 0 0, 80% 0%, 100% 50%, 80% 100%);
   margin-right: 0;
+}
+.kreditanfrage_form_group {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 25px;
+  width: 430px;
+}
+.kreditanfrage_form_group .item.error .item-label:before {
+  content: "*";
+  position: absolute;
+  top: -2px;
+  right: -10px;
+  font-size: 24px;
+  color: #E91E1E;
+}
+.kreditanfrage_form_group .item-label {
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 26px;
+  color: #082044;
+  margin-bottom: 15px;
+}
+.kreditanfrage_form_group .item-input {
+  width: 100%;
+  height: 40px;
+  background: #E4E4DF;
+  border: 1px solid #DDDFE1;
+  font-weight: 700;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #082044;
+  padding-left: 10px;
+}
+.kreditanfrage_form_group .item-input.error {
+  border: 2px solid #E91E1E;
+}
+.kreditanfrage_form_group .item-input.valid {
+  border: 2px solid #A0C85A;
+}
+.kreditanfrage_form_group .item-input::-webkit-input-placeholder {
+  color: rgba(8, 32, 68, 0.5);
+}
+.kreditanfrage_form_group .item-input:-ms-input-placeholder {
+  color: rgba(8, 32, 68, 0.5);
+}
+.kreditanfrage_form_group .item-input::-ms-input-placeholder {
+  color: rgba(8, 32, 68, 0.5);
+}
+.kreditanfrage_form_group .item-input::placeholder {
+  color: rgba(8, 32, 68, 0.5);
+}
+.kreditanfrage_form_group .item_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 25px;
+}
+.kreditanfrage_form_group .item_column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  gap: 10px;
+}
+.kreditanfrage_form_group .item .select {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  background: #E4E4DF;
+  border: 1px solid #DDDFE1;
+}
+.kreditanfrage_form_group .item .select.error {
+  border: 2px solid #E91E1E;
+}
+.kreditanfrage_form_group .item .select.valid {
+  border: 2px solid #A0C85A;
+}
+.kreditanfrage_form_group .item .select[data-state="active"] .select_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 1;
+}
+.kreditanfrage_form_group .item .select_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 10px;
+  background: #E4E4DF;
+  font-weight: 700;
+  font-size: 18px;
+  color: #082044;
+  cursor: pointer;
+}
+.kreditanfrage_form_group .item .select_title::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  display: block;
+  width: 14px;
+  height: 7px;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  -webkit-transform: translate(-3px, -50%) rotate(180deg);
+          transform: translate(-3px, -50%) rotate(180deg);
+  background: #3B4256;
+}
+.kreditanfrage_form_group .item .select_content {
+  position: absolute;
+  top: 37px;
+  left: -1px;
+  padding: 15px 10px 10px 20px;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 430px;
+  background-color: #E4E4DF;
+  border: 1px solid #DDDFE1;
+  border-top: none;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  opacity: 0;
+  z-index: 8;
+}
+.kreditanfrage_form_group .item .select_input {
+  display: none;
+}
+.kreditanfrage_form_group .item .select_input:checked + label {
+  background: rgba(160, 200, 90, 0.5);
+  border: 1px solid #C4C4C4;
+}
+.kreditanfrage_form_group .item .select_label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 700;
+  padding: 5px;
+  font-size: 18px;
+  color: #082044;
+  border: 1px solid transparent;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+}
+.kreditanfrage_form_group .item .select_label:hover {
+  background: rgba(160, 200, 90, 0.5);
+  border: 1px solid #C4C4C4;
+}
+.kreditanfrage_form_group .item .radio .custom-radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.kreditanfrage_form_group .item .radio .custom-radio + label {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 42px;
+  color: #082044;
+}
+.kreditanfrage_form_group .item .radio .custom-radio + label::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  border: 1px solid #082044;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75% 75%;
+}
+.kreditanfrage_form_group .item .radio .custom-radio:checked + label::before {
+  background-image: url("../img/svg/radio_active.svg");
+}
+.kreditanfrage_form_group .item .checkbox .custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.kreditanfrage_form_group .item .checkbox .custom-checkbox + label {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 42px;
+  color: #082044;
+}
+.kreditanfrage_form_group .item .checkbox .custom-checkbox + label::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  border: 1px solid #082044;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75% 75%;
+}
+.kreditanfrage_form_group .item .checkbox .custom-checkbox:checked + label::before {
+  background-image: url("../img/svg/check_active.svg");
 }
 @media (max-width: 1440px) {
   .container {
