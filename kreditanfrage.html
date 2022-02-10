@@ -19,14 +19,23 @@
                 </a>
             </div>
             <ul class="menu">
-                <li class="menu-li"><a href="#" class="menu-link">STARTSEITE</a></li>
-                <li class="menu-li"><a href="#" class="menu-link">KREDIT ABC</a></li>
-                <li class="menu-li"><a href="#" class="menu-link">ÜBER UNS</a></li>
-                <li class="menu-li"><a href="#" class="menu-link">FAQ</a></li>
+                <li class="menu-li"><a href="index.html" class="menu-link">STARTSEITE</a></li>
+                <li class="menu-li"><a href="kreditanfrage.html" class="menu-link">KREDITANTRAG</a></li>
+                <li class="menu-li"><a href="kredit.html" class="menu-link">KREDIT ABC</a></li>
                 <li class="menu-li"><a href="#" class="menu-link"><img src="img/png/search-icon.png" alt=""></a></li>
             </ul>
+            <div class="header_row_icon">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
         </div>
     </div>
+    <ul class="menu_mob">
+        <li class="menu_mob-li"><a href="index.html" class="menu_mob-link">STARTSEITE</a></li>
+        <li class="menu_mob-li"><a href="kreditanfrage.html" class="menu_mob-link">KREDITANTRAG</a></li>
+        <li class="menu_mob-li"><a href="kredit.html" class="menu_mob-link">KREDIT ABC</a></li>
+    </ul>
 </header>
 <main>
     <section class="block_title">
@@ -314,19 +323,19 @@
                             <div class="kreditanfrage_form_group">
                                 <div class="item">
                                     <span class="item-label">Straße</span>
-                                    <input type="text" placeholder="Musterstrase" name="street" id="input-street" class="item-input">
+                                    <input type="text" placeholder="Musterstrase" name="street" id="input-street" class="item-input no_valid">
                                 </div>
                                 <div class="item">
                                     <span class="item-label">Hausnummer</span>
-                                    <input type="text" placeholder="10" name="house" id="input-house" class="item-input">
+                                    <input type="text" placeholder="10" name="house" id="input-house" class="item-input no_valid">
                                 </div>
                                 <div class="item">
                                     <span class="item-label">Ort</span>
-                                    <input type="text" placeholder="Wien" name="location" id="input-location" class="item-input">
+                                    <input type="text" placeholder="Wien" name="location" id="input-location" class="item-input no_valid">
                                 </div>
                                 <div class="item">
                                     <span class="item-label">Postleitzahl</span>
-                                    <input type="text" placeholder="1120" name="postal" id="input-postal" class="item-input">
+                                    <input type="text" placeholder="1120" name="postal" id="input-postal" class="item-input no_valid">
                                 </div>
                                 <div class="item">
                                     <span class="item-label">Land</span>
@@ -342,19 +351,19 @@
                                 </div>
                                 <div class="item">
                                     <span class="item-label">Telefon</span>
-                                    <input type="text" placeholder="0676 1234 5678" name="phone" id="input-phone" class="item-input">
+                                    <input type="text" placeholder="0676 1234 5678" name="phone" id="input-phone" class="item-input no_valid">
                                 </div>
                                 <div class="item">
                                     <span class="item-label">E-Mail</span>
-                                    <input type="text" placeholder="maxmusterman@gmail.com" name="email" id="input-email" class="item-input">
+                                    <input type="text" placeholder="maxmusterman@gmail.com" name="email" id="input-email" class="item-input no_valid">
                                 </div>
                                 <div class="item">
                                     <span class="item-label">E-Mail (Bestätigung)</span>
-                                    <input type="text" placeholder="maxmusterman@gmail.com" name="confirm-email" id="input-confirm-email" class="item-input">
+                                    <input type="text" placeholder="maxmusterman@gmail.com" name="confirm-email" id="input-confirm-email" class="item-input no_valid">
                                 </div>
                                 <div class="item">
                                     <span class="item-label">Ich bin erreichbar </span>
-                                    <div class="item_row">
+                                    <div class="item_row no_valid">
                                         <div class="checkbox">
                                             <input class="custom-checkbox" type="checkbox" id="available-1" name="available" value="8-12 Uhr">
                                             <label for="available-1">8-12 Uhr</label>
@@ -383,27 +392,27 @@
                                 </div>
                                 <div class="item">
                                     <span class="item-label">Arbeitgeber/Firma</span>
-                                    <input type="text" placeholder="Musterfirma" name="company" id="input-company" class="item-input">
+                                    <input type="text" placeholder="Musterfirma" name="company" id="input-company" class="item-input no_valid">
                                 </div>
                                 <div class="item">
                                     <span class="item-label">Strasse</span>
-                                    <input type="text" placeholder="Beruf" name="company-street" id="input-company-street" class="item-input">
+                                    <input type="text" placeholder="Beruf" name="company-street" id="input-company-street" class="item-input no_valid">
                                 </div>
                                 <div class="item">
                                     <span class="item-label">Hausnummer</span>
-                                    <input type="text" placeholder="10" name="company-house" id="input-company-house" class="item-input">
+                                    <input type="text" placeholder="10" name="company-house" id="input-company-house" class="item-input no_valid">
                                 </div>
                                 <div class="item">
                                     <span class="item-label">Ort</span>
-                                    <input type="text" placeholder="Wien" name="company-location" id="input-company-location" class="item-input">
+                                    <input type="text" placeholder="Wien" name="company-location" id="input-company-location" class="item-input no_valid">
                                 </div>
                                 <div class="item">
                                     <span class="item-label">Postleitzahl</span>
-                                    <input type="text" placeholder="1120" name="company-postal" id="input-company-postal" class="item-input">
+                                    <input type="text" placeholder="1120" name="company-postal" id="input-company-postal" class="item-input no_valid">
                                 </div>
                                 <div class="item">
                                     <span class="item-label">Land</span>
-                                    <div class="select" data-state="">
+                                    <div class="select no_valid" data-state="">
                                         <div class="select_title">Österreich</div>
                                         <div class="select_content">
                                             <div class="row">
@@ -415,11 +424,11 @@
                                 </div>
                                 <div class="item">
                                     <span class="item-label">Beschäftigt seit</span>
-                                    <input type="text" placeholder="01.01.2021" name="working" id="input-working" class="item-input">
+                                    <input type="text" placeholder="01.01.2021" name="working" id="input-working" class="item-input no_valid">
                                 </div>
                                 <div class="item">
                                     <span class="item-label">Monatliches Nettoeinkommen</span>
-                                    <input type="text" placeholder="1700" name="revenue" id="input-revenue" class="item-input">
+                                    <input type="text" placeholder="1700" name="revenue" id="input-revenue" class="item-input no_valid">
                                 </div>
                                 <div class="item">
                                     <span class="item-label">Sonstige Einkünfte, Art und Höhe</span>
@@ -495,9 +504,20 @@
                                                 <span class="item-label">Ihre monatliche Rate</span>
                                                 <input type="text" placeholder="150" name="credit-rate[]" class="item-input">
                                             </div>
-                                            <div class="row__del">&times;</div>
+                                            <div class="row__del">
+                                                <svg width="20px" height="20px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M4,29a1,1,0,0,1-.71-.29,1,1,0,0,1,0-1.42l24-24a1,1,0,1,1,1.42,1.42l-24,24A1,1,0,0,1,4,29Z" fill="#082044"/>
+                                                    <path d="M28,29a1,1,0,0,1-.71-.29l-24-24A1,1,0,0,1,4.71,3.29l24,24a1,1,0,0,1,0,1.42A1,1,0,0,1,28,29Z" fill="#082044"/>
+                                                </svg>
+                                            </div>
                                         </div>
-                                        <div class="row row-add__row">+</div>
+                                        <div class="row row-add__row">
+                                            <svg width="20px" height="20px" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g id="plus" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                    <path d="M250,50 C258.284271,50 265,56.7124761 265,64.9956024 L265,235 L435.004398,235 C443.181407,235 449.82978,241.545011 449.996783,249.686104 L450,250 C450,258.284271 443.287524,265 435.004398,265 L265,265 L265,435.004398 C265,443.181407 258.454989,449.82978 250.313896,449.996783 L250,450 C241.715729,450 235,443.287524 235,435.004398 L235,265 L64.9956024,265 C56.7137599,265 50,258.286093 50,250 C50,241.715729 56.7124761,235 64.9956024,235 L235,235 L235,64.9956024 C235,56.8185933 241.545011,50.1702199 249.686104,50.0032168 L250,50 Z" fill="#082044"></path>
+                                                </g>
+                                            </svg>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="item">
@@ -537,6 +557,7 @@
                         </div>
                     </fieldset>
 
+                    <div class="kreditanfrage_form-error">Rot markierte Felder wurden nicht ordnungsgemäß ausgefüllt.</div>
                     <div class="kreditanfrage_form-buttons">
                         <button class="kreditanfrage_form-btn" type="button" id="prevBtn" onclick="nextPrev(-1)">Zurück</button>
                         <button class="kreditanfrage_form-btn" type="button" id="nextBtn" onclick="nextPrev(1)">Weiter</button>
@@ -647,7 +668,7 @@
     var currentTab = 1;
     showTab(currentTab);
 
-    /*let form_item = document.getElementById("persönliche_form").querySelectorAll('.item');
+    let form_item = document.getElementById("kreditanfrage_form").querySelectorAll('.item');
     for ( let i = 0; i < form_item.length; i++ ){
         if(form_item[i].querySelector(".no_valid")){
             form_item[i].classList.add("error");
@@ -660,7 +681,15 @@
                 radio_item[i].parentNode.parentNode.classList.remove("no_valid")
             }
         });
-    }*/
+    }
+    let check_item = document.querySelectorAll("input[type='checkbox']");
+    for (let i = 0; i < check_item.length; i++){
+        check_item[i].addEventListener('change', () => {
+            if ( check_item[i].checked ) {
+                check_item[i].parentNode.parentNode.classList.remove("no_valid")
+            }
+        });
+    }
     function showTab(n) {
         var x = document.getElementsByClassName("tab");
         var x1 = document.getElementsByClassName("tab_info");
@@ -737,15 +766,17 @@
                 for (let k = 0; k < selectSingle_title.length; k++) {
                     selectSingle_title[k].textContent = evt.target.textContent;
                     var el = selectSingle[i].parentNode.querySelector(".variability_content");
-                    if(selectSingle_title[k].textContent == "Ja"){
-                        if(selectSingle[i].classList.contains("variability")){
-                            el.classList.add("active");
+                    if(el !== null) {
+                        if (selectSingle_title[k].textContent == "Ja") {
+                            if (selectSingle[i].classList.contains("variability")) {
+                                el.classList.add("active");
+                            }
+                        } else {
+                            el.classList.remove("active");
                         }
                     }
-                    else{
-                        el.classList.remove("active");
-                    }
                 }
+                console.log(selectSingle[i]);
                 selectSingle[i].setAttribute('data-state', '');
             });
         }
@@ -770,7 +801,12 @@
                 <span class="item-label">Ihre monatliche Rate</span>
                 <input type="text" placeholder="150" name="credit-rate[]" class="item-input">
             </div>
-        <div class="row__del">&times;</div>
+            <div class="row__del">
+                <svg width="20px" height="20px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4,29a1,1,0,0,1-.71-.29,1,1,0,0,1,0-1.42l24-24a1,1,0,1,1,1.42,1.42l-24,24A1,1,0,0,1,4,29Z" fill="#082044"/>
+                    <path d="M28,29a1,1,0,0,1-.71-.29l-24-24A1,1,0,0,1,4.71,3.29l24,24a1,1,0,0,1,0,1.42A1,1,0,0,1,28,29Z" fill="#082044"/>
+                </svg>
+            </div>
         </div>`);
         let RowRemove = document.querySelectorAll(".row__del");
         for (let i = 0; i < RowRemove.length; i++) {
