@@ -1000,6 +1000,10 @@ button:hover {
           align-items: center;
           color: #082044;
           padding-left: 10px;
+          &.textarea{
+            height: 150px;
+            resize: none;
+          }
           &.error{
             border: 2px solid #E91E1E;
           }
@@ -1165,6 +1169,21 @@ button:hover {
             background-image: url("../img/svg/check_active.svg");
           }
         }
+      }
+    }
+    .variability_content{
+      display: none;
+      &.active{
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 25px;
+        width: 430px;
+      }
+      & .row{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 25px;
       }
     }
   }

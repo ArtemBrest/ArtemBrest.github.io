@@ -38,464 +38,531 @@
         <div class="container">
             <div class="kreditanfrage">
                 <div class="kreditanfrage_steps">
-                <div class="step finish">
-                    <svg width="60" height="234" viewBox="0 0 60 234" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 0.122559L30.6977 33.507L60 0.122559V200.226L30.6977 233.184L0 200.226V0.122559Z" fill="#E4E4DF"/>
-                    </svg>
-                    <span class="step-name">Kreditdaten</span>
+                    <div class="step finish">
+                        <svg width="60" height="234" viewBox="0 0 60 234" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0.122559L30.6977 33.507L60 0.122559V200.226L30.6977 233.184L0 200.226V0.122559Z" fill="#E4E4DF"/>
+                        </svg>
+                        <span class="step-name">Kreditdaten</span>
+                    </div>
+                    <div class="step">
+                        <svg width="60" height="234" viewBox="0 0 60 234" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0.122559L30.6977 33.507L60 0.122559V200.226L30.6977 233.184L0 200.226V0.122559Z" fill="#E4E4DF"/>
+                        </svg>
+                        <span class="step-name">Persönliche Angaben</span>
+                    </div>
+                    <div class="step">
+                        <svg width="60" height="234" viewBox="0 0 60 234" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0.122559L30.6977 33.507L60 0.122559V200.226L30.6977 233.184L0 200.226V0.122559Z" fill="#E4E4DF"/>
+                        </svg>
+                        <span class="step-name">Ihre Kontaktdaten</span>
+                    </div>
+                    <div class="step">
+                        <svg width="60" height="234" viewBox="0 0 60 234" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0.122559L30.6977 33.507L60 0.122559V200.226L30.6977 233.184L0 200.226V0.122559Z" fill="#E4E4DF"/>
+                        </svg>
+                        <span class="step-name">Einkünfte</span>
+                    </div>
+                    <div class="step">
+                        <svg width="60" height="234" viewBox="0 0 60 234" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0.122559L30.6977 33.507L60 0.122559V200.226L30.6977 233.184L0 200.226V0.122559Z" fill="#E4E4DF"/>
+                        </svg>
+                        <span class="step-name">Verbindlichkeiten</span>
+                    </div>
                 </div>
-                <div class="step">
-                    <svg width="60" height="234" viewBox="0 0 60 234" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 0.122559L30.6977 33.507L60 0.122559V200.226L30.6977 233.184L0 200.226V0.122559Z" fill="#E4E4DF"/>
-                    </svg>
-                    <span class="step-name">Persönliche Angaben</span>
-                </div>
-                <div class="step">
-                    <svg width="60" height="234" viewBox="0 0 60 234" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 0.122559L30.6977 33.507L60 0.122559V200.226L30.6977 233.184L0 200.226V0.122559Z" fill="#E4E4DF"/>
-                    </svg>
-                    <span class="step-name">Ihre Kontaktdaten</span>
-                </div>
-                <div class="step">
-                    <svg width="60" height="234" viewBox="0 0 60 234" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 0.122559L30.6977 33.507L60 0.122559V200.226L30.6977 233.184L0 200.226V0.122559Z" fill="#E4E4DF"/>
-                    </svg>
-                    <span class="step-name">Einkünfte</span>
-                </div>
-                <div class="step">
-                    <svg width="60" height="234" viewBox="0 0 60 234" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 0.122559L30.6977 33.507L60 0.122559V200.226L30.6977 233.184L0 200.226V0.122559Z" fill="#E4E4DF"/>
-                    </svg>
-                    <span class="step-name">Verbindlichkeiten</span>
-                </div>
-            </div>
-            <form class="kreditanfrage_form" id="kreditanfrage_form">
+                <form class="kreditanfrage_form" id="kreditanfrage_form">
+                    <fieldset class="tab first" id="kreditdate-step">
+                        <div class="kreditdate">
+                            <h2 class="kreditdate-h2 h2">Sofort Kredit</h2>
+                            <div class="kreditdate_group">
+                                <div class="item">
+                                    <span class="item-label">Gewünschter Betrag</span>
+                                    <input type="text" name="kreditdate-sum" class="item-input item-input-sum">
+                                </div>
+                                <div class="item">
+                                    <span class="item-label">Laufzeit in Monaten</span>
+                                    <input type="text" name="kreditdate-month" class="item-input item-input-month">
+                                </div>
+                                <div class="item">
+                                    <span class="item-label">Wunschrate monatlich</span>
+                                    <input type="text" name="kreditdate-rate" class="item-input item-input-rate">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <span class="item-label">Verwendungszweck</span>
+                                <textarea name="message" placeholder="z.B. Umschuldung, Wohnraumfinanzierung, Autokauf ..." class="item-textarea"></textarea>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="tab" id="personal_form">
+                        <div class="kreditanfrage_form-personal">
+                            <h3 class="kreditanfrage_form-subTitle">Persönliche Angaben</h3>
+                            <div class="kreditanfrage_form_group">
+                                <div class="item">
+                                    <span class="item-label">Anrede</span>
+                                    <div class="item_row no_valid">
+                                        <div class="radio">
+                                            <input class="custom-radio" type="radio" id="appeal-1" name="appeal" value="Herr">
+                                            <label for="appeal-1">Herr</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input class="custom-radio" type="radio" id="appeal-2" name="appeal" value="Frau">
+                                            <label for="appeal-2">Frau</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <span class="item-label">Vorname</span>
+                                    <input type="text" placeholder="Max" name="name" id="input-name" class="item-input no_valid">
+                                </div>
+                                <div class="item">
+                                    <span class="item-label">Familienname</span>
+                                    <input type="text" placeholder="Musterman" name="surname" id="input-surname" class="item-input no_valid">
+                                </div>
+                                <div class="item">
+                                    <span class="item-label">Geburtsdatum</span>
+                                    <input type="text" placeholder="01.01.1990" name="birthday" id="input-birthday" class="item-input no_valid">
+                                </div>
+                                <div class="item">
+                                    <span class="item-label">Nummer Sozialversicherung</span>
+                                    <input type="text" placeholder="0000" name="insurance" id="input-insurance" class="item-input no_valid">
+                                </div>
+                                <div class="item">
+                                    <span class="item-label">Staatsangehörigkeit</span>
+                                    <div class="select no_valid" data-state="">
+                                        <div class="select_title">Österreich</div>
+                                        <div class="select_content">
+                                            <div class="row">
+                                                <input id="nationality-0" class="select_input" type="radio" name="nationality" checked value="Österreich"/>
+                                                <label for="nationality-0" class="select_label">Österreich</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <span class="item-label">Familienstand</span>
+                                    <div class="select no_valid" data-state="">
+                                        <div class="select_title">Keine Angabe</div>
+                                        <div class="select_content">
+                                            <div class="row">
+                                                <input id="marital-0" class="select_input" type="radio" name="marital" checked value="Keine Angabe"/>
+                                                <label for="marital-0" class="select_label">Keine Angabe</label>
+                                            </div>
+                                            <div class="row">
+                                                <input id="marital-1" class="select_input" type="radio" name="marital" value="ledig1"/>
+                                                <label for="marital-1" class="select_label">ledig1</label>
+                                            </div>
+                                            <div class="row">
+                                                <input id="marital-2" class="select_input" type="radio" name="marital" value="Verheiratet"/>
+                                                <label for="marital-2" class="select_label">Verheiratet</label>
+                                            </div>
+                                            <div class="row">
+                                                <input id="marital-3" class="select_input" type="radio" name="marital" value="Verwitwet"/>
+                                                <label for="marital-3" class="select_label">Verwitwet</label>
+                                            </div>
+                                            <div class="row">
+                                                <input id="marital-4" class="select_input" type="radio" name="marital" value="Getrennt"/>
+                                                <label for="marital-4" class="select_label">Getrennt</label>
+                                            </div>
+                                            <div class="row">
+                                                <input id="marital-5" class="select_input" type="radio" name="marital" value="Geschieden"/>
+                                                <label for="marital-5" class="select_label">Geschieden</label>
+                                            </div>
+                                            <div class="row">
+                                                <input id="marital-6" class="select_input" type="radio" name="marital" value="Lebensgemeinschaft"/>
+                                                <label for="marital-6" class="select_label">Lebensgemeinschaft</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <span class="item-label">Anzahl Kinder unter 18 Jahre</span>
+                                    <div class="select no_valid" data-state="">
+                                        <div class="select_title">Keine</div>
+                                        <div class="select_content">
+                                            <div class="row">
+                                                <input id="children-0" class="select_input" type="radio" name="children" checked value="Keine"/>
+                                                <label for="children-0" class="select_label">Keine</label>
+                                            </div>
+                                            <div class="row">
+                                                <input id="children-1" class="select_input" type="radio" name="children" value="1"/>
+                                                <label for="children-1" class="select_label">1</label>
+                                            </div>
+                                            <div class="row">
+                                                <input id="children-2" class="select_input" type="radio" name="children" value="2"/>
+                                                <label for="children-2" class="select_label">2</label>
+                                            </div>
+                                            <div class="row">
+                                                <input id="children-3" class="select_input" type="radio" name="children" value="3"/>
+                                                <label for="children-3" class="select_label">3</label>
+                                            </div>
+                                            <div class="row">
+                                                <input id="children-4" class="select_input" type="radio" name="children" value="4"/>
+                                                <label for="children-4" class="select_label">4</label>
+                                            </div>
+                                            <div class="row">
+                                                <input id="children-5" class="select_input" type="radio" name="children" value="5"/>
+                                                <label for="children-5" class="select_label">5</label>
+                                            </div>
+                                            <div class="row">
+                                                <input id="children-6" class="select_input" type="radio" name="children" value="6"/>
+                                                <label for="children-6" class="select_label">6</label>
+                                            </div>
+                                            <div class="row">
+                                                <input id="children-7" class="select_input" type="radio" name="children" value="7"/>
+                                                <label for="children-7" class="select_label">7</label>
+                                            </div>
+                                            <div class="row">
+                                                <input id="children-8" class="select_input" type="radio" name="children" value="8"/>
+                                                <label for="children-8" class="select_label">8</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <span class="item-label">Alter der Kinder</span>
+                                    <input type="text" placeholder="7, 13" name="age" id="input-age" class="item-input">
+                                </div>
+                                <div class="item">
+                                    <span class="item-label">Alimente</span>
+                                    <div class="item_row">
+                                        <div class="radio">
+                                            <input class="custom-radio" type="radio" id="food-1" name="food" value="Ja">
+                                            <label for="food-1">Ja</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input class="custom-radio" type="radio" id="food-2" name="food" value="Nein">
+                                            <label for="food-2">Nein</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <span class="item-label">Wie viel pro Monat? (EUR)</span>
+                                    <input type="text" placeholder="200" name="salary" id="input-salary" class="item-input">
+                                </div>
+                                <div class="item">
+                                    <span class="item-label">Bundesheer</span>
+                                    <div class="select" data-state="">
+                                        <div class="select_title">Keine Angabe</div>
+                                        <div class="select_content">
+                                            <div class="row">
+                                                <input id="army-0" class="select_input" type="radio" name="army" checked value="Keine Angabe"/>
+                                                <label for="army-0" class="select_label">Keine Angabe</label>
+                                            </div>
+                                            <div class="row">
+                                                <input id="army-1" class="select_input" type="radio" name="army" value="Abgeleistet"/>
+                                                <label for="army-1" class="select_label">Abgeleistet</label>
+                                            </div>
+                                            <div class="row">
+                                                <input id="army-2" class="select_input" type="radio" name="army" value="Vorübergehend untauglich"/>
+                                                <label for="army-2" class="select_label">Vorübergehend untauglich</label>
+                                            </div>
+                                            <div class="row">
+                                                <input id="army-3" class="select_input" type="radio" name="army" value="Untauglich"/>
+                                                <label for="army-3" class="select_label">Untauglich</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <span class="item-label">Sind Sie grundbücherlicher Eigentümer von einem Haus oder eine Eigentumswohnung?</span>
+                                    <div class="item_column no_valid">
+                                        <div class="radio">
+                                            <input class="custom-radio" type="radio" id="owner-1" name="owner" value="Nein">
+                                            <label for="owner-1">Nein</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input class="custom-radio" type="radio" id="owner-2" name="owner" value="Ja, ein Haus">
+                                            <label for="owner-2">Ja, ein Haus</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input class="custom-radio" type="radio" id="owner-3" name="owner" value="Ja, eine Eigentumswohnung">
+                                            <label for="owner-3">Ja, eine Eigentumswohnung</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <span class="item-label">Miete inkl. Betriebskosten</span>
+                                    <input type="text" placeholder="800" name="rent" id="input-rent" class="item-input no_valid">
+                                </div>
+                                <div class="item">
+                                    <span class="item-label">Eigenes Fahrzeug </span>
+                                    <div class="item_row">
+                                        <div class="radio">
+                                            <input class="custom-radio" type="radio" id="automobile-1" name="automobile" value="Ja">
+                                            <label for="automobile-1">Ja</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input class="custom-radio" type="radio" id="automobile-2" name="automobile" value="Nein">
+                                            <label for="automobile-2">Nein</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <span class="item-label">Marke, Baujahr</span>
+                                    <input type="text" placeholder="Automarke, Baujahr" name="brand" id="input-brand" class="item-input">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column_info">
+                            <div class="item color-2">Bitte beachten Sie, dass die mit * <br> gekennzeichneten Felder unbedingt ausgefüllt werden müssen!<b>Bitte überprüfen Sie Ihre Angaben vor dem Abschicken!</b></div>
+                            <div class="item color-1">Um Ihnen einen raschen Kreditentscheid bekanntgeben zu können, benötigen wir die folgenden Angaben so vollständig wie möglich von Ihnen. Alle Angaben werden von uns selbstverständlich streng vertraulich behandelt.</div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="tab" id="contact-info_form">
+                        <div class="kreditanfrage_form-contact-info">
+                            <h3 class="kreditanfrage_form-subTitle">Ihre Kontaktdaten</h3>
+                            <div class="kreditanfrage_form_group">
+                                <div class="item">
+                                    <span class="item-label">Straße</span>
+                                    <input type="text" placeholder="Musterstrase" name="street" id="input-street" class="item-input">
+                                </div>
+                                <div class="item">
+                                    <span class="item-label">Hausnummer</span>
+                                    <input type="text" placeholder="10" name="house" id="input-house" class="item-input">
+                                </div>
+                                <div class="item">
+                                    <span class="item-label">Ort</span>
+                                    <input type="text" placeholder="Wien" name="location" id="input-location" class="item-input">
+                                </div>
+                                <div class="item">
+                                    <span class="item-label">Postleitzahl</span>
+                                    <input type="text" placeholder="1120" name="postal" id="input-postal" class="item-input">
+                                </div>
+                                <div class="item">
+                                    <span class="item-label">Land</span>
+                                    <div class="select" data-state="">
+                                        <div class="select_title">Österreich</div>
+                                        <div class="select_content">
+                                            <div class="row">
+                                                <input id="land-0" class="select_input" type="radio" name="land" checked value="Österreich"/>
+                                                <label for="land-0" class="select_label">Österreich</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <span class="item-label">Telefon</span>
+                                    <input type="text" placeholder="0676 1234 5678" name="phone" id="input-phone" class="item-input">
+                                </div>
+                                <div class="item">
+                                    <span class="item-label">E-Mail</span>
+                                    <input type="text" placeholder="maxmusterman@gmail.com" name="email" id="input-email" class="item-input">
+                                </div>
+                                <div class="item">
+                                    <span class="item-label">E-Mail (Bestätigung)</span>
+                                    <input type="text" placeholder="maxmusterman@gmail.com" name="confirm-email" id="input-confirm-email" class="item-input">
+                                </div>
+                                <div class="item">
+                                    <span class="item-label">Ich bin erreichbar </span>
+                                    <div class="item_row">
+                                        <div class="checkbox">
+                                            <input class="custom-checkbox" type="checkbox" id="available-1" name="available" value="8-12 Uhr">
+                                            <label for="available-1">8-12 Uhr</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input class="custom-checkbox" type="checkbox" id="available-2" name="available" value="12-17 Uhr">
+                                            <label for="available-2">12-17 Uhr</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input class="custom-checkbox" type="checkbox" id="available-3" name="available" value="17-20 Uhr">
+                                            <label for="available-3">17-20 Uhr</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div></div>
+                    </fieldset>
+                    <fieldset class="tab" id="revenue_form">
+                        <div class="kreditanfrage_form-revenue">
+                            <h3 class="kreditanfrage_form-subTitle">Einkünfte</h3>
+                            <div class="kreditanfrage_form_group">
+                                <div class="item">
+                                    <span class="item-label">Beruf</span>
+                                    <input type="text" placeholder="Beruf" name="work" id="input-work" class="item-input">
+                                </div>
+                                <div class="item">
+                                    <span class="item-label">Arbeitgeber/Firma</span>
+                                    <input type="text" placeholder="Musterfirma" name="company" id="input-company" class="item-input">
+                                </div>
+                                <div class="item">
+                                    <span class="item-label">Strasse</span>
+                                    <input type="text" placeholder="Beruf" name="company-street" id="input-company-street" class="item-input">
+                                </div>
+                                <div class="item">
+                                    <span class="item-label">Hausnummer</span>
+                                    <input type="text" placeholder="10" name="company-house" id="input-company-house" class="item-input">
+                                </div>
+                                <div class="item">
+                                    <span class="item-label">Ort</span>
+                                    <input type="text" placeholder="Wien" name="company-location" id="input-company-location" class="item-input">
+                                </div>
+                                <div class="item">
+                                    <span class="item-label">Postleitzahl</span>
+                                    <input type="text" placeholder="1120" name="company-postal" id="input-company-postal" class="item-input">
+                                </div>
+                                <div class="item">
+                                    <span class="item-label">Land</span>
+                                    <div class="select" data-state="">
+                                        <div class="select_title">Österreich</div>
+                                        <div class="select_content">
+                                            <div class="row">
+                                                <input id="company-land-0" class="select_input" type="radio" name="company-land" checked value="Österreich"/>
+                                                <label for="company-land-0" class="select_label">Österreich</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <span class="item-label">Beschäftigt seit</span>
+                                    <input type="text" placeholder="01.01.2021" name="working" id="input-working" class="item-input">
+                                </div>
+                                <div class="item">
+                                    <span class="item-label">Monatliches Nettoeinkommen</span>
+                                    <input type="text" placeholder="1700" name="revenue" id="input-revenue" class="item-input">
+                                </div>
+                                <div class="item">
+                                    <span class="item-label">Sonstige Einkünfte, Art und Höhe</span>
+                                    <input type="text" placeholder="200" name="other-revenue" id="input-other-revenue" class="item-input">
+                                </div>
+                            </div>
+                            <h3 class="kreditanfrage_form-subTitle">Ehepartner/Lebensgefährte</h3>
+                            <div class="kreditanfrage_form_group">
+                                <div class="item">
+                                    <span class="item-label">Vorname</span>
+                                    <input type="text" placeholder="Anna" name="spouse-name" id="input-spouse-name" class="item-input">
+                                </div>
+                                <div class="item">
+                                    <span class="item-label">Nachname</span>
+                                    <input type="text" placeholder="Mustermann" name="spouse-surname" id="input-spouse-surname" class="item-input">
+                                </div>
+                                <div class="item">
+                                    <span class="item-label">Geburtsdatum</span>
+                                    <input type="text" placeholder="01.02.1992" name="spouse-birthday" id="input-spouse-birthday" class="item-input">
+                                </div>
+                                <div class="item">
+                                    <span class="item-label">Nummer Sozialversicherung</span>
+                                    <input type="text" placeholder="0000" name="spouse-insurance" id="input-spouse-insurance" class="item-input">
+                                </div>
+                                <div class="item">
+                                    <span class="item-label">Monatliches Nettoeinkommen</span>
+                                    <input type="text" placeholder="1500" name="spouse-revenue" id="input-spouse-revenue" class="item-input">
+                                </div>
+                                <div class="item">
+                                    <span class="item-label">Sonstige Einkünfte, Art und Höhe</span>
+                                    <input type="text" placeholder="200 Alimente" name="spouse-other-revenue" id="input-spouse-other-revenue" class="item-input">
+                                </div>
+                                <div class="item">
+                                    <span class="item-label">Alimente</span>
+                                    <input type="text" placeholder="ja, 200 Euro" name="spouse-food" id="input-spouse-food" class="item-input">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column_info">
+                            <div class="item color-2"><b>Achtung</b>! Wenn Sie derzeit Leistungen von AMS oder Notstandshilfe beziehen, haben wir keine Finanzierungsmöglichkeit für Sie.</div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="tab" id="obligations_form">
+                        <div class="kreditanfrage_form-obligations">
+                            <h3 class="kreditanfrage_form-subTitle">Verbindlichkeiten</h3>
+                            <div class="kreditanfrage_form_group">
+                                <div class="item">
+                                    <span class="item-label">Bestehende Kredite – Bürgschaft – Leasing</span>
+                                    <div class="select no_valid variability" data-state="">
+                                        <div class="select_title">Nein</div>
+                                        <div class="select_content">
+                                            <div class="row">
+                                                <input id="credits-0" class="select_input" type="radio" name="credits" checked value="Nein"/>
+                                                <label for="credits-0" class="select_label">Nein</label>
+                                            </div>
+                                            <div class="row">
+                                                <input id="credits-1" class="select_input" type="radio" name="credits" value="Ja"/>
+                                                <label for="credits-1" class="select_label">Ja</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="variability_content">
+                                        <div class="row row__credit">
+                                            <div class="item">
+                                                <span class="item-label">Kreditinstitut 1</span>
+                                                <input type="text" placeholder="Sparkasse" name="credit[]" class="item-input">
+                                            </div>
+                                            <div class="item">
+                                                <span class="item-label">Offener Betrag</span>
+                                                <input type="text" placeholder="3000" name="credit-amount[]" class="item-input">
+                                            </div>
+                                            <div class="item">
+                                                <span class="item-label">Ihre monatliche Rate</span>
+                                                <input type="text" placeholder="150" name="credit-rate[]" class="item-input">
+                                            </div>
+                                            <div class="row__del">&times;</div>
+                                        </div>
+                                        <div class="row row-add__row">+</div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <span class="item-label">Exekutionen und Pfändungen zusätzlich:</span>
+                                    <div class="select no_valid variability" data-state="">
+                                        <div class="select_title">Nein</div>
+                                        <div class="select_content">
+                                            <div class="row">
+                                                <input id="additionally-0" class="select_input" type="radio" name="additionally" checked value="Nein"/>
+                                                <label for="additionally-0" class="select_label">Nein</label>
+                                            </div>
+                                            <div class="row">
+                                                <input id="additionally-1" class="select_input" type="radio" name="additionally" value="Ja"/>
+                                                <label for="additionally-1" class="select_label">Ja</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="variability_content">
+                                        <div class="item">
+                                            <span class="item-label">Gläubiger</span>
+                                            <input type="text" placeholder="Sparkasse" name="creditor" id="input-creditor" class="item-input">
+                                        </div>
+                                        <div class="item">
+                                            <span class="item-label">Betrag</span>
+                                            <input type="text" placeholder="3000" name="amount" id="input-amount" class="item-input">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <span class="item-label">Exekutionen und Pfändungen zusätzlich:</span>
+                                    <textarea name="note" class="item-input textarea" id="input_notes" placeholder="Ihre Nachricht"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column_info">
+                            <div class="item color-1"><b>Achtung</b>! Unrichtige oder unvollständige Angaben verzögern die Kreditbearbeitung. Bitte um genaue Angaben Ihrer Bestandszahlungsverpflichtungen.</div>
+                        </div>
+                    </fieldset>
 
-                <fieldset class="tab first" id="kreditdate-step">
-                    <div class="kreditdate">
-                        <h2 class="kreditdate-h2 h2">Sofort Kredit</h2>
-                        <div class="kreditdate_group">
-                            <div class="item">
-                                <span class="item-label">Gewünschter Betrag</span>
-                                <input type="text" name="kreditdate-sum" class="item-input item-input-sum">
-                            </div>
-                            <div class="item">
-                                <span class="item-label">Laufzeit in Monaten</span>
-                                <input type="text" name="kreditdate-month" class="item-input item-input-month">
-                            </div>
-                            <div class="item">
-                                <span class="item-label">Wunschrate monatlich</span>
-                                <input type="text" name="kreditdate-rate" class="item-input item-input-rate">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <span class="item-label">Verwendungszweck</span>
-                            <textarea name="message" placeholder="z.B. Umschuldung, Wohnraumfinanzierung, Autokauf ..." class="item-textarea"></textarea>
-                        </div>
+                    <div class="kreditanfrage_form-buttons">
+                        <button class="kreditanfrage_form-btn" type="button" id="prevBtn" onclick="nextPrev(-1)">Zurück</button>
+                        <button class="kreditanfrage_form-btn" type="button" id="nextBtn" onclick="nextPrev(1)">Weiter</button>
                     </div>
-                </fieldset>
-                <fieldset class="tab" id="persönliche_form">
-                    <div class="kreditanfrage_form-persönliche">
-                        <h3 class="kreditanfrage_form-subTitle">Persönliche Angaben</h3>
-                        <div class="kreditanfrage_form_group">
-                            <div class="item">
-                                <span class="item-label">Anrede</span>
-                                <div class="item_row no_valid">
-                                    <div class="radio">
-                                        <input class="custom-radio" type="radio" id="appeal-1" name="appeal" value="Herr">
-                                        <label for="appeal-1">Herr</label>
-                                    </div>
-                                    <div class="radio">
-                                        <input class="custom-radio" type="radio" id="appeal-2" name="appeal" value="Frau">
-                                        <label for="appeal-2">Frau</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <span class="item-label">Vorname</span>
-                                <input type="text" placeholder="Max" name="name" id="input-name" class="item-input no_valid">
-                            </div>
-                            <div class="item">
-                                <span class="item-label">Familienname</span>
-                                <input type="text" placeholder="Musterman" name="surname" id="input-surname" class="item-input no_valid">
-                            </div>
-                            <div class="item">
-                                <span class="item-label">Geburtsdatum</span>
-                                <input type="text" placeholder="01.01.1990" name="birthday" id="input-birthday" class="item-input no_valid">
-                            </div>
-                            <div class="item">
-                                <span class="item-label">Nummer Sozialversicherung</span>
-                                <input type="text" placeholder="0000" name="insurance" id="input-insurance" class="item-input no_valid">
-                            </div>
-                            <div class="item">
-                                <span class="item-label">Staatsangehörigkeit</span>
-                                <div class="select no_valid" data-state="">
-                                    <div class="select_title">Österreich</div>
-                                    <div class="select_content">
-                                        <div class="row">
-                                            <input id="nationality-0" class="select_input" type="radio" name="nationality" checked value="Österreich"/>
-                                            <label for="nationality-0" class="select_label">Österreich</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <span class="item-label">Familienstand</span>
-                                <div class="select no_valid" data-state="">
-                                    <div class="select_title">Keine Angabe</div>
-                                    <div class="select_content">
-                                        <div class="row">
-                                            <input id="marital-0" class="select_input" type="radio" name="marital" checked value="Keine Angabe"/>
-                                            <label for="marital-0" class="select_label">Keine Angabe</label>
-                                        </div>
-                                        <div class="row">
-                                            <input id="marital-1" class="select_input" type="radio" name="marital" value="ledig1"/>
-                                            <label for="marital-1" class="select_label">ledig1</label>
-                                        </div>
-                                        <div class="row">
-                                            <input id="marital-2" class="select_input" type="radio" name="marital" value="Verheiratet"/>
-                                            <label for="marital-2" class="select_label">Verheiratet</label>
-                                        </div>
-                                        <div class="row">
-                                            <input id="marital-3" class="select_input" type="radio" name="marital" value="Verwitwet"/>
-                                            <label for="marital-3" class="select_label">Verwitwet</label>
-                                        </div>
-                                        <div class="row">
-                                            <input id="marital-4" class="select_input" type="radio" name="marital" value="Getrennt"/>
-                                            <label for="marital-4" class="select_label">Getrennt</label>
-                                        </div>
-                                        <div class="row">
-                                            <input id="marital-5" class="select_input" type="radio" name="marital" value="Geschieden"/>
-                                            <label for="marital-5" class="select_label">Geschieden</label>
-                                        </div>
-                                        <div class="row">
-                                            <input id="marital-6" class="select_input" type="radio" name="marital" value="Lebensgemeinschaft"/>
-                                            <label for="marital-6" class="select_label">Lebensgemeinschaft</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <span class="item-label">Anzahl Kinder unter 18 Jahre</span>
-                                <div class="select no_valid" data-state="">
-                                    <div class="select_title">Keine</div>
-                                    <div class="select_content">
-                                        <div class="row">
-                                            <input id="children-0" class="select_input" type="radio" name="children" checked value="Keine"/>
-                                            <label for="children-0" class="select_label">Keine</label>
-                                        </div>
-                                        <div class="row">
-                                            <input id="children-1" class="select_input" type="radio" name="children" value="1"/>
-                                            <label for="children-1" class="select_label">1</label>
-                                        </div>
-                                        <div class="row">
-                                            <input id="children-2" class="select_input" type="radio" name="children" value="2"/>
-                                            <label for="children-2" class="select_label">2</label>
-                                        </div>
-                                        <div class="row">
-                                            <input id="children-3" class="select_input" type="radio" name="children" value="3"/>
-                                            <label for="children-3" class="select_label">3</label>
-                                        </div>
-                                        <div class="row">
-                                            <input id="children-4" class="select_input" type="radio" name="children" value="4"/>
-                                            <label for="children-4" class="select_label">4</label>
-                                        </div>
-                                        <div class="row">
-                                            <input id="children-5" class="select_input" type="radio" name="children" value="5"/>
-                                            <label for="children-5" class="select_label">5</label>
-                                        </div>
-                                        <div class="row">
-                                            <input id="children-6" class="select_input" type="radio" name="children" value="6"/>
-                                            <label for="children-6" class="select_label">6</label>
-                                        </div>
-                                        <div class="row">
-                                            <input id="children-7" class="select_input" type="radio" name="children" value="7"/>
-                                            <label for="children-7" class="select_label">7</label>
-                                        </div>
-                                        <div class="row">
-                                            <input id="children-8" class="select_input" type="radio" name="children" value="8"/>
-                                            <label for="children-8" class="select_label">8</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <span class="item-label">Alter der Kinder</span>
-                                <input type="text" placeholder="7, 13" name="age" id="input-age" class="item-input">
-                            </div>
-                            <div class="item">
-                                <span class="item-label">Alimente</span>
-                                <div class="item_row">
-                                    <div class="radio">
-                                        <input class="custom-radio" type="radio" id="food-1" name="food" value="Ja">
-                                        <label for="food-1">Ja</label>
-                                    </div>
-                                    <div class="radio">
-                                        <input class="custom-radio" type="radio" id="food-2" name="food" value="Nein">
-                                        <label for="food-2">Nein</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <span class="item-label">Wie viel pro Monat? (EUR)</span>
-                                <input type="text" placeholder="200" name="salary" id="input-salary" class="item-input">
-                            </div>
-                            <div class="item">
-                                <span class="item-label">Bundesheer</span>
-                                <div class="select" data-state="">
-                                    <div class="select_title">Keine Angabe</div>
-                                    <div class="select_content">
-                                        <div class="row">
-                                            <input id="army-0" class="select_input" type="radio" name="army" checked value="Keine Angabe"/>
-                                            <label for="army-0" class="select_label">Keine Angabe</label>
-                                        </div>
-                                        <div class="row">
-                                            <input id="army-1" class="select_input" type="radio" name="army" value="Abgeleistet"/>
-                                            <label for="army-1" class="select_label">Abgeleistet</label>
-                                        </div>
-                                        <div class="row">
-                                            <input id="army-2" class="select_input" type="radio" name="army" value="Vorübergehend untauglich"/>
-                                            <label for="army-2" class="select_label">Vorübergehend untauglich</label>
-                                        </div>
-                                        <div class="row">
-                                            <input id="army-3" class="select_input" type="radio" name="army" value="Untauglich"/>
-                                            <label for="army-3" class="select_label">Untauglich</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <span class="item-label">Sind Sie grundbücherlicher Eigentümer von einem Haus oder eine Eigentumswohnung?</span>
-                                <div class="item_column no_valid">
-                                    <div class="radio">
-                                        <input class="custom-radio" type="radio" id="owner-1" name="owner" value="Nein">
-                                        <label for="owner-1">Nein</label>
-                                    </div>
-                                    <div class="radio">
-                                        <input class="custom-radio" type="radio" id="owner-2" name="owner" value="Ja, ein Haus">
-                                        <label for="owner-2">Ja, ein Haus</label>
-                                    </div>
-                                    <div class="radio">
-                                        <input class="custom-radio" type="radio" id="owner-3" name="owner" value="Ja, eine Eigentumswohnung">
-                                        <label for="owner-3">Ja, eine Eigentumswohnung</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <span class="item-label">Miete inkl. Betriebskosten</span>
-                                <input type="text" placeholder="800" name="rent" id="input-rent" class="item-input no_valid">
-                            </div>
-                            <div class="item">
-                                <span class="item-label">Eigenes Fahrzeug </span>
-                                <div class="item_row">
-                                    <div class="radio">
-                                        <input class="custom-radio" type="radio" id="automobile-1" name="automobile" value="Ja">
-                                        <label for="automobile-1">Ja</label>
-                                    </div>
-                                    <div class="radio">
-                                        <input class="custom-radio" type="radio" id="automobile-2" name="automobile" value="Nein">
-                                        <label for="automobile-2">Nein</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <span class="item-label">Marke, Baujahr</span>
-                                <input type="text" placeholder="Automarke, Baujahr" name="brand" id="input-brand" class="item-input">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column_info">
-                        <div class="item color-2">Bitte beachten Sie,  dass die mit * <br> gekennzeichneten Felder unbedingt ausgefüllt werden müssen!<b>Bitte überprüfen Sie Ihre Angaben vor dem Abschicken!</b></div>
-                        <div class="item color-1">Um Ihnen einen raschen Kreditentscheid bekanntgeben zu können, benötigen wir die folgenden Angaben so vollständig wie möglich von Ihnen. Alle Angaben werden von uns selbstverständlich streng vertraulich behandelt.</div>
-                    </div>
-                </fieldset>
-                <fieldset class="tab">
-                    <div class="kreditanfrage_form-persönliche">
-                        <h3 class="kreditanfrage_form-subTitle">Ihre Kontaktdaten</h3>
-                        <div class="kreditanfrage_form_group">
-                            <div class="item">
-                                <span class="item-label">Straße</span>
-                                <input type="text" placeholder="Musterstrase" name="street" id="input-street" class="item-input">
-                            </div>
-                            <div class="item">
-                                <span class="item-label">Hausnummer</span>
-                                <input type="text" placeholder="10" name="house" id="input-house" class="item-input">
-                            </div>
-                            <div class="item">
-                                <span class="item-label">Ort</span>
-                                <input type="text" placeholder="Wien" name="location" id="input-location" class="item-input">
-                            </div>
-                            <div class="item">
-                                <span class="item-label">Postleitzahl</span>
-                                <input type="text" placeholder="1120" name="postal" id="input-postal" class="item-input">
-                            </div>
-                            <div class="item">
-                                <span class="item-label">Land</span>
-                                <div class="select" data-state="">
-                                    <div class="select_title">Österreich</div>
-                                    <div class="select_content">
-                                        <div class="row">
-                                            <input id="land-0" class="select_input" type="radio" name="land" checked value="Österreich"/>
-                                            <label for="land-0" class="select_label">Österreich</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <span class="item-label">Telefon</span>
-                                <input type="text" placeholder="0676 1234 5678" name="phone" id="input-phone" class="item-input">
-                            </div>
-                            <div class="item">
-                                <span class="item-label">E-Mail</span>
-                                <input type="text" placeholder="maxmusterman@gmail.com" name="email" id="input-email" class="item-input">
-                            </div>
-                            <div class="item">
-                                <span class="item-label">E-Mail (Bestätigung)</span>
-                                <input type="text" placeholder="maxmusterman@gmail.com" name="confirm-email" id="input-confirm-email" class="item-input">
-                            </div>
-                            <div class="item">
-                                <span class="item-label">Ich bin erreichbar </span>
-                                <div class="item_row">
-                                    <div class="checkbox">
-                                        <input class="custom-checkbox" type="checkbox" id="available-1" name="available" value="8-12 Uhr">
-                                        <label for="available-1">8-12 Uhr</label>
-                                    </div>
-                                    <div class="checkbox">
-                                        <input class="custom-checkbox" type="checkbox" id="available-2" name="available" value="12-17 Uhr">
-                                        <label for="available-2">12-17 Uhr</label>
-                                    </div>
-                                    <div class="checkbox">
-                                        <input class="custom-checkbox" type="checkbox" id="available-3" name="available" value="17-20 Uhr">
-                                        <label for="available-3">17-20 Uhr</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div></div>
-                </fieldset>
-                <fieldset class="tab">
-                    <div class="kreditanfrage_form-persönliche">
-                        <h3 class="kreditanfrage_form-subTitle">Einkünfte</h3>
-                        <div class="kreditanfrage_form_group">
-                            <div class="item">
-                                <span class="item-label">Beruf</span>
-                                <input type="text" placeholder="Beruf" name="work" id="input-work" class="item-input">
-                            </div>
-                            <div class="item">
-                                <span class="item-label">Arbeitgeber/Firma</span>
-                                <input type="text" placeholder="Musterfirma" name="company" id="input-company" class="item-input">
-                            </div>
-                            <div class="item">
-                                <span class="item-label">Strasse</span>
-                                <input type="text" placeholder="Beruf" name="company-street" id="input-company-street" class="item-input">
-                            </div>
-                            <div class="item">
-                                <span class="item-label">Hausnummer</span>
-                                <input type="text" placeholder="10" name="company-house" id="input-company-house" class="item-input">
-                            </div>
-                            <div class="item">
-                                <span class="item-label">Ort</span>
-                                <input type="text" placeholder="Wien" name="company-location" id="input-company-location" class="item-input">
-                            </div>
-                            <div class="item">
-                                <span class="item-label">Postleitzahl</span>
-                                <input type="text" placeholder="1120" name="company-postal" id="input-company-postal" class="item-input">
-                            </div>
-                            <div class="item">
-                                <span class="item-label">Land</span>
-                                <div class="select" data-state="">
-                                    <div class="select_title">Österreich</div>
-                                    <div class="select_content">
-                                        <div class="row">
-                                            <input id="company-land-0" class="select_input" type="radio" name="company-land" checked value="Österreich"/>
-                                            <label for="company-land-0" class="select_label">Österreich</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <span class="item-label">Beschäftigt seit</span>
-                                <input type="text" placeholder="01.01.2021" name="working" id="input-working" class="item-input">
-                            </div>
-                            <div class="item">
-                                <span class="item-label">Monatliches Nettoeinkommen</span>
-                                <input type="text" placeholder="1700" name="revenue" id="input-revenue" class="item-input">
-                            </div>
-                            <div class="item">
-                                <span class="item-label">Sonstige Einkünfte, Art und Höhe</span>
-                                <input type="text" placeholder="200" name="other-revenue" id="input-other-revenue" class="item-input">
-                            </div>
-                        </div>
-                        <h3 class="kreditanfrage_form-subTitle">Ehepartner/Lebensgefährte</h3>
-                        <div class="kreditanfrage_form_group">
-                            <div class="item">
-                                <span class="item-label">Vorname</span>
-                                <input type="text" placeholder="Anna" name="spouse-name" id="input-spouse-name" class="item-input">
-                            </div>
-                            <div class="item">
-                                <span class="item-label">Nachname</span>
-                                <input type="text" placeholder="Mustermann" name="spouse-surname" id="input-spouse-surname" class="item-input">
-                            </div>
-                            <div class="item">
-                                <span class="item-label">Geburtsdatum</span>
-                                <input type="text" placeholder="01.02.1992" name="spouse-birthday" id="input-spouse-birthday" class="item-input">
-                            </div>
-                            <div class="item">
-                                <span class="item-label">Nummer Sozialversicherung</span>
-                                <input type="text" placeholder="0000" name="spouse-insurance" id="input-spouse-insurance" class="item-input">
-                            </div>
-                            <div class="item">
-                                <span class="item-label">Monatliches Nettoeinkommen</span>
-                                <input type="text" placeholder="1500" name="spouse-revenue" id="input-spouse-revenue" class="item-input">
-                            </div>
-                            <div class="item">
-                                <span class="item-label">Sonstige Einkünfte, Art und Höhe</span>
-                                <input type="text" placeholder="200 Alimente" name="spouse-other-revenue" id="input-spouse-other-revenue" class="item-input">
-                            </div>
-                            <div class="item">
-                                <span class="item-label">Alimente</span>
-                                <input type="text" placeholder="ja, 200 Euro" name="spouse-food" id="input-spouse-food" class="item-input">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column_info">
-                        <div class="item color-2"><b>Achtung</b>! Wenn Sie derzeit Leistungen von AMS oder Notstandshilfe beziehen, haben wir keine Finanzierungsmöglichkeit für Sie.</div>
-                    </div>
-                </fieldset>
-                <fieldset class="tab">
-                    <div>4</div>
-                    <div class="column_info">
-                        <div class="item color-1"><b>Achtung</b>! Unrichtige oder unvollständige Angaben verzögern die Kreditbearbeitung. Bitte um genaue Angaben Ihrer Bestandszahlungsverpflichtungen.</div>
-                    </div>
-                </fieldset>
 
-                <div class="kreditanfrage_form-buttons">
-                    <button class="kreditanfrage_form-btn" type="button" id="prevBtn" onclick="nextPrev(-1)">Zurück</button>
-                    <button class="kreditanfrage_form-btn" type="button" id="nextBtn" onclick="nextPrev(1)">Weiter</button>
-                </div>
-
-                <div class="tab_info"></div>
-                <div class="tab_info"></div>
-                <div class="tab_info">
-                    <div class="kreditanfrage_form_info">
-                        <div class="item color-1">Um Ihnen einen raschen Kreditentscheid bekanntgeben zu können, benötigen wir die folgenden Angaben so vollständig wie möglich von Ihnen. Alle Angaben werden von uns selbstverständlich streng vertraulich behandelt.</div>
-                        <div class="item color-2">Bitte beachten Sie,  dass die mit * <br> gekennzeichneten Felder unbedingt ausgefüllt werden müssen!<b>Bitte überprüfen Sie Ihre Angaben vor dem Abschicken!</b></div>
+                    <div class="tab_info"></div>
+                    <div class="tab_info"></div>
+                    <div class="tab_info">
+                        <div class="kreditanfrage_form_info">
+                            <div class="item color-1">Um Ihnen einen raschen Kreditentscheid bekanntgeben zu können, benötigen wir die folgenden Angaben so vollständig wie möglich von Ihnen. Alle Angaben werden von uns selbstverständlich streng vertraulich behandelt.</div>
+                            <div class="item color-2">Bitte beachten Sie, dass die mit * <br> gekennzeichneten Felder unbedingt ausgefüllt werden müssen!<b>Bitte überprüfen Sie Ihre Angaben vor dem Abschicken!</b></div>
+                        </div>
                     </div>
-                </div>
-                <div class="tab_info">
-                    <div class="kreditanfrage_form_info">
-                        <div class="item color-1">Um Ihnen einen raschen Kreditentscheid bekanntgeben zu können, benötigen wir die folgenden Angaben so vollständig wie möglich von Ihnen. Alle Angaben werden von uns selbstverständlich streng vertraulich behandelt.</div>
-                        <div class="item color-2">Bitte beachten Sie,  dass die mit * <br> gekennzeichneten Felder unbedingt ausgefüllt werden müssen!<b>Bitte überprüfen Sie Ihre Angaben vor dem Abschicken!</b></div>
+                    <div class="tab_info">
+                        <div class="kreditanfrage_form_info">
+                            <div class="item color-1">Um Ihnen einen raschen Kreditentscheid bekanntgeben zu können, benötigen wir die folgenden Angaben so vollständig wie möglich von Ihnen. Alle Angaben werden von uns selbstverständlich streng vertraulich behandelt.</div>
+                            <div class="item color-2">Bitte beachten Sie, dass die mit * <br> gekennzeichneten Felder unbedingt ausgefüllt werden müssen!<b>Bitte überprüfen Sie Ihre Angaben vor dem Abschicken!</b></div>
+                        </div>
                     </div>
-                </div>
-                <div class="tab_info">
-                    <div class="kreditanfrage_form_info">
-                        <div class="item color-1">Um Ihnen einen raschen Kreditentscheid bekanntgeben zu können, benötigen wir die folgenden Angaben so vollständig wie möglich von Ihnen. Alle Angaben werden von uns selbstverständlich streng vertraulich behandelt.</div>
-                        <div class="item color-2">Bitte beachten Sie,  dass die mit * <br> gekennzeichneten Felder unbedingt ausgefüllt werden müssen!<b>Bitte überprüfen Sie Ihre Angaben vor dem Abschicken!</b></div>
+                    <div class="tab_info">
+                        <div class="kreditanfrage_form_info">
+                            <div class="item color-1">Um Ihnen einen raschen Kreditentscheid bekanntgeben zu können, benötigen wir die folgenden Angaben so vollständig wie möglich von Ihnen. Alle Angaben werden von uns selbstverständlich streng vertraulich behandelt.</div>
+                            <div class="item color-2">Bitte beachten Sie, dass die mit * <br> gekennzeichneten Felder unbedingt ausgefüllt werden müssen!<b>Bitte überprüfen Sie Ihre Angaben vor dem Abschicken!</b></div>
+                        </div>
                     </div>
-                </div>
-            </form>
+                </form>
             </div>
         </div>
     </section>
@@ -579,6 +646,7 @@
 <script>
     var currentTab = 1;
     showTab(currentTab);
+
     /*let form_item = document.getElementById("persönliche_form").querySelectorAll('.item');
     for ( let i = 0; i < form_item.length; i++ ){
         if(form_item[i].querySelector(".no_valid")){
@@ -610,6 +678,7 @@
         }
         fixStepIndicator(n)
     }
+
     function nextPrev(n) {
         var x = document.getElementsByClassName("tab");
         var x1 = document.getElementsByClassName("tab_info");
@@ -623,6 +692,7 @@
         }
         showTab(currentTab);
     }
+
     function validateForm() {
         var x, i, valid = true;
         x = document.getElementsByClassName("tab");
@@ -638,6 +708,7 @@
         }
         return valid;
     }
+
     function fixStepIndicator(n) {
         var i, x = document.getElementsByClassName("step");
         for (i = 0; i < x.length; i++) {
@@ -665,12 +736,50 @@
             selectSingle_labels[j].addEventListener('click', (evt) => {
                 for (let k = 0; k < selectSingle_title.length; k++) {
                     selectSingle_title[k].textContent = evt.target.textContent;
+                    var el = selectSingle[i].parentNode.querySelector(".variability_content");
+                    if(selectSingle_title[k].textContent == "Ja"){
+                        if(selectSingle[i].classList.contains("variability")){
+                            el.classList.add("active");
+                        }
+                    }
+                    else{
+                        el.classList.remove("active");
+                    }
                 }
                 selectSingle[i].setAttribute('data-state', '');
             });
         }
     }
-
+    let RowAdd = document.querySelector(".row-add__row");
+    RowAdd.addEventListener('click', function (e){
+        e.preventDefault();
+        if(document.querySelector(".row__credit") !== null){
+            var j = document.querySelector(".row__credit").length;
+            j++;
+        }
+        RowAdd.insertAdjacentHTML('beforeBegin', `<div class="row row__credit">
+            <div class="item">
+                <span class="item-label">Kreditinstitut 1</span>
+                <input type="text" placeholder="Sparkasse" name="credit[]" class="item-input">
+            </div>
+            <div class="item">
+                <span class="item-label">Offener Betrag</span>
+                <input type="text" placeholder="3000" name="credit-amount[]" class="item-input">
+            </div>
+            <div class="item">
+                <span class="item-label">Ihre monatliche Rate</span>
+                <input type="text" placeholder="150" name="credit-rate[]" class="item-input">
+            </div>
+        <div class="row__del">&times;</div>
+        </div>`);
+        let RowRemove = document.querySelectorAll(".row__del");
+        for (let i = 0; i < RowRemove.length; i++) {
+            RowRemove[i].addEventListener('click', function (el) {
+                RowRemove[i].parentNode.remove();
+                el.preventDefault();
+            })
+        }
+    })
 </script>
 </body>
 </html>

@@ -1160,6 +1160,10 @@ button:hover {
   color: #082044;
   padding-left: 10px;
 }
+.kreditanfrage_form_group .item-input.textarea {
+  height: 150px;
+  resize: none;
+}
 .kreditanfrage_form_group .item-input.error {
   border: 2px solid #E91E1E;
 }
@@ -1371,6 +1375,21 @@ button:hover {
 }
 .kreditanfrage_form_group .item .checkbox .custom-checkbox:checked + label::before {
   background-image: url("../img/svg/check_active.svg");
+}
+.kreditanfrage_form .variability_content {
+  display: none;
+}
+.kreditanfrage_form .variability_content.active {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 25px;
+  width: 430px;
+}
+.kreditanfrage_form .variability_content .row {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 25px;
 }
 @media (max-width: 1440px) {
   .container {
