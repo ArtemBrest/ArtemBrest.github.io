@@ -72,6 +72,104 @@ button:hover {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.6);
 }
+.fade {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.cms-description-text{
+  color: #082044;
+  & h2{
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 32px;
+    margin-bottom: 20px;
+  }
+  & p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 20px;
+    & a{
+      color: inherit;
+      text-decoration: underline;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+  }
+  & span{
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    & a{
+      color: inherit;
+      text-decoration: underline;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+  }
+}
+.modal {
+  z-index: 99999;
+  width: 1050px;
+  height: 90vh;
+  overflow: hidden;
+  overflow-y: auto;
+  background: #FFFFFF;
+  border: 3px solid #2D487C;
+  position: fixed;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  padding: 50px 0;
+  &::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    background-color: #2D487C;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #d6d6d6;
+    border-radius: 3px;
+  }
+  &-close {
+    color: #2D487C;
+    position: absolute;
+    font-weight: 400;
+    top: 30px;
+    right: 30px;
+    text-decoration: none;
+    font-size: 40px;
+    line-height: 20px;
+    cursor: pointer;
+  }
+  &_header{
+    padding: 40px 30px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &-title{
+      text-transform: capitalize;
+      color: #082044
+    }
+  }
+  &_content{
+    padding: 60px 30px 0 30px;
+  }
+}
+
 .header{
   position: relative;
   z-index: 99;
@@ -955,6 +1053,8 @@ button:hover {
       display: flex;
       align-items: center;
       justify-content: flex-end;
+      flex-flow: row wrap;
+      gap: 10px;
     }
     &-btn{
       font-size: 20px;
@@ -999,6 +1099,15 @@ button:hover {
           line-height: 26px;
           color: #082044;
           margin-bottom: 15px;
+        }
+        &-info{
+          margin-top: 15px;
+          font-size: 15px;
+          line-height: 21px;
+          color: #082044;
+          padding: 5px 15px;
+          background: rgba(160, 200, 90, 0.21);
+          border: 1px solid #DDDFE1;
         }
         &-input{
           width: 100%;
@@ -1149,6 +1258,14 @@ button:hover {
           }
         }
         .checkbox{
+          & .popup-btn{
+            display: inline-block;
+            margin: 0 3px;
+            cursor: pointer;
+            font-weight: 700;
+            text-decoration: underline;
+            background: rgba(248, 223, 75, 0.21);
+          }
           .custom-checkbox {
             position: absolute;
             z-index: -1;
@@ -1156,6 +1273,7 @@ button:hover {
           }
           .custom-checkbox+label {
             display: inline-flex;
+            flex-flow: row wrap;
             align-items: center;
             user-select: none;
             font-weight: 700;
@@ -1238,6 +1356,38 @@ button:hover {
       max-width: 1340px;
       margin: 0 auto;
       padding: 50px 0;
+    }
+  }
+
+  .kreditanfrage{
+    display: grid;
+    grid-template-columns: 320px auto;
+    &_steps{
+      width: 420px;
+      padding: 75px 40px 125px 40px;
+      background: #FFFFFF;
+      height: max-content;
+      & .step{
+        position: relative;
+        &-name{
+          min-width: 240px;
+        }
+      }
+    }
+    &_form{
+      & .kreditdate {
+        & .item {
+          &-label{
+            font-size: 19px;
+          }
+          &-input {
+            width: 100%;
+          }
+          &-textarea{
+            width: 100%;
+          }
+        }
+      }
     }
   }
 }
@@ -1399,6 +1549,22 @@ button:hover {
       }
     }
   }
+
+  .kreditanfrage{
+    &_form{
+      &_group{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 25px;
+        width: 100%;
+      }
+      .variability_content {
+        &.active {
+          width: 100%;
+        }
+      }
+    }
+  }
   .footer{
     background: #F7F7F7;
     &_row{
@@ -1408,6 +1574,15 @@ button:hover {
       grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-gap: 30px;
       padding: 68px 0 50px 0;
+    }
+  }
+}
+@media (max-width: 1050px) {
+  .modal {
+    width: 90%;
+    &_header,
+    &_content{
+      padding: 30px 10px;
     }
   }
 }
@@ -1456,6 +1631,41 @@ button:hover {
       }
     }
   }
+  .block_title{
+    min-height: auto;
+    padding: 50px 0;
+    &-h1{
+      padding-left: 0;
+    }
+  }
+  .kreditanfrage{
+    display: grid;
+    grid-template-columns: 1fr;
+    &_steps{
+      width: auto;
+      display: flex;
+      flex-flow: row;
+      overflow-x: scroll;
+      padding: 20px;
+      & .step{
+        position: relative;
+        min-width: 250px;
+        height: 60px;
+        & svg{
+          transform: rotate(-90deg);
+          margin-left: 85px;
+          margin-top: -85px;
+        }
+        &-name{
+          background: transparent;
+          min-width: 280px;
+        }
+      }
+    }
+    &_form{
+      margin-top: 0;
+    }
+  }
   .footer{
     background: #F7F7F7;
     &_row{
@@ -1481,6 +1691,24 @@ button:hover {
   .h2{
     font-size: 26px;
     line-height: 37px;
+  }
+  .cms-description-text{
+    & h2{
+      font-size: 26px;
+      line-height: 37px;
+      margin-bottom: 10px;
+    }
+    & p{
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 26px;
+      margin-bottom: 10px;
+    }
+    & span{
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 26px;
+    }
   }
   .banner{
     &_form{
@@ -1761,6 +1989,90 @@ button:hover {
         }
         & .column{
           padding: 0;
+        }
+      }
+    }
+  }
+  .kreditanfrage{
+    margin-bottom: 50px;
+    &_form{
+      padding: 10px;
+      &-subTitle{
+        font-weight: 700;
+        font-size: 24px;
+        color: #082044;
+        margin: 20px 0;
+      }
+      & .tab{
+        display: none;
+        grid-template-columns: 1fr;
+        grid-template-areas: "box1" "box1";
+        grid-gap: 30px;
+        &_info{
+          grid-area: box2;
+        }
+        & .column_info{
+          grid-area: box1;
+        }
+      }
+      & .kreditdate{
+        padding: 20px;
+        margin-bottom: 10px;
+        &-h2{
+          padding-bottom: 20px;
+        }
+        &_group{
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-gap: 20px;
+          max-width: 750px;
+          margin-bottom: 20px;
+        }
+      }
+      &_info{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 15px;
+      }
+      &-error{
+        padding: 15px;
+        margin: 20px auto;
+      }
+      &-buttons{
+        margin: 50px 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
+      &-btn{
+        margin: 0 20px;
+      }
+      &_group{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        & .item{
+          &_row{
+            display: flex;
+            gap: 10px;
+          }
+        }
+      }
+      .variability_content{
+        display: none;
+        &.active{
+          margin-top: 20px;
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-gap: 20px;
+        }
+        & .row{
+          &__del{
+            position: static;
+            top: inherit;
+            right: inherit;
+            margin-left: auto;
+          }
         }
       }
     }
