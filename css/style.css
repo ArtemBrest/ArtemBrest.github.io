@@ -1786,6 +1786,25 @@ button:hover {
     grid-gap: 25px;
     width: 100%;
   }
+  .kreditanfrage_form_group .item .select_content {
+    position: absolute;
+    top: 37px;
+    left: -1px;
+    padding: 15px 10px 10px 20px;
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: calc(100% + 2px);
+    background-color: #E4E4DF;
+    border: 1px solid #DDDFE1;
+    border-top: none;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    opacity: 0;
+    z-index: 8;
+  }
   .kreditanfrage_form .variability_content.active {
     width: 100%;
   }
@@ -2266,8 +2285,8 @@ button:hover {
     grid-area: box1;
   }
   .kreditanfrage_form .kreditdate {
-    padding: 20px;
-    margin-bottom: 10px;
+    padding: 10px;
+    margin-bottom: 30px;
   }
   .kreditanfrage_form .kreditdate-h2 {
     padding-bottom: 20px;
@@ -2279,13 +2298,33 @@ button:hover {
     max-width: 750px;
     margin-bottom: 20px;
   }
+  .kreditanfrage_form .kreditdate .item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .kreditanfrage_form .kreditdate .item-label {
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+  .kreditanfrage_form .kreditdate .item-input {
+    font-size: 18px;
+  }
+  .kreditanfrage_form .kreditdate .item-textarea {
+    font-size: 17px;
+  }
   .kreditanfrage_form_info {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 15px;
+    grid-gap: 10px;
   }
   .kreditanfrage_form-error {
-    padding: 15px;
+    padding: 10px;
     margin: 20px auto;
   }
   .kreditanfrage_form-buttons {
@@ -2308,11 +2347,37 @@ button:hover {
     grid-template-columns: 1fr;
     grid-gap: 20px;
   }
+  .kreditanfrage_form_group .item-label {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
   .kreditanfrage_form_group .item_row {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     gap: 10px;
+  }
+  .kreditanfrage_form_group .item .select_title {
+    font-size: 16px;
+  }
+  .kreditanfrage_form_group .item .select_content {
+    padding: 10px;
+  }
+  .kreditanfrage_form_group .item .select_label {
+    padding: 5px;
+    font-size: 16px;
+  }
+  .kreditanfrage_form_group .item .radio .custom-radio + label {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .kreditanfrage_form_group .item .checkbox .popup-btn {
+    line-height: 30px;
+  }
+  .kreditanfrage_form_group .item .checkbox .custom-checkbox + label {
+    font-size: 16px;
+    line-height: 20px;
   }
   .kreditanfrage_form .variability_content {
     display: none;
