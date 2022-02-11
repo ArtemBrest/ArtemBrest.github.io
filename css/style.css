@@ -76,6 +76,105 @@ button:hover {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.6);
 }
+.fade {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.cms-description-text {
+  color: #082044;
+}
+.cms-description-text h2 {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 32px;
+  margin-bottom: 20px;
+}
+.cms-description-text p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 20px;
+}
+.cms-description-text p a {
+  color: inherit;
+  text-decoration: underline;
+}
+.cms-description-text p a:hover {
+  text-decoration: none;
+}
+.cms-description-text span {
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+}
+.cms-description-text span a {
+  color: inherit;
+  text-decoration: underline;
+}
+.cms-description-text span a:hover {
+  text-decoration: none;
+}
+.modal {
+  z-index: 99999;
+  width: 1050px;
+  height: 90vh;
+  overflow: hidden;
+  overflow-y: auto;
+  background: #FFFFFF;
+  border: 3px solid #2D487C;
+  position: fixed;
+  top: 5%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: none;
+  -webkit-box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  padding: 50px 0;
+}
+.modal::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  background-color: #2D487C;
+}
+.modal::-webkit-scrollbar-thumb {
+  background-color: #d6d6d6;
+  border-radius: 3px;
+}
+.modal-close {
+  color: #2D487C;
+  position: absolute;
+  font-weight: 400;
+  top: 30px;
+  right: 30px;
+  text-decoration: none;
+  font-size: 40px;
+  line-height: 20px;
+  cursor: pointer;
+}
+.modal_header {
+  padding: 40px 30px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.modal_header-title {
+  text-transform: capitalize;
+  color: #082044;
+}
+.modal_content {
+  padding: 60px 30px 0 30px;
+}
 .header {
   position: relative;
   z-index: 99;
@@ -1104,6 +1203,11 @@ button:hover {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  gap: 10px;
 }
 .kreditanfrage_form-btn {
   font-size: 20px;
@@ -1156,6 +1260,15 @@ button:hover {
   line-height: 26px;
   color: #082044;
   margin-bottom: 15px;
+}
+.kreditanfrage_form_group .item-info {
+  margin-top: 15px;
+  font-size: 15px;
+  line-height: 21px;
+  color: #082044;
+  padding: 5px 15px;
+  background: rgba(160, 200, 90, 0.21);
+  border: 1px solid #DDDFE1;
 }
 .kreditanfrage_form_group .item-input {
   width: 100%;
@@ -1349,6 +1462,14 @@ button:hover {
 .kreditanfrage_form_group .item .radio .custom-radio:checked + label::before {
   background-image: url("../img/svg/radio_active.svg");
 }
+.kreditanfrage_form_group .item .checkbox .popup-btn {
+  display: inline-block;
+  margin: 0 3px;
+  cursor: pointer;
+  font-weight: 700;
+  text-decoration: underline;
+  background: rgba(248, 223, 75, 0.21);
+}
 .kreditanfrage_form_group .item .checkbox .custom-checkbox {
   position: absolute;
   z-index: -1;
@@ -1358,6 +1479,10 @@ button:hover {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1448,6 +1573,33 @@ button:hover {
     max-width: 1340px;
     margin: 0 auto;
     padding: 50px 0;
+  }
+  .kreditanfrage {
+    display: grid;
+    grid-template-columns: 320px auto;
+  }
+  .kreditanfrage_steps {
+    width: 420px;
+    padding: 75px 40px 125px 40px;
+    background: #FFFFFF;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .kreditanfrage_steps .step {
+    position: relative;
+  }
+  .kreditanfrage_steps .step-name {
+    min-width: 240px;
+  }
+  .kreditanfrage_form .kreditdate .item-label {
+    font-size: 19px;
+  }
+  .kreditanfrage_form .kreditdate .item-input {
+    width: 100%;
+  }
+  .kreditanfrage_form .kreditdate .item-textarea {
+    width: 100%;
   }
 }
 @media (max-width: 1200px) {
@@ -1628,6 +1780,15 @@ button:hover {
     right: 30px;
     width: 365px;
   }
+  .kreditanfrage_form_group {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 25px;
+    width: 100%;
+  }
+  .kreditanfrage_form .variability_content.active {
+    width: 100%;
+  }
   .footer {
     background: #F7F7F7;
   }
@@ -1638,6 +1799,15 @@ button:hover {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 30px;
     padding: 68px 0 50px 0;
+  }
+}
+@media (max-width: 1050px) {
+  .modal {
+    width: 90%;
+  }
+  .modal_header,
+  .modal_content {
+    padding: 30px 10px;
   }
 }
 @media (max-width: 991px) {
@@ -1673,6 +1843,47 @@ button:hover {
     font-size: 20px;
     line-height: 30px;
   }
+  .block_title {
+    min-height: auto;
+    padding: 50px 0;
+  }
+  .block_title-h1 {
+    padding-left: 0;
+  }
+  .kreditanfrage {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .kreditanfrage_steps {
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    overflow-x: scroll;
+    padding: 20px;
+  }
+  .kreditanfrage_steps .step {
+    position: relative;
+    min-width: 250px;
+    height: 60px;
+  }
+  .kreditanfrage_steps .step svg {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    margin-left: 85px;
+    margin-top: -85px;
+  }
+  .kreditanfrage_steps .step-name {
+    background: transparent;
+    min-width: 280px;
+  }
+  .kreditanfrage_form {
+    margin-top: 0;
+  }
   .footer {
     background: #F7F7F7;
   }
@@ -1696,6 +1907,22 @@ button:hover {
   .h2 {
     font-size: 26px;
     line-height: 37px;
+  }
+  .cms-description-text h2 {
+    font-size: 26px;
+    line-height: 37px;
+    margin-bottom: 10px;
+  }
+  .cms-description-text p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 10px;
+  }
+  .cms-description-text span {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
   }
   .banner_form {
     position: relative;
@@ -2013,6 +2240,94 @@ button:hover {
   }
   .kredit_wrapper .tab_content .column {
     padding: 0;
+  }
+  .kreditanfrage {
+    margin-bottom: 50px;
+  }
+  .kreditanfrage_form {
+    padding: 10px;
+  }
+  .kreditanfrage_form-subTitle {
+    font-weight: 700;
+    font-size: 24px;
+    color: #082044;
+    margin: 20px 0;
+  }
+  .kreditanfrage_form .tab {
+    display: none;
+    grid-template-columns: 1fr;
+    grid-template-areas: "box1" "box1";
+    grid-gap: 30px;
+  }
+  .kreditanfrage_form .tab_info {
+    grid-area: box2;
+  }
+  .kreditanfrage_form .tab .column_info {
+    grid-area: box1;
+  }
+  .kreditanfrage_form .kreditdate {
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+  .kreditanfrage_form .kreditdate-h2 {
+    padding-bottom: 20px;
+  }
+  .kreditanfrage_form .kreditdate_group {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    max-width: 750px;
+    margin-bottom: 20px;
+  }
+  .kreditanfrage_form_info {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+  }
+  .kreditanfrage_form-error {
+    padding: 15px;
+    margin: 20px auto;
+  }
+  .kreditanfrage_form-buttons {
+    margin: 50px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .kreditanfrage_form-btn {
+    margin: 0 20px;
+  }
+  .kreditanfrage_form_group {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  .kreditanfrage_form_group .item_row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px;
+  }
+  .kreditanfrage_form .variability_content {
+    display: none;
+  }
+  .kreditanfrage_form .variability_content.active {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  .kreditanfrage_form .variability_content .row__del {
+    position: static;
+    top: inherit;
+    right: inherit;
+    margin-left: auto;
   }
   .footer_row {
     padding: 40px 0;
