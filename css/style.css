@@ -64,6 +64,14 @@ button:hover {
   text-transform: uppercase;
   color: #082044;
 }
+#main .hilite {
+  background-color: transparent;
+  color: inherit;
+}
+#main .card_header > .hilite:first-child {
+  background-color: yellow;
+  color: #000000;
+}
 .menu-overlay {
   display: none;
   position: fixed;
@@ -267,6 +275,72 @@ button:hover {
 }
 .header .menu-li:last-child {
   padding-right: 0;
+}
+.header .menu-li.menu-li-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+.header .menu-li.menu-li-search .form_menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 42px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.header .menu-li.menu-li-search .form_menu.active {
+  display: block;
+}
+.header .menu-li.menu-li-search .form_menu_group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+.header .menu-li.menu-li-search .form_menu-input {
+  width: 260px;
+  height: 40px;
+  font-weight: 700;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #082044;
+  background: #FFFFFF;
+  border: 1px solid #082044;
+  padding-left: 20px;
+}
+.header .menu-li.menu-li-search .form_menu-input:placeholder {
+  color: rgba(8, 32, 68, 0.4);
+}
+.header .menu-li.menu-li-search .form_menu-btn {
+  width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #DFDFD9;
+  margin-left: -2px;
+  border: 1px solid #082044;
+  border-left: none;
 }
 .header .menu-link {
   font-weight: 700;
@@ -1009,12 +1083,13 @@ button:hover {
 }
 .kreditanfrage {
   display: grid;
-  grid-template-columns: 420px auto;
+  grid-template-columns: 380px auto;
   margin-bottom: 100px;
+  max-width: 1340px;
 }
 .kreditanfrage_steps {
-  width: 420px;
-  padding: 75px 40px 125px 40px;
+  width: 380px;
+  padding: 75px 25px 125px 35px;
   background: #FFFFFF;
   height: -webkit-max-content;
   height: -moz-max-content;
@@ -1180,6 +1255,7 @@ button:hover {
   background: rgba(248, 223, 75, 0.21);
 }
 .kreditanfrage_form-error {
+  display: none;
   background: #DDDFE1;
   border: 3px solid #E91E1E;
   padding: 30px 50px 30px 20px;
@@ -1456,8 +1532,8 @@ button:hover {
   border-radius: 50%;
   margin-right: 10px;
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 75% 75%;
+  background-position: center;
+  background-size: initial;
 }
 .kreditanfrage_form_group .item .radio .custom-radio:checked + label::before {
   background-image: url("../img/svg/radio_active.svg");
@@ -1508,8 +1584,8 @@ button:hover {
   border: 1px solid #082044;
   margin-right: 10px;
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 75% 75%;
+  background-position: center;
+  background-size: initial;
 }
 .kreditanfrage_form_group .item .checkbox .custom-checkbox:checked + label::before {
   background-image: url("../img/svg/check_active.svg");
@@ -1531,7 +1607,9 @@ button:hover {
   position: relative;
 }
 .kreditanfrage_form .variability_content .row__del,
-.kreditanfrage_form .variability_content .row.row-add__row {
+.kreditanfrage_form .variability_content .row.row-add__row,
+.kreditanfrage_form .variability_content .row__del-2,
+.kreditanfrage_form .variability_content .row.row-add__row-2{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1548,7 +1626,8 @@ button:hover {
   background: #E4E4DF;
   cursor: pointer;
 }
-.kreditanfrage_form .variability_content .row__del {
+.kreditanfrage_form .variability_content .row__del,
+.kreditanfrage_form .variability_content .row__del-2{
   position: absolute;
   top: 30px;
   right: -70px;
@@ -1563,6 +1642,9 @@ button:hover {
   background-size: contain;
   background-color: #FFFFFF;
   border: 3px solid #2D487C;
+}
+.thanks_page-h1 {
+  padding-bottom: 40px;
 }
 @media (max-width: 1440px) {
   .container {
@@ -1584,18 +1666,6 @@ button:hover {
     max-width: 1340px;
     margin: 0 auto;
     padding: 50px 0;
-  }
-  .kreditanfrage {
-    display: grid;
-    grid-template-columns: 320px auto;
-  }
-  .kreditanfrage_steps {
-    width: 420px;
-    padding: 75px 40px 125px 40px;
-    background: #FFFFFF;
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
   }
   .kreditanfrage_steps .step {
     position: relative;
@@ -1790,6 +1860,13 @@ button:hover {
     bottom: -120px;
     right: 30px;
     width: 365px;
+  }
+  .kreditanfrage {
+    display: grid;
+    grid-template-columns: 320px auto;
+  }
+  .kreditanfrage_steps {
+    width: 320px;
   }
   .kreditanfrage_form_group {
     display: grid;
@@ -2351,7 +2428,7 @@ button:hover {
             justify-content: flex-end;
   }
   .kreditanfrage_form-btn {
-    margin: 0 20px;
+    margin: 0 10px;
   }
   .kreditanfrage_form_group {
     display: grid;
@@ -2457,5 +2534,17 @@ button:hover {
     padding: 20px;
     max-width: 1340px;
     margin: 0 auto;
+  }
+}
+@media (max-width: 479px) {
+  .kreditanfrage_form-buttons {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .kreditanfrage_form-btn {
+    padding: 15px;
+    min-width: 48%;
+    margin: 0;
   }
 }
