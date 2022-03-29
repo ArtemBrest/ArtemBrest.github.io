@@ -7,6 +7,7 @@ body {
   font-family: "Roboto Slab", sans-serif;
   font-weight: 400;
   background: #FFFFFF;
+  overflow-x: hidden;
   &::-webkit-scrollbar {
     width: 4px;
     height: 4px;
@@ -305,6 +306,11 @@ button:hover {
     }
   }
 }
+.content{
+  background-position: center 750px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 .banner{
   padding: 80px 0;
   background-position: 90% 0%;
@@ -418,12 +424,9 @@ button:hover {
   }
 }
 .advantages{
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   padding: 150px 0;
   &__title{
-    font-family: 'Rubik Mono One';
+    font-family: 'Rubik Mono One',sans-serif;
     font-weight: 400;
     font-size: 45px;
     line-height: 121.3%;
@@ -476,6 +479,101 @@ button:hover {
     top: 45px;
     left: -110px;
     z-index: 2;
+  }
+}
+.price{
+  position: relative;
+  &-wrapper{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px 0;
+    position: relative;
+    &:before{
+      content: "";
+      position: absolute;
+      top: 175px;
+      right: 0;
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: #fff;
+    }
+  }
+  &__tabs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+  }
+  & .item__tab{
+    font-family: 'Rubik Mono One', sans-serif;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 121.3%;
+    color: #FFFFFF;
+    padding: 40px 20px 20px;
+    &_active{
+      font-size: 37px;
+      color: #272727;
+      position: relative;
+      &:before{
+        content: "";
+        position: absolute;
+        top: -15px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-image: url(../img/png/active-tab.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 52px;
+        height: 26px;
+      }
+    }
+  }
+  &__info{
+    display: none;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    max-width: 770px;
+    margin: 0 auto 60px auto;
+    &_active{
+      display: grid;
+    }
+  }
+  &__row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    background: #FFFFFF;
+    border-radius: 21px;
+    padding: 20px 50px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 37px;
+    color: #585858;
+    &-name{
+      display: block;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 29px;
+      color: #6B6B6B;
+    }
+  }
+  &__text{
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 29px;
+    text-align: center;
+    color: #202020;
+    max-width: 630px;
+    margin: 0 auto;
+  }
+  &__img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
   }
 }
 

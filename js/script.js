@@ -109,4 +109,23 @@ window.addEventListener("load", function () {
             })
         }
     }
+    let tabLinks = document.querySelectorAll(".item__tab");
+    let tabPanels = document.querySelectorAll(".price__info");
+    if (tabPanels !== null && tabLinks !== null) {
+        for (let el of tabLinks) {
+            el.addEventListener("click", e => {
+                e.preventDefault();
+                if (document.querySelector(".item__tab.item__tab_active")) {
+                    document.querySelector(".item__tab.item__tab_active").classList.remove("item__tab_active")
+                }
+                if (document.querySelector(".price__info.price__info_active")) {
+                    document.querySelector(".price__info.price__info_active").classList.remove("price__info_active")
+                }
+                el.classList.add("item__tab_active");
+                var index = [...el.parentElement.children].indexOf(el);
+                var panel = [...tabPanels].filter(el => el.getAttribute("data-index") == index);
+                panel[0].classList.add("price__info_active")
+            })
+        }
+    }
 })

@@ -9,6 +9,7 @@ body {
   font-family: "Roboto Slab", sans-serif;
   font-weight: 400;
   background: #FFFFFF;
+  overflow-x: hidden;
 }
 body::-webkit-scrollbar {
   width: 4px;
@@ -378,6 +379,11 @@ button:hover {
 .cms-description-text p:not(:last-child) {
   margin-bottom: 20px;
 }
+.content {
+  background-position: center 750px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 .banner {
   padding: 80px 0;
   background-position: 90% 0%;
@@ -517,13 +523,10 @@ button:hover {
   z-index: 3;
 }
 .advantages {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   padding: 150px 0;
 }
 .advantages__title {
-  font-family: 'Rubik Mono One';
+  font-family: 'Rubik Mono One', sans-serif;
   font-weight: 400;
   font-size: 45px;
   line-height: 121.3%;
@@ -597,6 +600,114 @@ button:hover {
   top: 45px;
   left: -110px;
   z-index: 2;
+}
+.price {
+  position: relative;
+}
+.price-wrapper {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 50px 0;
+  position: relative;
+}
+.price-wrapper:before {
+  content: "";
+  position: absolute;
+  top: 175px;
+  right: 0;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+}
+.price__tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 80px;
+}
+.price .item__tab {
+  font-family: 'Rubik Mono One', sans-serif;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 121.3%;
+  color: #FFFFFF;
+  padding: 40px 20px 20px;
+}
+.price .item__tab_active {
+  font-size: 37px;
+  color: #272727;
+  position: relative;
+}
+.price .item__tab_active:before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-image: url(../img/png/active-tab.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 52px;
+  height: 26px;
+}
+.price__info {
+  display: none;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  max-width: 770px;
+  margin: 0 auto 60px auto;
+}
+.price__info_active {
+  display: grid;
+}
+.price__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10px;
+  background: #FFFFFF;
+  border-radius: 21px;
+  padding: 20px 50px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 37px;
+  color: #585858;
+}
+.price__row-name {
+  display: block;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 29px;
+  color: #6B6B6B;
+}
+.price__text {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 29px;
+  text-align: center;
+  color: #202020;
+  max-width: 630px;
+  margin: 0 auto;
+}
+.price__img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 @media (max-width: 1210px) {
   .container {
