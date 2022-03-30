@@ -447,6 +447,7 @@ button:hover {
   -webkit-box-shadow: 6px 9px 27px rgba(0, 0, 0, 0.09);
           box-shadow: 6px 9px 27px rgba(0, 0, 0, 0.09);
   border-radius: 50%;
+  z-index: 1;
 }
 .banner__title {
   font-family: 'Rubik Mono One', sans-serif;
@@ -497,6 +498,7 @@ button:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 2;
 }
 .banner__btn:hover {
   -webkit-box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.4);
@@ -534,6 +536,8 @@ button:hover {
   max-width: 950px;
   margin: 0 auto;
   padding: 100px 0 0;
+  position: relative;
+  z-index: 23;
 }
 .banner__info-wrapper {
   position: relative;
@@ -591,6 +595,7 @@ button:hover {
   max-width: 600px;
   margin-bottom: 50px;
   position: relative;
+  z-index: 2;
 }
 .advantages__cards {
   display: -webkit-box;
@@ -1414,9 +1419,67 @@ button:hover {
   height: auto;
   max-width: 100%;
 }
+@media (max-width: 1600px) {
+  .banner__top-img {
+    right: -10px;
+  }
+  .price__img {
+    right: 0;
+  }
+  .price-wrapper {
+    margin: 0;
+  }
+}
 @media (max-width: 1210px) {
   .container {
     width: 980px;
+  }
+  .banner__top-img {
+    display: none;
+  }
+  .banner__circle {
+    right: 0;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  .advantages:after {
+    display: none;
+  }
+  .advantages:before {
+    display: none;
+  }
+  .advantages-image {
+    top: initial;
+    bottom: 0;
+  }
+  .price .item__tab {
+    font-size: 25px;
+    line-height: 121.3%;
+    padding: 40px 15px 20px;
+  }
+  .price .item__tab_active {
+    font-size: 30px;
+  }
+  .price__img {
+    display: none;
+  }
+  .info:after {
+    display: none;
+  }
+  .info__description {
+    padding: 50px 20px;
+  }
+  .services__cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .step__img {
+    display: none;
+  }
+  .license {
+    background-size: cover;
+  }
+  .license__group {
+    grid-gap: 0;
   }
 }
 @media (max-width: 991px) {

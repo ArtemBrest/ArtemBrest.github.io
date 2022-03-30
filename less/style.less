@@ -364,6 +364,7 @@ button:hover {
     background: #F9F9F9;
     box-shadow: 6px 9px 27px rgba(0, 0, 0, 0.09);
     border-radius: 50%;
+    z-index: 1;
   }
   &__title{
     font-family: 'Rubik Mono One',sans-serif;
@@ -406,6 +407,7 @@ button:hover {
   &__row{
     display: flex;
     align-items: center;
+    z-index: 2;
   }
   &__btn{
     &:hover{
@@ -434,6 +436,8 @@ button:hover {
     max-width: 950px;
     margin: 0 auto;
     padding: 100px 0 0;
+    position: relative;
+    z-index: 23;
     &-wrapper{
       position: relative;
       margin-left: 45px;
@@ -492,6 +496,7 @@ button:hover {
     max-width: 600px;
     margin-bottom: 50px;
     position: relative;
+    z-index: 2;
   }
   &__cards{
     display: flex;
@@ -1179,9 +1184,86 @@ button:hover {
   }
 }
 
+@media (max-width: 1600px) {
+  .banner{
+    &__top{
+      &-img{
+        right: -10px;
+      }
+    }
+  }
+  .price__img{
+    right: 0;
+  }
+  .price{
+    &-wrapper{
+      margin: 0;
+    }
+  }
+}
 @media (max-width: 1210px) {
   .container {
     width: 980px;
+  }
+  .banner{
+    &__top{
+      &-img{
+        display: none;
+      }
+    }
+    &__circle{
+      right: 0;
+      transform: translate(0);
+    }
+  }
+  .advantages{
+    &:after{
+      display: none;
+    }
+    &:before{
+      display: none;
+    }
+    &-image{
+      top: initial;
+      bottom: 0;
+    }
+  }
+  .price{
+    & .item__tab{
+      font-size: 25px;
+      line-height: 121.3%;
+      padding: 40px 15px 20px;
+      &_active{
+        font-size: 30px;
+      }
+    }
+    &__img{
+      display: none;
+    }
+  }
+  .info{
+    &:after{
+      display: none;
+    }
+    &__description{
+      padding: 50px 20px;
+    }
+  }
+  .services{
+    &__cards{
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  .step{
+    &__img{
+      display: none;
+    }
+  }
+  .license{
+    background-size: cover;
+    &__group{
+      grid-gap: 0;
+    }
   }
 }
 @media (max-width: 991px) {
