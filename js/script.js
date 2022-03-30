@@ -128,4 +128,9 @@ window.addEventListener("load", function () {
             })
         }
     }
+
+    var swiper = new Swiper(".client__swiper", {
+        slidesPerView: "auto",
+        spaceBetween: 20,
+    });
 })
