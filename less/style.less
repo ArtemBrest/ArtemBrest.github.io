@@ -308,15 +308,27 @@ button:hover {
   }
 }
 .content{
-  background-position: center 750px;
-  background-size: contain;
-  background-repeat: no-repeat;
+
 }
 .banner{
-  padding: 80px 0;
-  background-position: 90% 0%;
-  background-size: contain;
+  padding: 80px 0 100px;
+  background-position: 65% top;
+  background-size: 65%;
   background-repeat: no-repeat;
+  position: relative;
+  &:before{
+    content: "";
+    width: 250px;
+    height: 655px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-image: url(../img/png/circle-service-back.png);
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+    background-position: center center;
+    z-index: 22;
+  }
   &__top{
     position: relative;
     &-img{
@@ -340,7 +352,7 @@ button:hover {
     border-radius: 50%;
   }
   &__title{
-    font-family: 'Rubik Mono One';
+    font-family: 'Rubik Mono One',sans-serif;
     display: block;
     font-weight: 400;
     font-size: 45px;
@@ -425,7 +437,33 @@ button:hover {
   }
 }
 .advantages{
-  padding: 150px 0 220px;
+  padding: 0 0 220px;
+  position: relative;
+  &:before{
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: 0;
+    background-image: url(../img/png/advantages-bakc-left.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 320px;
+    height: 760px;
+  }
+  &:after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+    width: 730px;
+    height: 730px;
+    background-image: url(../img/png/advantsges-back-right.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+  }
   &__title{
     font-family: 'Rubik Mono One',sans-serif;
     font-weight: 400;
@@ -434,6 +472,7 @@ button:hover {
     color: #272727;
     max-width: 600px;
     margin-bottom: 50px;
+    position: relative;
   }
   &__cards{
     display: flex;
@@ -502,18 +541,6 @@ button:hover {
       width: 100%;
       height: 1px;
       background-color: #fff;
-    }
-    &:after{
-      content: "";
-      position: absolute;
-      left: -70px;
-      bottom: -40%;
-      width: 1240px;
-      height: 642px;
-      background-image: url(../img/png/price-back3.png);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
     }
   }
   &__tabs{
@@ -593,18 +620,19 @@ button:hover {
   }
 }
 .info{
-  padding: 130px 0;
+  padding: 100px 0 130px;
   position: relative;
   &:after{
     content: "";
     position: absolute;
+    width: 1000px;
+    height: 620px;
+    background-image: url(../img/png/info-back.png);
     right: 0;
-    bottom: -15%;
+    top: 20%;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url(../img/png/back4.png);
-    width: 917px;
-    height: 1190px;
+    background-size: cover;
   }
   &__group{
     display: grid;
@@ -676,6 +704,8 @@ button:hover {
     max-width: 1030px;
     margin: 0 auto;
     padding: 35px 100px 35px 50px;
+    position: relative;
+    z-index: 2;
     &-el{
       display: flex;
       align-items: center;
@@ -707,8 +737,19 @@ button:hover {
   }
 }
 .services{
-  padding: 0 0 130px;
+  padding: 0 0 150px;
   position: relative;
+  &:before{
+    content: "";
+    width: 250px;
+    height: 655px;
+    position: absolute;
+    top: -30%;
+    left: 0;
+    background-image: url(../img/png/circle-service-back.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
   &__title{
     font-family: 'Rubik Mono One',sans-serif;
     font-style: normal;
@@ -717,6 +758,7 @@ button:hover {
     line-height: 121.3%;
     color: #272727;
     margin-bottom: 60px;
+    position: relative;
   }
   &__cards{
     display: grid;
@@ -746,7 +788,8 @@ button:hover {
         display: block;
         max-width: 100%;
         height: auto;
-        object-fit: cover;
+        max-height: 150px;
+        object-fit: contain;
       }
       &__title{
         font-family: 'Rubik Mono One', sans-serif;
@@ -774,6 +817,77 @@ button:hover {
         padding: 40px 18px 15px 35px;
       }
     }
+  }
+}
+.step{
+  padding-bottom: 100px;
+  position: relative;
+  &:before{
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    width: 50px;
+    height: 460px;
+    background: #F6E11F;
+    border-radius: 11px;
+  }
+  &__title{
+    font-family: 'Rubik Mono One',sans-serif;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 121.3%;
+    color: #272727;
+    margin-bottom: 50px;
+  }
+  &__cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    max-width: 1000px;
+    position: relative;
+    & .card{
+      display: flex;
+      flex-flow: column;
+      align-items: flex-start;
+      padding: 40px;
+      background: #FFFFFF;
+      box-shadow: inset 0px 4px 20px rgba(0, 0, 0, 0.07);
+      border-radius: 50px;
+      position: relative;
+      z-index: 2;
+      &__icon{
+        align-self: flex-end;
+        margin-bottom: 40px;
+      }
+      &__number{
+        display: block;
+        background: #F6E11F;
+        border-radius: 11px;
+        width: fit-content;
+        padding: 10px 15px;
+        margin-bottom: 20px;
+        font-family: 'Rubik Mono One',sans-serif;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 133.3%;
+        color: #272727;
+      }
+      &__text{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #535353;
+      }
+    }
+  }
+  &__img{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 
