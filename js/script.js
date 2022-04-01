@@ -57,21 +57,35 @@ window.addEventListener("load", function () {
                 header_menu_li[i].appendChild(svg);
             }
             var mouseenter_ev
-            header_menu_li[i].addEventListener("mouseenter", function () {
-                mouseenter_ev = setTimeout(() => {
-                    header_menu_li[i].classList.add("active_li")
-                }, 100);
-                if (header_menu_li[i].querySelector(".sub__menu")) {
-                    header_menu_li[i].querySelector(".sub__menu").style.display = "flex";
-                }
-            })
-            header_menu_li[i].addEventListener("mouseleave", function () {
-                clearTimeout(mouseenter_ev);
-                header_menu_li[i].classList.remove("active_li");
-                if (header_menu_li[i].querySelector(".sub__menu")) {
-                    header_menu_li[i].querySelector(".sub__menu").style.display = "none";
-                }
-            })
+            if(window.screen.width < 768){
+                header_menu_li[i].addEventListener("click", function () {
+                    if (header_menu_li[i].classList.contains("active_li")) {
+                        header_menu_li[i].classList.remove("active_li");
+                        header_menu_li[i].querySelector(".sub__menu").style.display = "none";
+                    }
+                    else{
+                        header_menu_li[i].classList.add("active_li");
+                        header_menu_li[i].querySelector(".sub__menu").style.display = "flex";
+                    }
+                })
+            }
+            else{
+                header_menu_li[i].addEventListener("mouseenter", function () {
+                    mouseenter_ev = setTimeout(() => {
+                        header_menu_li[i].classList.add("active_li")
+                    }, 100);
+                    if (header_menu_li[i].querySelector(".sub__menu")) {
+                        header_menu_li[i].querySelector(".sub__menu").style.display = "flex";
+                    }
+                })
+                header_menu_li[i].addEventListener("mouseleave", function () {
+                    clearTimeout(mouseenter_ev);
+                    header_menu_li[i].classList.remove("active_li");
+                    if (header_menu_li[i].querySelector(".sub__menu")) {
+                        header_menu_li[i].querySelector(".sub__menu").style.display = "none";
+                    }
+                })
+            }
         }
     }
     let sub_menu_li = document.querySelectorAll(".sub__menu-item-1");
@@ -92,21 +106,36 @@ window.addEventListener("load", function () {
                 sub_menu_li[i].appendChild(svg);
             }
             var mouseenter_ev
-            sub_menu_li[i].addEventListener("mouseenter", function () {
-                mouseenter_ev = setTimeout(() => {
-                    sub_menu_li[i].classList.add("active_li")
-                }, 100);
-                if (sub_menu_li[i].querySelector(".sub__menu")) {
-                    sub_menu_li[i].querySelector(".sub__menu").style.display = "flex";
-                }
-            })
-            sub_menu_li[i].addEventListener("mouseleave", function () {
-                clearTimeout(mouseenter_ev);
-                sub_menu_li[i].classList.remove("active_li");
-                if (sub_menu_li[i].querySelector(".sub__menu")) {
-                    sub_menu_li[i].querySelector(".sub__menu").style.display = "none";
-                }
-            })
+            if(window.screen.width < 768){
+                sub_menu_li[i].addEventListener("click", function (e) {
+                    e.stopPropagation();
+                    if (sub_menu_li[i].classList.contains("active_li")) {
+                        sub_menu_li[i].classList.remove("active_li");
+                        sub_menu_li[i].querySelector(".sub__menu").style.display = "none";
+                    }
+                    else{
+                        sub_menu_li[i].classList.add("active_li");
+                        sub_menu_li[i].querySelector(".sub__menu").style.display = "flex";
+                    }
+                })
+            }
+            else{
+                sub_menu_li[i].addEventListener("mouseenter", function () {
+                    mouseenter_ev = setTimeout(() => {
+                        sub_menu_li[i].classList.add("active_li")
+                    }, 100);
+                    if (sub_menu_li[i].querySelector(".sub__menu")) {
+                        sub_menu_li[i].querySelector(".sub__menu").style.display = "flex";
+                    }
+                })
+                sub_menu_li[i].addEventListener("mouseleave", function () {
+                    clearTimeout(mouseenter_ev);
+                    sub_menu_li[i].classList.remove("active_li");
+                    if (sub_menu_li[i].querySelector(".sub__menu")) {
+                        sub_menu_li[i].querySelector(".sub__menu").style.display = "none";
+                    }
+                })
+            }
         }
     }
     let tabLinks = document.querySelectorAll(".item__tab");
@@ -133,4 +162,27 @@ window.addEventListener("load", function () {
         slidesPerView: "auto",
         spaceBetween: 20,
     });
+
+    let menu_overlay = document.querySelector(".menu-overlay")
+    let header_btn_menu = document.querySelector(".header__icon");
+    let header_menu_mob = document.querySelector(".header__menu");
+    if (header_btn_menu !== null && menu_overlay !== null) {
+        header_btn_menu.addEventListener("click", function () {
+            if (header_btn_menu.classList.contains("active")) {
+                header_btn_menu.classList.remove("active");
+                header_menu_mob.style.display = "none";
+                fadeOut(menu_overlay);
+            } else {
+                header_btn_menu.classList.add("active");
+                header_menu_mob.style.display = "flex";
+                fadeIn(menu_overlay)
+            }
+        })
+        menu_overlay.addEventListener("click", function () {
+            header_btn_menu.classList.remove("active");
+            header_menu_mob.style.display = "none";
+            fadeOut(menu_overlay);
+        })
+    }
+
 })
